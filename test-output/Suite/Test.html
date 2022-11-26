@@ -1,0 +1,236 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Nov 05 16:40:45 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>136 seconds (136313 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='LoginPageTC.ValidateRecoverPwdLinkTC_20.VerifyRecoverPwdIsLinkTest()'><b>VerifyRecoverPwdIsLinkTest</b><br>Test class: LoginPageTC.ValidateRecoverPwdLinkTC_20<br/>
+<a href="#Output-1828320474" onClick='toggleBox("Output-1828320474", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1828320474" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1828320474">
+Validating actual Recover Password and Expected Text Recover Password<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTC.ValidateRecoverPwdLinkTC_20@3febb011</td></tr>
+<tr>
+<td title='LoginPageTC.ValidateErrorMsgOnPassword_TC03.CheckIncorrectCredentialsOnPasswordFieldTest()'><b>CheckIncorrectCredentialsOnPasswordFieldTest</b><br>Test class: LoginPageTC.ValidateErrorMsgOnPassword_TC03<br/>
+<a href="#Output-1928293834" onClick='toggleBox("Output-1928293834", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1928293834" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1928293834">
+Validating actual Credentials are invalid! and Expected Text Credentials are invalid!<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTC.ValidateErrorMsgOnPassword_TC03@36bc55de</td></tr>
+<tr>
+<td title='LoginPageTC.LoginValidation_TC01.ValidUserNameAndValidPasswordTest()'><b>ValidUserNameAndValidPasswordTest</b><br>Test class: LoginPageTC.LoginValidation_TC01<br/>
+<a href="#Output-673575715" onClick='toggleBox("Output-673575715", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-673575715" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-673575715">
+Validating actual Please select company to proceed. and Expected Text Please select company to proceed.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTC.LoginValidation_TC01@595b007d</td></tr>
+<tr>
+<td title='LoginPageTC.RecoveryPasswordPageTextValidation_TC23.ValidateWelcomeTextOnRecoveryPageTest()'><b>ValidateWelcomeTextOnRecoveryPageTest</b><br>Test class: LoginPageTC.RecoveryPasswordPageTextValidation_TC23<br/>
+<a href="#Output-801258376" onClick='toggleBox("Output-801258376", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-801258376" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-801258376">
+Validating actual Welcome to Falk Tours, and Expected Message Welcome to Falk Tours,<br/>
+Validating actual Please enter your User Name below to get reset password link on registered mail address. and Expected Message Please enter your User Name below to get reset password link on registered mail address.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTC.RecoveryPasswordPageTextValidation_TC23@10e31a9a</td></tr>
+<tr>
+<td title='LoginPageTC.RecoverPasswordRefreshValidation_TC14.ValidUserNameEnterAndRefreshPageTest()'><b>ValidUserNameEnterAndRefreshPageTest</b><br>Test class: LoginPageTC.RecoverPasswordRefreshValidation_TC14<br/>
+<a href="#Output-422666970" onClick='toggleBox("Output-422666970", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-422666970" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-422666970">
+Validating actual https://zeuscloud.azurewebsites.net/Users/SendRecoverPassLink and Expected Text https://zeuscloud.azurewebsites.net/Users/SendRecoverPassLink<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTC.RecoverPasswordRefreshValidation_TC14@8f4ea7c</td></tr>
+<tr>
+<td title='LoginPageTC.RecoverPasswordAndBackToLoginVaidation_TC09.RecoverPasswordAndGoBackToLoginTest()'><b>RecoverPasswordAndGoBackToLoginTest</b><br>Test class: LoginPageTC.RecoverPasswordAndBackToLoginVaidation_TC09<br/>
+<a href="#Output-1570233882" onClick='toggleBox("Output-1570233882", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1570233882" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1570233882">
+Validating actual Copyright © Zeus 2022 and Expected Text Copyright © Zeus 2022<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTC.RecoverPasswordAndBackToLoginVaidation_TC09@49ec71f8</td></tr>
+<tr>
+<td title='LoginPageTC.LoginPageTextValidationTC_18.ValidateWelcomeBackTextOnLoginPageTest()'><b>ValidateWelcomeBackTextOnLoginPageTest</b><br>Test class: LoginPageTC.LoginPageTextValidationTC_18<br/>
+<a href="#Output-337267925" onClick='toggleBox("Output-337267925", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-337267925" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-337267925">
+Validating actual Welcome back, and Expected Text Welcome back,<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTC.LoginPageTextValidationTC_18@74fe5c40</td></tr>
+<tr>
+<td title='LoginPageTC.recoveryPasswordPageValidation_TC24.ValidateCopyrightTextOnRecoveryPasswordTest()'><b>ValidateCopyrightTextOnRecoveryPasswordTest</b><br>Test class: LoginPageTC.recoveryPasswordPageValidation_TC24<br/>
+<a href="#Output-282415079" onClick='toggleBox("Output-282415079", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-282415079" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-282415079">
+Validating actual Copyright © Zeus 2022 and Expected Message Please enter your User Name below to get reset password link on registered mail address.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTC.recoveryPasswordPageValidation_TC24@131774fe</td></tr>
+<tr>
+<td title='LoginPageTC.RecoveryPasswordClickValidation_TC08.ClickOnRecoveryPasswordLinkTest()'><b>ClickOnRecoveryPasswordLinkTest</b><br>Test class: LoginPageTC.RecoveryPasswordClickValidation_TC08<br/>
+<a href="#Output-2084200621" onClick='toggleBox("Output-2084200621", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2084200621" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2084200621">
+Validating actual Copyright © Zeus 2022 and Expected Text Copyright © Zeus 2022<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTC.RecoveryPasswordClickValidation_TC08@16d04d3d</td></tr>
+<tr>
+<td title='LoginPageTC.DashboardValidation_TC02.ValidUserNameAndValidPasswordEnterToDashboardPageTest()'><b>ValidUserNameAndValidPasswordEnterToDashboardPageTest</b><br>Test class: LoginPageTC.DashboardValidation_TC02<br/>
+<a href="#Output-1220973852" onClick='toggleBox("Output-1220973852", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1220973852" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1220973852">
+Validating actual Dashboard and Expected Text Dashboard<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTC.DashboardValidation_TC02@7e07db1f</td></tr>
+<tr>
+<td title='LoginPageTC.ValidateErrorMsgOnUserName_TC04.CheckIncorrectCredentialsOnUserNameFieldTest()'><b>CheckIncorrectCredentialsOnUserNameFieldTest</b><br>Test class: LoginPageTC.ValidateErrorMsgOnUserName_TC04<br/>
+<a href="#Output-273817326" onClick='toggleBox("Output-273817326", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-273817326" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-273817326">
+Validating actual Credentials are invalid! and Expected Text Credentials are invalid!<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTC.ValidateErrorMsgOnUserName_TC04@564fabc8</td></tr>
+<tr>
+<td title='LoginPageTC.LoginPageRefreshValidation_TC10.ValidUserNamePasswordAndRefreshpageTest()'><b>ValidUserNamePasswordAndRefreshpageTest</b><br>Test class: LoginPageTC.LoginPageRefreshValidation_TC10<br/>
+<a href="#Output-1641585862" onClick='toggleBox("Output-1641585862", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1641585862" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1641585862">
+Validating actual https://zeuscloud.azurewebsites.net/CompanySelection and Expected Text https://zeuscloud.azurewebsites.net/CompanySelection<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTC.LoginPageRefreshValidation_TC10@1d2adfbe</td></tr>
+<tr>
+<td title='LoginPageTC.LoginPageTextValidation_TC17.ValidateCopyrightTextOnLoginPageTest()'><b>ValidateCopyrightTextOnLoginPageTest</b><br>Test class: LoginPageTC.LoginPageTextValidation_TC17<br/>
+<a href="#Output-1649749675" onClick='toggleBox("Output-1649749675", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1649749675" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1649749675">
+Validating actual Copyright © Zeus 2022 and Expected Text Copyright © Zeus 2022<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTC.LoginPageTextValidation_TC17@436813f3</td></tr>
+</table><p>
+</body>
+</html>

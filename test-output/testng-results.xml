@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Browser Launch ]]>
+    </line>
+    <line>
+      <![CDATA[Valid Username Entered]]>
+    </line>
+    <line>
+      <![CDATA[Valid Password Entered]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Dashboard button]]>
+    </line>
+    <line>
+      <![CDATA[Select the Falk Tours AG from given list]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on proceed button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on offer calculationList]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on offer calculation]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on FalkToursAG]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on TchiboDE]]>
+    </line>
+    <line>
+      <![CDATA[clicked on testNg in calaculation page]]>
+    </line>
+    <line>
+      <![CDATA[clicked on Room1]]>
+    </line>
+    <line>
+      <![CDATA[send DB% Value]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on save setting button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on SaveandCalculate button]]>
+    </line>
+    <line>
+      <![CDATA[click on Yes button in popup]]>
+    </line>
+    <line>
+      <![CDATA[click on transfer price]]>
+    </line>
+    <line>
+      <![CDATA[clicked on Transfer price online]]>
+    </line>
+    <line>
+      <![CDATA[clicked on TESTING option in TichiboDE after saving of calculation]]>
+    </line>
+    <line>
+      <![CDATA[click on Room1]]>
+    </line>
+    <line>
+      <![CDATA[clicked on save price]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on sales dropdown in Dashboard]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on sales Booking in Dashboard]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on create Button in sales Booking page]]>
+    </line>
+    <line>
+      <![CDATA[Select TFT1 in TravelType dropdownList]]>
+    </line>
+    <line>
+      <![CDATA[Selected HK001 - (TESTING) from dropdown list]]>
+    </line>
+    <line>
+      <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
+    </line>
+    <line>
+      <![CDATA[Send number of passenger]]>
+    </line>
+    <line>
+      <![CDATA[Send correct KOS in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send correct ProductCode in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send roomcode in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send correct boardName]]>
+    </line>
+    <line>
+      <![CDATA[Send Occupancy]]>
+    </line>
+    <line>
+      <![CDATA[Send bookinglines ]]>
+    </line>
+    <line>
+      <![CDATA[Send Travel from date]]>
+    </line>
+    <line>
+      <![CDATA[Send Travel To date]]>
+    </line>
+    <line>
+      <![CDATA[Select Number of passenger]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on sendbookingButton]]>
+    </line>
+    <line>
+      <![CDATA[Validating Actual message Der angefragte Zeitraum liegt außerhalb der Vertragslaufzeit.                                                                                                                                                                                                                                                                    and Expected message Der angefragte Zeitraum liegt außerhalb der Vertragslaufzeit.                                                                                                                                                                                                                                                                   ]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on Logout Button in Booking Mask page]]>
+    </line>
+    <line>
+      <![CDATA[Logout from Booking Mask Page]]>
+    </line>
+    <line>
+      <![CDATA[Closing Browser]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-11-26T15:25:58 IST" name="Default suite" finished-at="2022-11-26T15:27:59 IST" duration-ms="121099">
+    <groups>
+    </groups>
+    <test started-at="2022-11-26T15:25:58 IST" name="Default test" finished-at="2022-11-26T15:27:59 IST" duration-ms="121099">
+      <class name="BookingMaskTC.TCC12">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:BookingMaskTC.TCC12@4466af20]" started-at="2022-11-26T15:25:58 IST" name="launchBrowser" finished-at="2022-11-26T15:26:05 IST" duration-ms="7266" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Launch ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:BookingMaskTC.TCC12@4466af20]" started-at="2022-11-26T15:26:05 IST" name="loginToApp" finished-at="2022-11-26T15:27:53 IST" duration-ms="107686" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Valid Username Entered]]>
+            </line>
+            <line>
+              <![CDATA[Valid Password Entered]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Dashboard button]]>
+            </line>
+            <line>
+              <![CDATA[Select the Falk Tours AG from given list]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on proceed button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on offer calculationList]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on offer calculation]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on FalkToursAG]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on TchiboDE]]>
+            </line>
+            <line>
+              <![CDATA[clicked on testNg in calaculation page]]>
+            </line>
+            <line>
+              <![CDATA[clicked on Room1]]>
+            </line>
+            <line>
+              <![CDATA[send DB% Value]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on save setting button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on SaveandCalculate button]]>
+            </line>
+            <line>
+              <![CDATA[click on Yes button in popup]]>
+            </line>
+            <line>
+              <![CDATA[click on transfer price]]>
+            </line>
+            <line>
+              <![CDATA[clicked on Transfer price online]]>
+            </line>
+            <line>
+              <![CDATA[clicked on TESTING option in TichiboDE after saving of calculation]]>
+            </line>
+            <line>
+              <![CDATA[click on Room1]]>
+            </line>
+            <line>
+              <![CDATA[clicked on save price]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on sales dropdown in Dashboard]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on sales Booking in Dashboard]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on create Button in sales Booking page]]>
+            </line>
+            <line>
+              <![CDATA[Select TFT1 in TravelType dropdownList]]>
+            </line>
+            <line>
+              <![CDATA[Selected HK001 - (TESTING) from dropdown list]]>
+            </line>
+            <line>
+              <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
+            </line>
+            <line>
+              <![CDATA[Send number of passenger]]>
+            </line>
+            <line>
+              <![CDATA[Send correct KOS in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send correct ProductCode in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send roomcode in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send correct boardName]]>
+            </line>
+            <line>
+              <![CDATA[Send Occupancy]]>
+            </line>
+            <line>
+              <![CDATA[Send bookinglines ]]>
+            </line>
+            <line>
+              <![CDATA[Send Travel from date]]>
+            </line>
+            <line>
+              <![CDATA[Send Travel To date]]>
+            </line>
+            <line>
+              <![CDATA[Select Number of passenger]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on sendbookingButton]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="validatePriceFieldWithBookingInquiry()[pri:0, instance:BookingMaskTC.TCC12@4466af20]" started-at="2022-11-26T15:27:53 IST" name="validatePriceFieldWithBookingInquiry" finished-at="2022-11-26T15:27:53 IST" duration-ms="475" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Validating Actual message Der angefragte Zeitraum liegt außerhalb der Vertragslaufzeit.                                                                                                                                                                                                                                                                    and Expected message Der angefragte Zeitraum liegt außerhalb der Vertragslaufzeit.                                                                                                                                                                                                                                                                   ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validatePriceFieldWithBookingInquiry -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:BookingMaskTC.TCC12@4466af20]" started-at="2022-11-26T15:27:53 IST" name="Logout" finished-at="2022-11-26T15:27:59 IST" duration-ms="5438" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicking on Logout Button in Booking Mask page]]>
+            </line>
+            <line>
+              <![CDATA[Logout from Booking Mask Page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:BookingMaskTC.TCC12@4466af20]" started-at="2022-11-26T15:27:59 IST" name="closeBrowser" finished-at="2022-11-26T15:27:59 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- BookingMaskTC.TCC12 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

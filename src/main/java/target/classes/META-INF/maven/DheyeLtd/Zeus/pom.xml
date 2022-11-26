@@ -1,0 +1,11 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>DheyeLtd</groupId>
+  <artifactId> Zeus</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Traveleague</name>
+  <description>Traveleague is a Travel Tech Tour Operator which provide a web application to their 
+Customers, Hotels and Travel Agencies for booking Accommodations, Flights, Insurance, Round 
+Trip and Special Service. Currently only Booking of Accommodations is implemented, and 
+other services are yet to be implemented.</description>
+</project>
