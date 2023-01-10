@@ -61,8 +61,7 @@ public class DashboardValidation_TC02 extends baseClass {
 		  String ActualTtext= dash.getActualTextOnDashboard();
 		  String expectedText = utilityClass.readDataFromStringExcel(2, 2, "Sheet1");
 		  Assert.assertEquals(expectedText, ActualTtext,"Test case Failed as Actual and expected Text are not matching");
-		  Reporter.log("Validating actual "+dash.getActualTextOnDashboard()+" and Expected Text "+utilityClass.readDataFromStringExcel(2, 2, "Sheet1"),true);
-		  utilityClass.screenshot(driver, "ValidUserNameAndValidPasswordEnterToDashboardPageTest");
+		  Reporter.log("Validating actual Text "+dash.getActualTextOnDashboard()+" and Expected Text "+utilityClass.readDataFromStringExcel(2, 2, "Sheet1"),true);
 	  }
 	  
 	  @AfterMethod

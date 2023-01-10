@@ -44,7 +44,7 @@ public class recoveryPasswordPageValidation_TC24 extends baseClass {
 	  String ActualMsgCopyRight = email.getTextCopyright();
 	  String expectedMsgCopyRight = utilityClass.readDataFromStringExcel(14, 2, "Sheet1");
 	  Assert.assertEquals(expectedMsgCopyRight, ActualMsgCopyRight,"Test case Failed as expectedMsg and actualMsg are not matching");
-	  Reporter.log("Validating actual "+email.getTextCopyright()+" and Expected Message "+utilityClass.readDataFromStringExcel(13, 2, "Sheet1"),true); 
+	  Reporter.log("Validating actual Text"+email.getTextCopyright()+" and Expected Text "+utilityClass.readDataFromStringExcel(14, 2, "Sheet1"),true); 
   }
   
   @AfterClass 

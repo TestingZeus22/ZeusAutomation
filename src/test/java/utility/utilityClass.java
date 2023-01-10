@@ -83,7 +83,7 @@ import Base.baseClass;
 	{
 		WebDriverWait w = new WebDriverWait(driver,Duration.ofMillis(timeSec));
 		w.until(ExpectedConditions.elementToBeClickable(element));
-	}
+	} 
 	
 	public static void explicitWaitInSecTillSelected(int timeSec, WebElement element)
 	{

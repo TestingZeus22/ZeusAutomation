@@ -86,19 +86,16 @@ public class calculationSettingPage {
 	}
 
 	public void clickOnBlock1()
-	
 	{
 		block1.click();
 	}
 	
 	public void clickOnRoom1()
-	
 	{
 		room1.click();
 	}
 	
 	public void clickOnsavePrice()
-	
 	{
 		savePrice.click();
 	}

@@ -26,17 +26,9 @@ public class contractsPage {
 	@FindBy (id ="boardbasis") private WebElement boardbasisDropDown;
 	@FindBy (id ="price") private WebElement priceDropdownNetGross;
 	
-   // Distributor selection x
 	@FindBy (id ="companyids") private WebElement multiselectDropdown;
-	
-	
-	
-	
 	@FindBy (id ="steeringopt") private WebElement onlineOfflineDropdown;
 	@FindBy (id ="sterringinfo") private WebElement informationField;
-	
-	//competitors field xpath pending
-	
 	
 	@FindBy (id ="mcamount") private WebElement marketingContributionAmountField;
 	@FindBy (id ="mccurrencyid") private WebElement marketingContributionCurrencyDropdown;

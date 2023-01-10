@@ -21,6 +21,7 @@ public class baseClass {
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\rohan.patil\\Jar files\\chromedriver.exe");
 		driver = new ChromeDriver();
+		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.get("https://zeuscloud.azurewebsites.net/Index?Status=SE");
 		utilityClass.implicitlyWaitInMillis(1000);

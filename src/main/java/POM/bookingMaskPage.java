@@ -12,6 +12,7 @@ public class bookingMaskPage {
 	@FindBy (xpath ="//a[@class='btn-pill btn-shadow btn-shine btn btn-focus']") private WebElement logoutOnBookingMask;
 	
 	@FindBy (xpath = "//a[text()='SalesBooking']") private WebElement salesBookingClick;
+	@FindBy (xpath = "//a[@class='btn-shadow btn btn-success']") private WebElement viewList;
 	
 	@FindBy (id ="SalesHeader_Tbmcode") private WebElement productCodeDropDown;
 	@FindBy (id ="SalesHeader_Room") private WebElement roomCodeDropDown;
@@ -26,7 +27,7 @@ public class bookingMaskPage {
 	@FindBy (id="SalesBookingHeaderNewModel_BookingAction") private WebElement bookingActionField;
 	@FindBy (id="SalesBookingHeaderNewModel_CompanyID") private WebElement companyIDDropDown;
 	@FindBy (id="SalesBookingHeaderNewModel_TravelTypeID") private WebElement TravelTypeDropDown;
-	@FindBy(id="SalesBookingHeaderNewModel_NoOfPax") private WebElement NOofPaxclear;
+	@FindBy (id="SalesBookingHeaderNewModel_NoOfPax") private WebElement NOofPaxclear;
 	@FindBy (id="SalesBookingHeaderNewModel_NoOfPax") private WebElement noOfPaxField;
 	@FindBy (id="SalesBookingHeaderNewModel_ReservationNo") private WebElement reservationNoField;
 	
@@ -42,7 +43,10 @@ public class bookingMaskPage {
 	@FindBy (id="bookinglines_TBMCodeID_2") private WebElement productCode1;
 	@FindBy (id="bookinglines_RoomID_2") private WebElement roomCode1;
 	@FindBy (id="bookinglines_BoardTypeID_2") private WebElement board1;
+	@FindBy (id="bookinglines_Occupancy_2") private WebElement clearoccupancy1;
 	@FindBy (id="bookinglines_Occupancy_2") private WebElement occupancy1;
+	@FindBy (id="bookinglines_Occupancy_1") private WebElement clearoccupancyAtBookingUpdate;
+	@FindBy (id="bookinglines_Occupancy_1") private WebElement occupancyAtBookingUpdate;
 	@FindBy (id="bookinglines_No_2") private WebElement totalPax1;
 	@FindBy (id="bookinglines_TravelFrom_2") private WebElement travelFrom1;
 	@FindBy (id="bookinglines_TravelTo_2") private WebElement travelTo1;
@@ -60,7 +64,8 @@ public class bookingMaskPage {
 	@FindBy (id="bookinglines_TravelFrom_3") private WebElement travelFrom2;
 	@FindBy (id="bookinglines_TravelTo_3") private WebElement travelTo2;
 	@FindBy (id="bookinglines_PassengerNo_3") private WebElement passengers2;
-	@FindBy (xpath ="(//i[@class='pe-7s-trash btn-icon-wrapper'])[2]") private WebElement deleteButton2;
+	@FindBy (id="bookinglines_Price_2") private WebElement PriceFieldValue2;
+	@FindBy (xpath="(//i[@class='pe-7s-trash btn-icon-wrapper'])[2]") private WebElement deleteButton2;
 	
 	@FindBy (id ="bookinglines_Selected_4") private WebElement bookingDataCheckBox3;
 	@FindBy (id="bookinglines_Ancilaries_4") private WebElement kOS3;
@@ -72,6 +77,7 @@ public class bookingMaskPage {
 	@FindBy (id="bookinglines_TravelFrom_4") private WebElement travelFrom3;
 	@FindBy (id="bookinglines_TravelTo_4") private WebElement travelTo3;
 	@FindBy (id="bookinglines_PassengerNo_4") private WebElement passengers3;
+	@FindBy (id="bookinglines_Price_3") private WebElement PriceFieldValue3;
 	@FindBy (xpath ="(//i[@class='pe-7s-trash btn-icon-wrapper'])[3]") private WebElement deleteButton3;
 	
 	@FindBy (id="bookinglines_Selected_5") private WebElement bookingDataCheckBox4;
@@ -87,6 +93,7 @@ public class bookingMaskPage {
 	@FindBy (xpath ="(//i[@class='pe-7s-trash btn-icon-wrapper'])[4]") private WebElement deleteButton4;
 	
 	@FindBy (id="SalesBookingHeaderNewModel_Gender") private WebElement titleGenderDropDown;
+	@FindBy (id="SalesBookingHeaderNewModel_TotalPrice") private WebElement totalPrice;
 	
 	@FindBy (id="LastName_New") private WebElement lastNameField;
 	
@@ -101,13 +108,26 @@ public class bookingMaskPage {
 	
 	@FindBy(id="Phone_New") private WebElement phoneField;
 	
+	@FindBy(id="Moblie_New") private WebElement mobileField;
+	
 	@FindBy(id="Email_New") private WebElement emailField;
 	
+	@FindBy(id="SalesBookingHeaderNewModel_LanguageID") private WebElement languageDropdown;
 	
 	@FindBy(id="swal2-content") private WebElement travelFromAndToPopUp;
 	@FindBy(id="swal2-content") private WebElement travelFromDateLessThanTravelToDatePopUp;
-	@FindBy(xpath="//textarea[@id='SalesBookingHeaderNewModel_ResponseInformationMessage']") private WebElement travelToDateOutOfContractDateNotification;
+	@FindBy(xpath="(//div[@id='div_SalesBookingLinePartial']//textarea)") private WebElement travelToDateOutOfContractDateNotification;
+	@FindBy(xpath="(//div[@id='div_SalesBookingLinePartial']//textarea)") private WebElement travelbothDateOutOfContract;
 	
+	@FindBy(xpath="(//div[@id='div_SalesBookingLinePartial']//textarea)") private WebElement invalidTravelDurationMsg;
+	@FindBy(xpath="(//div[@id='div_SalesBookingLinePartial']//textarea)") private WebElement seasonPricenotbelongToTableMsg;
+	@FindBy(xpath="(//div[@id='div_SalesBookingLinePartial']//textarea)") private WebElement multisalesLinesBookingErrorMsgWithValidStay;
+	@FindBy(xpath="(//div[@id='div_SalesBookingLinePartial']//textarea)") private WebElement multisalesLinesBookingErrorMsgWithExceedMaxStay;
+	@FindBy(xpath="(//div[@id='div_SalesBookingLinePartial']//textarea)") private WebElement invalidTravelDurationNoPriceInfoMsg;
+	
+	@FindBy (id="SalesBookingHeaderNewModel_ReservationNo") private WebElement reserNO;
+	@FindBy (id="SalesBookingHeaderNewModel_ReservationVersion") private WebElement reserVER;
+
 	
 	public bookingMaskPage(WebDriver driver)
 	{
@@ -141,6 +161,10 @@ public class bookingMaskPage {
 		salesBookingClick.click();
 	}
 	
+	public void clickOnViewList()
+	{
+		viewList.click();
+	}
 	
 	public WebElement roomCodeDropDownMethod()
 	{
@@ -169,7 +193,7 @@ public class bookingMaskPage {
 		externalReservationNumberField.sendKeys(ExternalReservation);
 	}
 
-	public void bookingActionFieldclear()
+	public void ClearbookingActionfield()
 	{
 		bookingActionFieldclear.clear();
 	}
@@ -177,6 +201,13 @@ public class bookingMaskPage {
 	public void sendBookingAction(String BookingAction)
 	{
 		bookingActionField.sendKeys(BookingAction);
+	}
+	
+	public String getBookingActionFieldValue()
+	
+	{
+		String actualText = bookingActionField.getText();
+		return actualText;
 	}
 	
 	public WebElement companyIDDropDownMethod()
@@ -262,13 +293,34 @@ public class bookingMaskPage {
 		roomCode1.sendKeys(room);
 	}
 	
+	public void clearRoomCode()
+	{
+		roomCode1.clear();
+	}
+	
 	public void sendBoard(String Board)
 	{
 		board1.sendKeys(Board);
 	}
+	
 	public void sendOccupancy(String Occupancy)
 	{
 		occupancy1.sendKeys(Occupancy);
+	}
+	
+	public void clearoccupancy()
+	{
+		clearoccupancy1.clear();
+	}
+	
+	public void sendoccupancyAtBookingUpdate(String OCC)
+	{
+		occupancyAtBookingUpdate.sendKeys(OCC);
+	}
+	
+	public void clearoccupancyAtBookingUpdate()
+	{
+		clearoccupancyAtBookingUpdate.clear();
 	}
 	
 	public void sendTotalPax(String TotalPAX)
@@ -320,7 +372,11 @@ public class bookingMaskPage {
 	{
 		roomCode2.sendKeys(Roomcode);
 	}
-	
+	public void clearRoomCode2()
+	{
+		roomCode2.clear();
+	}
+
 	public void sendBoard2(String Board)
 	{
 		board2.sendKeys(Board);
@@ -351,6 +407,12 @@ public class bookingMaskPage {
 	{
 	passengers2.sendKeys(Passenger);
 	}
+	
+	public String getPriceFieldValue2(String value2)
+	{
+		String actualText = PriceFieldValue2.getAttribute(value2);
+		return actualText;
+	}
 
 	public void clickOnDeleteButton2()
 	{
@@ -374,6 +436,11 @@ public class bookingMaskPage {
 	public void sendRoomCode3(String Roomcode)
 	{
 		roomCode3.sendKeys(Roomcode);
+	}
+	
+	public void clearRoomCode3(String RoomcodeClear)
+	{
+		roomCode3.clear();
 	}
 	
 	public void sendBoard3(String Board)
@@ -403,6 +470,12 @@ public class bookingMaskPage {
 	public void sendPassenger3(String Passenger)
 	{
 	passengers3.sendKeys(Passenger);
+	}
+	
+	public String getPriceFieldValue3(String value1)
+	{
+		String actualText = PriceFieldValue3.getAttribute(value1);
+		return actualText;
 	}
 	
 	public void clickOnDeleteButton3()
@@ -471,9 +544,21 @@ public class bookingMaskPage {
 		return Element;
 	}
 	
+	public String getTotalPrice(String price)
+	{
+		String actualText = totalPrice.getAttribute(price);
+		return actualText;
+	}
+	
 	public void sendLastName(String LastNAME)
 	{
 		lastNameField.sendKeys(LastNAME);
+	}
+	
+	public String getLastName()
+	{
+		String actualText = lastNameField.getText();
+		return actualText;
 	}
 	
 	public void sendFirstName(String FirstNAME)
@@ -510,9 +595,20 @@ public class bookingMaskPage {
 		phoneField.sendKeys(Phone);
 	}
 	
+	public void sendMobileNum(String Mobile)
+	{
+		mobileField.sendKeys(Mobile);
+	}
+	
 	public void sendEmail(String Email)
 	{
 		emailField.sendKeys(Email);
+	}
+	
+	public WebElement listBoxLanguage()
+	{
+		WebElement Element = languageDropdown;
+		return Element;
 	}
 	
 	public String getTravelFromAndToPopUpMsg()
@@ -533,24 +629,52 @@ public class bookingMaskPage {
 		return actualText;
 	}
 	
+	public String getTravelbothDateOutOfContractDateNotification()
+	{
+		String actual = travelbothDateOutOfContract.getText();
+		return actual;
+	}
 	
+	public String getInvalidTravelDurationMsg()
+	{
+		String actualText = invalidTravelDurationMsg.getText();
+		return actualText;
+	}
 	
+	public String getseasonPriceNotbelongToTableMsg()
+	{
+		String actualText = seasonPricenotbelongToTableMsg.getText();
+		return actualText;
+	}
 	
+	public String getmultisalesLinesBookingErrorMsgwithValidStay()
+	{
+		String actualText = multisalesLinesBookingErrorMsgWithValidStay.getText();
+		return actualText;
+	}
 	
+	public String getMultisalesLinesBookingErrorMsgWithExceedMaxStay()
+	{
+		String actualText = multisalesLinesBookingErrorMsgWithExceedMaxStay.getText();
+		return actualText;
+	}
 	
+	public String getInvalidTravelDurationNoPriceInfoMsg()
+	{
+		String actualText = invalidTravelDurationNoPriceInfoMsg.getText();
+		return actualText;
+	}
 	
+	public String getReservationNoBM(String RNO)
+	{
+		String actualText = reserNO.getAttribute(RNO);
+		return actualText;
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	public String getReservationVerNoBM(String RVer)
+	{
+		String actualText = reserVER.getAttribute(RVer);
+		return actualText;
+	}
+		
 }

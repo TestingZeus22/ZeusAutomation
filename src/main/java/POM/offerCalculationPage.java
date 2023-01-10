@@ -8,9 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 public class offerCalculationPage {
 
 	
-	@FindBy (xpath= "//span[text()='Falk Tours AG']") private WebElement FalkToursAG;
+	@FindBy (xpath = "//span[text()='Falk Tours AG']") private WebElement FalkToursAG;
 	@FindBy (xpath = "//span[text()='Tchibo DE']") private WebElement TchiboDE;
 	@FindBy (xpath = "//span[text()='Tchibo AT']") private WebElement TchiboAT;
+	
 	@FindBy (xpath = "//span[text()='Netto']") private WebElement Netto;
 	@FindBy (xpath = "//span[text()='Falk Travel öffentlich']") private WebElement FalkTravelöffentlich;
 	@FindBy (xpath = "//span[text()='Example B2B Agency']") private WebElement ExampleB2BAgency;
@@ -28,8 +29,6 @@ public class offerCalculationPage {
 	@FindBy (xpath= "//span[text()='Reisefalke']") private WebElement Reisefalke;
 	@FindBy (xpath= "//span[text()='Lidl AT']") private WebElement LidlAT;
 	@FindBy (xpath= "//span[text()='Lidl DE']") private WebElement LidlDE;
-	
-	
 	
 	
 	public offerCalculationPage(WebDriver driver)

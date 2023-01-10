@@ -23,7 +23,6 @@ public class RecoveryPasswordClickValidation_TC08 extends baseClass {
 	recoverPasswordPage email;
 	File myFile;
 	
-	
 	@BeforeClass
 	public void launchBrowser(){
 		openApplication();
