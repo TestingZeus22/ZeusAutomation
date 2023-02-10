@@ -1,6 +1,7 @@
 package utility;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 
@@ -25,6 +26,7 @@ import Base.baseClass;
 	
 	public static String readDataFromStringExcel(int rowNum, int cellNum, String SheetName) throws EncryptedDocumentException, IOException
 	{
+		//FileInputStream File =new FileInputStream(System.getProperty("user.dir")+"\\TestData\\data.xlsx");
 		File myfile = new File("C:\\Users\\rohan.patil\\Jar files\\data.xlsx");
 		String value=WorkbookFactory.create(myfile).getSheet(SheetName).getRow(rowNum).getCell(cellNum).getStringCellValue();
 		return value;	
@@ -39,9 +41,9 @@ import Base.baseClass;
 	
 	public static boolean readDataFromBooleanExcel(int rowNum, int cellNum, String SheetName) throws EncryptedDocumentException, IOException
 	{
-	File myfile = new File("C:\\Users\\rohan.patil\\Jar files\\data.xlsx");
-	boolean value=WorkbookFactory.create(myfile).getSheet(SheetName).getRow(rowNum).getCell(cellNum).getBooleanCellValue();
-	return value;	
+		File myfile = new File("C:\\Users\\rohan.patil\\Jar files\\data.xlsx");
+		boolean value=WorkbookFactory.create(myfile).getSheet(SheetName).getRow(rowNum).getCell(cellNum).getBooleanCellValue();
+		return value;	
 	}
 
 	public static void screenshot(WebDriver driver, String TCNO1) throws IOException
@@ -154,6 +156,14 @@ import Base.baseClass;
 		{
 		S.deselectAll();
 		}
+	}
+	
+	public static void clickUsingJSE (WebElement ElementName)
+	{
+		JavascriptExecutor JSE = (JavascriptExecutor)driver;
+		JSE.executeScript("arguments[0].click();", ElementName);
 		
 	}
-}
+		
+	}
+

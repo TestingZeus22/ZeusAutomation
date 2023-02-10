@@ -31,7 +31,7 @@
 		salesBookingListPage salesBookingList;
 	    bookingMaskPage BookingMask;
 		accommodationListPage accommdationList;
-		String abc;
+		String ActualNo;
 		String ResNo;
 		String ResVer;
 		String SalesBookingNo;
@@ -94,7 +94,7 @@
 	    		utilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		
-	    		Thread.sleep(1000);
+	    		Thread.sleep(1500);
 	    		
 	    		utilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
 	    		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
@@ -181,7 +181,6 @@
 	    		driver.findElement(By.id("bookinglines_PassengerNo_3")).sendKeys("1-2");
 	    		Reporter.log("Select Number of passenger",true);
 	    		
-	    	   	
 	    		BookingMask.sendKOS3(utilityClass.readDataFromStringExcel(4, 3, "Sheet3"));
 	    		Reporter.log("Send correct KOS in input field",true);
 	    		utilityClass.implicitlyWaitInMillis(1000);
@@ -241,7 +240,7 @@
 		        String ResNo=BookingMask.getReservationNoBM("value");
 		        String ResVer=BookingMask.getReservationVerNoBM("value");
 		        String ActualReservNo= ResNo + ("/"+ResVer);
-		        abc=ActualReservNo;
+		        ActualNo=ActualReservNo;
 	       
 			   	 String ActualPrice1 = BookingMask.getPriceFieldValue1("value");
 				 roomPrice1=ActualPrice1;
@@ -275,24 +274,24 @@
 	  
 	   {
 		   	String ExpectedReservationNo = salesBookingList.getSalesBookingColumn1();
-			Assert.assertEquals(abc, ExpectedReservationNo,"Test Case Failed as actual & expected ReservationNo are not matching");
-			Reporter.log("Validating Actual ReservationNo "+abc+" and Expected ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);
+			Assert.assertEquals(ActualNo, ExpectedReservationNo,"Test Case Failed as actual & expected ReservationNo are not matching");
+			Reporter.log("Validating Actual ReservationNo "+ActualNo+" and Expected ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);
 			String expectedPrice1 = utilityClass.readDataFromStringExcel(18, 1, "Sheet3");
 			Assert.assertEquals(roomPrice1, expectedPrice1,"Test Case Failed as actual & expected Price are not matching");
-			Reporter.log("Validating Actual price for Room1 for 4 days is "+roomPrice1+" and Expected Price for Room1 for 4 days is "+utilityClass.readDataFromStringExcel(18, 1, "Sheet3"),true);
+			Reporter.log("Validating Actual price for Room1 for 5 days is "+roomPrice1+" and Expected Price for Room1 for 5 days is "+utilityClass.readDataFromStringExcel(18, 1, "Sheet3"),true);
 			String expectedPrice2 = utilityClass.readDataFromStringExcel(18, 2, "Sheet3");
 			Assert.assertEquals(roomPrice2, expectedPrice2,"Test Case Failed as actual & expected Price are not matching");
-			Reporter.log("Validating Actual price for Room2 for 4 days is "+roomPrice2+" and Expected Price for Room2 for 4 days is "+utilityClass.readDataFromStringExcel(18, 2, "Sheet3"),true); 
+			Reporter.log("Validating Actual price for Room2 for 5 days is "+roomPrice2+" and Expected Price for Room2 for 5 days is "+utilityClass.readDataFromStringExcel(18, 2, "Sheet3"),true); 
 			String expectedPrice3 = utilityClass.readDataFromStringExcel(18, 3, "Sheet3");
 			Assert.assertEquals(roomPrice3, expectedPrice3,"Test Case Failed as actual & expected Price are not matching");
-			Reporter.log("Validating Actual price for Room3 for 4 days is "+roomPrice3+" and Expected Price for Room3 for 4 days is "+utilityClass.readDataFromStringExcel(18, 3, "Sheet3"),true);   
+			Reporter.log("Validating Actual price for Room3 for 5 days is "+roomPrice3+" and Expected Price for Room3 for 5 days is "+utilityClass.readDataFromStringExcel(18, 3, "Sheet3"),true);   
 	   }
 	   
 	   @AfterMethod
 	   public void Logout() throws InterruptedException
 	   {
-	     Thread.sleep(3000);
-	     BookingMask.ClickOnLogoutButtonOFBookingMask();
+	      Thread.sleep(3000);
+	      BookingMask.ClickOnLogoutButtonOFBookingMask();
 		  Reporter.log("Clicking on Logout Button in Booking Mask page",true);
 		  Thread.sleep(500);
 		  BookingMask.logoutClickOFBookingMask();

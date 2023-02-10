@@ -100,10 +100,10 @@ public class createBA extends baseClass {
 		ac.moveToElement(master).click().build().perform();
 		Reporter.log("Clicked on Master dropdown in dashboard page",true);	
         Thread.sleep(1000);
-        dashboard.clickOnTbm();
+        dashboard.ClickOnTBM();
         Reporter.log("Clicked on TBM dropdown",true);	
         Thread.sleep(500);
-        dashboard.clickOnTbmCode();
+        dashboard.ClickOnTbmCode();
         Reporter.log("Clicked on TBM code",true);	
         Thread.sleep(1000);
         tbmMaster.clickOncreateButtoninTbmMaster();

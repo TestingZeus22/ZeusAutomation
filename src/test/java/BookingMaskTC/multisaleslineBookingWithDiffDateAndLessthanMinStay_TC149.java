@@ -169,7 +169,6 @@
 	    		driver.findElement(By.id("bookinglines_PassengerNo_3")).sendKeys("1-2");
 	    		Reporter.log("Select Number of passenger",true);
 	    		
-	    	   	
 	    		BookingMask.sendKOS3(utilityClass.readDataFromStringExcel(4, 3, "Sheet3"));
 	    		Reporter.log("Send correct KOS in input field",true);
 	    		utilityClass.implicitlyWaitInMillis(1000);

@@ -41,7 +41,7 @@ public class ValidateRecoverPwdLinkTC_20 extends baseClass {
     {
 	  String ActualLink = login.getRecoverPasswordLink();
 	  String expectedLink =utilityClass.readDataFromStringExcel(11, 2, "Sheet1");
-	  Assert.assertEquals(expectedLink, ActualLink,"Test Case Failed as actual & expected Link are not matching");  
+	  Assert.assertEquals(ActualLink, expectedLink,"Test Case Failed as actual & expected Link are not matching");  
 	  Reporter.log("Validating actual "+login.getRecoverPasswordLink()+" and Expected Text "+utilityClass.readDataFromStringExcel(11, 2, "Sheet1"),true);
      }
   

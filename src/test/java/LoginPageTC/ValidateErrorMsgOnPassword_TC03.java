@@ -55,7 +55,7 @@ import utility.utilityClass;
 	  {
 		 String Actual_Msg = login.getCredentialsInvalidTextOnPasswordField();
 		 String expected_Msg = utilityClass.readDataFromStringExcel(3, 2, "Sheet1");
-		 Assert.assertEquals(expected_Msg, Actual_Msg,"Test case Failed as actual & expected Credential message are not matching");
+		 Assert.assertEquals(Actual_Msg, expected_Msg,"Test case Failed as actual & expected Credential message are not matching");
 		 Reporter.log("Validating actual "+login.getCredentialsInvalidTextOnPasswordField()+" and Expected Text "+utilityClass.readDataFromStringExcel(3, 2, "Sheet1"),true);
 		 utilityClass.screenshot(driver, "CheckIncorrectCredentialsOnPasswordTest");
 	  }

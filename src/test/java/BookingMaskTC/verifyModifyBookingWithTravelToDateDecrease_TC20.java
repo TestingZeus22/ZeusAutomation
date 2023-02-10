@@ -88,7 +88,7 @@ public class verifyModifyBookingWithTravelToDateDecrease_TC20 extends baseClass
 	    		Thread.sleep(1000);
 	    		
 	    		BookingMask.ClearbookingActionfield();
-	    		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(66, 1, "Sheet2"));
+	    		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(280, 1, "Sheet2"));
 	    		
 	    		utilityClass.implicitlyWaitInMillis(1000);
 	    		utilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -97,33 +97,33 @@ public class verifyModifyBookingWithTravelToDateDecrease_TC20 extends baseClass
 	    		BookingMask.clearNoOfPax();
 	    		utilityClass.implicitlyWaitInMillis(1000);
 	    		
-	    		BookingMask.sendNoOfPax(utilityClass.readDataFromStringExcel(67, 1, "Sheet2"));
+	    		BookingMask.sendNoOfPax(utilityClass.readDataFromStringExcel(281, 1, "Sheet2"));
 	    		Reporter.log("Send number of passenger",true);
 	    		Thread.sleep(1000);
 	    		
-	    		BookingMask.sendKOS(utilityClass.readDataFromStringExcel(68, 1, "Sheet2"));
+	    		BookingMask.sendKOS(utilityClass.readDataFromStringExcel(282, 1, "Sheet2"));
 	    		Reporter.log("Send correct KOS in input field",true);
 	    		utilityClass.implicitlyWaitInMillis(1000);
-	    		BookingMask.sendproductCode(utilityClass.readDataFromStringExcel(69, 1, "Sheet2"));
+	    		BookingMask.sendproductCode(utilityClass.readDataFromStringExcel(283, 1, "Sheet2"));
 	    		Reporter.log("Send correct ProductCode in input field",true);
 	    		utilityClass.implicitlyWaitInMillis(1000);
 	    		
-	    		BookingMask.sendRoomCode(utilityClass.readDataFromStringExcel(70, 1, "Sheet2"));
+	    		BookingMask.sendRoomCode(utilityClass.readDataFromStringExcel(284, 1, "Sheet2"));
 	    		Reporter.log("Send roomcode in input field",true);
 	    		
-	    		BookingMask.sendBoard(utilityClass.readDataFromStringExcel(71, 1, "Sheet2"));
+	    		BookingMask.sendBoard(utilityClass.readDataFromStringExcel(285, 1, "Sheet2"));
 	    		Reporter.log("Send correct boardName",true);
 	    		
-	    		BookingMask.sendOccupancy(utilityClass.readDataFromStringExcel(72, 1, "Sheet2"));
+	    		BookingMask.sendOccupancy(utilityClass.readDataFromStringExcel(286, 1, "Sheet2"));
 	    		Reporter.log("Send Occupancy",true);
 	    	
-	    		BookingMask.sendTotalPax(utilityClass.readDataFromStringExcel(73, 1, "Sheet2"));
+	    		BookingMask.sendTotalPax(utilityClass.readDataFromStringExcel(287, 1, "Sheet2"));
 	    		Reporter.log("Send bookinglines ",true);
 	    		
-	    		BookingMask.sendTravelFromDate(utilityClass.readDataFromStringExcel(45, 1, "Sheet3"));
+	    		BookingMask.sendTravelFromDate(utilityClass.readDataFromStringExcel(288, 1, "Sheet2"));
 	    		Reporter.log("Send Travel from date From Season-B",true);
 	    		
-	    		BookingMask.sendTravelToDate(utilityClass.readDataFromStringExcel(46, 1, "Sheet3"));
+	    		BookingMask.sendTravelToDate(utilityClass.readDataFromStringExcel(289, 1, "Sheet2"));
 	    		Reporter.log("Send Travel To date From Season-B",true);
 	    		
 	    		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
@@ -162,13 +162,13 @@ public class verifyModifyBookingWithTravelToDateDecrease_TC20 extends baseClass
 				BookingMask.clickOnViewList();
 				Reporter.log("Clicked on ViewList",true);
 		        utilityClass.implicitlyWaitInMillis(8000);
-		        salesBookingList.sendtbmCodes(utilityClass.readDataFromStringExcel(58, 1, "Sheet2"));
+		        salesBookingList.sendtbmCodes(utilityClass.readDataFromStringExcel(283, 1, "Sheet2"));
 		        Reporter.log("Clicked on sendTBMcode to verify booking is done or not",true);
 		        Thread.sleep(2000);
 		        salesBookingList.clickOnbookingListButton();
 		        Reporter.log("Clicked on Booking listButton",true);
 		        Thread.sleep(22000);
-		        salesBookingList.sendtbmCodes(utilityClass.readDataFromStringExcel(58, 1, "Sheet2"));
+		        salesBookingList.sendtbmCodes(utilityClass.readDataFromStringExcel(283, 1, "Sheet2"));
 		        Reporter.log("Send TBM code",true);
 		        Thread.sleep(10000);
 		        salesBookingList.clickOnbookingListButton();
@@ -181,10 +181,10 @@ public class verifyModifyBookingWithTravelToDateDecrease_TC20 extends baseClass
 		        utilityClass.scrollByAxis(0, -500);
 	            utilityClass.implicitlyWaitInMillis(40000);
 	            BookingMask.ClearbookingActionfield();
-	            BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(44, 1, "Sheet3"));
+	            BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(291, 1, "Sheet2"));
 	    		utilityClass.implicitlyWaitInMillis(20000);
 	    		bookingupdate.clearTravelTo1();
-	    		bookingupdate.sendTravelTo1(utilityClass.readDataFromStringExcel(47, 1, "Sheet3"));
+	    		bookingupdate.sendTravelTo1(utilityClass.readDataFromStringExcel(292, 1, "Sheet2"));
 	    		Reporter.log("Send Modifified Travel To date",true);
 	    	
 	    		utilityClass.implicitlyWaitInMillis(10000);
@@ -208,9 +208,9 @@ public class verifyModifyBookingWithTravelToDateDecrease_TC20 extends baseClass
 	    		 public void validatePriceByDecreasingTravelToDate() throws EncryptedDocumentException, IOException 
 	    		 {
 	    		 String ActualPrice = bookingupdate.getPriceFieldValue1("value");
-	    		 String expectedPrice = utilityClass.readDataFromStringExcel(48, 1, "Sheet3");
+	    		 String expectedPrice = utilityClass.readDataFromStringExcel(295, 1, "Sheet2");
 	    		 Assert.assertEquals(ActualPrice, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
-	    		 Reporter.log("Validating Actual price "+bookingupdate.getPriceFieldValue1("value")+" and Expected Price "+utilityClass.readDataFromStringExcel(48, 1, "Sheet3"),true);
+	    		 Reporter.log("Validating Actual price "+bookingupdate.getPriceFieldValue1("value")+" and Expected Price "+utilityClass.readDataFromStringExcel(295, 1, "Sheet2"),true);
 	    		 }
 	    		 
 	    		 @AfterMethod

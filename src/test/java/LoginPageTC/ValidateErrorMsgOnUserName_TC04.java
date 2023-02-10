@@ -49,7 +49,7 @@ public class ValidateErrorMsgOnUserName_TC04 extends baseClass {
 	  {
 		 String Actual_Msg = login.getCredentialsInvalidTextOnUserNameField();
 		 String expected_Msg = utilityClass.readDataFromStringExcel(4, 2, "Sheet1");
-		 Assert.assertEquals(expected_Msg, Actual_Msg,"Test case Failed as actual & expected error Message are not matching");  
+		 Assert.assertEquals(Actual_Msg, expected_Msg,"Test case Failed as actual & expected error Message are not matching");  
 		 Reporter.log("Validating actual "+login.getCredentialsInvalidTextOnUserNameField()+" and Expected Text "+utilityClass.readDataFromStringExcel(4, 2, "Sheet1"),true);
 		 utilityClass.screenshot(driver, "CheckIncorrectCredentialsOnUserNameFieldTest");
 	  }

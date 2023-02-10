@@ -43,7 +43,7 @@ import utility.utilityClass;
 		String ResNo;
 		String ResVer;
 		String SalesBookingNo;
-		String abc;
+		String ActualNo;
 		String roomPrice1;
 		String roomPrice2;
 		String roomPrice3;
@@ -160,7 +160,6 @@ import utility.utilityClass;
 	            utilityClass.scrollByAxis(0, 600);
 	            Thread.sleep(1000);
 	           
-	        	
 	    		BookingMask.sendKOS2(utilityClass.readDataFromStringExcel(4, 2, "Sheet3"));
 	    		Reporter.log("Send correct KOS in input field",true);
 	    		utilityClass.implicitlyWaitInMillis(1000);
@@ -251,7 +250,7 @@ import utility.utilityClass;
 	        String ResNo=BookingMask.getReservationNoBM("value");
 	        String ResVer=BookingMask.getReservationVerNoBM("value");
 	        String ActualReservNo= ResNo + ("/"+ResVer);
-	        abc=ActualReservNo;
+	        ActualNo=ActualReservNo;
        
 	         String ActualPrice1 = BookingMask.getPriceFieldValue1("value");
 			 roomPrice1=ActualPrice1;
@@ -284,8 +283,8 @@ import utility.utilityClass;
 	  
 	   {
 		   	String ExpectedReservationNo = salesBookingList.getSalesBookingColumn1();
-			Assert.assertEquals(abc, ExpectedReservationNo,"Test Case Failed as actual & expected ReservationNo are not matching");
-			Reporter.log("Validating Actual ReservationNo "+abc+" and Expected ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);
+			Assert.assertEquals(ActualNo, ExpectedReservationNo,"Test Case Failed as actual & expected ReservationNo are not matching");
+			Reporter.log("Validating Actual ReservationNo "+ActualNo+" and Expected ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);
 			String expectedPrice1 = utilityClass.readDataFromStringExcel(12, 1, "Sheet3");
 			Assert.assertEquals(roomPrice1, expectedPrice1,"Test Case Failed as actual & expected Price are not matching");
 			Reporter.log("Validating Actual price for Room1 is "+roomPrice1+" and Expected Price for Room1 is "+utilityClass.readDataFromStringExcel(12, 1, "Sheet3"),true);

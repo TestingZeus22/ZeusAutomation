@@ -34,11 +34,6 @@
 	    bookingMaskPage BookingMask;
 		accommodationListPage accommdationList;
 		BookingUpdatePage bookingUpdate;
-	
-		String ResNo;
-		String ResVer;
-		String SalesBookingNo;
-		String abc;
 		
 		@BeforeClass
 		public void launchBrowser(){
@@ -81,12 +76,12 @@
 	    		utilityClass.scrollByAxis(100, 0);
 	    		salesBookingList.clickOncreateButton();
 	    		Reporter.log("Clicked on create Button in sales Booking page",true);
-	    		Thread.sleep(6000);
+	    		Thread.sleep(7000);
 	    		
 	    		utilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		utilityClass.implicitlyWaitInMillis(3000);
-	    		Thread.sleep(1000);
+	    		Thread.sleep(2500);
 	    		
 	    		utilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
 	    		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
@@ -95,7 +90,7 @@
 	    		Thread.sleep(1000);
 	    		
 	    		BookingMask.ClearbookingActionfield();
-	    		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(66, 1, "Sheet2"));
+	    		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(316, 4, "Sheet2"));
 	    		
 	    		utilityClass.implicitlyWaitInMillis(1000);
 	    		utilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -104,34 +99,34 @@
 	    		BookingMask.clearNoOfPax();
 	    		utilityClass.implicitlyWaitInMillis(1000);
 	    		
-	    		BookingMask.sendNoOfPax(utilityClass.readDataFromStringExcel(149, 4, "Sheet2"));
+	    		BookingMask.sendNoOfPax(utilityClass.readDataFromStringExcel(317, 4, "Sheet2"));
 	    		Reporter.log("Send number of passenger",true);
 	    		Thread.sleep(1000);
 	    		
-	    		BookingMask.sendKOS(utilityClass.readDataFromStringExcel(68, 1, "Sheet2"));
+	    		BookingMask.sendKOS(utilityClass.readDataFromStringExcel(318, 4, "Sheet2"));
 	    		Reporter.log("Send correct KOS in input field",true);
 	    		utilityClass.implicitlyWaitInMillis(1000);
 	    		
-	    		BookingMask.sendproductCode(utilityClass.readDataFromStringExcel(69, 1, "Sheet2"));
+	    		BookingMask.sendproductCode(utilityClass.readDataFromStringExcel(319, 4, "Sheet2"));
 	    		Reporter.log("Send correct ProductCode in input field",true);
 	    		utilityClass.implicitlyWaitInMillis(1000);
 	    		
-	    		BookingMask.sendRoomCode(utilityClass.readDataFromStringExcel(70, 1, "Sheet2"));
+	    		BookingMask.sendRoomCode(utilityClass.readDataFromStringExcel(320, 4, "Sheet2"));
 	    		Reporter.log("Send roomcode in input field",true);
 	    		
-	    		BookingMask.sendBoard(utilityClass.readDataFromStringExcel(71, 1, "Sheet2"));
+	    		BookingMask.sendBoard(utilityClass.readDataFromStringExcel(321, 4, "Sheet2"));
 	    		Reporter.log("Send correct boardName",true);
 	    		
-	    		BookingMask.sendOccupancy(utilityClass.readDataFromStringExcel(150, 4, "Sheet2"));
+	    		BookingMask.sendOccupancy(utilityClass.readDataFromStringExcel(322, 4, "Sheet2"));
 	    		Reporter.log("Send Occupancy",true);
 	    	
-	    		BookingMask.sendTotalPax(utilityClass.readDataFromStringExcel(151, 4, "Sheet2"));
+	    		BookingMask.sendTotalPax(utilityClass.readDataFromStringExcel(323, 4, "Sheet2"));
 	    		Reporter.log("Send bookinglines ",true);
 	    		
-	    		BookingMask.sendTravelFromDate(utilityClass.readDataFromStringExcel(81, 1, "Sheet2"));
+	    		BookingMask.sendTravelFromDate(utilityClass.readDataFromStringExcel(324, 4, "Sheet2"));
 	    		Reporter.log("Send Travel from date for Season-C",true);
 	    		
-	    		BookingMask.sendTravelToDate(utilityClass.readDataFromStringExcel(82, 1, "Sheet2"));
+	    		BookingMask.sendTravelToDate(utilityClass.readDataFromStringExcel(325, 4, "Sheet2"));
 	    		Reporter.log("Send Travel To date for Season-C",true);
 	    		
 	    		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-5");
@@ -156,8 +151,8 @@
 				Thread.sleep(500);
 				BookingMask.sendEmail(utilityClass.readDataFromStringExcel(105, 4, "Sheet2"));
 
-				utilityClass.scrollByAxis(0, 900);
-				utilityClass.implicitlyWaitInMillis(20000);
+				Thread.sleep(8000);
+				utilityClass.implicitlyWaitInsec(70);
 	            try {
 	            	WebElement sendButton = driver.findElement(By.id("sendbooking"));
 					JavascriptExecutor executor = (JavascriptExecutor)driver;
@@ -166,7 +161,10 @@
 	            	
 				} catch (Exception e) {
 				}
-	            utilityClass.implicitlyWaitInMillis(40000);
+//				utilityClass.scrollByAxis(0, 900);
+//				utilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
+//	            utilityClass.implicitlyWaitInsec(70);
+	            Thread.sleep(12000);
 		  }
 	
 	   @Test
@@ -174,9 +172,9 @@
 	  
 	       {
 		   	  String ActualPrice = bookingUpdate.getPriceFieldValue1("value");
-			  String expectedPrice = utilityClass.readDataFromStringExcel(153, 4, "Sheet2");
+			  String expectedPrice = utilityClass.readDataFromStringExcel(327, 4, "Sheet2");
 			  Assert.assertEquals(ActualPrice, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
-			  Reporter.log("Validating Actual price "+bookingUpdate.getPriceFieldValue1("value")+" and Expected Price "+utilityClass.readDataFromStringExcel(153, 4, "Sheet2"),true);
+			  Reporter.log("Validating Actual price "+bookingUpdate.getPriceFieldValue1("value")+" and Expected Price "+utilityClass.readDataFromStringExcel(327, 4, "Sheet2"),true);
 		    }
 	   
 	   @AfterMethod

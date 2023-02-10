@@ -54,7 +54,7 @@ public class LoginValidation_TC01 extends baseClass
   {
 	  String actualText = select.getActualText();
 	  String expectedText = utilityClass.readDataFromStringExcel(1, 2,"Sheet1");
-	  Assert.assertEquals(expectedText, actualText,"Test case Failed as actual & expected Text are not matching");
+	  Assert.assertEquals(actualText, expectedText,"Test case Failed as actual & expected Text are not matching");
 	  Reporter.log("Validating actual "+select.getActualText()+" and Expected Text "+utilityClass.readDataFromStringExcel(1, 2, "Sheet1"),true);
   }
   

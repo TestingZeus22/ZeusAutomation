@@ -33,10 +33,8 @@ public class roomDetailsPage
 
 @FindBy (id ="btn_RoomCreate") private WebElement createRoomButton;
 
-
 	
 	public roomDetailsPage(WebDriver driver)
-	
 	{
 		PageFactory.initElements(driver, this);
 	}

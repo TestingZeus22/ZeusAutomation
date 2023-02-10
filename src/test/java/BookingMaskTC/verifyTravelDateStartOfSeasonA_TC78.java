@@ -81,37 +81,38 @@ public class verifyTravelDateStartOfSeasonA_TC78 extends baseClass {
     		utilityClass.implicitlyWaitInMillis(1000);
     		utilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
     		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
-    		
+    		BookingMask.ClearbookingActionfield();
+    		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(331, 1, "Sheet2"));
     		BookingMask.clearNoOfPax();
     		utilityClass.implicitlyWaitInMillis(1000);
     		
-    		BookingMask.sendNoOfPax(utilityClass.readDataFromStringExcel(67, 1, "Sheet2"));
+    		BookingMask.sendNoOfPax(utilityClass.readDataFromStringExcel(332, 1, "Sheet2"));
     		Reporter.log("Send number of passenger",true);
     		Thread.sleep(1000);
     		
-    		BookingMask.sendKOS(utilityClass.readDataFromStringExcel(68, 1, "Sheet2"));
+    		BookingMask.sendKOS(utilityClass.readDataFromStringExcel(333, 1, "Sheet2"));
     		Reporter.log("Send correct KOS in input field",true);
     		utilityClass.implicitlyWaitInMillis(1000);
-    		BookingMask.sendproductCode(utilityClass.readDataFromStringExcel(69, 1, "Sheet2"));
+    		BookingMask.sendproductCode(utilityClass.readDataFromStringExcel(334, 1, "Sheet2"));
     		Reporter.log("Send correct ProductCode in input field",true);
     		utilityClass.implicitlyWaitInMillis(1000);
     		
-    		BookingMask.sendRoomCode(utilityClass.readDataFromStringExcel(70, 1, "Sheet2"));
+    		BookingMask.sendRoomCode(utilityClass.readDataFromStringExcel(335, 1, "Sheet2"));
     		Reporter.log("Send roomcode in input field",true);
     		
-    		BookingMask.sendBoard(utilityClass.readDataFromStringExcel(71, 1, "Sheet2"));
+    		BookingMask.sendBoard(utilityClass.readDataFromStringExcel(336, 1, "Sheet2"));
     		Reporter.log("Send correct boardName",true);
     		
-    		BookingMask.sendOccupancy(utilityClass.readDataFromStringExcel(72, 1, "Sheet2"));
+    		BookingMask.sendOccupancy(utilityClass.readDataFromStringExcel(337, 1, "Sheet2"));
     		Reporter.log("Send Occupancy",true);
     	
-    		BookingMask.sendTotalPax(utilityClass.readDataFromStringExcel(73, 1, "Sheet2"));
+    		BookingMask.sendTotalPax(utilityClass.readDataFromStringExcel(338, 1, "Sheet2"));
     		Reporter.log("Send bookinglines ",true);
     		
-    		BookingMask.sendTravelFromDate(utilityClass.readDataFromStringExcel(157, 1, "Sheet2"));
+    		BookingMask.sendTravelFromDate(utilityClass.readDataFromStringExcel(339, 1, "Sheet2"));
     		Reporter.log("Send Travel from date for season-A",true);
     		
-    		BookingMask.sendTravelToDate(utilityClass.readDataFromStringExcel(158, 1, "Sheet2"));
+    		BookingMask.sendTravelToDate(utilityClass.readDataFromStringExcel(340, 1, "Sheet2"));
     		Reporter.log("Send Travel To date for season-A",true);
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
@@ -128,16 +129,16 @@ public class verifyTravelDateStartOfSeasonA_TC78 extends baseClass {
 	    public void validateSeasonAPrice() throws EncryptedDocumentException, IOException 
 	    {
 	      String ActualPrice = BookingMask.getPriceFieldValue1("value");
-		  String expectedPrice = utilityClass.readDataFromStringExcel(159, 1, "Sheet2");
+		  String expectedPrice = utilityClass.readDataFromStringExcel(342, 1, "Sheet2");
 		  Assert.assertEquals(ActualPrice, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
-		  Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue1("value")+" and Expected Price "+utilityClass.readDataFromStringExcel(159, 1, "Sheet2"),true);
+		  Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue1("value")+" and Expected Price "+utilityClass.readDataFromStringExcel(342, 1, "Sheet2"),true);
 	    }
 	
 	    @AfterMethod
 	    public void Logout() throws InterruptedException
 	    {
 	      Thread.sleep(3500);
-	      BookingMask.ClickOnLogoutButtonOFBookingMask();
+	     // BookingMask.ClickOnLogoutButtonOFBookingMask();
 		  Reporter.log("Clicking on Logout Button in Booking Mask page",true);
 		  Thread.sleep(1000);
 		  BookingMask.logoutClickOFBookingMask();
@@ -147,7 +148,7 @@ public class verifyTravelDateStartOfSeasonA_TC78 extends baseClass {
 	   @AfterClass 
 	   public void closeBrowser()
 	    {
-		 driver.close();
+		 //driver.close();
 		 Reporter.log("Closing Browser",true);
 	    }
 	 

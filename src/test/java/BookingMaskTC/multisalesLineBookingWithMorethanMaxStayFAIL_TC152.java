@@ -215,9 +215,9 @@
 	   public void validateErrorMsgwithDifferentDatesAndMoreThanMaxStay() throws EncryptedDocumentException, IOException 
 	   {
 		    String ActualMessage = BookingMask.getMultisalesLinesBookingErrorMsgWithExceedMaxStay();
-		    String expectedMessage = utilityClass.readDataFromStringExcel(29, 1, "Sheet3");
+		    String expectedMessage = utilityClass.readDataFromStringExcel(33, 1, "Sheet3");
 		    Assert.assertEquals(expectedMessage,ActualMessage, "TC failed as Actual message and expected message are not matching ");
-		    Reporter.log("Validating Actual message "+BookingMask.getMultisalesLinesBookingErrorMsgWithExceedMaxStay()+" and Expected message "+utilityClass.readDataFromStringExcel(29, 1, "Sheet3"),true);
+		    Reporter.log("Validating Actual message "+BookingMask.getMultisalesLinesBookingErrorMsgWithExceedMaxStay()+" and Expected message "+utilityClass.readDataFromStringExcel(33, 1, "Sheet3"),true);
 	   }
 	   
 	   @AfterMethod

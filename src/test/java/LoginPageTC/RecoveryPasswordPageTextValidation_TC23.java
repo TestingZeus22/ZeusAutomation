@@ -22,7 +22,6 @@ public class RecoveryPasswordPageTextValidation_TC23 extends baseClass {
 	recoverPasswordPage email;
 	File myFile;
 	
-	
 	@BeforeClass
 	public void launchBrowser(){
 		openApplication();
@@ -44,12 +43,12 @@ public class RecoveryPasswordPageTextValidation_TC23 extends baseClass {
   {
 	  String ActualMsgOfWelcome = email.getWelcomeFalkTourText();
 	  String expectedMsgofWelcome = utilityClass.readDataFromStringExcel(12, 2, "Sheet1");
-	  Assert.assertEquals(expectedMsgofWelcome, ActualMsgOfWelcome,"Test case Failed as expected and actual Text are not matching");
+	  Assert.assertEquals(ActualMsgOfWelcome, expectedMsgofWelcome,"Test case Failed as expected and actual Text are not matching");
 	  Reporter.log("Validating actual "+email.getWelcomeFalkTourText()+" and Expected Message "+utilityClass.readDataFromStringExcel(12, 2, "Sheet1"),true);
 	  
 	  String ActualMsgOfDataEnterMessage = email.getDataEnterMessage();
 	  String expectedMsgOfDataEnterMessage = utilityClass.readDataFromStringExcel(13, 2, "Sheet1");
-	  Assert.assertEquals(expectedMsgOfDataEnterMessage, ActualMsgOfDataEnterMessage,"Test case Failed as expected Text and actual Text are not matching");
+	  Assert.assertEquals(ActualMsgOfDataEnterMessage, expectedMsgOfDataEnterMessage,"Test case Failed as expected Text and actual Text are not matching");
 	  Reporter.log("Validating actual "+email.getDataEnterMessage()+" and Expected Message "+utilityClass.readDataFromStringExcel(13, 2, "Sheet1"),true);
   }
   @AfterClass 

@@ -46,7 +46,7 @@ public class RecoverPasswordAndBackToLoginVaidation_TC09 extends baseClass {
   {
 	 String expectedText=login.getCopyrightZeusText();
 	 String actualText = utilityClass.readDataFromStringExcel(6, 2, "Sheet1");
-	 Assert.assertEquals(expectedText, actualText,"Test case Failed as actual & expected Message are not matching"); 
+	 Assert.assertEquals(actualText, expectedText,"Test case Failed as actual & expected Message are not matching"); 
 	 Reporter.log("Validating actual "+login.getCopyrightZeusText()+" and Expected Text "+utilityClass.readDataFromStringExcel(6, 2, "Sheet1"),true);
   }
 

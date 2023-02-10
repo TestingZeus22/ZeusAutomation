@@ -51,7 +51,7 @@ public class LoginPageRefreshValidation_TC10 extends baseClass {
 		  String Actual_Url= driver.getCurrentUrl();
 		  String expected_Url = utilityClass.readDataFromStringExcel(7, 2, "Sheet1");
 		  System.out.println("expected_Url is "+expected_Url);
-		  Assert.assertEquals(expected_Url, Actual_Url,"Test case Failed as actual and Expected Url are not matching");  
+		  Assert.assertEquals(Actual_Url, expected_Url,"Test case Failed as actual and Expected Url are not matching");  
 		  Reporter.log("Validating actual "+driver.getCurrentUrl()+" and Expected Text "+utilityClass.readDataFromStringExcel(7, 2, "Sheet1"),true);	
 	   }
 

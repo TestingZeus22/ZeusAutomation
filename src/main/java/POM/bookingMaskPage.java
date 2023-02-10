@@ -37,7 +37,8 @@ public class bookingMaskPage {
 	@FindBy (id="SalesBookingHeaderNewModel_AgencyCode") private WebElement agencyCodeField;
 	@FindBy (xpath="//a[@class='btn btn-primary btn-lg']") private WebElement resetButton;
 	@FindBy (id="sendbooking") private WebElement sendbookingButton;
-
+	@FindBy (id="sendbooking") private WebElement sendbookingButtonByJSE;
+	
 	@FindBy (id="bookinglines_Selected_2") private WebElement bookingDataCheckBox1;
 	@FindBy (id="bookinglines_Ancilaries_2") private WebElement kOS1;
 	@FindBy (id="bookinglines_TBMCodeID_2") private WebElement productCode1;
@@ -51,6 +52,7 @@ public class bookingMaskPage {
 	@FindBy (id="bookinglines_TravelFrom_2") private WebElement travelFrom1;
 	@FindBy (id="bookinglines_TravelTo_2") private WebElement travelTo1;
 	@FindBy (id="bookinglines_PassengerNo_2") private WebElement Passengers1;
+	
 	@FindBy (id="bookinglines_Price_1") private WebElement PriceFieldValue1;
 	@FindBy (xpath ="(//i[@class='pe-7s-trash btn-icon-wrapper'])[1]") private WebElement deleteButton1;
 	
@@ -114,6 +116,48 @@ public class bookingMaskPage {
 	
 	@FindBy(id="SalesBookingHeaderNewModel_LanguageID") private WebElement languageDropdown;
 	
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_Select'])[1]") private WebElement travellerDataCheckBox1;
+	@FindBy(id="travelerDatafirsts_GenderList_2") private WebElement genderDropdown1;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_LastName'])[1]") private WebElement lastNameFieldData1;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_FirstName'])[1]") private WebElement firstNameFieldData1;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_DateOfBirth'])[1]") private WebElement ageFieldData1;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_Salutation'])[1]") private WebElement salutationFieldData1;
+	
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_Select'])[2]") private WebElement travellerDataCheckBox2;
+	@FindBy(id= "travelerDatafirsts_GenderList_3") private WebElement genderDropdown2;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_LastName'])[2]") private WebElement lastNameFieldData2;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_FirstName'])[2]") private WebElement firstNameFieldData2;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_DateOfBirth'])[2]") private WebElement ageFieldData2;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_Salutation'])[2]") private WebElement salutationFieldData2;
+	
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_Select'])[3]") private WebElement travellerDataCheckBox3;
+	@FindBy(id= "travelerDatafirsts_GenderList_4") private WebElement genderDropdown3;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_LastName'])[3]") private WebElement lastNameFieldData3;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_FirstName'])[3]") private WebElement firstNameFieldData3;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_DateOfBirth'])[3]") private WebElement ageFieldData3;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_Salutation'])[3]") private WebElement salutationFieldData3;
+	
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_Select'])[4]") private WebElement travellerDataCheckBox4;
+	@FindBy(id= "travelerDatafirsts_GenderList_5") private WebElement genderDropdown4;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_LastName'])[4]") private WebElement lastNameFieldData4;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_FirstName'])[4]") private WebElement firstNameFieldData4;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_DateOfBirth'])[4]") private WebElement ageFieldData4;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_Salutation'])[4]") private WebElement salutationFieldData4;
+	
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_Select'])[5]") private WebElement travellerDataCheckBox5;
+	@FindBy(id= "travelerDatafirsts_GenderList_6") private WebElement genderDropdown5;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_LastName'])[5]") private WebElement lastNameFieldData5;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_FirstName'])[5]") private WebElement firstNameFieldData5;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_DateOfBirth'])[5]") private WebElement ageFieldData5;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_Salutation'])[5]") private WebElement salutationFieldData5;
+	
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_Select'])[6]") private WebElement travellerDataCheckBox6;
+	@FindBy(id= "travelerDatafirsts_GenderList_7") private WebElement genderDropdown6;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_LastName'])[6]") private WebElement lastNameFieldData6;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_FirstName'])[6]") private WebElement firstNameFieldData6;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_DateOfBirth'])[6]") private WebElement ageFieldData6;
+	@FindBy(xpath="(//input[@id='travelerDatafirsts_Salutation'])[6]") private WebElement salutationFieldData6;
+	
 	@FindBy(id="swal2-content") private WebElement travelFromAndToPopUp;
 	@FindBy(id="swal2-content") private WebElement travelFromDateLessThanTravelToDatePopUp;
 	@FindBy(xpath="(//div[@id='div_SalesBookingLinePartial']//textarea)") private WebElement travelToDateOutOfContractDateNotification;
@@ -124,6 +168,9 @@ public class bookingMaskPage {
 	@FindBy(xpath="(//div[@id='div_SalesBookingLinePartial']//textarea)") private WebElement multisalesLinesBookingErrorMsgWithValidStay;
 	@FindBy(xpath="(//div[@id='div_SalesBookingLinePartial']//textarea)") private WebElement multisalesLinesBookingErrorMsgWithExceedMaxStay;
 	@FindBy(xpath="(//div[@id='div_SalesBookingLinePartial']//textarea)") private WebElement invalidTravelDurationNoPriceInfoMsg;
+	@FindBy(xpath="(//div[@id='div_SalesBookingLinePartial']//textarea)") private WebElement stayExceedErrorMessage;
+	@FindBy(xpath="(//div[@id='div_SalesBookingLinePartial']//textarea)") private WebElement travelTypeErrorMessage;
+	@FindBy(xpath="(//div[@id='div_SalesBookingLinePartial']//textarea)") private WebElement maximumPersonCrossedErrorMessage;
 	
 	@FindBy (id="SalesBookingHeaderNewModel_ReservationNo") private WebElement reserNO;
 	@FindBy (id="SalesBookingHeaderNewModel_ReservationVersion") private WebElement reserVER;
@@ -272,6 +319,11 @@ public class bookingMaskPage {
 	{
 		sendbookingButton.click();
 		return sendbookingButton;
+	}
+	
+	public WebElement clickOnSendbookingButtonByJSE()
+	{
+		return sendbookingButtonByJSE;
 	}
 		
 	public void bookingDataCheckBox1Method()
@@ -462,9 +514,19 @@ public class bookingMaskPage {
 		travelFrom3.sendKeys(TravelFROM);
 	}
 	
+	public void clearTravelFromDate3()
+	{
+		travelFrom3.clear();
+	}
+	
 	public void sendTravelToDate3(String TravelTO)
 	{	
 		travelTo3.sendKeys(TravelTO);
+	}
+	
+	public void clearTravelToDate3()
+	{
+		travelTo3.clear();
 	}
 	
 	public void sendPassenger3(String Passenger)
@@ -611,6 +673,192 @@ public class bookingMaskPage {
 		return Element;
 	}
 	
+	public void clickOnTravellerDataCheckBox1()
+	{
+		travellerDataCheckBox1.click();
+	}
+
+	public WebElement genderSelectDropdown1()
+	{
+		WebElement Element = genderDropdown1;
+		return Element;
+	}
+	
+	public void sendlastNameFieldData1(String LastName)
+	{
+		lastNameFieldData1.sendKeys(LastName);
+	}
+	
+	public void sendfirstNameFieldData1(String FirstName)
+	{
+		firstNameFieldData1.sendKeys(FirstName);
+	}
+	
+	public void sendAgeFieldData1(String age)
+	{
+		ageFieldData1.sendKeys(age);
+	}
+	
+	public void sendSalutationFieldData1(String Salutation)
+	{
+		salutationFieldData1.sendKeys(Salutation);
+	}
+	
+	public void clickOnTravellerDataCheckBox2()
+	{
+		travellerDataCheckBox2.click();
+	}
+
+	public WebElement genderSelectDropdown2()
+	{
+		WebElement Element = genderDropdown2;
+		return Element;
+	}
+	
+	public void sendlastNameFieldData2(String LastName)
+	{
+		lastNameFieldData2.sendKeys(LastName);
+	}
+	
+	public void sendfirstNameFieldData2(String FirstName)
+	{
+		firstNameFieldData2.sendKeys(FirstName);
+	}
+	
+	public void sendAgeFieldData2(String age)
+	{
+		ageFieldData2.sendKeys(age);
+	}
+	
+	public void sendSalutationFieldData2(String Salutation)
+	{
+		salutationFieldData2.sendKeys(Salutation);
+	}
+	
+	public void clickOnTravellerDataCheckBox3()
+	{
+		travellerDataCheckBox3.click();
+	}
+
+	public WebElement genderSelectDropdown3()
+	{
+		WebElement Element = genderDropdown3;
+		return Element;
+	}
+	
+	public void sendlastNameFieldData3(String LastName)
+	{
+		lastNameFieldData3.sendKeys(LastName);
+	}
+	
+	public void sendfirstNameFieldData3(String FirstName)
+	{
+		firstNameFieldData3.sendKeys(FirstName);
+	}
+	
+	public void sendAgeFieldData3(String age)
+	{
+		ageFieldData3.sendKeys(age);
+	}
+	
+	public void sendSalutationFieldData3(String Salutation)
+	{
+		salutationFieldData3.sendKeys(Salutation);
+	}
+	
+	public void clickOnTravellerDataCheckBox4()
+	{
+		travellerDataCheckBox4.click();
+	}
+
+	public WebElement genderSelectDropdown4()
+	{
+		WebElement Element = genderDropdown4;
+		return Element;
+	}
+	
+	public void sendlastNameFieldData4(String LastName)
+	{
+		lastNameFieldData4.sendKeys(LastName);
+	}
+	
+	public void sendfirstNameFieldData4(String FirstName)
+	{
+		firstNameFieldData4.sendKeys(FirstName);
+	}
+	
+	public void sendAgeFieldData4(String age)
+	{
+		ageFieldData4.sendKeys(age);
+	}
+	
+	public void sendSalutationFieldData4(String Salutation)
+	{
+		salutationFieldData4.sendKeys(Salutation);
+	}
+	
+	public void clickOnTravellerDataCheckBox5()
+	{
+		travellerDataCheckBox5.click();
+	}
+
+	public WebElement genderSelectDropdown5()
+	{
+		WebElement Element = genderDropdown5;
+		return Element;
+	}
+	
+	public void sendlastNameFieldData5(String LastName)
+	{
+		lastNameFieldData5.sendKeys(LastName);
+	}
+	
+	public void sendfirstNameFieldData5(String FirstName)
+	{
+		firstNameFieldData5.sendKeys(FirstName);
+	}
+	
+	public void sendAgeFieldData5(String age)
+	{
+		ageFieldData5.sendKeys(age);
+	}
+	
+	public void sendSalutationFieldData5(String Salutation)
+	{
+		salutationFieldData5.sendKeys(Salutation);
+	}
+	
+	public void clickOnTravellerDataCheckBox6()
+	{
+		travellerDataCheckBox6.click();
+	}
+
+	public WebElement genderSelectDropdown6()
+	{
+		WebElement Element = genderDropdown6;
+		return Element;
+	}
+	
+	public void sendlastNameFieldData6(String LastName)
+	{
+		lastNameFieldData6.sendKeys(LastName);
+	}
+	
+	public void sendfirstNameFieldData6(String FirstName)
+	{
+		firstNameFieldData6.sendKeys(FirstName);
+	}
+	
+	public void sendAgeFieldData6(String age)
+	{
+		ageFieldData6.sendKeys(age);
+	}
+	
+	public void sendSalutationFieldData6(String Salutation)
+	{
+		salutationFieldData6.sendKeys(Salutation);
+	}
+	
 	public String getTravelFromAndToPopUpMsg()
 	{
 		String actualText = travelFromAndToPopUp.getText();
@@ -662,6 +910,24 @@ public class bookingMaskPage {
 	public String getInvalidTravelDurationNoPriceInfoMsg()
 	{
 		String actualText = invalidTravelDurationNoPriceInfoMsg.getText();
+		return actualText;
+	}
+	
+	public String getStayExceedErrorMessage()
+	{
+		String actualText = stayExceedErrorMessage.getText();
+		return actualText;
+	}
+	
+	public String getTravelTypeErrorMessage()
+	{
+		String actualText = travelTypeErrorMessage.getText();
+		return actualText;
+	}
+	
+	public String getMaximumPersonCrossedErrorMessage()
+	{
+		String actualText = maximumPersonCrossedErrorMessage.getText();
 		return actualText;
 	}
 	

@@ -28,7 +28,6 @@ public class verifyTravelDateInBetweenSeasonA_TC79 extends baseClass {
 	salesBookingListPage salesBookingList;
 	bookingMaskPage BookingMask;
 	
-	
 	@BeforeClass
 	public void launchBrowser(){
 		openApplication();
@@ -69,12 +68,9 @@ public class verifyTravelDateInBetweenSeasonA_TC79 extends baseClass {
     		salesBookingList.clickOncreateButton();
     		Reporter.log("Clicked on create Button in sales Booking page",true);
     		Thread.sleep(6000);
-    		
     		utilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
-    		
     		Thread.sleep(1000);
-    		
     		utilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(1000);
@@ -83,37 +79,38 @@ public class verifyTravelDateInBetweenSeasonA_TC79 extends baseClass {
     		utilityClass.implicitlyWaitInMillis(1000);
     		utilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
     		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
-    		
+    		BookingMask.ClearbookingActionfield();
+    		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(331, 2, "Sheet2"));
     		BookingMask.clearNoOfPax();
     		utilityClass.implicitlyWaitInMillis(1000);
     		
-    		BookingMask.sendNoOfPax(utilityClass.readDataFromStringExcel(67, 1, "Sheet2"));
+    		BookingMask.sendNoOfPax(utilityClass.readDataFromStringExcel(332, 2, "Sheet2"));
     		Reporter.log("Send number of passenger",true);
     		Thread.sleep(1000);
     		
-    		BookingMask.sendKOS(utilityClass.readDataFromStringExcel(68, 1, "Sheet2"));
+    		BookingMask.sendKOS(utilityClass.readDataFromStringExcel(333, 2, "Sheet2"));
     		Reporter.log("Send correct KOS in input field",true);
     		utilityClass.implicitlyWaitInMillis(1000);
-    		BookingMask.sendproductCode(utilityClass.readDataFromStringExcel(69, 1, "Sheet2"));
+    		BookingMask.sendproductCode(utilityClass.readDataFromStringExcel(334, 2, "Sheet2"));
     		Reporter.log("Send correct ProductCode in input field",true);
     		utilityClass.implicitlyWaitInMillis(1000);
     		
-    		BookingMask.sendRoomCode(utilityClass.readDataFromStringExcel(70, 1, "Sheet2"));
+    		BookingMask.sendRoomCode(utilityClass.readDataFromStringExcel(335, 2, "Sheet2"));
     		Reporter.log("Send roomcode in input field",true);
     		
-    		BookingMask.sendBoard(utilityClass.readDataFromStringExcel(71, 1, "Sheet2"));
+    		BookingMask.sendBoard(utilityClass.readDataFromStringExcel(336, 2, "Sheet2"));
     		Reporter.log("Send correct boardName",true);
     		
-    		BookingMask.sendOccupancy(utilityClass.readDataFromStringExcel(72, 1, "Sheet2"));
+    		BookingMask.sendOccupancy(utilityClass.readDataFromStringExcel(337, 2, "Sheet2"));
     		Reporter.log("Send Occupancy",true);
     	
-    		BookingMask.sendTotalPax(utilityClass.readDataFromStringExcel(73, 1, "Sheet2"));
+    		BookingMask.sendTotalPax(utilityClass.readDataFromStringExcel(338, 2, "Sheet2"));
     		Reporter.log("Send bookinglines ",true);
     		
-    		BookingMask.sendTravelFromDate(utilityClass.readDataFromStringExcel(157, 2, "Sheet2"));
+    		BookingMask.sendTravelFromDate(utilityClass.readDataFromStringExcel(339, 2, "Sheet2"));
     		Reporter.log("Send Travel from date for season-A",true);
     		
-    		BookingMask.sendTravelToDate(utilityClass.readDataFromStringExcel(158, 2, "Sheet2"));
+    		BookingMask.sendTravelToDate(utilityClass.readDataFromStringExcel(340, 2, "Sheet2"));
     		Reporter.log("Send Travel To date for season-A",true);
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
@@ -129,9 +126,9 @@ public class verifyTravelDateInBetweenSeasonA_TC79 extends baseClass {
 	    public void validatePriceInBetweenSeasonA() throws EncryptedDocumentException, IOException 
 	    {
 	      String ActualPrice = BookingMask.getPriceFieldValue1("value");
-		  String expectedPrice = utilityClass.readDataFromStringExcel(159, 2, "Sheet2");
+		  String expectedPrice = utilityClass.readDataFromStringExcel(342, 2, "Sheet2");
 		  Assert.assertEquals(ActualPrice, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
-		  Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue1("value")+" and Expected Price "+utilityClass.readDataFromStringExcel(159, 2, "Sheet2"),true);
+		  Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue1("value")+" and Expected Price "+utilityClass.readDataFromStringExcel(342, 2, "Sheet2"),true);
 	    }
 	
 	    @AfterMethod

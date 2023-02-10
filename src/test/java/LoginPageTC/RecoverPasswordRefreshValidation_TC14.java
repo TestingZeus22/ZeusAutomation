@@ -45,7 +45,7 @@ public class RecoverPasswordRefreshValidation_TC14 extends baseClass {
      {
 	  String Actual_Url= driver.getCurrentUrl();
 	  String expected_Url = utilityClass.readDataFromStringExcel(8, 2, "Sheet1");
-	  Assert.assertEquals(expected_Url, Actual_Url,"Test case Failed as actual and Expected Url are not matching");    
+	  Assert.assertEquals(Actual_Url, expected_Url,"Test case Failed as actual and Expected Url are not matching");    
 	  Reporter.log("Validating actual "+driver.getCurrentUrl()+" and Expected Text "+utilityClass.readDataFromStringExcel(8, 2, "Sheet1"),true);	
      }
   

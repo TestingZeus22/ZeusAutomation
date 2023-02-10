@@ -38,7 +38,7 @@ public class LoginPageTextValidationTC_18 extends baseClass {
    { 
 	 String Actual_Text = login.getWelcomeBackText();
 	 String expected_Text =utilityClass.readDataFromStringExcel(10, 2, "Sheet1");
-	 Assert.assertEquals(expected_Text, Actual_Text,"Test case Failed as actual & expected Text are not matching");  
+	 Assert.assertEquals(Actual_Text, expected_Text,"Test case Failed as actual & expected Text are not matching");  
 	 Reporter.log("Validating actual "+login.getWelcomeBackText()+" and Expected Text "+utilityClass.readDataFromStringExcel(10, 2, "Sheet1"),true);
 	
    }

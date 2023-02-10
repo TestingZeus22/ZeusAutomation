@@ -44,7 +44,7 @@ public class RecoveryPasswordClickValidation_TC08 extends baseClass {
     {
 	  String actualText = email.getTextCopyright();
 	  String expectedText = utilityClass.readDataFromStringExcel(5, 2, "Sheet1");
-	  Assert.assertEquals(expectedText, actualText,"Test case Failed as expected and actual Message are not matching");
+	  Assert.assertEquals(actualText, expectedText,"Test case Failed as expected and actual Message are not matching");
 	  Reporter.log("Validating actual "+email.getTextCopyright()+" and Expected Text "+utilityClass.readDataFromStringExcel(5, 2, "Sheet1"),true);  
     }
   

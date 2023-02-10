@@ -204,24 +204,20 @@
 					JavascriptExecutor executor = (JavascriptExecutor)driver;
 					executor.executeScript("arguments[0].click();", sendButton);
 					Reporter.log("Clicked on sendbookingButton",true);
-	            	
 				} catch (Exception e) {
 					System.out.println("Not clicked on Send Button");
 				}   
-	            
 	            utilityClass.scrollByAxis(0, -500);
 	            Thread.sleep(1500);
 		}   
 	   @Test
 	   public void validategetmultisalesLinesBookingErrorMsgwithLessthanMinStay() throws EncryptedDocumentException, IOException 
-	  
 	   {
 		    String ActualMessage = BookingMask.getmultisalesLinesBookingErrorMsgwithValidStay();
-		    String expectedMessage = utilityClass.readDataFromStringExcel(33, 1, "Sheet3");
-		    Assert.assertEquals(expectedMessage,ActualMessage, "TC failed as Actual message and expected message are not matching ");
-		    Reporter.log("Validating Actual message "+BookingMask.getmultisalesLinesBookingErrorMsgwithValidStay()+" and Expected message "+utilityClass.readDataFromStringExcel(33, 1, "Sheet3"),true);
+		    String expectedMessage = utilityClass.readDataFromStringExcel(34, 1, "Sheet3");
+		    Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
+		    Reporter.log("Validating Actual message "+BookingMask.getmultisalesLinesBookingErrorMsgwithValidStay()+" and Expected message "+utilityClass.readDataFromStringExcel(34, 1, "Sheet3"),true);
 	   }
-	   
 	   @AfterMethod
 	   public void Logout() throws InterruptedException
 	   {

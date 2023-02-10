@@ -90,7 +90,7 @@
 	    		Thread.sleep(1000);
 	    		
 	    		BookingMask.ClearbookingActionfield();
-	    		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(66, 1, "Sheet2"));
+	    		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(316, 3, "Sheet2"));
 	    		
 	    		utilityClass.implicitlyWaitInMillis(1000);
 	    		utilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -99,34 +99,34 @@
 	    		BookingMask.clearNoOfPax();
 	    		utilityClass.implicitlyWaitInMillis(1000);
 	    		
-	    		BookingMask.sendNoOfPax(utilityClass.readDataFromStringExcel(149, 3, "Sheet2"));
+	    		BookingMask.sendNoOfPax(utilityClass.readDataFromStringExcel(317, 3, "Sheet2"));
 	    		Reporter.log("Send number of passenger",true);
 	    		Thread.sleep(1000);
 	    		
-	    		BookingMask.sendKOS(utilityClass.readDataFromStringExcel(68, 1, "Sheet2"));
+	    		BookingMask.sendKOS(utilityClass.readDataFromStringExcel(318, 3, "Sheet2"));
 	    		Reporter.log("Send correct KOS in input field",true);
 	    		utilityClass.implicitlyWaitInMillis(1000);
 	    		
-	    		BookingMask.sendproductCode(utilityClass.readDataFromStringExcel(69, 1, "Sheet2"));
+	    		BookingMask.sendproductCode(utilityClass.readDataFromStringExcel(319, 3, "Sheet2"));
 	    		Reporter.log("Send correct ProductCode in input field",true);
 	    		utilityClass.implicitlyWaitInMillis(1000);
 	    		
-	    		BookingMask.sendRoomCode(utilityClass.readDataFromStringExcel(70, 1, "Sheet2"));
+	    		BookingMask.sendRoomCode(utilityClass.readDataFromStringExcel(320, 3, "Sheet2"));
 	    		Reporter.log("Send roomcode in input field",true);
 	    		
-	    		BookingMask.sendBoard(utilityClass.readDataFromStringExcel(71, 1, "Sheet2"));
+	    		BookingMask.sendBoard(utilityClass.readDataFromStringExcel(321, 3, "Sheet2"));
 	    		Reporter.log("Send correct boardName",true);
 	    		
-	    		BookingMask.sendOccupancy(utilityClass.readDataFromStringExcel(150, 3, "Sheet2"));
+	    		BookingMask.sendOccupancy(utilityClass.readDataFromStringExcel(322, 3, "Sheet2"));
 	    		Reporter.log("Send Occupancy",true);
 	    	
-	    		BookingMask.sendTotalPax(utilityClass.readDataFromStringExcel(151, 3, "Sheet2"));
+	    		BookingMask.sendTotalPax(utilityClass.readDataFromStringExcel(323, 3, "Sheet2"));
 	    		Reporter.log("Send bookinglines ",true);
 	    		
-	    		BookingMask.sendTravelFromDate(utilityClass.readDataFromStringExcel(81, 1, "Sheet2"));
+	    		BookingMask.sendTravelFromDate(utilityClass.readDataFromStringExcel(324, 1, "Sheet2"));
 	    		Reporter.log("Send Travel from date for Season-C",true);
 	    		
-	    		BookingMask.sendTravelToDate(utilityClass.readDataFromStringExcel(82, 1, "Sheet2"));
+	    		BookingMask.sendTravelToDate(utilityClass.readDataFromStringExcel(325, 1, "Sheet2"));
 	    		Reporter.log("Send Travel To date for Season-C",true);
 	    		
 	    		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-3");
@@ -161,16 +161,16 @@
 	            	
 				} catch (Exception e) {
 				}
-	            utilityClass.implicitlyWaitInMillis(40000);
+	            Thread.sleep(10000);
 		  }
 	
 	   @Test
 	   public void validatePriceWithThreePerson() throws EncryptedDocumentException, IOException 
 	       {
 		   	  String ActualPrice = bookingUpdate.getPriceFieldValue1("value");
-			  String expectedPrice = utilityClass.readDataFromStringExcel(153, 3, "Sheet2");
+			  String expectedPrice = utilityClass.readDataFromStringExcel(327, 3, "Sheet2");
 			  Assert.assertEquals(ActualPrice, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
-			  Reporter.log("Validating Actual price "+bookingUpdate.getPriceFieldValue1("value")+" and Expected Price "+utilityClass.readDataFromStringExcel(153, 3, "Sheet2"),true);
+			  Reporter.log("Validating Actual price "+bookingUpdate.getPriceFieldValue1("value")+" and Expected Price "+utilityClass.readDataFromStringExcel(327, 3, "Sheet2"),true);
 		    }
 	   
 	   @AfterMethod

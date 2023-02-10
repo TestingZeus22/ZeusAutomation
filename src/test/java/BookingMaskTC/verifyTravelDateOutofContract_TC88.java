@@ -28,7 +28,6 @@ public class verifyTravelDateOutofContract_TC88 extends baseClass {
 	salesBookingListPage salesBookingList;
 	bookingMaskPage BookingMask;
 	
-	
 	@BeforeClass
 	public void launchBrowser(){
 		openApplication();
@@ -82,37 +81,38 @@ public class verifyTravelDateOutofContract_TC88 extends baseClass {
     		utilityClass.implicitlyWaitInMillis(1000);
     		utilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
     		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
-    		
+    		BookingMask.ClearbookingActionfield();
+    		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(361, 3, "Sheet2"));
     		BookingMask.clearNoOfPax();
     		utilityClass.implicitlyWaitInMillis(1000);
     		
-    		BookingMask.sendNoOfPax(utilityClass.readDataFromStringExcel(67, 1, "Sheet2"));
+    		BookingMask.sendNoOfPax(utilityClass.readDataFromStringExcel(362, 3, "Sheet2"));
     		Reporter.log("Send number of passenger",true);
     		Thread.sleep(1000);
     		
-    		BookingMask.sendKOS(utilityClass.readDataFromStringExcel(68, 1, "Sheet2"));
+    		BookingMask.sendKOS(utilityClass.readDataFromStringExcel(363, 3, "Sheet2"));
     		Reporter.log("Send correct KOS in input field",true);
     		utilityClass.implicitlyWaitInMillis(1000);
-    		BookingMask.sendproductCode(utilityClass.readDataFromStringExcel(69, 1, "Sheet2"));
+    		BookingMask.sendproductCode(utilityClass.readDataFromStringExcel(364, 3, "Sheet2"));
     		Reporter.log("Send correct ProductCode in input field",true);
     		utilityClass.implicitlyWaitInMillis(1000);
     		
-    		BookingMask.sendRoomCode(utilityClass.readDataFromStringExcel(70, 1, "Sheet2"));
+    		BookingMask.sendRoomCode(utilityClass.readDataFromStringExcel(365, 3, "Sheet2"));
     		Reporter.log("Send roomcode in input field",true);
     		
-    		BookingMask.sendBoard(utilityClass.readDataFromStringExcel(71, 1, "Sheet2"));
+    		BookingMask.sendBoard(utilityClass.readDataFromStringExcel(366, 3, "Sheet2"));
     		Reporter.log("Send correct boardName",true);
     		
-    		BookingMask.sendOccupancy(utilityClass.readDataFromStringExcel(72, 1, "Sheet2"));
+    		BookingMask.sendOccupancy(utilityClass.readDataFromStringExcel(367, 3, "Sheet2"));
     		Reporter.log("Send Occupancy",true);
     	
-    		BookingMask.sendTotalPax(utilityClass.readDataFromStringExcel(73, 1, "Sheet2"));
+    		BookingMask.sendTotalPax(utilityClass.readDataFromStringExcel(368, 3, "Sheet2"));
     		Reporter.log("Send bookinglines ",true);
     		
-    		BookingMask.sendTravelFromDate(utilityClass.readDataFromStringExcel(177, 3, "Sheet2"));
+    		BookingMask.sendTravelFromDate(utilityClass.readDataFromStringExcel(369, 3, "Sheet2"));
     		Reporter.log("Send Travel from date out of contract date",true);
     		
-    		BookingMask.sendTravelToDate(utilityClass.readDataFromStringExcel(178, 3, "Sheet2"));
+    		BookingMask.sendTravelToDate(utilityClass.readDataFromStringExcel(370, 3, "Sheet2"));
     		Reporter.log("Send Travel to date out ",true);
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
@@ -122,17 +122,16 @@ public class verifyTravelDateOutofContract_TC88 extends baseClass {
             BookingMask.clickOnSendbookingButton();
             Reporter.log("Clicked on sendbookingButton",true);
             utilityClass.scrollByAxis(0, 600);
-            Thread.sleep(2000); 
+            Thread.sleep(3000); 
 		}
 	    @Test
 	    public void validateMsgForOutOfContractDates() throws EncryptedDocumentException, IOException 
 	    {
 	    	String ActualMessage = BookingMask.getTravelbothDateOutOfContractDateNotification();
-		    String expectedMessage = utilityClass.readDataFromStringExcel(179, 3, "Sheet2");
+		    String expectedMessage = utilityClass.readDataFromStringExcel(372, 3, "Sheet2");
 		    Assert.assertEquals(true, expectedMessage.contains(ActualMessage));
-		    Reporter.log("Validating Actual message "+BookingMask.getTravelbothDateOutOfContractDateNotification()+" and Expected message "+utilityClass.readDataFromStringExcel(179, 3, "Sheet2"),true);
+		    Reporter.log("Validating Actual message "+BookingMask.getTravelbothDateOutOfContractDateNotification()+" and Expected message "+utilityClass.readDataFromStringExcel(372, 3, "Sheet2"),true);
 	    }
-	
 	   @AfterClass 
 	   public void closeBrowser()
 	    {

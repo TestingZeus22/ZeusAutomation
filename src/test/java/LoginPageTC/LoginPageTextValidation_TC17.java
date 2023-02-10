@@ -38,7 +38,7 @@ public class LoginPageTextValidation_TC17 extends baseClass {
   {
 	 String Actual_TextMsg = login.getCopyrightZeusText();
 	 String expected_TextMsg = utilityClass.readDataFromStringExcel(9, 2, "Sheet1");
-	 Assert.assertEquals(expected_TextMsg, Actual_TextMsg,"Test Case Failed as actual & expected Message are not matching");  
+	 Assert.assertEquals(Actual_TextMsg, expected_TextMsg,"Test Case Failed as actual & expected Message are not matching");  
 	 Reporter.log("Validating actual "+login.getCopyrightZeusText()+" and Expected Text "+utilityClass.readDataFromStringExcel(9, 2, "Sheet1"),true);
   }
 

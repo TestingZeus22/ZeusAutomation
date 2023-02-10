@@ -87,7 +87,7 @@
 	    		utilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		utilityClass.implicitlyWaitInMillis(3000);
-	    		Thread.sleep(1000);
+	    		Thread.sleep(2000);
 	    		
 	    		utilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
 	    		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
@@ -213,7 +213,6 @@
 				}    
 	            Thread.sleep(500);
 		}
-	
 	   @Test
 	   public void validatePriceForDifferentDates() throws EncryptedDocumentException, IOException 
 	  
@@ -221,7 +220,7 @@
 		   	  String ActualPrice1 = BookingMask.getPriceFieldValue1("value");
 			  String expectedPrice1 = utilityClass.readDataFromStringExcel(95, 1, "Sheet2");
 			  Assert.assertEquals(ActualPrice1, expectedPrice1,"Test Case Failed as actual & expected Price are not matching");
-			  Reporter.log("Validating Actual price For Season -G is "+BookingMask.getPriceFieldValue1("value")+" and Expected Price for Season-G is"+utilityClass.readDataFromStringExcel(95, 1, "Sheet2"),true);
+			  Reporter.log("Validating Actual price For Season-G is "+BookingMask.getPriceFieldValue1("value")+" and Expected Price for Season-G is"+utilityClass.readDataFromStringExcel(95, 1, "Sheet2"),true);
 			  
 			  String ActualPrice2 = BookingMask.getPriceFieldValue2("value");
 			  String expectedPrice2 = utilityClass.readDataFromStringExcel(80, 1, "Sheet2");
