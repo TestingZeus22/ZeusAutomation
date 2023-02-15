@@ -52,7 +52,6 @@ public class bookingMaskPage {
 	@FindBy (id="bookinglines_TravelFrom_2") private WebElement travelFrom1;
 	@FindBy (id="bookinglines_TravelTo_2") private WebElement travelTo1;
 	@FindBy (id="bookinglines_PassengerNo_2") private WebElement Passengers1;
-	
 	@FindBy (id="bookinglines_Price_1") private WebElement PriceFieldValue1;
 	@FindBy (xpath ="(//i[@class='pe-7s-trash btn-icon-wrapper'])[1]") private WebElement deleteButton1;
 	
@@ -279,6 +278,12 @@ public class bookingMaskPage {
 		noOfPaxField.sendKeys(Pax);
 	}
 	
+	public String getNoOfPax(String pax)
+	{
+		String actualText = noOfPaxField.getAttribute(pax);
+		return actualText;
+	}
+	
 	public void sendReservationNo(String ReservationNO)
 	{
 		reservationNoField.sendKeys(ReservationNO);
@@ -365,6 +370,12 @@ public class bookingMaskPage {
 		clearoccupancy1.clear();
 	}
 	
+	public String getOccupancy1(String OCC)
+	{
+		String actualText = occupancy1.getAttribute(OCC);
+		return actualText;
+	}
+	
 	public void sendoccupancyAtBookingUpdate(String OCC)
 	{
 		occupancyAtBookingUpdate.sendKeys(OCC);
@@ -378,6 +389,12 @@ public class bookingMaskPage {
 	public void sendTotalPax(String TotalPAX)
 	{
 		totalPax1.sendKeys(TotalPAX);
+	}
+	
+	public String getTotalPax1(String Tpax)
+	{
+		String actualText = totalPax1.getAttribute(Tpax);
+		return actualText;
 	}
 	
 	public void sendTravelFromDate(String TravelFROM)

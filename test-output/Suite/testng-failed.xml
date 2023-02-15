@@ -3,15 +3,15 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="BookingMaskTC.verifyOccupancyLimitTC58ToTC61">
+      <class name="BookingMaskTC.verifyRoomOccupancyLimitTC58ToTC61">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="loginToApp"/>
-          <include name="launchBrowser"/>
           <include name="Logout"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
           <include name="validateOccupancyMinLimitCross"/>
+          <include name="loginToApp"/>
         </methods>
-      </class> <!-- BookingMaskTC.verifyOccupancyLimitTC58ToTC61 -->
+      </class> <!-- BookingMaskTC.verifyRoomOccupancyLimitTC58ToTC61 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
