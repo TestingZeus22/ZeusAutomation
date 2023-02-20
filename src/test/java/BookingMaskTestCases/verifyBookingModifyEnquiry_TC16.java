@@ -48,7 +48,7 @@
 		bookingMaskPage BookingMask;
 		
 		@BeforeClass
-		public void launchBrowser(){
+		 	public void launchBrowser(){
 			openApplication();
 			Reporter.log("Browser Launch ",true);
 			login=new loginPage(driver);
@@ -199,7 +199,6 @@
 	    		driver.findElement(By.id("bookinglines_PassengerNo_1")).sendKeys("1-4");
 	    		Reporter.log("Send number of passenger",true);
 	  		    utilityClass.implicitlyWaitInMillis(20000);
-	    		//BookingMask.clickOnSendbookingButton();
 	    		utilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
 	    		utilityClass.implicitlyWaitInMillis(20000);
 		}

@@ -112,6 +112,7 @@
 	    		
 	    		BookingMask.ClearbookingActionfield();
 	    		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(874, 1, "Sheet2"));
+	    		Reporter.log("Send Booking action");
 	    		BookingMask.clearNoOfPax();
 	    		utilityClass.implicitlyWaitInMillis(1000);
 	    		
@@ -175,11 +176,11 @@
 				utilityClass.implicitlyWaitInMillis(20000);
 				utilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
 	    		Reporter.log("Click on sendBookingButton ",true);  
-	             Thread.sleep(3000);
-				 String ActualMessage = BookingMask.getMaximumPersonCrossedErrorMessage();
-		    	 String expectedMessage = utilityClass.readDataFromStringExcel(901, 1, "Sheet2");
-		    	 Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
-		    	 Reporter.log("Validating Actual message "+BookingMask.getMaximumPersonCrossedErrorMessage()+" and Expected message "+utilityClass.readDataFromStringExcel(901, 1, "Sheet2"),true);
+	            Thread.sleep(3000);
+				String ActualMessage = BookingMask.getMaximumPersonCrossedErrorMessage();
+		    	String expectedMessage = utilityClass.readDataFromStringExcel(901, 1, "Sheet2");
+		    	Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
+		    	Reporter.log("Validating Actual message "+BookingMask.getMaximumPersonCrossedErrorMessage()+" and Expected message "+utilityClass.readDataFromStringExcel(901, 1, "Sheet2"),true);
 	    		}
 	    		
 	    		@Test (priority = 2)  //TC-59
@@ -203,6 +204,7 @@
 		    		
 		    		BookingMask.ClearbookingActionfield();
 		    		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(874, 2, "Sheet2"));
+		    		Reporter.log("Send Booking action");
 		    		BookingMask.clearNoOfPax();
 		    		utilityClass.implicitlyWaitInMillis(1000);
 		    		
@@ -403,10 +405,10 @@
 					utilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
 		    		Reporter.log("Click on sendBookingButton ",true);  
 		            Thread.sleep(3000);
-					 String ActualMessage = BookingMask.getMaximumPersonCrossedErrorMessage();
-			    	 String expectedMessage = utilityClass.readDataFromStringExcel(901, 3, "Sheet2");
-			    	 Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
-			    	 Reporter.log("Validating Actual message "+BookingMask.getMaximumPersonCrossedErrorMessage()+" and Expected message "+utilityClass.readDataFromStringExcel(901, 3, "Sheet2"),true);
+					String ActualMessage = BookingMask.getMaximumPersonCrossedErrorMessage();
+			    	String expectedMessage = utilityClass.readDataFromStringExcel(901, 3, "Sheet2");
+			    	Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
+			    	Reporter.log("Validating Actual message "+BookingMask.getMaximumPersonCrossedErrorMessage()+" and Expected message "+utilityClass.readDataFromStringExcel(901, 3, "Sheet2"),true);
 	    		}
 	    		
 	    		@Test  (priority = 4)//TC61
@@ -430,6 +432,7 @@
 		    		
 		    		BookingMask.ClearbookingActionfield();
 		    		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(874, 4, "Sheet2"));
+		    		Reporter.log("Send Booking Action");
 		    		BookingMask.clearNoOfPax();
 		    		utilityClass.implicitlyWaitInMillis(1000);
 		    		
@@ -489,11 +492,10 @@
 					utilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
 		    		Reporter.log("Click on sendBookingButton ",true);  
 		            Thread.sleep(3000);
-					 String ActualMessage = BookingMask.getMaximumPersonCrossedErrorMessage();
-			    	 String expectedMessage = utilityClass.readDataFromStringExcel(901, 4, "Sheet2");
-			    	 Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
-			    	 //Assert.assertTrue(expectedMessage.contains(ActualMessage), "TC failed as Actual message and expected message are not matching ");
-			    	 Reporter.log("Validating Actual message "+BookingMask.getMaximumPersonCrossedErrorMessage()+" and Expected message "+utilityClass.readDataFromStringExcel(901, 4, "Sheet2"),true);
+					String ActualMessage = BookingMask.getMaximumPersonCrossedErrorMessage();
+			    	String expectedMessage = utilityClass.readDataFromStringExcel(901, 4, "Sheet2");
+			    	Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
+			    	Reporter.log("Validating Actual message "+BookingMask.getMaximumPersonCrossedErrorMessage()+" and Expected message "+utilityClass.readDataFromStringExcel(901, 4, "Sheet2"),true);
 	    		}
 	    	
 	    		@AfterMethod

@@ -3,7 +3,6 @@
 	import java.io.File;
 	import java.io.IOException;
 	import java.util.List;
-	
 	import org.apache.poi.EncryptedDocumentException;
 	import org.openqa.selenium.By;
 	import org.openqa.selenium.JavascriptExecutor;
@@ -105,6 +104,7 @@
 	    		
 	    		BookingMask.ClearbookingActionfield();
 	    		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(261, 5, "Sheet2"));
+	    		Reporter.log("Send Booking action");
 	    		BookingMask.clearNoOfPax();
 	    		utilityClass.implicitlyWaitInMillis(1000);
 	    		
@@ -161,6 +161,7 @@
 				utilityClass.implicitlyWaitInMillis(20000);
 				utilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
 	    		Reporter.log("Click on sendBookingButton",true);
+	    	
 				utilityClass.implicitlyWaitInMillis(12000);
 				BookingMask.clickOnViewList();
 				Reporter.log("Clicked on ViewList",true);
@@ -201,7 +202,8 @@
 	    		Reporter.log("Send number of passenger",true);
 	  		    utilityClass.implicitlyWaitInMillis(20000);
 	    		BookingMask.clickOnSendbookingButton();
-	    		utilityClass.implicitlyWaitInMillis(12000);
+	    		Thread.sleep(1000);
+	    		//utilityClass.implicitlyWaitInMillis(12000);
 				BookingMask.clickOnViewList();
 				Reporter.log("Clicked on ViewList",true);
 		        utilityClass.implicitlyWaitInMillis(8000);
@@ -217,8 +219,7 @@
 		        salesBookingList.clickOneditBooking1();
 		        Reporter.log("Clicked on edit booking1",true);
 		        utilityClass.scrollByAxis(0, -400);
-		        Thread.sleep(1000);
-	    		
+		        Thread.sleep(1000);	
 		}
 	
 	   @Test  //TC-17

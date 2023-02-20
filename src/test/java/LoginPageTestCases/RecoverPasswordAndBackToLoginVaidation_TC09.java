@@ -42,7 +42,6 @@ public class RecoverPasswordAndBackToLoginVaidation_TC09 extends baseClass {
   
   @Test
   public void RecoverPasswordAndGoBackToLoginTest() throws EncryptedDocumentException, IOException
-
   {
 	 String expectedText=login.getCopyrightZeusText();
 	 String actualText = utilityClass.readDataFromStringExcel(6, 2, "Sheet1");

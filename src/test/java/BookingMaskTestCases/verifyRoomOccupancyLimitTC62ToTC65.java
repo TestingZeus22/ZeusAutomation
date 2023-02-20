@@ -88,7 +88,7 @@
 	    		Thread.sleep(6000);
 		     }
 		
-	    		@Test (priority = 1) //62
+	    		@Test (priority=1) //62
 	    		public void validateMismatchInNOofPaxFieldErrorMsg() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
 	    		utilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
@@ -194,11 +194,10 @@
 				 String ActualMessage = BookingMask.getMaximumPersonCrossedErrorMessage();
 		    	 String expectedMessage = utilityClass.readDataFromStringExcel(928, 1, "Sheet2");
 		    	 Assert.assertTrue(expectedMessage.contains(ActualMessage), "TC failed as Actual message and expected message are not matching ");
-		    	 //Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
 		    	 Reporter.log("Validating Actual message "+BookingMask.getMaximumPersonCrossedErrorMessage()+" and Expected message "+utilityClass.readDataFromStringExcel(928, 1, "Sheet2"),true);
 	    		}
 	    		
-	    		@Test (priority = 2)  //TC-63
+	    		@Test (priority=2)  //TC-63
 	    		public void validateMismatchInPassengerFieldErrorMsg() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
 	    			utilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
@@ -304,7 +303,6 @@
 		             Thread.sleep(3000);
 					 String ActualMessage = BookingMask.getMaximumPersonCrossedErrorMessage();
 			    	 String expectedMessage = utilityClass.readDataFromStringExcel(928, 2, "Sheet2");
-			    	 //Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
 			    	 Assert.assertTrue(expectedMessage.contains(ActualMessage), "TC failed as Actual message and expected message are not matching ");
 			    	 Reporter.log("Validating Actual message "+BookingMask.getMaximumPersonCrossedErrorMessage()+" and Expected message "+utilityClass.readDataFromStringExcel(928, 2, "Sheet2"),true);
 	    		}

@@ -114,6 +114,7 @@
 	    		
 	    		BookingMask.ClearbookingActionfield();
 	    		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(607, 1, "Sheet2"));
+	    		Reporter.log("Send Booking Action");
 	    		BookingMask.clearNoOfPax();
 	    		utilityClass.implicitlyWaitInMillis(1000);
 	    		
@@ -195,16 +196,9 @@
 		        String ResVer=BookingMask.getReservationVerNoBM("value");
 		        String ActualReservNo= ResNo + ("/"+ResVer);
 		        ActualReser=ActualReservNo;
-		      
 		        Thread.sleep(3000);
-	    	    
 		        utilityClass.implicitlyWaitInMillis(12000);
-		        try {
-		        	BookingMask.clickOnViewList();
-				} catch (Exception e) {
-					// TODO: handle exception
-				}
-			
+		        BookingMask.clickOnViewList();
 				Reporter.log("Clicked on ViewList",true);
 		        utilityClass.implicitlyWaitInMillis(8000);
 		        salesBookingList.sendtbmCodes(utilityClass.readDataFromStringExcel(610, 1, "Sheet2"));
@@ -215,10 +209,9 @@
 		        salesBookingList.clickOnbookingListButton();
 		        Reporter.log("Clicked on Booking listButton",true);
 		        Thread.sleep(8000);
-	            
-			     String ExpectedReservationNos = salesBookingList.getSalesBookingColumn1();
-			     Assert.assertEquals(ActualReser, ExpectedReservationNos,"Test Case Failed as actual & expected ReservationNo are not matching");
-				 Reporter.log("Validating Expected ReservationNo "+ActualReser+" and Actual ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);
+			    String ExpectedReservationNos = salesBookingList.getSalesBookingColumn1();
+			    Assert.assertEquals(ActualReser, ExpectedReservationNos,"Test Case Failed as actual & expected ReservationNo are not matching");
+				Reporter.log("Validating Expected ReservationNo "+ActualReser+" and Actual ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);
 	            
 	            String expectedPrice = utilityClass.readDataFromStringExcel(626, 1, "Sheet2");
 	            Assert.assertEquals(ActualPrices, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
@@ -246,6 +239,7 @@
 		    		
 		    		BookingMask.ClearbookingActionfield();
 		    		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(607, 2, "Sheet2"));
+		    		Reporter.log("Send Booking Action");
 		    		BookingMask.clearNoOfPax();
 		    		utilityClass.implicitlyWaitInMillis(1000);
 		    		
@@ -336,16 +330,9 @@
 			        String ResVer=BookingMask.getReservationVerNoBM("value");
 			        String ActualReservNo= ResNo + ("/"+ResVer);
 			        ActualReser=ActualReservNo;
-			      
 			        Thread.sleep(3000);
-		    	    
 			        utilityClass.implicitlyWaitInMillis(12000);
-			        try {
-			        	BookingMask.clickOnViewList();
-					} catch (Exception e) {
-						// TODO: handle exception
-					}
-				
+			        BookingMask.clickOnViewList();
 					Reporter.log("Clicked on ViewList",true);
 			        utilityClass.implicitlyWaitInMillis(8000);
 			        salesBookingList.sendtbmCodes(utilityClass.readDataFromStringExcel(610, 2, "Sheet2"));
@@ -356,7 +343,7 @@
 			        salesBookingList.clickOnbookingListButton();
 			        Reporter.log("Clicked on Booking listButton",true);
 			        Thread.sleep(8000);
-		            
+		      
 				     String ExpectedReservationNos = salesBookingList.getSalesBookingColumn1();
 				     Assert.assertEquals(ActualReser, ExpectedReservationNos,"Test Case Failed as actual & expected ReservationNo are not matching");
 					 Reporter.log("Validating Expected ReservationNo "+ActualReser+" and Actual ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);
@@ -478,20 +465,13 @@
 			        String ResVer=BookingMask.getReservationVerNoBM("value");
 			        String ActualReservNo= ResNo + ("/"+ResVer);
 			        ActualReser=ActualReservNo;
-			      
 			        Thread.sleep(3000);
-		    	    
 			        utilityClass.implicitlyWaitInMillis(12000);
-			        try {
-			        	BookingMask.clickOnViewList();
-					} catch (Exception e) {
-						// TODO: handle exception
-					}
-				
+			        BookingMask.clickOnViewList();
 					Reporter.log("Clicked on ViewList",true);
 			        utilityClass.implicitlyWaitInMillis(8000);
 			        salesBookingList.sendtbmCodes(utilityClass.readDataFromStringExcel(610, 3, "Sheet2"));
-			        Reporter.log("Clicked on sendTBMcode to verify booking is done or not",true);
+			        Reporter.log("Clicked on SendTBMcode to verify booking is done or not",true);
 			        Thread.sleep(22000);
 			        salesBookingList.sendtbmCodes(utilityClass.readDataFromStringExcel(610, 3, "Sheet2"));
 			        Reporter.log("Send TBM code",true);

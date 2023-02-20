@@ -223,16 +223,9 @@
 		        String ResVer=BookingMask.getReservationVerNoBM("value");
 		        String ActualReservNo= ResNo + ("/"+ResVer);
 		        ActualReser=ActualReservNo;
-		      
 		        Thread.sleep(3000);
-	    	    
 		        utilityClass.implicitlyWaitInMillis(12000);
-		        try {
-		        	BookingMask.clickOnViewList();
-				} catch (Exception e) {
-					// TODO: handle exception
-				}
-			
+		        BookingMask.clickOnViewList();
 				Reporter.log("Clicked on ViewList",true);
 		        utilityClass.implicitlyWaitInMillis(8000);
 		        salesBookingList.sendtbmCodes(utilityClass.readDataFromStringExcel(610, 1, "Sheet2"));
@@ -346,16 +339,9 @@
 			        String ResVer=BookingMask.getReservationVerNoBM("value");
 			        String ActualReservNo= ResNo + ("/"+ResVer);
 			        ActualReser=ActualReservNo;
-			      
 			        Thread.sleep(3000);
-		    	    
 			        utilityClass.implicitlyWaitInMillis(12000);
-			        try {
-			        	BookingMask.clickOnViewList();
-					} catch (Exception e) {
-						// TODO: handle exception
-					}
-				
+			        BookingMask.clickOnViewList();
 					Reporter.log("Clicked on ViewList",true);
 			        utilityClass.implicitlyWaitInMillis(8000);
 			        salesBookingList.sendtbmCodes(utilityClass.readDataFromStringExcel(610, 2, "Sheet2"));
@@ -478,16 +464,9 @@
 			        String ResVer=BookingMask.getReservationVerNoBM("value");
 			        String ActualReservNo= ResNo + ("/"+ResVer);
 			        ActualReser=ActualReservNo;
-			      
 			        Thread.sleep(3000);
-		    	    
 			        utilityClass.implicitlyWaitInMillis(12000);
-			        try {
-			        	BookingMask.clickOnViewList();
-					} catch (Exception e) {
-						// TODO: handle exception
-					}
-				
+			        BookingMask.clickOnViewList();
 					Reporter.log("Clicked on ViewList",true);
 			        utilityClass.implicitlyWaitInMillis(8000);
 			        salesBookingList.sendtbmCodes(utilityClass.readDataFromStringExcel(610, 1, "Sheet2"));
@@ -619,16 +598,9 @@
 		        String ResVer=BookingMask.getReservationVerNoBM("value");
 		        String ActualReservNo= ResNo + ("/"+ResVer);
 		        ActualReser=ActualReservNo;
-		      
 		        Thread.sleep(3000);
-	    	    
 		        utilityClass.implicitlyWaitInMillis(12000);
-		        try {
-		        	BookingMask.clickOnViewList();
-				} catch (Exception e) {
-					// TODO: handle exception
-				}
-			
+		        BookingMask.clickOnViewList();
 				Reporter.log("Clicked on ViewList",true);
 		        utilityClass.implicitlyWaitInMillis(8000);
 		        salesBookingList.sendtbmCodes(utilityClass.readDataFromStringExcel(610, 1, "Sheet2"));

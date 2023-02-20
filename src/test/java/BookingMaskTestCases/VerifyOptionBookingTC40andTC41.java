@@ -38,7 +38,7 @@
 	import POM.tbmCodeNewCreatePage;
 	import utility.utilityClass;
 	
-	public class TC03 extends baseClass
+	public class VerifyOptionBookingTC40andTC41 extends baseClass
 	{
 		loginPage login;
 		File myFile;
@@ -69,7 +69,6 @@
 				Reporter.log("Valid Password Entered",true);
 				login.ClickOnLoginToDashboard();
 				Reporter.log("Clicked on Dashboard button",true);
-				
 				utilityClass.implicitlyWaitInMillis(1000);
 				utilityClass.listBoxHandlingUsingByText("Falk Tours AG", selectCompany.SelectDropDownList());
 				Reporter.log("Select the Falk Tours AG from given list",true);
@@ -173,7 +172,6 @@
 			    Reporter.log("Validating Actual price with OA Action code "+BookingMask.getPriceFieldValue1("value")+" and Expected Price with OA action code is "+utilityClass.readDataFromStringExcel(943, 1, "Sheet2"),true);
 	        }
 	    		
-	    		
 	    		@Test (priority=2)  //TC41
 	    		public void validateConfirmOptionBookingWithO() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
@@ -195,9 +193,10 @@
 	    		BookingMask.ClearbookingActionfield();
 	    		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(932, 2, "Sheet2"));
 	    		Reporter.log("Send Booking action code");
+	    		
+	    		
 	    		BookingMask.clearNoOfPax();
 	    		utilityClass.implicitlyWaitInMillis(1000);
-	    		
 	    		BookingMask.sendNoOfPax(utilityClass.readDataFromStringExcel(933, 2, "Sheet2"));
 	    		Reporter.log("Send number of passenger",true);
 	    		Thread.sleep(1000);
@@ -254,7 +253,7 @@
 				
 	    		String ActualPrice = BookingMask.getPriceFieldValue1("value");
 	            ActualPrices=ActualPrice;
-	    		
+	    	
 	    		utilityClass.implicitlyWaitInMillis(30000);
 		        String ResNo=BookingMask.getReservationNoBM("value");
 		        String ResVer=BookingMask.getReservationVerNoBM("value");
@@ -305,7 +304,7 @@
 	   }
 	}
 	
-	
+	 
 	
 	
 

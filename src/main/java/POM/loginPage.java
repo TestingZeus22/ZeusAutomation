@@ -12,7 +12,7 @@ public class loginPage {
 	@FindBy(id ="loginmodel_Password") private WebElement Password;
 	@FindBy(xpath = "//button[@class='btn btn-primary btn-lg']") private WebElement LoginToDashboard;
 	@FindBy(xpath ="//a[@class='btn-lg btn btn-link']") private WebElement RecoverPassword;
-	@FindBy(xpath ="//div[text()='Copyright  © Zeus 2022 ']") private WebElement CopyrightZeusText;
+	@FindBy(xpath ="//div[text()='Copyright  © Zeus 2023 ']") private WebElement CopyrightZeusText;
 	@FindBy(id ="swal2-title") private WebElement CredentialInvalid;
 	@FindBy(xpath ="//div[text()='Welcome back,']") private WebElement getWelcomeBackText;
 	@FindBy(xpath ="//a[@class='btn-lg btn btn-link']") private WebElement RecoverPasswordLink;

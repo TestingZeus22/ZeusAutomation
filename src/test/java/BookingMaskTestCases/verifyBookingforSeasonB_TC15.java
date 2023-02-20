@@ -56,7 +56,6 @@ public class verifyBookingforSeasonB_TC15 extends baseClass {
 			selectCompany.ClickOnProceedButton();
 			Reporter.log("Clicked on proceed button",true);	
 			Thread.sleep(9500); 
-		
     		dashboard.SalesClick();
     		Reporter.log("Clicked on sales dropdown in Dashboard",true);
     		utilityClass.implicitlyWaitInMillis(1000);
@@ -67,10 +66,8 @@ public class verifyBookingforSeasonB_TC15 extends baseClass {
     		salesBookingList.clickOncreateButton();
     		Reporter.log("Clicked on create Button in sales Booking page",true);
     		Thread.sleep(6000);
-    		
     		utilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
-    		
     		Thread.sleep(1000);
     		
     		utilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());

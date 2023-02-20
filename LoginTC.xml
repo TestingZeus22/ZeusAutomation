@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="LoginPageTestCases.LoginPageTextValidation_TC17"/>
+      <class name="LoginPageTestCases.RecoveryPasswordPageTextValidation_TC23"/>
+      <class name="LoginPageTestCases.RecoverPasswordAndBackToLoginVaidation_TC09"/>
+      <class name="LoginPageTestCases.LoginPageRefreshValidation_TC10"/>
+      <class name="LoginPageTestCases.LoginValidation_TC01"/>
+      <class name="LoginPageTestCases.ValidateErrorMsgOnUserName_TC04"/>
+      <class name="LoginPageTestCases.RecoveryPasswordClickValidation_TC08"/>
+      <class name="LoginPageTestCases.ValidateErrorMsgOnPassword_TC03"/>
+      <class name="LoginPageTestCases.DashboardValidation_TC02"/>
+      <class name="LoginPageTestCases.RecoverPasswordRefreshValidation_TC14"/>
+      <class name="LoginPageTestCases.LoginPageTextValidationTC_18"/>
+      <class name="LoginPageTestCases.recoveryPasswordPageValidation_TC24"/>
+      <class name="LoginPageTestCases.ValidateRecoverPwdLinkTC_20"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

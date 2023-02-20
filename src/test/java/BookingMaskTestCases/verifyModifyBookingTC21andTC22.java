@@ -31,6 +31,8 @@ public class verifyModifyBookingTC21andTC22 extends baseClass
 		salesBookingListPage salesBookingList;
 		bookingMaskPage BookingMask;
 		BookingUpdatePage bookingupdate;
+		String ActualReser;
+		String ActualPrices;
 	
 		@BeforeClass
 		public void launchBrowser(){
@@ -72,7 +74,7 @@ public class verifyModifyBookingTC21andTC22 extends baseClass
 	    		Thread.sleep(6000);
 		}
 	    		
-	    		@Test   (priority=1) //TC21
+	    		@Test   (priority = 1) //TC21
 	    		public void validateBookingByDecreasingDuration() throws InterruptedException, EncryptedDocumentException, IOException 
 	    		{
 	    		utilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
@@ -147,12 +149,9 @@ public class verifyModifyBookingTC21andTC22 extends baseClass
 
 				utilityClass.scrollByAxis(0, 900);
 				utilityClass.implicitlyWaitInMillis(20000);
-				Thread.sleep(7000);
-				
 				utilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
 	    		Reporter.log("Click on SendBookingButton",true);
 	            utilityClass.implicitlyWaitInMillis(15000);
-	        	Thread.sleep(9000);
 				BookingMask.clickOnViewList();
 				Reporter.log("Clicked on ViewList",true);
 		        utilityClass.implicitlyWaitInMillis(8000);
@@ -184,11 +183,31 @@ public class verifyModifyBookingTC21andTC22 extends baseClass
 	     		utilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
 	    		Reporter.log("Click on sendBookingButton after U action code",true);
 	    		Thread.sleep(5000);
-	    			    		
-	    		 String ActualPrice = bookingupdate.getPriceFieldValue1("value");
+	    		String ActualPrice = BookingMask.getPriceFieldValue1("value");
+	            ActualPrices=ActualPrice;
+	    		
+	    		utilityClass.implicitlyWaitInMillis(30000);
+		        String ResNo=BookingMask.getReservationNoBM("value");
+		        String ResVer=BookingMask.getReservationVerNoBM("value");
+		        String ActualReservNo= ResNo + ("/"+ResVer);
+		        ActualReser=ActualReservNo;
+	    		utilityClass.implicitlyWaitInMillis(12000);
+				BookingMask.clickOnViewList();
+				Reporter.log("Clicked on ViewList",true);
+		        utilityClass.implicitlyWaitInMillis(8000);
+		        salesBookingList.sendtbmCodes(utilityClass.readDataFromStringExcel(935, 2, "Sheet2"));
+		        Reporter.log("Clicked on SendTBMcode to verify booking is done or not",true);
+		        Thread.sleep(2000);
+		        salesBookingList.clickOnbookingListButton();
+		        Reporter.log("Clicked on Booking listButton",true);
+
 	    		 String expectedPrice = utilityClass.readDataFromStringExcel(276, 4, "Sheet2");
 	    		 Assert.assertEquals(ActualPrice, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
-	    		 Reporter.log("Validating Actual price "+bookingupdate.getPriceFieldValue1("value")+" and Expected Price "+utilityClass.readDataFromStringExcel(276, 4, "Sheet2"),true);
+	    		 Reporter.log("Validating Actual price "+ActualPrices+" and Expected Price "+utilityClass.readDataFromStringExcel(276, 4, "Sheet2"),true);
+	    		 
+	    		 String ExpectedReservationNo = salesBookingList.getSalesBookingColumn1();
+				 Assert.assertEquals(ActualReser, ExpectedReservationNo,"Test Case Failed as actual & expected ReservationNo are not matching");
+				 Reporter.log("Validating Actual ReservationNo "+ActualReser+" and Expected ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);
 	    		 }
 	    		 
 	    		@Test  (priority = 2)  //TC22
@@ -264,19 +283,19 @@ public class verifyModifyBookingTC21andTC22 extends baseClass
 				utilityClass.scrollByAxis(0, 900);
 				utilityClass.implicitlyWaitInMillis(20000);
 				utilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
-	    		Reporter.log("Click on sendBookingButton after U action code",true);
+	    		Reporter.log("Click on SendBookingButton",true);
 		     
 	            utilityClass.implicitlyWaitInMillis(15000);
 				BookingMask.clickOnViewList();
 				Reporter.log("Clicked on ViewList",true);
 		        utilityClass.implicitlyWaitInMillis(8000);
-		        salesBookingList.sendtbmCodes(utilityClass.readDataFromStringExcel(264, 4, "Sheet2"));
+		        salesBookingList.sendtbmCodes(utilityClass.readDataFromStringExcel(302, 4, "Sheet2"));
 		        Reporter.log("Clicked on SendTBMcode to verify booking is done or not",true);
 		        Thread.sleep(2000);
 		        salesBookingList.clickOnbookingListButton();
 		        Reporter.log("Clicked on Booking listButton",true);
 		        Thread.sleep(22000);
-		        salesBookingList.sendtbmCodes(utilityClass.readDataFromStringExcel(264, 4, "Sheet2"));
+		        salesBookingList.sendtbmCodes(utilityClass.readDataFromStringExcel(302, 4, "Sheet2"));
 		        Reporter.log("Send TBM code",true);
 		        Thread.sleep(10000);
 		        salesBookingList.clickOnbookingListButton();
@@ -296,14 +315,37 @@ public class verifyModifyBookingTC21andTC22 extends baseClass
 	    		Reporter.log("Send Modifified Travel From date",true);
 	     		utilityClass.implicitlyWaitInMillis(20000);
 	     		utilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
-	    		Reporter.log("click on sendBookingButton after U action code",true);
+	    		Reporter.log("Click on sendBookingButton after U action code",true);
 	    		Thread.sleep(5000);
 	    		
-	    		 String ActualPrice = bookingupdate.getPriceFieldValue1("value");
+	    		String ActualPrice = BookingMask.getPriceFieldValue1("value");
+	            ActualPrices=ActualPrice;
+	    		
+	    		utilityClass.implicitlyWaitInMillis(30000);
+		        String ResNo=BookingMask.getReservationNoBM("value");
+		        String ResVer=BookingMask.getReservationVerNoBM("value");
+		        String ActualReservNo= ResNo + ("/"+ResVer);
+		        ActualReser=ActualReservNo;
+	    		
+	    		utilityClass.implicitlyWaitInMillis(12000);
+				BookingMask.clickOnViewList();
+				Reporter.log("Clicked on ViewList",true);
+		        utilityClass.implicitlyWaitInMillis(8000);
+		        salesBookingList.sendtbmCodes(utilityClass.readDataFromStringExcel(302, 4, "Sheet2"));
+		        Reporter.log("Clicked on SendTBMcode to verify booking is done or not",true);
+		        Thread.sleep(2000);
+		        salesBookingList.clickOnbookingListButton();
+		        Reporter.log("Clicked on Booking listButton",true);
+		    
+	    		// String ActualPrice = bookingupdate.getPriceFieldValue1("value");
 	    		 String expectedPrice = utilityClass.readDataFromStringExcel(313, 4, "Sheet2");
 	    		 Assert.assertEquals(ActualPrice, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
-	    		 Reporter.log("Validating Actual price "+bookingupdate.getPriceFieldValue1("value")+" and Expected Price "+utilityClass.readDataFromStringExcel(313, 4, "Sheet2"),true);
-	    		 }
+	    		 Reporter.log("Validating Actual price "+ActualPrices+" and Expected Price "+utilityClass.readDataFromStringExcel(313, 4, "Sheet2"),true);
+	    		 
+	    		String ExpectedReservationNo = salesBookingList.getSalesBookingColumn1();
+				Assert.assertEquals(ActualReser, ExpectedReservationNo,"Test Case Failed as actual & expected ReservationNo are not matching");
+				Reporter.log("Validating Actual ReservationNo "+ActualReser+" and Expected ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);
+	    		}
 	    		
 	    		 @AfterMethod
 	    		   public void Logout() throws InterruptedException

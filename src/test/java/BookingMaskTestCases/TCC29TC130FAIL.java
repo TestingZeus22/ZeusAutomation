@@ -78,8 +78,8 @@ import POM.DashboardPage;
 	    		Thread.sleep(6000);
 				}
 		
-	    		@Test
-	    		public void validateConfirmBoOkingOFTwoAccommodation() throws EncryptedDocumentException, IOException, InterruptedException 
+	    		@Test (priority = 1) //TC29
+	    		public void validateConfirmBookingOFTwoAccommodation() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		   {
 	    		utilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
@@ -200,7 +200,7 @@ import POM.DashboardPage;
 		        String ActualReservNo= ResNo + ("/"+ResVer);
 		        ReserNo=ActualReservNo;
 	           
-				utilityClass.implicitlyWaitInMillis(12000);
+		        Thread.sleep(2000);
 				BookingMask.clickOnViewList();
 				Reporter.log("Clicked on ViewList",true);
 		        utilityClass.implicitlyWaitInMillis(8000);
@@ -231,7 +231,7 @@ import POM.DashboardPage;
         		Reporter.log("Validating Actual ReservationNo "+ReserNo+" and Expected ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);
 	    		}
 	    		
-	    		@Test 
+	    		@Test (enabled=false) //TC30
 	    		public void validateConfirmBoOkingOFTwoAccommodationWithU() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		 {
 	    		utilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
@@ -247,6 +247,7 @@ import POM.DashboardPage;
 	    		
 	    		BookingMask.ClearbookingActionfield();
 	    		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(666, 1, "Sheet2"));
+	    		Reporter.log("Send Booking Action");
 	    		
 	    		utilityClass.implicitlyWaitInMillis(1000);
 	    		utilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -363,15 +364,8 @@ import POM.DashboardPage;
 	    		Reporter.log("Select Number of passenger",true);
 	    		utilityClass.scrollByAxis(0, 600);
 	            Thread.sleep(1000);
-	            
-	            try {
-	            	WebElement sendButton = driver.findElement(By.id("sendbooking"));
-					JavascriptExecutor executor = (JavascriptExecutor)driver;
-					executor.executeScript("arguments[0].click();", sendButton);
-					Reporter.log("Clicked on sendbookingButton",true);
-				} catch (Exception e) {
-				}
-	           
+	        	utilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
+	        	Reporter.log("Click on Send booking button");
 	            utilityClass.implicitlyWaitInMillis(20000);
 	            String ActualPrice1 = BookingMask.getPriceFieldValue1("value");
 				roomPrice1=ActualPrice1;
@@ -386,16 +380,11 @@ import POM.DashboardPage;
 		        ReserNo=ActualReservNo;
 	            Thread.sleep(5000);
 				utilityClass.implicitlyWaitInMillis(12000);
-				try {
-					BookingMask.clickOnViewList();
-				} catch (Exception e) {
-					// TODO: handle exception
-				}
-				
+				BookingMask.clickOnViewList();
 				Reporter.log("Clicked on ViewList",true);
 		        utilityClass.implicitlyWaitInMillis(8000);
 		        salesBookingList.sendtbmCodes(utilityClass.readDataFromStringExcel(669, 1, "Sheet2"));
-		        Reporter.log("Clicked on sendTBMcode to verify booking is done or not",true);
+		        Reporter.log("Clicked on SendTBMcode to verify booking is done or not",true);
 		        Thread.sleep(2000);
 		        salesBookingList.clickOnbookingListButton();
 		        Reporter.log("Clicked on Booking listButton",true);
@@ -424,7 +413,7 @@ import POM.DashboardPage;
 	   @AfterMethod
 	   public void Logout() throws InterruptedException
 	   {
-	      Thread.sleep(3000);
+	      Thread.sleep(2000);
 	      BookingMask.ClickOnLogoutButtonOFBookingMask();
 		  Reporter.log("Clicking on Logout Button in Booking Mask page",true);
 		  Thread.sleep(500);

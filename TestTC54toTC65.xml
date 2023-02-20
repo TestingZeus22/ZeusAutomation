@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="BookingMaskTC.verifyRoomOccupancyLimitTC54ToTC57"/>
-      <class name="BookingMaskTC.verifyRoomOccupancyLimitTC62ToTC65"/>
-      <class name="BookingMaskTC.verifyRoomOccupancyLimitTC58ToTC61"/>
+      <class name="BookingMaskTestCases.verifyRoomOccupancyLimitTC62ToTC65"/>
+      <class name="BookingMaskTestCases.verifyRoomOccupancyLimitTC54ToTC57"/>
+      <class name="BookingMaskTestCases.verifyRoomOccupancyLimitTC58ToTC61"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

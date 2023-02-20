@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="BookingMaskTC.TC03">
+      <class name="BookingMaskTestCases.TC50">
         <methods>
           <include name="launchBrowser"/>
-          <include name="Logout"/>
           <include name="closeBrowser"/>
+          <include name="Logout"/>
+          <include name="validateBookingWitMismatchPaxAndOCC"/>
           <include name="loginToApp"/>
-          <include name="validatepriceFieldWithChangeInBookingActions"/>
         </methods>
-      </class> <!-- BookingMaskTC.TC03 -->
+      </class> <!-- BookingMaskTestCases.TC50 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
