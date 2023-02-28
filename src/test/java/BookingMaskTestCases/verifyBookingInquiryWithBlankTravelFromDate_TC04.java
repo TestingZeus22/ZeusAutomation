@@ -26,7 +26,6 @@ package BookingMaskTestCases;
 		DashboardPage dashboard;
 		salesBookingListPage salesBookingList;
 		bookingMaskPage BookingMask;
-		accommodationListPage accommdationList;
 		
 		@BeforeClass
 		public void launchBrowser(){
@@ -38,7 +37,6 @@ package BookingMaskTestCases;
 			dashboard = new DashboardPage(driver);
 			salesBookingList =new salesBookingListPage(driver);
 			BookingMask =new bookingMaskPage(driver);
-			accommdationList =new accommodationListPage(driver);
 		}
 
 		@BeforeMethod
@@ -81,6 +79,7 @@ package BookingMaskTestCases;
 			utilityClass.implicitlyWaitInMillis(1000);
 			BookingMask.ClearbookingActionfield();
 			BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(115, 1, "Sheet2"));
+			Reporter.log("Send Booking action");
 			BookingMask.clearNoOfPax();
 			utilityClass.implicitlyWaitInMillis(1000);
 			BookingMask.sendNoOfPax(utilityClass.readDataFromStringExcel(116, 1, "Sheet2"));
@@ -109,17 +108,16 @@ package BookingMaskTestCases;
 		    Reporter.log("Clicked on sendbookingButton",true);
 		    utilityClass.scrollByAxis(0, 600);
 		    Thread.sleep(1000);
-		}
-
-	   @Test
-	   public void validateBookingInquiryWithBlankTravelFromDate() throws EncryptedDocumentException, IOException 
-	   {
+		 }
+		
+		   @Test 
+		   public void validateBookingInquiryWithBlankTravelFromDate() throws EncryptedDocumentException, IOException, InterruptedException {
 		   String Actual = BookingMask.getTravelFromAndToPopUpMsg();
 		   String expected = utilityClass.readDataFromStringExcel(125, 1, "Sheet2");
 		   Assert.assertEquals(Actual, expected,"Test Case Failed as actual & expected Price are not matching");
 		   Reporter.log("Validating actual Error message "+BookingMask.getTravelFromAndToPopUpMsg()+" and Expected Error Message "+utilityClass.readDataFromStringExcel(125, 1, "Sheet2"),true);
 	   }
-	 
+			
 	  @AfterClass 
 	  public void closeBrowser()
 	   {

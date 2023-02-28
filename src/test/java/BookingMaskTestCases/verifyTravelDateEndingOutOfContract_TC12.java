@@ -56,7 +56,6 @@ public class verifyTravelDateEndingOutOfContract_TC12 extends baseClass {
 			selectCompany.ClickOnProceedButton();
 			Reporter.log("Clicked on proceed button",true);	
 			Thread.sleep(9500); 
-	 
     		dashboard.SalesClick();
     		Reporter.log("Clicked on sales dropdown in Dashboard",true);
     		utilityClass.implicitlyWaitInMillis(1000);
@@ -81,6 +80,7 @@ public class verifyTravelDateEndingOutOfContract_TC12 extends baseClass {
     		utilityClass.implicitlyWaitInMillis(1000);
     		BookingMask.ClearbookingActionfield();
     		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(202, 1, "Sheet2"));
+    		Reporter.log("Send Booking action");
     		BookingMask.clearNoOfPax();
     		utilityClass.implicitlyWaitInMillis(1000);
     		
@@ -116,7 +116,6 @@ public class verifyTravelDateEndingOutOfContract_TC12 extends baseClass {
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
     		Reporter.log("Select Number of passenger",true);
-            
     		utilityClass.implicitlyWaitInMillis(1000);
             BookingMask.clickOnSendbookingButton();
             Reporter.log("Clicked on sendbookingButton",true);

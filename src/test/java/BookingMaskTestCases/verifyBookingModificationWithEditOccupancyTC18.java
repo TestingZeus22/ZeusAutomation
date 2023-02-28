@@ -196,12 +196,7 @@ import POM.DashboardPage;
 	    		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(272, 3, "Sheet2"));
 	    		Reporter.log("Change booking action to U",true);
 	    		utilityClass.implicitlyWaitInMillis(10000);
-	    		
-	    		try {
-	    			BookingMask.clickOnSendbookingButton();
-				} catch (Exception e) {
-				}
-	    	
+	    		BookingMask.clickOnSendbookingButton();
 	    		Reporter.log("Click on sendBookingButton after U action code",true);
 	    		Thread.sleep(5000);
 	    		String ActualPrice = BookingMask.getPriceFieldValue1("value");

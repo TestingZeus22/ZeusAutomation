@@ -490,8 +490,9 @@
 					utilityClass.scrollByAxis(0, 900);
 					utilityClass.implicitlyWaitInMillis(20000);
 					utilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
-		    		Reporter.log("Click on sendBookingButton ",true);  
+		    		Reporter.log("Click on SendBookingButton ",true);  
 		            Thread.sleep(3000);
+		            
 					String ActualMessage = BookingMask.getMaximumPersonCrossedErrorMessage();
 			    	String expectedMessage = utilityClass.readDataFromStringExcel(901, 4, "Sheet2");
 			    	Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");

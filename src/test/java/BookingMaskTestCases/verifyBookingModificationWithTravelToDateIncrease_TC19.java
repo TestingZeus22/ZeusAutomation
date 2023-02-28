@@ -33,7 +33,6 @@ public class verifyBookingModificationWithTravelToDateIncrease_TC19 extends base
 		salesBookingListPage salesBookingList;
 		bookingMaskPage BookingMask;
 		BookingUpdatePage bookingupdate;
-		String abc;
 		
 		@BeforeClass
 		public void launchBrowser(){
@@ -70,11 +69,11 @@ public class verifyBookingModificationWithTravelToDateIncrease_TC19 extends base
 	    		utilityClass.implicitlyWaitInMillis(1000);
 	    		dashboard.salesBookingClick();
 	    		Reporter.log("Clicked on sales Booking in Dashboard",true);
-	    		Thread.sleep(5000);
+	    		Thread.sleep(6000);
 	    		utilityClass.scrollByAxis(100, 0);
 	    		salesBookingList.clickOncreateButton();
 	    		Reporter.log("Clicked on create Button in sales Booking page",true);
-	    		Thread.sleep(6000);
+	    		Thread.sleep(7000);
 	    		
 	    		utilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
@@ -89,6 +88,7 @@ public class verifyBookingModificationWithTravelToDateIncrease_TC19 extends base
 	    		
 	    		BookingMask.ClearbookingActionfield();
 	    		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(261, 3, "Sheet2"));
+	    		Reporter.log("Send Booking action");
 	    		
 	    		utilityClass.implicitlyWaitInMillis(1000);
 	    		utilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -96,7 +96,6 @@ public class verifyBookingModificationWithTravelToDateIncrease_TC19 extends base
 	    		
 	    		BookingMask.clearNoOfPax();
 	    		utilityClass.implicitlyWaitInMillis(1000);
-	    		
 	    		BookingMask.sendNoOfPax(utilityClass.readDataFromStringExcel(262, 3, "Sheet2"));
 	    		Reporter.log("Send number of passenger",true);
 	    		Thread.sleep(1000);
@@ -147,7 +146,7 @@ public class verifyBookingModificationWithTravelToDateIncrease_TC19 extends base
 				Thread.sleep(500);
 				BookingMask.sendEmail(utilityClass.readDataFromStringExcel(105, 4, "Sheet2"));
 				utilityClass.scrollByAxis(0, 900);
-				utilityClass.implicitlyWaitInMillis(20000);
+				utilityClass.implicitlyWaitInMillis(40000);
 				utilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
 	    		Reporter.log("Click on sendBookingButton",true);
 	            utilityClass.scrollByAxis(0, 300);

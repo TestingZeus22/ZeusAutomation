@@ -53,8 +53,6 @@ import org.testng.Reporter;
 		contractsPage contracts;
 		pricePage price;
 		
-		String ResNo;
-		String ResVer;
 		String SalesBookingNo;
 		String ActualReser;
 		

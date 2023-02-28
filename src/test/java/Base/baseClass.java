@@ -24,6 +24,6 @@ public class baseClass {
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.get("https://zeuscloud.azurewebsites.net/Index?Status=SE");
-		//utilityClass.implicitlyWaitInMillis(1000);
+		utilityClass.implicitlyWaitInMillis(1000);
 	}
 }

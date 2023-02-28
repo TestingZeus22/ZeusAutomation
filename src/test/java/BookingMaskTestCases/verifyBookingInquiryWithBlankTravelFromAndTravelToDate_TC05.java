@@ -47,6 +47,7 @@ public class verifyBookingInquiryWithBlankTravelFromAndTravelToDate_TC05 extends
 	@BeforeMethod
 	public void loginToApp() throws EncryptedDocumentException, IOException, InterruptedException
 	{
+	utilityClass.implicitlyWaitInMillis(1000);	
 	login.SendUserName(utilityClass.readDataFromStringExcel(5, 1, "Sheet2"));
 	Reporter.log("Valid Username Entered",true);
 	login.SendPassword(utilityClass.readDataFromStringExcel(6, 1, "Sheet2"));
@@ -84,6 +85,7 @@ public class verifyBookingInquiryWithBlankTravelFromAndTravelToDate_TC05 extends
 	utilityClass.implicitlyWaitInMillis(1000);
 	BookingMask.ClearbookingActionfield();
 	BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(129, 1, "Sheet2"));
+	Reporter.log("Send Booking action");
 	BookingMask.clearNoOfPax();
 	utilityClass.implicitlyWaitInMillis(1000);
 	BookingMask.sendNoOfPax(utilityClass.readDataFromStringExcel(130, 1, "Sheet2"));
@@ -110,7 +112,7 @@ public class verifyBookingInquiryWithBlankTravelFromAndTravelToDate_TC05 extends
 	BookingMask.clickOnSendbookingButton();
 	Reporter.log("Clicked on sendbookingButton",true);
 	utilityClass.scrollByAxis(0, 600);
-	Thread.sleep(1000);
+	Thread.sleep(2000);
 	}
 
    @Test

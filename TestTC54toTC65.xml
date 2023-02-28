@@ -6,6 +6,14 @@
       <class name="BookingMaskTestCases.verifyRoomOccupancyLimitTC62ToTC65"/>
       <class name="BookingMaskTestCases.verifyRoomOccupancyLimitTC54ToTC57"/>
       <class name="BookingMaskTestCases.verifyRoomOccupancyLimitTC58ToTC61"/>
+     <class name="BookingMaskTestCases.VerifyOptionBookingTC40andTC41"/>
+     <class name="BookingMaskTestCases.verifyModifyBookingTC21andTC22"/>
+     <class name="BookingMaskTestCases.verifyOriginalBookingAfterModifyTC17"/>
+     <class name="BookingMaskTestCases.verifyEnteringTravelDaysNoInTravelToField_TC10"/>
+     <class name="BookingMaskTestCases.verifyBookingByEditingTravelTypeTC47"/>
+      <class name="BookingMaskTestCases.verifyBookingWithMismatchPaxAndOCCTC50"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+
+

@@ -94,26 +94,28 @@ public class bookingMaskPage {
 	@FindBy (xpath ="(//i[@class='pe-7s-trash btn-icon-wrapper'])[4]") private WebElement deleteButton4;
 	
 	@FindBy (id="SalesBookingHeaderNewModel_Gender") private WebElement titleGenderDropDown;
-	@FindBy (id="SalesBookingHeaderNewModel_TotalPrice") private WebElement totalPrice;
-	
 	@FindBy (id="LastName_New") private WebElement lastNameField;
-	
 	@FindBy (id="FirstName_New") private WebElement firstNameField;
-	
 	@FindBy (id="CountryName_New") private WebElement countryNameField;
 	@FindBy (id="StateName_New") private WebElement stateNameField;
 	@FindBy (id="CityName_New") private WebElement cityNameField;
-	
 	@FindBy(id="CAP_New") private WebElement zipCodeField;
 	@FindBy(id="Street_New") private WebElement streetNoField;
-	
 	@FindBy(id="Phone_New") private WebElement phoneField;
-	
 	@FindBy(id="Moblie_New") private WebElement mobileField;
-	
 	@FindBy(id="Email_New") private WebElement emailField;
-	
 	@FindBy(id="SalesBookingHeaderNewModel_LanguageID") private WebElement languageDropdown;
+	
+	@FindBy(id="SalesBookingHeaderNewModel_TotalPrice") private WebElement totalPrice;
+	@FindBy(id="SalesBookingHeaderNewModel_DepositeNeedToPay") private WebElement DepositeToPay;
+	@FindBy(id="SalesBookingHeaderNewModel_LocalPayable") private WebElement localPayable;
+	@FindBy(id="SalesBookingHeaderNewModel_GrandTotal") private WebElement grandTotal;
+	@FindBy(id="SalesBookingHeaderNewModel_Balance") private WebElement balanceOrRefund;
+	@FindBy(id="SalesBookingHeaderNewModel_CancellationFees") private WebElement cancellatonFees;
+	@FindBy(id="SalesBookingHeaderNewModel_AmmendmentCost") private WebElement amendmentCost;
+	@FindBy(id="DocumentByEmail") private WebElement documentByPostalDispatchCheckBox;
+	@FindBy(id="SalesBookingHeaderNewModel_Pay") private WebElement paymentOptionDropdown;
+	@FindBy(id="SalesBookingHeaderNewModel_ResubmissionDate") private WebElement resubmissionDate;
 	
 	@FindBy(xpath="(//input[@id='travelerDatafirsts_Select'])[1]") private WebElement travellerDataCheckBox1;
 	@FindBy(id="travelerDatafirsts_GenderList_2") private WebElement genderDropdown1;
@@ -623,12 +625,6 @@ public class bookingMaskPage {
 		return Element;
 	}
 	
-	public String getTotalPrice(String price)
-	{
-		String actualText = totalPrice.getAttribute(price);
-		return actualText;
-	}
-	
 	public void sendLastName(String LastNAME)
 	{
 		lastNameField.sendKeys(LastNAME);
@@ -669,6 +665,7 @@ public class bookingMaskPage {
 	{
 		streetNoField.sendKeys(StreetNO);
 	}
+	
 	public void sendPhoneNum(String Phone)
 	{
 		phoneField.sendKeys(Phone);
@@ -687,6 +684,59 @@ public class bookingMaskPage {
 	public WebElement listBoxLanguage()
 	{
 		WebElement Element = languageDropdown;
+		return Element;
+	}
+	
+	public String getTotalPrice(String price)
+	{
+		String actualText = totalPrice.getAttribute(price);
+		return actualText;
+	}
+	
+	public String getDepositeToPay(String Pay)
+	{
+		String actualText = DepositeToPay.getAttribute(Pay);
+		return actualText;
+	}
+	
+	public String getLocalPayable(String LPayable)
+	{
+		String actualText = localPayable.getAttribute(LPayable);
+		return actualText;
+	}
+	
+	public String getGrandTotal(String GTotal)
+	{
+		String actualText = grandTotal.getAttribute(GTotal);
+		return actualText;
+	}
+	
+	public String getbalanceOrRefund(String balanceRefund)
+	{
+		String actualText = balanceOrRefund.getAttribute(balanceRefund);
+		return actualText;
+	}
+	
+	public String getCancellationFees(String CancellationFees)
+	{
+		String actualText = cancellatonFees.getAttribute(CancellationFees);
+		return actualText;
+	}
+	
+	public String getAmendmentCost(String amendment)
+	{
+		String actualText = amendmentCost.getAttribute(amendment);
+		return actualText;
+	}
+	
+	public void clickOndocumentByPostalDispatchCheckBox()
+	{
+		documentByPostalDispatchCheckBox.click();
+	}
+	
+	public WebElement paymentOptionDropdown()
+	{
+		WebElement Element = paymentOptionDropdown;
 		return Element;
 	}
 	

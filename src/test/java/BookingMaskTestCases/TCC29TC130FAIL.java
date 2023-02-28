@@ -84,7 +84,7 @@ import POM.DashboardPage;
 	    		utilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		utilityClass.implicitlyWaitInMillis(3000);
-	    		Thread.sleep(1000);
+	    		Thread.sleep(1500);
 	    		
 	    		utilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
 	    		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
@@ -94,6 +94,7 @@ import POM.DashboardPage;
 	    		
 	    		BookingMask.ClearbookingActionfield();
 	    		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(666, 1, "Sheet2"));
+	    		Reporter.log("Send Booking action");
 	    		
 	    		utilityClass.implicitlyWaitInMillis(1000);
 	    		utilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -263,6 +264,7 @@ import POM.DashboardPage;
 	    		BookingMask.sendKOS(utilityClass.readDataFromStringExcel(668, 1, "Sheet2"));
 	    		Reporter.log("Send correct KOS in input field",true);
 	    		utilityClass.implicitlyWaitInMillis(1000);
+	    		
 	    		BookingMask.sendproductCode(utilityClass.readDataFromStringExcel(669, 1, "Sheet2"));
 	    		Reporter.log("Send correct ProductCode in input field",true);
 	    		utilityClass.implicitlyWaitInMillis(1000);

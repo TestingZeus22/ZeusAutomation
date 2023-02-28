@@ -69,9 +69,7 @@ public class verifyTravelDatesOutOfContract_TC11 extends baseClass {
     		Thread.sleep(6000);
     		utilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
- 
     		Thread.sleep(1000);
-    		
     		utilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(1000);
@@ -83,9 +81,9 @@ public class verifyTravelDatesOutOfContract_TC11 extends baseClass {
     		utilityClass.implicitlyWaitInMillis(1000);
     		BookingMask.ClearbookingActionfield();
     		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(187, 1, "Sheet2"));
+    		Reporter.log("Send Booking action");
     		BookingMask.clearNoOfPax();
     		utilityClass.implicitlyWaitInMillis(1000);
-    		
     		BookingMask.sendNoOfPax(utilityClass.readDataFromStringExcel(188, 1, "Sheet2"));
     		Reporter.log("Send number of passenger",true);
     		Thread.sleep(1000);
@@ -122,7 +120,7 @@ public class verifyTravelDatesOutOfContract_TC11 extends baseClass {
             BookingMask.clickOnSendbookingButton();
             Reporter.log("Clicked on sendbookingButton",true);
             utilityClass.scrollByAxis(0, 600);
-            Thread.sleep(2500); 
+            Thread.sleep(2000); 
 	}
  
     @Test
@@ -131,7 +129,6 @@ public class verifyTravelDatesOutOfContract_TC11 extends baseClass {
     	String ActualMessage = BookingMask.getTravelbothDateOutOfContractDateNotification();
 	    String expectedMessage = utilityClass.readDataFromStringExcel(198, 1, "Sheet2");
 	    Assert.assertTrue(expectedMessage.contains(ActualMessage), "TC failed as Actual message and expected message are not matching ");
-	    //Assert.assertEquals(true, expectedMessage.contains(ActualMessage));
 	    Reporter.log("Validating Actual message "+BookingMask.getTravelToDateOutOfContractDateNotification()+" and Expected message "+utilityClass.readDataFromStringExcel(198, 1, "Sheet2"),true);
     }
 

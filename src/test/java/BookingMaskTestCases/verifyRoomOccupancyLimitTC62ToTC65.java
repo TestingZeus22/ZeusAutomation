@@ -91,6 +91,7 @@
 	    		@Test (priority=1) //62
 	    		public void validateMismatchInNOofPaxFieldErrorMsg() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
+	    		utilityClass.implicitlyWaitInMillis(1000);
 	    		utilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		utilityClass.implicitlyWaitInMillis(3000);
@@ -189,7 +190,7 @@
 				utilityClass.scrollByAxis(0, 900);
 				utilityClass.implicitlyWaitInMillis(20000);
 				utilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
-	    		Reporter.log("Click on sendBookingButton ",true);
+	    		Reporter.log("Click on sendBookingButton",true);
 	             Thread.sleep(3000);
 				 String ActualMessage = BookingMask.getMaximumPersonCrossedErrorMessage();
 		    	 String expectedMessage = utilityClass.readDataFromStringExcel(928, 1, "Sheet2");
@@ -408,7 +409,7 @@
 					utilityClass.scrollByAxis(0, 900);
 					utilityClass.implicitlyWaitInMillis(20000);
 					utilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
-		    		Reporter.log("Click on sendBookingButton ",true);
+		    		Reporter.log("Click on sendBookingButton",true);
 		            Thread.sleep(3000);
 					 String ActualMessage = BookingMask.getMaximumPersonCrossedErrorMessage();
 			    	 String expectedMessage = utilityClass.readDataFromStringExcel(928, 3, "Sheet2");
@@ -519,12 +520,12 @@
 					utilityClass.scrollByAxis(0, 900);
 					utilityClass.implicitlyWaitInMillis(20000);
 					utilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
-		    		Reporter.log("Click on sendBookingButton ",true);
+		    		Reporter.log("Click on sendBookingButton",true);
 		            Thread.sleep(3000);
-					 String ActualMessage = BookingMask.getMaximumPersonCrossedErrorMessage();
-			    	 String expectedMessage = utilityClass.readDataFromStringExcel(928, 4, "Sheet2");
-			    	 Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
-			    	 Reporter.log("Validating Actual message "+BookingMask.getMaximumPersonCrossedErrorMessage()+" and Expected message "+utilityClass.readDataFromStringExcel(928, 4, "Sheet2"),true);
+					String ActualMessage = BookingMask.getMaximumPersonCrossedErrorMessage();
+			    	String expectedMessage = utilityClass.readDataFromStringExcel(928, 4, "Sheet2");
+			    	Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
+			    	Reporter.log("Validating Actual message "+BookingMask.getMaximumPersonCrossedErrorMessage()+" and Expected message "+utilityClass.readDataFromStringExcel(928, 4, "Sheet2"),true);
 	    		}
 	    	
 	    		@AfterMethod
@@ -537,7 +538,6 @@
 	    		BookingMask.logoutClickOFBookingMask();
 	    		Reporter.log("Logout from Booking Mask Page",true);
 	    		}
-	 
 	    		@AfterClass 
 	    		public void closeBrowser()
 	    		{

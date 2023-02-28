@@ -125,10 +125,10 @@ public class verifyEnteringTravelDaysNoInTravelToField_TC10 extends baseClass {
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
     		Reporter.log("Select Number of passenger",true);
             BookingMask.clickOnSendbookingButton();
-            Reporter.log("Clicked on sendbookingButton",true);
+            Reporter.log("Clicked on SendbookingButton",true);
             Thread.sleep(1000); 
             utilityClass.scrollByAxis(0, -400);
-            Thread.sleep(2700); 
+            Thread.sleep(2000); 
 	}
  
     @Test

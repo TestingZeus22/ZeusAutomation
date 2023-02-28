@@ -41,7 +41,6 @@ public void launchBrowser(){
 	salesBookingList =new salesBookingListPage(driver);
 	BookingMask =new bookingMaskPage(driver);
 	accommdationList =new accommodationListPage(driver);
-	
   }
 
 @BeforeMethod
@@ -64,11 +63,11 @@ public void loginToApp() throws EncryptedDocumentException, IOException, Interru
 		Reporter.log("Clicked on sales dropdown in Dashboard",true);
 		utilityClass.implicitlyWaitInMillis(1000);
 		dashboard.salesBookingClick();
-		Reporter.log("Clicked on sales Booking in Dashboard",true);
+		Reporter.log("Clicked on Sales Booking in Dashboard",true);
 		Thread.sleep(5000);
 		utilityClass.scrollByAxis(100, 0);
 		salesBookingList.clickOncreateButton();
-		Reporter.log("Clicked on create Button in sales Booking page",true);
+		Reporter.log("Clicked on Create Button in Sales Booking",true);
 		Thread.sleep(6000);
 		utilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 		Reporter.log("Select TFT1 in TravelType dropdownList",true);
@@ -84,6 +83,7 @@ public void loginToApp() throws EncryptedDocumentException, IOException, Interru
 		utilityClass.implicitlyWaitInMillis(1000);
 		BookingMask.ClearbookingActionfield();
 		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(101, 1, "Sheet2"));
+		Reporter.log("Send Booking Action");
 		BookingMask.clearNoOfPax();
 		utilityClass.implicitlyWaitInMillis(1000);
 		BookingMask.sendNoOfPax(utilityClass.readDataFromStringExcel(102, 1, "Sheet2"));

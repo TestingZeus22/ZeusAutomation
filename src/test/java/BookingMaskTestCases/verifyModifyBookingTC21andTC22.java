@@ -77,6 +77,7 @@ public class verifyModifyBookingTC21andTC22 extends baseClass
 	    		@Test   (priority = 1) //TC21
 	    		public void validateBookingByDecreasingDuration() throws InterruptedException, EncryptedDocumentException, IOException 
 	    		{
+	    		utilityClass.implicitlyWaitInsec(10);
 	    		utilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		utilityClass.implicitlyWaitInMillis(3000);
@@ -175,6 +176,7 @@ public class verifyModifyBookingTC21andTC22 extends baseClass
 	            utilityClass.implicitlyWaitInMillis(40000);
 	            BookingMask.ClearbookingActionfield();
 	            BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(272, 4, "Sheet2"));
+	            Reporter.log("Change Booking action to U");
 	    		utilityClass.implicitlyWaitInMillis(20000);
 	    		bookingupdate.clearTravelFrom1();
 	    		bookingupdate.sendTravelFrom1(utilityClass.readDataFromStringExcel(273, 4, "Sheet2"));
@@ -210,7 +212,7 @@ public class verifyModifyBookingTC21andTC22 extends baseClass
 				 Reporter.log("Validating Actual ReservationNo "+ActualReser+" and Expected ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);
 	    		 }
 	    		 
-	    		@Test  (priority = 2)  //TC22
+	    		@Test  (priority=2)  //TC22
 	    		public void validateBookingByIncreasingDuration() throws InterruptedException, EncryptedDocumentException, IOException 
 	    		{
 	    		utilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());

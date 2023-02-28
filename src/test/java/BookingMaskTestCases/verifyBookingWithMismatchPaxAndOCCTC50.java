@@ -36,7 +36,7 @@ import POM.tbmCodeMasterPage;
 import POM.tbmCodeNewCreatePage;
 import utility.utilityClass;
 
-public class TC50 extends baseClass {
+public class verifyBookingWithMismatchPaxAndOCCTC50 extends baseClass {
 	loginPage login;
 	File myFile;
 	selectCompanyPage selectCompany;

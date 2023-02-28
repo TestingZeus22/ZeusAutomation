@@ -87,8 +87,7 @@ public class verifyEnteringTravelFromBeforeContract_TC13 extends baseClass {
     		
     		utilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
-    		
-    		Thread.sleep(1000);
+    		Thread.sleep(1500);
     		
     		utilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
@@ -101,6 +100,7 @@ public class verifyEnteringTravelFromBeforeContract_TC13 extends baseClass {
     		utilityClass.implicitlyWaitInMillis(1000);
     		BookingMask.ClearbookingActionfield();
     		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(217, 1, "Sheet2"));
+    		Reporter.log("Send Booking action");
     		BookingMask.clearNoOfPax();
     		utilityClass.implicitlyWaitInMillis(1000);
     		

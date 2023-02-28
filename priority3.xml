@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="BookingMaskTestCases.verifyBookingInquiryWithBlankTravelFromAndTravelToDate_TC05"/>
+      <class name="BookingMaskTestCases.verifyBookingInquiryWithBlankTravelFromDate_TC04"/>
+      <class name="BookingMaskTestCases.verifyBookingInquiryWithBlankTravelToDate_TC03"/>
+      <class name="BookingMaskTestCases.verifyTravelToDateLessThanTravelFromDate_TC08"/>
+      <class name="BookingMaskTestCases.verifyTravelDatesOutOfContract_TC11"/>
+      <class name="BookingMaskTestCases.verifyTravelDateEndingOutOfContract_TC12"/>
+      <class name="BookingMaskTestCases.verifyEnteringTravelFromBeforeContract_TC13"/>
+      <class name="BookingMaskTestCases.verifyBookingWithTravelFromAndTravelToSameDate_TC07"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
