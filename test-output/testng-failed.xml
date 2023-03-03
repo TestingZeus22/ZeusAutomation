@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="BookingMaskTestCases.TCC29TC130FAIL">
+      <class name="BookingMaskTestCases.createBA">
         <methods>
           <include name="loginToApp"/>
-          <include name="launchBrowser"/>
-          <include name="validateConfirmBookingOFTwoAccommodation"/>
-          <include name="closeBrowser"/>
           <include name="Logout"/>
+          <include name="closeBrowser"/>
+          <include name="validatePriceFieldWithBookingInquiry"/>
+          <include name="launchBrowser"/>
         </methods>
-      </class> <!-- BookingMaskTestCases.TCC29TC130FAIL -->
+      </class> <!-- BookingMaskTestCases.createBA -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

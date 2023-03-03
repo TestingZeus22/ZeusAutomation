@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test11(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="BookingMaskTestCases.verifyTravelDatesOutOfContract_TC11">
+      <class name="BookingMaskTestCases.verifyRoomOccupancyLimitTC70ToTC73">
         <methods>
-          <include name="loginToApp"/>
-          <include name="closeBrowser"/>
-          <include name="validateMessageOnBMwithDatesOutOfContract"/>
           <include name="launchBrowser"/>
+          <include name="validateLimitOccupancyCombinationBooking"/>
+          <include name="closeBrowser"/>
+          <include name="validateLimitOccupancyCombinationBookings"/>
+          <include name="validateLimitOccupancyForMaxAdults"/>
+          <include name="loginToApp"/>
           <include name="Logout"/>
         </methods>
-      </class> <!-- BookingMaskTestCases.verifyTravelDatesOutOfContract_TC11 -->
+      </class> <!-- BookingMaskTestCases.verifyRoomOccupancyLimitTC70ToTC73 -->
     </classes>
-  </test> <!-- Test11(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

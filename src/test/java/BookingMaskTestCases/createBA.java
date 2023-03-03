@@ -125,15 +125,14 @@ public class createBA extends baseClass {
         Reporter.log("Clicked on Dashboard button",true);	
         Thread.sleep(2000);
        
-        
         driver.navigate().to("https://zeuscloud.azurewebsites.net/Accommodation");
         Reporter.log("Clicked on Accommodation dropdown",true);	
         Thread.sleep(2000);
         accommdationList.clickcreateAccommodationButton();
         Reporter.log("Clicked on create Accommodation",true);	
         
-        Thread.sleep(1000);
-        utilityClass.listBoxHandlingUsingByText("HK012 - (TESTING)", accommodationNew.clickOnTBMCodeSelection());
+        Thread.sleep(2000);
+        utilityClass.listBoxHandlingUsingByText("HK003 - (Patil)", accommodationNew.clickOnTBMCodeSelection());
         Reporter.log("Select TBM code from dropdown list",true);	
         Thread.sleep(500);
         
@@ -149,7 +148,7 @@ public class createBA extends baseClass {
         Reporter.log("Send zip code",true);
         Thread.sleep(1000);
         accommodationNew.sendstreet(utilityClass.readDataFromStringExcel(17, 1, "Sheet2"));
-        Reporter.log("send Street",true);
+        Reporter.log("Send Street",true);
         Thread.sleep(1000);
         accommodationNew.sendNumber(utilityClass.readDataFromStringExcel(18, 1, "Sheet2"));
         Reporter.log("Send Number",true);
@@ -516,8 +515,8 @@ public class createBA extends baseClass {
     		utilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
     		Thread.sleep(1000);
-    		utilityClass.listBoxHandlingUsingByText("HK012 - (TESTING)", BookingMask.productCodeDropDownMethod());
-    		Reporter.log("Selected HK012 - (TESTING) from dropdown list",true);
+    		utilityClass.listBoxHandlingUsingByText("HK003 - (Patil)", BookingMask.productCodeDropDownMethod());
+    		Reporter.log("Selected HK003 - (Patil) from dropdown list",true);
     		Thread.sleep(1000);
     		utilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
@@ -528,34 +527,34 @@ public class createBA extends baseClass {
     		BookingMask.clearNoOfPax();
     		utilityClass.implicitlyWaitInMillis(1000);
     		
-    		BookingMask.sendNoOfPax(utilityClass.readDataFromStringExcel(2, 1, "Sheet2"));
+    		BookingMask.sendNoOfPax(utilityClass.readDataFromStringExcel(67, 1, "Sheet2"));
     		Reporter.log("Send number of passenger",true);
     		Thread.sleep(1000);
     		
-    		BookingMask.sendKOS(utilityClass.readDataFromStringExcel(6, 1, "Sheet2"));
+    		BookingMask.sendKOS(utilityClass.readDataFromStringExcel(68, 1, "Sheet2"));
     		Reporter.log("Send correct KOS in input field",true);
     		utilityClass.implicitlyWaitInMillis(1000);
     		
-    		BookingMask.sendproductCode(utilityClass.readDataFromStringExcel(7, 1, "Sheet2"));
+    		BookingMask.sendproductCode(utilityClass.readDataFromStringExcel(58, 1, "Sheet2"));
     		Reporter.log("Send correct ProductCode in input field",true);
     		utilityClass.implicitlyWaitInMillis(1000);
     		
-    		BookingMask.sendRoomCode(utilityClass.readDataFromStringExcel(8, 1, "Sheet2"));
+    		BookingMask.sendRoomCode(utilityClass.readDataFromStringExcel(70, 1, "Sheet2"));
     		Reporter.log("Send roomcode in input field",true);
     		
-    		BookingMask.sendBoard(utilityClass.readDataFromStringExcel(9, 1, "Sheet2"));
+    		BookingMask.sendBoard(utilityClass.readDataFromStringExcel(71, 1, "Sheet2"));
     		Reporter.log("Send correct boardName",true);
     		
-    		BookingMask.sendOccupancy(utilityClass.readDataFromStringExcel(10, 1, "Sheet2"));
+    		BookingMask.sendOccupancy(utilityClass.readDataFromStringExcel(72, 1, "Sheet2"));
     		Reporter.log("Send Occupancy",true);
     	
-    		BookingMask.sendTotalPax(utilityClass.readDataFromStringExcel(11, 1, "Sheet2"));
+    		BookingMask.sendTotalPax(utilityClass.readDataFromStringExcel(73, 1, "Sheet2"));
     		Reporter.log("Send bookinglines ",true);
     		
-    		BookingMask.sendTravelFromDate(utilityClass.readDataFromStringExcel(21, 1, "Sheet2"));
+    		BookingMask.sendTravelFromDate(utilityClass.readDataFromStringExcel(96, 1, "Sheet2"));
     		Reporter.log("Send Travel from date",true);
     		
-    		BookingMask.sendTravelToDate(utilityClass.readDataFromStringExcel(22, 1, "Sheet2"));
+    		BookingMask.sendTravelToDate(utilityClass.readDataFromStringExcel(97, 1, "Sheet2"));
     		Reporter.log("Send Travel To date",true);
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
@@ -572,11 +571,10 @@ public class createBA extends baseClass {
     public void validatePriceFieldWithBookingInquiry() throws EncryptedDocumentException, IOException 
     {
       String ActualPrice = BookingMask.getPriceFieldValue1("value");
-	  String expectedPrice = utilityClass.readDataFromStringExcel(23, 1, "Sheet2");
+	  String expectedPrice = utilityClass.readDataFromStringExcel(98, 1, "Sheet2");
 	  Assert.assertEquals(ActualPrice, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
-	  Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue1("value")+" and Expected Price "+utilityClass.readDataFromStringExcel(23, 1, "Sheet2"),true);
+	  Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue1("value")+" and Expected Price "+utilityClass.readDataFromStringExcel(98, 1, "Sheet2"),true);
     }
-
   
     @AfterMethod
     public void Logout() throws InterruptedException

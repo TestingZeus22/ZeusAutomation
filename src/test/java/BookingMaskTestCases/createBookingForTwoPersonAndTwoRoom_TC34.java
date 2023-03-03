@@ -93,6 +93,7 @@
 	    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
 	    		utilityClass.implicitlyWaitInMillis(1000);
 	    		BookingMask.ClearbookingActionfield();
+	    		Reporter.log("Send Booking action");
 	    		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(591, 1, "Sheet2"));
 	    		
 	    		BookingMask.clearNoOfPax();

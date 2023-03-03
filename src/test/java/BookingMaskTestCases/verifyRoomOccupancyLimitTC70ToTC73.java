@@ -188,9 +188,9 @@
 				utilityClass.implicitlyWaitInMillis(20000);
 				utilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
 	    		Reporter.log("Click on sendBookingButton after U action code",true);
-	           Thread.sleep(3000);
-	           String ActualPrice = bookingupdate.getPriceFieldValue1("value");
-	           ActualPrices=ActualPrice;
+	            Thread.sleep(3000);
+	            String ActualPrice = bookingupdate.getPriceFieldValue1("value");
+	            ActualPrices=ActualPrice;
 	            
 	            utilityClass.implicitlyWaitInMillis(30000);
 		        String ResNo=BookingMask.getReservationNoBM("value");

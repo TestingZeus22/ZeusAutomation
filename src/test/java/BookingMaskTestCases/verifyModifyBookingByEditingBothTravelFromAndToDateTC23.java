@@ -190,7 +190,7 @@
 		   String ActualPrice = bookingupdate.getPriceFieldValue1("value");
 		   String expectedPrice = utilityClass.readDataFromStringExcel(295, 2, "Sheet2");
 		   Assert.assertEquals(ActualPrice, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
-		   Reporter.log("Validating Actual price with changing travel date is "+bookingupdate.getPriceFieldValue1("value")+" and Expected Price with changing travel date is"+utilityClass.readDataFromStringExcel(295, 2, "Sheet2"),true); 
+		   Reporter.log("Validating Actual price with changing travel date is "+bookingupdate.getPriceFieldValue1("value")+" and Expected Price with changing travel date is "+utilityClass.readDataFromStringExcel(295, 2, "Sheet2"),true); 
 		}
 	   
 	   @AfterMethod
