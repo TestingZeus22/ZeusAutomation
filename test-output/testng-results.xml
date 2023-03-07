@@ -38,6 +38,9 @@
       <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
     </line>
     <line>
+      <![CDATA[Send Booking action]]>
+    </line>
+    <line>
       <![CDATA[Send number of passenger]]>
     </line>
     <line>
@@ -68,70 +71,10 @@
       <![CDATA[Select Number of passenger]]>
     </line>
     <line>
-      <![CDATA[Click on sendBookingButton after U action code]]>
+      <![CDATA[Clicked on sendbookingButton]]>
     </line>
     <line>
-      <![CDATA[Clicked on ViewList]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on sendTBMcode to verify booking is done or not]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on Booking listButton]]>
-    </line>
-    <line>
-      <![CDATA[send TBM code]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on Booking listButton]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on edit booking1]]>
-    </line>
-    <line>
-      <![CDATA[Change booking action to U]]>
-    </line>
-    <line>
-      <![CDATA[Change No.of pax]]>
-    </line>
-    <line>
-      <![CDATA[Send correct KOS in input field]]>
-    </line>
-    <line>
-      <![CDATA[Send correct ProductCode in input field]]>
-    </line>
-    <line>
-      <![CDATA[Send roomcode in input field]]>
-    </line>
-    <line>
-      <![CDATA[Send correct boardName]]>
-    </line>
-    <line>
-      <![CDATA[Send Occupancy]]>
-    </line>
-    <line>
-      <![CDATA[Send bookinglines ]]>
-    </line>
-    <line>
-      <![CDATA[Send Travel from date]]>
-    </line>
-    <line>
-      <![CDATA[Send Travel To date]]>
-    </line>
-    <line>
-      <![CDATA[Select Number of passenger]]>
-    </line>
-    <line>
-      <![CDATA[Click on sendBookingButton after U action code]]>
-    </line>
-    <line>
-      <![CDATA[Validating Actual price for Room1 is 266640.00 and Expected Price for Room1 is 266640.00]]>
-    </line>
-    <line>
-      <![CDATA[Validating Actual price for Room2 is 266640.00 and Expected Price for Room2 is 266640.00]]>
-    </line>
-    <line>
-      <![CDATA[Validating Actual price for both Room is 533280 and Expected Price for both room  is 533280]]>
+      <![CDATA[Validating Actual message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                 and Expected message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ]]>
     </line>
     <line>
       <![CDATA[Clicking on Logout Button in Booking Mask page]]>
@@ -143,19 +86,19 @@
       <![CDATA[Closing Browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-03-03T11:36:50 IST" name="Default suite" finished-at="2023-03-03T11:38:41 IST" duration-ms="110191">
+  <suite started-at="2023-03-07T16:28:21 IST" name="Default suite" finished-at="2023-03-07T16:29:13 IST" duration-ms="51916">
     <groups>
     </groups>
-    <test started-at="2023-03-03T11:36:50 IST" name="Default test" finished-at="2023-03-03T11:38:41 IST" duration-ms="110191">
-      <class name="BookingMaskTestCases.verifyModifyBookingToAddAnotherRoomWithSameDateTC27">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:BookingMaskTestCases.verifyModifyBookingToAddAnotherRoomWithSameDateTC27@4567f35d]" started-at="2023-03-03T11:36:50 IST" name="launchBrowser" finished-at="2023-03-03T11:36:56 IST" duration-ms="5889" status="PASS">
+    <test started-at="2023-03-07T16:28:21 IST" name="Default test" finished-at="2023-03-07T16:29:13 IST" duration-ms="51916">
+      <class name="BookingMaskTestCases.verifyTravelDatesOutOfContract_TC11">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:BookingMaskTestCases.verifyTravelDatesOutOfContract_TC11@4567f35d]" started-at="2023-03-07T16:28:21 IST" name="launchBrowser" finished-at="2023-03-07T16:28:29 IST" duration-ms="7301" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser Launch ]]>
             </line>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:BookingMaskTestCases.verifyModifyBookingToAddAnotherRoomWithSameDateTC27@4567f35d]" started-at="2023-03-03T11:36:56 IST" name="loginToApp" finished-at="2023-03-03T11:38:36 IST" duration-ms="99720" status="PASS">
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:BookingMaskTestCases.verifyTravelDatesOutOfContract_TC11@4567f35d]" started-at="2023-03-07T16:28:29 IST" name="loginToApp" finished-at="2023-03-07T16:29:07 IST" duration-ms="37959" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Valid Username Entered]]>
@@ -191,6 +134,9 @@
               <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
             </line>
             <line>
+              <![CDATA[Send Booking action]]>
+            </line>
+            <line>
               <![CDATA[Send number of passenger]]>
             </line>
             <line>
@@ -221,78 +167,18 @@
               <![CDATA[Select Number of passenger]]>
             </line>
             <line>
-              <![CDATA[Click on sendBookingButton after U action code]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on ViewList]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on sendTBMcode to verify booking is done or not]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on Booking listButton]]>
-            </line>
-            <line>
-              <![CDATA[send TBM code]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on Booking listButton]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on edit booking1]]>
-            </line>
-            <line>
-              <![CDATA[Change booking action to U]]>
-            </line>
-            <line>
-              <![CDATA[Change No.of pax]]>
-            </line>
-            <line>
-              <![CDATA[Send correct KOS in input field]]>
-            </line>
-            <line>
-              <![CDATA[Send correct ProductCode in input field]]>
-            </line>
-            <line>
-              <![CDATA[Send roomcode in input field]]>
-            </line>
-            <line>
-              <![CDATA[Send correct boardName]]>
-            </line>
-            <line>
-              <![CDATA[Send Occupancy]]>
-            </line>
-            <line>
-              <![CDATA[Send bookinglines ]]>
-            </line>
-            <line>
-              <![CDATA[Send Travel from date]]>
-            </line>
-            <line>
-              <![CDATA[Send Travel To date]]>
-            </line>
-            <line>
-              <![CDATA[Select Number of passenger]]>
-            </line>
-            <line>
-              <![CDATA[Click on sendBookingButton after U action code]]>
+              <![CDATA[Clicked on sendbookingButton]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method signature="validateBookingAndTotalPriceofBothRooms()[pri:0, instance:BookingMaskTestCases.verifyModifyBookingToAddAnotherRoomWithSameDateTC27@4567f35d]" started-at="2023-03-03T11:38:36 IST" name="validateBookingAndTotalPriceofBothRooms" finished-at="2023-03-03T11:38:36 IST" duration-ms="250" status="PASS">
+        <test-method signature="validateMessageOnBMwithDatesOutOfContract()[pri:0, instance:BookingMaskTestCases.verifyTravelDatesOutOfContract_TC11@4567f35d]" started-at="2023-03-07T16:29:07 IST" name="validateMessageOnBMwithDatesOutOfContract" finished-at="2023-03-07T16:29:07 IST" duration-ms="158" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Validating Actual price for Room1 is 266640.00 and Expected Price for Room1 is 266640.00]]>
-            </line>
-            <line>
-              <![CDATA[Validating Actual price for Room2 is 266640.00 and Expected Price for Room2 is 266640.00]]>
-            </line>
-            <line>
-              <![CDATA[Validating Actual price for both Room is 533280 and Expected Price for both room  is 533280]]>
+              <![CDATA[Validating Actual message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                 and Expected message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ]]>
             </line>
           </reporter-output>
-        </test-method> <!-- validateBookingAndTotalPriceofBothRooms -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:BookingMaskTestCases.verifyModifyBookingToAddAnotherRoomWithSameDateTC27@4567f35d]" started-at="2023-03-03T11:38:36 IST" name="Logout" finished-at="2023-03-03T11:38:40 IST" duration-ms="4199" status="PASS">
+        </test-method> <!-- validateMessageOnBMwithDatesOutOfContract -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:BookingMaskTestCases.verifyTravelDatesOutOfContract_TC11@4567f35d]" started-at="2023-03-07T16:29:07 IST" name="Logout" finished-at="2023-03-07T16:29:13 IST" duration-ms="6362" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Clicking on Logout Button in Booking Mask page]]>
@@ -302,14 +188,14 @@
             </line>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:BookingMaskTestCases.verifyModifyBookingToAddAnotherRoomWithSameDateTC27@4567f35d]" started-at="2023-03-03T11:38:40 IST" name="closeBrowser" finished-at="2023-03-03T11:38:41 IST" duration-ms="92" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:BookingMaskTestCases.verifyTravelDatesOutOfContract_TC11@4567f35d]" started-at="2023-03-07T16:29:13 IST" name="closeBrowser" finished-at="2023-03-07T16:29:13 IST" duration-ms="102" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- BookingMaskTestCases.verifyModifyBookingToAddAnotherRoomWithSameDateTC27 -->
+      </class> <!-- BookingMaskTestCases.verifyTravelDatesOutOfContract_TC11 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

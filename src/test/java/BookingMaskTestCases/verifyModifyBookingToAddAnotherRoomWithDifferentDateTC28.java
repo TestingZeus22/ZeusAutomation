@@ -40,7 +40,6 @@
 		DashboardPage dashboard;
 		salesBookingListPage salesBookingList;
 	    bookingMaskPage BookingMask;
-		
 		String roomPrice1;
 		String roomPrice2;
 		
@@ -97,6 +96,7 @@
 	    		
 	    		BookingMask.ClearbookingActionfield();
 	    		BookingMask.sendBookingAction(utilityClass.readDataFromStringExcel(280, 4, "Sheet2"));
+	    		Reporter.log("Send Booking action");
 	    		
 	    		utilityClass.implicitlyWaitInMillis(1000);
 	    		utilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -219,20 +219,19 @@
 	    		
 	    		driver.findElement(By.id("bookinglines_PassengerNo_3")).sendKeys("1-2");
 	    		Reporter.log("Select Number of passenger",true);
-	
 	    		Thread.sleep(500);
 	    		
-				 utilityClass.scrollByAxis(0, 900);
-				 utilityClass.implicitlyWaitInMillis(20000);
-				 utilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
-		    		Reporter.log("Click on sendBookingButton after U action code",true);
-		            utilityClass.implicitlyWaitInMillis(20000);
-		            String ActualPrice1 = BookingMask.getPriceFieldValue1("value");
-					roomPrice1=ActualPrice1;
-					Thread.sleep(500);
-					String ActualPrice2 = BookingMask.getPriceFieldValue2("value");
-					roomPrice2=ActualPrice2;
-					utilityClass.implicitlyWaitInMillis(20000);
+				utilityClass.scrollByAxis(0, 900);
+				utilityClass.implicitlyWaitInMillis(20000);
+				utilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
+		    	Reporter.log("Click on sendBookingButton after U action code",true);
+		        utilityClass.implicitlyWaitInMillis(20000);
+		        String ActualPrice1 = BookingMask.getPriceFieldValue1("value");
+			    roomPrice1=ActualPrice1;
+				Thread.sleep(500);
+				String ActualPrice2 = BookingMask.getPriceFieldValue2("value");
+				roomPrice2=ActualPrice2;
+				utilityClass.implicitlyWaitInMillis(20000);
 		}
 	
 	   @Test
@@ -249,7 +248,7 @@
 			String TotalPrice = BookingMask.getTotalPrice("value");
 			String ExpectedTotalPrice = utilityClass.readDataFromStringExcel(295, 4, "Sheet2");
 			Assert.assertEquals(TotalPrice, ExpectedTotalPrice,"Test Case Failed as actual & expected Total Prices are not matching");
-			Reporter.log("Validating Total price for both Room is "+BookingMask.getTotalPrice("value")+" and Expected total price for room 1 and room 2 is "+utilityClass.readDataFromStringExcel(295, 4, "Sheet2"),true);
+			Reporter.log("Validating Total price for both Room is "+BookingMask.getTotalPrice("value")+" and Expected total price for both room is "+utilityClass.readDataFromStringExcel(295, 4, "Sheet2"),true);
 	   }
 	   @AfterMethod
 	   public void Logout() throws InterruptedException

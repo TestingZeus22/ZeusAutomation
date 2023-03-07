@@ -16,7 +16,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import Base.baseClass;
 import POM.DashboardPage;
 import POM.accommodationGeneratedPage;
@@ -36,7 +35,7 @@ import POM.tbmCodeMasterPage;
 import POM.tbmCodeNewCreatePage;
 import utility.utilityClass;
 
-public class createBA extends baseClass {
+public class createBA2 extends baseClass {
 	loginPage login;
 	File myFile;
 	selectCompanyPage selectCompany;
@@ -132,7 +131,7 @@ public class createBA extends baseClass {
         Reporter.log("Clicked on create Accommodation",true);	
         
         Thread.sleep(2000);
-        utilityClass.listBoxHandlingUsingByText("HK003 - (Patil)", accommodationNew.clickOnTBMCodeSelection());
+        utilityClass.listBoxHandlingUsingByText("HK004 - (TEST)", accommodationNew.clickOnTBMCodeSelection());
         Reporter.log("Select TBM code from dropdown list",true);	
         Thread.sleep(500);
         
@@ -221,6 +220,115 @@ public class createBA extends baseClass {
         Thread.sleep(1000);
         utilityClass.scrollByAxis(0, -500);
         Thread.sleep(6000);
+        driver.navigate().refresh();
+        
+        try {
+     	   driver.findElement(By.xpath("//span[text()='Rooms']")).click();
+		} catch (Exception e) {
+			System.out.println("clicked on Rooms");
+		}
+        
+        driver.findElement(By.xpath("(//a[@class='btn-shadow btn btn-primary'])[1]")).click();
+        Reporter.log("Clicked on create Room",true);
+        
+        Thread.sleep(4000);
+        try {
+        	utilityClass.listBoxHandlingUsingByText("2 Raum Appartment", roomDetails.dropdownRoomType());
+		} catch (Exception e) {
+			System.out.println("Unable to click on textBox");
+		}
+        Reporter.log("Select Room Type from dropdown",true);
+        Thread.sleep(3000);
+        roomDetails.sendroomName(utilityClass.readDataFromStringExcel(27, 2, "Sheet2"));
+        Reporter.log("Send Room name",true);
+        utilityClass.listBoxHandlingUsingByText("without sea view", roomDetails.dropdownseaView());
+        Reporter.log("Select the sea view Street",true);
+        Thread.sleep(500);
+        roomDetails.sendroomcode(utilityClass.readDataFromStringExcel(28, 2, "Sheet2"));
+        Reporter.log("Send room code",true);
+        Thread.sleep(500);
+        roomDetails.clearMinAdultPerson();
+        roomDetails.sendminAdultPerson(utilityClass.readDataFromStringExcel(29, 2, "Sheet2"));
+        Reporter.log("Send minimum adult person",true);
+        Thread.sleep(500);
+        roomDetails.clearMaxAdultPerson();
+        roomDetails.sendmaxAdultPerson(utilityClass.readDataFromStringExcel(30, 2, "Sheet2"));
+        Reporter.log("Send maximum adult person",true);
+        Thread.sleep(500);
+        roomDetails.clearMinChildren();
+        roomDetails.sendminChildren(utilityClass.readDataFromStringExcel(31, 2, "Sheet2"));
+        Reporter.log("Send minimum children person",true);
+        Thread.sleep(500);
+        roomDetails.clearMaxChildren();
+        roomDetails.sendmaxChildren(utilityClass.readDataFromStringExcel(32, 2, "Sheet2"));
+        Reporter.log("Send maximum children person",true);
+        Thread.sleep(1000);
+        roomDetails.clearMaxTotalPerson();
+        roomDetails.sendmaxTotalPerson(utilityClass.readDataFromStringExcel(33, 2, "Sheet2"));
+        Reporter.log("Send maximum Total person",true);
+        Thread.sleep(1500);
+        roomDetails.clickOncreateRoomButton();
+        Reporter.log("Clicked on CreateRoom button",true);
+        Thread.sleep(1000);
+        utilityClass.scrollByAxis(0, -500);
+        Thread.sleep(6000);
+        
+        
+        
+        driver.navigate().refresh();
+        
+        try {
+     	   driver.findElement(By.xpath("//span[text()='Rooms']")).click();
+		} catch (Exception e) {
+			System.out.println("clicked on Rooms");
+		}
+        
+        driver.findElement(By.xpath("(//a[@class='btn-shadow btn btn-primary'])[1]")).click();
+        Reporter.log("Clicked on create Room",true);
+        
+        Thread.sleep(4000);
+        try {
+        	utilityClass.listBoxHandlingUsingByText("2 Raum Appartment", roomDetails.dropdownRoomType());
+		} catch (Exception e) {
+			System.out.println("Unable to click on textBox");
+		}
+        Reporter.log("Select Room Type from dropdown",true);
+        Thread.sleep(3000);
+        roomDetails.sendroomName(utilityClass.readDataFromStringExcel(27, 3, "Sheet2"));
+        Reporter.log("Send Room name",true);
+        utilityClass.listBoxHandlingUsingByText("without sea view", roomDetails.dropdownseaView());
+        Reporter.log("Select the sea view Street",true);
+        Thread.sleep(500);
+        roomDetails.sendroomcode(utilityClass.readDataFromStringExcel(28, 3, "Sheet2"));
+        Reporter.log("Send room code",true);
+        Thread.sleep(500);
+        roomDetails.clearMinAdultPerson();
+        roomDetails.sendminAdultPerson(utilityClass.readDataFromStringExcel(29, 3, "Sheet2"));
+        Reporter.log("Send minimum adult person",true);
+        Thread.sleep(500);
+        roomDetails.clearMaxAdultPerson();
+        roomDetails.sendmaxAdultPerson(utilityClass.readDataFromStringExcel(30, 3, "Sheet2"));
+        Reporter.log("Send maximum adult person",true);
+        Thread.sleep(500);
+        roomDetails.clearMinChildren();
+        roomDetails.sendminChildren(utilityClass.readDataFromStringExcel(31, 2, "Sheet2"));
+        Reporter.log("Send minimum children person",true);
+        Thread.sleep(500);
+        roomDetails.clearMaxChildren();
+        roomDetails.sendmaxChildren(utilityClass.readDataFromStringExcel(32, 3, "Sheet2"));
+        Reporter.log("Send maximum children person",true);
+        Thread.sleep(1000);
+        roomDetails.clearMaxTotalPerson();
+        roomDetails.sendmaxTotalPerson(utilityClass.readDataFromStringExcel(33, 3, "Sheet2"));
+        Reporter.log("Send maximum Total person",true);
+        Thread.sleep(1500);
+        roomDetails.clickOncreateRoomButton();
+        Reporter.log("Clicked on CreateRoom button",true);
+        Thread.sleep(1000);
+        utilityClass.scrollByAxis(0, -500);
+        Thread.sleep(6000);
+        
+        
         driver.findElement(By.xpath("(//span[@class='nav-text'])[3]")).click();
         Thread.sleep(5000);
         Reporter.log("Clicked on Contract",true);
@@ -267,7 +375,6 @@ public class createBA extends baseClass {
         Thread.sleep(1000);
         driver.findElement(By.xpath("//li[@class='multiselect-item multiselect-all']")).click();
         Reporter.log("Select the Distributor",true);
-        
         utilityClass.listBoxHandlingUsingByText("Offline (Agencies) Only", contracts.onlineOfflinedropdown());
         Reporter.log("Select the online or offline mode in listbox",true);
         Thread.sleep(1000);
@@ -386,13 +493,88 @@ public class createBA extends baseClass {
         Reporter.log("Send all required details for Season_H",true);
         Thread.sleep(2500);
         
-        driver.findElement(By.xpath("(//a[@class='btn-lg'])[11]")).click();
-        Reporter.log("Delete the extra created room in Rooms",true);
+        utilityClass.listBoxHandlingUsingByText("802 room2", price.room2Dropdown2());
+        Reporter.log("Select another room from the dropdown");
+        
+        price.sendseasonAallotRoom2_A(utilityClass.readDataFromStringExcel(48, 3, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonApriceRoom2_A(utilityClass.readDataFromStringExcel(48, 4, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonBallotRoom2_B(utilityClass.readDataFromStringExcel(49, 3, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonBpriceRoom2_B(utilityClass.readDataFromStringExcel(49, 4, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonCallotRoom2_C(utilityClass.readDataFromStringExcel(50, 3, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonCpriceRoom2_C(utilityClass.readDataFromStringExcel(50, 4, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonDallotRoom2_D(utilityClass.readDataFromStringExcel(51, 3, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonDpriceRoom2_D(utilityClass.readDataFromStringExcel(51, 4, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonEallotRoom2_E(utilityClass.readDataFromStringExcel(52, 3, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonEpriceRoom2_E(utilityClass.readDataFromStringExcel(52, 4, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonFallotRoom2_F(utilityClass.readDataFromStringExcel(53, 3, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonFpriceRoom2_F(utilityClass.readDataFromStringExcel(53, 4, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonGallotRoom2_G(utilityClass.readDataFromStringExcel(54, 3, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonGpriceRoom2_G(utilityClass.readDataFromStringExcel(54, 4, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonHallotRoom2_H(utilityClass.readDataFromStringExcel(55, 3, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonHpriceRoom2_H(utilityClass.readDataFromStringExcel(55, 4, "Sheet2"));
         Thread.sleep(1000);
-        utilityClass.scrollByAxis(0, 500);
-        Thread.sleep(1000);
+       
+        price.clickOnNewRowForRooms();
+        Reporter.log("Clicked on new row for rooms");
+        Thread.sleep(3000);
+        utilityClass.implicitlyWaitInMillis(20000);
+        utilityClass.listBoxHandlingUsingByText("803 room3", price.room3Dropdown3());
+        Reporter.log("Select another room from the dropdown");
+        Thread.sleep(500);
+        price.sendseasonAallotRoom3_A(utilityClass.readDataFromStringExcel(48, 3, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonApriceRoom3_A(utilityClass.readDataFromStringExcel(48, 4, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonBallotRoom3_B(utilityClass.readDataFromStringExcel(49, 3, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonBpriceRoom3_B(utilityClass.readDataFromStringExcel(49, 4, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonCallotRoom3_C(utilityClass.readDataFromStringExcel(50, 3, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonCpriceRoom3_C(utilityClass.readDataFromStringExcel(50, 4, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonDallotRoom3_D(utilityClass.readDataFromStringExcel(51, 3, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonDpriceRoom3_D(utilityClass.readDataFromStringExcel(51, 4, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonEallotRoom3_E(utilityClass.readDataFromStringExcel(52, 3, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonEpriceRoom3_E(utilityClass.readDataFromStringExcel(52, 4, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonFallotRoom3_F(utilityClass.readDataFromStringExcel(53, 3, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonFpriceRoom3_F(utilityClass.readDataFromStringExcel(53, 4, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonGallotRoom3_G(utilityClass.readDataFromStringExcel(54, 3, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonGpriceRoom3_G(utilityClass.readDataFromStringExcel(54, 4, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonHallotRoom3_H(utilityClass.readDataFromStringExcel(55, 3, "Sheet2"));
+        Thread.sleep(300);
+        price.sendseasonHpriceRoom3_H(utilityClass.readDataFromStringExcel(55, 4, "Sheet2"));
+        Thread.sleep(300);     
+        
+//        driver.findElement(By.xpath("(//a[@class='btn-lg'])[11]")).click();
+//        Reporter.log("Delete the extra created room in Rooms",true);
+        Thread.sleep(3000);
+        utilityClass.scrollByAxis(0, 400);
         price.clickOnUpdatePriceButton();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//button[@class='swal2-confirm swal2-styled']")).click();
         Reporter.log("Clicked on OK on the popup for Update price",true);
         Thread.sleep(2000);
@@ -425,7 +607,7 @@ public class createBA extends baseClass {
       		offerdefination.clickOnTchiboDE();
       		Thread.sleep(500);
       		Reporter.log("Clicked on TchiboDE",true);
-      		offerdefination.SendTBMcode(utilityClass.readDataFromStringExcel(58, 1, "Sheet2"));
+      		offerdefination.SendTBMcode(utilityClass.readDataFromStringExcel(58, 3, "Sheet2"));
       		Thread.sleep(4200);
       		Reporter.log("Send TBM code ",true);
       		offerdefination.clickOnCheckBox();
@@ -495,7 +677,7 @@ public class createBA extends baseClass {
     		utilityClass.implicitlyWaitInMillis(5000);
     		 utilityClass.clickUsingJSE(calculationSetting.clickOnRoom1ByJSE());
         	//calculationSetting.clickOnRoom1();
-    		Reporter.log("Click on Room1",true);
+    		Reporter.log("Clicked on Room1",true);
     	    Thread.sleep(4000);
     		utilityClass.scrollByAxis(0, 400);
     		calculationSetting.clickOnsavePrice();
@@ -519,15 +701,14 @@ public class createBA extends baseClass {
     		utilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
     		Thread.sleep(1000);
-    		utilityClass.listBoxHandlingUsingByText("HK003 - (Patil)", BookingMask.productCodeDropDownMethod());
-    		Reporter.log("Selected HK003 - (Patil) from dropdown list",true);
+    		utilityClass.listBoxHandlingUsingByText("HK004 - (TEST)", BookingMask.productCodeDropDownMethod());
+    		Reporter.log("Selected HK004 - (TEST) from dropdown list",true);
     		Thread.sleep(1000);
     		utilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
     		utilityClass.implicitlyWaitInMillis(1000);
     		utilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
     		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
-    		
     		BookingMask.clearNoOfPax();
     		utilityClass.implicitlyWaitInMillis(1000);
     		
@@ -539,7 +720,7 @@ public class createBA extends baseClass {
     		Reporter.log("Send correct KOS in input field",true);
     		utilityClass.implicitlyWaitInMillis(1000);
     		
-    		BookingMask.sendproductCode(utilityClass.readDataFromStringExcel(58, 1, "Sheet2"));
+    		BookingMask.sendproductCode(utilityClass.readDataFromStringExcel(58, 3, "Sheet2"));
     		Reporter.log("Send correct ProductCode in input field",true);
     		utilityClass.implicitlyWaitInMillis(1000);
     		
@@ -568,7 +749,6 @@ public class createBA extends baseClass {
             Reporter.log("Clicked on sendbookingButton",true);
             utilityClass.scrollByAxis(0, 600);
             Thread.sleep(1000); 
-		
 	}
  
     @Test
@@ -583,7 +763,7 @@ public class createBA extends baseClass {
     @AfterMethod
     public void Logout() throws InterruptedException
     {
-      Thread.sleep(3500);
+      Thread.sleep(3000);
       BookingMask.ClickOnLogoutButtonOFBookingMask();
 	  Reporter.log("Clicking on Logout Button in Booking Mask page",true);
 	  Thread.sleep(1000);
@@ -599,4 +779,5 @@ public class createBA extends baseClass {
     }
  
  }
+
 

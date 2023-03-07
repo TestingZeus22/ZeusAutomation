@@ -22,6 +22,7 @@ public class calculationSettingPage {
 	@FindBy(xpath ="(//a[@class='jstree-anchor'])[14]") private WebElement selectautoinTichiboDEAfterSavecalculation;
 	@FindBy(xpath="//span[text()='Block1']") private WebElement block1;
 	@FindBy(xpath="//span[text()='room1']") private WebElement room1;
+	@FindBy(xpath="//span[text()='room1']") private WebElement room1ByJSE;
 	@FindBy(id = "btnsave") private WebElement savePrice;
 	
 	
@@ -93,6 +94,11 @@ public class calculationSettingPage {
 	public void clickOnRoom1()
 	{
 		room1.click();
+	}
+	
+	public WebElement clickOnRoom1ByJSE()
+	{
+		return room1ByJSE;
 	}
 	
 	public void clickOnsavePrice()

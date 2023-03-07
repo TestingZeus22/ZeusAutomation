@@ -232,7 +232,7 @@ import POM.DashboardPage;
         		Reporter.log("Validating Actual ReservationNo "+ReserNo+" and Expected ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);
 	    		}
 	    		
-	    		@Test (enabled=false) //TC30
+	    		@Test (priority=2) //TC30
 	    		public void validateConfirmBoOkingOFTwoAccommodationWithU() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		 {
 	    		utilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());

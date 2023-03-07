@@ -79,7 +79,6 @@ public class contractsPage {
 		viewContractList.click();
 	}
 	
-	
 	public WebElement localitydropdown()
 	{
 		WebElement Element = localityDropdown;
