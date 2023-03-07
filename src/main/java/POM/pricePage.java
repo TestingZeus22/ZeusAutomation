@@ -6,8 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class pricePage {
-	
-	
+		
 @FindBy (xpath ="//a[text()='Dashboard']") private WebElement dashboard;
 
 //Season_A
@@ -80,7 +79,6 @@ public class pricePage {
 @FindBy (xpath ="(//input[@id='roomModel_SeasonCEB'])[4]") private WebElement seasonEBRoom4_C;
 @FindBy (xpath ="(//input[@id='roomModel_SeasonCPrice'])[4]") private WebElement seasonCpriceRoom4_C;
 
-
 //Season_D
 @FindBy (id ="seasonModel_SeasonDFrom") private WebElement seasonFrom_D;
 @FindBy (id ="seasonModel_SeasonDUntil") private WebElement seasonUntil_D;
@@ -128,7 +126,6 @@ public class pricePage {
 @FindBy (xpath ="(//input[@id='roomModel_SeasonEEB'])[4]") private WebElement seasonEBRoom4_E;
 @FindBy (xpath ="(//input[@id='roomModel_SeasonEPrice'])[4]") private WebElement seasonEpriceRoom4_E;
 
-
 //Season_F
 @FindBy (id ="seasonModel_SeasonFFrom") private WebElement seasonFrom_F;
 @FindBy (id ="seasonModel_SeasonFUntil") private WebElement seasonUntil_F;
@@ -152,7 +149,6 @@ public class pricePage {
 @FindBy (xpath ="(//input[@id='roomModel_SeasonFEB'])[4]") private WebElement seasonEBRoom4_F;
 @FindBy (xpath ="(//input[@id='roomModel_SeasonFPrice'])[4]") private WebElement seasonFpriceRoom4_F;
 
-
 //Season_G
 @FindBy (id ="seasonModel_SeasonGFrom") private WebElement seasonFrom_G;
 @FindBy (id ="seasonModel_SeasonGUntil") private WebElement seasonUntil_G;
@@ -175,7 +171,6 @@ public class pricePage {
 @FindBy (xpath ="(//input[@id='roomModel_SeasonGAllotment'])[4]") private WebElement seasonGallotRoom4_G;
 @FindBy (xpath ="(//input[@id='roomModel_SeasonGEB'])[4]") private WebElement seasonEBRoom4_G;
 @FindBy (xpath ="(//input[@id='roomModel_SeasonGPrice'])[4]") private WebElement seasonGpriceRoom4_G;
-
 
 //Season_H
 @FindBy (id ="seasonModel_SeasonHFrom") private WebElement seasonFrom_H;
@@ -201,7 +196,6 @@ public class pricePage {
 @FindBy (xpath ="(//input[@id='roomModel_SeasonHPrice'])[4]") private WebElement seasonHpriceRoom4_H;
 
 // Weekdays CheckBoxs selection for room1 
-
 @FindBy (xpath ="(//input[@id='roomModel_IsAll'])[1]") private WebElement Room1CheckBox1AllDay;
 @FindBy (xpath ="(//input[@id='roomModel_IsMonday'])[1]") private WebElement Room1CheckBox2Monday;
 @FindBy (xpath ="(//input[@id='roomModel_IsTuesday'])[1]") private WebElement Room1CheckBox3Tuesday;
@@ -212,7 +206,6 @@ public class pricePage {
 @FindBy (xpath ="(//input[@id='roomModel_IsSunday'])[1]") private WebElement Room1CheckBox8Sunday;
 
 //Weekdays CheckBox selection for room2
-
 @FindBy (xpath ="(//input[@id='roomModel_IsAll'])[2]") private WebElement Room2CheckBox1AllDay;
 @FindBy (xpath ="(//input[@id='roomModel_IsMonday'])[2]") private WebElement Room2CheckBox2Monday;
 @FindBy (xpath ="(//input[@id='roomModel_IsTuesday'])[2]") private WebElement Room2CheckBox3Tuesday;
@@ -223,7 +216,6 @@ public class pricePage {
 @FindBy (xpath ="(//input[@id='roomModel_IsSunday'])21]") private WebElement Room2CheckBox8Sunday;
 
 //Weeekdays CheckBox selection for room3
-
 @FindBy (xpath ="(//input[@id='roomModel_IsAll'])[3]") private WebElement Room3CheckBox1AllDay;
 @FindBy (xpath ="(//input[@id='roomModel_IsMonday'])[3]") private WebElement Room3CheckBox2Monday;
 @FindBy (xpath ="(//input[@id='roomModel_IsTuesday'])[3]") private WebElement Room3CheckBox3Tuesday;
@@ -234,7 +226,6 @@ public class pricePage {
 @FindBy (xpath ="(//input[@id='roomModel_IsSunday'])[3]") private WebElement Room3CheckBox8Sunday;
 
 //Weekdays CheckBox selection for room4
-
 @FindBy (xpath ="(//input[@id='roomModel_IsAll'])[4]") private WebElement Room4CheckBox1AllDay;
 @FindBy (xpath ="(//input[@id='roomModel_IsMonday'])[4]") private WebElement Room4CheckBox2Monday;
 @FindBy (xpath ="(//input[@id='roomModel_IsTuesday'])[4]") private WebElement Room4CheckBox3Tuesday;
@@ -256,7 +247,7 @@ public class pricePage {
 @FindBy (id ="Generateallotment") private WebElement generateAllotmentButton;
 
 // Methods Pending
-//Board Up/Downgrades
+//Board Up/Downgrades --> Page Methods creation pending.
 @FindBy (xpath ="//a[@id='boardupdown']") private WebElement addRowButtonBoardUpDowngrades;
 
 @FindBy (xpath ="(//span[@class='multiselect-selected-text'])[2]") private WebElement seasonBoardUpDowngradesDropdown1;
@@ -281,13 +272,10 @@ public class pricePage {
 
 @FindBy (id ="submitboard") private WebElement updateBoardUpDownButton;
 
-//Children/Additional Occupancy Discount
+//Children/Additional Occupancy Discount locators & Methods pending 
 
 @FindBy (id ="btn_addchildren") private WebElement addRowChildrenAdditionalOccupancyDiscount;
-
 @FindBy (xpath ="(//span[@class='multiselect-selected-text'])[6]") private WebElement seasonDropdown1;
-
-
 
 	public pricePage(WebDriver driver)
 	{
@@ -295,19 +283,16 @@ public class pricePage {
 	}
 	
 	public void clickOnDashboard()
-	
 	{
 		dashboard.click();
 	}
 	
 	public void sendSeasonFrom_A(String Season_A)
-	
 	{
 		seasonFrom_A.sendKeys(Season_A);
 	}
 	
 	public void seasonUntil_A(String SeasonUntil_A)
-	
 	{
 		seasonUntil_A.sendKeys(SeasonUntil_A);
 	}
@@ -403,13 +388,11 @@ public class pricePage {
 	}
 
 	public void sendSeasonFrom_C(String Season_C)
-	
 	{
 		seasonFrom_C.sendKeys(Season_C);
 	}
 	
 	public void seasonUntil_C(String SeasonUntil_C)
-	
 	{
 		seasonUntil_C.sendKeys(SeasonUntil_C);
 	}
@@ -455,13 +438,11 @@ public class pricePage {
 	}
 	
 	public void sendSeasonFrom_D(String Season_D)
-	
 	{
 		seasonFrom_D.sendKeys(Season_D);
 	}
 	
 	public void seasonUntil_D(String SeasonUntil_D)
-	
 	{
 		seasonUntil_D.sendKeys(SeasonUntil_D);
 	}
@@ -507,13 +488,11 @@ public class pricePage {
 	}
 	
 	public void sendSeasonFrom_E(String Season_E)
-	
 	{
 		seasonFrom_E.sendKeys(Season_E);
 	}
 	
 	public void seasonUntil_E(String SeasonUntil_E)
-	
 	{
 		seasonUntil_E.sendKeys(SeasonUntil_E);
 	}
@@ -559,13 +538,11 @@ public class pricePage {
 	}
 	
 	public void sendSeasonFrom_F(String Season_F)
-	
 	{
 		seasonFrom_F.sendKeys(Season_F);
 	}
 	
 	public void seasonUntil_F(String SeasonUntil_F)
-	
 	{
 		seasonUntil_F.sendKeys(SeasonUntil_F);
 	}
@@ -656,21 +633,17 @@ public class pricePage {
 		seasonGpriceRoom4_G.sendKeys(PriceRoom4_G);
 	}
 	
-	
 	public void seasonUntil_G(String SeasonUntil_G)
-	
 	{
 		seasonUntil_G.sendKeys(SeasonUntil_G);
 	}
     
 	public void sendSeasonFrom_H(String Season_H)
-	
 	{
 		seasonFrom_H.sendKeys(Season_H);
 	}
 	
 	public void seasonUntil_H(String SeasonUntil_H)
-	
 	{
 		seasonUntil_H.sendKeys(SeasonUntil_H);
 	}
@@ -714,7 +687,6 @@ public class pricePage {
 	{
 		seasonHpriceRoom4_H.sendKeys(PriceRoom4_H);
 	}
-	
 	
 	// room1
 	

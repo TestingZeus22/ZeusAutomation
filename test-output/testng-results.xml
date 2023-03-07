@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Browser Launch ]]>
@@ -20,6 +20,369 @@
       <![CDATA[Clicked on proceed button]]>
     </line>
     <line>
+      <![CDATA[Clicked on Master dropdown in dashboard page]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on TBM dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on TBM code]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on create TBM button]]>
+    </line>
+    <line>
+      <![CDATA[Select kind of service from dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Send TBM code]]>
+    </line>
+    <line>
+      <![CDATA[Select Country from ListBox ]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Create TBMcode button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Dashboard button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Accommodation dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on create Accommodation]]>
+    </line>
+    <line>
+      <![CDATA[Select TBM code from dropdown list]]>
+    </line>
+    <line>
+      <![CDATA[Send hotel stars]]>
+    </line>
+    <line>
+      <![CDATA[Select state from the listBox]]>
+    </line>
+    <line>
+      <![CDATA[Select City from the listBox]]>
+    </line>
+    <line>
+      <![CDATA[Send zip code]]>
+    </line>
+    <line>
+      <![CDATA[Send Street]]>
+    </line>
+    <line>
+      <![CDATA[Send Number]]>
+    </line>
+    <line>
+      <![CDATA[Send hotel email]]>
+    </line>
+    <line>
+      <![CDATA[Send phone Number]]>
+    </line>
+    <line>
+      <![CDATA[Send contract partner name]]>
+    </line>
+    <line>
+      <![CDATA[Send contract partner Email]]>
+    </line>
+    <line>
+      <![CDATA[Send Reservation Eamil]]>
+    </line>
+    <line>
+      <![CDATA[Select bank details in purchase agency dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on create AccommdationButton]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Rooms button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on create Room]]>
+    </line>
+    <line>
+      <![CDATA[Select Room Type from dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Send Room name]]>
+    </line>
+    <line>
+      <![CDATA[Select the sea view Street]]>
+    </line>
+    <line>
+      <![CDATA[Send room code]]>
+    </line>
+    <line>
+      <![CDATA[Send minimum adult person]]>
+    </line>
+    <line>
+      <![CDATA[Send maximum adult person]]>
+    </line>
+    <line>
+      <![CDATA[Send minimum children person]]>
+    </line>
+    <line>
+      <![CDATA[Send maximum children person]]>
+    </line>
+    <line>
+      <![CDATA[Send maximum Total person]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on CreateRoom button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on create Room]]>
+    </line>
+    <line>
+      <![CDATA[Select Room Type from dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Send Room name]]>
+    </line>
+    <line>
+      <![CDATA[Select the sea view Street]]>
+    </line>
+    <line>
+      <![CDATA[Send room code]]>
+    </line>
+    <line>
+      <![CDATA[Send minimum adult person]]>
+    </line>
+    <line>
+      <![CDATA[Send maximum adult person]]>
+    </line>
+    <line>
+      <![CDATA[Send minimum children person]]>
+    </line>
+    <line>
+      <![CDATA[Send maximum children person]]>
+    </line>
+    <line>
+      <![CDATA[Send maximum Total person]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on CreateRoom button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on create Room]]>
+    </line>
+    <line>
+      <![CDATA[Select Room Type from dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Send Room name]]>
+    </line>
+    <line>
+      <![CDATA[Select the sea view Street]]>
+    </line>
+    <line>
+      <![CDATA[Send room code]]>
+    </line>
+    <line>
+      <![CDATA[Send minimum adult person]]>
+    </line>
+    <line>
+      <![CDATA[Send maximum adult person]]>
+    </line>
+    <line>
+      <![CDATA[Send minimum children person]]>
+    </line>
+    <line>
+      <![CDATA[Send maximum children person]]>
+    </line>
+    <line>
+      <![CDATA[Send maximum Total person]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on CreateRoom button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Contract]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Create contract]]>
+    </line>
+    <line>
+      <![CDATA[Send contract name]]>
+    </line>
+    <line>
+      <![CDATA[Select currency in the listBox]]>
+    </line>
+    <line>
+      <![CDATA[Select season in the listBox]]>
+    </line>
+    <line>
+      <![CDATA[Send start date of contract]]>
+    </line>
+    <line>
+      <![CDATA[Send End date of contract]]>
+    </line>
+    <line>
+      <![CDATA[Select price type in the listBox]]>
+    </line>
+    <line>
+      <![CDATA[Select price category in the listBox]]>
+    </line>
+    <line>
+      <![CDATA[Select status of contract in the ListBox]]>
+    </line>
+    <line>
+      <![CDATA[Select board basis in the listBox]]>
+    </line>
+    <line>
+      <![CDATA[Select the Price]]>
+    </line>
+    <line>
+      <![CDATA[Check the listbox is multiselect or not]]>
+    </line>
+    <line>
+      <![CDATA[Select the Distributor]]>
+    </line>
+    <line>
+      <![CDATA[Select the online or offline mode in listbox]]>
+    </line>
+    <line>
+      <![CDATA[Send cancellation Fees upto days]]>
+    </line>
+    <line>
+      <![CDATA[Send cancellation fees value]]>
+    </line>
+    <line>
+      <![CDATA[select cancellation fees discount type in listbox]]>
+    </line>
+    <line>
+      <![CDATA[Send cancellation fees travel from date]]>
+    </line>
+    <line>
+      <![CDATA[Send cancellation fees travel To date]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on create contract on contract page]]>
+    </line>
+    <line>
+      <![CDATA[Send all required details for Season_A]]>
+    </line>
+    <line>
+      <![CDATA[Send all required details for Season_B]]>
+    </line>
+    <line>
+      <![CDATA[Send all required details for Season_C]]>
+    </line>
+    <line>
+      <![CDATA[Send all required details for Season_D]]>
+    </line>
+    <line>
+      <![CDATA[Send all required details for Season_E]]>
+    </line>
+    <line>
+      <![CDATA[Send all required details for Season_F]]>
+    </line>
+    <line>
+      <![CDATA[Send all required details for Season_G]]>
+    </line>
+    <line>
+      <![CDATA[Send all required details for Season_H]]>
+    </line>
+    <line>
+      <![CDATA[Select another room from the dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on create new row for rooms]]>
+    </line>
+    <line>
+      <![CDATA[Select another room from the dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on all day checkBox to uncheck AllDays]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Tuesday checkBox]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Thursday checkBox]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on saturday checkbox]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Monday checkbox]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on OK on the popup for Update price]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on generate Allotment]]>
+    </line>
+    <line>
+      <![CDATA[Navigate to dashboard page]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on offer defination]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on FalkToursAG]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on TchiboDE]]>
+    </line>
+    <line>
+      <![CDATA[Send TBM code ]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on checkBox]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on saveButton]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Calculation dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on offer calculationList]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on offer calculation]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on FalkToursAG]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on TchiboDE]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Testing in calaculation page]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Room1]]>
+    </line>
+    <line>
+      <![CDATA[Send DB% Value]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on save setting button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on SaveandCalculate button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Yes button in popup]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on transfer price]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Transfer price online]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on TESTING option in TichiboDE after saving of calculation]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Room1]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Save price]]>
+    </line>
+    <line>
       <![CDATA[Clicked on sales dropdown in Dashboard]]>
     </line>
     <line>
@@ -32,13 +395,10 @@
       <![CDATA[Select TFT1 in TravelType dropdownList]]>
     </line>
     <line>
-      <![CDATA[Selected HK001 - (TESTING) from dropdown list]]>
+      <![CDATA[Selected HK004 - (TEST) from dropdown list]]>
     </line>
     <line>
       <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
-    </line>
-    <line>
-      <![CDATA[Send Booking action]]>
     </line>
     <line>
       <![CDATA[Send number of passenger]]>
@@ -74,9 +434,6 @@
       <![CDATA[Clicked on sendbookingButton]]>
     </line>
     <line>
-      <![CDATA[Validating Actual message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                 and Expected message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ]]>
-    </line>
-    <line>
       <![CDATA[Clicking on Logout Button in Booking Mask page]]>
     </line>
     <line>
@@ -86,19 +443,19 @@
       <![CDATA[Closing Browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-03-07T16:28:21 IST" name="Default suite" finished-at="2023-03-07T16:29:13 IST" duration-ms="51916">
+  <suite started-at="2023-03-07T17:39:24 IST" name="Default suite" finished-at="2023-03-07T17:45:19 IST" duration-ms="354805">
     <groups>
     </groups>
-    <test started-at="2023-03-07T16:28:21 IST" name="Default test" finished-at="2023-03-07T16:29:13 IST" duration-ms="51916">
-      <class name="BookingMaskTestCases.verifyTravelDatesOutOfContract_TC11">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:BookingMaskTestCases.verifyTravelDatesOutOfContract_TC11@4567f35d]" started-at="2023-03-07T16:28:21 IST" name="launchBrowser" finished-at="2023-03-07T16:28:29 IST" duration-ms="7301" status="PASS">
+    <test started-at="2023-03-07T17:39:24 IST" name="Default test" finished-at="2023-03-07T17:45:19 IST" duration-ms="354805">
+      <class name="BookingMaskTestCases.createBAWeekday">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:BookingMaskTestCases.createBAWeekday@359f7cdf]" started-at="2023-03-07T17:39:24 IST" name="launchBrowser" finished-at="2023-03-07T17:39:30 IST" duration-ms="6052" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser Launch ]]>
             </line>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:BookingMaskTestCases.verifyTravelDatesOutOfContract_TC11@4567f35d]" started-at="2023-03-07T16:28:29 IST" name="loginToApp" finished-at="2023-03-07T16:29:07 IST" duration-ms="37959" status="PASS">
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:BookingMaskTestCases.createBAWeekday@359f7cdf]" started-at="2023-03-07T17:39:30 IST" name="loginToApp" finished-at="2023-03-07T17:45:12 IST" duration-ms="342212" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Valid Username Entered]]>
@@ -116,6 +473,369 @@
               <![CDATA[Clicked on proceed button]]>
             </line>
             <line>
+              <![CDATA[Clicked on Master dropdown in dashboard page]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on TBM dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on TBM code]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on create TBM button]]>
+            </line>
+            <line>
+              <![CDATA[Select kind of service from dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Send TBM code]]>
+            </line>
+            <line>
+              <![CDATA[Select Country from ListBox ]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Create TBMcode button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Dashboard button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Accommodation dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on create Accommodation]]>
+            </line>
+            <line>
+              <![CDATA[Select TBM code from dropdown list]]>
+            </line>
+            <line>
+              <![CDATA[Send hotel stars]]>
+            </line>
+            <line>
+              <![CDATA[Select state from the listBox]]>
+            </line>
+            <line>
+              <![CDATA[Select City from the listBox]]>
+            </line>
+            <line>
+              <![CDATA[Send zip code]]>
+            </line>
+            <line>
+              <![CDATA[Send Street]]>
+            </line>
+            <line>
+              <![CDATA[Send Number]]>
+            </line>
+            <line>
+              <![CDATA[Send hotel email]]>
+            </line>
+            <line>
+              <![CDATA[Send phone Number]]>
+            </line>
+            <line>
+              <![CDATA[Send contract partner name]]>
+            </line>
+            <line>
+              <![CDATA[Send contract partner Email]]>
+            </line>
+            <line>
+              <![CDATA[Send Reservation Eamil]]>
+            </line>
+            <line>
+              <![CDATA[Select bank details in purchase agency dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on create AccommdationButton]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Rooms button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on create Room]]>
+            </line>
+            <line>
+              <![CDATA[Select Room Type from dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Send Room name]]>
+            </line>
+            <line>
+              <![CDATA[Select the sea view Street]]>
+            </line>
+            <line>
+              <![CDATA[Send room code]]>
+            </line>
+            <line>
+              <![CDATA[Send minimum adult person]]>
+            </line>
+            <line>
+              <![CDATA[Send maximum adult person]]>
+            </line>
+            <line>
+              <![CDATA[Send minimum children person]]>
+            </line>
+            <line>
+              <![CDATA[Send maximum children person]]>
+            </line>
+            <line>
+              <![CDATA[Send maximum Total person]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on CreateRoom button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on create Room]]>
+            </line>
+            <line>
+              <![CDATA[Select Room Type from dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Send Room name]]>
+            </line>
+            <line>
+              <![CDATA[Select the sea view Street]]>
+            </line>
+            <line>
+              <![CDATA[Send room code]]>
+            </line>
+            <line>
+              <![CDATA[Send minimum adult person]]>
+            </line>
+            <line>
+              <![CDATA[Send maximum adult person]]>
+            </line>
+            <line>
+              <![CDATA[Send minimum children person]]>
+            </line>
+            <line>
+              <![CDATA[Send maximum children person]]>
+            </line>
+            <line>
+              <![CDATA[Send maximum Total person]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on CreateRoom button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on create Room]]>
+            </line>
+            <line>
+              <![CDATA[Select Room Type from dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Send Room name]]>
+            </line>
+            <line>
+              <![CDATA[Select the sea view Street]]>
+            </line>
+            <line>
+              <![CDATA[Send room code]]>
+            </line>
+            <line>
+              <![CDATA[Send minimum adult person]]>
+            </line>
+            <line>
+              <![CDATA[Send maximum adult person]]>
+            </line>
+            <line>
+              <![CDATA[Send minimum children person]]>
+            </line>
+            <line>
+              <![CDATA[Send maximum children person]]>
+            </line>
+            <line>
+              <![CDATA[Send maximum Total person]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on CreateRoom button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Contract]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Create contract]]>
+            </line>
+            <line>
+              <![CDATA[Send contract name]]>
+            </line>
+            <line>
+              <![CDATA[Select currency in the listBox]]>
+            </line>
+            <line>
+              <![CDATA[Select season in the listBox]]>
+            </line>
+            <line>
+              <![CDATA[Send start date of contract]]>
+            </line>
+            <line>
+              <![CDATA[Send End date of contract]]>
+            </line>
+            <line>
+              <![CDATA[Select price type in the listBox]]>
+            </line>
+            <line>
+              <![CDATA[Select price category in the listBox]]>
+            </line>
+            <line>
+              <![CDATA[Select status of contract in the ListBox]]>
+            </line>
+            <line>
+              <![CDATA[Select board basis in the listBox]]>
+            </line>
+            <line>
+              <![CDATA[Select the Price]]>
+            </line>
+            <line>
+              <![CDATA[Check the listbox is multiselect or not]]>
+            </line>
+            <line>
+              <![CDATA[Select the Distributor]]>
+            </line>
+            <line>
+              <![CDATA[Select the online or offline mode in listbox]]>
+            </line>
+            <line>
+              <![CDATA[Send cancellation Fees upto days]]>
+            </line>
+            <line>
+              <![CDATA[Send cancellation fees value]]>
+            </line>
+            <line>
+              <![CDATA[select cancellation fees discount type in listbox]]>
+            </line>
+            <line>
+              <![CDATA[Send cancellation fees travel from date]]>
+            </line>
+            <line>
+              <![CDATA[Send cancellation fees travel To date]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on create contract on contract page]]>
+            </line>
+            <line>
+              <![CDATA[Send all required details for Season_A]]>
+            </line>
+            <line>
+              <![CDATA[Send all required details for Season_B]]>
+            </line>
+            <line>
+              <![CDATA[Send all required details for Season_C]]>
+            </line>
+            <line>
+              <![CDATA[Send all required details for Season_D]]>
+            </line>
+            <line>
+              <![CDATA[Send all required details for Season_E]]>
+            </line>
+            <line>
+              <![CDATA[Send all required details for Season_F]]>
+            </line>
+            <line>
+              <![CDATA[Send all required details for Season_G]]>
+            </line>
+            <line>
+              <![CDATA[Send all required details for Season_H]]>
+            </line>
+            <line>
+              <![CDATA[Select another room from the dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on create new row for rooms]]>
+            </line>
+            <line>
+              <![CDATA[Select another room from the dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on all day checkBox to uncheck AllDays]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Tuesday checkBox]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Thursday checkBox]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on saturday checkbox]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Monday checkbox]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on OK on the popup for Update price]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on generate Allotment]]>
+            </line>
+            <line>
+              <![CDATA[Navigate to dashboard page]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on offer defination]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on FalkToursAG]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on TchiboDE]]>
+            </line>
+            <line>
+              <![CDATA[Send TBM code ]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on checkBox]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on saveButton]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Calculation dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on offer calculationList]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on offer calculation]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on FalkToursAG]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on TchiboDE]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Testing in calaculation page]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Room1]]>
+            </line>
+            <line>
+              <![CDATA[Send DB% Value]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on save setting button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on SaveandCalculate button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Yes button in popup]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on transfer price]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Transfer price online]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on TESTING option in TichiboDE after saving of calculation]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Room1]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Save price]]>
+            </line>
+            <line>
               <![CDATA[Clicked on sales dropdown in Dashboard]]>
             </line>
             <line>
@@ -128,13 +848,10 @@
               <![CDATA[Select TFT1 in TravelType dropdownList]]>
             </line>
             <line>
-              <![CDATA[Selected HK001 - (TESTING) from dropdown list]]>
+              <![CDATA[Selected HK004 - (TEST) from dropdown list]]>
             </line>
             <line>
               <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
-            </line>
-            <line>
-              <![CDATA[Send Booking action]]>
             </line>
             <line>
               <![CDATA[Send number of passenger]]>
@@ -171,14 +888,85 @@
             </line>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method signature="validateMessageOnBMwithDatesOutOfContract()[pri:0, instance:BookingMaskTestCases.verifyTravelDatesOutOfContract_TC11@4567f35d]" started-at="2023-03-07T16:29:07 IST" name="validateMessageOnBMwithDatesOutOfContract" finished-at="2023-03-07T16:29:07 IST" duration-ms="158" status="PASS">
+        <test-method signature="validatePriceFieldWithBookingInquiry()[pri:0, instance:BookingMaskTestCases.createBAWeekday@359f7cdf]" started-at="2023-03-07T17:45:12 IST" name="validatePriceFieldWithBookingInquiry" finished-at="2023-03-07T17:45:14 IST" duration-ms="1159" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#bookinglines_Price_1"}
+  (Session info: chrome=110.0.5481.178)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0df1600dbd19fac79cc7beddcc191c4d, findElement {using=id, value=bookinglines_Price_1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.30 (aedb656755c4..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:64450}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64450/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0df1600dbd19fac79cc7beddcc191c4d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#bookinglines_Price_1"}
+  (Session info: chrome=110.0.5481.178)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0df1600dbd19fac79cc7beddcc191c4d, findElement {using=id, value=bookinglines_Price_1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.30 (aedb656755c4..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:64450}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64450/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0df1600dbd19fac79cc7beddcc191c4d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy18.getAttribute(Unknown Source)
+at POM.bookingMaskPage.getPriceFieldValue1(bookingMaskPage.java:419)
+at BookingMaskTestCases.createBAWeekday.validatePriceFieldWithBookingInquiry(createBAWeekday.java:763)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
-            <line>
-              <![CDATA[Validating Actual message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                 and Expected message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- validateMessageOnBMwithDatesOutOfContract -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:BookingMaskTestCases.verifyTravelDatesOutOfContract_TC11@4567f35d]" started-at="2023-03-07T16:29:07 IST" name="Logout" finished-at="2023-03-07T16:29:13 IST" duration-ms="6362" status="PASS">
+        </test-method> <!-- validatePriceFieldWithBookingInquiry -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:BookingMaskTestCases.createBAWeekday@359f7cdf]" started-at="2023-03-07T17:45:14 IST" name="Logout" finished-at="2023-03-07T17:45:19 IST" duration-ms="5207" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Clicking on Logout Button in Booking Mask page]]>
@@ -188,14 +976,14 @@
             </line>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:BookingMaskTestCases.verifyTravelDatesOutOfContract_TC11@4567f35d]" started-at="2023-03-07T16:29:13 IST" name="closeBrowser" finished-at="2023-03-07T16:29:13 IST" duration-ms="102" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:BookingMaskTestCases.createBAWeekday@359f7cdf]" started-at="2023-03-07T17:45:19 IST" name="closeBrowser" finished-at="2023-03-07T17:45:19 IST" duration-ms="143" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- BookingMaskTestCases.verifyTravelDatesOutOfContract_TC11 -->
+      </class> <!-- BookingMaskTestCases.createBAWeekday -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

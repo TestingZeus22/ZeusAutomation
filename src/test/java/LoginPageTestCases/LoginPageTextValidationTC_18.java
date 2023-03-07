@@ -12,11 +12,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import Base.baseClass;
+import Base.BaseClass;
 import POM.loginPage;
-import utility.utilityClass;
+import utility.UtilityClass;
 
-public class LoginPageTextValidationTC_18 extends baseClass {
+public class LoginPageTextValidationTC_18 extends BaseClass {
 	loginPage login;
 	File myFile;
 	
@@ -30,16 +30,16 @@ public class LoginPageTextValidationTC_18 extends baseClass {
 	@BeforeMethod
 	public void loginToApp() throws EncryptedDocumentException, IOException
 	{
-		utilityClass.implicitlyWaitInMillis(200);
+		UtilityClass.implicitlyWaitInMillis(200);
 	}
   
   @Test
   public void ValidateWelcomeBackTextOnLoginPageTest() throws EncryptedDocumentException, IOException
    { 
 	 String Actual_Text = login.getWelcomeBackText();
-	 String expected_Text =utilityClass.readDataFromStringExcel(10, 2, "Sheet1");
+	 String expected_Text =UtilityClass.readDataFromStringExcel(10, 2, "Sheet1");
 	 Assert.assertEquals(Actual_Text, expected_Text,"Test case Failed as actual & expected Text are not matching");  
-	 Reporter.log("Validating actual "+login.getWelcomeBackText()+" and Expected Text "+utilityClass.readDataFromStringExcel(10, 2, "Sheet1"),true);
+	 Reporter.log("Validating actual "+login.getWelcomeBackText()+" and Expected Text "+UtilityClass.readDataFromStringExcel(10, 2, "Sheet1"),true);
 	
    }
 

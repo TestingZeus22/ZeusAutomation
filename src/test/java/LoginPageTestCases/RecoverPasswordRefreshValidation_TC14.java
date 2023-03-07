@@ -10,12 +10,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import Base.baseClass;
+import Base.BaseClass;
 import POM.recoverPasswordPage;
 import POM.loginPage;
-import utility.utilityClass;
+import utility.UtilityClass;
 
-public class RecoverPasswordRefreshValidation_TC14 extends baseClass {
+public class RecoverPasswordRefreshValidation_TC14 extends BaseClass {
 	loginPage login;
 	File myFile;
 	recoverPasswordPage email;
@@ -34,19 +34,19 @@ public class RecoverPasswordRefreshValidation_TC14 extends baseClass {
 	{
 		login.ClickOnRecoverPassword();
 		Reporter.log("Clicked on Recovery PasswordButton",true);
-		email.sendUName(utilityClass.readDataFromStringExcel(8, 3, "Sheet1"));
+		email.sendUName(UtilityClass.readDataFromStringExcel(8, 3, "Sheet1"));
 		Reporter.log("Valid UserName Entered",true);
 		driver.navigate().refresh();
-		utilityClass.implicitlyWaitInMillis(1000);
+		UtilityClass.implicitlyWaitInMillis(1000);
 	}
   
     @Test
     public void ValidUserNameEnterAndRefreshPageTest() throws EncryptedDocumentException, IOException
      {
 	  String Actual_Url= driver.getCurrentUrl();
-	  String expected_Url = utilityClass.readDataFromStringExcel(8, 2, "Sheet1");
+	  String expected_Url = UtilityClass.readDataFromStringExcel(8, 2, "Sheet1");
 	  Assert.assertEquals(Actual_Url, expected_Url,"Test case Failed as actual and Expected Url are not matching");    
-	  Reporter.log("Validating actual "+driver.getCurrentUrl()+" and Expected Text "+utilityClass.readDataFromStringExcel(8, 2, "Sheet1"),true);	
+	  Reporter.log("Validating actual "+driver.getCurrentUrl()+" and Expected Text "+UtilityClass.readDataFromStringExcel(8, 2, "Sheet1"),true);	
      }
   
   @AfterClass 

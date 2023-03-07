@@ -14,11 +14,11 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import Base.baseClass;
+import Base.BaseClass;
 import POM.loginPage;
-import utility.utilityClass;
+import utility.UtilityClass;
 
-public class ValidateRecoverPwdLinkTC_20 extends baseClass {
+public class ValidateRecoverPwdLinkTC_20 extends BaseClass {
 	loginPage login;
 	File myFile;
 	
@@ -33,16 +33,16 @@ public class ValidateRecoverPwdLinkTC_20 extends baseClass {
 	@BeforeMethod
 	public void loginToApp() throws EncryptedDocumentException, IOException
 	{
-		utilityClass.implicitlyWaitInMillis(100);	
+		UtilityClass.implicitlyWaitInMillis(100);	
 	}
   
     @Test
     public void VerifyRecoverPwdIsLinkTest() throws EncryptedDocumentException, IOException
     {
 	  String ActualLink = login.getRecoverPasswordLink();
-	  String expectedLink =utilityClass.readDataFromStringExcel(11, 2, "Sheet1");
+	  String expectedLink =UtilityClass.readDataFromStringExcel(11, 2, "Sheet1");
 	  Assert.assertEquals(ActualLink, expectedLink,"Test Case Failed as actual & expected Link are not matching");  
-	  Reporter.log("Validating actual "+login.getRecoverPasswordLink()+" and Expected Text "+utilityClass.readDataFromStringExcel(11, 2, "Sheet1"),true);
+	  Reporter.log("Validating actual "+login.getRecoverPasswordLink()+" and Expected Text "+UtilityClass.readDataFromStringExcel(11, 2, "Sheet1"),true);
      }
   
   

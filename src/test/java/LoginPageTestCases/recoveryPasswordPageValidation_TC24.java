@@ -12,12 +12,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import Base.baseClass;
+import Base.BaseClass;
 import POM.recoverPasswordPage;
 import POM.loginPage;
-import utility.utilityClass;
+import utility.UtilityClass;
 
-public class recoveryPasswordPageValidation_TC24 extends baseClass {
+public class recoveryPasswordPageValidation_TC24 extends BaseClass {
 	loginPage login;
 	recoverPasswordPage email;
 	File myFile;
@@ -35,16 +35,16 @@ public class recoveryPasswordPageValidation_TC24 extends baseClass {
 	{
 		login.ClickOnRecoverPassword();
 		Reporter.log("Clicked on Recovery PasswordButton ",true);
-		utilityClass.implicitlyWaitInMillis(2000);	
+		UtilityClass.implicitlyWaitInMillis(2000);	
 	}
   
   @Test 
   public void ValidateCopyrightTextOnRecoveryPasswordTest() throws EncryptedDocumentException, IOException
   {
 	  String ActualMsgCopyRight = email.getTextCopyright();
-	  String expectedMsgCopyRight = utilityClass.readDataFromStringExcel(14, 2, "Sheet1");
+	  String expectedMsgCopyRight = UtilityClass.readDataFromStringExcel(14, 2, "Sheet1");
 	  Assert.assertEquals(ActualMsgCopyRight, expectedMsgCopyRight,"Test case Failed as expectedMsg and actualMsg are not matching");
-	  Reporter.log("Validating actual Text"+email.getTextCopyright()+" and Expected Text "+utilityClass.readDataFromStringExcel(14, 2, "Sheet1"),true); 
+	  Reporter.log("Validating actual Text"+email.getTextCopyright()+" and Expected Text "+UtilityClass.readDataFromStringExcel(14, 2, "Sheet1"),true); 
   }
   
   @AfterClass 

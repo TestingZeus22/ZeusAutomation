@@ -14,12 +14,12 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import Base.baseClass;
+import Base.BaseClass;
 import POM.recoverPasswordPage;
 import POM.loginPage;
-import utility.utilityClass;
+import utility.UtilityClass;
 
-public class RecoverPasswordAndBackToLoginVaidation_TC09 extends baseClass {
+public class RecoverPasswordAndBackToLoginVaidation_TC09 extends BaseClass {
 	loginPage login;
 	File myFile;
 	
@@ -35,18 +35,18 @@ public class RecoverPasswordAndBackToLoginVaidation_TC09 extends baseClass {
 	{
 		login.ClickOnRecoverPassword();
 		Reporter.log("Clicked on Recovery PasswordButton ",true);
-		utilityClass.implicitlyWaitInMillis(1000);
+		UtilityClass.implicitlyWaitInMillis(1000);
 		driver.navigate().back();
-		utilityClass.implicitlyWaitInMillis(1000);
+		UtilityClass.implicitlyWaitInMillis(1000);
 	}
   
   @Test
   public void RecoverPasswordAndGoBackToLoginTest() throws EncryptedDocumentException, IOException
   {
 	 String expectedText=login.getCopyrightZeusText();
-	 String actualText = utilityClass.readDataFromStringExcel(6, 2, "Sheet1");
+	 String actualText = UtilityClass.readDataFromStringExcel(6, 2, "Sheet1");
 	 Assert.assertEquals(actualText, expectedText,"Test case Failed as actual & expected Message are not matching"); 
-	 Reporter.log("Validating actual "+login.getCopyrightZeusText()+" and Expected Text "+utilityClass.readDataFromStringExcel(6, 2, "Sheet1"),true);
+	 Reporter.log("Validating actual "+login.getCopyrightZeusText()+" and Expected Text "+UtilityClass.readDataFromStringExcel(6, 2, "Sheet1"),true);
   }
 
   @AfterClass 

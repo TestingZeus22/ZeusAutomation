@@ -13,11 +13,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import Base.baseClass;
+import Base.BaseClass;
 import POM.loginPage;
-import utility.utilityClass;
+import utility.UtilityClass;
 
-public class LoginPageRefreshValidation_TC10 extends baseClass {
+public class LoginPageRefreshValidation_TC10 extends BaseClass {
 	
 		loginPage login;
 		File myFile;
@@ -33,15 +33,15 @@ public class LoginPageRefreshValidation_TC10 extends baseClass {
 		@BeforeMethod
 		public void loginToApp() throws EncryptedDocumentException, IOException
 		{
-			login.SendUserName(utilityClass.readDataFromStringExcel(7, 0, "Sheet1"));
+			login.SendUserName(UtilityClass.readDataFromStringExcel(7, 0, "Sheet1"));
 			Reporter.log("Valid Username Entered",true);
-			login.SendPassword(utilityClass.readDataFromStringExcel(7, 1, "Sheet1"));
+			login.SendPassword(UtilityClass.readDataFromStringExcel(7, 1, "Sheet1"));
 			Reporter.log("Valid Password Entered",true);
-			utilityClass.implicitlyWaitInMillis(1000);
+			UtilityClass.implicitlyWaitInMillis(1000);
 			login.ClickOnLoginToDashboard();	
 			Reporter.log("Clicked on Login to Dashboard button",true);
 			driver.navigate().refresh();
-			utilityClass.implicitlyWaitInMillis(1000);
+			UtilityClass.implicitlyWaitInMillis(1000);
 		}
 	  
 	  @Test
@@ -49,10 +49,10 @@ public class LoginPageRefreshValidation_TC10 extends baseClass {
 	  
 	  {
 		  String Actual_Url= driver.getCurrentUrl();
-		  String expected_Url = utilityClass.readDataFromStringExcel(7, 2, "Sheet1");
+		  String expected_Url = UtilityClass.readDataFromStringExcel(7, 2, "Sheet1");
 		  System.out.println("expected_Url is "+expected_Url);
 		  Assert.assertEquals(Actual_Url, expected_Url,"Test case Failed as actual and Expected Url are not matching");  
-		  Reporter.log("Validating actual "+driver.getCurrentUrl()+" and Expected Text "+utilityClass.readDataFromStringExcel(7, 2, "Sheet1"),true);	
+		  Reporter.log("Validating actual "+driver.getCurrentUrl()+" and Expected Text "+UtilityClass.readDataFromStringExcel(7, 2, "Sheet1"),true);	
 	   }
 
 	  @AfterClass 

@@ -16,13 +16,13 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import Base.baseClass;
+import Base.BaseClass;
 import POM.DashboardPage;
 import POM.loginPage;
 import POM.selectCompanyPage;
-import utility.utilityClass;
+import utility.UtilityClass;
 
-public class DashboardValidation_TC02 extends baseClass {
+public class DashboardValidation_TC02 extends BaseClass {
 		
 		loginPage login;
 		DashboardPage dash;
@@ -41,16 +41,16 @@ public class DashboardValidation_TC02 extends baseClass {
 		@BeforeMethod
 		public void loginToApp() throws EncryptedDocumentException, IOException, InterruptedException
 		{
-			login.SendUserName(utilityClass.readDataFromStringExcel(2, 0, "Sheet1"));
+			login.SendUserName(UtilityClass.readDataFromStringExcel(2, 0, "Sheet1"));
 			Reporter.log("Valid Username Entered",true);
-			login.SendPassword(utilityClass.readDataFromStringExcel(2, 1, "Sheet1"));
+			login.SendPassword(UtilityClass.readDataFromStringExcel(2, 1, "Sheet1"));
 			Reporter.log("Valid Password Entered",true);
 			login.ClickOnLoginToDashboard();
 			Reporter.log("Clicked on Dashboard button",true);
-			utilityClass.implicitlyWaitInMillis(1000);
-			utilityClass.listBoxHandlingUsingByText("Falk Tours AG", selectCompany.SelectDropDownList());
+			UtilityClass.implicitlyWaitInMillis(1000);
+			UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", selectCompany.SelectDropDownList());
 			Reporter.log("Select the Falk Tours DE GmbH from given list",true);
-			utilityClass.implicitlyWaitInMillis(1000);
+			UtilityClass.implicitlyWaitInMillis(1000);
 			selectCompany.ClickOnProceedButton();
 			Reporter.log("Clicked on proceed button",true);	
 		}
@@ -59,9 +59,9 @@ public class DashboardValidation_TC02 extends baseClass {
 	  public void ValidUserNameAndValidPasswordEnterToDashboardPageTest() throws EncryptedDocumentException, IOException
 	  {
 		  String ActualTtext= dash.getActualTextOnDashboard();
-		  String expectedText = utilityClass.readDataFromStringExcel(2, 2, "Sheet1");
+		  String expectedText = UtilityClass.readDataFromStringExcel(2, 2, "Sheet1");
 		  Assert.assertEquals(expectedText, ActualTtext,"Test case Failed as Actual and expected Text are not matching");
-		  Reporter.log("Validating actual Text "+dash.getActualTextOnDashboard()+" and Expected Text "+utilityClass.readDataFromStringExcel(2, 2, "Sheet1"),true);
+		  Reporter.log("Validating actual Text "+dash.getActualTextOnDashboard()+" and Expected Text "+UtilityClass.readDataFromStringExcel(2, 2, "Sheet1"),true);
 	  }
 	  
 	  @AfterMethod
@@ -69,7 +69,7 @@ public class DashboardValidation_TC02 extends baseClass {
 	  {
 		  dash.ClickOnLogoutButton();
 		  Reporter.log("Clicking on Logout Button in Dashboard page",true);
-		  utilityClass.implicitlyWaitInMillis(1000);
+		  UtilityClass.implicitlyWaitInMillis(1000);
 		  dash.logoutClick();
 		  Reporter.log("Logout from Dashboard Page",true);
 	  }

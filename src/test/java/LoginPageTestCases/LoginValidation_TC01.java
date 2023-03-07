@@ -17,13 +17,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import Base.baseClass;
+import Base.BaseClass;
 
 import POM.loginPage;
 import POM.selectCompanyPage;
-import utility.utilityClass;
+import utility.UtilityClass;
 
-public class LoginValidation_TC01 extends baseClass
+public class LoginValidation_TC01 extends BaseClass
 {
 	loginPage login;
 	selectCompanyPage select;
@@ -41,21 +41,21 @@ public class LoginValidation_TC01 extends baseClass
 	@BeforeMethod
 	public void loginToApp() throws EncryptedDocumentException, IOException
 	{
-		login.SendUserName(utilityClass.readDataFromStringExcel(1, 0, "Sheet1"));
+		login.SendUserName(UtilityClass.readDataFromStringExcel(1, 0, "Sheet1"));
 		Reporter.log("Valid Username Entered",true);
-		login.SendPassword(utilityClass.readDataFromStringExcel(1, 1, "Sheet1"));
+		login.SendPassword(UtilityClass.readDataFromStringExcel(1, 1, "Sheet1"));
 		Reporter.log("Valid Password Entered",true);
 		login.ClickOnLoginToDashboard();
 		Reporter.log("Click on Dashboard button",true);
-		utilityClass.implicitlyWaitInMillis(1000);
+		UtilityClass.implicitlyWaitInMillis(1000);
 	}
   @Test
   public void ValidUserNameAndValidPasswordTest() throws EncryptedDocumentException, IOException
   {
 	  String actualText = select.getActualText();
-	  String expectedText = utilityClass.readDataFromStringExcel(1, 2,"Sheet1");
+	  String expectedText = UtilityClass.readDataFromStringExcel(1, 2,"Sheet1");
 	  Assert.assertEquals(actualText, expectedText,"Test case Failed as actual & expected Text are not matching");
-	  Reporter.log("Validating actual "+select.getActualText()+" and Expected Text "+utilityClass.readDataFromStringExcel(1, 2, "Sheet1"),true);
+	  Reporter.log("Validating actual "+select.getActualText()+" and Expected Text "+UtilityClass.readDataFromStringExcel(1, 2, "Sheet1"),true);
   }
   
   @AfterClass 

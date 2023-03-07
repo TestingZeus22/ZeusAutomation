@@ -12,12 +12,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import Base.baseClass;
+import Base.BaseClass;
 import POM.recoverPasswordPage;
 import POM.loginPage;
-import utility.utilityClass;
+import utility.UtilityClass;
 
-public class RecoveryPasswordPageTextValidation_TC23 extends baseClass {
+public class RecoveryPasswordPageTextValidation_TC23 extends BaseClass {
 	loginPage login;
 	recoverPasswordPage email;
 	File myFile;
@@ -35,21 +35,21 @@ public class RecoveryPasswordPageTextValidation_TC23 extends baseClass {
 	{
 		login.ClickOnRecoverPassword();
 		Reporter.log("Clicked on Recovery PasswordButton ",true);
-		utilityClass.implicitlyWaitInMillis(1000);	
+		UtilityClass.implicitlyWaitInMillis(1000);	
 	}
 	
   @Test 
   public void ValidateWelcomeTextOnRecoveryPageTest() throws EncryptedDocumentException, IOException
   {
 	  String ActualMsgOfWelcome = email.getWelcomeFalkTourText();
-	  String expectedMsgofWelcome = utilityClass.readDataFromStringExcel(12, 2, "Sheet1");
+	  String expectedMsgofWelcome = UtilityClass.readDataFromStringExcel(12, 2, "Sheet1");
 	  Assert.assertEquals(ActualMsgOfWelcome, expectedMsgofWelcome,"Test case Failed as expected and actual Text are not matching");
-	  Reporter.log("Validating actual "+email.getWelcomeFalkTourText()+" and Expected Message "+utilityClass.readDataFromStringExcel(12, 2, "Sheet1"),true);
+	  Reporter.log("Validating actual "+email.getWelcomeFalkTourText()+" and Expected Message "+UtilityClass.readDataFromStringExcel(12, 2, "Sheet1"),true);
 	  
 	  String ActualMsgOfDataEnterMessage = email.getDataEnterMessage();
-	  String expectedMsgOfDataEnterMessage = utilityClass.readDataFromStringExcel(13, 2, "Sheet1");
+	  String expectedMsgOfDataEnterMessage = UtilityClass.readDataFromStringExcel(13, 2, "Sheet1");
 	  Assert.assertEquals(ActualMsgOfDataEnterMessage, expectedMsgOfDataEnterMessage,"Test case Failed as expected Text and actual Text are not matching");
-	  Reporter.log("Validating actual "+email.getDataEnterMessage()+" and Expected Message "+utilityClass.readDataFromStringExcel(13, 2, "Sheet1"),true);
+	  Reporter.log("Validating actual "+email.getDataEnterMessage()+" and Expected Message "+UtilityClass.readDataFromStringExcel(13, 2, "Sheet1"),true);
   }
   @AfterClass 
   public void closeBrowser()

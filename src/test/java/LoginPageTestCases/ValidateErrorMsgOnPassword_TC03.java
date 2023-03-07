@@ -17,13 +17,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import Base.baseClass;
+import Base.BaseClass;
 import POM.loginPage;
 import POM.selectCompanyPage;
-import utility.utilityClass;
+import utility.UtilityClass;
 
 @Listeners ()
-	public class ValidateErrorMsgOnPassword_TC03 extends baseClass {
+	public class ValidateErrorMsgOnPassword_TC03 extends BaseClass {
 		loginPage login;
 		File myFile;
 		
@@ -38,15 +38,15 @@ import utility.utilityClass;
 		@BeforeMethod
 		public void loginToApp() throws EncryptedDocumentException, IOException
 		{
-			utilityClass.implicitlyWaitInMillis(1000);
-			login.SendUserName(utilityClass.readDataFromStringExcel(3, 0, "Sheet1"));
+			UtilityClass.implicitlyWaitInMillis(1000);
+			login.SendUserName(UtilityClass.readDataFromStringExcel(3, 0, "Sheet1"));
 			Reporter.log("Valid Username Entered ",true);
-			login.SendPassword(utilityClass.readDataFromStringExcel(3, 1, "Sheet1"));
+			login.SendPassword(UtilityClass.readDataFromStringExcel(3, 1, "Sheet1"));
 			Reporter.log("Invalid Password Entered",true);
-			utilityClass.implicitlyWaitInMillis(1000);	
+			UtilityClass.implicitlyWaitInMillis(1000);	
 			login.ClickOnLoginToDashboard();
 			Reporter.log("Click on Dashboard button ",true);
-			utilityClass.implicitlyWaitInMillis(1000);
+			UtilityClass.implicitlyWaitInMillis(1000);
 		}
 	  
 	 @Test
@@ -54,10 +54,10 @@ import utility.utilityClass;
 	  
 	  {
 		 String Actual_Msg = login.getCredentialsInvalidTextOnPasswordField();
-		 String expected_Msg = utilityClass.readDataFromStringExcel(3, 2, "Sheet1");
+		 String expected_Msg = UtilityClass.readDataFromStringExcel(3, 2, "Sheet1");
 		 Assert.assertEquals(Actual_Msg, expected_Msg,"Test case Failed as actual & expected Credential message are not matching");
-		 Reporter.log("Validating actual "+login.getCredentialsInvalidTextOnPasswordField()+" and Expected Text "+utilityClass.readDataFromStringExcel(3, 2, "Sheet1"),true);
-		 utilityClass.screenshot(driver, "CheckIncorrectCredentialsOnPasswordTest");
+		 Reporter.log("Validating actual "+login.getCredentialsInvalidTextOnPasswordField()+" and Expected Text "+UtilityClass.readDataFromStringExcel(3, 2, "Sheet1"),true);
+		 UtilityClass.screenshot(driver, "CheckIncorrectCredentialsOnPasswordTest");
 	  }
 
 	  @AfterClass 

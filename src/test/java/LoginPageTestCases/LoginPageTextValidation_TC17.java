@@ -12,11 +12,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import Base.baseClass;
+import Base.BaseClass;
 import POM.loginPage;
-import utility.utilityClass;
+import utility.UtilityClass;
 
-public class LoginPageTextValidation_TC17 extends baseClass {
+public class LoginPageTextValidation_TC17 extends BaseClass {
 	loginPage login;
 	File myFile;
 	
@@ -30,16 +30,16 @@ public class LoginPageTextValidation_TC17 extends baseClass {
 	@BeforeMethod
 	public void loginToApp() throws EncryptedDocumentException, IOException
 	{
-		utilityClass.implicitlyWaitInMillis(200);
+		UtilityClass.implicitlyWaitInMillis(200);
 	}
   
   @Test
   public void ValidateCopyrightTextOnLoginPageTest() throws EncryptedDocumentException, IOException
   {
 	 String Actual_TextMsg = login.getCopyrightZeusText();
-	 String expected_TextMsg = utilityClass.readDataFromStringExcel(9, 2, "Sheet1");
+	 String expected_TextMsg = UtilityClass.readDataFromStringExcel(9, 2, "Sheet1");
 	 Assert.assertEquals(Actual_TextMsg, expected_TextMsg,"Test Case Failed as actual & expected Message are not matching");  
-	 Reporter.log("Validating actual "+login.getCopyrightZeusText()+" and Expected Text "+utilityClass.readDataFromStringExcel(9, 2, "Sheet1"),true);
+	 Reporter.log("Validating actual "+login.getCopyrightZeusText()+" and Expected Text "+UtilityClass.readDataFromStringExcel(9, 2, "Sheet1"),true);
   }
 
   @AfterClass 
