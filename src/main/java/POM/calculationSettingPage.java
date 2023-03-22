@@ -104,10 +104,6 @@ public class calculationSettingPage {
 	public void clickOnsavePrice()
 	{
 		savePrice.click();
-	}
-	
-	
-	
-	
+	}	
 	
 }

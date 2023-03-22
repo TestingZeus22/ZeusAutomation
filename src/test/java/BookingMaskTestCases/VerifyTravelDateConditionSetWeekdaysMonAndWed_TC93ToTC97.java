@@ -135,7 +135,7 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
 		  Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue1("value")+" and Expected Price "+UtilityClass.readDataFromStringExcel(402, 1, "Sheet2"),true);
 	    }
 	    
-	    @Test (priority=2)
+	    @Test (priority = 2)
 	    public void validatePriceForTravelDateIsWedWeekdaySetMonAndWed() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
@@ -202,7 +202,7 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
 		  Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue1("value")+" and Expected Price "+UtilityClass.readDataFromStringExcel(402, 2, "Sheet2"),true);
 	    }
 	    
-	    @Test (priority=3)
+	    @Test (priority = 3)
 	    public void validateErrorMsgBySendingTravelDateMonToWedWeekdaySetMonAndWed() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
@@ -269,7 +269,7 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
     	    Reporter.log("Validating Actual message "+BookingMask.getInvalidTravelDurationNoPriceInfoMsg()+" and Expected message "+UtilityClass.readDataFromStringExcel(402, 3, "Sheet2"),true);
 	    }
 	    
-	    @Test (priority=4)
+	    @Test (priority = 4)
 	    public void validateErrorMsgBySendingTravelDateSunToMonWeekdaySetMonAndWed() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
@@ -336,7 +336,7 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
     	    Reporter.log("Validating Actual message "+BookingMask.getInvalidTravelDurationNoPriceInfoMsg()+" and Expected message "+UtilityClass.readDataFromStringExcel(402, 4, "Sheet2"),true);
 	    }
 	    
-	    @Test (priority=5)
+	    @Test (priority = 5)
 	    public void validateErrorMsgBySendingTravelDateTuesToWedWeekdaySetMonAndWed() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());

@@ -262,7 +262,6 @@ public class CreateBA extends BaseClass {
         Thread.sleep(500);
         WebElement ListBox = driver.findElement(By.id("companyids"));
         Select s=new Select(ListBox);
-        System.out.println(s.isMultiple());
         Reporter.log("Check the listbox is multiselect or not",true);
         Thread.sleep(1000);
         driver.findElement(By.xpath("//li[@class='multiselect-item multiselect-all']")).click();
@@ -301,47 +300,46 @@ public class CreateBA extends BaseClass {
         	 WebElement prices = driver.findElement(By.xpath("//span[text()='Price']"));
         	 JavascriptExecutor executor = (JavascriptExecutor)driver;
              executor.executeScript("arguments[0].click();", prices);
-        	
 		} catch (Exception e) {
 			System.out.println("Price option is unable to click ");
 		}
         Thread.sleep(3000);
         price.sendSeasonFrom_A(UtilityClass.readDataFromStringExcel(48, 1, "Sheet2"));
-        Thread.sleep(1000);
+        Thread.sleep(200);
         price.seasonUntil_A(UtilityClass.readDataFromStringExcel(48, 2, "Sheet2"));
-        Thread.sleep(500);
+        Thread.sleep(200);
         price.sendseasonAallotRoom1_A(UtilityClass.readDataFromStringExcel(48, 3, "Sheet2"));
-        Thread.sleep(500);
+        Thread.sleep(200);
         price.sendseasonApriceRoom1_A(UtilityClass.readDataFromStringExcel(48, 4, "Sheet2"));
         Reporter.log("Send all required details for Season_A",true);
         Thread.sleep(1000);
         
         price.sendSeasonFrom_B(UtilityClass.readDataFromStringExcel(49, 1, "Sheet2"));
-        Thread.sleep(500);
+        Thread.sleep(200);
         price.seasonUntil_B(UtilityClass.readDataFromStringExcel(49, 2, "Sheet2"));
-        Thread.sleep(500);
+        Thread.sleep(200);
         price.sendseasonBallotRoom1_B(UtilityClass.readDataFromStringExcel(49, 3, "Sheet2"));
-        Thread.sleep(500);
+        Thread.sleep(200);
         price.sendseasonBpriceRoom1_B(UtilityClass.readDataFromStringExcel(49, 4, "Sheet2"));
         Reporter.log("Send all required details for Season_B",true);
         Thread.sleep(1000);
         
         price.sendSeasonFrom_C(UtilityClass.readDataFromStringExcel(50, 1, "Sheet2"));
-        Thread.sleep(500);
+        Thread.sleep(200);
         price.seasonUntil_C(UtilityClass.readDataFromStringExcel(50, 2, "Sheet2"));
-        Thread.sleep(500);
+        Thread.sleep(200);
         price.sendseasonCallotRoom1_C(UtilityClass.readDataFromStringExcel(50, 3, "Sheet2"));
-        Thread.sleep(500);
+        Thread.sleep(200);
         price.sendseasonCpriceRoom1_C(UtilityClass.readDataFromStringExcel(50, 4, "Sheet2"));
         Reporter.log("Send all required details for Season_C",true);
         Thread.sleep(1000);
         
         price.sendSeasonFrom_D(UtilityClass.readDataFromStringExcel(51, 1, "Sheet2"));
-        Thread.sleep(500);
+        Thread.sleep(200);
         price.seasonUntil_D(UtilityClass.readDataFromStringExcel(51, 2, "Sheet2"));
-        Thread.sleep(500);
+        Thread.sleep(200);
         price.sendseasonDallotRoom1_D(UtilityClass.readDataFromStringExcel(51, 3, "Sheet2"));
-        Thread.sleep(500);
+        Thread.sleep(200);
         price.sendseasonDpriceRoom1_D(UtilityClass.readDataFromStringExcel(51, 4, "Sheet2"));
         Reporter.log("Send all required details for Season_D",true);
         Thread.sleep(1000);
@@ -357,34 +355,34 @@ public class CreateBA extends BaseClass {
         Thread.sleep(1000);
         
         price.sendSeasonFrom_F(UtilityClass.readDataFromStringExcel(53, 1, "Sheet2"));
-        Thread.sleep(500);
+        Thread.sleep(200);
         price.seasonUntil_F(UtilityClass.readDataFromStringExcel(53, 2, "Sheet2"));
-        Thread.sleep(500);
+        Thread.sleep(200);
         price.sendseasonFallotRoom1_F(UtilityClass.readDataFromStringExcel(53, 3, "Sheet2"));
-        Thread.sleep(500);
+        Thread.sleep(200);
         price.sendseasonFpriceRoom1_F(UtilityClass.readDataFromStringExcel(53, 4, "Sheet2"));
         Reporter.log("Send all required details for Season_F",true);
         Thread.sleep(1000);
         
         price.sendSeasonFrom_G(UtilityClass.readDataFromStringExcel(54, 1, "Sheet2"));
-        Thread.sleep(500);
+        Thread.sleep(200);
         price.seasonUntil_G(UtilityClass.readDataFromStringExcel(54, 2, "Sheet2"));
-        Thread.sleep(500);
+        Thread.sleep(200);
         price.sendseasonGallotRoom1_G(UtilityClass.readDataFromStringExcel(54, 3, "Sheet2"));
-        Thread.sleep(500);
+        Thread.sleep(200);
         price.sendseasonGpriceRoom1_G(UtilityClass.readDataFromStringExcel(54, 4, "Sheet2"));
         Reporter.log("Send all required details for Season_G",true);
         Thread.sleep(1000);
         
         price.sendSeasonFrom_H(UtilityClass.readDataFromStringExcel(55, 1, "Sheet2"));
-        Thread.sleep(500);
+        Thread.sleep(200);
         price.seasonUntil_H(UtilityClass.readDataFromStringExcel(55, 2, "Sheet2"));
-        Thread.sleep(500);
+        Thread.sleep(200);
         price.sendseasonHallotRoom1_H(UtilityClass.readDataFromStringExcel(55, 3, "Sheet2"));
-        Thread.sleep(500);
+        Thread.sleep(200);
         price.sendseasonHpriceRoom1_H(UtilityClass.readDataFromStringExcel(55, 4, "Sheet2"));
         Reporter.log("Send all required details for Season_H",true);
-        Thread.sleep(2500);
+        Thread.sleep(1500);
         
         driver.findElement(By.xpath("(//a[@class='btn-lg'])[11]")).click();
         Reporter.log("Delete the extra created room in Rooms",true);
@@ -572,7 +570,7 @@ public class CreateBA extends BaseClass {
       String ActualPrice = BookingMask.getPriceFieldValue1("value");
 	  String expectedPrice = UtilityClass.readDataFromStringExcel(98, 1, "Sheet2");
 	  Assert.assertEquals(ActualPrice, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
-	  Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue1("value")+" and Expected Price "+UtilityClass.readDataFromStringExcel(98, 1, "Sheet2"),true);
+	  Reporter.log("Validating Actual price is "+BookingMask.getPriceFieldValue1("value")+" and Expected Price is "+UtilityClass.readDataFromStringExcel(98, 1, "Sheet2"),true);
     }
   
     @AfterMethod

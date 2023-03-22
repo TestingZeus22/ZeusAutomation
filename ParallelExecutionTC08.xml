@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="tests">
-<test name ="TC08">
+<test thread-count="15" name="Test07">
     <classes>
-      <class name="BookingMaskTestCases.verifyTravelToDateLessThanTravelFromDate_TC08"/>
+      <class name="BookingMaskTestCases.VerifyBookingWithTravelFromAndTravelToSameDate_TC07"/>
     </classes>
   </test> <!-- Test -->
-<test name ="TC11">
+<test thread-count="25" name="Test011">
 <classes>
-      <class name="BookingMaskTestCases.verifyTravelDatesOutOfContract_TC11"/>
+      <class name="BookingMaskTestCases.VerifyTravelDatesOutOfContract_TC11"/>
     </classes>
   </test> <!-- Test -->
-<test name ="TC15">
+<test thread-count="35" name="Test15">
 <classes>
-      <class name="BookingMaskTestCases.verifyBookingforSeasonB_TC15"/>
+      <class name="BookingMaskTestCases.VerifyConfirmBookingWithB_TC02"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

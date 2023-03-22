@@ -230,7 +230,6 @@ public class CreateBA2 extends BaseClass {
         
         driver.findElement(By.xpath("(//a[@class='btn-shadow btn btn-primary'])[1]")).click();
         Reporter.log("Clicked on create Room",true);
-        
         Thread.sleep(4000);
         try {
         	UtilityClass.listBoxHandlingUsingByText("2 Raum Appartment", roomDetails.dropdownRoomType());
@@ -272,17 +271,12 @@ public class CreateBA2 extends BaseClass {
         Thread.sleep(1000);
         UtilityClass.scrollByAxis(0, -500);
         Thread.sleep(6000);
-        
-        
-        
         driver.navigate().refresh();
-        
         try {
      	   driver.findElement(By.xpath("//span[text()='Rooms']")).click();
 		} catch (Exception e) {
 			System.out.println("clicked on Rooms");
 		}
-        
         driver.findElement(By.xpath("(//a[@class='btn-shadow btn btn-primary'])[1]")).click();
         Reporter.log("Clicked on create Room",true);
         
@@ -757,7 +751,7 @@ public class CreateBA2 extends BaseClass {
       String ActualPrice = BookingMask.getPriceFieldValue1("value");
 	  String expectedPrice = UtilityClass.readDataFromStringExcel(98, 1, "Sheet2");
 	  Assert.assertEquals(ActualPrice, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
-	  Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue1("value")+" and Expected Price "+UtilityClass.readDataFromStringExcel(98, 1, "Sheet2"),true);
+	  Reporter.log("Validating Actual price is "+BookingMask.getPriceFieldValue1("value")+" and Expected Price is "+UtilityClass.readDataFromStringExcel(98, 1, "Sheet2"),true);
     }
   
     @AfterMethod

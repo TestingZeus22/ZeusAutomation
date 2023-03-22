@@ -13,121 +13,73 @@ public class arrivalDepartureConditionsPage {
 	
 	@FindBy (xpath="(//input[@id='adModel_StartDate'])[1]") private WebElement travelFrom1;
 	@FindBy (xpath="(//input[@id='adModel_EndDate'])[1]") private WebElement travelTo1;
-	@FindBy (xpath="(//input[@id='adModel_IsAll'])[1]") private WebElement arrivalDaysSelectAllCheckBox1;
-	@FindBy (xpath="(//input[@id='adModel_IsMonday'])[1]") private WebElement arrivalDaysMondayCheckBox1;
-	@FindBy (xpath="(//input[@id='adModel_IsTuesday'])[1]") private WebElement arrivalDaysTuesdayCheckBox1;
-	@FindBy (xpath="(//input[@id='adModel_IsWednesday'])[1]") private WebElement arrivalDaysWednesdayCheckBox1;
-	@FindBy (xpath="(//input[@id='adModel_IsThursday'])[1]") private WebElement arrivalDaysThursdayCheckBox1;
-	@FindBy (xpath="(//input[@id='adModel_IsFriday'])[1]") private WebElement arrivalDaysFridayCheckBox1;
-	@FindBy (xpath="(//input[@id='adModel_IsSaturday'])[1]") private WebElement arrivalDaysSaturdayCheckBox1;
-	@FindBy (xpath="(//input[@id='adModel_IsSunday'])[1]") private WebElement arrivalDaysSundayCheckBox1;
-	@FindBy (xpath="(//input[@id='adModel_IsAll_Dep'])[1]") private WebElement departureDaysSelectAllCheckBox1;
-	@FindBy (xpath="(//input[@id='adModel_IsMonday_Dep'])[1]") private WebElement departureDaysMondayCheckBox1;
-	@FindBy (xpath="(//input[@id='adModel_IsTuesday_Dep'])[1]") private WebElement departureDaysTuesdayCheckBox1;
-	@FindBy (xpath="(//input[@id='adModel_IsWednesday_Dep'])[1]") private WebElement departureDaysWednesdayCheckBox1;
-	@FindBy (xpath="(//input[@id='adModel_IsThursday_Dep'])[1]") private WebElement departureDayThursdayCheckBox1;
-	@FindBy (xpath="(//input[@id='adModel_IsFriday_Dep'])[1]") private WebElement departureDayFridayCheckBox1;
-	@FindBy (xpath="(//input[@id='adModel_IsSaturday_Dep'])[1]") private WebElement departureDaySaturdayCheckBox1;
-	@FindBy (xpath="(//input[@id='adModel_IsSunday_Dep'])[1]") private WebElement departureDaySundayCheckBox1;
+	@FindBy (xpath="(//input[@id='adModel_IsAll'])[1]") private WebElement arrivalDaysRoom1SelectAllCheckBox1;
+	@FindBy (xpath="(//input[@id='adModel_IsMonday'])[1]") private WebElement arrivalDaysRoom1MondayCheckBox2;
+	@FindBy (xpath="(//input[@id='adModel_IsTuesday'])[1]") private WebElement arrivalDaysRoom1TuesdayCheckBox3;
+	@FindBy (xpath="(//input[@id='adModel_IsWednesday'])[1]") private WebElement arrivalDaysRoom1WednesdayCheckBox4;
+	@FindBy (xpath="(//input[@id='adModel_IsThursday'])[1]") private WebElement arrivalDaysRoom1ThursdayCheckBox5;
+	@FindBy (xpath="(//input[@id='adModel_IsFriday'])[1]") private WebElement arrivalDaysRoom1FridayCheckBox6;
+	@FindBy (xpath="(//input[@id='adModel_IsSaturday'])[1]") private WebElement arrivalDaysRoom1SaturdayCheckBox7;
+	@FindBy (xpath="(//input[@id='adModel_IsSunday'])[1]") private WebElement arrivalDaysRoom1SundayCheckBox8;
+	@FindBy (xpath="(//input[@id='adModel_IsAll_Dep'])[1]") private WebElement departureDaysRoom1SelectAllCheckBox1;
+	@FindBy (xpath="(//input[@id='adModel_IsMonday_Dep'])[1]") private WebElement departureDaysRoom1MondayCheckBox2;
+	@FindBy (xpath="(//input[@id='adModel_IsTuesday_Dep'])[1]") private WebElement departureDaysRoom1TuesdayCheckBox3;
+	@FindBy (xpath="(//input[@id='adModel_IsWednesday_Dep'])[1]") private WebElement departureDaysRoom1WednesdayCheckBox4;
+	@FindBy (xpath="(//input[@id='adModel_IsThursday_Dep'])[1]") private WebElement departureDaysRoom1ThursdayCheckBox5;
+	@FindBy (xpath="(//input[@id='adModel_IsFriday_Dep'])[1]") private WebElement departureDaysRoom1FridayCheckBox6;
+	@FindBy (xpath="(//input[@id='adModel_IsSaturday_Dep'])[1]") private WebElement departureDaysRoom1SaturdayCheckBox7;
+	@FindBy (xpath="(//input[@id='adModel_IsSunday_Dep'])[1]") private WebElement departureDaysRoom1SundayCheckBox8;
 	@FindBy (xpath="(//input[@id='adModel_MinStay'])[1]") private WebElement minStayForRoom1;
 	@FindBy (xpath="(//input[@id='adModel_MaxStay'])[1]") private WebElement maxStayForRoom1;
 	@FindBy (xpath="(//i[@class='pe-7s-trash btn-icon-wrapper'])[19]") private WebElement deleteOptionForRoom1;
 	
-	
 	//Room2 pending dropdown locators
+	
 	@FindBy (xpath="(//input[@id='adModel_StartDate'])[2]") private WebElement travelFrom2;
 	@FindBy (xpath="(//input[@id='adModel_EndDate'])[2]") private WebElement travelTo2;
-	@FindBy (xpath="(//input[@id='adModel_IsAll'])[2]") private WebElement arrivalDaysSelectAllCheckBox2;
-	@FindBy (xpath="(//input[@id='adModel_IsMonday'])[2]") private WebElement arrivalDaysMondayCheckBox2;
-	@FindBy (xpath="(//input[@id='adModel_IsTuesday'])[2]") private WebElement arrivalDaysTuesdayCheckBox2;
-	@FindBy (xpath="(//input[@id='adModel_IsWednesday'])[2]") private WebElement arrivalDaysWednesdayCheckBox2;
-	@FindBy (xpath="(//input[@id='adModel_IsThursday'])[2]") private WebElement arrivalDaysThursdayCheckBox2;
-	@FindBy (xpath="(//input[@id='adModel_IsFriday'])[2]") private WebElement arrivalDaysFridayCheckBox2;
-	@FindBy (xpath="(//input[@id='adModel_IsSaturday'])[2]") private WebElement arrivalDaysSaturdayCheckBox2;
-	@FindBy (xpath="(//input[@id='adModel_IsSunday'])[2]") private WebElement arrivalDaysSundayCheckBox2;
-	@FindBy (xpath="(//input[@id='adModel_IsAll_Dep'])[2]") private WebElement departureDaysSelectAllCheckBox2;
-	@FindBy (xpath="(//input[@id='adModel_IsMonday_Dep'])[2]") private WebElement departureDaysMondayCheckBox2;
-	@FindBy (xpath="(//input[@id='adModel_IsTuesday_Dep'])[2]") private WebElement departureDaysTuesdayCheckBox2;
-	@FindBy (xpath="(//input[@id='adModel_IsWednesday_Dep'])[2]") private WebElement departureDaysWednesdayCheckBox2;
-	@FindBy (xpath="(//input[@id='adModel_IsThursday_Dep'])[2]") private WebElement departureDayThursdayCheckBox2;
-	@FindBy (xpath="(//input[@id='adModel_IsFriday_Dep'])[2]") private WebElement departureDayFridayCheckBox2;
-	@FindBy (xpath="(//input[@id='adModel_IsSaturday_Dep'])[2]") private WebElement departureDaySaturdayCheckBox2;
-	@FindBy (xpath="(//input[@id='adModel_IsSunday_Dep'])[2]") private WebElement departureDaySundayCheckBox2;
+	@FindBy (xpath="(//input[@id='adModel_IsAll'])[2]") private WebElement arrivalDaysRoom2SelectAllCheckBox1;
+	@FindBy (xpath="(//input[@id='adModel_IsMonday'])[2]") private WebElement arrivalDaysRoom2MondayCheckBox2;
+	@FindBy (xpath="(//input[@id='adModel_IsTuesday'])[2]") private WebElement arrivalDaysRoom2TuesdayCheckBox3;
+	@FindBy (xpath="(//input[@id='adModel_IsWednesday'])[2]") private WebElement arrivalDaysRoom2WednesdayCheckBox4;
+	@FindBy (xpath="(//input[@id='adModel_IsThursday'])[2]") private WebElement arrivalDaysRoom2ThursdayCheckBox5;
+	@FindBy (xpath="(//input[@id='adModel_IsFriday'])[2]") private WebElement arrivalDaysRoom2FridayCheckBox6;
+	@FindBy (xpath="(//input[@id='adModel_IsSaturday'])[2]") private WebElement arrivalDaysRoom2SaturdayCheckBox7;
+	@FindBy (xpath="(//input[@id='adModel_IsSunday'])[2]") private WebElement arrivalDaysRoom2SundayCheckBox8;
+	@FindBy (xpath="(//input[@id='adModel_IsAll_Dep'])[2]") private WebElement departureDaysRoom2SelectAllCheckBox1;
+	@FindBy (xpath="(//input[@id='adModel_IsMonday_Dep'])[2]") private WebElement departureDaysRoom2MondayCheckBox2;
+	@FindBy (xpath="(//input[@id='adModel_IsTuesday_Dep'])[2]") private WebElement departureDaysRoom2TuesdayCheckBox3;
+	@FindBy (xpath="(//input[@id='adModel_IsWednesday_Dep'])[2]") private WebElement departureDaysRoom2WednesdayCheckBox4;
+	@FindBy (xpath="(//input[@id='adModel_IsThursday_Dep'])[2]") private WebElement departureDaysRoom2ThursdayCheckBox5;
+	@FindBy (xpath="(//input[@id='adModel_IsFriday_Dep'])[2]") private WebElement departureDaysRoom2FridayCheckBox6;
+	@FindBy (xpath="(//input[@id='adModel_IsSaturday_Dep'])[2]") private WebElement departureDaysRoom2SaturdayCheckBox7;
+	@FindBy (xpath="(//input[@id='adModel_IsSunday_Dep'])[2]") private WebElement departureDaysRoom2SundayCheckBox8;
 	@FindBy (xpath="(//input[@id='adModel_MinStay'])[2]") private WebElement minStayForRoom2;
 	@FindBy (xpath="(//input[@id='adModel_MaxStay'])[2]") private WebElement maxStayForRoom2;
 	@FindBy (xpath="(//i[@class='pe-7s-trash btn-icon-wrapper'])[20]") private WebElement deleteOptionForRoom2;
 	
-	
 	//Room3 pending dropdown locators
+	
 	@FindBy (xpath="(//input[@id='adModel_StartDate'])[3]") private WebElement travelFrom3;
 	@FindBy (xpath="(//input[@id='adModel_EndDate'])[3]") private WebElement travelTo3;
-	@FindBy (xpath="(//input[@id='adModel_IsAll'])[3]") private WebElement arrivalDaysSelectAllCheckBox3;
-	@FindBy (xpath="(//input[@id='adModel_IsMonday'])[3]") private WebElement arrivalDaysMondayCheckBox3;
-	@FindBy (xpath="(//input[@id='adModel_IsTuesday'])[3]") private WebElement arrivalDaysTuesdayCheckBox3;
-	@FindBy (xpath="(//input[@id='adModel_IsWednesday'])[3]") private WebElement arrivalDaysWednesdayCheckBox3;
-	@FindBy (xpath="(//input[@id='adModel_IsThursday'])[3]") private WebElement arrivalDaysThursdayCheckBox3;
-	@FindBy (xpath="(//input[@id='adModel_IsFriday'])[3]") private WebElement arrivalDaysFridayCheckBox3;
-	@FindBy (xpath="(//input[@id='adModel_IsSaturday'])[3]") private WebElement arrivalDaysSaturdayCheckBox3;
-	@FindBy (xpath="(//input[@id='adModel_IsSunday'])[3]") private WebElement arrivalDaysSundayCheckBox3;
-	@FindBy (xpath="(//input[@id='adModel_IsAll_Dep'])[3]") private WebElement departureDaysSelectAllCheckBox3;
-	@FindBy (xpath="(//input[@id='adModel_IsMonday_Dep'])[3]") private WebElement departureDaysMondayCheckBox3;
-	@FindBy (xpath="(//input[@id='adModel_IsTuesday_Dep'])[3]") private WebElement departureDaysTuesdayCheckBox3;
-	@FindBy (xpath="(//input[@id='adModel_IsWednesday_Dep'])[3]") private WebElement departureDaysWednesdayCheckBox3;
-	@FindBy (xpath="(//input[@id='adModel_IsThursday_Dep'])[3]") private WebElement departureDayThursdayCheckBox3;
-	@FindBy (xpath="(//input[@id='adModel_IsFriday_Dep'])[3]") private WebElement departureDayFridayCheckBox3;
-	@FindBy (xpath="(//input[@id='adModel_IsSaturday_Dep'])[3]") private WebElement departureDaySaturdayCheckBox3;
-	@FindBy (xpath="(//input[@id='adModel_IsSunday_Dep'])[3]") private WebElement departureDaySundayCheckBox3;
+	@FindBy (xpath="(//input[@id='adModel_IsAll'])[3]") private WebElement arrivalDaysRoom3SelectAllCheckBox1;
+	@FindBy (xpath="(//input[@id='adModel_IsMonday'])[3]") private WebElement arrivalDaysRoom3MondayCheckBox2;
+	@FindBy (xpath="(//input[@id='adModel_IsTuesday'])[3]") private WebElement arrivalDaysRoom3TuesdayCheckBox3;
+	@FindBy (xpath="(//input[@id='adModel_IsWednesday'])[3]") private WebElement arrivalDaysRoom3WednesdayCheckBox4;
+	@FindBy (xpath="(//input[@id='adModel_IsThursday'])[3]") private WebElement arrivalDaysRoom3ThursdayCheckBox5;
+	@FindBy (xpath="(//input[@id='adModel_IsFriday'])[3]") private WebElement arrivalDaysRoom3FridayCheckBox6;
+	@FindBy (xpath="(//input[@id='adModel_IsSaturday'])[3]") private WebElement arrivalDaysRoom3SaturdayCheckBox7;
+	@FindBy (xpath="(//input[@id='adModel_IsSunday'])[3]") private WebElement arrivalDaysRoom3SundayCheckBox8;
+	@FindBy (xpath="(//input[@id='adModel_IsAll_Dep'])[3]") private WebElement departureDaysRoom3SelectAllCheckBox1;
+	@FindBy (xpath="(//input[@id='adModel_IsMonday_Dep'])[3]") private WebElement departureDaysRoom3MondayCheckBox2;
+	@FindBy (xpath="(//input[@id='adModel_IsTuesday_Dep'])[3]") private WebElement departureDaysRoom3TuesdayCheckBox3;
+	@FindBy (xpath="(//input[@id='adModel_IsWednesday_Dep'])[3]") private WebElement departureDaysRoom3WednesdayCheckBox4;
+	@FindBy (xpath="(//input[@id='adModel_IsThursday_Dep'])[3]") private WebElement departureDaysRoom3ThursdayCheckBox5;
+	@FindBy (xpath="(//input[@id='adModel_IsFriday_Dep'])[3]") private WebElement departureDaysRoom3FridayCheckBox6;
+	@FindBy (xpath="(//input[@id='adModel_IsSaturday_Dep'])[3]") private WebElement departureDaysRoom3SaturdayCheckBox7;
+	@FindBy (xpath="(//input[@id='adModel_IsSunday_Dep'])[3]") private WebElement departureDaysRoom3SundayCheckBox8;
 	@FindBy (xpath="(//input[@id='adModel_MinStay'])[3]") private WebElement minStayForRoom3;
 	@FindBy (xpath="(//input[@id='adModel_MaxStay'])[3]") private WebElement maxStayForRoom3;
 	@FindBy (xpath="(//i[@class='pe-7s-trash btn-icon-wrapper'])[21]") private WebElement deleteOptionForRoom3;
-	
-
-	
-	//Room4 pending dropdown locators
-	@FindBy (xpath="(//input[@id='adModel_StartDate'])[4]") private WebElement travelFrom4;
-	@FindBy (xpath="(//input[@id='adModel_EndDate'])[4]") private WebElement travelTo4;
-	@FindBy (xpath="(//input[@id='adModel_IsAll'])[4]") private WebElement arrivalDaysSelectAllCheckBox4;
-	@FindBy (xpath="(//input[@id='adModel_IsMonday'])[4]") private WebElement arrivalDaysMondayCheckBox4;
-	@FindBy (xpath="(//input[@id='adModel_IsTuesday'])[4]") private WebElement arrivalDaysTuesdayCheckBox4;
-	@FindBy (xpath="(//input[@id='adModel_IsWednesday'])[4]") private WebElement arrivalDaysWednesdayCheckBox4;
-	@FindBy (xpath="(//input[@id='adModel_IsThursday'])[4]") private WebElement arrivalDaysThursdayCheckBox4;
-	@FindBy (xpath="(//input[@id='adModel_IsFriday'])[4]") private WebElement arrivalDaysFridayCheckBox4;
-	@FindBy (xpath="(//input[@id='adModel_IsSaturday'])[4]") private WebElement arrivalDaysSaturdayCheckBox4;
-	@FindBy (xpath="(//input[@id='adModel_IsSunday'])[4]") private WebElement arrivalDaysSundayCheckBox4;
-	@FindBy (xpath="(//input[@id='adModel_IsAll_Dep'])[4]") private WebElement departureDaysSelectAllCheckBox4;
-	@FindBy (xpath="(//input[@id='adModel_IsMonday_Dep'])[4]") private WebElement departureDaysMondayCheckBox4;
-	@FindBy (xpath="(//input[@id='adModel_IsTuesday_Dep'])[4]") private WebElement departureDaysTuesdayCheckBox4;
-	@FindBy (xpath="(//input[@id='adModel_IsWednesday_Dep'])[4]") private WebElement departureDaysWednesdayCheckBox4;
-	@FindBy (xpath="(//input[@id='adModel_IsThursday_Dep'])[4]") private WebElement departureDayThursdayCheckBox4;
-	@FindBy (xpath="(//input[@id='adModel_IsFriday_Dep'])[4]") private WebElement departureDayFridayCheckBox4;
-	@FindBy (xpath="(//input[@id='adModel_IsSaturday_Dep'])[4]") private WebElement departureDaySaturdayCheckBox4;
-	@FindBy (xpath="(//input[@id='adModel_IsSunday_Dep'])[4]") private WebElement departureDaySundayCheckBox4;
-	@FindBy (xpath="(//input[@id='adModel_MinStay'])[4]") private WebElement minStayForRoom4;
-	@FindBy (xpath="(//input[@id='adModel_MaxStay'])[4]") private WebElement maxStayForRoom4;
-	@FindBy (xpath="(//i[@class='pe-7s-trash btn-icon-wrapper'])[22]") private WebElement deleteOptionForRoom4;
-	
-	//Room5 pending dropdown locators
-	@FindBy (xpath="(//input[@id='adModel_StartDate'])[5]") private WebElement travelFrom5;
-	@FindBy (xpath="(//input[@id='adModel_EndDate'])[5]") private WebElement travelTo5;
-	@FindBy (xpath="(//input[@id='adModel_IsAll'])[5]") private WebElement arrivalDaysSelectAllCheckBox5;
-	@FindBy (xpath="(//input[@id='adModel_IsMonday'])[5]") private WebElement arrivalDaysMondayCheckBox5;
-	@FindBy (xpath="(//input[@id='adModel_IsTuesday'])[5]") private WebElement arrivalDaysTuesdayCheckBox5;
-	@FindBy (xpath="(//input[@id='adModel_IsWednesday'])[5]") private WebElement arrivalDaysWednesdayCheckBox5;
-	@FindBy (xpath="(//input[@id='adModel_IsThursday'])[5]") private WebElement arrivalDaysThursdayCheckBox5;
-	@FindBy (xpath="(//input[@id='adModel_IsFriday'])[5]") private WebElement arrivalDaysFridayCheckBox5;
-	@FindBy (xpath="(//input[@id='adModel_IsSaturday'])[5]") private WebElement arrivalDaysSaturdayCheckBox5;
-	@FindBy (xpath="(//input[@id='adModel_IsSunday'])[5]") private WebElement arrivalDaysSundayCheckBox5;
-	@FindBy (xpath="(//input[@id='adModel_IsAll_Dep'])[5]") private WebElement departureDaysSelectAllCheckBox5;
-	@FindBy (xpath="(//input[@id='adModel_IsMonday_Dep'])[5]") private WebElement departureDaysMondayCheckBox5;
-	@FindBy (xpath="(//input[@id='adModel_IsTuesday_Dep'])[5]") private WebElement departureDaysTuesdayCheckBox5;
-	@FindBy (xpath="(//input[@id='adModel_IsWednesday_Dep'])[5]") private WebElement departureDaysWednesdayCheckBox5;
-	@FindBy (xpath="(//input[@id='adModel_IsThursday_Dep'])[5]") private WebElement departureDayThursdayCheckBox5;
-	@FindBy (xpath="(//input[@id='adModel_IsFriday_Dep'])[5]") private WebElement departureDayFridayCheckBox5;
-	@FindBy (xpath="(//input[@id='adModel_IsSaturday_Dep'])[5]") private WebElement departureDaySaturdayCheckBox5;
-	@FindBy (xpath="(//input[@id='adModel_IsSunday_Dep'])[5]") private WebElement departureDaySundayCheckBox5;
-	@FindBy (xpath="(//input[@id='adModel_MinStay'])[5]") private WebElement minStayForRoom5;
-	@FindBy (xpath="(//input[@id='adModel_MaxStay'])[5]") private WebElement maxStayForRoom5;
-	@FindBy (xpath="(//i[@class='pe-7s-trash btn-icon-wrapper'])[23]") private WebElement deleteOptionForRoom5;
 	
 	@FindBy (id="btn_UpdateArriDepaTab") private WebElement updateArriDeptButton;
 	
@@ -144,7 +96,6 @@ public class arrivalDepartureConditionsPage {
 	
 	//Room1 pending dropdown
 	
-	
 	public void sendtravelFrom1(String travelF1)
 	{
 		travelFrom1.sendKeys(travelF1);
@@ -155,84 +106,84 @@ public class arrivalDepartureConditionsPage {
 		travelTo1.sendKeys(travelT1);
 	}
 	
-	public void clickOnarrivalDaysSelectAllCheckBox1()
+	public void clickOnarrivalDaysRoom1SelectAllCheckBox1()
 	{
-		arrivalDaysSelectAllCheckBox1.click();
+		arrivalDaysRoom1SelectAllCheckBox1.click();
 	}
 	
-	public void clickOnarrivalDaysMondayCheckBox1()
+	public void clickOnarrivalDaysRoom1MondayCheckBox2()
 	{
-		arrivalDaysMondayCheckBox1.click();
+		arrivalDaysRoom1MondayCheckBox2.click();
 	}
 	
-	public void clickOnarrivalDaysTuesdayCheckBox1()
+	public void clickOnarrivalDaysRoom1TuesdayCheckBox3()
 	{
-		arrivalDaysTuesdayCheckBox1.click();
+		arrivalDaysRoom1TuesdayCheckBox3.click();
 	}
 	
-	public void clickOnarrivalDaysWednesdayCheckBox1()
+	public void clickOnarrivalDaysRoom1WednesdayCheckBox4()
 	{
-		arrivalDaysWednesdayCheckBox1.click();
+		arrivalDaysRoom1WednesdayCheckBox4.click();
 	}
 	
-	public void clickOnarrivalDaysThursdayCheckBox1()
+	public void clickOnarrivalDaysRoom1ThursdayCheckBox5()
 	{
-		arrivalDaysThursdayCheckBox1.click();
+		arrivalDaysRoom1ThursdayCheckBox5.click();
 	}
 	
-	public void clickOnarrivalDaysFridayCheckBox1()
+	public void clickOnarrivalDaysRoom1FridayCheckBox6()
 	{
-		arrivalDaysFridayCheckBox1.click();
+		arrivalDaysRoom1FridayCheckBox6.click();
 	}
 	
-	public void clickOnarrivalDaysSaturdayCheckBox1()
+	public void clickOnarrivalDaysRoom1SaturdayCheckBox7()
 	{
-		arrivalDaysSaturdayCheckBox1.click();
+		arrivalDaysRoom1SaturdayCheckBox7.click();
 	}
 	
-	public void clickOnarrivalDaysSundayCheckBox1()
+	public void clickOnarrivalDaysRoom1SundayCheckBox8()
 	{
-		arrivalDaysSundayCheckBox1.click();
+		arrivalDaysRoom1SundayCheckBox8.click();
 	}
 	
-	public void clickOnDepartureDaysSelectAllCheckBox1()
+	public void clickOnDepartureDaysRoom1SelectAllCheckBox1()
 	{
-		departureDaysSelectAllCheckBox1.click();
+		departureDaysRoom1SelectAllCheckBox1.click();
 	}
 	
-	public void clickOnDepartureDaysMondayCheckBox1()
+	public void clickOnDepartureDaysRoom1MondayCheckBox2()
 	{
-		departureDaysMondayCheckBox1.click();
+		departureDaysRoom1MondayCheckBox2.click();
 	}
 	
-	public void clickOnDepartureDaysTuesdayCheckBox1()
+	public void clickOnDepartureDaysRoom1TuesdayCheckBox3()
 	{
-		departureDaysTuesdayCheckBox1.click();
+		departureDaysRoom1TuesdayCheckBox3.click();
 	}
 	
-	public void clickOnDepartureDaysWednesdayCheckBox1()
+	public void clickOnDepartureDaysRoom1WednesdayCheckBox4()
 	{
-		departureDaysWednesdayCheckBox1.click();
+		departureDaysRoom1WednesdayCheckBox4.click();
 	}
 	
-	public void clickOnDepartureDayThursdayCheckBox1()
+	public void clickOnDepartureDaysRoom1ThursdayCheckBox5()
 	{
-		departureDayThursdayCheckBox1.click();
+		departureDaysRoom1ThursdayCheckBox5.click();
 	}
 	
-	public void clickOnDepartureDayFridayCheckBox1()
+	public void clickOnDepartureDaysRoom1FridayCheckBox6()
 	{
-		departureDayFridayCheckBox1.click();
+		departureDaysRoom1FridayCheckBox6.click();
 	}
 	
-	public void clickOnDepartureDaySaturdayCheckBox1()
+	public void clickOnDepartureDaysRoom1SaturdayCheckBox7()
 	{
-		departureDaySaturdayCheckBox1.click();
+		departureDaysRoom1SaturdayCheckBox7.click();
 	}
 	
-	public void clickOnDepartureDaySundayCheckBox1()
+	public void clickOnDepartureDayRoom1SundayCheckBox8()
 	{
-		departureDaySundayCheckBox1.click();
+		departureDaysRoom1SundayCheckBox8.click();
 	}
 	
 	public void sendMinStayForRoom1(String min)
@@ -253,8 +204,6 @@ public class arrivalDepartureConditionsPage {
 	
 	//Room2 pending dropdown method
 	
-	
-	
 	public void sendtravelFrom2(String travelF2)
 	{
 		travelFrom2.sendKeys(travelF2);
@@ -265,84 +214,84 @@ public class arrivalDepartureConditionsPage {
 		travelTo2.sendKeys(travelT2);
 	}
 	
-	public void clickOnarrivalDaysSelectAllCheckBox2()
+	public void clickOnarrivalDaysRoom2SelectAllCheckBox1()
 	{
-		arrivalDaysSelectAllCheckBox2.click();
+		arrivalDaysRoom2SelectAllCheckBox1.click();
 	}
 	
-	public void clickOnarrivalDaysMondayCheckBox2()
+	public void clickOnarrivalDaysRoom2MondayCheckBox2()
 	{
-		arrivalDaysMondayCheckBox2.click();
+		arrivalDaysRoom2MondayCheckBox2.click();
 	}
 	
-	public void clickOnarrivalDaysTuesdayCheckBox2()
+	public void clickOnarrivalDaysRoom2TuesdayCheckBox3()
 	{
-		arrivalDaysTuesdayCheckBox2.click();
+		arrivalDaysRoom2TuesdayCheckBox3.click();
 	}
 	
-	public void clickOnarrivalDaysWednesdayCheckBox2()
+	public void clickOnarrivalDaysRoom2WednesdayCheckBox4()
 	{
-		arrivalDaysWednesdayCheckBox2.click();
+		arrivalDaysRoom2WednesdayCheckBox4.click();
 	}
 	
-	public void clickOnarrivalDaysThursdayCheckBox2()
+	public void clickOnarrivalDaysRoom2ThursdayCheckBox5()
 	{
-		arrivalDaysThursdayCheckBox2.click();
+		arrivalDaysRoom2ThursdayCheckBox5.click();
 	}
 	
-	public void clickOnarrivalDaysFridayCheckBox2()
+	public void clickOnarrivalDaysRoom2FridayCheckBox6()
 	{
-		arrivalDaysFridayCheckBox2.click();
+		arrivalDaysRoom2FridayCheckBox6.click();
 	}
 	
-	public void clickOnarrivalDaysSaturdayCheckBox2()
+	public void clickOnarrivalDaysRoom2SaturdayCheckBox7()
 	{
-		arrivalDaysSaturdayCheckBox2.click();
+		arrivalDaysRoom2SaturdayCheckBox7.click();
 	}
 	
-	public void clickOnarrivalDaysSundayCheckBox2()
+	public void clickOnarrivalDaysRoom2SundayCheckBox8()
 	{
-		arrivalDaysSundayCheckBox2.click();
+		arrivalDaysRoom2SundayCheckBox8.click();
 	}
 	
-	public void clickOnDepartureDaysSelectAllCheckBox2()
+	public void clickOnDepartureDaysRoom2SelectAllCheckBox1()
 	{
-		departureDaysSelectAllCheckBox2.click();
+		departureDaysRoom2SelectAllCheckBox1.click();
 	}
 	
-	public void clickOnDepartureDaysMondayCheckBox2()
+	public void clickOnDepartureDaysRoom2MondayCheckBox2()
 	{
-		departureDaysMondayCheckBox2.click();
+		departureDaysRoom2MondayCheckBox2.click();
 	}
 	
-	public void clickOnDepartureDaysTuesdayCheckBox2()
+	public void clickOnDepartureDaysRoom2TuesdayCheckBox3()
 	{
-		departureDaysTuesdayCheckBox2.click();
+		departureDaysRoom2TuesdayCheckBox3.click();
 	}
 	
-	public void clickOnDepartureDaysWednesdayCheckBox2()
+	public void clickOnDepartureDaysRoom2WednesdayCheckBox4()
 	{
-		departureDaysWednesdayCheckBox2.click();
+		departureDaysRoom2WednesdayCheckBox4.click();
 	}
 	
-	public void clickOnDepartureDayThursdayCheckBox2()
+	public void clickOnDepartureDaysRoom2ThursdayCheckBox5()
 	{
-		departureDayThursdayCheckBox2.click();
+		departureDaysRoom2ThursdayCheckBox5.click();
 	}
 	
-	public void clickOnDepartureDayFridayCheckBox2()
+	public void clickOnDepartureDaysRoom2FridayCheckBox6()
 	{
-		departureDayFridayCheckBox2.click();
+		departureDaysRoom2FridayCheckBox6.click();
 	}
 	
-	public void clickOnDepartureDaySaturdayCheckBox2()
+	public void clickOnDepartureDaysRoom2SaturdayCheckBox7()
 	{
-		departureDaySaturdayCheckBox2.click();
+		departureDaysRoom2SaturdayCheckBox7.click();
 	}
 	
-	public void clickOnDepartureDaySundayCheckBox2()
+	public void clickOnDepartureDaysRoom2SundayCheckBox8()
 	{
-		departureDaySundayCheckBox2.click();
+		departureDaysRoom2SundayCheckBox8.click();
 	}
 	
 	public void sendMinStayForRoom2(String min)
@@ -360,10 +309,7 @@ public class arrivalDepartureConditionsPage {
 		deleteOptionForRoom2.click();
 	}
 	
-	
-	
 	//Room3 Method pending
-	
 	
 	public void sendtravelFrom3(String travelF3)
 	{
@@ -375,84 +321,84 @@ public class arrivalDepartureConditionsPage {
 		travelTo2.sendKeys(travelT3);
 	}
 	
-	public void clickOnarrivalDaysSelectAllCheckBox3()
+	public void clickOnarrivalDaysRoom3SelectAllCheckBox1()
 	{
-		arrivalDaysSelectAllCheckBox3.click();
+		arrivalDaysRoom3SelectAllCheckBox1.click();
 	}
 	
-	public void clickOnarrivalDaysMondayCheckBox3()
+	public void clickOnarrivalDaysRoom3MondayCheckBox2()
 	{
-		arrivalDaysMondayCheckBox3.click();
+		arrivalDaysRoom3MondayCheckBox2.click();
 	}
 	
-	public void clickOnarrivalDaysTuesdayCheckBox3()
+	public void clickOnarrivalDaysRoom3TuesdayCheckBox3()
 	{
-		arrivalDaysTuesdayCheckBox3.click();
+		arrivalDaysRoom3TuesdayCheckBox3.click();
 	}
 	
-	public void clickOnarrivalDaysWednesdayCheckBox3()
+	public void clickOnarrivalDaysRoom3WednesdayCheckBox4()
 	{
-		arrivalDaysWednesdayCheckBox3.click();
+		arrivalDaysRoom3WednesdayCheckBox4.click();
 	}
 	
-	public void clickOnarrivalDaysThursdayCheckBox3()
+	public void clickOnarrivalDaysRoom3ThursdayCheckBox5()
 	{
-		arrivalDaysThursdayCheckBox3.click();
+		arrivalDaysRoom3ThursdayCheckBox5.click();
 	}
 	
-	public void clickOnarrivalDaysFridayCheckBox3()
+	public void clickOnarrivalDaysRoom3FridayCheckBox6()
 	{
-		arrivalDaysFridayCheckBox3.click();
+		arrivalDaysRoom3FridayCheckBox6.click();
 	}
 	
-	public void clickOnarrivalDaysSaturdayCheckBox3()
+	public void clickOnarrivalDaysRoom3SaturdayCheckBox7()
 	{
-		arrivalDaysSaturdayCheckBox3.click();
+		arrivalDaysRoom3SaturdayCheckBox7.click();
 	}
 	
-	public void clickOnarrivalDaysSundayCheckBox3()
+	public void clickOnarrivalDaysRoom3SundayCheckBox8()
 	{
-		arrivalDaysSundayCheckBox3.click();
+		arrivalDaysRoom3SundayCheckBox8.click();
 	}
 	
-	public void clickOnDepartureDaysSelectAllCheckBox3()
+	public void clickOnDepartureDaysRoom3SelectAllCheckBox1()
 	{
-		departureDaysSelectAllCheckBox3.click();
+		departureDaysRoom3SelectAllCheckBox1.click();
 	}
 	
-	public void clickOnDepartureDaysMondayCheckBox3()
+	public void clickOnDepartureDaysRoom3MondayCheckBox2()
 	{
-		departureDaysMondayCheckBox3.click();
+		departureDaysRoom3MondayCheckBox2.click();
 	}
 	
-	public void clickOnDepartureDaysTuesdayCheckBox3()
+	public void clickOnDepartureDaysRoom3TuesdayCheckBox3()
 	{
-		departureDaysTuesdayCheckBox3.click();
+		departureDaysRoom3TuesdayCheckBox3.click();
 	}
 	
-	public void clickOnDepartureDaysWednesdayCheckBox3()
+	public void clickOnDepartureDaysRoom3WednesdayCheckBox4()
 	{
-		departureDaysWednesdayCheckBox3.click();
+		departureDaysRoom3WednesdayCheckBox4.click();
 	}
 	
-	public void clickOnDepartureDayThursdayCheckBox3()
+	public void clickOnDepartureDaysRoom3ThursdayCheckBox5()
 	{
-		departureDayThursdayCheckBox3.click();
+		departureDaysRoom3ThursdayCheckBox5.click();
 	}
 	
-	public void clickOnDepartureDayFridayCheckBox3()
+	public void clickOnDepartureDaysRoom3FridayCheckBox6()
 	{
-		departureDayFridayCheckBox3.click();
+		departureDaysRoom3FridayCheckBox6.click();
 	}
 	
-	public void clickOnDepartureDaySaturdayCheckBox3()
+	public void clickOnDepartureDaysRoom3SaturdayCheckBox7()
 	{
-		departureDaySaturdayCheckBox3.click();
+		departureDaysRoom3SaturdayCheckBox7.click();
 	}
 	
-	public void clickOnDepartureDaySundayCheckBox3()
+	public void clickOnDepartureDaysRoom3SundayCheckBox8()
 	{
-		departureDaySundayCheckBox3.click();
+		departureDaysRoom3SundayCheckBox8.click();
 	}
 	
 	public void sendMinStayForRoom3(String min)
@@ -470,226 +416,9 @@ public class arrivalDepartureConditionsPage {
 		deleteOptionForRoom3.click();
 	}
 	
-	
-	//Room4 method pending 
-	
-	public void sendtravelFrom4(String travelF4)
-	{
-		travelFrom4.sendKeys(travelF4);
-	}
-	
-	public void sendtravelTo4(String travelT4)
-	{
-		travelTo4.sendKeys(travelT4);
-	}
-	
-	public void clickOnarrivalDaysSelectAllCheckBox4()
-	{
-		arrivalDaysSelectAllCheckBox4.click();
-	}
-	
-	public void clickOnarrivalDaysMondayCheckBox4()
-	{
-		arrivalDaysMondayCheckBox4.click();
-	}
-	
-	public void clickOnarrivalDaysTuesdayCheckBox4()
-	{
-		arrivalDaysTuesdayCheckBox4.click();
-	}
-	
-	public void clickOnarrivalDaysWednesdayCheckBox4()
-	{
-		arrivalDaysWednesdayCheckBox4.click();
-	}
-	
-	public void clickOnarrivalDaysThursdayCheckBox4()
-	{
-		arrivalDaysThursdayCheckBox4.click();
-	}
-	
-	public void clickOnarrivalDaysFridayCheckBox4()
-	{
-		arrivalDaysFridayCheckBox4.click();
-	}
-	
-	public void clickOnarrivalDaysSaturdayCheckBox4()
-	{
-		arrivalDaysSaturdayCheckBox4.click();
-	}
-	
-	public void clickOnarrivalDaysSundayCheckBox4()
-	{
-		arrivalDaysSundayCheckBox4.click();
-	}
-	
-	public void clickOnDepartureDaysSelectAllCheckBox4()
-	{
-		departureDaysSelectAllCheckBox4.click();
-	}
-	
-	public void clickOnDepartureDaysMondayCheckBox4()
-	{
-		departureDaysMondayCheckBox4.click();
-	}
-	
-	public void clickOnDepartureDaysTuesdayCheckBox4()
-	{
-		departureDaysTuesdayCheckBox4.click();
-	}
-	
-	public void clickOnDepartureDaysWednesdayCheckBox4()
-	{
-		departureDaysWednesdayCheckBox4.click();
-	}
-	
-	public void clickOnDepartureDayThursdayCheckBox4()
-	{
-		departureDayThursdayCheckBox4.click();
-	}
-	
-	public void clickOnDepartureDayFridayCheckBox4()
-	{
-		departureDayFridayCheckBox4.click();
-	}
-	
-	public void clickOnDepartureDaySaturdayCheckBox4()
-	{
-		departureDaySaturdayCheckBox4.click();
-	}
-	
-	public void clickOnDepartureDaySundayCheckBox4()
-	{
-		departureDaySundayCheckBox4.click();
-	}
-	
-	public void sendMinStayForRoom4(String min)
-	{
-		minStayForRoom4.sendKeys(min);
-	}
-	
-	public void sendMaxStayForRoom4(String max)
-	{
-		maxStayForRoom4.sendKeys(max);
-	}
-	
-	public void clickOndeleteOptionForRoom4()
-	{
-		deleteOptionForRoom4.click();
-	}
-	
-	
-	//Room5 method pending
-	
-	public void sendtravelFrom5(String travelF5)
-	{
-		travelFrom4.sendKeys(travelF5);
-	}
-	
-	public void sendtravelTo5(String travelT5)
-	{
-		travelTo4.sendKeys(travelT5);
-	}
-	
-	public void clickOnarrivalDaysSelectAllCheckBox5()
-	{
-		arrivalDaysSelectAllCheckBox4.click();
-	}
-	
-	public void clickOnarrivalDaysMondayCheckBox5()
-	{
-		arrivalDaysMondayCheckBox5.click();
-	}
-	
-	public void clickOnarrivalDaysTuesdayCheckBox5()
-	{
-		arrivalDaysTuesdayCheckBox5.click();
-	}
-	
-	public void clickOnarrivalDaysWednesdayCheckBox5()
-	{
-		arrivalDaysWednesdayCheckBox5.click();
-	}
-	
-	public void clickOnarrivalDaysThursdayCheckBox5()
-	{
-		arrivalDaysThursdayCheckBox5.click();
-	}
-	
-	public void clickOnarrivalDaysFridayCheckBox5()
-	{
-		arrivalDaysFridayCheckBox5.click();
-	}
-	
-	public void clickOnarrivalDaysSaturdayCheckBox5()
-	{
-		arrivalDaysSaturdayCheckBox5.click();
-	}
-	
-	public void clickOnarrivalDaysSundayCheckBox5()
-	{
-		arrivalDaysSundayCheckBox5.click();
-	}
-	
-	public void clickOnDepartureDaysSelectAllCheckBox5()
-	{
-		departureDaysSelectAllCheckBox5.click();
-	}
-	
-	public void clickOnDepartureDaysMondayCheckBox5()
-	{
-		departureDaysMondayCheckBox5.click();
-	}
-	
-	public void clickOnDepartureDaysTuesdayCheckBox5()
-	{
-		departureDaysTuesdayCheckBox5.click();
-	}
-	
-	public void clickOnDepartureDaysWednesdayCheckBox5()
-	{
-		departureDaysWednesdayCheckBox5.click();
-	}
-	
-	public void clickOnDepartureDayThursdayCheckBox5()
-	{
-		departureDayThursdayCheckBox5.click();
-	}
-	
-	public void clickOnDepartureDayFridayCheckBox5()
-	{
-		departureDayFridayCheckBox5.click();
-	}
-	
-	public void clickOnDepartureDaySaturdayCheckBox5()
-	{
-		departureDaySaturdayCheckBox5.click();
-	}
-	
-	public void clickOnDepartureDaySundayCheckBox5()
-	{
-		departureDaySundayCheckBox5.click();
-	}
-	
-	public void sendMinStayForRoom5(String min)
-	{
-		minStayForRoom5.sendKeys(min);
-	}
-	
-	public void sendMaxStayForRoom5(String max)
-	{
-		maxStayForRoom5.sendKeys(max);
-	}
-	
-	public void clickOndeleteOptionForRoom5()
-	{
-		deleteOptionForRoom5.click();
-	}
-	
 	public void clickOnUpdateArriDeptButton()
 	{
 		updateArriDeptButton.click();
 	}
-	
 	
 }

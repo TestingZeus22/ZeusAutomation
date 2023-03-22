@@ -1,19 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test011(failed)">
     <classes>
-      <class name="BookingMaskTestCases.verifyRoomOccupancyLimitTC70ToTC73">
+      <class name="BookingMaskTestCases.VerifyTravelDatesOutOfContract_TC11">
         <methods>
-          <include name="launchBrowser"/>
-          <include name="validateLimitOccupancyCombinationBooking"/>
           <include name="closeBrowser"/>
-          <include name="validateLimitOccupancyCombinationBookings"/>
-          <include name="validateLimitOccupancyForMaxAdults"/>
+          <include name="validateMessageOnBMwithDatesOutOfContract"/>
+          <include name="launchBrowser"/>
+          <include name="Logout"/>
           <include name="loginToApp"/>
+        </methods>
+      </class> <!-- BookingMaskTestCases.VerifyTravelDatesOutOfContract_TC11 -->
+    </classes>
+  </test> <!-- Test011(failed) -->
+  <test thread-count="5" parallel="tests" name="Test15(failed)">
+    <classes>
+      <class name="BookingMaskTestCases.VerifyConfirmBookingWithB_TC02">
+        <methods>
+          <include name="loginToApp"/>
+          <include name="closeBrowser"/>
+          <include name="validateReservationNoField"/>
+          <include name="launchBrowser"/>
           <include name="Logout"/>
         </methods>
-      </class> <!-- BookingMaskTestCases.verifyRoomOccupancyLimitTC70ToTC73 -->
+      </class> <!-- BookingMaskTestCases.VerifyConfirmBookingWithB_TC02 -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test15(failed) -->
+  <test thread-count="5" parallel="tests" name="Test07(failed)">
+    <classes>
+      <class name="BookingMaskTestCases.VerifyBookingWithTravelFromAndTravelToSameDate_TC07">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="validateTravelFromAndTravelToSameDatePopUpMessageonBM"/>
+          <include name="loginToApp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- BookingMaskTestCases.VerifyBookingWithTravelFromAndTravelToSameDate_TC07 -->
+    </classes>
+  </test> <!-- Test07(failed) -->
 </suite> <!-- Failed suite [Suite] -->

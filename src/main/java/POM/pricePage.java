@@ -102,7 +102,6 @@ public class pricePage {
 @FindBy (xpath ="(//input[@id='roomModel_SeasonDEB'])[4]") private WebElement seasonEBRoom4_D;
 @FindBy (xpath ="(//input[@id='roomModel_SeasonDPrice'])[4]") private WebElement seasonDpriceRoom4_D;
 
-
 //Season_E
 @FindBy (id ="seasonModel_SeasonEFrom") private WebElement seasonFrom_E;
 @FindBy (id ="seasonModel_SeasonEUntil") private WebElement seasonUntil_E;
@@ -213,7 +212,7 @@ public class pricePage {
 @FindBy (xpath ="(//input[@id='roomModel_IsThursday'])[2]") private WebElement Room2CheckBox5Thursday;
 @FindBy (xpath ="(//input[@id='roomModel_IsFriday'])[2]") private WebElement Room2CheckBox6Friday;
 @FindBy (xpath ="(//input[@id='roomModel_IsSaturday'])[2]") private WebElement Room2CheckBox7Saturday;
-@FindBy (xpath ="(//input[@id='roomModel_IsSunday'])21]") private WebElement Room2CheckBox8Sunday;
+@FindBy (xpath ="(//input[@id='roomModel_IsSunday'])[2]") private WebElement Room2CheckBox8Sunday;
 
 //Weeekdays CheckBox selection for room3
 @FindBy (xpath ="(//input[@id='roomModel_IsAll'])[3]") private WebElement Room3CheckBox1AllDay;

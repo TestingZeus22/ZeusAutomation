@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\rohan.patil\AppData\Local\Temp\testng-eclipse-1392096054\testng-customsuite.xml</span>
+                    <span>C:\Users\rohan.patil\AppData\Local\Temp\testng-eclipse-1616788787\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="BookingMaskTestCases.createBAWeekday" class="method navigator-link" hash-for-method="validatePriceFieldWithBookingInquiry">validatePriceFieldWithBookingInquiry</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="SalesBookingListTestCases.TC11" class="method navigator-link" hash-for-method="validateReservationNoField">validateReservationNoField</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -122,23 +122,23 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">BookingMaskTestCases.createBAWeekday</span>
+              <span class="class-name">SalesBookingListTestCases.TC11</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validatePriceFieldWithBookingInquiry">
-                  </a> <!-- validatePriceFieldWithBookingInquiry -->
-                  <span class="method-name">validatePriceFieldWithBookingInquiry</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#bookinglines_Price_1&quot;}
-  (Session info: chrome=110.0.5481.178)
+                  <a name="validateReservationNoField">
+                  </a> <!-- validateReservationNoField -->
+                  <span class="method-name">validateReservationNoField</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;SalesBookingTable&apos;]/tbody/tr/td[1]&quot;}
+  (Session info: chrome=111.0.5563.65)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0df1600dbd19fac79cc7beddcc191c4d, findElement {using=id, value=bookinglines_Price_1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.30 (aedb656755c4..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:64450}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64450/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0df1600dbd19fac79cc7beddcc191c4d
+Command: [91fd00f409ed9792d37532658d74a4d3, findElement {using=xpath, value=//table[@id=&apos;SalesBookingTable&apos;]/tbody/tr/td[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:55175}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55175/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 91fd00f409ed9792d37532658d74a4d3
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -157,9 +157,9 @@ Session ID: 0df1600dbd19fac79cc7beddcc191c4d
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.getAttribute(Unknown Source)
-	at POM.bookingMaskPage.getPriceFieldValue1(bookingMaskPage.java:419)
-	at BookingMaskTestCases.createBAWeekday.validatePriceFieldWithBookingInquiry(createBAWeekday.java:763)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.getText(Unknown Source)
+	at POM.salesBookingListPage.getSalesBookingColumn1(salesBookingListPage.java:246)
+	at SalesBookingListTestCases.TC11.validateReservationNoField(TC11.java:204)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -197,7 +197,7 @@ Session ID: 0df1600dbd19fac79cc7beddcc191c4d
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\rohan.patil\AppData\Local\Temp\testng-eclipse-1392096054\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\rohan.patil\AppData\Local\Temp\testng-eclipse-1616788787\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -206,7 +206,7 @@ Session ID: 0df1600dbd19fac79cc7beddcc191c4d
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;BookingMaskTestCases.createBAWeekday&quot;/&gt;
+      &lt;class name=&quot;SalesBookingListTestCases.TC11&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -248,14 +248,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validatePriceFieldWithBookingInquiry')
-data.setCell(0, 2, 'BookingMaskTestCases.createBAWeekday')
-data.setCell(0, 3, 1159);
+data.setCell(0, 1, 'validateReservationNoField')
+data.setCell(0, 2, 'SalesBookingListTestCases.TC11')
+data.setCell(0, 3, 48386);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -266,13 +266,40 @@ return data;
             <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validateReservationNoField</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Select TFT1 in TravelType dropdownList</span>
+                <span class="reporter-method-output">Selected HK001 - (TESTING) from dropdown list</span>
+                <span class="reporter-method-output">Send booking action</span>
+                <span class="reporter-method-output">Select Falk Tours AG in CompanyID dropdownList</span>
+                <span class="reporter-method-output">Send number of passenger</span>
+                <span class="reporter-method-output">Send correct KOS in input field</span>
+                <span class="reporter-method-output">Send correct ProductCode in input field</span>
+                <span class="reporter-method-output">Send roomcode in input field</span>
+                <span class="reporter-method-output">Send correct boardName</span>
+                <span class="reporter-method-output">Send Occupancy</span>
+                <span class="reporter-method-output">Send bookinglines </span>
+                <span class="reporter-method-output">Send Travel from date</span>
+                <span class="reporter-method-output">Send Travel To date</span>
+                <span class="reporter-method-output">Select Number of passengers</span>
+                <span class="reporter-method-output">Click on SendBookingButton</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">SalesBookingListTestCases.TC11</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateReservationNoFieldS</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -281,28 +308,28 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">BookingMaskTestCases.createBAWeekday</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">SalesBookingListTestCases.TC11</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">loginToApp</span>
-                <span class="method-start">6061 ms</span>
+                <span class="method-start">6426 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">validatePriceFieldWithBookingInquiry</span>
-                <span class="method-start">348274 ms</span>
+                <span class="method-name">validateReservationNoField</span>
+                <span class="method-start">40349 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">Logout</span>
-                <span class="method-start">349437 ms</span>
+                <span class="method-start">88740 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">354645 ms</span>
+                <span class="method-start">92930 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

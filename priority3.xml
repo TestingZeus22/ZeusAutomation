@@ -3,14 +3,14 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="BookingMaskTestCases.verifyBookingInquiryWithBlankTravelFromAndTravelToDate_TC05"/>
-      <class name="BookingMaskTestCases.verifyBookingInquiryWithBlankTravelFromDate_TC04"/>
-      <class name="BookingMaskTestCases.verifyBookingInquiryWithBlankTravelToDate_TC03"/>
-      <class name="BookingMaskTestCases.verifyTravelToDateLessThanTravelFromDate_TC08"/>
-      <class name="BookingMaskTestCases.verifyTravelDatesOutOfContract_TC11"/>
-      <class name="BookingMaskTestCases.verifyTravelDateEndingOutOfContract_TC12"/>
-      <class name="BookingMaskTestCases.verifyEnteringTravelFromBeforeContract_TC13"/>
-      <class name="BookingMaskTestCases.verifyBookingWithTravelFromAndTravelToSameDate_TC07"/>
+      <class name="BookingMaskTestCases.VerifyBookingInquiryWithBlankTravelFromAndTravelToDate_TC05"/>
+      <class name="BookingMaskTestCases.VerifyBookingInquiryWithBlankTravelFromDate_TC04"/>
+      <class name="BookingMaskTestCases.VerifyBookingInquiryWithBlankTravelToDate_TC03"/>
+      <class name="BookingMaskTestCases.VerifyTravelToDateLessThanTravelFromDate_TC08"/>
+      <class name="BookingMaskTestCases.VerifyTravelDatesOutOfContract_TC11"/>
+      <class name="BookingMaskTestCases.VerifyTravelDateEndingOutOfContract_TC12"/>
+      <class name="BookingMaskTestCases.VerifyEnteringTravelFromBeforeContract_TC13"/>
+      <class name="BookingMaskTestCases.VerifyBookingWithTravelFromAndTravelToSameDate_TC07"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 07 17:39:24 IST 2023</td>
+<td>Started on:</td><td>Wed Mar 22 16:18:14 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>354 seconds (354805 ms)</td>
+<tr><td>Total time:</td><td>93 seconds (93176 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,37 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='BookingMaskTestCases.createBAWeekday.validatePriceFieldWithBookingInquiry()'><b>validatePriceFieldWithBookingInquiry</b><br>Test class: BookingMaskTestCases.createBAWeekday</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#bookinglines_Price_1&quot;}
-  (Session info: chrome=110.0.5481.178)
+<td title='SalesBookingListTestCases.TC11.validateReservationNoField()'><b>validateReservationNoField</b><br>Test class: SalesBookingListTestCases.TC11<br/>
+<a href="#Output-1986001684" onClick='toggleBox("Output-1986001684", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1986001684" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1986001684">
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Send booking action<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Select Number of passengers<br/>
+Click on SendBookingButton<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;SalesBookingTable&apos;]/tbody/tr/td[1]&quot;}
+  (Session info: chrome=111.0.5563.65)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0df1600dbd19fac79cc7beddcc191c4d, findElement {using=id, value=bookinglines_Price_1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.30 (aedb656755c4..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:64450}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64450/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0df1600dbd19fac79cc7beddcc191c4d
+Command: [91fd00f409ed9792d37532658d74a4d3, findElement {using=xpath, value=//table[@id=&apos;SalesBookingTable&apos;]/tbody/tr/td[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:55175}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55175/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 91fd00f409ed9792d37532658d74a4d3
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -103,9 +124,9 @@ Session ID: 0df1600dbd19fac79cc7beddcc191c4d
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.getAttribute(Unknown Source)
-	at POM.bookingMaskPage.getPriceFieldValue1(bookingMaskPage.java:419)
-	at BookingMaskTestCases.createBAWeekday.validatePriceFieldWithBookingInquiry(createBAWeekday.java:763)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.getText(Unknown Source)
+	at POM.salesBookingListPage.getSalesBookingColumn1(salesBookingListPage.java:246)
+	at SalesBookingListTestCases.TC11.validateReservationNoField(TC11.java:204)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -134,16 +155,16 @@ Session ID: 0df1600dbd19fac79cc7beddcc191c4d
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1402047326", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1402047326'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#bookinglines_Price_1&quot;}
-  (Session info: chrome=110.0.5481.178)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1986001684", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1986001684'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//table[@id=&apos;SalesBookingTable&apos;]/tbody/tr/td[1]&quot;}
+  (Session info: chrome=111.0.5563.65)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0df1600dbd19fac79cc7beddcc191c4d, findElement {using=id, value=bookinglines_Price_1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 110.0.5481.30 (aedb656755c4..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:64450}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64450/devtoo..., se:cdpVersion: 110.0.5481.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0df1600dbd19fac79cc7beddcc191c4d
+Command: [91fd00f409ed9792d37532658d74a4d3, findElement {using=xpath, value=//table[@id=&apos;SalesBookingTable&apos;]/tbody/tr/td[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:55175}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55175/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 91fd00f409ed9792d37532658d74a4d3
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -162,9 +183,9 @@ Session ID: 0df1600dbd19fac79cc7beddcc191c4d
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.getAttribute(Unknown Source)
-	at POM.bookingMaskPage.getPriceFieldValue1(bookingMaskPage.java:419)
-	at BookingMaskTestCases.createBAWeekday.validatePriceFieldWithBookingInquiry(createBAWeekday.java:763)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.getText(Unknown Source)
+	at POM.salesBookingListPage.getSalesBookingColumn1(salesBookingListPage.java:246)
+	at SalesBookingListTestCases.TC11.validateReservationNoField(TC11.java:204)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -194,8 +215,8 @@ Session ID: 0df1600dbd19fac79cc7beddcc191c4d
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>1</td>
-<td>BookingMaskTestCases.createBAWeekday@359f7cdf</td></tr>
+<td>48</td>
+<td>SalesBookingListTestCases.TC11@5ffead27</td></tr>
 </table><p>
 </body>
 </html>

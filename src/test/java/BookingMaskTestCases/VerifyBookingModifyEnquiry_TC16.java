@@ -104,6 +104,7 @@
 	    		
 	    		BookingMask.ClearbookingActionfield();
 	    		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(261, 1, "Sheet2"));
+	    		Reporter.log("Send Booking action");
 	    		BookingMask.clearNoOfPax();
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		

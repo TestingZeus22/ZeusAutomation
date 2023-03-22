@@ -763,7 +763,7 @@ public class CreateBAWeekday extends BaseClass {
       String ActualPrice = BookingMask.getPriceFieldValue1("value");
 	  String expectedPrice = UtilityClass.readDataFromStringExcel(98, 1, "Sheet2");
 	  Assert.assertEquals(ActualPrice, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
-	  Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue1("value")+" and Expected Price "+UtilityClass.readDataFromStringExcel(98, 1, "Sheet2"),true);
+	  Reporter.log("Validating Actual price is "+BookingMask.getPriceFieldValue1("value")+" and Expected Price is"+UtilityClass.readDataFromStringExcel(98, 1, "Sheet2"),true);
     }
   
     @AfterMethod

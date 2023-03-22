@@ -3,12 +3,12 @@
 <suite name="Suite">
   <test thread-count="5" name="Test08">
     <classes>
-      <class name="BookingMaskTestCases.verifyTravelToDateLessThanTravelFromDate_TC08"/>
+      <class name="BookingMaskTestCases.VerifyTravelToDateLessThanTravelFromDate_TC08"/>
     </classes>
   </test> <!-- Test -->
  <test thread-count="5" name="Test11">
     <classes>
-      <class name="BookingMaskTestCases.verifyTravelDatesOutOfContract_TC11"/>
+      <class name="BookingMaskTestCases.VerifyTravelDatesOutOfContract_TC11"/>
     </classes>
   </test> <!-- Test -->
  </suite> <!-- Suite -->

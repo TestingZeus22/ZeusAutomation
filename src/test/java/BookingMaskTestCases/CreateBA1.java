@@ -314,7 +314,6 @@ public class CreateBA1 extends BaseClass {
         Thread.sleep(500);
         WebElement ListBox = driver.findElement(By.id("companyids"));
         Select s=new Select(ListBox);
-        System.out.println(s.isMultiple());
         Reporter.log("Check the listbox is multiselect or not",true);
         Thread.sleep(1000);
         driver.findElement(By.xpath("//li[@class='multiselect-item multiselect-all']")).click();
@@ -649,7 +648,7 @@ public class CreateBA1 extends BaseClass {
       String ActualPrice = BookingMask.getPriceFieldValue1("value");
 	  String expectedPrice = UtilityClass.readDataFromStringExcel(98, 1, "Sheet2");
 	  Assert.assertEquals(ActualPrice, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
-	  Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue1("value")+" and Expected Price "+UtilityClass.readDataFromStringExcel(98, 1, "Sheet2"),true);
+	  Reporter.log("Validating Actual price is "+BookingMask.getPriceFieldValue1("value")+" and Expected Price is "+UtilityClass.readDataFromStringExcel(98, 1, "Sheet2"),true);
     }
   
     @AfterMethod

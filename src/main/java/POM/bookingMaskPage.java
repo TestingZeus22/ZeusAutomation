@@ -11,15 +11,19 @@ public class bookingMaskPage {
 	@FindBy (xpath ="//a[@data-toggle='dropdown']") private WebElement logoutDropDown;
 	@FindBy (xpath ="//a[@class='btn-pill btn-shadow btn-shine btn btn-focus']") private WebElement logoutOnBookingMask;
 	
-	@FindBy (xpath = "//a[text()='SalesBooking']") private WebElement salesBookingClick;
-	@FindBy (xpath = "//a[@class='btn-shadow btn btn-success']") private WebElement viewList;
+	@FindBy (xpath ="//div[@class='page-title-heading']//div[2]") private WebElement createBookingformpageheadingandbreadcrumbs;
+	@FindBy (xpath ="//div[@style='font-size:small;']//li[1]") private WebElement dashboardLink;
+	@FindBy (xpath ="//div[@style='font-size:small;']//li[2]") private WebElement salesBookingLink;
+	@FindBy (xpath ="//div[@style='font-size:small;']//li[3]") private WebElement salesbookingCreateLink;
+	@FindBy (xpath ="//a[@class='btn-shadow btn btn-success']") private WebElement viewList;
 	
+	@FindBy (xpath ="//span[text()='Booking']") private WebElement BookingText;
 	@FindBy (id ="SalesHeader_Tbmcode") private WebElement productCodeDropDown;
 	@FindBy (id ="SalesHeader_Room") private WebElement roomCodeDropDown;
 	@FindBy (id ="SalesHeader_Board") private WebElement boardDropDown;
 	
+	@FindBy (xpath ="//span[text()='Booking Mask']") private WebElement BookingMaskText;
 	@FindBy (id="SalesBookingHeaderNewModel_Remarks") private WebElement remarkField;
-	
 	@FindBy (id="SalesBookingHeaderNewModel_PromotionCode") private WebElement promotionCodeField;
 	@FindBy (id="SalesBookingHeaderNewModel_ExternalReservationNumber") private WebElement externalReservationNumberField;
 	
@@ -52,6 +56,7 @@ public class bookingMaskPage {
 	@FindBy (id="bookinglines_TravelFrom_2") private WebElement travelFrom1;
 	@FindBy (id="bookinglines_TravelTo_2") private WebElement travelTo1;
 	@FindBy (id="bookinglines_PassengerNo_2") private WebElement Passengers1;
+	@FindBy (id="bookinglines_AmadeusStatus_1") private WebElement status;
 	@FindBy (id="bookinglines_Price_1") private WebElement PriceFieldValue1;
 	@FindBy (xpath ="(//i[@class='pe-7s-trash btn-icon-wrapper'])[1]") private WebElement deleteButton1;
 	
@@ -204,14 +209,54 @@ public class bookingMaskPage {
 		return Element;
 	}
 	
-	public void clickOnsalesBookinButton()
+	public String getCreateBookingformpageheadingandbreadcrumbs()
 	{
-		salesBookingClick.click();
+		String actualText = createBookingformpageheadingandbreadcrumbs.getText();
+		return actualText;
+	}
+	
+	public String getDashboardLink()
+	{
+		String actualText = dashboardLink.getText();
+		return actualText;
+	}
+	
+	public void clickOndashboardLink()
+	{
+		dashboardLink.click();
+	}
+
+	public String getsalesBookingLinkText()
+	{
+		String actualText = salesBookingLink.getText();
+		return actualText;
+	}
+	
+	public void clickOnsalesBookingLink()
+	{
+		salesBookingLink.click();
+	}
+	
+	public String getsalesbookingCreateLinkText()
+	{
+		String actualText = salesbookingCreateLink.getText();
+		return actualText;
+	}
+	
+	public void clickOnsalesbookingCreateLink()
+	{
+		salesbookingCreateLink.click();
 	}
 	
 	public void clickOnViewList()
 	{
 		viewList.click();
+	}
+	
+	public String getBookingText()
+	{
+		String actualText = BookingText.getText();
+		return actualText;
 	}
 	
 	public WebElement roomCodeDropDownMethod()
@@ -224,6 +269,12 @@ public class bookingMaskPage {
 	{
 		WebElement Element = boardDropDown;
 		return Element;
+	}
+	
+	public String getBookingMaskText()
+	{
+		String actualText = BookingMaskText.getText();
+		return actualText;
 	}
 		
 	public void sendremarkPoints(String remark)
@@ -412,6 +463,12 @@ public class bookingMaskPage {
 	public void sendPassenger(String Passenger)
 	{
 		Passengers1.sendKeys(Passenger);
+	}
+	
+	public String getStatus1(String Status1)
+	{
+		String actualText = status.getAttribute(Status1);
+		return actualText;
 	}
 	
 	public String getPriceFieldValue1(String value1)
@@ -1009,5 +1066,10 @@ public class bookingMaskPage {
 		String actualText = reserVER.getAttribute(RVer);
 		return actualText;
 	}
+	
+	
+	
+	
+	
 		
 }
