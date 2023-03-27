@@ -84,7 +84,7 @@
 	    		String ActualText = dashboard.getActualTextOnDashboard();
 		  		String expectedText = UtilityClass.readDataFromStringExcel(16, 1, "Sheet4");
 		  		Assert.assertEquals(ActualText, expectedText,"Test Case Failed as actual & expected messages are not matching");
-		  		Reporter.log("Validating Actual Text in salesBooking list page is "+dashboard.getActualTextOnDashboard()+" and Expected text in the salesBooking list page is "+UtilityClass.readDataFromStringExcel(16, 1, "Sheet4"),true);
+		  		Reporter.log("Validating Actual Text in Dashboard page is "+dashboard.getActualTextOnDashboard()+" and Expected text in the Dashboard page is "+UtilityClass.readDataFromStringExcel(16, 1, "Sheet4"),true);
 	    		
 	    		}
 	    		@AfterMethod

@@ -275,7 +275,7 @@ import org.testng.Reporter;
 	
 		        String expectedPrice = UtilityClass.readDataFromStringExcel(31, 3, "Sheet4");
 		        Assert.assertEquals(price, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
-		        Reporter.log("Validating Actual price is "+price+" and Expected Price is "+UtilityClass.readDataFromStringExcel(31, 2, "Sheet4"),true);
+		        Reporter.log("Validating Actual price is "+price+" and Expected Price is "+UtilityClass.readDataFromStringExcel(31, 3, "Sheet4"),true);
 		        String ExpectedReservationNo = salesBookingList.getSalesBookingColumn1();
 		        Assert.assertEquals(ActualReser, ExpectedReservationNo,"Test Case Failed as actual & expected ReservationNo are not matching");
 		        Reporter.log("Validating Expected ReservationNo "+ActualReser+" and Actual ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);

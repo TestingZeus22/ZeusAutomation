@@ -8,9 +8,9 @@ import org.testng.annotations.Test;
 
 import utility.UtilityClass;
 
-public class test1 {
+public class TestUrl {
   @Test
-  public void TestWeb() {
+  public void TestApp() {
 	  
 	   System.setProperty("webdriver.chrome.driver", "C:\\Users\\rohan.patil\\Jar files\\chromedriver.exe");
 		

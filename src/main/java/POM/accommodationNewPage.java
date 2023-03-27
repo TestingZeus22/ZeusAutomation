@@ -7,11 +7,12 @@ import org.openqa.selenium.support.PageFactory;
 
 public class accommodationNewPage {
 	
-	
 	@FindBy (xpath ="//span[text()='Rooms']") private WebElement rooms;	
 	
-	
-	
+	@FindBy (xpath ="//div[@style='font-size:small;']//li[1]") private WebElement dashboard;
+	@FindBy (xpath ="//div[@style='font-size:small;']//li[2]") private WebElement accommodation;
+	@FindBy (xpath ="//div[@style='font-size:small;']//li[3]") private WebElement accommodationCreate;
+	 
 	@FindBy (id ="AccommodationModel_LocalityModel_PurchaserID") private WebElement selectPurchaserListBox;
 	
 	//@FindBy (id ="select2-lc_hotelChain-container") private WebElement selecthotelChainContainerListBox;
@@ -70,15 +71,33 @@ public class accommodationNewPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	
 	public void clickOnroom()
 	{
 		rooms.click();
 	}
 	
+	public void clickOnDashboard()
+	{
+		dashboard.click();
+	}
 	
+	public String getdashboardText()
+	{
+		String actualText = dashboard.getText();
+		return actualText;
+	}
 	
-
+	public void clickOnAccommodation()
+	{
+		accommodation.click();
+	}
+	
+	public String getAccommodationText()
+	{
+		String actualText = accommodation.getText();
+		return actualText;
+	}
+	
 	public WebElement clickOnselectPurchaser()
 	{
 		WebElement Element = selectPurchaserListBox;
@@ -128,6 +147,7 @@ public class accommodationNewPage {
 	{
 		numberField.sendKeys(Num);
 	}
+	
 	public void sendhotelEmailField(String HotelEmail)
 	{
 		hotelEmailField.sendKeys(HotelEmail);
@@ -263,8 +283,5 @@ public class accommodationNewPage {
 	{
 		createAccommodationButton.click();
 	}
-	
-    
-	
-	
+
 }

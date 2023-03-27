@@ -137,7 +137,7 @@ public class CreateBA2 extends BaseClass {
         
         accommodationNew.sendstars(UtilityClass.readDataFromStringExcel(15, 1, "Sheet2"));
         Reporter.log("Send hotel stars",true);	
-        Thread.sleep(1000);
+        Thread.sleep(1500);
         UtilityClass.listBoxHandlingUsingByText("Kowloon", accommodationNew.selectStateListBox());
         Reporter.log("Select state from the listBox",true);
         Thread.sleep(1000);
@@ -730,10 +730,10 @@ public class CreateBA2 extends BaseClass {
     		BookingMask.sendTotalPax(UtilityClass.readDataFromStringExcel(73, 1, "Sheet2"));
     		Reporter.log("Send bookinglines ",true);
     		
-    		BookingMask.sendTravelFromDate(UtilityClass.readDataFromStringExcel(96, 1, "Sheet2"));
+    		BookingMask.sendTravelFromDate(UtilityClass.readDataFromStringExcel(109, 2, "Sheet2"));
     		Reporter.log("Send Travel from date",true);
     		
-    		BookingMask.sendTravelToDate(UtilityClass.readDataFromStringExcel(97, 1, "Sheet2"));
+    		BookingMask.sendTravelToDate(UtilityClass.readDataFromStringExcel(110, 2, "Sheet2"));
     		Reporter.log("Send Travel To date",true);
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
@@ -749,9 +749,9 @@ public class CreateBA2 extends BaseClass {
     public void validatePriceFieldWithBookingInquiry() throws EncryptedDocumentException, IOException 
     {
       String ActualPrice = BookingMask.getPriceFieldValue1("value");
-	  String expectedPrice = UtilityClass.readDataFromStringExcel(98, 1, "Sheet2");
+	  String expectedPrice = UtilityClass.readDataFromStringExcel(111, 2, "Sheet2");
 	  Assert.assertEquals(ActualPrice, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
-	  Reporter.log("Validating Actual price is "+BookingMask.getPriceFieldValue1("value")+" and Expected Price is "+UtilityClass.readDataFromStringExcel(98, 1, "Sheet2"),true);
+	  Reporter.log("Validating Actual price is "+BookingMask.getPriceFieldValue1("value")+" and Expected Price is "+UtilityClass.readDataFromStringExcel(111, 2, "Sheet2"),true);
     }
   
     @AfterMethod

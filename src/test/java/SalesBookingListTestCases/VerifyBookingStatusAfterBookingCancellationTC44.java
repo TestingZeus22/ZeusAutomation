@@ -186,7 +186,7 @@
 		        {
 		        String expectedStatus=salesBookingList.getStatusRow9Col1();  
 		        Assert.assertEquals(BmStatus, expectedStatus,"Test Case Failed as actual & expected status are not matching");
-		        Reporter.log("Validating Actual Status "+BmStatus+" and Expected status is "+expectedStatus,true);
+		        Reporter.log("Validating Actual Status "+BmStatus+" and Expected status is "+salesBookingList.getStatusRow9Col1(),true);
 		        }
 		        
 	            @AfterMethod

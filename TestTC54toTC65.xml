@@ -6,11 +6,11 @@
       <class name="BookingMaskTestCases.VerifyRoomOccupancyLimitTC62ToTC65"/>
       <class name="BookingMaskTestCases.VerifyRoomOccupancyLimitTC54ToTC57"/>
       <class name="BookingMaskTestCases.VerifyRoomOccupancyLimitTC58ToTC61"/>
-     <class name="BookingMaskTestCases.VerifyOptionBookingTC40andTC41"/>
-     <class name="BookingMaskTestCases.VerifyModifyBookingTC21andTC22"/>
-     <class name="BookingMaskTestCases.VerifyOriginalBookingAfterModifyTC17"/>
-     <class name="BookingMaskTestCases.VerifyEnteringTravelDaysNoInTravelToField_TC10"/>
-     <class name="BookingMaskTestCases.VerifyBookingByEditingTravelTypeTC47"/>
+      <class name="BookingMaskTestCases.VerifyOptionBookingTC40andTC41"/>
+      <class name="BookingMaskTestCases.VerifyModifyBookingTC21andTC22"/>
+      <class name="BookingMaskTestCases.VerifyOriginalBookingAfterModifyTC17"/>
+      <class name="BookingMaskTestCases.VerifyEnteringTravelDaysNoInTravelToField_TC10"/>
+      <class name="BookingMaskTestCases.VerifyBookingByEditingTravelTypeTC47"/>
       <class name="BookingMaskTestCases.VerifyBookingWithMismatchPaxAndOCCTC50"/>
     </classes>
   </test> <!-- Test -->

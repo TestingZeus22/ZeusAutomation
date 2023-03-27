@@ -417,15 +417,12 @@ public class ArrivDepar extends BaseClass {
 		}
         Thread.sleep(1000);
         try {
-    	  
      	  WebElement ArrivDepar =  driver.findElement(By.xpath("//span[text()='Arr./Dep. Conditions']"));
      	  JavascriptExecutor executor = (JavascriptExecutor)driver;
           executor.executeScript("arguments[0].click();", ArrivDepar);
         } catch (Exception e) {
-		// TODO: handle exception
 	  	}
          Thread.sleep(3000);
-         
          WebElement selection = driver.findElement(By.xpath("(//span[@class='multiselect-selected-text'])[18]"));
          JavascriptExecutor executor = (JavascriptExecutor)driver;
          executor.executeScript("arguments[0].click();", selection);
@@ -434,10 +431,10 @@ public class ArrivDepar extends BaseClass {
          Select se=new Select(dropdown);
          se.deselectByVisibleText("801 room1");
          Thread.sleep(3000);
+         driver.findElement(By.xpath("//ul[@class='multiselect-container dropdown-menu show']//li[1]")).click();
          
-         driver.findElement(By.xpath("(//input[@type='checkbox'])[166]")).click();
+        // driver.findElement(By.xpath("(//input[@type='checkbox'])[166]")).click();
          Thread.sleep(1000);
-        
          arrivalDepar.sendtravelFrom1(UtilityClass.readDataFromStringExcel(37, 3, "Sheet2"));
          Thread.sleep(500);
          arrivalDepar.sendtravelTo1(UtilityClass.readDataFromStringExcel(38, 3, "Sheet2"));
@@ -452,11 +449,11 @@ public class ArrivDepar extends BaseClass {
          Thread.sleep(500);
          arrivalDepar.clickOnUpdateArriDeptButton();
          
-        Thread.sleep(9000);
-        driver.navigate().to("https://zeuscloud.azurewebsites.net/Dashboard");
-        Reporter.log("Navigate to dashboard page",true);
-        Thread.sleep(9000);
-        UtilityClass.implicitlyWaitInMillis(12000);
+         Thread.sleep(9000);
+         driver.navigate().to("https://zeuscloud.azurewebsites.net/Dashboard");
+         Reporter.log("Navigate to dashboard page",true);
+         Thread.sleep(9000);
+         UtilityClass.implicitlyWaitInMillis(12000);
         
        // Offer Defination Page
             dashboard.clickOncalculationList();
@@ -495,15 +492,12 @@ public class ArrivDepar extends BaseClass {
     		offerCalculation.clickOnTchiboDE();
     	    Reporter.log("Clicked on TchiboDE",true);
     	    Thread.sleep(3000);
-    	    //driver.findElement(By.xpath("//a[@id='j1_35_anchor']")).click();
-    	   // driver.findElement(By.xpath("//a[@id='j1_38_anchor']")).click();
     	    driver.findElement(By.xpath("//a[@id='j1_40_anchor']")).click();
             Reporter.log("Clicked on Testing in calaculation page",true);
     	    //calculationSetting.clickOnselectautofieldinTichiboDE();
     	    
     	    Thread.sleep(4000);
     	    UtilityClass.clickUsingJSE(calculationSetting.clickOnRoom1ByJSE());
-    	    //driver.findElement(By.xpath("(//ul[@class='tabs-animated-shadow nav-justified tabs-animated nav'])[3]//span")).click();
     	   // calculationSetting.clickOnRoom1(); 
     	    Reporter.log("Clicked on Room1",true);
     	    Thread.sleep(1000);
@@ -527,10 +521,7 @@ public class ArrivDepar extends BaseClass {
     		calculationSetting.clickOnTransferPriceOnline();
     		Reporter.log("Clicked on Transfer price online",true);
     		Thread.sleep(3000);
-    		//driver.findElement(By.xpath("(//a[@class='jstree-anchor'])[31]")).click();
-    		  driver.findElement(By.xpath("//a[@id='j3_40_anchor']")).click();
-    		//driver.findElement(By.xpath("(//a[@class='jstree-anchor'])[35]")).click();
-    		//driver.findElement(By.xpath("//a[@id='j1_38_anchor']")).click();
+    		driver.findElement(By.xpath("//a[@id='j3_40_anchor']")).click();
     		
     		//calculationSetting.clickOnselectautoinTichiboDEAfterSavecalculation();
     		Reporter.log("Clicked on TESTING option in TichiboDE after saving of calculation",true);
@@ -545,7 +536,7 @@ public class ArrivDepar extends BaseClass {
     		Thread.sleep(3000);
     	    UtilityClass.implicitlyWaitInMillis(3000);
     		
-    		// Booking mask
+    		//Booking mask
     		driver.navigate().to("https://zeuscloud.azurewebsites.net/Dashboard");
     		Thread.sleep(9800);
     		dashboard.SalesClick();
