@@ -22,15 +22,15 @@
 	
 	import Base.BaseClass;
 	import POM.bookingMaskPage;
-	import POM.BookingUpdatePage;
+	import POM.bookingUpdatePage;
 	import POM.DashboardPage;
 	import POM.accommodationListPage;
 	import POM.accommodationNewPage;
 	import POM.calculationSettingPage;
-	import POM.contractsPage;
+	import POM.contractDetailsPage;
 	import POM.loginPage;
 	import POM.offerCalculationPage;
-	import POM.offerDefination;
+	import POM.offerDefinationPage;
 	import POM.pricePage;
 	import POM.roomDetailsPage;
 	import POM.salesBookingListPage;
@@ -47,7 +47,7 @@
 		DashboardPage dashboard;
 		salesBookingListPage salesBookingList;
 		bookingMaskPage BookingMask;
-		BookingUpdatePage bookingupdate;
+		bookingUpdatePage bookingupdate;
 		String ActualReser;
 		String ExpectedReservationNo;
 		String ActualPrices;
@@ -61,7 +61,7 @@
 			dashboard = new DashboardPage(driver);
 			salesBookingList =new salesBookingListPage(driver);
 			BookingMask =new bookingMaskPage(driver);
-			bookingupdate=new BookingUpdatePage(driver);
+			bookingupdate=new bookingUpdatePage(driver);
 		}
 		
 		@BeforeMethod 

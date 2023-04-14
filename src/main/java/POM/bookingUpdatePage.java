@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class BookingUpdatePage {
+public class bookingUpdatePage {
 
 	
 @FindBy (id="SalesBookingHeaderNewModel_ReservationNo") private WebElement reserNO;
@@ -31,7 +31,7 @@ public class BookingUpdatePage {
 @FindBy (xpath="(//button[text()='OK'])[3]") private WebElement OKbuttonPopUp;
 	
 	
-	public BookingUpdatePage(WebDriver driver)
+	public bookingUpdatePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}

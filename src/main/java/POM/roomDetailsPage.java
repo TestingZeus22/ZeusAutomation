@@ -5,16 +5,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class roomDetailsPage 
-{
-	
-@FindBy (xpath ="//span[text()='Rooms']") private WebElement rooms;	
-@FindBy (xpath ="//a[@class='btn-shadow btn btn-primary'])[1]") private WebElement roomcreateButton;
-			
-@FindBy (id ="LocalityID") private WebElement localityDropdown;	
-@FindBy (id ="RoomName") private WebElement roomName;
+public class roomDetailsPage {
+				
+@FindBy (xpath ="(//a[@class='btn-shadow btn btn-success pull-right'])[2]") private WebElement viewRoomList;
 
+@FindBy (id ="LocalityID") private WebElement localityDropdown;	
 @FindBy (id ="RoomTypeID") private WebElement roomTypeDropdown;
+
+@FindBy (id ="RoomName") private WebElement roomNameField;
 @FindBy (id ="Description") private WebElement descriptionField;
 
 @FindBy (id ="SeaViewID") private WebElement seaviewDropdown;
@@ -26,8 +24,8 @@ public class roomDetailsPage
 @FindBy (id ="MinChildren") private WebElement minChildrenField;
 @FindBy (id ="MaxChildren") private WebElement maxChildrenField;
 
-//@FindBy (id ="MInTotal") private WebElement mInTotal;
-@FindBy (id ="MaxPersonTotal") private WebElement maxPersonTotalField;
+@FindBy (id ="MInTotal") private WebElement minTotalPerson;
+@FindBy (id ="MaxPersonTotal") private WebElement maxTotalPerson;
 
 @FindBy (id ="MinAge") private WebElement minAgeField;
 
@@ -39,25 +37,15 @@ public class roomDetailsPage
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void clickOnroom()
+	public void clickOnViewRoomList()
 	{
-		rooms.click();
+		viewRoomList.click();
 	}
-	
-	public void clickOnroomcreateButton()
-	{
-		roomcreateButton.click();
-	}
-	
+
 	public WebElement localitydropdown()
 	{
-		WebElement Element = roomTypeDropdown;
+		WebElement Element = localityDropdown;
 		return Element;
-	}
-	
-	public void sendroomName(String RoomName)
-	{
-		roomName.sendKeys(RoomName);
 	}
 	
 	public WebElement dropdownRoomType()
@@ -66,7 +54,12 @@ public class roomDetailsPage
 		return Element;
 	}
 	
-	public void senddescription(String Description)
+	public void sendroomName(String RoomName)
+	{
+		roomNameField.sendKeys(RoomName);
+	}
+	
+	public void sendDescription(String Description)
 	{
 		descriptionField.sendKeys(Description);
 	}
@@ -122,14 +115,24 @@ public class roomDetailsPage
 		maxChildrenField.clear();
 	}
 	
+	public void sendMinTotalPerson(String MinTotalPerson)
+	{
+		minTotalPerson.sendKeys(MinTotalPerson);
+	}
+	
+	public void clearMinTotalPerson()
+	{
+		minTotalPerson.clear();
+	}
+	
 	public void sendmaxTotalPerson(String MaxTotalPersons)
 	{
-		maxPersonTotalField.sendKeys(MaxTotalPersons);
+		maxTotalPerson.sendKeys(MaxTotalPersons);
 	}
 	
 	public void clearMaxTotalPerson()
 	{
-		maxPersonTotalField.clear();
+		maxTotalPerson.clear();
 	}
 	
 	public void sendminAge(String MinAge)

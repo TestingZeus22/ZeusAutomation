@@ -12,7 +12,7 @@ public class bookingMaskPage {
 	@FindBy (xpath ="//a[@class='btn-pill btn-shadow btn-shine btn btn-focus']") private WebElement logoutOnBookingMask;
 	
 	@FindBy (xpath ="//div[@class='page-title-heading']//div[2]") private WebElement createBookingformpageheadingandbreadcrumbs;
-	@FindBy (xpath ="//div[@style='font-size:small;']//li[1]") private WebElement dashboardLink;
+	@FindBy (xpath ="//div[@class='page-title-heading']//div[2]//li[1]") private WebElement dashboardLink;
 	@FindBy (xpath ="//div[@style='font-size:small;']//li[2]") private WebElement salesBookingLink;
 	@FindBy (xpath ="//div[@style='font-size:small;']//li[3]") private WebElement salesbookingCreateLink;
 	@FindBy (xpath ="//a[@class='btn-shadow btn btn-success']") private WebElement viewList;

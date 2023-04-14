@@ -22,10 +22,10 @@ import POM.accommodationNewPage;
 import POM.arrivalDepartureConditionsPage;
 import POM.bookingMaskPage;
 import POM.calculationSettingPage;
-import POM.contractsPage;
+import POM.contractDetailsPage;
 import POM.loginPage;
 import POM.offerCalculationPage;
-import POM.offerDefination;
+import POM.offerDefinationPage;
 import POM.pricePage;
 import POM.roomDetailsPage;
 import POM.salesBookingListPage;
@@ -41,7 +41,7 @@ public class ArriDeparWeekday extends BaseClass {
 	DashboardPage dashboard;
 	offerCalculationPage offerCalculation;    
 	calculationSettingPage calculationSetting; 
-	offerDefination offerdefination;
+	offerDefinationPage offerdefination;
 	salesBookingListPage salesBookingList;
 	bookingMaskPage BookingMask;
 	tbmCodeNewCreatePage newTbm;
@@ -49,7 +49,7 @@ public class ArriDeparWeekday extends BaseClass {
 	accommodationListPage accommdationList;
 	accommodationNewPage accommodationNew;
 	roomDetailsPage roomDetails;
-	contractsPage contracts;
+	contractDetailsPage contracts;
 	pricePage price;
 	arrivalDepartureConditionsPage arrivalDepar;
 	
@@ -63,7 +63,7 @@ public class ArriDeparWeekday extends BaseClass {
 		dashboard = new DashboardPage(driver);
 		offerCalculation = new offerCalculationPage(driver);  
 		calculationSetting =new calculationSettingPage(driver); 
-		offerdefination = new offerDefination(driver); 
+		offerdefination = new offerDefinationPage(driver); 
 		salesBookingList =new salesBookingListPage(driver);
 		BookingMask =new bookingMaskPage(driver);
 		newTbm =new tbmCodeNewCreatePage(driver);
@@ -71,7 +71,7 @@ public class ArriDeparWeekday extends BaseClass {
 		accommdationList =new accommodationListPage(driver);
 		accommodationNew =new accommodationNewPage(driver);
 		roomDetails =new roomDetailsPage(driver);
-		contracts =new contractsPage(driver);
+		contracts =new contractDetailsPage(driver);
 		price = new pricePage(driver);
 		arrivalDepar = new arrivalDepartureConditionsPage (driver);
 	}

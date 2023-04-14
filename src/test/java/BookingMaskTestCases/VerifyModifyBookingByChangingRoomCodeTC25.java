@@ -18,15 +18,15 @@ import org.testng.Assert;
 	import org.testng.annotations.Test;
 	import Base.BaseClass;
 	import POM.bookingMaskPage;
-	import POM.BookingUpdatePage;
+	import POM.bookingUpdatePage;
 	import POM.DashboardPage;
 	import POM.accommodationListPage;
 	import POM.accommodationNewPage;
 	import POM.calculationSettingPage;
-	import POM.contractsPage;
+	import POM.contractDetailsPage;
 	import POM.loginPage;
 	import POM.offerCalculationPage;
-	import POM.offerDefination;
+	import POM.offerDefinationPage;
 	import POM.pricePage;
 	import POM.roomDetailsPage;
 	import POM.salesBookingListPage;
@@ -44,7 +44,7 @@ import org.testng.Assert;
 		salesBookingListPage salesBookingList;
 	    bookingMaskPage BookingMask;
 		accommodationListPage accommdationList;
-		BookingUpdatePage bookingupdate;
+		bookingUpdatePage bookingupdate;
 		
 		@BeforeClass
 		public void launchBrowser(){
@@ -57,7 +57,7 @@ import org.testng.Assert;
 			salesBookingList =new salesBookingListPage(driver);
 			BookingMask =new bookingMaskPage(driver);
 			accommdationList =new accommodationListPage(driver);
-			bookingupdate = new BookingUpdatePage(driver);
+			bookingupdate = new bookingUpdatePage(driver);
 		}
 		
 		@BeforeMethod

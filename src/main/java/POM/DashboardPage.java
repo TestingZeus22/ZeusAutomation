@@ -80,7 +80,7 @@ public class DashboardPage {
 		
 	//Purchase
 	@FindBy (xpath = "//i[@class='metismenu-icon lnr-cart']") private WebElement purchasebutton;
-	@FindBy (xpath = "(//label[text()='Accommodation'])[1]") private WebElement accommodation;
+	@FindBy (xpath = "(//label[@style='vertical-align: middle !important;'])[45]") private WebElement accommodation;
 	@FindBy (xpath = "//label[text()='Free Customer Voucher']") private WebElement freeCustomerVoucher;
 	@FindBy (xpath = "//label[text()='Accommodation Channel Manager']") private WebElement accommodationChannelManager;
 	
@@ -348,10 +348,14 @@ public class DashboardPage {
 		channelManager.click();
 	}
 	
-	
-	public void clickOnPurchaseButton()
+	public void clickOnpurchasebutton()
 	{
 		purchasebutton.click();
+	}
+	
+	public WebElement clickOnPurchaseButtonByJSE()
+	{
+		return purchasebutton;
 	}
 	
 	public void clickOnAccommodation()

@@ -15,7 +15,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import Base.BaseClass;
-import POM.BookingUpdatePage;
+import POM.bookingUpdatePage;
 import POM.DashboardPage;
 import POM.bookingMaskPage;
 import POM.loginPage;
@@ -30,7 +30,7 @@ public class VerifyBookingForFirstMonthToSecondMonthWithArriDeptConditionTC133To
 	DashboardPage dashboard;
 	salesBookingListPage salesBookingList;
 	bookingMaskPage BookingMask;
-	BookingUpdatePage bookingUpdate;
+	bookingUpdatePage bookingUpdate;
 	
 	String ActualReser;
 	String ExpectedReservationNo;
@@ -45,7 +45,7 @@ public class VerifyBookingForFirstMonthToSecondMonthWithArriDeptConditionTC133To
 		dashboard = new DashboardPage(driver);
 		salesBookingList =new salesBookingListPage(driver);
 		BookingMask =new bookingMaskPage(driver);
-		bookingUpdate=new BookingUpdatePage(driver);
+		bookingUpdate=new bookingUpdatePage(driver);
 	}
 	
 	@BeforeMethod

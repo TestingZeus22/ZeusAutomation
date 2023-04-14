@@ -27,7 +27,8 @@ import Base.BaseClass;
 	public static String readDataFromStringExcel(int rowNum, int cellNum, String SheetName) throws EncryptedDocumentException, IOException
 	{
 		//FileInputStream File =new FileInputStream(System.getProperty("user.dir")+"\\TestData\\data.xlsx");
-		File myfile = new File("C:\\Users\\rohan.patil\\Jar files\\data.xlsx");
+		//File myfile = new File("C:\\Users\\rohan.patil\\Jar files\\data.xlsx");
+		File myfile = new File("D:\\OneDrive - Dhyey Consulting Services Pvt. Ltd\\Jar files\\data.xlsx");
 		String value=WorkbookFactory.create(myfile).getSheet(SheetName).getRow(rowNum).getCell(cellNum).getStringCellValue();
 		return value;	
 	}

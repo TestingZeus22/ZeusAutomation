@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Browser Launch ]]>
@@ -20,6 +20,27 @@
       <![CDATA[Clicked on proceed button]]>
     </line>
     <line>
+      <![CDATA[Clicked on purchase option]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on accommodation option in list]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Allotment ]]>
+    </line>
+    <line>
+      <![CDATA[Send start date of season_F on allotment page]]>
+    </line>
+    <line>
+      <![CDATA[Send end date of season_F on allotment page]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on load allotment]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on dashboardLink]]>
+    </line>
+    <line>
       <![CDATA[Clicked on sales dropdown in Dashboard]]>
     </line>
     <line>
@@ -32,7 +53,7 @@
       <![CDATA[Select TFT1 in TravelType dropdownList]]>
     </line>
     <line>
-      <![CDATA[Selected HK001 - (TESTING) from dropdown list]]>
+      <![CDATA[Selected HK004 - (TEST) from dropdown list]]>
     </line>
     <line>
       <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
@@ -62,10 +83,10 @@
       <![CDATA[Send bookinglines ]]>
     </line>
     <line>
-      <![CDATA[Send Travel from date]]>
+      <![CDATA[Send Travel from date for season-H]]>
     </line>
     <line>
-      <![CDATA[Send Travel To date]]>
+      <![CDATA[Send Travel To date for season-H]]>
     </line>
     <line>
       <![CDATA[Select Number of passenger]]>
@@ -74,43 +95,196 @@
       <![CDATA[Clicked on sendbookingButton]]>
     </line>
     <line>
-      <![CDATA[Clicked on view list]]>
+      <![CDATA[Clicked on dashboardLink]]>
     </line>
     <line>
-      <![CDATA[Send Arrival date to verify the booking]]>
+      <![CDATA[Clicked on purchase option]]>
     </line>
     <line>
-      <![CDATA[Clicked on submitButton]]>
+      <![CDATA[Clicked on accommodation option in list]]>
     </line>
     <line>
-      <![CDATA[Validating Actual price is 4000.00 and Expected Price is 4000.00]]>
+      <![CDATA[Clicked on Allotment ]]>
     </line>
     <line>
-      <![CDATA[Validating Actual Message is No data available in table and Expected Message is No data available in table]]>
+      <![CDATA[Send start date of season_H on allotment page]]>
     </line>
     <line>
-      <![CDATA[Clicking on Logout Button in Booking Mask page]]>
+      <![CDATA[Send end date of season_H on allotment page]]>
     </line>
     <line>
-      <![CDATA[Logout from Booking Mask Page]]>
+      <![CDATA[Clicked on load allotment]]>
+    </line>
+    <line>
+      <![CDATA[Validating Actual message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                 and Expected message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]]>
+    </line>
+    <line>
+      <![CDATA[Validating Actual initial allotment is 8 and Expected allotment for season_F is 8]]>
+    </line>
+    <line>
+      <![CDATA[Validating Actual current allotment is 8 and Expected allotment for season_F is 8]]>
+    </line>
+    <line>
+      <![CDATA[Validating Actual sold allotment is 8 and Expected allotment for season_F is 8]]>
+    </line>
+    <line>
+      <![CDATA[Validating Actual remaining allotment is 0 and Expected allotment for season_F is 0]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on Logout Button]]>
+    </line>
+    <line>
+      <![CDATA[Logout from allotment]]>
+    </line>
+    <line>
+      <![CDATA[Valid Username Entered]]>
+    </line>
+    <line>
+      <![CDATA[Valid Password Entered]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Dashboard button]]>
+    </line>
+    <line>
+      <![CDATA[Select the Falk Tours AG from given list]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on proceed button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on purchase option]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on accommodation option in list]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Allotment ]]>
+    </line>
+    <line>
+      <![CDATA[Send start date of season_F on allotment page]]>
+    </line>
+    <line>
+      <![CDATA[Send end date of season_F on allotment page]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on load allotment]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on dashboardLink]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on sales dropdown in Dashboard]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on sales Booking in Dashboard]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on create Button in sales Booking page]]>
+    </line>
+    <line>
+      <![CDATA[Select TFT1 in TravelType dropdownList]]>
+    </line>
+    <line>
+      <![CDATA[Selected HK004 - (TEST) from dropdown list]]>
+    </line>
+    <line>
+      <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
+    </line>
+    <line>
+      <![CDATA[Send Booking action]]>
+    </line>
+    <line>
+      <![CDATA[Send number of passenger]]>
+    </line>
+    <line>
+      <![CDATA[Send correct KOS in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send correct ProductCode in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send roomcode in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send correct boardName]]>
+    </line>
+    <line>
+      <![CDATA[Send Occupancy]]>
+    </line>
+    <line>
+      <![CDATA[Send bookinglines ]]>
+    </line>
+    <line>
+      <![CDATA[Send Travel from date for season-H]]>
+    </line>
+    <line>
+      <![CDATA[Send Travel To date for season-H]]>
+    </line>
+    <line>
+      <![CDATA[Select Number of passenger]]>
+    </line>
+    <line>
+      <![CDATA[Click on sendBookingButton]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on dashboardLink]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on purchase option]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on accommodation option in list]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Allotment ]]>
+    </line>
+    <line>
+      <![CDATA[Send start date of season_H on allotment page]]>
+    </line>
+    <line>
+      <![CDATA[Send end date of season_H on allotment page]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on load allotment]]>
+    </line>
+    <line>
+      <![CDATA[Validating Actual message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                 and Expected message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]]>
+    </line>
+    <line>
+      <![CDATA[Validating Actual initial allotment is 8 and Expected allotment for season_H is 8]]>
+    </line>
+    <line>
+      <![CDATA[Validating Actual current allotment is 8 and Expected allotment for season_H is 8]]>
+    </line>
+    <line>
+      <![CDATA[Validating Actual sold allotment is 8 and Expected allotment for season_H is 8]]>
+    </line>
+    <line>
+      <![CDATA[Validating Actual remaining allotment is 0 and Expected allotment for season_H is 0]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on Logout Button]]>
+    </line>
+    <line>
+      <![CDATA[Logout from allotment]]>
     </line>
     <line>
       <![CDATA[Closing Browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-03-27T17:45:23 IST" name="Default suite" finished-at="2023-03-27T17:46:20 IST" duration-ms="56378">
+  <suite started-at="2023-04-14T17:33:33 IST" name="Default suite" finished-at="2023-04-14T17:37:09 IST" duration-ms="216582">
     <groups>
     </groups>
-    <test started-at="2023-03-27T17:45:23 IST" name="Default test" finished-at="2023-03-27T17:46:20 IST" duration-ms="56378">
-      <class name="SalesBookingListTestCases.VerifyBookingInquiryTC08">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:SalesBookingListTestCases.VerifyBookingInquiryTC08@a514af7]" started-at="2023-03-27T17:45:23 IST" name="launchBrowser" finished-at="2023-03-27T17:45:29 IST" duration-ms="6068" status="PASS">
+    <test started-at="2023-04-14T17:33:33 IST" name="Default test" finished-at="2023-04-14T17:37:09 IST" duration-ms="216582">
+      <class name="Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26@3e58a80e]" started-at="2023-04-14T17:33:33 IST" name="launchBrowser" finished-at="2023-04-14T17:33:38 IST" duration-ms="5045" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser Launch ]]>
             </line>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:SalesBookingListTestCases.VerifyBookingInquiryTC08@a514af7]" started-at="2023-03-27T17:45:29 IST" name="loginToApp" finished-at="2023-03-27T17:46:14 IST" duration-ms="44648" status="PASS">
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26@3e58a80e]" started-at="2023-04-14T17:33:38 IST" name="loginToApp" finished-at="2023-04-14T17:34:10 IST" duration-ms="32229" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Valid Username Entered]]>
@@ -128,6 +302,31 @@
               <![CDATA[Clicked on proceed button]]>
             </line>
             <line>
+              <![CDATA[Clicked on purchase option]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on accommodation option in list]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Allotment ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="validateBookingInquiryWhenSeasonAllotIsFull()[pri:0, instance:Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26@3e58a80e]" started-at="2023-04-14T17:34:10 IST" name="validateBookingInquiryWhenSeasonAllotIsFull" finished-at="2023-04-14T17:35:17 IST" duration-ms="66482" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Send start date of season_F on allotment page]]>
+            </line>
+            <line>
+              <![CDATA[Send end date of season_F on allotment page]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on load allotment]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on dashboardLink]]>
+            </line>
+            <line>
               <![CDATA[Clicked on sales dropdown in Dashboard]]>
             </line>
             <line>
@@ -140,7 +339,7 @@
               <![CDATA[Select TFT1 in TravelType dropdownList]]>
             </line>
             <line>
-              <![CDATA[Selected HK001 - (TESTING) from dropdown list]]>
+              <![CDATA[Selected HK004 - (TEST) from dropdown list]]>
             </line>
             <line>
               <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
@@ -170,10 +369,10 @@
               <![CDATA[Send bookinglines ]]>
             </line>
             <line>
-              <![CDATA[Send Travel from date]]>
+              <![CDATA[Send Travel from date for season-H]]>
             </line>
             <line>
-              <![CDATA[Send Travel To date]]>
+              <![CDATA[Send Travel To date for season-H]]>
             </line>
             <line>
               <![CDATA[Select Number of passenger]]>
@@ -182,44 +381,205 @@
               <![CDATA[Clicked on sendbookingButton]]>
             </line>
             <line>
-              <![CDATA[Clicked on view list]]>
+              <![CDATA[Clicked on dashboardLink]]>
             </line>
             <line>
-              <![CDATA[Send Arrival date to verify the booking]]>
+              <![CDATA[Clicked on purchase option]]>
             </line>
             <line>
-              <![CDATA[Clicked on submitButton]]>
+              <![CDATA[Clicked on accommodation option in list]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Allotment ]]>
+            </line>
+            <line>
+              <![CDATA[Send start date of season_H on allotment page]]>
+            </line>
+            <line>
+              <![CDATA[Send end date of season_H on allotment page]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on load allotment]]>
+            </line>
+            <line>
+              <![CDATA[Validating Actual message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                 and Expected message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]]>
+            </line>
+            <line>
+              <![CDATA[Validating Actual initial allotment is 8 and Expected allotment for season_F is 8]]>
+            </line>
+            <line>
+              <![CDATA[Validating Actual current allotment is 8 and Expected allotment for season_F is 8]]>
+            </line>
+            <line>
+              <![CDATA[Validating Actual sold allotment is 8 and Expected allotment for season_F is 8]]>
+            </line>
+            <line>
+              <![CDATA[Validating Actual remaining allotment is 0 and Expected allotment for season_F is 0]]>
             </line>
           </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method signature="validateBookingAndSalesBookingList()[pri:0, instance:SalesBookingListTestCases.VerifyBookingInquiryTC08@a514af7]" started-at="2023-03-27T17:46:14 IST" name="validateBookingAndSalesBookingList" finished-at="2023-03-27T17:46:14 IST" duration-ms="368" status="PASS">
+        </test-method> <!-- validateBookingInquiryWhenSeasonAllotIsFull -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26@3e58a80e]" started-at="2023-04-14T17:35:17 IST" name="Logout" finished-at="2023-04-14T17:35:21 IST" duration-ms="4697" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Validating Actual price is 4000.00 and Expected Price is 4000.00]]>
+              <![CDATA[Clicking on Logout Button]]>
             </line>
             <line>
-              <![CDATA[Validating Actual Message is No data available in table and Expected Message is No data available in table]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- validateBookingAndSalesBookingList -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:SalesBookingListTestCases.VerifyBookingInquiryTC08@a514af7]" started-at="2023-03-27T17:46:14 IST" name="Logout" finished-at="2023-03-27T17:46:19 IST" duration-ms="5142" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Clicking on Logout Button in Booking Mask page]]>
-            </line>
-            <line>
-              <![CDATA[Logout from Booking Mask Page]]>
+              <![CDATA[Logout from allotment]]>
             </line>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:SalesBookingListTestCases.VerifyBookingInquiryTC08@a514af7]" started-at="2023-03-27T17:46:19 IST" name="closeBrowser" finished-at="2023-03-27T17:46:20 IST" duration-ms="116" status="PASS">
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26@3e58a80e]" started-at="2023-04-14T17:35:21 IST" name="loginToApp" finished-at="2023-04-14T17:35:47 IST" duration-ms="25936" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Valid Username Entered]]>
+            </line>
+            <line>
+              <![CDATA[Valid Password Entered]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Dashboard button]]>
+            </line>
+            <line>
+              <![CDATA[Select the Falk Tours AG from given list]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on proceed button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on purchase option]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on accommodation option in list]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Allotment ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="validateConfirmBookingWhenSeasonAllotIsFull()[pri:2, instance:Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26@3e58a80e]" started-at="2023-04-14T17:35:47 IST" name="validateConfirmBookingWhenSeasonAllotIsFull" finished-at="2023-04-14T17:37:04 IST" duration-ms="77224" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Send start date of season_F on allotment page]]>
+            </line>
+            <line>
+              <![CDATA[Send end date of season_F on allotment page]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on load allotment]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on dashboardLink]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on sales dropdown in Dashboard]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on sales Booking in Dashboard]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on create Button in sales Booking page]]>
+            </line>
+            <line>
+              <![CDATA[Select TFT1 in TravelType dropdownList]]>
+            </line>
+            <line>
+              <![CDATA[Selected HK004 - (TEST) from dropdown list]]>
+            </line>
+            <line>
+              <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
+            </line>
+            <line>
+              <![CDATA[Send Booking action]]>
+            </line>
+            <line>
+              <![CDATA[Send number of passenger]]>
+            </line>
+            <line>
+              <![CDATA[Send correct KOS in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send correct ProductCode in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send roomcode in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send correct boardName]]>
+            </line>
+            <line>
+              <![CDATA[Send Occupancy]]>
+            </line>
+            <line>
+              <![CDATA[Send bookinglines ]]>
+            </line>
+            <line>
+              <![CDATA[Send Travel from date for season-H]]>
+            </line>
+            <line>
+              <![CDATA[Send Travel To date for season-H]]>
+            </line>
+            <line>
+              <![CDATA[Select Number of passenger]]>
+            </line>
+            <line>
+              <![CDATA[Click on sendBookingButton]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on dashboardLink]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on purchase option]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on accommodation option in list]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Allotment ]]>
+            </line>
+            <line>
+              <![CDATA[Send start date of season_H on allotment page]]>
+            </line>
+            <line>
+              <![CDATA[Send end date of season_H on allotment page]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on load allotment]]>
+            </line>
+            <line>
+              <![CDATA[Validating Actual message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                 and Expected message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]]>
+            </line>
+            <line>
+              <![CDATA[Validating Actual initial allotment is 8 and Expected allotment for season_H is 8]]>
+            </line>
+            <line>
+              <![CDATA[Validating Actual current allotment is 8 and Expected allotment for season_H is 8]]>
+            </line>
+            <line>
+              <![CDATA[Validating Actual sold allotment is 8 and Expected allotment for season_H is 8]]>
+            </line>
+            <line>
+              <![CDATA[Validating Actual remaining allotment is 0 and Expected allotment for season_H is 0]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateConfirmBookingWhenSeasonAllotIsFull -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26@3e58a80e]" started-at="2023-04-14T17:37:04 IST" name="Logout" finished-at="2023-04-14T17:37:09 IST" duration-ms="4795" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicking on Logout Button]]>
+            </line>
+            <line>
+              <![CDATA[Logout from allotment]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26@3e58a80e]" started-at="2023-04-14T17:37:09 IST" name="closeBrowser" finished-at="2023-04-14T17:37:09 IST" duration-ms="133" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- SalesBookingListTestCases.VerifyBookingInquiryTC08 -->
+      </class> <!-- Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

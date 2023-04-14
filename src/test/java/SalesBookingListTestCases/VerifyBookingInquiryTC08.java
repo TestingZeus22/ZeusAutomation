@@ -73,9 +73,8 @@ public class VerifyBookingInquiryTC08 extends BaseClass {
     		Thread.sleep(1000);
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
-    		Thread.sleep(1000);
+    		UtilityClass.implicitlyWaitInsec(10);
     		UtilityClass.scrollByAxis(0, 300);
-    		Thread.sleep(1000);
     		UtilityClass.implicitlyWaitInMillis(1000);
     		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
     		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
@@ -86,7 +85,7 @@ public class VerifyBookingInquiryTC08 extends BaseClass {
     		UtilityClass.implicitlyWaitInMillis(1000);
     		BookingMask.sendNoOfPax(UtilityClass.readDataFromStringExcel(21, 1, "Sheet4"));
     		Reporter.log("Send number of passenger",true);
-    		Thread.sleep(1000);
+    		UtilityClass.implicitlyWaitInsec(10);
     		BookingMask.sendKOS(UtilityClass.readDataFromStringExcel(22, 1, "Sheet4"));
     		Reporter.log("Send correct KOS in input field",true);
     		UtilityClass.implicitlyWaitInMillis(1000);
@@ -122,6 +121,7 @@ public class VerifyBookingInquiryTC08 extends BaseClass {
 			UtilityClass.implicitlyWaitInMillis(2000);
 			salesBookingList.sendarrival(UtilityClass.readDataFromStringExcel(32, 1, "Sheet4"));
 			Reporter.log("Send Arrival date to verify the booking");
+			UtilityClass.implicitlyWaitInsec(10);
 			Thread.sleep(500);
 			salesBookingList.clickOnsubmitButton();
 	        Reporter.log("Clicked on submitButton",true);

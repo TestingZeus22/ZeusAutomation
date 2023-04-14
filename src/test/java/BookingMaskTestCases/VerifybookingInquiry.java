@@ -21,7 +21,7 @@ import POM.DashboardPage;
 import POM.calculationSettingPage;
 import POM.loginPage;
 import POM.offerCalculationPage;
-import POM.offerDefination;
+import POM.offerDefinationPage;
 import POM.salesBookingListPage;
 import POM.selectCompanyPage;
 
@@ -35,7 +35,7 @@ public class VerifybookingInquiry extends BaseClass
 	DashboardPage dashboard;
 	offerCalculationPage offerCalculation;    
 	calculationSettingPage calculationSetting; 
-	offerDefination offerdefination;
+	offerDefinationPage offerdefination;
 	salesBookingListPage salesBookingList;
 	bookingMaskPage BookingMask;
 	
@@ -49,7 +49,7 @@ public class VerifybookingInquiry extends BaseClass
 		dashboard = new DashboardPage(driver);
 		offerCalculation = new offerCalculationPage(driver);  
 		calculationSetting =new calculationSettingPage(driver); 
-		offerdefination = new offerDefination(driver); 
+		offerdefination = new offerDefinationPage(driver); 
 		salesBookingList =new salesBookingListPage(driver);
 		BookingMask =new bookingMaskPage(driver);
 	}
@@ -83,10 +83,10 @@ public class VerifybookingInquiry extends BaseClass
 		offerCalculation.clickOnTchiboDE();
 	    Reporter.log("Clicked on TchiboDE",true);
 	    Thread.sleep(1000);
-	    calculationSetting.clickOnselectautofieldinTichiboDE();
+	    //calculationSetting.clickOnselectautofieldinTichiboDE();
 	    UtilityClass.implicitlyWaitInMillis(4000);
 	    Thread.sleep(3000);
-	    calculationSetting.clickOnBlock1();
+	    //calculationSetting.clickOnBlock1();
 	    Thread.sleep(1000);
 		calculationSetting.clearDbPercentage();
 		Thread.sleep(1000);
@@ -107,11 +107,11 @@ public class VerifybookingInquiry extends BaseClass
 		Thread.sleep(2000);
 		calculationSetting.clickOnTransferPriceOnline();
 		Thread.sleep(2000); 
-		calculationSetting.clickOnselectautoinTichiboDEAfterSavecalculation();
+		//calculationSetting.clickOnselectautoinTichiboDEAfterSavecalculation();
 		Reporter.log("clicked on Auto field in TichiboDE after saving of calculation",true);
 		Thread.sleep(1000); 
 		UtilityClass.scrollByAxis(0, 200);
-    	calculationSetting.clickOnBlock1();
+    	//calculationSetting.clickOnBlock1();
 		Reporter.log("click on Block1",true);
 	    Thread.sleep(4000);
 		UtilityClass.scrollByAxis(0, 400);

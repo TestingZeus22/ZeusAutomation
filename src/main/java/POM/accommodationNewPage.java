@@ -8,21 +8,26 @@ import org.openqa.selenium.support.PageFactory;
 public class accommodationNewPage {
 	
 	@FindBy (xpath ="//span[text()='Rooms']") private WebElement rooms;	
+	@FindBy (xpath ="(//span[@class='nav-text'])[3]") private WebElement contracts;
+	@FindBy (xpath ="//span[text()='Price']") private WebElement price;
+	@FindBy (xpath ="//span[text()='Allotment']") private WebElement allotment;
 	
-	@FindBy (xpath ="//div[@style='font-size:small;']//li[1]") private WebElement dashboard;
-	@FindBy (xpath ="//div[@style='font-size:small;']//li[2]") private WebElement accommodation;
-	@FindBy (xpath ="//div[@style='font-size:small;']//li[3]") private WebElement accommodationCreate;
-	 
-	@FindBy (id ="AccommodationModel_LocalityModel_PurchaserID") private WebElement selectPurchaserListBox;
+	@FindBy (xpath ="//div[@class='page-title-heading']//div[2]") private WebElement accommodationNewHeadingAndBreadcrumbs;;
+	@FindBy (xpath ="//div[@class='page-title-heading']//div[2]//li[1]") private WebElement dashboardLink;
+	@FindBy (xpath ="//div[@class='page-title-heading']//div[2]//li[2]") private WebElement accommodationLink;
+	@FindBy (xpath ="//div[@class='page-title-heading']//div[2]//li[3]") private WebElement accommodationCreate;
 	
-	//@FindBy (id ="select2-lc_hotelChain-container") private WebElement selecthotelChainContainerListBox;
-	@FindBy (id ="AccommodationModel_LocalityModel_TBMCode") private WebElement TBMCodeCcontainerListBox;
+	@FindBy (id ="AccommodationModel_LocalityModel_PurchaserID") private WebElement purchaserListBox;
 	
+	@FindBy (id ="select2-lc_hotelChain-container") private WebElement hotelChainListbox;
+	@FindBy (id ="AccommodationModel_LocalityModel_TBMCode") private WebElement TBMCodeEnterListBox;
+	
+	@FindBy (id ="AccommodationModel_LocalityModel_LocalityLegalName") private WebElement accommodationLegalNameField;
 	@FindBy (id ="AccommodationModel_LocalityModel_Stars") private WebElement starsField;
 	
-	@FindBy (id ="AccommodationModel_LocalityModel_CountryID") private WebElement selectCountry;
-	@FindBy (id ="AccommodationModel_LocalityModel_StateID") private WebElement selectstate;
-	@FindBy (id ="AccommodationModel_LocalityModel_CityID") private WebElement selectCity;
+	@FindBy (id ="AccommodationModel_LocalityModel_CountryID") private WebElement CountryDropdown;
+	@FindBy (id ="AccommodationModel_LocalityModel_StateID") private WebElement stateDropdown;
+	@FindBy (id ="AccommodationModel_LocalityModel_CityID") private WebElement cityDropdown;
 	@FindBy (id ="AccommodationModel_LocalityModel_CAP") private WebElement zipcodeField;
 	
 	@FindBy (id ="AccommodationModel_LocalityModel_Street") private WebElement streetField;
@@ -32,7 +37,7 @@ public class accommodationNewPage {
 	@FindBy (id ="AccommodationModel_LocalityModel_Phone") private WebElement phoneField;
 	@FindBy (id ="AccommodationModel_LocalityModel_Fax") private WebElement faxField;
 	@FindBy (id ="AccommodationModel_LocalityModel_HotelOwner") private WebElement hotelownerField;
-	@FindBy (id ="AccommodationModel_LocalityModel_NeedToUpdateRadix") private WebElement checkBoxRadix;
+	@FindBy (id ="AccommodationModel_LocalityModel_NeedToUpdateRadix") private WebElement needToUpdateOnRadixcheckBox;
 	
 	@FindBy (id ="AccommodationModel_LocalityModel_GeneralContact") private WebElement contractPartnerField;
 	@FindBy (id ="AccommodationModel_LocalityModel_GeneralTelephone") private WebElement contractTelephoneField;
@@ -53,16 +58,21 @@ public class accommodationNewPage {
 	@FindBy (id ="AccommodationModel_LocalityModel_AllotmentContact") private WebElement allotmentContactField;
 	@FindBy (id ="AccommodationModel_LocalityModel_AllotmentTelephone") private WebElement allotmentTelephoneField;
 	@FindBy (id ="AccommodationModel_LocalityModel_AllotmentEmail") private WebElement allotmentEmailField;
-	@FindBy (id ="AccommodationModel_LocalityModel_AllotmentAutoMail") private WebElement allotmentAutoMailcheckBox;
+	@FindBy (id ="AccommodationModel_LocalityModel_AllotmentAutoMail") private WebElement allotmentAutoMailAllowedcheckBox;
 	@FindBy (id ="AccommodationModel_LocalityModel_RoomListByEmail") private WebElement roomListByEmailcheckBox;
 	
 	@FindBy (id ="AccommodationModel_LocalityModel_DaysBeforeArrival") private WebElement daysBeforeArrivalField;
 	
 	@FindBy (id ="AccommodationModel_LocalityModel_PurchaseAgencyID") private WebElement BankdetailsPurchaseAgencyDropdownList;
 	
-	@FindBy (id ="AccommodationModel_LocalityModel_TaxNumber1") private WebElement TaxNumberInPaymentDetails;
+	@FindBy (id ="AccommodationModel_LocalityModel_CodiceDestinatario1") private WebElement codiceDestinatarioField;
 	
-	@FindBy (xpath ="//a[@class='btn-shadow btn btn-success']") private WebElement viewList;
+	@FindBy (id ="AccommodationModel_LocalityModel_TaxNumber1") private WebElement taxNumberInPaymentDetailsField;
+	
+	@FindBy (id ="AccommodationModel_LocalityModel_PaymentTarget") private WebElement paymentTargetField;
+	@FindBy (id ="AccommodationModel_LocalityModel_Commission") private WebElement commission;
+	
+	@FindBy (xpath ="//a[@class='btn-shadow btn btn-success']") private WebElement viewListButton;
 	@FindBy (id ="btn_CreateAccommodation") private WebElement createAccommodationButton;
 
 	
@@ -71,43 +81,86 @@ public class accommodationNewPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void clickOnroom()
+	public void clickOnrooms()
 	{
 		rooms.click();
 	}
 	
-	public void clickOnDashboard()
+	public void clickOncontracts()
 	{
-		dashboard.click();
+		contracts.click();
+	}
+	
+	public WebElement clickOnPriceByJSE()
+	{
+		return price;
+	}
+	
+	public void clickOnAllotment()
+	{
+		allotment.click();
+	}
+	
+	public WebElement clickOnAllotmentByJSE()
+	{
+		return allotment;
+	}
+	
+	public String getAccommodationNewHeadingAndBreadcrumbs()
+	{
+		String actualText = accommodationNewHeadingAndBreadcrumbs.getText();
+		return actualText;
+	}
+	
+	public void clickOnDashboardLink()
+	{
+		dashboardLink.click();
 	}
 	
 	public String getdashboardText()
 	{
-		String actualText = dashboard.getText();
+		String actualText = dashboardLink.getText();
 		return actualText;
 	}
 	
-	public void clickOnAccommodation()
+	public void clickOnAccommodationLink()
 	{
-		accommodation.click();
+		accommodationLink.click();
 	}
 	
 	public String getAccommodationText()
 	{
-		String actualText = accommodation.getText();
+		String actualText = accommodationLink.getText();
 		return actualText;
 	}
 	
-	public WebElement clickOnselectPurchaser()
+	public String getAccommodationCreateText()
 	{
-		WebElement Element = selectPurchaserListBox;
+		String actualText = accommodationCreate.getText();
+		return actualText;
+	}
+	
+	public WebElement selectPurchaserDropdown()
+	{
+		WebElement Element = purchaserListBox;
+		return Element;
+	}
+	
+	public WebElement clickOnHotelChainListbox()
+	{
+		WebElement Element = hotelChainListbox;
 		return Element;
 	}
 	
 	public WebElement clickOnTBMCodeSelection()
 	{
-		WebElement Element = TBMCodeCcontainerListBox;
+		WebElement Element = TBMCodeEnterListBox;
 		return Element;
+	}
+	
+	public void sendAccommodationLegalNameField(String AccommodationName)
+	{
+		accommodationLegalNameField.sendKeys(AccommodationName);
 	}
 	
 	public void sendstars(String star)
@@ -117,19 +170,19 @@ public class accommodationNewPage {
 	
 	public WebElement selectCountryListBox()
 	{
-		WebElement Element = selectCountry;
+		WebElement Element = CountryDropdown;
 		return Element;
 	}
 	
 	public WebElement selectStateListBox()
 	{
-		WebElement Element = selectstate;
+		WebElement Element = stateDropdown;
 		return Element;
 	}
 	
 	public WebElement selectCityListBox()
 	{
-		WebElement Element = selectCity;
+		WebElement Element = cityDropdown;
 		return Element;
 	}
 	
@@ -168,9 +221,9 @@ public class accommodationNewPage {
 		hotelownerField.sendKeys(HotelOwner);
 	}
 	
-	public void clickOncheckBoxRadix()
+	public void clickOnNeedToUpdateOnRadixcheckBox()
 	{
-		checkBoxRadix.click();
+		needToUpdateOnRadixcheckBox.click();
 	}
 	
 	public void sendcontractPartner(String contractPartner)
@@ -233,24 +286,24 @@ public class accommodationNewPage {
 		tecSupportEmailField.sendKeys(TecSupportEmailField);
 	}
 	
-	public void sendallotmentContactField(String AllotmentContactField)
+	public void sendAllotmentContactField(String AllotmentContactField)
 	{
 		allotmentContactField.sendKeys(AllotmentContactField);
 	}
 	
-	public void sendallotmentTelephoneField(String AllotmentTelephoneField)
+	public void sendAllotmentTelephoneField(String AllotmentTelephoneField)
 	{
 		allotmentTelephoneField.sendKeys(AllotmentTelephoneField);
 	}
 	
-	public void sendallotmentEmailField(String AllotmentEmailField)
+	public void sendAllotmentEmailField(String AllotmentEmailField)
 	{
 		allotmentEmailField.sendKeys(AllotmentEmailField);
 	}
 	
 	public void clickOnallotmentAutoMailcheckBox()
 	{
-		allotmentAutoMailcheckBox.click();
+		allotmentAutoMailAllowedcheckBox.click();
 	}
 	
 	public void clickOnroomListByEmailcheckBox()
@@ -269,14 +322,19 @@ public class accommodationNewPage {
 		return Element;
 	}
 	
+	public void sendCodiceDestinatario(String CodiceDesti)
+	{
+		codiceDestinatarioField.sendKeys(CodiceDesti);
+	}
+
 	public void sendTaxNumberInPaymentDetails(String TaxNUM)
 	{
-		TaxNumberInPaymentDetails.sendKeys(TaxNUM);
+		taxNumberInPaymentDetailsField.sendKeys(TaxNUM);
 	}
 	
 	public void clickOnrviewList()
 	{
-		viewList.click();
+		viewListButton.click();
 	}
 	
 	public void clickOncreateAccommodationButton()

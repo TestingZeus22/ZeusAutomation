@@ -7,11 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class offerCalculationPage {
 
-	
+	//Falk tours AG
 	@FindBy (xpath = "//span[text()='Falk Tours AG']") private WebElement FalkToursAG;
 	@FindBy (xpath = "//span[text()='Tchibo DE']") private WebElement TchiboDE;
 	@FindBy (xpath = "//span[text()='Tchibo AT']") private WebElement TchiboAT;
-	
 	@FindBy (xpath = "//span[text()='Netto']") private WebElement Netto;
 	@FindBy (xpath = "//span[text()='Falk Travel öffentlich']") private WebElement FalkTravelöffentlich;
 	@FindBy (xpath = "//span[text()='Example B2B Agency']") private WebElement ExampleB2BAgency;
@@ -23,9 +22,11 @@ public class offerCalculationPage {
 	@FindBy (xpath = "//span[text()='Alltours']") private WebElement Alltours;
 	@FindBy (xpath = "//span[text()='Reisenaktuell']") private WebElement Reisenaktuell;
 	
+	////Falkensteiner Holiday
 	@FindBy (xpath= "//span[text()='Falkensteiner Holidays']") private WebElement FalkensteinerHolidays;
-	@FindBy (xpath= "//span[text()='Falkensteiner Holidays Pauschal']") private WebElement 	FalkensteinerHolidaysPauschal;
+	@FindBy (xpath= "//span[text()='Falkensteiner Holidays Pauschal']") private WebElement FalkensteinerHolidaysPauschal;
 
+	//Reserfalke
 	@FindBy (xpath= "//span[text()='Reisefalke']") private WebElement Reisefalke;
 	@FindBy (xpath= "//span[text()='Lidl AT']") private WebElement LidlAT;
 	@FindBy (xpath= "//span[text()='Lidl DE']") private WebElement LidlDE;

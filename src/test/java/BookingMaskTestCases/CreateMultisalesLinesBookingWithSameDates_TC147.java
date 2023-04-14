@@ -16,13 +16,13 @@
 	import Base.BaseClass;
 	import POM.bookingMaskPage;
 import POM.calculationSettingPage;
-import POM.contractsPage;
+import POM.contractDetailsPage;
 import POM.DashboardPage;
 	import POM.accommodationListPage;
 import POM.accommodationNewPage;
 import POM.loginPage;
 import POM.offerCalculationPage;
-import POM.offerDefination;
+import POM.offerDefinationPage;
 import POM.pricePage;
 import POM.roomDetailsPage;
 import POM.salesBookingListPage;

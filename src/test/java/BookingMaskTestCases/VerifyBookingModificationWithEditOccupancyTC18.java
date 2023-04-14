@@ -15,7 +15,7 @@
 	import org.testng.annotations.Test;
 	import Base.BaseClass;
 	import POM.bookingMaskPage;
-import POM.BookingUpdatePage;
+import POM.bookingUpdatePage;
 import POM.DashboardPage;
 	import POM.loginPage;
 	import POM.salesBookingListPage;
@@ -30,7 +30,7 @@ import POM.DashboardPage;
 		DashboardPage dashboard;
 		salesBookingListPage salesBookingList;
 		bookingMaskPage BookingMask;
-		BookingUpdatePage bookingupdate;
+		bookingUpdatePage bookingupdate;
 		String ReserNo;
 		String ActualPrices;
 		
@@ -43,7 +43,7 @@ import POM.DashboardPage;
 			dashboard = new DashboardPage(driver);
 			salesBookingList =new salesBookingListPage(driver);
 			BookingMask =new bookingMaskPage(driver);
-			bookingupdate =new BookingUpdatePage(driver);
+			bookingupdate =new bookingUpdatePage(driver);
 		}
 		
 		@BeforeMethod

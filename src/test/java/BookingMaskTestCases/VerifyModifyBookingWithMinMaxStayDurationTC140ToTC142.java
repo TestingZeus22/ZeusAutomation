@@ -14,7 +14,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import Base.BaseClass;
-import POM.BookingUpdatePage;
+import POM.bookingUpdatePage;
 import POM.DashboardPage;
 import POM.bookingMaskPage;
 import POM.loginPage;
@@ -29,7 +29,7 @@ public class VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142 extends BaseC
 	DashboardPage dashboard;
 	salesBookingListPage salesBookingList;
 	bookingMaskPage BookingMask;
-	BookingUpdatePage bookingupdate;
+	bookingUpdatePage bookingupdate;
 	String ActualReser;
 	String ExpectedReservationNo;
 	String ActualPrices;
@@ -43,7 +43,7 @@ public class VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142 extends BaseC
 		dashboard = new DashboardPage(driver);
 		salesBookingList =new salesBookingListPage(driver);
 		BookingMask =new bookingMaskPage(driver);
-		bookingupdate=new BookingUpdatePage(driver);
+		bookingupdate=new bookingUpdatePage(driver);
 	}
 	
 	@BeforeMethod

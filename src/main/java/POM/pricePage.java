@@ -7,7 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class pricePage {
 		
-@FindBy (xpath ="//a[text()='Dashboard']") private WebElement dashboard;
+@FindBy (xpath ="//div[@class='page-title-heading']//div[2]//li[1]") private WebElement dashboardLink;
+@FindBy (xpath ="//div[@class='page-title-heading']//div[2]//li[1]") private WebElement accommodationLink;
+
+@FindBy (xpath ="(//a[@class='btn-shadow btn btn-success pull-right'])[3]") private WebElement viewContractListButton;
 
 //Season_A
 @FindBy (id ="seasonModel_SeasonAFrom") private WebElement seasonFrom_A;
@@ -54,7 +57,6 @@ public class pricePage {
 @FindBy (xpath ="(//input[@id='roomModel_SeasonBAllotment'])[4]") private WebElement seasonBallotRoom4_B;
 @FindBy (xpath ="(//input[@id='roomModel_SeasonBEB'])[4]") private WebElement seasonEBRoom4_B;
 @FindBy (xpath ="(//input[@id='roomModel_SeasonBPrice'])[4]") private WebElement seasonBpriceRoom4_B;
-
 
 //Season_C
 @FindBy (id ="seasonModel_SeasonCFrom") private WebElement seasonFrom_C;
@@ -245,9 +247,13 @@ public class pricePage {
 
 @FindBy (id ="Generateallotment") private WebElement generateAllotmentButton;
 
-// Methods Pending
+@FindBy (xpath ="//button[@class='swal2-confirm swal2-styled']") private WebElement okPopUp; 
+
+@FindBy (xpath ="(//a[@class='btn-lg'])[11]") private WebElement deleteRoom2;
+
+
 //Board Up/Downgrades --> Page Methods creation pending.
-@FindBy (xpath ="//a[@id='boardupdown']") private WebElement addRowButtonBoardUpDowngrades;
+@FindBy (xpath ="//a[@id='boardupdown']") private WebElement addRowButtonBoardUpDowngradesButton;
 
 @FindBy (xpath ="(//span[@class='multiselect-selected-text'])[2]") private WebElement seasonBoardUpDowngradesDropdown1;
 @FindBy (xpath ="(//span[@class='multiselect-selected-text'])[3]") private WebElement roomBoardUpDowngradesDropdown1;
@@ -261,7 +267,7 @@ public class pricePage {
 
 @FindBy (xpath ="(//span[@class='multiselect-selected-text'])[4]") private WebElement seasonBoardUpDowngradesDropdown2;
 @FindBy (xpath ="(//span[@class='multiselect-selected-text'])[5]") private WebElement roomBoardUpDowngradesDropdown2;
-@FindBy (xpath ="//select[@id='priceboardupdown_UpDownType_3']") private WebElement UpDownTypeDropdown2;
+@FindBy (xpath ="//select[@id='priceboardupdown_UpDownType_3']") private WebElement upDownTypeDropdown2;
 @FindBy (xpath ="(//input[@id='priceboardupdown_ChildMinAge'])[2]") private WebElement minAgeField2;
 @FindBy (xpath ="(//input[@id='priceboardupdown_ChildMaxAge'])[2]") private WebElement maxAgeField2;
 @FindBy (xpath ="(//input[@id='priceboardupdown_PricePerNight'])[2]") private WebElement priceNightperPerson2;
@@ -271,19 +277,58 @@ public class pricePage {
 
 @FindBy (id ="submitboard") private WebElement updateBoardUpDownButton;
 
-//Children/Additional Occupancy Discount locators & Methods pending 
+//Children/Additional Occupancy Discount locators
 
 @FindBy (id ="btn_addchildren") private WebElement addRowChildrenAdditionalOccupancyDiscount;
-@FindBy (xpath ="(//span[@class='multiselect-selected-text'])[6]") private WebElement seasonDropdown1;
+@FindBy (xpath ="(//span[@class='multiselect-selected-text'])[4]") private WebElement seasonDropdown1ChildrenOccupancyDiscount;
+@FindBy (xpath ="(//label[@class='checkbox'])[17]") private WebElement seasonDropdown1SelectAllchildrenOccupancyDiscountCheckbox1;
+@FindBy (xpath ="(//label[@class='checkbox'])[18]") private WebElement seasonDropdown1SeasonAchildrenOccupancyDiscountCheckbox2;
+@FindBy (xpath ="(//label[@class='checkbox'])[19]") private WebElement seasonDropdown1SeasonBchildrenOccupancyDiscountCheckbox3;
+@FindBy (xpath ="(//label[@class='checkbox'])[20]") private WebElement seasonDropdown1SeasonCchildrenOccupancyDiscountCheckbox4;
+@FindBy (xpath ="(//label[@class='checkbox'])[21]") private WebElement seasonDropdown1SeasonDchildrenOccupancyDiscountCheckbox5;
+@FindBy (xpath ="(//label[@class='checkbox'])[22]") private WebElement seasonDropdown1SeasonEchildrenOccupancyDiscountCheckbox6;
+@FindBy (xpath ="(//label[@class='checkbox'])[23]") private WebElement seasonDropdown1SeasonFchildrenOccupancyDiscountCheckbox7;
+@FindBy (xpath ="(//label[@class='checkbox'])[24]") private WebElement seasonDropdown1SeasonGchildrenOccupancyDiscountCheckbox8;
+@FindBy (xpath ="(//label[@class='checkbox'])[25]") private WebElement seasonDropdown1SeasonHchildrenOccupancyDiscountCheckbox9;
+
+@FindBy (xpath ="(//span[@class='multiselect-selected-text'])[5]") private WebElement room1ChildrenOccupancyDiscount;
+@FindBy (xpath ="(//label[@class='checkbox'])[26]") private WebElement room1SelectAllcheckBox1;
+@FindBy (xpath ="(//label[@class='checkbox'])[27]") private WebElement room1SelectRoom1checkBox2;
+@FindBy (xpath ="(//label[@class='checkbox'])[28]") private WebElement room2SelectRoom2checkBox3;
+
+@FindBy (xpath ="(//input[@id='childrendiscount_NumberOfFullPayers'])[1]") private WebElement nameofFullPlayer1Field1;
+@FindBy (xpath ="(//input[@id='childrendiscount_MinChild'])[1]") private WebElement minChildOrPersonField1;
+@FindBy (xpath ="(//input[@id='childrendiscount_MaxChild'])[1]") private WebElement maxChildOrPersonField1;
+@FindBy (xpath ="(//input[@id='childrendiscount_AgeFrom'])[1]") private WebElement ageFromField1;
+@FindBy (xpath ="(//input[@id='childrendiscount_AgeTo'])[1]") private WebElement ageToField1;
+@FindBy (xpath ="(//input[@id='childrendiscount_ExtraBed'])[1]") private WebElement extraBedCheckBox1;
+@FindBy (xpath ="(//input[@id='childrendiscount_DiscountOnBS'])[1]") private WebElement discountOnBScheckBox1;
+@FindBy (xpath ="(//input[@id='childrendiscount_DiscountPer'])[1]") private WebElement discountField1;
+
+@FindBy (id ="childrendiscount_DiscountTypeList1_2") private WebElement discountTypeDropdown1;
+@FindBy (xpath ="(//input[@id='childrendiscount_Exceptions'])[1]") private WebElement fullPayerAgeField1;
+@FindBy (id ="childrendiscount_DiscountOn_2") private WebElement discountOnDropdown1;
+@FindBy (id ="childrendiscount_Numberofchild_2") private WebElement numberOfChildDropdown1;
+@FindBy (id = "btn_Createchildren") private WebElement updateChildrenAndAdditionalOccupancyDiscount;
 
 	public pricePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void clickOnDashboard()
+	public WebElement clickOnDashboardLinkByJSE()
 	{
-		dashboard.click();
+		return dashboardLink;
+	}
+	
+	public WebElement clickOnaccommodationLinkByJSE()
+	{
+		return accommodationLink;
+	}
+	
+	public void clickOnViewContractList()
+	{
+		viewContractListButton.click();
 	}
 	
 	public void sendSeasonFrom_A(String Season_A)
@@ -299,6 +344,12 @@ public class pricePage {
 	public void sendseasonAallotRoom1_A(String AllotRoom1_A)
 	{
 		seasonAallotRoom1_A.sendKeys(AllotRoom1_A);
+	}
+	
+	public String getSeasonAallotRoom1_A(String season_Aallot)
+	{
+		String actualText = seasonAallotRoom1_A.getAttribute(season_Aallot);
+		return actualText;
 	}
 	
 	public void sendseasonApriceRoom1_A(String PriceRoom1_A)
@@ -349,6 +400,12 @@ public class pricePage {
 	public void sendseasonBallotRoom1_B(String AllotRoom1_B)
 	{
 		seasonBallotRoom1_B.sendKeys(AllotRoom1_B);
+	}
+	
+	public String getseasonBallotRoom1_B(String season_Ballot)
+	{
+		String actualText = seasonBallotRoom1_B.getAttribute(season_Ballot);
+		return actualText;
 	}
 	
 	public void sendseasonBpriceRoom1_B(String PriceRoom1_B)
@@ -860,25 +917,25 @@ public class pricePage {
 		newRowForRooms.click();
 	}
 	
-	public WebElement room1Dropdown1()
+	public WebElement selectroom1Dropdown1()
 	{
 		WebElement Element = room1Selection1;
 		return Element;
 	}
 	
-	public WebElement room2Dropdown2()
+	public WebElement selectroom2Dropdown2()
 	{
 		WebElement Element = room2Selection2;
 		return Element;
 	}
 	
-	public WebElement room3Dropdown3()
+	public WebElement selectroom3Dropdown3()
 	{
 		WebElement Element = room3Selection3;
 		return Element;
 	}
 	
-	public WebElement room4Dropdown4()
+	public WebElement selectroom4Dropdown4()
 	{
 		WebElement Element = room4Selection4;
 		return Element;
@@ -893,5 +950,260 @@ public class pricePage {
 	{
 		generateAllotmentButton.click();
 	}
+	
+	public void clickOnOkPopUp()
+	{
+		okPopUp.click();
+	}
+	
+	public void clickOnDeleteRoom2()
+	{
+		deleteRoom2.click();
+	}
+	
+	public void clickOnAddRowButtonBoardUpDowngradesButton()
+	{
+		addRowButtonBoardUpDowngradesButton.click();
+	}
 
+	public void clickOnSeasonBoardUpDowngradesDropdown1()
+	{
+		seasonBoardUpDowngradesDropdown1.click();
+	}
+	
+	public void clickOnRoomBoardUpDowngradesDropdown1()
+	{
+		roomBoardUpDowngradesDropdown1.click();
+	}
+	
+	public void clickOnUpDownTypeDropdown1()
+	{
+		UpDownTypeDropdown1.click();
+	}
+	
+	public void sendMinAgeField1(String minAge)
+	{
+		minAgeField1.sendKeys(minAge);
+	}
+	
+	public void sendMaxAgeField1(String maxAge)
+	{
+		maxAgeField1.sendKeys(maxAge);
+	}
+	
+	public void sendPriceNightperPerson1(String perperson)
+	{
+		priceNightperPerson1.sendKeys(perperson);
+	}
+	
+	public void sendAdditionalInfoField1(String additionalInfo)
+	{
+		additionalInfoField1.sendKeys(additionalInfo);
+	}
+	
+	public void clickOndDeleteActionButton1()
+	{
+		deleteActionButton1.click();
+	}
+	
+	public void clickOnCopyActionButton1()
+	{
+		copyActionButton1.click();
+	}
+	
+	public void clickOnSeasonBoardUpDowngradesDropdown2()
+	{
+		seasonBoardUpDowngradesDropdown2.click();
+	}
+	
+	public void clickOnRoomBoardUpDowngradesDropdown2()
+	{
+		roomBoardUpDowngradesDropdown2.click();
+	}
+	
+	public void clickOnUpDownTypeDropdown2()
+	{
+		upDownTypeDropdown2.click();
+	}
+	
+	public void sendMinAgeField2(String minAge)
+	{
+		minAgeField2.sendKeys(minAge);
+	}
+	
+	public void sendMaxAgeField2(String maxAge)
+	{
+		maxAgeField2.sendKeys(maxAge);
+	}
+	
+	public void sendPriceNightperPerson2(String perperson)
+	{
+		priceNightperPerson2.sendKeys(perperson);
+	}
+	
+	public void sendAdditionalInfoField2(String additionalInfo)
+	{
+		additionalInfoField2.sendKeys(additionalInfo);
+	}
+	
+	public void clickOndDeleteActionButton2()
+	{
+		deleteActionButton2.click();
+	}
+	
+	public void clickOnCopyActionButton2()
+	{
+		copyActionButton2.click();
+	}
+	
+	public void clickOnUpdateBoardUpDownButton()
+	{
+		updateBoardUpDownButton.click();
+	}
+	
+	public void clickOnAddRowChildrenAdditionalOccupancyDiscount()
+	{
+		addRowChildrenAdditionalOccupancyDiscount.click();
+	}
+	
+	public void clickOnSeasonDropdown1ChildrenOccupancyDiscount()
+	{
+		seasonDropdown1ChildrenOccupancyDiscount.click();
+	}
+	
+	public void clickOnSeasonDropdown1SelectAllchildrenOccupancyDiscountCheckbox1()
+	{
+		seasonDropdown1SelectAllchildrenOccupancyDiscountCheckbox1.click();
+	}
+	
+	public void clickOnSeasonDropdown1SeasonAchildrenOccupancyDiscountCheckbox2()
+	{
+		seasonDropdown1SeasonAchildrenOccupancyDiscountCheckbox2.click();
+	}
+	
+	public void clickseasonDropdown1SeasonBchildrenOccupancyDiscountCheckbox3()
+	{
+		seasonDropdown1SeasonBchildrenOccupancyDiscountCheckbox3.click();
+	}
+	
+	public void clickOnSeasonDropdown1SeasonCchildrenOccupancyDiscountCheckbox4()
+	{
+		seasonDropdown1SeasonCchildrenOccupancyDiscountCheckbox4.click();
+	}
+	
+	public void clickOnSeasonDropdown1SeasonDchildrenOccupancyDiscountCheckbox5()
+	{
+		seasonDropdown1SeasonDchildrenOccupancyDiscountCheckbox5.click();
+	}
+	
+	public void clickOnSeasonDropdown1SeasonEchildrenOccupancyDiscountCheckbox6()
+	{
+		seasonDropdown1SeasonEchildrenOccupancyDiscountCheckbox6.click();
+	}
+	
+	public void clickOnSeasonDropdown1SeasonFchildrenOccupancyDiscountCheckbox7()
+	{
+		seasonDropdown1SeasonFchildrenOccupancyDiscountCheckbox7.click();
+	}
+	
+	public void clickOnSeasonDropdown1SeasonGchildrenOccupancyDiscountCheckbox8()
+	{
+		seasonDropdown1SeasonGchildrenOccupancyDiscountCheckbox8.click();
+	}
+	
+	public void clickOnSeasonDropdown1SeasonHchildrenOccupancyDiscountCheckbox9()
+	{
+		seasonDropdown1SeasonHchildrenOccupancyDiscountCheckbox9.click();
+	}
+	
+	public void clickOnRoom1ChildrenOccupancyDiscount()
+	{
+		room1ChildrenOccupancyDiscount.click();
+	}
+	
+	public void clickOnRoom1SelectAllcheckBox1()
+	{
+		room1SelectAllcheckBox1.click();
+	}
+	
+	public void clickOnRoom1SelectRoom1checkBox2()
+	{
+		room1SelectRoom1checkBox2.click();
+	}
+	
+	public void clickOnRoom2SelectRoom2checkBox3()
+	{
+		room2SelectRoom2checkBox3.click();
+	}
+	
+	public void sendNameofFullPlayer1Field1(String maxAge)
+	{
+		nameofFullPlayer1Field1.sendKeys(maxAge);
+	}
+	
+	public void sendMinChildOrPersonField1(String MinchildOrPerson)
+	{
+		minChildOrPersonField1.sendKeys(MinchildOrPerson);
+	}
+	
+	public void sendMaxChildOrPersonField1(String MaxChildOrPerson)
+	{
+		maxChildOrPersonField1.sendKeys(MaxChildOrPerson);
+	}
+	
+	public void sendAgeFromField1(String Age)
+	{
+		ageFromField1.sendKeys(Age);
+	}
+	
+	public void sendAgeToField1(String AgeTo)
+	{
+		ageToField1.sendKeys(AgeTo);
+	}
+	
+	public void clickOnExtraBedCheckBox1()
+	{
+		extraBedCheckBox1.click();
+	}
+	
+	public void clickOnDiscountOnBScheckBox1()
+	{
+		discountOnBScheckBox1.click();
+	}
+	
+	public void sendDiscountField1(String Discount)
+	{
+		discountField1.sendKeys(Discount);
+	}
+	
+	public WebElement selectDiscountTypeDropdown1()
+	{
+		WebElement Element = discountTypeDropdown1;
+		return Element;
+	}
+	
+	public void sendFullPayerAgeField1(String Discount)
+	{
+		fullPayerAgeField1.sendKeys(Discount);
+	}
+	
+	public WebElement selectDiscountOnDropdown1()
+	{
+		WebElement Element = discountOnDropdown1;
+		return Element;
+	}
+	
+	public WebElement selectNumberOfChildDropdown1()
+	{
+		WebElement Element = numberOfChildDropdown1;
+		return Element;
+	}
+	
+	public void clickOnUpdateChildrenAndAdditionalOccupancyDiscount()
+	{
+		updateChildrenAndAdditionalOccupancyDiscount.click();
+	}
+	
+	
+	
 }

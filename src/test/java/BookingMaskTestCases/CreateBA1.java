@@ -23,12 +23,13 @@ import POM.accommodationListPage;
 import POM.accommodationNewPage;
 import POM.bookingMaskPage;
 import POM.calculationSettingPage;
-import POM.contractsPage;
+import POM.contractDetailsPage;
 import POM.loginPage;
 import POM.offerCalculationPage;
-import POM.offerDefination;
+import POM.offerDefinationPage;
 import POM.pricePage;
 import POM.roomDetailsPage;
+import POM.roomsPage;
 import POM.salesBookingListPage;
 import POM.selectCompanyPage;
 import POM.tbmCodeMasterPage;
@@ -42,7 +43,7 @@ public class CreateBA1 extends BaseClass {
 	DashboardPage dashboard;
 	offerCalculationPage offerCalculation;    
 	calculationSettingPage calculationSetting; 
-	offerDefination offerdefination;
+	offerDefinationPage offerdefination;
 	salesBookingListPage salesBookingList;
 	bookingMaskPage BookingMask;
 	tbmCodeNewCreatePage newTbm;
@@ -50,8 +51,9 @@ public class CreateBA1 extends BaseClass {
 	accommodationListPage accommdationList;
 	accommodationNewPage accommodationNew;
 	roomDetailsPage roomDetails;
-	contractsPage contracts;
+	contractDetailsPage contracts;
 	pricePage price;
+	roomsPage room;
 	
 	@BeforeClass
 	public void launchBrowser(){
@@ -63,7 +65,7 @@ public class CreateBA1 extends BaseClass {
 		dashboard = new DashboardPage(driver);
 		offerCalculation = new offerCalculationPage(driver);  
 		calculationSetting =new calculationSettingPage(driver); 
-		offerdefination = new offerDefination(driver); 
+		offerdefination = new offerDefinationPage(driver); 
 		salesBookingList =new salesBookingListPage(driver);
 		BookingMask =new bookingMaskPage(driver);
 		newTbm =new tbmCodeNewCreatePage(driver);
@@ -71,8 +73,9 @@ public class CreateBA1 extends BaseClass {
 		accommdationList =new accommodationListPage(driver);
 		accommodationNew =new accommodationNewPage(driver);
 		roomDetails =new roomDetailsPage(driver);
-		contracts =new contractsPage(driver);
+		contracts =new contractDetailsPage(driver);
 		price = new pricePage(driver);
+		room = new roomsPage(driver);
 	}
 	
 	@BeforeMethod
@@ -172,17 +175,23 @@ public class CreateBA1 extends BaseClass {
         Reporter.log("Clicked on create AccommdationButton",true);
         Thread.sleep(11000);
         UtilityClass.implicitlyWaitInMillis(12000);
-        //
-          try {
-        	   driver.findElement(By.xpath("//span[text()='Rooms']")).click();
-		} catch (Exception e) {
-			System.out.println("clicked on Rooms");
-		}
+        
+        accommodationNew.clickOnrooms();
+        
+//          try {
+//        	   driver.findElement(By.xpath("//span[text()='Rooms']")).click();
+//		} catch (Exception e) {
+//			System.out.println("clicked on Rooms");
+//		}
         Reporter.log("Clicked on Rooms button",true);
         Thread.sleep(3000);
         //
-        driver.findElement(By.xpath("(//a[@class='btn-shadow btn btn-primary'])[1]")).click();
-        Reporter.log("Clicked on create Room",true);
+        room.clickOnCreateButton();
+        
+//        driver.findElement(By.xpath("(//a[@class='btn-shadow btn btn-primary'])[1]")).click();
+//        Reporter.log("Clicked on create Room",true);
+        
+        
         Thread.sleep(2000);
         UtilityClass.listBoxHandlingUsingByText("1 Raum Appartment", roomDetails.dropdownRoomType());
         Reporter.log("Select Room Type from dropdown",true);
@@ -221,22 +230,25 @@ public class CreateBA1 extends BaseClass {
         UtilityClass.scrollByAxis(0, -500);
         Thread.sleep(6000);
         driver.navigate().refresh();
+        
+        
+        
+        accommodationNew.clickOnrooms();
+//        try {
+//     	   driver.findElement(By.xpath("//span[text()='Rooms']")).click();
+//		} catch (Exception e) {
+//			System.out.println("clicked on Rooms");
+//		}
         //
-        try {
-     	   driver.findElement(By.xpath("//span[text()='Rooms']")).click();
-		} catch (Exception e) {
-			System.out.println("clicked on Rooms");
-		}
+        
+        room.clickOnCreateButton();
+//        driver.findElement(By.xpath("(//a[@class='btn-shadow btn btn-primary'])[1]")).click();
+//        Reporter.log("Clicked on create Room",true);
+        //Thread.sleep(4000);
         //
-        driver.findElement(By.xpath("(//a[@class='btn-shadow btn btn-primary'])[1]")).click();
-        Reporter.log("Clicked on create Room",true);
-        Thread.sleep(4000);
-        //
-        try {
-        	UtilityClass.listBoxHandlingUsingByText("2 Raum Appartment", roomDetails.dropdownRoomType());
-		} catch (Exception e) {
-			System.out.println("Unable to click on textBox");
-		}
+   
+        Thread.sleep(2000);
+        UtilityClass.listBoxHandlingUsingByText("1 Raum Bungalow/Ferienhaus", roomDetails.dropdownRoomType());
         Reporter.log("Select Room Type from dropdown",true);
         Thread.sleep(3000);
         roomDetails.sendroomName(UtilityClass.readDataFromStringExcel(27, 2, "Sheet2"));
@@ -273,7 +285,12 @@ public class CreateBA1 extends BaseClass {
         UtilityClass.scrollByAxis(0, -500);
         Thread.sleep(6000);
         //
-        driver.findElement(By.xpath("(//span[@class='nav-text'])[3]")).click();
+        
+        accommodationNew.clickOncontracts();
+        
+//        driver.findElement(By.xpath("(//span[@class='nav-text'])[3]")).click();
+        
+        
         Thread.sleep(5000);
         Reporter.log("Clicked on Contract",true);
         driver.findElement(By.xpath("(//a[@class='btn-shadow btn btn-primary'])[3]")).click();
@@ -310,13 +327,25 @@ public class CreateBA1 extends BaseClass {
         Reporter.log("Select the Price",true);
         Thread.sleep(500);
         //
-        driver.findElement(By.xpath("//span[@class='multiselect-selected-text']")).click();
+        
+        contracts.clickOnDistributorCheckBox();
+        //driver.findElement(By.xpath("//span[@class='multiselect-selected-text']")).click();
+        
+        
+        
         Thread.sleep(500);
-        WebElement ListBox = driver.findElement(By.id("companyids"));
-        Select s=new Select(ListBox);
-        Reporter.log("Check the listbox is multiselect or not",true);
-        Thread.sleep(1000);
-        driver.findElement(By.xpath("//li[@class='multiselect-item multiselect-all']")).click();
+        
+//        WebElement ListBox = driver.findElement(By.id("companyids"));
+//        Select s=new Select(ListBox);
+//        Reporter.log("Check the listbox is multiselect or not",true);
+//        Thread.sleep(1000);
+        
+//        driver.findElement(By.xpath("//li[@class='multiselect-item multiselect-all']")).click();
+        
+        
+        contracts.clickOnMultiselectDistributorCheckBox();
+        Thread.sleep(500);
+        
         Reporter.log("Select the Distributor",true);
         UtilityClass.listBoxHandlingUsingByText("Offline (Agencies) Only", contracts.onlineOfflinedropdown());
         Reporter.log("Select the online or offline mode in listbox",true);
@@ -347,15 +376,23 @@ public class CreateBA1 extends BaseClass {
         Thread.sleep(9000);
         UtilityClass.implicitlyWaitInMillis(9000);
         // Need a method for Price of locator methods are pending in POM class. 
-        try {
-        	 Thread.sleep(1000);
-        	 WebElement prices = driver.findElement(By.xpath("//span[text()='Price']"));
-        	 JavascriptExecutor executor = (JavascriptExecutor)driver;
-             executor.executeScript("arguments[0].click();", prices);
-        	
-		} catch (Exception e) {
-			System.out.println("Price option is unable to click ");
-		}
+        
+       // accommodationNew.clickOnPrice();
+        
+//        try {
+//        	 Thread.sleep(1000);
+//        	 WebElement prices = driver.findElement(By.xpath("//span[text()='Price']"));
+//        	 JavascriptExecutor executor = (JavascriptExecutor)driver;
+//             executor.executeScript("arguments[0].click();", prices);
+//        	
+//		} catch (Exception e) {
+//			System.out.println("Price option is unable to click ");
+//		}
+        
+     //   driver.findElement(By.xpath("(//a[@class='nav-link'])[6]//span")).click();
+        
+    	UtilityClass.clickUsingJSE(accommodationNew.clickOnPriceByJSE());
+        
         Thread.sleep(3000);
         price.sendSeasonFrom_A(UtilityClass.readDataFromStringExcel(48, 1, "Sheet2"));
         Thread.sleep(1000);
@@ -437,7 +474,7 @@ public class CreateBA1 extends BaseClass {
         Reporter.log("Send all required details for Season_H",true);
         Thread.sleep(2500);
         
-        UtilityClass.listBoxHandlingUsingByText("802 room2", price.room2Dropdown2());
+        UtilityClass.listBoxHandlingUsingByText("802 room2", price.selectroom2Dropdown2());
         Reporter.log("Select another room from the dropdown");
         
         price.sendseasonAallotRoom2_A(UtilityClass.readDataFromStringExcel(48, 3, "Sheet2"));
@@ -475,25 +512,47 @@ public class CreateBA1 extends BaseClass {
         UtilityClass.scrollByAxis(0, 400);
         price.clickOnUpdatePriceButton();
         Thread.sleep(2000);
-        //
-        driver.findElement(By.xpath("//button[@class='swal2-confirm swal2-styled']")).click();
-        Reporter.log("Clicked on OK on the popup for Update price",true);
+        
+        
+        price.clickOnOkPopUp();
+        
+//        driver.findElement(By.xpath("//button[@class='swal2-confirm swal2-styled']")).click();
+//        Reporter.log("Clicked on OK on the popup for Update price",true);
+        
+        
+        
         Thread.sleep(2000);
         UtilityClass.implicitlyWaitInMillis(9000);
         price.clickOnGenerateAllotmentButton();
         Reporter.log("Clicked on generate Allotment",true);
         Thread.sleep(4000);
         UtilityClass.implicitlyWaitInMillis(6000);
-        //
-        try {
-        	driver.findElement(By.xpath("//button[@class='swal2-confirm swal2-styled']")).click();
-		} catch (Exception e) {
-			System.out.println("PopUp is not handled ");
-		}
+        
+       
+//        try {
+//        	driver.findElement(By.xpath("//button[@class='swal2-confirm swal2-styled']")).click();
+//		} catch (Exception e) {
+//			System.out.println("PopUp is not handled ");
+//		}
+        
+        price.clickOnOkPopUp();
+        
         Thread.sleep(9000);
-        driver.navigate().to("https://zeuscloud.azurewebsites.net/Dashboard");
+        
+        price.clickOnOkPopUp();
+        
+        Thread.sleep(1000);
+        
+        
+        price.clickOnDashboardLinkByJSE();
+        
+        
+       // driver.navigate().to("https://zeuscloud.azurewebsites.net/Dashboard");
         Reporter.log("Navigate to dashboard page",true);
-        Thread.sleep(9000);
+        
+      
+        
+        //Thread.sleep(9000);
         UtilityClass.implicitlyWaitInMillis(12000);
         
        // Offer Defination Page

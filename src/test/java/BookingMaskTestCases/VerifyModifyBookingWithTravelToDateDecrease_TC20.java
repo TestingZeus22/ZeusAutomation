@@ -16,7 +16,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import Base.BaseClass;
-import POM.BookingUpdatePage;
+import POM.bookingUpdatePage;
 import POM.DashboardPage;
 import POM.bookingMaskPage;
 import POM.loginPage;
@@ -32,7 +32,7 @@ public class VerifyModifyBookingWithTravelToDateDecrease_TC20 extends BaseClass
 		DashboardPage dashboard;
 		salesBookingListPage salesBookingList;
 		bookingMaskPage BookingMask;
-		BookingUpdatePage bookingupdate;
+		bookingUpdatePage bookingupdate;
 		//String abc;
 		
 		@BeforeClass
@@ -44,7 +44,7 @@ public class VerifyModifyBookingWithTravelToDateDecrease_TC20 extends BaseClass
 			dashboard = new DashboardPage(driver);
 			salesBookingList =new salesBookingListPage(driver);
 			BookingMask =new bookingMaskPage(driver);
-			bookingupdate = new BookingUpdatePage(driver);
+			bookingupdate = new bookingUpdatePage(driver);
 		}
 		
 		@BeforeMethod
