@@ -70,9 +70,7 @@ public class VerifySeasonAEndDateANDseasonBstartDate_TC83 extends BaseClass {
     		
     		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
-    		
     		Thread.sleep(1000);
-    		
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(1000);
@@ -116,8 +114,7 @@ public class VerifySeasonAEndDateANDseasonBstartDate_TC83 extends BaseClass {
     		Reporter.log("Send Travel To date Start of Season-B",true);
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
-    		Reporter.log("Select Number of passenger",true);
-            
+    		Reporter.log("Send Number of passenger",true);
     		UtilityClass.implicitlyWaitInMillis(2000);
             BookingMask.clickOnSendbookingButton();
             Reporter.log("Clicked on sendbookingButton",true);

@@ -198,11 +198,13 @@ public class verifyLoadAllotmentForTwoSeasons_TC03 extends BaseClass {
         UtilityClass.implicitlyWaitInsec(60);
         roomDetails.clickOncreateRoomButton();
         Reporter.log("Clicked on CreateRoom button",true);
+        Thread.sleep(2000);
+      
         UtilityClass.implicitlyWaitInsec(60);
         UtilityClass.scrollByAxis(0, -500);
         accommodationNew.clickOncontracts();
         Reporter.log("Clicked on contract ",true);
-        Thread.sleep(5000);
+        Thread.sleep(6000);
         contracts.clickOncreateContractButton();
         Reporter.log("Clicked on create contract",true);
         Thread.sleep(2000);
@@ -488,13 +490,13 @@ public class verifyLoadAllotmentForTwoSeasons_TC03 extends BaseClass {
             Allot_Acurrent=currentAllot_A;
             String remainingAllot_A=allotment.getRemainingAllotRoom1R1C1();
             Allot_ARemaining =remainingAllot_A;
-            
+            Thread.sleep(1000);
             
             driver.navigate().to("https://zeuscloud.azurewebsites.net/Accommodation");
             Thread.sleep(1000);
             accommdationList.sendTbmCodeField(UtilityClass.readDataFromStringExcel(55, 1, "Sheet5"));
             Reporter.log("Send Tbm code in accommodation list page",true);
-    	    Thread.sleep(1500);
+    	    Thread.sleep(2500);
     	    accommdationList.clickOnEditRow1Column1();
     	    Reporter.log("Clicked on edit selected accommodation in list",true);
     	    Thread.sleep(1000);

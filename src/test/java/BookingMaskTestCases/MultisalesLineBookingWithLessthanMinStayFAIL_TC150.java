@@ -135,8 +135,7 @@
 	    		Reporter.log("Send Travel To date",true);
 	    		
 	    		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
-	    		Reporter.log("Select Number of passenger",true);
-	            
+	    		Reporter.log("Send Number of passenger",true);
 	            UtilityClass.scrollByAxis(0, 600);
 	            Thread.sleep(1000);
 	           
@@ -196,7 +195,7 @@
 	    		Reporter.log("Send Travel To date ",true);
 	    		
 	    		driver.findElement(By.id("bookinglines_PassengerNo_4")).sendKeys("1-2");
-	    		Reporter.log("Select Number of passenger",true);
+	    		Reporter.log("Send Number of passenger",true);
 				UtilityClass.scrollByAxis(0, 900);
 				UtilityClass.implicitlyWaitInMillis(30000);
 				UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());

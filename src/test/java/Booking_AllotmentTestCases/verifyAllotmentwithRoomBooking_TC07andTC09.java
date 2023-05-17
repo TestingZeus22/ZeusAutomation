@@ -63,6 +63,7 @@ public class verifyAllotmentwithRoomBooking_TC07andTC09 extends BaseClass {
 	String Allot_Bremaining;
 	String Allot_Bsold;
 	String Allot_Einitial;
+	String Allot_Hinitial;
 	
 	@BeforeClass
 	public void launchBrowser(){
@@ -91,9 +92,9 @@ public class verifyAllotmentwithRoomBooking_TC07andTC09 extends BaseClass {
 	@BeforeMethod
 	public void loginToApp() throws EncryptedDocumentException, IOException, InterruptedException
 	{
-		login.SendUserName(UtilityClass.readDataFromStringExcel(2, 0, "Sheet1"));
+		login.SendUserName(UtilityClass.readDataFromStringExcel(5, 1, "Sheet2"));
 		Reporter.log("Valid Username Entered",true);
-		login.SendPassword(UtilityClass.readDataFromStringExcel(2, 1, "Sheet1"));
+		login.SendPassword(UtilityClass.readDataFromStringExcel(6, 1, "Sheet2"));
 		Reporter.log("Valid Password Entered",true);
 		login.ClickOnLoginToDashboard();
 		Reporter.log("Clicked on Dashboard button",true);
@@ -105,70 +106,60 @@ public class verifyAllotmentwithRoomBooking_TC07andTC09 extends BaseClass {
 		selectCompany.ClickOnProceedButton();
 		Reporter.log("Clicked on proceed button",true);	
 		Thread.sleep(9500);
-		
         dashboard.clickOnpurchasebutton();
         Reporter.log("Clicked on purchase option",true);
 		Thread.sleep(1000);
         dashboard.clickOnAccommodation();
         Reporter.log("Clicked on accommodation option in list",true);
-        Thread.sleep(2000);
-    	   
+        Thread.sleep(2000); 
     	accommdationList.sendTbmCodeField(UtilityClass.readDataFromStringExcel(55, 1, "Sheet5"));
     	Thread.sleep(4000);
     	accommdationList.clickOnEditRow1Column1();
-    	Thread.sleep(1000);
-    	    
+    	Thread.sleep(1000);  
     	accommodationNew.clickOnAllotment();
     	Reporter.log("Clicked on Allotment ",true);
     	Thread.sleep(2000);
 	}
 
-	@Test (enabled=false)  //TC_07
+	@Test  //TC_07
 	public void validateIncrDecrAllotWithRoomBooking() throws EncryptedDocumentException, IOException, InterruptedException {
 	
 	allotment.sendStartDate(UtilityClass.readDataFromStringExcel(67, 1, "Sheet5"));
     Reporter.log("Send start date of season_B on allotment page",true);
     allotment.sendendDate(UtilityClass.readDataFromStringExcel(67, 2, "Sheet5"));
     Reporter.log("Send end date of season_B on allotment page",true);
-	
     Thread.sleep(1000);
 	allotment.clickOnLoadAllotment();
 	Reporter.log("Clicked on load allotment",true);
-	
+	Thread.sleep(1000);
 	String initialAllot_B = allotment.getInitialAllotRoom1R1C1();
 	Allot_Binitial=initialAllot_B;
 	Thread.sleep(1000);
-	
 	allotment.clickOnchangeAllotment();
 	Reporter.log("Clicked on Change allotment button",true);
 	Thread.sleep(2000);
-	
 	UtilityClass.listBoxHandlingUsingByText("Increase_Decrease_Allotment", ChangeAllotment.selectChangeAllotmentDropdown());
 	Thread.sleep(3000);
-	    	
 	ChangeAllotment.clickOnMultiselectDropdwn();
 	Thread.sleep(1000);
-	    
 	ChangeAllotment.clickOnSelectAllRoomsmultiselectdropdown1();
 	Thread.sleep(1000);
-
 	ChangeAllotment.sendDateFromForRoom1Field(UtilityClass.readDataFromStringExcel(106, 1, "Sheet5"));
 	Thread.sleep(2000);
 	ChangeAllotment.sendDateUntilTo1Field(UtilityClass.readDataFromStringExcel(107, 1, "Sheet5"));
 	Thread.sleep(2000);
 	ChangeAllotment.sendAmount1(UtilityClass.readDataFromStringExcel(108, 1, "Sheet5"));
 	Thread.sleep(5000);
-
 	JavascriptExecutor jse = (JavascriptExecutor)driver;
 	jse.executeScript("document.body.style.zoom='70%'");
 	Thread.sleep(1000);
 	
-//	//ChangeAllotment.clickOnConfirmButtonByJSE();
+	//ChangeAllotment.clickOnConfirmButtonByJSE();
 	WebElement confirmButton=driver.findElement(By.xpath("//button[text()='Confirm']"));
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	js.executeScript("arguments[0].click();", confirmButton);
 	Reporter.log("Clicked on confirm button",true);
-	Thread.sleep(1000);
+	Thread.sleep(4000);
 	    
 //	//ChangeAllotment.clickOnOkPopUPByJSE();
 	WebElement OkButton = driver.findElement(By.xpath("//button[text()='OK']"));
@@ -183,7 +174,6 @@ public class verifyAllotmentwithRoomBooking_TC07andTC09 extends BaseClass {
 	   
 	jse.executeScript("document.body.style.zoom='100%'");
 	Thread.sleep(1000);
-	
 	allotment.clickOnDashboardLink();
 	Thread.sleep(9500);
 	dashboard.SalesClick();
@@ -221,6 +211,7 @@ public class verifyAllotmentwithRoomBooking_TC07andTC09 extends BaseClass {
 	BookingMask.sendKOS(UtilityClass.readDataFromStringExcel(116, 1, "Sheet5"));
 	Reporter.log("Send correct KOS in input field",true);
 	UtilityClass.implicitlyWaitInMillis(1000);
+	
 	BookingMask.sendproductCode(UtilityClass.readDataFromStringExcel(117, 1, "Sheet5"));
 	Reporter.log("Send correct ProductCode in input field",true);
 	UtilityClass.implicitlyWaitInMillis(1000);
@@ -244,35 +235,32 @@ public class verifyAllotmentwithRoomBooking_TC07andTC09 extends BaseClass {
 	Reporter.log("Send Travel To date for season-A",true);
 	
 	driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
-	Reporter.log("Select Number of passenger",true);
-    
+	Reporter.log("Send Number of passenger",true);
 	UtilityClass.implicitlyWaitInMillis(2000);
     UtilityClass.scrollByAxis(0, 600);
     Thread.sleep(2000); 
-	
     UtilityClass.listBoxHandlingUsingByText("Boy", BookingMask.ListBoxTitleGender());
-    Thread.sleep(500);
+    UtilityClass.implicitlyWaitInsec(30);
 	BookingMask.sendLastName(UtilityClass.readDataFromStringExcel(125, 1, "Sheet5"));
-	Thread.sleep(500);
+	UtilityClass.implicitlyWaitInsec(30);
 	BookingMask.sendFirstName(UtilityClass.readDataFromStringExcel(126, 1, "Sheet5"));
-	Thread.sleep(500);
+	UtilityClass.implicitlyWaitInsec(30);
 	BookingMask.sendCityName(UtilityClass.readDataFromStringExcel(127, 1, "Sheet5"));
-	Thread.sleep(500);
+	UtilityClass.implicitlyWaitInsec(30);
 	BookingMask.sendZipCode(UtilityClass.readDataFromStringExcel(128, 1, "Sheet5"));
-	Thread.sleep(500);
+	UtilityClass.implicitlyWaitInsec(30);
 	BookingMask.sendStreetNo(UtilityClass.readDataFromStringExcel(129, 1, "Sheet5"));
-	Thread.sleep(500);
+	UtilityClass.implicitlyWaitInsec(30);
 	BookingMask.sendPhoneNum(UtilityClass.readDataFromStringExcel(130, 1, "Sheet5"));
-	Thread.sleep(500);
+	UtilityClass.implicitlyWaitInsec(30);
 	BookingMask.sendEmail(UtilityClass.readDataFromStringExcel(131, 1, "Sheet5"));
 	UtilityClass.scrollByAxis(0, 900);
 	UtilityClass.implicitlyWaitInMillis(20000);
 	UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
 	Reporter.log("Click on sendBookingButton",true);
-	
 	Thread.sleep(1000);
 	BookingMask.clickOndashboardLink();
-	
+	Reporter.log("Clicked on dashboardLink",true);
 	Thread.sleep(9500);
     dashboard.clickOnpurchasebutton();
     Reporter.log("Clicked on purchase option",true);
@@ -280,34 +268,26 @@ public class verifyAllotmentwithRoomBooking_TC07andTC09 extends BaseClass {
     dashboard.clickOnAccommodation();
     Reporter.log("Clicked on accommodation option in list",true);
     Thread.sleep(2000);
-	   
 	accommdationList.sendTbmCodeField(UtilityClass.readDataFromStringExcel(55, 1, "Sheet5"));
 	Thread.sleep(4000);
 	accommdationList.clickOnEditRow1Column1();
-	Thread.sleep(1000);
-	    
+	Thread.sleep(1000);   
 	accommodationNew.clickOnAllotment();
 	Reporter.log("Clicked on Allotment ",true);
 	Thread.sleep(2000);
-	
 	allotment.sendStartDate(UtilityClass.readDataFromStringExcel(67, 1, "Sheet5"));
     Reporter.log("Send start date of season_B on allotment page",true);
     allotment.sendendDate(UtilityClass.readDataFromStringExcel(67, 2, "Sheet5"));
     Reporter.log("Send end date of season_B on allotment page",true);
-	
     UtilityClass.implicitlyWaitInsec(80);
     allotment.clickOnLoadAllotment();
     Thread.sleep(2000);
-    
     String currentAllot_B = allotment.getCurrentAllotRoom1R1C1();
     Allot_Bcurrent = currentAllot_B;
-    
     String soldAllot_B = allotment.getCurrentAllotRoom1R1C1();
     Allot_Bsold = soldAllot_B;
-    
     String RemainingAllot_B  =allotment.getRemainingAllotRoom1R1C1();
     Allot_Bremaining = RemainingAllot_B;
-    
     UtilityClass.implicitlyWaitInsec(60);
     UtilityClass.scrollByAxis(0, -350);
     
@@ -333,96 +313,85 @@ public class verifyAllotmentwithRoomBooking_TC07andTC09 extends BaseClass {
 	
 	}
 	
-	@Test (priority = 1) //TC_09
+	@Test  //TC_09
 	public void validateApplyStopSales() throws EncryptedDocumentException, IOException, InterruptedException {
 	
-		allotment.sendStartDate(UtilityClass.readDataFromStringExcel(135, 1, "Sheet5"));
+		allotment.sendStartDate(UtilityClass.readDataFromStringExcel(46, 1, "Sheet5"));
 	    Reporter.log("Send start date of season_E on allotment page",true);
-	    allotment.sendendDate(UtilityClass.readDataFromStringExcel(136, 1, "Sheet5"));
+	    allotment.sendendDate(UtilityClass.readDataFromStringExcel(46, 2, "Sheet5"));
 	    Reporter.log("Send end date of season_E on allotment page",true);
-    	
 	    Thread.sleep(1000);
  	    allotment.clickOnLoadAllotment();
  	    Reporter.log("Clicked on load allotment",true);
-    	
+ 		Thread.sleep(2000);
  	    String initialAllot_E = allotment.getInitialAllotRoom1R1C1();
  	    Allot_Einitial=initialAllot_E;
- 		Thread.sleep(2000);
-    	
+ 	    Thread.sleep(1000);
     	allotment.clickOnchangeAllotment();
     	Reporter.log("Clicked on Change allotment button",true);
-    	Thread.sleep(2000);
-    
+    	Thread.sleep(500);
     	UtilityClass.listBoxHandlingUsingByText("Apply_stop_sales", ChangeAllotment.selectChangeAllotmentDropdown());
-    	Thread.sleep(3000);
-   	    	   
+    	Thread.sleep(3000);   
     	ChangeAllotment.clickOnMultiselectDropdwn();
    	    Thread.sleep(1000);
    	    ChangeAllotment.clickOnSelectAllRoomsmultiselectdropdown1();
    	    Thread.sleep(1000);
-	
-   	    ChangeAllotment.sendDateFromForRoom1Field(UtilityClass.readDataFromStringExcel(137, 1, "Sheet5"));
+   	    ChangeAllotment.sendDateFromForRoom1Field(UtilityClass.readDataFromStringExcel(135, 1, "Sheet5"));
    	    Reporter.log("Enter start date for room1",true);
-   	    Thread.sleep(500);
-    	ChangeAllotment.sendDateUntilTo1Field(UtilityClass.readDataFromStringExcel(138, 1, "Sheet5"));
+   	    Thread.sleep(1000);
+    	ChangeAllotment.sendDateUntilTo1Field(UtilityClass.readDataFromStringExcel(136, 1, "Sheet5"));
     	Reporter.log("Enter until date for room1",true);
-    	Thread.sleep(1000);
+    	Thread.sleep(1500);
     	UtilityClass.implicitlyWaitInsec(70);
-    	
     	JavascriptExecutor jse = (JavascriptExecutor)driver;
     	jse.executeScript("document.body.style.zoom='70%'"); 
     	UtilityClass.implicitlyWaitInsec(70);
-    	
     	Thread.sleep(3000);  
     	//ChangeAllotment.clickOnConfirmButtonByJSE();
     	WebElement confirmButton=driver.findElement(By.xpath("//button[text()='Confirm']"));
     	JavascriptExecutor js = (JavascriptExecutor) driver;
      	js.executeScript("arguments[0].click();", confirmButton);
-    	Thread.sleep(2000);
-    	    
+    	Thread.sleep(4000);
     	//ChangeAllotment.clickOnOkPopUPByJSE();
     	WebElement OkButton = driver.findElement(By.xpath("//button[text()='OK']"));
     	js.executeScript("arguments[0].click();", OkButton);
     	Thread.sleep(1000);
-    	
     	//ChangeAllotment.clickOncloseButtonByJSE();
     	WebElement closeButton = driver.findElement(By.id("closeImageFeature"));
     	js.executeScript("arguments[0].click();", closeButton);
     	Thread.sleep(1000);
-        
     	jse.executeScript("document.body.style.zoom='100%'");
     	Thread.sleep(1000);
-    	
-		allotment.sendStartDate(UtilityClass.readDataFromStringExcel(135, 1, "Sheet5"));
+		allotment.sendStartDate(UtilityClass.readDataFromStringExcel(46, 1, "Sheet5"));
 	    Reporter.log("Send start date of season_E on allotment page",true);
-	    allotment.sendendDate(UtilityClass.readDataFromStringExcel(136, 1, "Sheet5"));
+	    allotment.sendendDate(UtilityClass.readDataFromStringExcel(46, 2, "Sheet5"));
 	    Reporter.log("Send end date of season_E on allotment page",true);
 	    allotment.clickOnLoadAllotment();
+	    Reporter.log("Clicked on load Allotment",true);
     	
-    	 String expectedInitailAllot_E = UtilityClass.readDataFromStringExcel(139, 1, "Sheet5");
-    	 Assert.assertEquals(Allot_Einitial,expectedInitailAllot_E, "TC failed as Actual allotment and expected allotment are not matching ");
-    	 Reporter.log("Validating Actual initial allotment is "+Allot_Einitial+" and Expected allotment for season_E is "+UtilityClass.readDataFromStringExcel(139, 1, "Sheet5"),true);  
+    	 String expectedInitailAllot_E = UtilityClass.readDataFromStringExcel(137, 1, "Sheet5");
+    	 Assert.assertEquals(Allot_Einitial,expectedInitailAllot_E, "TC failed as Actual allotment and expected initial allotment are not matching ");
+    	 Reporter.log("Validating Actual initial allotment is "+Allot_Einitial+" and Expected allotment for season_E is "+UtilityClass.readDataFromStringExcel(137, 1, "Sheet5"),true);  
     	    
     	 String ActualCurrentAllot_E = allotment.getCurrentAllotRoom1R1C1();
-    	 String expectedCurrentAllot_E = UtilityClass.readDataFromStringExcel(140, 1, "Sheet5");
+    	 String expectedCurrentAllot_E = UtilityClass.readDataFromStringExcel(138, 1, "Sheet5");
     	 Assert.assertEquals(ActualCurrentAllot_E, expectedCurrentAllot_E,"Test Case Failed as actual and expected current allotment are not matching");
-    	 Reporter.log("Validating Actual current allotment is "+ActualCurrentAllot_E+" and Expected allotment for season_E is "+UtilityClass.readDataFromStringExcel(140, 1, "Sheet5"),true);
+    	 Reporter.log("Validating Actual current allotment is "+ActualCurrentAllot_E+" and Expected allotment for season_E is "+UtilityClass.readDataFromStringExcel(138, 1, "Sheet5"),true);
     	    
     	 String ActualSoldAllot_E = allotment.getSoldAllotRoom1R1C1();
-    	 String expectedSoldAllot_E = UtilityClass.readDataFromStringExcel(143, 1, "Sheet5");
+    	 String expectedSoldAllot_E = UtilityClass.readDataFromStringExcel(141, 1, "Sheet5");
     	 Assert.assertEquals(ActualSoldAllot_E, expectedSoldAllot_E,"Test Case Failed as actual and expected sold allotment number are not matching");
-    	 Reporter.log("Validating Actual sold allotment is "+ActualSoldAllot_E+" and Expected allotment for season_E is "+UtilityClass.readDataFromStringExcel(143, 1, "Sheet5"),true);
+    	 Reporter.log("Validating Actual sold allotment is "+ActualSoldAllot_E+" and Expected allotment for season_E is "+UtilityClass.readDataFromStringExcel(141, 1, "Sheet5"),true);
     	    
     	 String ActualRemainingAllot_E = allotment.getRemainingAllotRoom1R1C1();
-    	 String expectedRemainingAllot_E = UtilityClass.readDataFromStringExcel(141, 1, "Sheet5");
+    	 String expectedRemainingAllot_E = UtilityClass.readDataFromStringExcel(139, 1, "Sheet5");
     	 Assert.assertEquals(ActualRemainingAllot_E, expectedRemainingAllot_E,"Test Case Failed as actual & expected remaining allotment are not matching");
-    	 Reporter.log("Validating Actual remaining allotment is "+ActualRemainingAllot_E+" and Expected allotment for season_E is "+UtilityClass.readDataFromStringExcel(141, 1, "Sheet5"),true); 
+    	 Reporter.log("Validating Actual remaining allotment is "+ActualRemainingAllot_E+" and Expected allotment for season_E is "+UtilityClass.readDataFromStringExcel(139, 1, "Sheet5"),true); 
     		
     	 String ActualStopSales_E = allotment.getstopSalesRoom1R1C1();
-    	 System.out.println("Stop sales is "+ActualStopSales_E);
-    	 String expectedStopSales_E = UtilityClass.readDataFromStringExcel(142, 1, "Sheet5");
+    	 String expectedStopSales_E = UtilityClass.readDataFromStringExcel(140, 1, "Sheet5");
     	 Assert.assertEquals(ActualStopSales_E, expectedStopSales_E,"Test Case Failed as actual and expected stop sales text are not matching");
-    	 Reporter.log("Validating Actual Stop sale text is "+ActualStopSales_E+" and Expected stop sales text for season_E is "+UtilityClass.readDataFromStringExcel(142, 1, "Sheet5"),true); 
+    	 Reporter.log("Validating Actual Stop sale text is "+ActualStopSales_E+" and Expected stop sales text for season_E is "+UtilityClass.readDataFromStringExcel(140, 1, "Sheet5"),true); 
 	}
 	
     @AfterMethod

@@ -207,19 +207,19 @@
 	    		Reporter.log("Select Number of passenger",true);
 	            
 	            UtilityClass.listBoxHandlingUsingByText("Boy", BookingMask.ListBoxTitleGender());
-	            Thread.sleep(500);
+	            UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendLastName(UtilityClass.readDataFromStringExcel(99, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendFirstName(UtilityClass.readDataFromStringExcel(100, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendCityName(UtilityClass.readDataFromStringExcel(101, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendZipCode(UtilityClass.readDataFromStringExcel(102, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendStreetNo(UtilityClass.readDataFromStringExcel(103, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendPhoneNum(UtilityClass.readDataFromStringExcel(104, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendEmail(UtilityClass.readDataFromStringExcel(105, 4, "Sheet2"));
 				UtilityClass.scrollByAxis(0, 900);
 				UtilityClass.implicitlyWaitInMillis(30000);
@@ -235,21 +235,16 @@
 		        salesBookingList.clickOnbookingListButton();
 		        Reporter.log("Clicked on Booking listButton",true);
 		        Thread.sleep(23000);
-		        
 		        salesBookingList.sendtbmCodes(UtilityClass.readDataFromStringExcel(809, 1, "Sheet2"));
 		        Reporter.log("send TBM code",true);
 		        Thread.sleep(9000);
 		        salesBookingList.clickOnbookingListButton();
 		        Reporter.log("Clicked on Booking listButton",true);
-		        UtilityClass.implicitlyWaitInMillis(10000);  
-		        //String ExpectedReservationNo = salesBookingList.getSalesBookingColumn1();
-
-		        UtilityClass.implicitlyWaitInMillis(10000);
+		        UtilityClass.implicitlyWaitInMillis(10000); 
 		        UtilityClass.scrollByAxis(0, -400);
 		        salesBookingList.clickOneditBooking1();
 		        Reporter.log("Clicked on Edit booking1",true);
 		        UtilityClass.implicitlyWaitInMillis(40000);
-		        
 		        Thread.sleep(8000);
 		        UtilityClass.implicitlyWaitInMillis(40000);
 	            BookingMask.ClearbookingActionfield();
@@ -288,14 +283,8 @@
 	    		Reporter.log("Send Modified Travel To date",true);
 	    		UtilityClass.scrollByAxis(0, 900);
 				UtilityClass.implicitlyWaitInsec(40);
-
-	            try {
-	            	WebElement sendButton = driver.findElement(By.id("sendbooking"));
-					JavascriptExecutor executor = (JavascriptExecutor)driver;
-					executor.executeScript("arguments[0].click();", sendButton);
-					Reporter.log("Clicked on sendbookingButton",true);
-				} catch (Exception e) {
-				}
+				UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
+	    		Reporter.log("Click on SendBookingButton",true);
 	    		Thread.sleep(2000);
 		}
 

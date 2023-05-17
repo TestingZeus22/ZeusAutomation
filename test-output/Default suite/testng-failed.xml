@@ -3,16 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Booking_AllotmentTestCases.TC_25">
+      <class name="Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46">
         <methods>
-          <include name="validateReleaseDayss"/>
-          <include name="Logout"/>
+          <include name="validateMultisalesBookingAllotment"/>
           <include name="launchBrowser"/>
-          <include name="closeBrowser"/>
-          <include name="validateReleaseDays"/>
+          <include name="Logout"/>
           <include name="loginToApp"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- Booking_AllotmentTestCases.TC_25 -->
+      </class> <!-- Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

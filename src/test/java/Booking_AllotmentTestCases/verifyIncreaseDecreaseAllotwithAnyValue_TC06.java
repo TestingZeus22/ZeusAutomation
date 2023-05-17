@@ -58,10 +58,6 @@ public class verifyIncreaseDecreaseAllotwithAnyValue_TC06 extends BaseClass {
 	pricePage price;
 	roomsPage room;
 	allotmentPage allotment;
-	String Allot_Ainitial;
-	String Actualseason_Aallot;
-	String Allot_A;
-	String Actualseason_Ballot;
 	String Allot_Cinitial;
 	String Allot_Ccurrent;
 	String Allot_Cremaining;
@@ -93,33 +89,29 @@ public class verifyIncreaseDecreaseAllotwithAnyValue_TC06 extends BaseClass {
 	@BeforeMethod
 	public void loginToApp() throws EncryptedDocumentException, IOException, InterruptedException
 	{
-		login.SendUserName(UtilityClass.readDataFromStringExcel(2, 0, "Sheet1"));
+		login.SendUserName(UtilityClass.readDataFromStringExcel(5, 1, "Sheet2"));
 		Reporter.log("Valid Username Entered",true);
-		login.SendPassword(UtilityClass.readDataFromStringExcel(2, 1, "Sheet1"));
+		login.SendPassword(UtilityClass.readDataFromStringExcel(6, 1, "Sheet2"));
 		Reporter.log("Valid Password Entered",true);
 		login.ClickOnLoginToDashboard();
 		Reporter.log("Clicked on Dashboard button",true);
 		UtilityClass.implicitlyWaitInMillis(1000);
-		
 		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", selectCompany.SelectDropDownList());
 		Reporter.log("Select the Falk Tours AG from given list",true);
 		UtilityClass.implicitlyWaitInMillis(1000);
 		selectCompany.ClickOnProceedButton();
 		Reporter.log("Clicked on proceed button",true);	
 		Thread.sleep(9500);
-		
         dashboard.clickOnpurchasebutton();
         Reporter.log("Clicked on purchase option",true);
 		Thread.sleep(1000);
         dashboard.clickOnAccommodation();
         Reporter.log("Clicked on accommodation option in list",true);
         Thread.sleep(2000);
-    	   
     	accommdationList.sendTbmCodeField(UtilityClass.readDataFromStringExcel(55, 1, "Sheet5"));
     	Thread.sleep(4000);
     	accommdationList.clickOnEditRow1Column1();
     	Thread.sleep(1000);
-    	    
     	accommodationNew.clickOnAllotment();
     	Reporter.log("Clicked on Allotment ",true);
     	Thread.sleep(2000);
@@ -132,35 +124,28 @@ public class verifyIncreaseDecreaseAllotwithAnyValue_TC06 extends BaseClass {
     Reporter.log("Send start date of season_B on allotment page",true);
     allotment.sendendDate(UtilityClass.readDataFromStringExcel(68, 2, "Sheet5"));
     Reporter.log("Send end date of season_B on allotment page",true);
-	
     Thread.sleep(1000);
 	allotment.clickOnLoadAllotment();
 	Reporter.log("Clicked on load allotment",true);
-	
+	 Thread.sleep(1000);
 	String initialAllot_C = allotment.getInitialAllotRoom1R1C1();
 	Allot_Cinitial=initialAllot_C;
 	Thread.sleep(1000);
-	
 	allotment.clickOnchangeAllotment();
 	Reporter.log("Clicked on Change allotment button",true);
 	Thread.sleep(2000);
-
 	UtilityClass.listBoxHandlingUsingByText("Increase_Decrease_Allotment", ChangeAllotment.selectChangeAllotmentDropdown());
-	Thread.sleep(3000);
-	    	
+	Thread.sleep(3000);  	
 	ChangeAllotment.clickOnMultiselectDropdwn();
 	Thread.sleep(1000);
-	    
 	ChangeAllotment.clickOnSelectAllRoomsmultiselectdropdown1();
 	Thread.sleep(1000);
-
 	ChangeAllotment.sendDateFromForRoom1Field(UtilityClass.readDataFromStringExcel(97, 1, "Sheet5"));
 	Thread.sleep(2000);
 	ChangeAllotment.sendDateUntilTo1Field(UtilityClass.readDataFromStringExcel(98, 1, "Sheet5"));
 	Thread.sleep(2000);
 	ChangeAllotment.sendAmount1(UtilityClass.readDataFromStringExcel(99, 1, "Sheet5"));
 	Thread.sleep(5000);
-
 	JavascriptExecutor jse = (JavascriptExecutor)driver;
 	jse.executeScript("document.body.style.zoom='70%'");
 	Thread.sleep(1000);
@@ -170,7 +155,7 @@ public class verifyIncreaseDecreaseAllotwithAnyValue_TC06 extends BaseClass {
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	js.executeScript("arguments[0].click();", confirmButton);
 	Reporter.log("Clicked on confirm button",true);
-	Thread.sleep(1000);
+	Thread.sleep(3000);
 	    
 	//ChangeAllotment.clickOnOkPopUPByJSE();
 	WebElement OkButton = driver.findElement(By.xpath("//button[text()='OK']"));
@@ -181,12 +166,10 @@ public class verifyIncreaseDecreaseAllotwithAnyValue_TC06 extends BaseClass {
 	//ChangeAllotment.clickOncloseButtonByJSE();
 	WebElement closeButton = driver.findElement(By.id("closeImageFeature"));
 	js.executeScript("arguments[0].click();", closeButton);
-	Reporter.log("Clicked on close button",true);
-	    	  
+	Reporter.log("Clicked on close button",true); 	  
     Thread.sleep(1000);
     String currentAllot_C = allotment.getCurrentAllotRoom1R1C1();
     Allot_Ccurrent = currentAllot_C;
-    
     String RemainingAllot_C  =allotment.getRemainingAllotRoom1R1C1();
     Allot_Cremaining = RemainingAllot_C;
     
@@ -204,7 +187,6 @@ public class verifyIncreaseDecreaseAllotwithAnyValue_TC06 extends BaseClass {
     String expectedRemainingAllot_C = UtilityClass.readDataFromStringExcel(102, 1, "Sheet5");
     Assert.assertEquals(ActualRemainingAllot_C, expectedRemainingAllot_C,"Test Case Failed as actual & expected remaining allotment are not matching");
     Reporter.log("Validating Actual remaining allotment is "+ActualRemainingAllot_C+" and Expected allotment for season_C is "+UtilityClass.readDataFromStringExcel(102, 1, "Sheet5"),true); 
-    
     jse.executeScript("document.body.style.zoom='100%'");
 	}
 	

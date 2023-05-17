@@ -69,10 +69,9 @@ public class VerifyTravelDateIsEndOfSeasonB_TC85 extends BaseClass {
     		salesBookingList.clickOncreateButton();
     		Reporter.log("Clicked on create Button in sales Booking page",true);
     		Thread.sleep(6000);
-    		
+    	
     		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
-    		
     		Thread.sleep(1000);
     		
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
@@ -95,6 +94,7 @@ public class VerifyTravelDateIsEndOfSeasonB_TC85 extends BaseClass {
     		BookingMask.sendKOS(UtilityClass.readDataFromStringExcel(348, 4, "Sheet2"));
     		Reporter.log("Send correct KOS in input field",true);
     		UtilityClass.implicitlyWaitInMillis(1000);
+    		
     		BookingMask.sendproductCode(UtilityClass.readDataFromStringExcel(349, 4, "Sheet2"));
     		Reporter.log("Send correct ProductCode in input field",true);
     		UtilityClass.implicitlyWaitInMillis(1000);
@@ -118,7 +118,7 @@ public class VerifyTravelDateIsEndOfSeasonB_TC85 extends BaseClass {
     		Reporter.log("Send Travel To start date of season-C",true);
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
-    		Reporter.log("Select Number of passenger",true);
+    		Reporter.log("Send Number of passenger",true);
             
     		UtilityClass.implicitlyWaitInMillis(2000);
             BookingMask.clickOnSendbookingButton();

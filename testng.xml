@@ -1,56 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="validateBM">
+  <test thread-count="5" name="BookingAllotment1">
     <classes>
-      <class name="BookingMaskTC.verifyBookingInquiryWithBlankTravelToDate_TC03"/>
-      <class name="BookingMaskTC.verifyEnteringTravelDaysNoInTravelToField_TC10"/>
-      <class name="BookingMaskTC.createBA"/>
-      <class name="BookingMaskTC.verifyCreateBookingForThreePersonThreeRooms_TC36"/>
-      <class name="BookingMaskTC.createMultisalesLinesBookingWithSameDates_TC147"/>
-      <class name="BookingMaskTC.verifyTravelDateEndingOutOfContract_TC12"/>
-      <class name="BookingMaskTC.verifySeasonAEndDateANDseasonBstartDate_TC83"/>
-      <class name="BookingMaskTC.TCC19"/>
-      <class name="BookingMaskTC.TCC18"/>
-      <class name="BookingMaskTC.multisalesLineBookingWithDifferentDatesAndMoreThanMaxStay_TC151"/>
-      <class name="BookingMaskTC.TCC25"/>
-      <class name="BookingMaskTC.verifyConfirmBookingWithB_TC02"/>
-      <class name="BookingMaskTC.verifyTravelDateStartWithSeasonCandEndsOutOfanySeason_TC86"/>
-      <class name="BookingMaskTC.verifyTravelDatesOutOfContract_TC11"/>
-      <class name="BookingMaskTC.TCC24"/>
-      <class name="BookingMaskTC.verifyTravelDateInBetweenSeasonC_TC82"/>
-      <class name="BookingMaskTC.TCC23"/>
-      <class name="BookingMaskTC.TCC20"/>
-      <class name="BookingMaskTC.createBookingForTwoPersonAndTwoRoom_TC34"/>
-      <class name="BookingMaskTC.verifyTravelDateIsEndDateOfSeasonA_TC80"/>
-      <class name="BookingMaskTC.verifyTravelDateIsEndOfSeasonB_TC85"/>
-      <class name="BookingMaskTC.verifyCreateNewBookingInquiry_TC01"/>
-      <class name="BookingMaskTC.verifyBookingWithTravelFromAndTravelToSameDate_TC07"/>
-      <class name="BookingMaskTC.multisalesLineBookingWithMorethanMaxStayFAIL_TC152"/>
-      <class name="BookingMaskTC.verifyCreateBookingForThreePerson_TC35"/>
-      <class name="BookingMaskTC.verifyBookingWithSameRoomAndDifferentDates_TC31"/>
-      <class name="BookingMaskTC.multisalesLineBookingWithLessthanMinStayFAIL_TC150"/>
-      <class name="BookingMaskTC.createMultisalesLinesBookingWithDifferentDates_TC148"/>
-      <class name="BookingMaskTC.verifyBookingInquiryWithBlankTravelFromDate_TC04"/>
-      <class name="BookingMaskTC.verifyBookingforSeasonB_TC15"/>
-      <class name="BookingMaskTC.verifyTravelToDateLessThanTravelFromDate_TC08"/>
-      <class name="BookingMaskTC.verifyTravelDateInBetweenSeasonA_TC79"/>
-      <class name="BookingMaskTC.verifyTravelDateStartOfSeasonA_TC78"/>
-      <class name="BookingMaskTC.verifyCreateBookingForFivePerson_TC37"/>
-      <class name="BookingMaskTC.verifyTravelDateNotInAnySeason_TC87"/>
-      <class name="BookingMaskTC.TCC27"/>
-      <class name="BookingMaskTC.verifyBookingModifyEnquiry_TC16"/>
-      <class name="BookingMaskTC.TCC26"/>
-      <class name="BookingMaskTC.verifyBookingInquiryWithBlankTravelFromAndTravelToDate_TC05"/>
-      <class name="BookingMaskTC.verifyTravelDateIncludeSeasonBandC_TC84"/>
-      <class name="BookingMaskTC.verifyTravelDateInBetweenSeasonB_TC81"/>
-      <class name="BookingMaskTC.verifyCreateBookingForOnePerson_TC32"/>
-      <class name="BookingMaskTC.verifyTravelDateOutofContract_TC88"/>
-      <class name="BookingMaskTC.verifybookingInquiry"/>
-      <class name="BookingMaskTC.verifyEnteringTravelFromBeforeContract_TC13"/>
-      <class name="BookingMaskTC.multisaleslineBookingWithDiffDateAndLessthanMinStay_TC149"/>
-      <class name="BookingMaskTC.verifyBookingforSeasonA_TC14"/>
-      <class name="BookingMaskTC.verifyCreateBookingWithTwoPerson_TC33"/>
+      <class name="Booking_AllotmentTestCases.verifyBookingAndAllotmentTC28TC29"/>
+      <class name="Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46"/>
+      <class name="Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26"/>
+      <class name="Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithPositiveValue_TC04"/>
+      <class name="Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48"/>
+      <class name="Booking_AllotmentTestCases.createNewMultisalesLineBookingTC42"/>
+      <class name="Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09"/>
+      <class name="Booking_AllotmentTestCases.verifyBookingAfterDeleteStopSalesTC17TC18"/>
+      <class name="Booking_AllotmentTestCases.verifyLoadAllotmentForTwoSeasons_TC03"/>
+      <class name="Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithNegativeValue_TC05"/>
+      <class name="Booking_AllotmentTestCases.verifyBookingAndAllotmentsTC49TC51TC30"/>
+      <class name="Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12"/>
+      <class name="Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithAnyValue_TC06"/>
+      <class name="Booking_AllotmentTestCases.verifyReleaseDaysTC19"/>
+      <class name="Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44"/>
     </classes>
-  </test> <!-- validateBM -->
+  </test> <!-- BookingAllotment1 -->
 </suite> <!-- Suite -->

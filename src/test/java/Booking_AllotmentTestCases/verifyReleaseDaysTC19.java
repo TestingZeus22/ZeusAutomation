@@ -39,7 +39,7 @@ import POM.tbmCodeMasterPage;
 import POM.tbmCodeNewCreatePage;
 import utility.UtilityClass;
 
-public class TC_19 extends BaseClass {
+public class verifyReleaseDaysTC19 extends BaseClass {
 	loginPage login;
 	File myFile;
 	selectCompanyPage selectCompany;
@@ -87,14 +87,13 @@ public class TC_19 extends BaseClass {
 	@BeforeMethod
 	public void loginToApp() throws EncryptedDocumentException, IOException, InterruptedException
 	{
-		login.SendUserName(UtilityClass.readDataFromStringExcel(2, 0, "Sheet1"));
+		login.SendUserName(UtilityClass.readDataFromStringExcel(5, 1, "Sheet2"));
 		Reporter.log("Valid Username Entered",true);
-		login.SendPassword(UtilityClass.readDataFromStringExcel(2, 1, "Sheet1"));
+		login.SendPassword(UtilityClass.readDataFromStringExcel(6, 1, "Sheet2"));
 		Reporter.log("Valid Password Entered",true);
 		login.ClickOnLoginToDashboard();
 		Reporter.log("Clicked on Dashboard button",true);
 		UtilityClass.implicitlyWaitInMillis(1000);
-		
 		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", selectCompany.SelectDropDownList());
 		Reporter.log("Select the Falk Tours AG from given list",true);
 		UtilityClass.implicitlyWaitInMillis(1000);
@@ -108,12 +107,10 @@ public class TC_19 extends BaseClass {
         dashboard.clickOnAccommodation();
         Reporter.log("Clicked on accommodation option in list",true);
         Thread.sleep(2000);
-    	   
     	accommdationList.sendTbmCodeField(UtilityClass.readDataFromStringExcel(55, 1, "Sheet5"));
     	Thread.sleep(4000);
     	accommdationList.clickOnEditRow1Column1();
     	Thread.sleep(1000);
-    	    
     	accommodationNew.clickOnAllotment();
     	Reporter.log("Clicked on Allotment ",true);
     	Thread.sleep(2000);
@@ -126,31 +123,24 @@ public class TC_19 extends BaseClass {
 	    Reporter.log("Send start date of season_F on allotment page",true);
 	    allotment.sendendDate(UtilityClass.readDataFromStringExcel(148, 1, "Sheet5"));
 	    Reporter.log("Send end date of season_F on allotment page",true);
-    	
 	    Thread.sleep(1000);
  	    allotment.clickOnLoadAllotment();
  	    Reporter.log("Clicked on load allotment",true);
-    	
  	    Thread.sleep(1000);
  	    String initialAllot_F = allotment.getInitialAllotRoom1R1C1();
  	    Allot_Finitial=initialAllot_F;
- 		Thread.sleep(2000);
-    	
+ 		Thread.sleep(2000);	
     	allotment.clickOnchangeAllotment();
     	Reporter.log("Clicked on Change allotment button",true);
     	Thread.sleep(2000);
-    
     	UtilityClass.listBoxHandlingUsingByText("Release_Days", ChangeAllotment.selectChangeAllotmentDropdown());
-    	Thread.sleep(3000);
-   	    
+    	Thread.sleep(3000); 	    
     	WebElement clickOnDropdown = driver.findElement(By.xpath("(//div[@class='btn-group'])[2]//span"));
     	JavascriptExecutor js = (JavascriptExecutor) driver;
     	js.executeScript("arguments[0].click();", clickOnDropdown);
-    	Thread.sleep(1000);
-    	
+    	Thread.sleep(1000);  	
    	    ChangeAllotment.clickOnSelectAllRoomsmultiselectdropdown1();
    	    Thread.sleep(2000);
-	
    	    ChangeAllotment.sendDateFromForRoom1Field(UtilityClass.readDataFromStringExcel(149, 1, "Sheet5"));
    	    Reporter.log("Enter start date for room1",true);
    	    Thread.sleep(500);
@@ -190,29 +180,29 @@ public class TC_19 extends BaseClass {
 	    Reporter.log("Send end date of season_E on allotment page",true);
 	    allotment.clickOnLoadAllotment();
     	
-    	 String expectedInitailAllot_F = UtilityClass.readDataFromStringExcel(152, 1, "Sheet5");
-    	 Assert.assertEquals(Allot_Finitial,expectedInitailAllot_F, "TC failed as Actual allotment and expected allotment are not matching ");
-    	 Reporter.log("Validating Actual initial allotment is "+Allot_Finitial+" and Expected allotment for season_F is "+UtilityClass.readDataFromStringExcel(152, 1, "Sheet5"),true);  
+    	 String expectedInitialAllot_F = UtilityClass.readDataFromStringExcel(150, 1, "Sheet5");
+    	 Assert.assertEquals(Allot_Finitial,expectedInitialAllot_F, "TC failed as Actual allotment and expected allotment are not matching ");
+    	 Reporter.log("Validating Actual initial allotment is "+Allot_Finitial+" and Expected allotment for season_F is "+UtilityClass.readDataFromStringExcel(150, 1, "Sheet5"),true);  
     	    
     	 String ActualCurrentAllot_F = allotment.getCurrentAllotRoom1R1C1();
-    	 String expectedCurrentAllot_F = UtilityClass.readDataFromStringExcel(153, 1, "Sheet5");
+    	 String expectedCurrentAllot_F = UtilityClass.readDataFromStringExcel(151, 1, "Sheet5");
     	 Assert.assertEquals(ActualCurrentAllot_F, expectedCurrentAllot_F,"Test Case Failed as actual and expected current allotment are not matching");
-    	 Reporter.log("Validating Actual current allotment is "+ActualCurrentAllot_F+" and Expected allotment for season_F is "+UtilityClass.readDataFromStringExcel(153, 1, "Sheet5"),true);
+    	 Reporter.log("Validating Actual current allotment is "+ActualCurrentAllot_F+" and Expected allotment for season_F is "+UtilityClass.readDataFromStringExcel(151, 1, "Sheet5"),true);
     	    
     	 String ActualSoldAllot_F = allotment.getSoldAllotRoom1R1C1();
-    	 String expectedSoldAllot_F = UtilityClass.readDataFromStringExcel(154, 1, "Sheet5");
+    	 String expectedSoldAllot_F = UtilityClass.readDataFromStringExcel(152, 1, "Sheet5");
     	 Assert.assertEquals(ActualSoldAllot_F, expectedSoldAllot_F,"Test Case Failed as actual and expected current allotment are not matching");
-    	 Reporter.log("Validating Actual current allotment is "+ActualSoldAllot_F+" and Expected allotment for season_F is "+UtilityClass.readDataFromStringExcel(154, 1, "Sheet5"),true);
+    	 Reporter.log("Validating Actual current allotment is "+ActualSoldAllot_F+" and Expected allotment for season_F is "+UtilityClass.readDataFromStringExcel(152, 1, "Sheet5"),true);
     	    
     	 String ActualRemainingAllot_F = allotment.getRemainingAllotRoom1R1C1();
-    	 String expectedRemainingAllot_F = UtilityClass.readDataFromStringExcel(156, 1, "Sheet5");
+    	 String expectedRemainingAllot_F = UtilityClass.readDataFromStringExcel(154, 1, "Sheet5");
     	 Assert.assertEquals(ActualRemainingAllot_F, expectedRemainingAllot_F,"Test Case Failed as actual & expected remaining allotment are not matching");
-    	 Reporter.log("Validating Actual remaining allotment is "+ActualRemainingAllot_F+" and Expected allotment for season_F is "+UtilityClass.readDataFromStringExcel(156, 1, "Sheet5"),true); 
+    	 Reporter.log("Validating Actual remaining allotment is "+ActualRemainingAllot_F+" and Expected allotment for season_F is "+UtilityClass.readDataFromStringExcel(154, 1, "Sheet5"),true); 
     		
-    	 String ActualReleaseDaysAllot_F = allotment.getReleaseDaysAllotRoom1R1c1();
-    	 String expectedReleaseDaysAllot_F = UtilityClass.readDataFromStringExcel(157, 1, "Sheet5");
+    	 String ActualReleaseDaysAllot_F = allotment.getReleaseDaysAllotRoom1R1C1();
+    	 String expectedReleaseDaysAllot_F = UtilityClass.readDataFromStringExcel(155, 1, "Sheet5");
     	 Assert.assertEquals(ActualReleaseDaysAllot_F, expectedReleaseDaysAllot_F,"Test Case Failed as actual & expected remaining allotment are not matching");
-    	 Reporter.log("Validating Actual Release days allotment is "+ActualReleaseDaysAllot_F+" and Expected allotment for season_F is "+UtilityClass.readDataFromStringExcel(157, 1, "Sheet5"),true); 
+    	 Reporter.log("Validating Actual Release days allotment is "+ActualReleaseDaysAllot_F+" and Expected allotment for season_F is "+UtilityClass.readDataFromStringExcel(155, 1, "Sheet5"),true); 
 	}
 	
     @AfterMethod

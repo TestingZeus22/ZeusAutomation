@@ -33,10 +33,6 @@ import POM.DashboardPage;
 	    bookingMaskPage BookingMask;
 		accommodationListPage accommdationList;
 		bookingUpdatePage bookingupdate;
-		String abc;
-		String ResNo;
-		String ResVer;
-		String SalesBookingNo;
 		
 		@BeforeClass
 		public void launchBrowser(){
@@ -61,7 +57,6 @@ import POM.DashboardPage;
 				Reporter.log("Valid Password Entered",true);
 				login.ClickOnLoginToDashboard();
 				Reporter.log("Clicked on Dashboard button",true);
-				
 				UtilityClass.implicitlyWaitInMillis(1000);
 				UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", selectCompany.SelectDropDownList());
 				Reporter.log("Select the Falk Tours AG from given list",true);
@@ -80,7 +75,7 @@ import POM.DashboardPage;
 	    		salesBookingList.clickOncreateButton();
 	    		Reporter.log("Clicked on create Button in sales Booking page",true);
 	    		Thread.sleep(6000);
-	    		
+	
 	    		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		UtilityClass.implicitlyWaitInMillis(3000);
@@ -94,7 +89,6 @@ import POM.DashboardPage;
 	    		
 	    		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
-	    		
 	    		Thread.sleep(1500);
 	    		
 	    		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
@@ -104,15 +98,12 @@ import POM.DashboardPage;
 	    		UtilityClass.scrollByAxis(0, 300);
 	    		Thread.sleep(1000);
 	    		UtilityClass.implicitlyWaitInMillis(1000);
-	    		
 	    		BookingMask.ClearbookingActionfield();
 	    		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(787, 1, "Sheet2"));
-	    		
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		
 	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
 	    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
-	    		
 	    		BookingMask.clearNoOfPax();
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		
@@ -147,13 +138,12 @@ import POM.DashboardPage;
 	    		Reporter.log("Send Travel To date",true);
 	    		
 	    		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
-	    		Reporter.log("Select Number of passenger",true);
-	            
+	    		Reporter.log("Send Number of passenger",true);
 	            UtilityClass.scrollByAxis(0, 600);
 	            Thread.sleep(1000);
 	           
 	    		BookingMask.sendKOS2(UtilityClass.readDataFromStringExcel(789, 2, "Sheet2"));
-	    		Reporter.log("Send correct KOS in input field",true);
+	    		Reporter.log("Send correct KOS2 in input field",true);
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		
 	    		BookingMask.sendproductCode2(UtilityClass.readDataFromStringExcel(790, 2, "Sheet2"));
@@ -182,7 +172,7 @@ import POM.DashboardPage;
 	    		Reporter.log("Select Number of passenger",true);
 	    		
 	    		BookingMask.sendKOS3(UtilityClass.readDataFromStringExcel(789, 3, "Sheet2"));
-	    		Reporter.log("Send correct KOS in input field",true);
+	    		Reporter.log("Send correct KOS3 in input field",true);
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		
 	    		BookingMask.sendproductCode3(UtilityClass.readDataFromStringExcel(790, 3, "Sheet2"));
@@ -208,24 +198,22 @@ import POM.DashboardPage;
 	    		Reporter.log("Send Travel To date ",true);
 	    		
 	    		driver.findElement(By.id("bookinglines_PassengerNo_4")).sendKeys("1-2");
-	    		Reporter.log("Select Number of passenger",true);
-	            
+	    		Reporter.log("Send Number of passenger",true);
 	            UtilityClass.listBoxHandlingUsingByText("Boy", BookingMask.ListBoxTitleGender());
-	            Thread.sleep(500);
+	            UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendLastName(UtilityClass.readDataFromStringExcel(99, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendFirstName(UtilityClass.readDataFromStringExcel(100, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendCityName(UtilityClass.readDataFromStringExcel(101, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendZipCode(UtilityClass.readDataFromStringExcel(102, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendStreetNo(UtilityClass.readDataFromStringExcel(103, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendPhoneNum(UtilityClass.readDataFromStringExcel(104, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendEmail(UtilityClass.readDataFromStringExcel(105, 4, "Sheet2"));
-
 				UtilityClass.scrollByAxis(0, 900);
 				UtilityClass.implicitlyWaitInMillis(30000);
 				UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
@@ -240,20 +228,16 @@ import POM.DashboardPage;
 		        salesBookingList.clickOnbookingListButton();
 		        Reporter.log("Clicked on Booking listButton",true);
 		        Thread.sleep(23000);
-		        
 		        salesBookingList.sendtbmCodes(UtilityClass.readDataFromStringExcel(790, 1, "Sheet2"));
 		        Reporter.log("Send TBM code",true);
 		        Thread.sleep(9000);
 		        salesBookingList.clickOnbookingListButton();
 		        Reporter.log("Clicked on Booking listButton",true);
 		        UtilityClass.implicitlyWaitInMillis(10000);  
-		      
-		        UtilityClass.implicitlyWaitInMillis(10000);
 		        UtilityClass.scrollByAxis(0, -400);
 		        salesBookingList.clickOneditBooking1();
 		        Reporter.log("Clicked on Edit booking1",true);
 		        UtilityClass.implicitlyWaitInMillis(40000);
-		        
 		        Thread.sleep(8000);
 		        UtilityClass.implicitlyWaitInMillis(40000);
 	            BookingMask.ClearbookingActionfield();
@@ -289,7 +273,7 @@ import POM.DashboardPage;
 	   @AfterMethod
 	   public void Logout() throws InterruptedException
 	   {
-	      Thread.sleep(3000);
+	      Thread.sleep(2000);
 	      BookingMask.ClickOnLogoutButtonOFBookingMask();
 		  Reporter.log("Clicking on Logout Button in Booking Mask page",true);
 		  Thread.sleep(500);

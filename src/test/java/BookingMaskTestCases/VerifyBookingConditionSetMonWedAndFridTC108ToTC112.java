@@ -88,7 +88,6 @@ public class VerifyBookingConditionSetMonWedAndFridTC108ToTC112 extends BaseClas
     		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(436, 4, "Sheet2"));
     		BookingMask.clearNoOfPax();
     		UtilityClass.implicitlyWaitInMillis(1000);
-    		
     		BookingMask.sendNoOfPax(UtilityClass.readDataFromStringExcel(437, 4, "Sheet2"));
     		Reporter.log("Send number of passenger",true);
     		Thread.sleep(1000);
@@ -120,7 +119,7 @@ public class VerifyBookingConditionSetMonWedAndFridTC108ToTC112 extends BaseClas
     		Reporter.log("Send Travel To date",true);
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
-    		Reporter.log("Select Number of passenger",true);
+    		Reporter.log("Send Number of passenger",true);
             
     		UtilityClass.implicitlyWaitInMillis(2000);
             BookingMask.clickOnSendbookingButton();
@@ -187,7 +186,7 @@ public class VerifyBookingConditionSetMonWedAndFridTC108ToTC112 extends BaseClas
     		Reporter.log("Send Travel To date",true);
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
-    		Reporter.log("Select Number of passenger",true);
+    		Reporter.log("Send Number of passenger",true);
             
     		UtilityClass.implicitlyWaitInMillis(2000);
             BookingMask.clickOnSendbookingButton();
@@ -254,7 +253,7 @@ public class VerifyBookingConditionSetMonWedAndFridTC108ToTC112 extends BaseClas
     		Reporter.log("Send Travel To date",true);
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
-    		Reporter.log("Select Number of passenger",true);
+    		Reporter.log("Send Number of passenger",true);
             
     		UtilityClass.implicitlyWaitInMillis(2000);
             BookingMask.clickOnSendbookingButton();
@@ -320,7 +319,7 @@ public class VerifyBookingConditionSetMonWedAndFridTC108ToTC112 extends BaseClas
     		Reporter.log("Send Travel To date",true);
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
-    		Reporter.log("Select Number of passenger",true);
+    		Reporter.log("Send Number of passenger",true);
             
     		UtilityClass.implicitlyWaitInMillis(2000);
             BookingMask.clickOnSendbookingButton();

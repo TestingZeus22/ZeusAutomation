@@ -1,0 +1,2057 @@
+<html>
+<head>
+<title>TestNG:  BookingAllotment1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BookingAllotment1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/18/1</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 17 11:47:15 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>2101 seconds (2101251 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyLoadAllotmentForTwoSeasons_TC03.loginToApp()'><b>loginToApp</b><br>Test class: Booking_AllotmentTestCases.verifyLoadAllotmentForTwoSeasons_TC03<br/>
+<a href="#Output-1642043878" onClick='toggleBox("Output-1642043878", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1642043878" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1642043878">
+Valid Username Entered<br/>
+Valid Password Entered<br/>
+Clicked on Dashboard button<br/>
+Select the Falk Tours AG from given list<br/>
+Clicked on proceed button<br/>
+Clicked on purchase option<br/>
+Clicked on accommodation option in list<br/>
+Clicked on create Accommodation<br/>
+Select TBM code from dropdown list<br/>
+Send hotel stars<br/>
+Select State from the listBox<br/>
+Select City from the listBox<br/>
+Send Zip code<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.93)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8e8751b0f0371f8d64284f551600d714, findElement {using=id, value=AccommodationModel_LocalityModel_Street}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62746}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62746/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e8751b0f0371f8d64284f551600d714
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+	at POM.accommodationNewPage.sendstreet(accommodationNewPage.java:196)
+	at Booking_AllotmentTestCases.verifyLoadAllotmentForTwoSeasons_TC03.loginToApp(verifyLoadAllotmentForTwoSeasons_TC03.java:135)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1642043878", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1642043878'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.93)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8e8751b0f0371f8d64284f551600d714, findElement {using=id, value=AccommodationModel_LocalityModel_Street}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62746}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62746/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e8751b0f0371f8d64284f551600d714
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+	at POM.accommodationNewPage.sendstreet(accommodationNewPage.java:196)
+	at Booking_AllotmentTestCases.verifyLoadAllotmentForTwoSeasons_TC03.loginToApp(verifyLoadAllotmentForTwoSeasons_TC03.java:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>31</td>
+<td>Booking_AllotmentTestCases.verifyLoadAllotmentForTwoSeasons_TC03@6adbc9d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyLoadAllotmentForTwoSeasons_TC03.closeBrowser()'><b>closeBrowser</b><br>Test class: Booking_AllotmentTestCases.verifyLoadAllotmentForTwoSeasons_TC03</td>
+<td></td>
+<td>-1684305613</td>
+<td>Booking_AllotmentTestCases.verifyLoadAllotmentForTwoSeasons_TC03@6adbc9d</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyLoadAllotmentForTwoSeasons_TC03.Logout()'><b>Logout</b><br>Test class: Booking_AllotmentTestCases.verifyLoadAllotmentForTwoSeasons_TC03</td>
+<td></td>
+<td>-1684305613</td>
+<td>Booking_AllotmentTestCases.verifyLoadAllotmentForTwoSeasons_TC03@6adbc9d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyBookingAndAllotmentsTC49TC51TC30.validateBookingCancellationAndAllotment()'><b>validateBookingCancellationAndAllotment</b><br>Test class: Booking_AllotmentTestCases.verifyBookingAndAllotmentsTC49TC51TC30<br/>
+<a href="#Output-320452793" onClick='toggleBox("Output-320452793", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-320452793" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-320452793">
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select TFT1 in TravelType dropdownList<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: HK004 - (TEST)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at utility.UtilityClass.listBoxHandlingUsingByText(UtilityClass.java:150)
+	at Booking_AllotmentTestCases.verifyBookingAndAllotmentsTC49TC51TC30.validateBookingCancellationAndAllotment(verifyBookingAndAllotmentsTC49TC51TC30.java:94)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace320452793", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace320452793'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: HK004 - (TEST)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at utility.UtilityClass.listBoxHandlingUsingByText(UtilityClass.java:150)
+	at Booking_AllotmentTestCases.verifyBookingAndAllotmentsTC49TC51TC30.validateBookingCancellationAndAllotment(verifyBookingAndAllotmentsTC49TC51TC30.java:94)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>24</td>
+<td>Booking_AllotmentTestCases.verifyBookingAndAllotmentsTC49TC51TC30@4ec4f3a0</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09.validateApplyStopSales()'><b>validateApplyStopSales</b><br>Test class: Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09<br/>
+<a href="#Output-1114067878" onClick='toggleBox("Output-1114067878", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1114067878" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1114067878">
+Send start date of season_E on allotment page<br/>
+Send end date of season_E on allotment page<br/>
+Clicked on load allotment<br/>
+Clicked on Change allotment button<br/>
+Enter start date for room1<br/>
+Enter until date for room1<br/>
+Send start date of season_E on allotment page<br/>
+Send end date of season_E on allotment page<br/>
+Clicked on load Allotment<br/>
+Validating Actual initial allotment is 5 and Expected allotment for season_E is 5<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Test Case Failed as actual and expected current allotment are not matching expected [41] but found [5]
+	at Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09.validateApplyStopSales(verifyAllotmentwithRoomBooking_TC07andTC09.java:378)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1114067878", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1114067878'><pre>java.lang.AssertionError: Test Case Failed as actual and expected current allotment are not matching expected [41] but found [5]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09.validateApplyStopSales(verifyAllotmentwithRoomBooking_TC07andTC09.java:378)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>23</td>
+<td>Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09@1623b78d</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyBookingAfterDeleteStopSalesTC17TC18.validateAllotmentsAfterDeleteStopSales()'><b>validateAllotmentsAfterDeleteStopSales</b><br>Test class: Booking_AllotmentTestCases.verifyBookingAfterDeleteStopSalesTC17TC18<br/>
+<a href="#Output-801572386" onClick='toggleBox("Output-801572386", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-801572386" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-801572386">
+Send start date of season_E on allotment page<br/>
+Send end date of season_E on allotment page<br/>
+Clicked on load allotment<br/>
+Clicked on Change allotment button<br/>
+Enter start date for room1<br/>
+Enter until date for room1<br/>
+Clicked on Change allotment button<br/>
+Enter start date for room1<br/>
+Enter until date for room1<br/>
+Validating Actual initial allotment is 5 and Expected allotment for season_E is 5<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Test Case Failed as actual and expected current allotment are not matching expected [43] but found [5]
+	at Booking_AllotmentTestCases.verifyBookingAfterDeleteStopSalesTC17TC18.validateAllotmentsAfterDeleteStopSales(verifyBookingAfterDeleteStopSalesTC17TC18.java:224)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace801572386", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace801572386'><pre>java.lang.AssertionError: Test Case Failed as actual and expected current allotment are not matching expected [43] but found [5]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at Booking_AllotmentTestCases.verifyBookingAfterDeleteStopSalesTC17TC18.validateAllotmentsAfterDeleteStopSales(verifyBookingAfterDeleteStopSalesTC17TC18.java:224)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>45</td>
+<td>Booking_AllotmentTestCases.verifyBookingAfterDeleteStopSalesTC17TC18@c8c12ac</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyBookingAndAllotmentTC28TC29.validateBookingWithValidAllotment()'><b>validateBookingWithValidAllotment</b><br>Test class: Booking_AllotmentTestCases.verifyBookingAndAllotmentTC28TC29<br/>
+<a href="#Output-1014555985" onClick='toggleBox("Output-1014555985", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1014555985" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1014555985">
+Send start date of season_G on allotment page<br/>
+Send end date of season_G on allotment page<br/>
+Clicked on load allotment<br/>
+Clicked on dashboardLink<br/>
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Send Booking action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date for season-E<br/>
+Send Travel To date for season-E<br/>
+Send Number of passenger<br/>
+Click on sendBookingButton<br/>
+Clicked on dashboardLink<br/>
+Clicked on purchase option<br/>
+Clicked on accommodation option in list<br/>
+Clicked on Allotment <br/>
+Send start date of season_G on allotment page<br/>
+Send end date of season_G on allotment page<br/>
+Clicked on load allotment<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual allotment and expected allotment are not matching  expected [3112.00] but found [4444.00]
+	at Booking_AllotmentTestCases.verifyBookingAndAllotmentTC28TC29.validateBookingWithValidAllotment(verifyBookingAndAllotmentTC28TC29.java:248)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1014555985", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1014555985'><pre>java.lang.AssertionError: TC failed as Actual allotment and expected allotment are not matching  expected [3112.00] but found [4444.00]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at Booking_AllotmentTestCases.verifyBookingAndAllotmentTC28TC29.validateBookingWithValidAllotment(verifyBookingAndAllotmentTC28TC29.java:248)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>71</td>
+<td>Booking_AllotmentTestCases.verifyBookingAndAllotmentTC28TC29@1d2adfbe</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26.validateConfirmBookingWhenSeasonAllotIsFull()'><b>validateConfirmBookingWhenSeasonAllotIsFull</b><br>Test class: Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26<br/>
+<a href="#Output-561370431" onClick='toggleBox("Output-561370431", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-561370431" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-561370431">
+Send start date of season_F on allotment page<br/>
+Send end date of season_F on allotment page<br/>
+Clicked on load allotment<br/>
+Clicked on dashboardLink<br/>
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Send Booking action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date for season-H<br/>
+Send Travel To date for season-H<br/>
+Send Number of passenger<br/>
+Click on sendBookingButton<br/>
+Clicked on dashboardLink<br/>
+Clicked on purchase option<br/>
+Clicked on accommodation option in list<br/>
+Clicked on Allotment <br/>
+Send start date of season_H on allotment page<br/>
+Send end date of season_H on allotment page<br/>
+Clicked on load allotment<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ] but found [TEST                                                                            Bereits geleistete Zahlung: 0 EUR.                                              Gesamtreisepreis: 293280 EUR.                                                   Restzahlung: 293280 EUR.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ]
+	at Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26.validateConfirmBookingWhenSeasonAllotIsFull(verifyBookingWhenSeasonAllotIsFull_TC25andTC26.java:374)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace561370431", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace561370431'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ] but found [TEST                                                                            Bereits geleistete Zahlung: 0 EUR.                                              Gesamtreisepreis: 293280 EUR.                                                   Restzahlung: 293280 EUR.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26.validateConfirmBookingWhenSeasonAllotIsFull(verifyBookingWhenSeasonAllotIsFull_TC25andTC26.java:374)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>75</td>
+<td>Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26@77847718</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09.validateIncrDecrAllotWithRoomBooking()'><b>validateIncrDecrAllotWithRoomBooking</b><br>Test class: Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09<br/>
+<a href="#Output-1927767625" onClick='toggleBox("Output-1927767625", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1927767625" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1927767625">
+Send start date of season_B on allotment page<br/>
+Send end date of season_B on allotment page<br/>
+Clicked on load allotment<br/>
+Clicked on Change allotment button<br/>
+Clicked on confirm button<br/>
+Clicked on Ok popup<br/>
+Clicked on close button<br/>
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Send Booking action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date for season-A<br/>
+Send Travel To date for season-A<br/>
+Send Number of passenger<br/>
+Click on sendBookingButton<br/>
+Clicked on dashboardLink<br/>
+Clicked on purchase option<br/>
+Clicked on accommodation option in list<br/>
+Clicked on Allotment <br/>
+Send start date of season_B on allotment page<br/>
+Send end date of season_B on allotment page<br/>
+Validating Actual initial allotment is 20 and Expected allotment for season_B is 20<br/>
+Validating Actual current allotment is 9 and Expected allotment for season_B is 9<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Test Case Failed as actual &amp; expected sold allotment number are not matching expected [9] but found [1]
+	at Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09.validateIncrDecrAllotWithRoomBooking(verifyAllotmentwithRoomBooking_TC07andTC09.java:306)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1927767625", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1927767625'><pre>java.lang.AssertionError: Test Case Failed as actual &amp; expected sold allotment number are not matching expected [9] but found [1]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09.validateIncrDecrAllotWithRoomBooking(verifyAllotmentwithRoomBooking_TC07andTC09.java:306)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>95</td>
+<td>Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09@1623b78d</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyBookingAndAllotmentsTC49TC51TC30.validateBookingMoreThanRemainingAllotment()'><b>validateBookingMoreThanRemainingAllotment</b><br>Test class: Booking_AllotmentTestCases.verifyBookingAndAllotmentsTC49TC51TC30<br/>
+<a href="#Output-972791125" onClick='toggleBox("Output-972791125", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-972791125" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-972791125">
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Send Booking action<br/>
+Send number of passengers<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Select Number of passenger<br/>
+Send correct KOS2 in input field<br/>
+Send correct ProductCode2 for salesline1 in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines<br/>
+Send Travel from date for second line <br/>
+Send Travel To date for second line<br/>
+Send Number of passenger for second line<br/>
+Click on sendBookingButton<br/>
+Clicked on dashboardLink<br/>
+Clicked on purchase option<br/>
+Clicked on accommodation option in list<br/>
+Clicked on Allotment <br/>
+Send start date on allotment page<br/>
+Send end date on allotment page<br/>
+Clicked on load allotment<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected prices are not matching  expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ] but found [TEST                                                                            TEST                                                                            Bereits geleistete Zahlung: 0 EUR.                                              Gesamtreisepreis: 5332 EUR.                                                     Restzahlung: 5332 EUR.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ]
+	at Booking_AllotmentTestCases.verifyBookingAndAllotmentsTC49TC51TC30.validateBookingMoreThanRemainingAllotment(verifyBookingAndAllotmentsTC49TC51TC30.java:723)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace972791125", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace972791125'><pre>java.lang.AssertionError: TC failed as Actual message and expected prices are not matching  expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ] but found [TEST                                                                            TEST                                                                            Bereits geleistete Zahlung: 0 EUR.                                              Gesamtreisepreis: 5332 EUR.                                                     Restzahlung: 5332 EUR.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at Booking_AllotmentTestCases.verifyBookingAndAllotmentsTC49TC51TC30.validateBookingMoreThanRemainingAllotment(verifyBookingAndAllotmentsTC49TC51TC30.java:723)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>58</td>
+<td>Booking_AllotmentTestCases.verifyBookingAndAllotmentsTC49TC51TC30@4ec4f3a0</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44.validateMultisalesLineBookingWhenOneRoomHasAllotment()'><b>validateMultisalesLineBookingWhenOneRoomHasAllotment</b><br>Test class: Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44<br/>
+<a href="#Output-823410011" onClick='toggleBox("Output-823410011", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-823410011" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-823410011">
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Send Booking action<br/>
+Send number of passengers<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Select Number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date <br/>
+Select Number of passenger<br/>
+Click on sendBookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ] but found [TEST                                                                            TEST                                                                            Bereits geleistete Zahlung: 0 EUR.                                              Gesamtreisepreis: 50664 EUR.                                                    Restzahlung: 50664 EUR.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ]
+	at Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44.validateMultisalesLineBookingWhenOneRoomHasAllotment(createNewMultisalesLineBookingWithAllotmentTC43TC44.java:324)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace823410011", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace823410011'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ] but found [TEST                                                                            TEST                                                                            Bereits geleistete Zahlung: 0 EUR.                                              Gesamtreisepreis: 50664 EUR.                                                    Restzahlung: 50664 EUR.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44.validateMultisalesLineBookingWhenOneRoomHasAllotment(createNewMultisalesLineBookingWithAllotmentTC43TC44.java:324)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>30</td>
+<td>Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44@6069db50</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyBookingAfterDeleteStopSalesTC17TC18.validateChangesInAllotmentAfterBooking()'><b>validateChangesInAllotmentAfterBooking</b><br>Test class: Booking_AllotmentTestCases.verifyBookingAfterDeleteStopSalesTC17TC18<br/>
+<a href="#Output-1688300048" onClick='toggleBox("Output-1688300048", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1688300048" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1688300048">
+Send start date of season_E on allotment page<br/>
+Send end date of season_E on allotment page<br/>
+Clicked on load allotment<br/>
+Clicked on Change allotment button<br/>
+Enter start date for room1<br/>
+Enter until date for room1<br/>
+Clicked on Change allotment button<br/>
+Enter start date for room1<br/>
+Enter until date for room1<br/>
+Clicked on dashboardLink<br/>
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Send Booking action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date for season-E<br/>
+Send Travel To date for season-E<br/>
+Send Number of passenger<br/>
+Click on sendBookingButton<br/>
+Clicked on dashboardLink<br/>
+Clicked on purchase option<br/>
+Clicked on accommodation option in list<br/>
+Clicked on Allotment <br/>
+Send start date of season_E on allotment page<br/>
+Send end date of season_E on allotment page<br/>
+Clicked on load allotment<br/>
+Validating Actual price for season-E is 3556.00 and Expected price for season-E is 3556.00<br/>
+Validating Actual initial allotment is 5 and Expected allotment for season_E is 5<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Test Case Failed as actual and expected current allotment are not matching expected [43] but found [5]
+	at Booking_AllotmentTestCases.verifyBookingAfterDeleteStopSalesTC17TC18.validateChangesInAllotmentAfterBooking(verifyBookingAfterDeleteStopSalesTC17TC18.java:454)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1688300048", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1688300048'><pre>java.lang.AssertionError: Test Case Failed as actual and expected current allotment are not matching expected [43] but found [5]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at Booking_AllotmentTestCases.verifyBookingAfterDeleteStopSalesTC17TC18.validateChangesInAllotmentAfterBooking(verifyBookingAfterDeleteStopSalesTC17TC18.java:454)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>109</td>
+<td>Booking_AllotmentTestCases.verifyBookingAfterDeleteStopSalesTC17TC18@c8c12ac</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46.validateMultisalesBookingAllotment()'><b>validateMultisalesBookingAllotment</b><br>Test class: Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46<br/>
+<a href="#Output-1301228797" onClick='toggleBox("Output-1301228797", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1301228797" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1301228797">
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Send Booking action<br/>
+Send number of passengers<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Select Number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date for second line<br/>
+Send Travel To date to second line<br/>
+Send Number of passenger<br/>
+Click on sendBookingButton<br/>
+Clicked on ViewList<br/>
+Clicked on sendTBMcode to verify booking is done or not<br/>
+Clicked on Booking listButton<br/>
+Send TBM code<br/>
+Clicked on Booking listButton<br/>
+Clicked on edit booking1<br/>
+Send Modified Travel from date<br/>
+Send Modified Travel To date<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#bookingline_TravelFrom_2&quot;}
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [594ea80188d072a77bb1104251df3777, findElement {using=id, value=bookingline_TravelFrom_2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:61580}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61580/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 594ea80188d072a77bb1104251df3777
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)
+	at POM.bookingUpdatePage.clearTravelFrom2(bookingUpdatePage.java:94)
+	at Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46.validateMultisalesBookingAllotment(mofifyMultisalesLineBookingTC45TC46.java:393)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1301228797", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1301228797'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#bookingline_TravelFrom_2&quot;}
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [594ea80188d072a77bb1104251df3777, findElement {using=id, value=bookingline_TravelFrom_2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:61580}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61580/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 594ea80188d072a77bb1104251df3777
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)
+	at POM.bookingUpdatePage.clearTravelFrom2(bookingUpdatePage.java:94)
+	at Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46.validateMultisalesBookingAllotment(mofifyMultisalesLineBookingTC45TC46.java:393)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>63</td>
+<td>Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46@158d2680</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithPositiveValue_TC04.validateIncreaseDecreaseAllotmentWithPositiveValue()'><b>validateIncreaseDecreaseAllotmentWithPositiveValue</b><br>Test class: Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithPositiveValue_TC04<br/>
+<a href="#Output-25616980" onClick='toggleBox("Output-25616980", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-25616980" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-25616980">
+Validating Actual initial allotment is 10 and Expected initial allotment is 10<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Test Case Failed as actual and expected current allotment are not matching expected [35] but found [15]
+	at Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithPositiveValue_TC04.validateIncreaseDecreaseAllotmentWithPositiveValue(verifyIncreaseDecreaseAllotwithPositiveValue_TC04.java:179)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace25616980", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace25616980'><pre>java.lang.AssertionError: Test Case Failed as actual and expected current allotment are not matching expected [35] but found [15]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithPositiveValue_TC04.validateIncreaseDecreaseAllotmentWithPositiveValue(verifyIncreaseDecreaseAllotwithPositiveValue_TC04.java:179)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithPositiveValue_TC04@7f3b84b8</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyReleaseDaysTC19.validateReleaseDays()'><b>validateReleaseDays</b><br>Test class: Booking_AllotmentTestCases.verifyReleaseDaysTC19<br/>
+<a href="#Output-1628097656" onClick='toggleBox("Output-1628097656", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1628097656" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1628097656">
+Send start date of season_F on allotment page<br/>
+Send end date of season_F on allotment page<br/>
+Clicked on load allotment<br/>
+Clicked on Change allotment button<br/>
+Enter start date for room1<br/>
+Enter until date for room1<br/>
+Send start date of season_E on allotment page<br/>
+Send end date of season_E on allotment page<br/>
+Validating Actual initial allotment is 6 and Expected allotment for season_F is 6<br/>
+Validating Actual current allotment is 6 and Expected allotment for season_F is 6<br/>
+Validating Actual current allotment is 0 and Expected allotment for season_F is 0<br/>
+Validating Actual remaining allotment is 6 and Expected allotment for season_F is 6<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Test Case Failed as actual &amp; expected remaining allotment are not matching expected [12] but found [0]
+	at Booking_AllotmentTestCases.verifyReleaseDaysTC19.validateReleaseDays(verifyReleaseDaysTC19.java:204)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1628097656", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1628097656'><pre>java.lang.AssertionError: Test Case Failed as actual &amp; expected remaining allotment are not matching expected [12] but found [0]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at Booking_AllotmentTestCases.verifyReleaseDaysTC19.validateReleaseDays(verifyReleaseDaysTC19.java:204)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>21</td>
+<td>Booking_AllotmentTestCases.verifyReleaseDaysTC19@9597028</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44.validateMultisalesLineBookingWhenNoAllotment()'><b>validateMultisalesLineBookingWhenNoAllotment</b><br>Test class: Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44<br/>
+<a href="#Output-766554564" onClick='toggleBox("Output-766554564", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-766554564" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-766554564">
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Send Booking action<br/>
+Send number of passengers<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date <br/>
+Send Number of passenger<br/>
+Click on sendBookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ] but found [TEST                                                                            TEST                                                                            Bereits geleistete Zahlung: 0 EUR.                                              Gesamtreisepreis: 64000 EUR.                                                    Restzahlung: 64000 EUR.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ]
+	at Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44.validateMultisalesLineBookingWhenNoAllotment(createNewMultisalesLineBookingWithAllotmentTC43TC44.java:196)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace766554564", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace766554564'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ] but found [TEST                                                                            TEST                                                                            Bereits geleistete Zahlung: 0 EUR.                                              Gesamtreisepreis: 64000 EUR.                                                    Restzahlung: 64000 EUR.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44.validateMultisalesLineBookingWhenNoAllotment(createNewMultisalesLineBookingWithAllotmentTC43TC44.java:196)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>33</td>
+<td>Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44@6069db50</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26.validateBookingInquiryWhenSeasonAllotIsFull()'><b>validateBookingInquiryWhenSeasonAllotIsFull</b><br>Test class: Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26<br/>
+<a href="#Output-1763619721" onClick='toggleBox("Output-1763619721", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1763619721" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1763619721">
+Send start date of season_F on allotment page<br/>
+Send end date of season_F on allotment page<br/>
+Clicked on load allotment<br/>
+Clicked on dashboardLink<br/>
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Send Booking action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date for season-H<br/>
+Send Travel To date for season-H<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+Clicked on dashboardLink<br/>
+Clicked on purchase option<br/>
+Clicked on accommodation option in list<br/>
+Clicked on Allotment <br/>
+Send start date of season_H on allotment page<br/>
+Send end date of season_H on allotment page<br/>
+Clicked on load allotment<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ] but found [TEST                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ]
+	at Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26.validateBookingInquiryWhenSeasonAllotIsFull(verifyBookingWhenSeasonAllotIsFull_TC25andTC26.java:229)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1763619721", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1763619721'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ] but found [TEST                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26.validateBookingInquiryWhenSeasonAllotIsFull(verifyBookingWhenSeasonAllotIsFull_TC25andTC26.java:229)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>64</td>
+<td>Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26@77847718</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46.validateModifiedMultisalesBookingPrice()'><b>validateModifiedMultisalesBookingPrice</b><br>Test class: Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46<br/>
+<a href="#Output-576909528" onClick='toggleBox("Output-576909528", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-576909528" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-576909528">
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Send Booking action<br/>
+Send number of passengers<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Send correct KOS2 in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date to second line<br/>
+Send Travel To date to second line<br/>
+Send Number of passenger<br/>
+Click on sendBookingButton<br/>
+Clicked on ViewList<br/>
+Clicked on sendTBMcode to verify booking is done or not<br/>
+Clicked on Booking listButton<br/>
+Send TBM code<br/>
+Clicked on Booking listButton<br/>
+Clicked on edit booking1<br/>
+Send Modified Travel from date<br/>
+Send Modified Travel To date<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#bookingline_TravelFrom_2&quot;}
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [594ea80188d072a77bb1104251df3777, findElement {using=id, value=bookingline_TravelFrom_2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:61580}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61580/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 594ea80188d072a77bb1104251df3777
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)
+	at POM.bookingUpdatePage.clearTravelFrom2(bookingUpdatePage.java:94)
+	at Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46.validateModifiedMultisalesBookingPrice(mofifyMultisalesLineBookingTC45TC46.java:226)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace576909528", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace576909528'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#bookingline_TravelFrom_2&quot;}
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [594ea80188d072a77bb1104251df3777, findElement {using=id, value=bookingline_TravelFrom_2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:61580}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61580/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 594ea80188d072a77bb1104251df3777
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)
+	at POM.bookingUpdatePage.clearTravelFrom2(bookingUpdatePage.java:94)
+	at Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46.validateModifiedMultisalesBookingPrice(mofifyMultisalesLineBookingTC45TC46.java:226)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>68</td>
+<td>Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46@158d2680</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithNegativeValue_TC05.validateIncreaseDecreaseAllotmentWithNegativeValue()'><b>validateIncreaseDecreaseAllotmentWithNegativeValue</b><br>Test class: Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithNegativeValue_TC05<br/>
+<a href="#Output-2104685993" onClick='toggleBox("Output-2104685993", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2104685993" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2104685993">
+Validating Actual initial allotment is 20 and Expected allotment for season_B is 20<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Test Case Failed as actual &amp; expected allotment number are not matching for season_A expected [15] but found [4]
+	at Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithNegativeValue_TC05.validateIncreaseDecreaseAllotmentWithNegativeValue(verifyIncreaseDecreaseAllotwithNegativeValue_TC05.java:180)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2104685993", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2104685993'><pre>java.lang.AssertionError: Test Case Failed as actual &amp; expected allotment number are not matching for season_A expected [15] but found [4]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithNegativeValue_TC05.validateIncreaseDecreaseAllotmentWithNegativeValue(verifyIncreaseDecreaseAllotwithNegativeValue_TC05.java:180)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithNegativeValue_TC05@4550bb58</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyBookingAndAllotmentsTC49TC51TC30.validateBookingAfterIncreaseInAllotment()'><b>validateBookingAfterIncreaseInAllotment</b><br>Test class: Booking_AllotmentTestCases.verifyBookingAndAllotmentsTC49TC51TC30<br/>
+<a href="#Output-464171441" onClick='toggleBox("Output-464171441", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-464171441" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-464171441">
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Send Booking action<br/>
+Send number of passengers<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Select Number of passenger<br/>
+Send correct KOS2 in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines<br/>
+Send Travel from date for second line<br/>
+Send Travel To date for second line<br/>
+Send Number of passenger<br/>
+Click on sendBookingButton<br/>
+Clicked on dashboardLink<br/>
+Clicked on purchase option<br/>
+Clicked on accommodation option in list<br/>
+Clicked on Allotment <br/>
+Clicked on Change allotment button<br/>
+Clicked on confirm button<br/>
+Clicked on Ok popup<br/>
+Clicked on close button<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Send Booking action<br/>
+Send number of passengers<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Select Number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines<br/>
+Send Travel from date <br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Click on sendBookingButton<br/>
+Validating Actual price for room1 is 7112.00 and Expected Price for room1 is 7112.00<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Test Case Failed as actual &amp; expected Price are not matching expected [2224.00] but found [6668.00]
+	at Booking_AllotmentTestCases.verifyBookingAndAllotmentsTC49TC51TC30.validateBookingAfterIncreaseInAllotment(verifyBookingAndAllotmentsTC49TC51TC30.java:571)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace464171441", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace464171441'><pre>java.lang.AssertionError: Test Case Failed as actual &amp; expected Price are not matching expected [2224.00] but found [6668.00]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at Booking_AllotmentTestCases.verifyBookingAndAllotmentsTC49TC51TC30.validateBookingAfterIncreaseInAllotment(verifyBookingAndAllotmentsTC49TC51TC30.java:571)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>101</td>
+<td>Booking_AllotmentTestCases.verifyBookingAndAllotmentsTC49TC51TC30@4ec4f3a0</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.createNewMultisalesLineBookingTC42.validateMultisalesLineBookingWhenAllotIsAvailable()'><b>validateMultisalesLineBookingWhenAllotIsAvailable</b><br>Test class: Booking_AllotmentTestCases.createNewMultisalesLineBookingTC42<br/>
+<a href="#Output-763355904" onClick='toggleBox("Output-763355904", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-763355904" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-763355904">
+Valid Username Entered<br/>
+Valid Password Entered<br/>
+Clicked on Dashboard button<br/>
+Select the Falk Tours AG from given list<br/>
+Clicked on proceed button<br/>
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Send Booking action<br/>
+Send number of passengers<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Send correct KOS2 in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines<br/>
+Send Travel from date to second line<br/>
+Send Travel To date to second line<br/>
+Send Number of passenger<br/>
+Click on sendBookingButton<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#bookinglines_Price_1&quot;}
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a22cf1e6122e5384dc591f9d6de8316b, findElement {using=id, value=bookinglines_Price_1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62230}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62230/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a22cf1e6122e5384dc591f9d6de8316b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.getAttribute(Unknown Source)
+	at POM.bookingMaskPage.getPriceFieldValue1(bookingMaskPage.java:475)
+	at Booking_AllotmentTestCases.createNewMultisalesLineBookingTC42.validateMultisalesLineBookingWhenAllotIsAvailable(createNewMultisalesLineBookingTC42.java:186)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace763355904", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace763355904'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#bookinglines_Price_1&quot;}
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a22cf1e6122e5384dc591f9d6de8316b, findElement {using=id, value=bookinglines_Price_1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62230}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62230/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a22cf1e6122e5384dc591f9d6de8316b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.getAttribute(Unknown Source)
+	at POM.bookingMaskPage.getPriceFieldValue1(bookingMaskPage.java:475)
+	at Booking_AllotmentTestCases.createNewMultisalesLineBookingTC42.validateMultisalesLineBookingWhenAllotIsAvailable(createNewMultisalesLineBookingTC42.java:186)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>59</td>
+<td>Booking_AllotmentTestCases.createNewMultisalesLineBookingTC42@5c33f1a9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyBookingAndAllotmentTC28TC29.validateBookingErrorMsgWhenAllRoomsAreBooked()'><b>validateBookingErrorMsgWhenAllRoomsAreBooked</b><br>Test class: Booking_AllotmentTestCases.verifyBookingAndAllotmentTC28TC29<br/>
+<a href="#Output-2040609056" onClick='toggleBox("Output-2040609056", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2040609056" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2040609056">
+Send start date of season_E on allotment page<br/>
+Send end date of season_E on allotment page<br/>
+Clicked on load allotment<br/>
+Clicked on Change allotment button<br/>
+Enter start date for room1<br/>
+Enter until date for room1<br/>
+Clicked on dashboardLink<br/>
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Send Booking action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date for season-E<br/>
+Send Travel To date for season-E<br/>
+Send Number of passenger<br/>
+Click on sendBookingButton<br/>
+Clicked on dashboardLink<br/>
+Clicked on purchase option<br/>
+Clicked on accommodation option in list<br/>
+Clicked on Allotment <br/>
+Send start date of season_E on allotment page<br/>
+Send end date of season_E on allotment page<br/>
+Clicked on load allotment<br/>
+Validating Actual Message for season-E is Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                 and Expected Message for season-E is Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                <br/>
+</div>
+</td>
+<td></td>
+<td>92</td>
+<td>Booking_AllotmentTestCases.verifyBookingAndAllotmentTC28TC29@1d2adfbe</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48.validateMultisalesLineBookingWhenOneRoomHasAllotment()'><b>validateMultisalesLineBookingWhenOneRoomHasAllotment</b><br>Test class: Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48<br/>
+<a href="#Output-1007414446" onClick='toggleBox("Output-1007414446", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1007414446" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1007414446">
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Send Booking action<br/>
+Send number of passengers<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date <br/>
+Send Number of passenger<br/>
+Click on sendBookingButton<br/>
+Clicked on ViewList<br/>
+Clicked on sendTBMcode to verify booking is done or not<br/>
+Clicked on Booking listButton<br/>
+Send TBM code<br/>
+Clicked on Booking listButton<br/>
+Clicked on edit booking1<br/>
+Send Modified Travel from date<br/>
+Send Modified Travel To date<br/>
+Send Modified Travel from date<br/>
+Send Modified Travel To date<br/>
+Click on sendBookingButton<br/>
+Validating Actual Message for season-E is Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                 and Expected Message for season-E is Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                <br/>
+</div>
+</td>
+<td></td>
+<td>54</td>
+<td>Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48@7f0eb4b4</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12.validateBookingAfterStopSalesWithDatesInsideStopSalesDuration()'><b>validateBookingAfterStopSalesWithDatesInsideStopSalesDuration</b><br>Test class: Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12<br/>
+<a href="#Output-1418164690" onClick='toggleBox("Output-1418164690", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1418164690" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1418164690">
+Send start date of season_E on allotment page<br/>
+Send end date of season_E on allotment page<br/>
+Clicked on load allotment<br/>
+Clicked on Change allotment button<br/>
+Enter start date for room1<br/>
+Enter until date for room1<br/>
+Clicked on dashboardLink<br/>
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Send Booking action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date for season-E<br/>
+Send Travel To date for season-E<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+Validating Actual message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                 and Expected message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       <br/>
+</div>
+</td>
+<td></td>
+<td>60</td>
+<td>Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12@223191a6</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48.validateMultisalesLineBookingWhenNoAllotment()'><b>validateMultisalesLineBookingWhenNoAllotment</b><br>Test class: Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48<br/>
+<a href="#Output-1535877586" onClick='toggleBox("Output-1535877586", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1535877586" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1535877586">
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Send Booking action<br/>
+Send number of passengers<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date <br/>
+Send Number of passenger<br/>
+Click on sendBookingButton<br/>
+Clicked on ViewList<br/>
+Clicked on sendTBMcode to verify booking is done or not<br/>
+Clicked on Booking listButton<br/>
+Send TBM code<br/>
+Clicked on Booking listButton<br/>
+Clicked on edit booking1<br/>
+Send Modified Travel from date<br/>
+Send Modified Travel To date<br/>
+Send Modified Travel from date<br/>
+Send Modified Travel To date<br/>
+Click on sendBookingButton<br/>
+Validating Actual Message for season-E is Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                 and Expected Message for season-E is Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                <br/>
+</div>
+</td>
+<td></td>
+<td>55</td>
+<td>Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48@7f0eb4b4</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithAnyValue_TC06.validateIncreaseDecreaseAllotmentWithAnyValue()'><b>validateIncreaseDecreaseAllotmentWithAnyValue</b><br>Test class: Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithAnyValue_TC06<br/>
+<a href="#Output-1168717285" onClick='toggleBox("Output-1168717285", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1168717285" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1168717285">
+Send start date of season_B on allotment page<br/>
+Send end date of season_B on allotment page<br/>
+Clicked on load allotment<br/>
+Clicked on Change allotment button<br/>
+Clicked on confirm button<br/>
+Clicked on Ok popup<br/>
+Clicked on close button<br/>
+Validating Actual initial allotment is 3 and Expected allotment for season_C is 3<br/>
+Validating Actual current allotment is 11 and Expected allotment for season_C is 11<br/>
+Validating Actual remaining allotment is 11 and Expected allotment for season_C is 11<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithAnyValue_TC06@49139829</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12.validateBookingAfterStopSalesWithDatesOutsideStopSalesDuration()'><b>validateBookingAfterStopSalesWithDatesOutsideStopSalesDuration</b><br>Test class: Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12<br/>
+<a href="#Output-45104575" onClick='toggleBox("Output-45104575", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-45104575" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-45104575">
+Send start date of season_E on allotment page<br/>
+Send end date of season_E on allotment page<br/>
+Clicked on load allotment<br/>
+Clicked on Change allotment button<br/>
+Enter start date for room1<br/>
+Enter until date for room1<br/>
+Clicked on dashboardLink<br/>
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Send Booking action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date for season-E<br/>
+Send Travel To date for season-E<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+Validating Actual price for season-E is 3556.00 and Expected price for season-E is 3556.00<br/>
+</div>
+</td>
+<td></td>
+<td>57</td>
+<td>Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12@223191a6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyLoadAllotmentForTwoSeasons_TC03.validateAllotmentForTwoSeasonDates()'><b>validateAllotmentForTwoSeasonDates</b><br>Test class: Booking_AllotmentTestCases.verifyLoadAllotmentForTwoSeasons_TC03</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.93)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8e8751b0f0371f8d64284f551600d714, findElement {using=id, value=AccommodationModel_LocalityModel_Street}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62746}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62746/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e8751b0f0371f8d64284f551600d714
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+	at POM.accommodationNewPage.sendstreet(accommodationNewPage.java:196)
+	at Booking_AllotmentTestCases.verifyLoadAllotmentForTwoSeasons_TC03.loginToApp(verifyLoadAllotmentForTwoSeasons_TC03.java:135)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace93210841", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace93210841'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=113.0.5672.93)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8e8751b0f0371f8d64284f551600d714, findElement {using=id, value=AccommodationModel_LocalityModel_Street}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62746}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62746/devtoo..., se:cdpVersion: 113.0.5672.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8e8751b0f0371f8d64284f551600d714
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+	at POM.accommodationNewPage.sendstreet(accommodationNewPage.java:196)
+	at Booking_AllotmentTestCases.verifyLoadAllotmentForTwoSeasons_TC03.loginToApp(verifyLoadAllotmentForTwoSeasons_TC03.java:135)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>Booking_AllotmentTestCases.verifyLoadAllotmentForTwoSeasons_TC03@6adbc9d</td></tr>
+</table><p>
+</body>
+</html>

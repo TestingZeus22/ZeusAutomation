@@ -149,67 +149,66 @@
 	    		Reporter.log("Send Travel To date",true);
 	    		
 	    		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-5");
-	    		Reporter.log("Select Number of passenger",true);
+	    		Reporter.log("Send Number of passenger",true);
 	    		UtilityClass.scrollByAxis(0, 600);
 	            Thread.sleep(1000);
 	            
 	            UtilityClass.listBoxHandlingUsingByText("Herr", BookingMask.genderSelectDropdown1());
-	        	Thread.sleep(500);
+	            UtilityClass.implicitlyWaitInsec(30);
 	            BookingMask.sendlastNameFieldData1(UtilityClass.readDataFromStringExcel(693, 1, "Sheet2"));
-				Thread.sleep(500);
+	            UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendfirstNameFieldData1(UtilityClass.readDataFromStringExcel(694, 1, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendAgeFieldData1(UtilityClass.readDataFromStringExcel(695, 1, "Sheet2"));
 				Thread.sleep(500);
 	            
 				UtilityClass.listBoxHandlingUsingByText("Frau", BookingMask.genderSelectDropdown2());
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 	            BookingMask.sendlastNameFieldData2(UtilityClass.readDataFromStringExcel(697, 1, "Sheet2"));
-				Thread.sleep(500);
+	            UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendfirstNameFieldData2(UtilityClass.readDataFromStringExcel(698, 1, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendAgeFieldData2(UtilityClass.readDataFromStringExcel(699, 1, "Sheet2"));
 				Thread.sleep(500);
 	            
 				UtilityClass.listBoxHandlingUsingByText("Frau", BookingMask.genderSelectDropdown3());
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 	            BookingMask.sendlastNameFieldData3(UtilityClass.readDataFromStringExcel(701, 1, "Sheet2"));
-				Thread.sleep(500);
+	            UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendfirstNameFieldData3(UtilityClass.readDataFromStringExcel(702, 1, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendAgeFieldData3(UtilityClass.readDataFromStringExcel(703, 1, "Sheet2"));
 				Thread.sleep(500);
 				
 				UtilityClass.listBoxHandlingUsingByText("Kind", BookingMask.genderSelectDropdown4());
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 	            BookingMask.sendlastNameFieldData4(UtilityClass.readDataFromStringExcel(705, 1, "Sheet2"));
-				Thread.sleep(500);
+	            UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendfirstNameFieldData4(UtilityClass.readDataFromStringExcel(706, 1, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendAgeFieldData4(UtilityClass.readDataFromStringExcel(707, 1, "Sheet2"));
 				Thread.sleep(500);
 				
 				UtilityClass.listBoxHandlingUsingByText("Kind", BookingMask.genderSelectDropdown5());
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 	            BookingMask.sendlastNameFieldData5(UtilityClass.readDataFromStringExcel(709, 1, "Sheet2"));
-				Thread.sleep(500);
+	            UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendfirstNameFieldData5(UtilityClass.readDataFromStringExcel(710, 1, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendAgeFieldData5(UtilityClass.readDataFromStringExcel(711, 1, "Sheet2"));
 				Thread.sleep(500);
 				
 	            UtilityClass.listBoxHandlingUsingByText("Frau", BookingMask.ListBoxTitleGender());
-	            Thread.sleep(500);
+	            UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendCityName(UtilityClass.readDataFromStringExcel(101, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendZipCode(UtilityClass.readDataFromStringExcel(102, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendStreetNo(UtilityClass.readDataFromStringExcel(103, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendPhoneNum(UtilityClass.readDataFromStringExcel(104, 4, "Sheet2"));
 				Thread.sleep(500);
 				BookingMask.sendEmail(UtilityClass.readDataFromStringExcel(105, 4, "Sheet2"));
-				
 				UtilityClass.scrollByAxis(0, 900);
 				UtilityClass.implicitlyWaitInMillis(20000);
 				UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
@@ -217,7 +216,6 @@
 	            Thread.sleep(3000);
 	            String ActualPrice = bookingupdate.getPriceFieldValue1("value");
 	            ActualPrices=ActualPrice;
-	            
 	            UtilityClass.implicitlyWaitInMillis(30000);
 		        String ResNo=BookingMask.getReservationNoBM("value");
 		        String ResVer=BookingMask.getReservationVerNoBM("value");
@@ -306,16 +304,16 @@
 		            Thread.sleep(1000);
 		            
 		            UtilityClass.listBoxHandlingUsingByText("Herr", BookingMask.genderSelectDropdown1());
-		        	Thread.sleep(500);
+		            UtilityClass.implicitlyWaitInsec(30);
 		            BookingMask.sendlastNameFieldData1(UtilityClass.readDataFromStringExcel(693, 2, "Sheet2"));
-					Thread.sleep(500);
+		            UtilityClass.implicitlyWaitInsec(30);
 					BookingMask.sendfirstNameFieldData1(UtilityClass.readDataFromStringExcel(694, 2, "Sheet2"));
-					Thread.sleep(500);
+					UtilityClass.implicitlyWaitInsec(30);
 					BookingMask.sendAgeFieldData1(UtilityClass.readDataFromStringExcel(695, 2, "Sheet2"));
 					Thread.sleep(500);
 		            
 		            UtilityClass.listBoxHandlingUsingByText("Frau", BookingMask.ListBoxTitleGender());
-		            Thread.sleep(500);
+		            UtilityClass.implicitlyWaitInsec(30);
 					BookingMask.sendCityName(UtilityClass.readDataFromStringExcel(101, 4, "Sheet2"));
 					Thread.sleep(500);
 					BookingMask.sendZipCode(UtilityClass.readDataFromStringExcel(102, 4, "Sheet2"));
@@ -422,42 +420,41 @@
 		            Thread.sleep(1000);
 		            
 		            UtilityClass.listBoxHandlingUsingByText("Herr", BookingMask.genderSelectDropdown1());
-		        	Thread.sleep(500);
+		            UtilityClass.implicitlyWaitInsec(30);
 		            BookingMask.sendlastNameFieldData1(UtilityClass.readDataFromStringExcel(693, 3, "Sheet2"));
-					Thread.sleep(500);
+		            UtilityClass.implicitlyWaitInsec(30);
 					BookingMask.sendfirstNameFieldData1(UtilityClass.readDataFromStringExcel(694, 3, "Sheet2"));
-					Thread.sleep(500);
+					UtilityClass.implicitlyWaitInsec(30);
 					BookingMask.sendAgeFieldData1(UtilityClass.readDataFromStringExcel(695, 3, "Sheet2"));
 					Thread.sleep(500);
 		            
 					UtilityClass.listBoxHandlingUsingByText("Kind", BookingMask.genderSelectDropdown2());
-					Thread.sleep(500);
+					UtilityClass.implicitlyWaitInsec(30);
 		            BookingMask.sendlastNameFieldData2(UtilityClass.readDataFromStringExcel(697, 1, "Sheet2"));
-					Thread.sleep(500);
+		            UtilityClass.implicitlyWaitInsec(30);
 					BookingMask.sendfirstNameFieldData2(UtilityClass.readDataFromStringExcel(798, 1, "Sheet2"));
-					Thread.sleep(500);
+					UtilityClass.implicitlyWaitInsec(30);
 					BookingMask.sendAgeFieldData2(UtilityClass.readDataFromStringExcel(699, 1, "Sheet2"));
 					Thread.sleep(500);
 					
 		            UtilityClass.listBoxHandlingUsingByText("Frau", BookingMask.ListBoxTitleGender());
-		            Thread.sleep(500);
+		            UtilityClass.implicitlyWaitInsec(30);
 					BookingMask.sendCityName(UtilityClass.readDataFromStringExcel(101, 4, "Sheet2"));
-					Thread.sleep(500);
+					UtilityClass.implicitlyWaitInsec(30);
 					BookingMask.sendZipCode(UtilityClass.readDataFromStringExcel(102, 4, "Sheet2"));
-					Thread.sleep(500);
+					UtilityClass.implicitlyWaitInsec(30);
 					BookingMask.sendStreetNo(UtilityClass.readDataFromStringExcel(103, 4, "Sheet2"));
-					Thread.sleep(500);
+					UtilityClass.implicitlyWaitInsec(30);
 					BookingMask.sendPhoneNum(UtilityClass.readDataFromStringExcel(104, 4, "Sheet2"));
-					Thread.sleep(500);
+					UtilityClass.implicitlyWaitInsec(30);
 					BookingMask.sendEmail(UtilityClass.readDataFromStringExcel(105, 4, "Sheet2"));
-					
 					UtilityClass.scrollByAxis(0, 900);
 					UtilityClass.implicitlyWaitInMillis(20000);
 					UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
 		    		Reporter.log("Click on sendBookingButton ",true);  
-		           Thread.sleep(3000);
-		           String ActualPrice = bookingupdate.getPriceFieldValue1("value");
-		           ActualPrices=ActualPrice;
+		            Thread.sleep(3000);
+		            String ActualPrice = bookingupdate.getPriceFieldValue1("value");
+		            ActualPrices=ActualPrice;
 		            
 		            UtilityClass.implicitlyWaitInMillis(30000);
 			        String ResNo=BookingMask.getReservationNoBM("value");
@@ -542,56 +539,56 @@
 	    		Reporter.log("Send Travel To date",true);
 	    		
 	    		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-3");
-	    		Reporter.log("Select Number of passenger",true);
+	    		Reporter.log("Send Number of passenger",true);
 	    		UtilityClass.scrollByAxis(0, 600);
 	            Thread.sleep(1000);
 	            
 	            UtilityClass.listBoxHandlingUsingByText("Herr", BookingMask.genderSelectDropdown1());
-	        	Thread.sleep(500);
+	            UtilityClass.implicitlyWaitInsec(30);
 	            BookingMask.sendlastNameFieldData1(UtilityClass.readDataFromStringExcel(693, 4, "Sheet2"));
-				Thread.sleep(500);
+	            UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendfirstNameFieldData1(UtilityClass.readDataFromStringExcel(694, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendAgeFieldData1(UtilityClass.readDataFromStringExcel(695, 4, "Sheet2"));
 				Thread.sleep(500);
 	            
 				UtilityClass.listBoxHandlingUsingByText("Kind", BookingMask.genderSelectDropdown2());
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 	            BookingMask.sendlastNameFieldData2(UtilityClass.readDataFromStringExcel(697, 4, "Sheet2"));
-				Thread.sleep(500);
+	            UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendfirstNameFieldData2(UtilityClass.readDataFromStringExcel(698, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendAgeFieldData2(UtilityClass.readDataFromStringExcel(699, 4, "Sheet2"));
 				Thread.sleep(500);
 	            
 				UtilityClass.listBoxHandlingUsingByText("Kind", BookingMask.genderSelectDropdown3());
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 	            BookingMask.sendlastNameFieldData3(UtilityClass.readDataFromStringExcel(701, 4, "Sheet2"));
-				Thread.sleep(500);
+	            UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendfirstNameFieldData3(UtilityClass.readDataFromStringExcel(702, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendAgeFieldData3(UtilityClass.readDataFromStringExcel(703, 4, "Sheet2"));
 				Thread.sleep(500);
 				
 				UtilityClass.listBoxHandlingUsingByText("Frau", BookingMask.ListBoxTitleGender());
-		        Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendCityName(UtilityClass.readDataFromStringExcel(101, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendZipCode(UtilityClass.readDataFromStringExcel(102, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendStreetNo(UtilityClass.readDataFromStringExcel(103, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendPhoneNum(UtilityClass.readDataFromStringExcel(104, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendEmail(UtilityClass.readDataFromStringExcel(105, 4, "Sheet2"));
 					
 				UtilityClass.scrollByAxis(0, 900);
 				UtilityClass.implicitlyWaitInMillis(20000);
 				UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
 	    		Reporter.log("Click on sendBookingButton ",true);  
-	           Thread.sleep(3000);
-	           String ActualPrice = bookingupdate.getPriceFieldValue1("value");
-	           ActualPrices=ActualPrice;
+	            Thread.sleep(3000);
+	            String ActualPrice = bookingupdate.getPriceFieldValue1("value");
+	            ActualPrices=ActualPrice;
 	            
 	            UtilityClass.implicitlyWaitInMillis(30000);
 		        String ResNo=BookingMask.getReservationNoBM("value");

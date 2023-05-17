@@ -48,7 +48,6 @@ public class bookingMaskPage {
 	@FindBy (id="bookinglines_TBMCodeID_2") private WebElement productCode1;
 	@FindBy (id="bookinglines_RoomID_2") private WebElement roomCode1;
 	@FindBy (id="bookinglines_BoardTypeID_2") private WebElement board1;
-	//@FindBy (id="bookinglines_Occupancy_2") private WebElement clearoccupancy1;
 	@FindBy (id="bookinglines_Occupancy_2") private WebElement occupancy1;
 	@FindBy (id="bookinglines_Occupancy_1") private WebElement clearoccupancyAtBookingUpdate;
 	@FindBy (id="bookinglines_Occupancy_1") private WebElement occupancyAtBookingUpdate;

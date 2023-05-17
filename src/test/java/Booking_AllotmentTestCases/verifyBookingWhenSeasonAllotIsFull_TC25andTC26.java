@@ -59,7 +59,7 @@ public class verifyBookingWhenSeasonAllotIsFull_TC25andTC26 extends BaseClass {
 	roomsPage room;
 	allotmentPage allotment;
 	String Allot_Hinitial;
-	 String ActualMessage;
+	String ActualMessage;
 	
 	@BeforeClass
 	public void launchBrowser(){
@@ -88,55 +88,48 @@ public class verifyBookingWhenSeasonAllotIsFull_TC25andTC26 extends BaseClass {
 	@BeforeMethod
 	public void loginToApp() throws EncryptedDocumentException, IOException, InterruptedException
 	{
-		login.SendUserName(UtilityClass.readDataFromStringExcel(2, 0, "Sheet1"));
+		login.SendUserName(UtilityClass.readDataFromStringExcel(5, 1, "Sheet2"));
 		Reporter.log("Valid Username Entered",true);
-		login.SendPassword(UtilityClass.readDataFromStringExcel(2, 1, "Sheet1"));
+		login.SendPassword(UtilityClass.readDataFromStringExcel(6, 1, "Sheet2"));
 		Reporter.log("Valid Password Entered",true);
 		login.ClickOnLoginToDashboard();
 		Reporter.log("Clicked on Dashboard button",true);
 		UtilityClass.implicitlyWaitInMillis(1000);
-		
 		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", selectCompany.SelectDropDownList());
 		Reporter.log("Select the Falk Tours AG from given list",true);
 		UtilityClass.implicitlyWaitInMillis(1000);
 		selectCompany.ClickOnProceedButton();
 		Reporter.log("Clicked on proceed button",true);	
 		Thread.sleep(9500);
-		
         dashboard.clickOnpurchasebutton();
         Reporter.log("Clicked on purchase option",true);
 		Thread.sleep(1000);
         dashboard.clickOnAccommodation();
         Reporter.log("Clicked on accommodation option in list",true);
-        Thread.sleep(2000);
-    	   
+        Thread.sleep(2000);  
     	accommdationList.sendTbmCodeField(UtilityClass.readDataFromStringExcel(55, 1, "Sheet5"));
     	Thread.sleep(4000);
     	accommdationList.clickOnEditRow1Column1();
-    	Thread.sleep(1000);
-    	    
+    	Thread.sleep(1000);  
     	accommodationNew.clickOnAllotment();
     	Reporter.log("Clicked on Allotment ",true);
     	Thread.sleep(2000);
 	}
 
-	@Test  //TC_25
+	@Test (priority=1) //TC_25
 	public void validateBookingInquiryWhenSeasonAllotIsFull() throws EncryptedDocumentException, IOException, InterruptedException {
 	
 		allotment.sendStartDate(UtilityClass.readDataFromStringExcel(159, 1, "Sheet5"));
 	    Reporter.log("Send start date of season_F on allotment page",true);
 	    allotment.sendendDate(UtilityClass.readDataFromStringExcel(160, 1, "Sheet5"));
 	    Reporter.log("Send end date of season_F on allotment page",true);
-    	
 	    Thread.sleep(1000);
  	    allotment.clickOnLoadAllotment();
  	    Reporter.log("Clicked on load allotment",true);
-    	
  	    Thread.sleep(1000);
  	    String initialAllot_H = allotment.getInitialAllotRoom1R1C1();
  	    Allot_Hinitial=initialAllot_H;
  		Thread.sleep(2000);
-    
  		allotment.clickOnDashboardLink();
  		Reporter.log("Clicked on dashboardLink",true);
  		Thread.sleep(9500);
@@ -196,22 +189,18 @@ public class verifyBookingWhenSeasonAllotIsFull_TC25andTC26 extends BaseClass {
  		Reporter.log("Send Travel To date for season-H",true);
  		
  		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
- 		Reporter.log("Select Number of passenger",true);
- 	    
+ 		Reporter.log("Send Number of passenger",true);
  		UtilityClass.implicitlyWaitInMillis(2000);
         BookingMask.clickOnSendbookingButton();
         Reporter.log("Clicked on sendbookingButton",true);
         UtilityClass.scrollByAxis(0, 600);
- 	    
         Thread.sleep(2000);
         String ActualMessage = BookingMask.getInvalidTravelDurationNoPriceInfoMsg();
         System.out.println("Message on BM PAGE IS "+ActualMessage);
-        
  	    Thread.sleep(1000);
  	    UtilityClass.scrollByAxis(0, -500);
  	    BookingMask.clickOndashboardLink();
  	    Reporter.log("Clicked on dashboardLink",true);
- 	    
  	    Thread.sleep(9500);
         dashboard.clickOnpurchasebutton();
         Reporter.log("Clicked on purchase option",true);
@@ -219,21 +208,17 @@ public class verifyBookingWhenSeasonAllotIsFull_TC25andTC26 extends BaseClass {
         dashboard.clickOnAccommodation();
         Reporter.log("Clicked on accommodation option in list",true);
         Thread.sleep(2000);
-   	   
    		accommdationList.sendTbmCodeField(UtilityClass.readDataFromStringExcel(55, 1, "Sheet5"));
    		Thread.sleep(4000);
    		accommdationList.clickOnEditRow1Column1();
    		Thread.sleep(1000);
-   	
    		accommodationNew.clickOnAllotment();
    		Reporter.log("Clicked on Allotment ",true);
    		Thread.sleep(2000);
-  
    		allotment.sendStartDate(UtilityClass.readDataFromStringExcel(159, 1, "Sheet5"));
 	    Reporter.log("Send start date of season_H on allotment page",true);
 	    allotment.sendendDate(UtilityClass.readDataFromStringExcel(160, 1, "Sheet5"));
 	    Reporter.log("Send end date of season_H on allotment page",true);
-   	
 	    Thread.sleep(1000);
 	    allotment.clickOnLoadAllotment();
 	    Reporter.log("Clicked on load allotment",true);
@@ -264,23 +249,20 @@ public class verifyBookingWhenSeasonAllotIsFull_TC25andTC26 extends BaseClass {
     	 Reporter.log("Validating Actual remaining allotment is "+ActualRemainingAllot_H+" and Expected allotment for season_F is "+UtilityClass.readDataFromStringExcel(175, 1, "Sheet5"),true); 
 	}
 	
-	@Test (priority = 2)   //TC_26
+	@Test (priority=2)   //TC_26
 	public void validateConfirmBookingWhenSeasonAllotIsFull() throws EncryptedDocumentException, IOException, InterruptedException {
 	
 		allotment.sendStartDate(UtilityClass.readDataFromStringExcel(159, 2, "Sheet5"));
 	    Reporter.log("Send start date of season_F on allotment page",true);
 	    allotment.sendendDate(UtilityClass.readDataFromStringExcel(160, 2, "Sheet5"));
 	    Reporter.log("Send end date of season_F on allotment page",true);
-    	
 	    Thread.sleep(1000);
  	    allotment.clickOnLoadAllotment();
  	    Reporter.log("Clicked on load allotment",true);
-    	
  	    Thread.sleep(1000);
  	    String initialAllot_H = allotment.getInitialAllotRoom1R1C1();
  	    Allot_Hinitial=initialAllot_H;
  		Thread.sleep(2000);
-    
  		allotment.clickOnDashboardLink();
  		Reporter.log("Clicked on dashboardLink",true);
  		Thread.sleep(9500);
@@ -340,36 +322,32 @@ public class verifyBookingWhenSeasonAllotIsFull_TC25andTC26 extends BaseClass {
  		Reporter.log("Send Travel To date for season-H",true);
  		
  		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
- 		Reporter.log("Select Number of passenger",true);
- 	    
+ 		Reporter.log("Send Number of passenger",true);
  		UtilityClass.listBoxHandlingUsingByText("Boy", BookingMask.ListBoxTitleGender());
- 	    Thread.sleep(500);
+ 		UtilityClass.implicitlyWaitInsec(30);
  		BookingMask.sendLastName(UtilityClass.readDataFromStringExcel(176, 2, "Sheet5"));
- 		Thread.sleep(500);
+ 		UtilityClass.implicitlyWaitInsec(30);
  		BookingMask.sendFirstName(UtilityClass.readDataFromStringExcel(177, 2, "Sheet5"));
- 		Thread.sleep(500);
+ 		UtilityClass.implicitlyWaitInsec(30);
  		BookingMask.sendCityName(UtilityClass.readDataFromStringExcel(178, 2, "Sheet5"));
- 		Thread.sleep(500);
+ 		UtilityClass.implicitlyWaitInsec(30);
  		BookingMask.sendZipCode(UtilityClass.readDataFromStringExcel(179, 2, "Sheet5"));
- 		Thread.sleep(500);
+ 		UtilityClass.implicitlyWaitInsec(30);
  		BookingMask.sendStreetNo(UtilityClass.readDataFromStringExcel(180, 2, "Sheet5"));
- 		Thread.sleep(500);
+ 		UtilityClass.implicitlyWaitInsec(30);
  		BookingMask.sendPhoneNum(UtilityClass.readDataFromStringExcel(181, 2, "Sheet5"));
- 		Thread.sleep(500);
+ 		UtilityClass.implicitlyWaitInsec(30);
  		BookingMask.sendEmail(UtilityClass.readDataFromStringExcel(182, 2, "Sheet5"));
  		UtilityClass.scrollByAxis(0, 900);
  		UtilityClass.implicitlyWaitInMillis(20000);
  		UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
  		Reporter.log("Click on sendBookingButton",true);
- 		
  		Thread.sleep(2000);
         String ActualMessage = BookingMask.getInvalidTravelDurationNoPriceInfoMsg();
-        System.out.println("Message on BM PAGE IS "+ActualMessage);
- 	    Thread.sleep(1000);
+ 	    Thread.sleep(2000);
  	    UtilityClass.scrollByAxis(0, -500);
  	    BookingMask.clickOndashboardLink();
  	    Reporter.log("Clicked on dashboardLink",true);
- 	    
  	    Thread.sleep(9500);
         dashboard.clickOnpurchasebutton();
         Reporter.log("Clicked on purchase option",true);
@@ -377,25 +355,21 @@ public class verifyBookingWhenSeasonAllotIsFull_TC25andTC26 extends BaseClass {
         dashboard.clickOnAccommodation();
         Reporter.log("Clicked on accommodation option in list",true);
         Thread.sleep(2000);
-   	   
    		accommdationList.sendTbmCodeField(UtilityClass.readDataFromStringExcel(55, 1, "Sheet5"));
    		Thread.sleep(4000);
    		accommdationList.clickOnEditRow1Column1();
    		Thread.sleep(1000);
-   	
    		accommodationNew.clickOnAllotment();
    		Reporter.log("Clicked on Allotment ",true);
    		Thread.sleep(2000);
-  
    		allotment.sendStartDate(UtilityClass.readDataFromStringExcel(159, 2, "Sheet5"));
 	    Reporter.log("Send start date of season_H on allotment page",true);
 	    allotment.sendendDate(UtilityClass.readDataFromStringExcel(160, 2, "Sheet5"));
 	    Reporter.log("Send end date of season_H on allotment page",true);
-   	
 	    Thread.sleep(1000);
 	    allotment.clickOnLoadAllotment();
 	    Reporter.log("Clicked on load allotment",true);
-
+	    
 	    String expectedMessage = UtilityClass.readDataFromStringExcel(183, 1, "Sheet5");
 	    Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
 	    Reporter.log("Validating Actual message "+ActualMessage+" and Expected message "+UtilityClass.readDataFromStringExcel(183, 1, "Sheet5"),true);  

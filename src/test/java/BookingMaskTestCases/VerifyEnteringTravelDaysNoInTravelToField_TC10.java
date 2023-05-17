@@ -123,7 +123,7 @@ public class VerifyEnteringTravelDaysNoInTravelToField_TC10 extends BaseClass {
     		BookingMask.sendTravelToDate(UtilityClass.readDataFromStringExcel(181, 1, "Sheet2"));
     		Reporter.log("Send Travel days number in travel to field",true);
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
-    		Reporter.log("Select Number of passenger",true);
+    		Reporter.log("Send Number of passenger",true);
             BookingMask.clickOnSendbookingButton();
             Reporter.log("Clicked on SendbookingButton",true);
             Thread.sleep(1000); 

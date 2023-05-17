@@ -114,7 +114,7 @@ public class VerifyBookingforSeasonB_TC15 extends BaseClass {
     		Reporter.log("Send Travel To date",true);
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
-    		Reporter.log("Select Number of passenger",true);
+    		Reporter.log("Send Number of passenger",true);
             
     		UtilityClass.implicitlyWaitInMillis(2000);
             BookingMask.clickOnSendbookingButton();

@@ -110,8 +110,7 @@ public class VerifyTravelDateIncludeSeasonBandC_TC84 extends BaseClass {
     		BookingMask.sendTravelToDate(UtilityClass.readDataFromStringExcel(355, 3, "Sheet2"));
     		Reporter.log("Send Travel To any date of season-C",true);
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
-    		Reporter.log("Select Number of passenger",true);
-            
+    		Reporter.log("Send Number of passenger",true);
     		UtilityClass.implicitlyWaitInMillis(2000);
             BookingMask.clickOnSendbookingButton();
             Reporter.log("Clicked on sendbookingButton",true);

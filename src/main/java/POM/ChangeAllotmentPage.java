@@ -102,6 +102,13 @@ public class ChangeAllotmentPage
 		dateUntilTo1Field.sendKeys(dateUntil);
 	}
 	
+	public void sendNEWUNTILDATE(double number)
+	
+	{
+		String actual=Double.toString(number);
+		dateUntilTo1Field.sendKeys(actual);
+	}
+	
 	public void sendAmount1(String amount)
 	{
 		amount1Field.sendKeys(amount);

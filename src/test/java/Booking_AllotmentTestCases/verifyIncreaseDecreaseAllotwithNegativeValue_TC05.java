@@ -59,13 +59,7 @@ public class verifyIncreaseDecreaseAllotwithNegativeValue_TC05 extends BaseClass
 	roomsPage room;
 	allotmentPage allotment;
 	String Allot_Ainitial;
-	String Actualseason_Aallot;
-	String Allot_A;
-	String Actualseason_Ballot;
-	String Allot_Cinitial;
-	String Allot_Ccurrent;
-	String Allot_Cremaining;
-	
+
 	@BeforeClass
 	public void launchBrowser(){
 		openApplication();
@@ -93,63 +87,51 @@ public class verifyIncreaseDecreaseAllotwithNegativeValue_TC05 extends BaseClass
 	@BeforeMethod
 	public void loginToApp() throws EncryptedDocumentException, IOException, InterruptedException
 	{
-		login.SendUserName(UtilityClass.readDataFromStringExcel(2, 0, "Sheet1"));
+		login.SendUserName(UtilityClass.readDataFromStringExcel(5, 1, "Sheet2"));
 		Reporter.log("Valid Username Entered",true);
-		login.SendPassword(UtilityClass.readDataFromStringExcel(2, 1, "Sheet1"));
+		login.SendPassword(UtilityClass.readDataFromStringExcel(6, 1, "Sheet2"));
 		Reporter.log("Valid Password Entered",true);
 		login.ClickOnLoginToDashboard();
 		Reporter.log("Clicked on Dashboard button",true);
 		UtilityClass.implicitlyWaitInMillis(1000);
-		
 		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", selectCompany.SelectDropDownList());
 		Reporter.log("Select the Falk Tours AG from given list",true);
 		UtilityClass.implicitlyWaitInMillis(1000);
 		selectCompany.ClickOnProceedButton();
 		Reporter.log("Clicked on proceed button",true);	
 		Thread.sleep(9500);
-		
         dashboard.clickOnpurchasebutton();
         Reporter.log("Clicked on purchase option",true);
 		Thread.sleep(1000);
         dashboard.clickOnAccommodation();
         Reporter.log("Clicked on accommodation option in list",true);
         Thread.sleep(2000);
-    	   
     	accommdationList.sendTbmCodeField(UtilityClass.readDataFromStringExcel(55, 1, "Sheet5"));
     	Thread.sleep(4000);
     	accommdationList.clickOnEditRow1Column1();
     	Thread.sleep(1000);
-    	    
     	accommodationNew.clickOnAllotment();
     	Reporter.log("Clicked on Allotment ",true);
-    	Thread.sleep(2000);
-    	   
+    	Thread.sleep(2000);	   
     	allotment.sendStartDate(UtilityClass.readDataFromStringExcel(67, 1, "Sheet5"));
 	    Reporter.log("Send start date of season_B on allotment page",true);
 	    allotment.sendendDate(UtilityClass.readDataFromStringExcel(67, 2, "Sheet5"));
 	    Reporter.log("Send end date of season_B on allotment page",true);
-    	
 	    Thread.sleep(1000);
  	    allotment.clickOnLoadAllotment();
  	    Reporter.log("Clicked on load allotment",true);
-    	
  	    String initialAllot_B = allotment.getInitialAllotRoom1R1C1();
  	    Allot_Ainitial=initialAllot_B;
- 		Thread.sleep(1000);
-    	
+ 		Thread.sleep(2000);
     	allotment.clickOnchangeAllotment();
     	Reporter.log("Clicked on Change allotment button",true);
     	Thread.sleep(2000);
-    
     	UtilityClass.listBoxHandlingUsingByText("Increase_Decrease_Allotment", ChangeAllotment.selectChangeAllotmentDropdown());
     	Thread.sleep(3000);
-   	    	
     	ChangeAllotment.clickOnMultiselectDropdwn();
    	    Thread.sleep(1000);
-   	    
    	    ChangeAllotment.clickOnSelectAllRoomsmultiselectdropdown1();
    	    Thread.sleep(1000);
-	
    	    ChangeAllotment.sendDateFromForRoom1Field(UtilityClass.readDataFromStringExcel(88, 1, "Sheet5"));
    	    Thread.sleep(2000);
     	ChangeAllotment.sendDateUntilTo1Field(UtilityClass.readDataFromStringExcel(89, 1, "Sheet5"));
@@ -181,7 +163,6 @@ public class verifyIncreaseDecreaseAllotwithNegativeValue_TC05 extends BaseClass
 	    Reporter.log("Send start date of season_A on allotment page",true);
 	    allotment.sendendDate(UtilityClass.readDataFromStringExcel(89, 1, "Sheet5"));
 	    Reporter.log("Send end date of season_A on allotment page",true);
-    	  
 	    Thread.sleep(1000);
         String currentAllot_B = allotment.getCurrentAllotRoom1R1C1();
 	}

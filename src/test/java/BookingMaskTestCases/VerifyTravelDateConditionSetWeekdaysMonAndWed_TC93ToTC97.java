@@ -47,7 +47,6 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
 			Reporter.log("Valid Password Entered",true);
 			login.ClickOnLoginToDashboard();
 			Reporter.log("Clicked on Dashboard button",true);
-			
 			UtilityClass.implicitlyWaitInMillis(1000);
 			UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", selectCompany.SelectDropDownList());
 			Reporter.log("Select the Falk Tours AG from given list",true);
@@ -121,8 +120,7 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
     		Reporter.log("Send Travel To date",true);
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
-    		Reporter.log("Select Number of passenger",true);
-            
+    		Reporter.log("Send Number of passenger",true);
     		UtilityClass.implicitlyWaitInMillis(2000);
             BookingMask.clickOnSendbookingButton();
             Reporter.log("Clicked on sendbookingButton",true);
@@ -188,8 +186,7 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
     		Reporter.log("Send Travel To date",true);
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
-    		Reporter.log("Select Number of passenger",true);
-            
+    		Reporter.log("Send Number of passenger",true);
     		UtilityClass.implicitlyWaitInMillis(2000);
             BookingMask.clickOnSendbookingButton();
             Reporter.log("Clicked on sendbookingButton",true);
@@ -255,7 +252,7 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
     		Reporter.log("Send Travel To date",true);
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
-    		Reporter.log("Select Number of passenger",true);
+    		Reporter.log("Send Number of passenger",true);
             
     		UtilityClass.implicitlyWaitInMillis(2000);
             BookingMask.clickOnSendbookingButton();
@@ -322,8 +319,7 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
     		Reporter.log("Send Travel To date",true);
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
-    		Reporter.log("Select Number of passenger",true);
-            
+    		Reporter.log("Send Number of passenger",true);         
     		UtilityClass.implicitlyWaitInMillis(2000);
             BookingMask.clickOnSendbookingButton();
             Reporter.log("Clicked on sendbookingButton",true);
@@ -389,7 +385,7 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
     		Reporter.log("Send Travel To date",true);
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
-    		Reporter.log("Select Number of passenger",true);
+    		Reporter.log("Send Number of passenger",true);
             
     		UtilityClass.implicitlyWaitInMillis(2000);
             BookingMask.clickOnSendbookingButton();

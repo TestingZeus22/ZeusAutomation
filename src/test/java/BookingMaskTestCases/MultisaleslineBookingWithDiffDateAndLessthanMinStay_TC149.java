@@ -54,7 +54,6 @@
 				Reporter.log("Valid Password Entered",true);
 				login.ClickOnLoginToDashboard();
 				Reporter.log("Clicked on Dashboard button",true);
-				
 				UtilityClass.implicitlyWaitInMillis(1000);
 				UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", selectCompany.SelectDropDownList());
 				Reporter.log("Select the Falk Tours AG from given list",true);
@@ -73,7 +72,6 @@
 	    		salesBookingList.clickOncreateButton();
 	    		Reporter.log("Clicked on create Button in sales Booking page",true);
 	    		Thread.sleep(6000);
-	    		
 	    		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		UtilityClass.implicitlyWaitInMillis(3000);
@@ -84,12 +82,9 @@
 	    		Thread.sleep(1000);
 	    		UtilityClass.scrollByAxis(0, 300);
 	    		Thread.sleep(1000);
-	    		
 	    		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
-	    		
 	    		Thread.sleep(1000);
-	    		
 	    		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
 	    		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
 	    		Thread.sleep(1000);
@@ -135,13 +130,12 @@
 	    		Reporter.log("Send Travel To date",true);
 	    		
 	    		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
-	    		Reporter.log("Select Number of passenger",true);
-	            
+	    		Reporter.log("Send Number of passenger",true);
 	            UtilityClass.scrollByAxis(0, 600);
 	            Thread.sleep(1000);
 	           
 	    		BookingMask.sendKOS2(UtilityClass.readDataFromStringExcel(4, 2, "Sheet3"));
-	    		Reporter.log("Send correct KOS in input field",true);
+	    		Reporter.log("Send correct KOS2 in input field",true);
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		
 	    		BookingMask.sendproductCode2(UtilityClass.readDataFromStringExcel(5, 2, "Sheet3"));
@@ -167,10 +161,10 @@
 	    		Reporter.log("Send Travel To date for Season-C",true);
 	    		
 	    		driver.findElement(By.id("bookinglines_PassengerNo_3")).sendKeys("1-2");
-	    		Reporter.log("Select Number of passenger",true);
+	    		Reporter.log("Send Number of passenger",true);
 	    		
 	    		BookingMask.sendKOS3(UtilityClass.readDataFromStringExcel(4, 3, "Sheet3"));
-	    		Reporter.log("Send correct KOS in input field",true);
+	    		Reporter.log("Send correct KOS3 in input field",true);
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		
 	    		BookingMask.sendproductCode3(UtilityClass.readDataFromStringExcel(5, 3, "Sheet3"));
@@ -196,8 +190,7 @@
 	    		Reporter.log("Send Travel To date ",true);
 	    		
 	    		driver.findElement(By.id("bookinglines_PassengerNo_4")).sendKeys("1-2");
-	    		Reporter.log("Select Number of passenger",true);
-	         
+	    		Reporter.log("Send Number of passenger",true);
 				UtilityClass.scrollByAxis(0, 900);
 				UtilityClass.implicitlyWaitInMillis(30000);
 				UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
@@ -207,7 +200,6 @@
 		}   
 	   @Test
 	   public void validategetmultisalesLinesBookingErrorMsgwithInValidStay() throws EncryptedDocumentException, IOException 
-	  
 	   {
 		    String ActualMessage = BookingMask.getmultisalesLinesBookingErrorMsgwithValidStay();
 		    String expectedMessage = UtilityClass.readDataFromStringExcel(33, 1, "Sheet3");

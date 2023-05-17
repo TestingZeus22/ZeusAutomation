@@ -21,9 +21,9 @@ public class BaseClass {
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\rohan.patil\\Jar files\\chromedriver.exe");
 		//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+ "\\drivers\\chromedriver.exe");
-		ChromeOptions co =new ChromeOptions();  // Used after the 111 chrome version
-		co.addArguments("--remote-allow-origins=*");
-		driver = new ChromeDriver(co);
+		//ChromeOptions co =new ChromeOptions();  // Used after the 111 chrome version
+		//co.addArguments("--remote-allow-origins=*");
+		driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.get("https://zeuscloud.azurewebsites.net/Index?Status=SE");

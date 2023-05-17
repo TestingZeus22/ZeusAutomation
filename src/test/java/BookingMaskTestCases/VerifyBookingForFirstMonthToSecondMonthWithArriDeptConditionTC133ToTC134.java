@@ -31,7 +31,6 @@ public class VerifyBookingForFirstMonthToSecondMonthWithArriDeptConditionTC133To
 	salesBookingListPage salesBookingList;
 	bookingMaskPage BookingMask;
 	bookingUpdatePage bookingUpdate;
-	
 	String ActualReser;
 	String ExpectedReservationNo;
 	String ActualPrices;
@@ -131,24 +130,23 @@ public class VerifyBookingForFirstMonthToSecondMonthWithArriDeptConditionTC133To
     		Reporter.log("Send Travel To date",true);
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
-    		Reporter.log("Select Number of passenger",true);
-            
+    		Reporter.log("Send Number of passenger",true);
     		UtilityClass.implicitlyWaitInMillis(2000);
             
     		UtilityClass.listBoxHandlingUsingByText("Boy", BookingMask.ListBoxTitleGender());
-    		Thread.sleep(500);
+    		UtilityClass.implicitlyWaitInsec(30);
 			BookingMask.sendLastName(UtilityClass.readDataFromStringExcel(99, 4, "Sheet2"));
-			Thread.sleep(500);
+			UtilityClass.implicitlyWaitInsec(30);
 			BookingMask.sendFirstName(UtilityClass.readDataFromStringExcel(100, 4, "Sheet2"));
-			Thread.sleep(500);
+			UtilityClass.implicitlyWaitInsec(30);
 			BookingMask.sendCityName(UtilityClass.readDataFromStringExcel(101, 4, "Sheet2"));
-			Thread.sleep(500);
+			UtilityClass.implicitlyWaitInsec(30);
 			BookingMask.sendZipCode(UtilityClass.readDataFromStringExcel(102, 4, "Sheet2"));
-			Thread.sleep(500);
+			UtilityClass.implicitlyWaitInsec(30);
 			BookingMask.sendStreetNo(UtilityClass.readDataFromStringExcel(103, 4, "Sheet2"));
-			Thread.sleep(500);
+			UtilityClass.implicitlyWaitInsec(30);
 			BookingMask.sendPhoneNum(UtilityClass.readDataFromStringExcel(104, 4, "Sheet2"));
-			Thread.sleep(500);
+			UtilityClass.implicitlyWaitInsec(30);
 			BookingMask.sendEmail(UtilityClass.readDataFromStringExcel(105, 4, "Sheet2"));
 			UtilityClass.implicitlyWaitInMillis(20000);
 			UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
@@ -156,10 +154,8 @@ public class VerifyBookingForFirstMonthToSecondMonthWithArriDeptConditionTC133To
             Reporter.log("Clicked on sendbookingButton",true);
             UtilityClass.scrollByAxis(0, 600);
             Thread.sleep(8000);
-            
             String ActualPrice = bookingUpdate.getPriceFieldValue1("value");
             ActualPrices=ActualPrice;
-            
             UtilityClass.implicitlyWaitInMillis(30000);
 	        String ResNo=BookingMask.getReservationNoBM("value");
 	        String ResVer=BookingMask.getReservationVerNoBM("value");
@@ -182,10 +178,9 @@ public class VerifyBookingForFirstMonthToSecondMonthWithArriDeptConditionTC133To
 		     Thread.sleep(8000);
 		     salesBookingList.clickOnbookingListButton();
 		     Reporter.log("Clicked on Booking listButton",true);
-		     UtilityClass.implicitlyWaitInMillis(10000);  
-		        
+		     UtilityClass.implicitlyWaitInMillis(10000); 
 		     String ExpectedReservationNo = salesBookingList.getSalesBookingColumn1();
-            
+          
 		     String ExpectedReservationNos = salesBookingList.getSalesBookingColumn1();
 		     Assert.assertEquals(ActualReser, ExpectedReservationNos,"Test Case Failed as actual & expected ReservationNo are not matching");
 			 Reporter.log("Validating Expected ReservationNo "+ActualReser+" and Actual ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);
