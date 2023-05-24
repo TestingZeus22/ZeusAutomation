@@ -85,13 +85,12 @@
 	    		UtilityClass.scrollByAxis(100, 0);
 	    		salesBookingList.clickOncreateButton();
 	    		Reporter.log("Clicked on create Button in sales Booking page",true);
-	    		Thread.sleep(6000);
+	    		Thread.sleep(7000);
 		     }
 		
 	    		@Test (priority=1) //62
 	    		public void validateMismatchInNOofPaxFieldErrorMsg() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
-	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		UtilityClass.implicitlyWaitInMillis(3000);
@@ -201,6 +200,7 @@
 	    		@Test (priority=2)  //TC-63
 	    		public void validateMismatchInPassengerFieldErrorMsg() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
+	    			
 	    			UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 		    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 		    		UtilityClass.implicitlyWaitInMillis(3000);
@@ -307,7 +307,7 @@
 			    	 Assert.assertTrue(expectedMessage.contains(ActualMessage), "TC failed as Actual message and expected message are not matching ");
 			    	 Reporter.log("Validating Actual message "+BookingMask.getMaximumPersonCrossedErrorMessage()+" and Expected message "+UtilityClass.readDataFromStringExcel(928, 2, "Sheet2"),true);
 	    		}
-	    		@Test (priority = 3) //TC64
+	    		@Test (priority=3) //TC64
 	    		public void validateMismatchInOCCFieldErrorMsg() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
 	    			UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
@@ -418,7 +418,7 @@
 			    	 Reporter.log("Validating Actual message "+BookingMask.getMaximumPersonCrossedErrorMessage()+" and Expected message "+UtilityClass.readDataFromStringExcel(928, 3, "Sheet2"),true);
 	    		}
 	    		
-	    		@Test (priority = 4) //TC65
+	    		@Test (priority=1) //TC65
 	    		public void validateMismatchInAllFieldsErrorMsg() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
 	    			UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());

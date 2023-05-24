@@ -27,7 +27,6 @@ public class calculationSettingPage {
 	@FindBy (xpath="//span[text()='room1']") private WebElement room1ByJSE;
 	@FindBy (id = "btnsave") private WebElement savePrice;
 	
-	
 	public calculationSettingPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);

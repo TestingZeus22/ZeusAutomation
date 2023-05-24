@@ -1,0 +1,176 @@
+<html>
+<head>
+<title>TestNG:  BM</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BM</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 24 12:09:46 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>634 seconds (634147 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingModificationWithTravelToDateIncrease_TC19.validatePriceWithTravelToDateIncrease()'><b>validatePriceWithTravelToDateIncrease</b><br>Test class: BookingMaskTestCases.VerifyBookingModificationWithTravelToDateIncrease_TC19<br/>
+<a href="#Output-972335044" onClick='toggleBox("Output-972335044", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-972335044" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-972335044">
+Validating Actual Price with increased travel to date  266640.00 and Expected Price with increase in date is 266640.00<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>BookingMaskTestCases.VerifyBookingModificationWithTravelToDateIncrease_TC19@2d7275fc</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingModifyEnquiry_TC16.validatepriceFieldWithChangeInBookingAction()'><b>validatepriceFieldWithChangeInBookingAction</b><br>Test class: BookingMaskTestCases.VerifyBookingModifyEnquiry_TC16<br/>
+<a href="#Output-597521407" onClick='toggleBox("Output-597521407", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-597521407" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-597521407">
+Validating Actual price for Season-G  533280.00 and Expected Price for Season-G with UA action code is 533280.00<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>BookingMaskTestCases.VerifyBookingModifyEnquiry_TC16@399f45b1</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingInquiryWithBlankTravelToDate_TC03.validateBookingInquiryWithBlankTravelToDate()'><b>validateBookingInquiryWithBlankTravelToDate</b><br>Test class: BookingMaskTestCases.VerifyBookingInquiryWithBlankTravelToDate_TC03<br/>
+<a href="#Output-1058885327" onClick='toggleBox("Output-1058885327", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1058885327" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1058885327">
+Validating actual Error message Travel From and Travel To date not proper. and Expected Error Message Travel From and Travel To date not proper.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>BookingMaskTestCases.VerifyBookingInquiryWithBlankTravelToDate_TC03@35cabb2a</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingInquiryWithBlankTravelFromAndTravelToDate_TC05.validateBookingInquiryWithBlankTravelFromANDTravelToDateOnBM()'><b>validateBookingInquiryWithBlankTravelFromANDTravelToDateOnBM</b><br>Test class: BookingMaskTestCases.VerifyBookingInquiryWithBlankTravelFromAndTravelToDate_TC05<br/>
+<a href="#Output-2008249643" onClick='toggleBox("Output-2008249643", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2008249643" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2008249643">
+Validating actual Error message Travel From and Travel To date not proper. and Expected Error Message Travel From and Travel To date not proper.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>BookingMaskTestCases.VerifyBookingInquiryWithBlankTravelFromAndTravelToDate_TC05@595b007d</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingModificationWithEditOccupancyTC18.validateBookingByEditingOccupancyWithU()'><b>validateBookingByEditingOccupancyWithU</b><br>Test class: BookingMaskTestCases.VerifyBookingModificationWithEditOccupancyTC18<br/>
+<a href="#Output-1556341915" onClick='toggleBox("Output-1556341915", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1556341915" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1556341915">
+Validating Actual ReservationNo 516567771/02 and Expected ReservationNo is 516567771/02<br/>
+Validating Actual price 533280.00 and Expected Price 533280.00<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>BookingMaskTestCases.VerifyBookingModificationWithEditOccupancyTC18@72d1ad2e</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingInquiryWithBlankTravelFromDate_TC04.validateBookingInquiryWithBlankTravelFromDate()'><b>validateBookingInquiryWithBlankTravelFromDate</b><br>Test class: BookingMaskTestCases.VerifyBookingInquiryWithBlankTravelFromDate_TC04<br/>
+<a href="#Output-2016282692" onClick='toggleBox("Output-2016282692", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2016282692" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2016282692">
+Validating actual Error message Travel From and Travel To date not proper. and Expected Error Message Travel From and Travel To date not proper.<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>BookingMaskTestCases.VerifyBookingInquiryWithBlankTravelFromDate_TC04@478190fc</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingforSeasonB_TC15.validatePriceForSeasonB()'><b>validatePriceForSeasonB</b><br>Test class: BookingMaskTestCases.VerifyBookingforSeasonB_TC15<br/>
+<a href="#Output-111667836" onClick='toggleBox("Output-111667836", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-111667836" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-111667836">
+Validating Actual price for Season-B 24864.00 and Expected Price for Season-B 24864.00<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>BookingMaskTestCases.VerifyBookingforSeasonB_TC15@38c6f217</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingforSeasonA_TC14.validatePriceForSeasonA()'><b>validatePriceForSeasonA</b><br>Test class: BookingMaskTestCases.VerifyBookingforSeasonA_TC14<br/>
+<a href="#Output-890160784" onClick='toggleBox("Output-890160784", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-890160784" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-890160784">
+Validating Actual price 13320.00 and Expected Price 13320.00<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>BookingMaskTestCases.VerifyBookingforSeasonA_TC14@515aebb0</td></tr>
+</table><p>
+</body>
+</html>

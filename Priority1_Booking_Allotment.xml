@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Priority1_Booking_Allotment">
+    <classes>
+      <class name="Booking_AllotmentTestCases.verifyBookingAndAllotmentTC28TC29"/>
+      <class name="Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46"/>
+      <class name="Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26"/>
+      <class name="Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithPositiveValue_TC04"/>
+      <class name="Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48"/>
+      <class name="Booking_AllotmentTestCases.createNewMultisalesLineBookingTC42"/>
+      <class name="Booking_AllotmentTestCases.verifyBookingAfterDeleteStopSalesTC17TC18"/>
+      <class name="Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09"/>
+      <class name="Booking_AllotmentTestCases.verifyLoadAllotmentForTwoSeasons_TC03"/>
+      <class name="Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithNegativeValue_TC05"/>
+      <class name="Booking_AllotmentTestCases.verifyBookingAndAllotmentsTC49TC51TC30"/>
+      <class name="Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithAnyValue_TC06"/>
+      <class name="Booking_AllotmentTestCases.verifyReleaseDaysTC19"/>
+      <class name="Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12"/>
+      <class name="Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44"/>
+    </classes>
+  </test> <!-- Priority1_Booking_Allotment -->
+</suite> <!-- Suite -->

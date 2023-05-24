@@ -48,7 +48,6 @@ public class VerifyBookingforSeasonB_TC15 extends BaseClass {
 			Reporter.log("Valid Password Entered",true);
 			login.ClickOnLoginToDashboard();
 			Reporter.log("Clicked on Dashboard button",true);
-			
 			UtilityClass.implicitlyWaitInMillis(1000);
 			UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", selectCompany.SelectDropDownList());
 			Reporter.log("Select the Falk Tours AG from given list",true);
@@ -66,6 +65,7 @@ public class VerifyBookingforSeasonB_TC15 extends BaseClass {
     		salesBookingList.clickOncreateButton();
     		Reporter.log("Clicked on create Button in sales Booking page",true);
     		Thread.sleep(6000);
+    		
     		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
     		Thread.sleep(1000);
@@ -115,12 +115,10 @@ public class VerifyBookingforSeasonB_TC15 extends BaseClass {
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
     		Reporter.log("Send Number of passenger",true);
-            
     		UtilityClass.implicitlyWaitInMillis(2000);
             BookingMask.clickOnSendbookingButton();
             Reporter.log("Clicked on sendbookingButton",true);
             UtilityClass.scrollByAxis(0, 600);
-            Thread.sleep(2000); 
 	}
     @Test
     public void validatePriceForSeasonB() throws EncryptedDocumentException, IOException 

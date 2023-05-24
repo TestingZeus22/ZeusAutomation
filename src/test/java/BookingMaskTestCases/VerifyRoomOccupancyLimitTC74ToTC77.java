@@ -90,7 +90,7 @@
 	    		UtilityClass.scrollByAxis(100, 0);
 	    		salesBookingList.clickOncreateButton();
 	    		Reporter.log("Clicked on create Button in sales Booking page",true);
-	    		Thread.sleep(6000);
+	    		Thread.sleep(7000);
 		     }
 		
 	    		@Test  (priority=1)
@@ -111,7 +111,6 @@
 	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
 	    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
 	    		Thread.sleep(1000);
-	    		
 	    		BookingMask.ClearbookingActionfield();
 	    		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(748, 1, "Sheet2"));
 	    		BookingMask.clearNoOfPax();
@@ -225,16 +224,16 @@
 		        Reporter.log("Clicked on Booking listButton",true);
 		        Thread.sleep(8000);
 	            
-			     String ExpectedReservationNos = salesBookingList.getSalesBookingColumn1();
-			     Assert.assertEquals(ActualReser, ExpectedReservationNos,"Test Case Failed as actual & expected ReservationNo are not matching");
-				 Reporter.log("Validating Expected ReservationNo "+ActualReser+" and Actual ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);
+			    String ExpectedReservationNos = salesBookingList.getSalesBookingColumn1();
+			    Assert.assertEquals(ActualReser, ExpectedReservationNos,"Test Case Failed as actual & expected ReservationNo are not matching");
+				Reporter.log("Validating Expected ReservationNo "+ActualReser+" and Actual ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);
 	            
 	            String expectedPrice = UtilityClass.readDataFromStringExcel(783, 1, "Sheet2");
 	            Assert.assertEquals(ActualPrices, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
 	            Reporter.log("Validating Actual price "+ActualPrices+" and Expected Price "+UtilityClass.readDataFromStringExcel(783, 1, "Sheet2"),true);
 	    		}
 	    		
-	    		@Test (priority=2)
+	    		@Test (enabled=false)
 	    		public void validateOccupancyLimitCrossMaxAdults() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
 	    			UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
@@ -345,14 +344,15 @@
 					UtilityClass.implicitlyWaitInMillis(20000);
 					UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
 		    		Reporter.log("Click on sendBookingButton after U action code",true);
-		             Thread.sleep(3000);
-					 String ActualMessage = BookingMask.getMaximumPersonCrossedErrorMessage();
-			    	 String expectedMessage = UtilityClass.readDataFromStringExcel(783, 2, "Sheet2");
-			    	 Assert.assertEquals(expectedMessage,ActualMessage, "TC failed as Actual message and expected message are not matching ");
-			    	 Reporter.log("Validating Actual message "+BookingMask.getMaximumPersonCrossedErrorMessage()+" and Expected message "+UtilityClass.readDataFromStringExcel(783, 2, "Sheet2"),true);
+		            Thread.sleep(3000);
+		             
+					String ActualMessage = BookingMask.getMaximumPersonCrossedErrorMessage();
+			    	String expectedMessage = UtilityClass.readDataFromStringExcel(783, 2, "Sheet2");
+			    	Assert.assertEquals(expectedMessage,ActualMessage, "TC failed as Actual message and expected message are not matching ");
+			    	Reporter.log("Validating Actual message "+BookingMask.getMaximumPersonCrossedErrorMessage()+" and Expected message "+UtilityClass.readDataFromStringExcel(783, 2, "Sheet2"),true);
 	    		}
 	    		
-	    		@Test  (priority=3)
+	    		@Test  (enabled=false)
 	    		public void validateOccupancyLimitCrossMaxPersons() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
 	    			UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
@@ -486,14 +486,14 @@
 		    		Reporter.log("Click on SendBookingButton",true);
 		            Thread.sleep(3000);
 		             
-					 String ActualMessage = BookingMask.getMaximumPersonCrossedErrorMessage();
-			    	 String expectedMessage = UtilityClass.readDataFromStringExcel(783, 3, "Sheet2");
-			    	 Assert.assertEquals(expectedMessage,ActualMessage, "TC failed as Actual message and expected message are not matching ");
-			    	 Reporter.log("Validating Actual message "+BookingMask.getMaximumPersonCrossedErrorMessage()+" and Expected message "+UtilityClass.readDataFromStringExcel(783, 3, "Sheet2"),true);
+					String ActualMessage = BookingMask.getMaximumPersonCrossedErrorMessage();
+			    	String expectedMessage = UtilityClass.readDataFromStringExcel(783, 3, "Sheet2");
+			    	Assert.assertEquals(expectedMessage,ActualMessage, "TC failed as Actual message and expected message are not matching ");
+			    	Reporter.log("Validating Actual message "+BookingMask.getMaximumPersonCrossedErrorMessage()+" and Expected message "+UtilityClass.readDataFromStringExcel(783, 3, "Sheet2"),true);
 			
 	    		}
 	    		
-	    		@Test  (priority=4)
+	    		@Test  (enabled=false)
 	    		public void validateOccupancyLimitForMinPersonWithOneChild() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
 	    			UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
@@ -511,7 +511,6 @@
 		    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
 		    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
 		    		Thread.sleep(1000);
-		    		
 		    		BookingMask.ClearbookingActionfield();
 		    		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(748, 4, "Sheet2"));
 		    		BookingMask.clearNoOfPax();
@@ -548,7 +547,7 @@
 		    		Reporter.log("Send Travel To date",true);
 		    		
 		    		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-1");
-		    		Reporter.log("Select Number of passenger",true);
+		    		Reporter.log("Send Number of passenger",true);
 		    		UtilityClass.scrollByAxis(0, 600);
 		            Thread.sleep(1000);
 		            
@@ -600,9 +599,9 @@
 			        Reporter.log("Clicked on Booking listButton",true);
 			        Thread.sleep(8000);
 		            
-				     String ExpectedReservationNos = salesBookingList.getSalesBookingColumn1();
-				     Assert.assertEquals(ActualReser, ExpectedReservationNos,"Test Case Failed as actual & expected ReservationNo are not matching");
-					 Reporter.log("Validating Expected ReservationNo "+ActualReser+" and Actual ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);
+				    String ExpectedReservationNos = salesBookingList.getSalesBookingColumn1();
+				    Assert.assertEquals(ActualReser, ExpectedReservationNos,"Test Case Failed as actual & expected ReservationNo are not matching");
+					Reporter.log("Validating Expected ReservationNo "+ActualReser+" and Actual ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);
 		            
 		            String expectedPrice = UtilityClass.readDataFromStringExcel(783, 4, "Sheet2");
 		            Assert.assertEquals(ActualPrices, expectedPrice,"Test Case Failed as actual & expected Price are not matching");

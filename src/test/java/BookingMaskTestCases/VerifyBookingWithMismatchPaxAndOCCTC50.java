@@ -96,8 +96,7 @@ public class VerifyBookingWithMismatchPaxAndOCCTC50 extends BaseClass {
     		
     	BookingMask.ClearbookingActionfield();
     	BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(666, 4, "Sheet2"));
-    	Reporter.log("Send Booking action");
-    	
+    	Reporter.log("Send Booking action",true);
     	BookingMask.clearNoOfPax();
     	UtilityClass.implicitlyWaitInMillis(1000);
     		

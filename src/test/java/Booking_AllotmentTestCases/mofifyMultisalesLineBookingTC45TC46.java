@@ -137,7 +137,6 @@ public class mofifyMultisalesLineBookingTC45TC46 extends BaseClass
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
     		Reporter.log("Send Number of passenger",true);
-            
             UtilityClass.scrollByAxis(0, 600);
             Thread.sleep(1000);
            
@@ -237,12 +236,13 @@ public class mofifyMultisalesLineBookingTC45TC46 extends BaseClass
 			String expectedPriceRoom1 = UtilityClass.readDataFromStringExcel(351, 1, "Sheet5");
      		Assert.assertEquals(ActualPriceRoom1,expectedPriceRoom1, "TC failed as Actual Prices and expected prices are not matching ");
      		Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue1("value")+" and Expected price is "+UtilityClass.readDataFromStringExcel(351, 1, "Sheet5"),true);
+     		
      		String ActualPriceRoom2 = BookingMask.getPriceFieldValue2("value");
      		String expectedPriceRoom2 = UtilityClass.readDataFromStringExcel(352, 2, "Sheet5");
      		Assert.assertEquals(ActualPriceRoom2,expectedPriceRoom2, "TC failed as Actual Prices and expected prices are not matching ");
      		Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue2("value")+" and Expected price is "+UtilityClass.readDataFromStringExcel(352, 2, "Sheet5"),true);
 	 }
-	 @Test (priority=2)//TC-46
+	 @Test (priority=2) //TC-46
 	 public void validateMultisalesBookingAllotment() throws EncryptedDocumentException, IOException, InterruptedException {
 
     		dashboard.SalesClick();
@@ -306,7 +306,6 @@ public class mofifyMultisalesLineBookingTC45TC46 extends BaseClass
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
     		Reporter.log("Select Number of passenger",true);
-            
             UtilityClass.scrollByAxis(0, 600);
             Thread.sleep(1000);
            

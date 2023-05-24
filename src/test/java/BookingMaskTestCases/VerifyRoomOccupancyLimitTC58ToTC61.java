@@ -87,7 +87,7 @@
 	    		UtilityClass.scrollByAxis(100, 0);
 	    		salesBookingList.clickOncreateButton();
 	    		Reporter.log("Clicked on create Button in sales Booking page",true);
-	    		Thread.sleep(6000);
+	    		Thread.sleep(7000);
 		     }
 		
 	    		@Test (priority = 1) //58

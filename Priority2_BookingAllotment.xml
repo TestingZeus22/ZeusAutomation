@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Priority2_Booking Allotment">
+    <classes>
+      <class name="Booking_AllotmentTestCases.verifyLoadAllotmentForSeasonA_TC01"/>
+      <class name="Booking_AllotmentTestCases.modifySingleSalesLineBookingTC36TC37"/>
+      <class name="Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC14TC16"/>
+    </classes>
+  </test> <!-- Priority2_Booking Allotment -->
+</suite> <!-- Suite -->

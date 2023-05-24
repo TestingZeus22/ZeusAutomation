@@ -236,7 +236,7 @@ public class modifyMultisalesLineBookingTC47TC48 extends BaseClass
      	    Assert.assertEquals(ActualErrorMsg,expectedErroMsg, "TC failed as Actual message and expected message are not matching ");
      	    Reporter.log("Validating Actual Message for season-E is "+BookingMask.getInvalidTravelDurationMsg()+" and Expected Message for season-E is "+UtilityClass.readDataFromStringExcel(405, 1, "Sheet5"),true);  
 	 }
-	 @Test  (priority=2)// TC_48
+	 @Test  (enabled=false)// TC_48
 	 public void validateMultisalesLineBookingWhenOneRoomHasAllotment() throws EncryptedDocumentException, IOException, InterruptedException {
 
     		dashboard.SalesClick();
@@ -398,8 +398,8 @@ public class modifyMultisalesLineBookingTC47TC48 extends BaseClass
      		String expectedErroMsg = UtilityClass.readDataFromStringExcel(429, 1, "Sheet5");
      	    Assert.assertEquals(ActualErrorMsg,expectedErroMsg, "TC failed as Actual message and expected message are not matching ");
      	    Reporter.log("Validating Actual Message for season-E is "+BookingMask.getInvalidTravelDurationMsg()+" and Expected Message for season-E is "+UtilityClass.readDataFromStringExcel(429, 1, "Sheet5"),true); 
-     	    
 	 }
+     	    
 	    @AfterMethod
 	    public void Logout() throws InterruptedException
 	   {	

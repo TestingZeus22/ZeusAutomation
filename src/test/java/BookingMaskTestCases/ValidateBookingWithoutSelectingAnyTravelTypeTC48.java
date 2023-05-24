@@ -75,77 +75,77 @@ public class ValidateBookingWithoutSelectingAnyTravelTypeTC48 extends BaseClass 
 		Reporter.log("Clicked on proceed button",true);	
 		Thread.sleep(9500); 
 	
-    		dashboard.SalesClick();
-    		Reporter.log("Clicked on sales dropdown in Dashboard",true);
-    		UtilityClass.implicitlyWaitInMillis(1000);
-    		dashboard.salesBookingClick();
-    		Reporter.log("Clicked on sales Booking in Dashboard",true);
-    		Thread.sleep(5000);
-    		UtilityClass.scrollByAxis(100, 0);
-    		salesBookingList.clickOncreateButton();
-    		Reporter.log("Clicked on create Button in sales Booking page",true);
-    		Thread.sleep(6000);
+    	dashboard.SalesClick();
+    	Reporter.log("Clicked on sales dropdown in Dashboard",true);
+    	UtilityClass.implicitlyWaitInMillis(1000);
+    	dashboard.salesBookingClick();
+    	Reporter.log("Clicked on sales Booking in Dashboard",true);
+    	Thread.sleep(5000);
+    	UtilityClass.scrollByAxis(100, 0);
+    	salesBookingList.clickOncreateButton();
+    	Reporter.log("Clicked on create Button in sales Booking page",true);
+    	Thread.sleep(6000);
     		
-    		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
-    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
-    		Thread.sleep(1000);
-    		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
-    		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
-    		Thread.sleep(1000);
-    		UtilityClass.scrollByAxis(0, 300);
-    		Thread.sleep(1000);
-    		UtilityClass.implicitlyWaitInMillis(1000);
-    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
-    		BookingMask.ClearbookingActionfield();
-    		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(634, 1, "Sheet2"));
-    		BookingMask.clearNoOfPax();
-    		UtilityClass.implicitlyWaitInMillis(1000);
+    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
+    	Reporter.log("Select TFT1 in TravelType dropdownList",true);
+    	Thread.sleep(1000);
+    	UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
+    	Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
+    	Thread.sleep(1000);
+    	UtilityClass.scrollByAxis(0, 300);
+    	Thread.sleep(1000);
+    	UtilityClass.implicitlyWaitInMillis(1000);
+    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+    	Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+    	BookingMask.ClearbookingActionfield();
+    	BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(634, 1, "Sheet2"));
+    	BookingMask.clearNoOfPax();
+    	UtilityClass.implicitlyWaitInMillis(1000);
     		
-    		BookingMask.sendNoOfPax(UtilityClass.readDataFromStringExcel(635, 1, "Sheet2"));
-    		Reporter.log("Send number of passenger",true);
-    		Thread.sleep(1000);
+    	BookingMask.sendNoOfPax(UtilityClass.readDataFromStringExcel(635, 1, "Sheet2"));
+    	Reporter.log("Send number of passenger",true);
+    	Thread.sleep(1000);
     		
-    		BookingMask.sendKOS(UtilityClass.readDataFromStringExcel(636, 1, "Sheet2"));
-    		Reporter.log("Send correct KOS in input field",true);
-    		UtilityClass.implicitlyWaitInMillis(1000);
-    		BookingMask.sendproductCode(UtilityClass.readDataFromStringExcel(637, 1, "Sheet2"));
-    		Reporter.log("Send correct ProductCode in input field",true);
-    		UtilityClass.implicitlyWaitInMillis(1000);
+    	BookingMask.sendKOS(UtilityClass.readDataFromStringExcel(636, 1, "Sheet2"));
+    	Reporter.log("Send correct KOS in input field",true);
+    	UtilityClass.implicitlyWaitInMillis(1000);
+    	BookingMask.sendproductCode(UtilityClass.readDataFromStringExcel(637, 1, "Sheet2"));
+    	Reporter.log("Send correct ProductCode in input field",true);
+    	UtilityClass.implicitlyWaitInMillis(1000);
     		
-    		BookingMask.sendRoomCode(UtilityClass.readDataFromStringExcel(638, 1, "Sheet2"));
-    		Reporter.log("Send roomcode in input field",true);
+    	BookingMask.sendRoomCode(UtilityClass.readDataFromStringExcel(638, 1, "Sheet2"));
+    	Reporter.log("Send roomcode in input field",true);
     		
-    		BookingMask.sendBoard(UtilityClass.readDataFromStringExcel(639, 1, "Sheet2"));
-    		Reporter.log("Send correct boardName",true);
+    	BookingMask.sendBoard(UtilityClass.readDataFromStringExcel(639, 1, "Sheet2"));
+    	Reporter.log("Send correct boardName",true);
     		
-    		BookingMask.sendOccupancy(UtilityClass.readDataFromStringExcel(640, 1, "Sheet2"));
-    		Reporter.log("Send Occupancy",true);
+    	BookingMask.sendOccupancy(UtilityClass.readDataFromStringExcel(640, 1, "Sheet2"));
+    	Reporter.log("Send Occupancy",true);
     	
-    		BookingMask.sendTotalPax(UtilityClass.readDataFromStringExcel(641, 1, "Sheet2"));
-    		Reporter.log("Send bookinglines ",true);
+    	BookingMask.sendTotalPax(UtilityClass.readDataFromStringExcel(641, 1, "Sheet2"));
+    	Reporter.log("Send bookinglines ",true);
     		
-    		BookingMask.sendTravelFromDate(UtilityClass.readDataFromStringExcel(642, 1, "Sheet2"));
-    		Reporter.log("Send Travel from date in Season-E",true);
+    	BookingMask.sendTravelFromDate(UtilityClass.readDataFromStringExcel(642, 1, "Sheet2"));
+    	Reporter.log("Send Travel from date in Season-E",true);
     		
-    		BookingMask.sendTravelToDate(UtilityClass.readDataFromStringExcel(643, 1, "Sheet2"));
-    		Reporter.log("Send Travel To date in Season-E",true);
+    	BookingMask.sendTravelToDate(UtilityClass.readDataFromStringExcel(643, 1, "Sheet2"));
+    	Reporter.log("Send Travel To date in Season-E",true);
     		
-    		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
-    		Reporter.log("Select Number of passenger",true);
+    	driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
+    	Reporter.log("Select Number of passenger",true);
             
-    		UtilityClass.implicitlyWaitInMillis(2000);
-            BookingMask.clickOnSendbookingButton();
-            Reporter.log("Clicked on sendbookingButton",true);
-            UtilityClass.scrollByAxis(0, 600);
-            Thread.sleep(3000); 
+    	UtilityClass.implicitlyWaitInMillis(2000);
+        BookingMask.clickOnSendbookingButton();
+        Reporter.log("Clicked on sendbookingButton",true);
+        UtilityClass.scrollByAxis(0, 600);
+        Thread.sleep(3000); 
             
-            UtilityClass.listBoxHandlingUsingByText("-- Select Any --", BookingMask.TravelTypeDropDownMethod());
-    		Reporter.log("Select Any TravelType option in dropdownList",true);
-    		UtilityClass.implicitlyWaitInMillis(2000);
-    		BookingMask.clickOnSendbookingButton();
-            Reporter.log("Clicked on SendbookingButton",true);   
-            Thread.sleep(3000);
+        UtilityClass.listBoxHandlingUsingByText("-- Select Any --", BookingMask.TravelTypeDropDownMethod());
+        Reporter.log("Select Any TravelType option in dropdownList",true);
+        UtilityClass.implicitlyWaitInMillis(2000);
+    	BookingMask.clickOnSendbookingButton();
+        Reporter.log("Clicked on SendbookingButton",true);   
+        Thread.sleep(3000);
 	}
  
     @Test

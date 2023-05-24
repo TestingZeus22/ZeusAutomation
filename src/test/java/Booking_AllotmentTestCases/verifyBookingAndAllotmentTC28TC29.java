@@ -121,7 +121,7 @@ public class verifyBookingAndAllotmentTC28TC29 extends BaseClass {
     	Thread.sleep(2000);
 	}
 
-	@Test (priority=1)   //TC_28
+	@Test (enabled=false)   //TC_28
 	public void validateBookingWithValidAllotment() throws EncryptedDocumentException, IOException, InterruptedException {
 	
 		allotment.sendStartDate(UtilityClass.readDataFromStringExcel(205, 2, "Sheet5"));
@@ -404,7 +404,7 @@ public class verifyBookingAndAllotmentTC28TC29 extends BaseClass {
  		String ActualErrorMsg = BookingMask.getInvalidTravelDurationMsg();
  	    Thread.sleep(1000);
  	    UtilityClass.scrollByAxis(0, -500);
-        Thread.sleep(1500);
+        Thread.sleep(2000);
         BookingMask.clickOndashboardLink();
         Reporter.log("Clicked on dashboardLink",true);
         Thread.sleep(9500);

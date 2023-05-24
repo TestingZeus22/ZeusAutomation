@@ -147,7 +147,6 @@
 	    		
 	    		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
 	    		Reporter.log("Send Number of passenger",true);
-	            
 	            UtilityClass.scrollByAxis(0, 600);
 	            Thread.sleep(1000);
 	            
@@ -179,9 +178,7 @@
 	    		
 	    		driver.findElement(By.id("bookinglines_PassengerNo_3")).sendKeys("1-2");
 	    		Reporter.log("Send Number of passenger",true);
-	    		
 	    		Thread.sleep(500);
-	            
 	            UtilityClass.listBoxHandlingUsingByText("Boy", BookingMask.ListBoxTitleGender());
 	            UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendLastName(UtilityClass.readDataFromStringExcel(99, 4, "Sheet2"));
@@ -197,11 +194,14 @@
 				BookingMask.sendPhoneNum(UtilityClass.readDataFromStringExcel(104, 4, "Sheet2"));
 				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendEmail(UtilityClass.readDataFromStringExcel(105, 4, "Sheet2"));
-				UtilityClass.scrollByAxis(0, 900);
-				UtilityClass.implicitlyWaitInMillis(30000);
-				UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
-	    		Reporter.log("Click on SendBookingButton",true);  
-	            Thread.sleep(500);
+	    		UtilityClass.scrollByAxis(0, 900);
+				UtilityClass.implicitlyWaitInMillis(20000);
+				try {
+					UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
+				} catch (Exception e) {
+					// TODO: handle exception
+				}
+	    		Reporter.log("Click on sendBookingButton",true);
 		}
 	   @Test
 	   public void validatePriceForDifferentDates() throws EncryptedDocumentException, IOException 

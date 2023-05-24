@@ -607,11 +607,11 @@ import org.testng.Reporter;
 				UtilityClass.implicitlyWaitInMillis(20000);
 				UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
 	    		Reporter.log("Click on SendBookingButton",true);
-	           UtilityClass.implicitlyWaitInMillis(30000);
-	           String ResNo=BookingMask.getReservationNoBM("value");
-	           String ResVer=BookingMask.getReservationVerNoBM("value");
-	           String ActualReservNo= ResNo + ("/"+ResVer);
-	           ActualReser=ActualReservNo;
+	            UtilityClass.implicitlyWaitInMillis(30000);
+	            String ResNo=BookingMask.getReservationNoBM("value");
+	            String ResVer=BookingMask.getReservationVerNoBM("value");
+	            String ActualReservNo= ResNo + ("/"+ResVer);
+	            ActualReser=ActualReservNo;
 	          
 	            UtilityClass.implicitlyWaitInMillis(12000);
 				BookingMask.clickOnViewList();

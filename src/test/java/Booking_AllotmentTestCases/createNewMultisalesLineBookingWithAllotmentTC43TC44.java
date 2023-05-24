@@ -296,7 +296,6 @@ public class createNewMultisalesLineBookingWithAllotmentTC43TC44 extends BaseCla
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_3")).sendKeys("1-2");
     		Reporter.log("Select Number of passenger",true);
-    		
     		UtilityClass.listBoxHandlingUsingByText("Boy", BookingMask.ListBoxTitleGender());
     		UtilityClass.implicitlyWaitInsec(30);
      		BookingMask.sendLastName(UtilityClass.readDataFromStringExcel(320, 1, "Sheet5"));

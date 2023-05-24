@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="BM">
+    <classes>
+     <class name="BookingMaskTestCases.VerifyBookingforSeasonA_TC14"/>
+      <class name="BookingMaskTestCases.VerifyBookingInquiryWithBlankTravelFromAndTravelToDate_TC05"/>
+      <class name="BookingMaskTestCases.VerifyBookingModificationWithEditOccupancyTC18"/>
+      <class name="BookingMaskTestCases.VerifyBookingModificationWithTravelToDateIncrease_TC19"/>
+      <class name="BookingMaskTestCases.VerifyBookingModifyEnquiry_TC16"/>
+      <class name="BookingMaskTestCases.VerifyBookingforSeasonB_TC15"/>
+      <class name="BookingMaskTestCases.VerifyBookingInquiryWithBlankTravelFromDate_TC04"/>
+      <class name="BookingMaskTestCases.VerifyBookingInquiryWithBlankTravelToDate_TC03"/>
+      <class name="BookingMaskTestCases.VerifyModifyBookingWithTravelToDateDecrease_TC20"/>
+      <class name="BookingMaskTestCases.VerifyModifyBookingByEditingBothTravelFromAndToDateTC23"/>
+      <class name="BookingMaskTestCases.VerifyTravelToDateLessThanTravelFromDate_TC08"/>
+      <class name="BookingMaskTestCases.VerifyTravelDatesOutOfContract_TC11"/>
+      <class name="BookingMaskTestCases.VerifyModifyBookingToDateOutOfContractTC24"/>
+      <class name="BookingMaskTestCases.VerifyModifyBookingToInvalidRoomCodeTC26"/>
+      <class name="BookingMaskTestCases.VerifyBookingInquiryWithBlankTravelFromAndTravelToDate_TC05"/>
+      <class name="BookingMaskTestCases.VerifyTravelDateEndingOutOfContract_TC12"/>
+      <class name="BookingMaskTestCases.VerifyModifyBookingWithActionCodeUXTC44"/>
+      <class name="BookingMaskTestCases.ValidateBookingWithoutSelectingAnyTravelTypeTC48"/>
+      <class name="BookingMaskTestCases.VerifyBookingWithMismatchPaxAndOCCTC50"/>
+      <class name="BookingMaskTestCases.VerifyBookingByEditingTravelTypeTC47"/>
+      <class name="BookingMaskTestCases.VerifyModifyBookingWithTravelToDateDecrease_TC20"/>
+      <class name="BookingMaskTestCases.VerifyModifyBookingWithActionCodeUAandUTC38ToTC39"/>
+      <class name="BookingMaskTestCases.VerifyBookingWithTravelFromAndTravelToSameDate_TC07"/>
+      <class name="BookingMaskTestCases.VerifyModifyBookingTC21andTC22"/>
+      <class name="BookingMaskTestCases.VerifyRoomOccupancyLimitTC62ToTC65"/>
+      <class name="BookingMaskTestCases.VerifyRoomOccupancyLimitTC54ToTC57"/>
+      <class name="BookingMaskTestCases.VerifyRoomOccupancyLimitTC58ToTC61"/>
+    </classes>
+  </test> <!-- BM -->
+</suite> <!-- Suite -->

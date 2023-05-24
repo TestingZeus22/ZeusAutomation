@@ -86,10 +86,10 @@ import Base.BaseClass;
 	    		UtilityClass.scrollByAxis(100, 0);
 	    		salesBookingList.clickOncreateButton();
 	    		Reporter.log("Clicked on create Button in sales Booking page",true);
-	    		Thread.sleep(6000);
+	    		Thread.sleep(7000);
 		     }
 		
-	    		@Test  (priority = 1) //54
+	    		@Test  (priority = 1) //TC54
 	    		public void validateOccupancyMinLimitCross() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
 	    		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
@@ -524,6 +524,7 @@ import Base.BaseClass;
 	    		BookingMask.logoutClickOFBookingMask();
 	    		Reporter.log("Logout from Booking Mask Page",true);
 	    		}
+	    		
 	    		@AfterClass 
 	    		public void closeBrowser()
 	    		{

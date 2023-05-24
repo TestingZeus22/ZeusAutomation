@@ -3,9 +3,9 @@
 <suite name="Suite" parallel="tests"> 
   <test  name="Test">
     <classes>
-      <class name="BookingMaskTC.verifyTravelDatesOutOfContract_TC11"/>
-      <class name="BookingMaskTC.verifyTravelDateOutofContract_TC88"/>
-      <class name="BookingMaskTC.verifyTravelDateStartOfSeasonA_TC78"/>
+      <class name="BookingMaskTC.VerifyTravelDatesOutOfContract_TC11"/>
+      <class name="BookingMaskTC.VerifyTravelDateOutofContract_TC88"/>
+      <class name="BookingMaskTC.VerifyTravelDateStartOfSeasonA_TC78"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -193,7 +193,7 @@ public class createNewMultisalesLineBookingTC42 extends BaseClass
      		Assert.assertEquals(ActualPriceRoom2,expectedPriceRoom2, "TC failed as Actual Prices and expected prices are not matching ");
      		Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue2("value")+" and Expected price is "+UtilityClass.readDataFromStringExcel(281, 1, "Sheet5"),true);
      		Thread.sleep(1000);
-     		
+  
      		BookingMask.clickOndashboardLink();
      		Reporter.log("Clicked on dashboardLink",true);
      		

@@ -331,9 +331,9 @@ public class VerifyModifyBookingTC21andTC22 extends BaseClass
 		        salesBookingList.clickOnbookingListButton();
 		        Reporter.log("Clicked on Booking listButton",true);
 		    
-	    		 String expectedPrice = UtilityClass.readDataFromStringExcel(313, 4, "Sheet2");
-	    		 Assert.assertEquals(ActualPrice, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
-	    		 Reporter.log("Validating Actual price "+ActualPrices+" and Expected Price "+UtilityClass.readDataFromStringExcel(313, 4, "Sheet2"),true);
+	    		String expectedPrice = UtilityClass.readDataFromStringExcel(313, 4, "Sheet2");
+	    		Assert.assertEquals(ActualPrice, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
+	    		Reporter.log("Validating Actual price "+ActualPrices+" and Expected Price "+UtilityClass.readDataFromStringExcel(313, 4, "Sheet2"),true);
 	    		 
 	    		String ExpectedReservationNo = salesBookingList.getSalesBookingColumn1();
 				Assert.assertEquals(ActualReser, ExpectedReservationNo,"Test Case Failed as actual & expected ReservationNo are not matching");

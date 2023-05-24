@@ -1,121 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="BookingAllotment1(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26">
-        <methods>
-          <include name="launchBrowser"/>
-          <include name="validateConfirmBookingWhenSeasonAllotIsFull"/>
-          <include name="closeBrowser"/>
-          <include name="Logout"/>
-          <include name="loginToApp"/>
-          <include name="validateBookingInquiryWhenSeasonAllotIsFull"/>
-        </methods>
-      </class> <!-- Booking_AllotmentTestCases.verifyBookingWhenSeasonAllotIsFull_TC25andTC26 -->
-      <class name="Booking_AllotmentTestCases.verifyBookingAfterDeleteStopSalesTC17TC18">
-        <methods>
-          <include name="launchBrowser"/>
-          <include name="validateChangesInAllotmentAfterBooking"/>
-          <include name="Logout"/>
-          <include name="validateAllotmentsAfterDeleteStopSales"/>
-          <include name="closeBrowser"/>
-          <include name="loginToApp"/>
-        </methods>
-      </class> <!-- Booking_AllotmentTestCases.verifyBookingAfterDeleteStopSalesTC17TC18 -->
-      <class name="Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44">
-        <methods>
-          <include name="validateMultisalesLineBookingWhenNoAllotment"/>
-          <include name="Logout"/>
-          <include name="loginToApp"/>
-          <include name="closeBrowser"/>
-          <include name="validateMultisalesLineBookingWhenOneRoomHasAllotment"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44 -->
-      <class name="Booking_AllotmentTestCases.verifyReleaseDaysTC19">
-        <methods>
-          <include name="loginToApp"/>
-          <include name="validateReleaseDays"/>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
-          <include name="Logout"/>
-        </methods>
-      </class> <!-- Booking_AllotmentTestCases.verifyReleaseDaysTC19 -->
-      <class name="Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46">
-        <methods>
-          <include name="validateMultisalesBookingAllotment"/>
-          <include name="launchBrowser"/>
-          <include name="Logout"/>
-          <include name="loginToApp"/>
-          <include name="validateModifiedMultisalesBookingPrice"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46 -->
-      <class name="Booking_AllotmentTestCases.verifyLoadAllotmentForTwoSeasons_TC03">
-        <methods>
-          <include name="loginToApp"/>
-          <include name="validateAllotmentForTwoSeasonDates"/>
-          <include name="launchBrowser"/>
-          <include name="Logout"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- Booking_AllotmentTestCases.verifyLoadAllotmentForTwoSeasons_TC03 -->
-      <class name="Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithNegativeValue_TC05">
-        <methods>
-          <include name="loginToApp"/>
-          <include name="validateIncreaseDecreaseAllotmentWithNegativeValue"/>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithNegativeValue_TC05 -->
-      <class name="Booking_AllotmentTestCases.verifyBookingAndAllotmentTC28TC29">
-        <methods>
-          <include name="validateBookingWithValidAllotment"/>
-          <include name="launchBrowser"/>
-          <include name="loginToApp"/>
-          <include name="Logout"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- Booking_AllotmentTestCases.verifyBookingAndAllotmentTC28TC29 -->
-      <class name="Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithPositiveValue_TC04">
-        <methods>
-          <include name="Logout"/>
-          <include name="validateIncreaseDecreaseAllotmentWithPositiveValue"/>
-          <include name="loginToApp"/>
-          <include name="launchBrowser"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- Booking_AllotmentTestCases.verifyIncreaseDecreaseAllotwithPositiveValue_TC04 -->
-      <class name="Booking_AllotmentTestCases.verifyBookingAndAllotmentsTC49TC51TC30">
-        <methods>
-          <include name="validateBookingMoreThanRemainingAllotment"/>
-          <include name="launchBrowser"/>
-          <include name="Logout"/>
-          <include name="closeBrowser"/>
-          <include name="validateBookingCancellationAndAllotment"/>
-          <include name="validateBookingAfterIncreaseInAllotment"/>
-          <include name="loginToApp"/>
-        </methods>
-      </class> <!-- Booking_AllotmentTestCases.verifyBookingAndAllotmentsTC49TC51TC30 -->
       <class name="Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09">
         <methods>
           <include name="validateApplyStopSales"/>
           <include name="launchBrowser"/>
           <include name="closeBrowser"/>
           <include name="Logout"/>
-          <include name="validateIncrDecrAllotWithRoomBooking"/>
           <include name="loginToApp"/>
         </methods>
       </class> <!-- Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09 -->
-      <class name="Booking_AllotmentTestCases.createNewMultisalesLineBookingTC42">
-        <methods>
-          <include name="validateMultisalesLineBookingWhenAllotIsAvailable"/>
-          <include name="Logout"/>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- Booking_AllotmentTestCases.createNewMultisalesLineBookingTC42 -->
     </classes>
-  </test> <!-- BookingAllotment1(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
