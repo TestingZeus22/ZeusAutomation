@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Browser Launch ]]>
@@ -20,79 +20,73 @@
       <![CDATA[Clicked on proceed button]]>
     </line>
     <line>
-      <![CDATA[Clicked on purchase option]]>
+      <![CDATA[Clicked on sales dropdown in Dashboard]]>
     </line>
     <line>
-      <![CDATA[Clicked on accommodation option in list]]>
+      <![CDATA[Clicked on sales Booking in Dashboard]]>
     </line>
     <line>
-      <![CDATA[Clicked on Allotment ]]>
+      <![CDATA[Clicked on create Button in sales Booking page]]>
     </line>
     <line>
-      <![CDATA[Send start date of season_E on allotment page]]>
+      <![CDATA[Select TFT1 in TravelType dropdownList]]>
     </line>
     <line>
-      <![CDATA[Send end date of season_E on allotment page]]>
+      <![CDATA[Selected HK001 - (TESTING) from dropdown list]]>
     </line>
     <line>
-      <![CDATA[Clicked on load allotment]]>
+      <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
     </line>
     <line>
-      <![CDATA[Clicked on Change allotment button]]>
+      <![CDATA[Send number of passenger]]>
     </line>
     <line>
-      <![CDATA[Enter start date for room1]]>
+      <![CDATA[Send correct KOS in input field]]>
     </line>
     <line>
-      <![CDATA[Enter until date for room1]]>
+      <![CDATA[Send correct ProductCode in input field]]>
     </line>
     <line>
-      <![CDATA[Send start date of season_E on allotment page]]>
+      <![CDATA[Send roomcode in input field]]>
     </line>
     <line>
-      <![CDATA[Send end date of season_E on allotment page]]>
+      <![CDATA[Send correct boardName]]>
     </line>
     <line>
-      <![CDATA[Clicked on load Allotment]]>
+      <![CDATA[Send Occupancy]]>
     </line>
     <line>
-      <![CDATA[Validating Actual initial allotment is 5 and Expected allotment for season_E is 5]]>
+      <![CDATA[Send bookinglines ]]>
     </line>
     <line>
-      <![CDATA[Validating Actual current allotment is 10 and Expected allotment for season_E is 10]]>
+      <![CDATA[Send Travel from date end of Season-B]]>
     </line>
     <line>
-      <![CDATA[Validating Actual remaining allotment is 7 and Expected allotment for season_E is 7]]>
+      <![CDATA[Send Travel To start date of season-C]]>
     </line>
     <line>
-      <![CDATA[Validating Actual Stop sale text is STOP and Expected stop sales text for season_E is STOP]]>
+      <![CDATA[Send Number of passenger]]>
     </line>
     <line>
-      <![CDATA[Validating Actual sold allotment is 10 and Expected allotment for season_E is 10]]>
-    </line>
-    <line>
-      <![CDATA[Clicking on Logout Button]]>
-    </line>
-    <line>
-      <![CDATA[Logout from allotment]]>
+      <![CDATA[Clicked on sendbookingButton]]>
     </line>
     <line>
       <![CDATA[Closing Browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-05-24T16:57:26 IST" name="Default suite" finished-at="2023-05-24T16:58:39 IST" duration-ms="73081">
+  <suite started-at="2023-05-25T18:17:57 IST" name="Default suite" finished-at="2023-05-25T18:19:17 IST" duration-ms="80027">
     <groups>
     </groups>
-    <test started-at="2023-05-24T16:57:26 IST" name="Default test" finished-at="2023-05-24T16:58:39 IST" duration-ms="73081">
-      <class name="Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09@4fb0f2b9]" started-at="2023-05-24T16:57:26 IST" name="launchBrowser" finished-at="2023-05-24T16:57:32 IST" duration-ms="5799" status="PASS">
+    <test started-at="2023-05-25T18:17:57 IST" name="Default test" finished-at="2023-05-25T18:19:17 IST" duration-ms="80027">
+      <class name="BookingMaskTestCases.VerifyTravelDateNotInAnySeason_TC87">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:BookingMaskTestCases.VerifyTravelDateNotInAnySeason_TC87@a514af7]" started-at="2023-05-25T18:17:57 IST" name="launchBrowser" finished-at="2023-05-25T18:18:28 IST" duration-ms="31213" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser Launch ]]>
             </line>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09@4fb0f2b9]" started-at="2023-05-24T16:57:32 IST" name="loginToApp" finished-at="2023-05-24T16:58:09 IST" duration-ms="36499" status="PASS">
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:BookingMaskTestCases.VerifyTravelDateNotInAnySeason_TC87@a514af7]" started-at="2023-05-25T18:18:28 IST" name="loginToApp" finished-at="2023-05-25T18:19:17 IST" duration-ms="48551" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Valid Username Entered]]>
@@ -110,80 +104,113 @@
               <![CDATA[Clicked on proceed button]]>
             </line>
             <line>
-              <![CDATA[Clicked on purchase option]]>
+              <![CDATA[Clicked on sales dropdown in Dashboard]]>
             </line>
             <line>
-              <![CDATA[Clicked on accommodation option in list]]>
+              <![CDATA[Clicked on sales Booking in Dashboard]]>
             </line>
             <line>
-              <![CDATA[Clicked on Allotment ]]>
+              <![CDATA[Clicked on create Button in sales Booking page]]>
+            </line>
+            <line>
+              <![CDATA[Select TFT1 in TravelType dropdownList]]>
+            </line>
+            <line>
+              <![CDATA[Selected HK001 - (TESTING) from dropdown list]]>
+            </line>
+            <line>
+              <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
+            </line>
+            <line>
+              <![CDATA[Send number of passenger]]>
+            </line>
+            <line>
+              <![CDATA[Send correct KOS in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send correct ProductCode in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send roomcode in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send correct boardName]]>
+            </line>
+            <line>
+              <![CDATA[Send Occupancy]]>
+            </line>
+            <line>
+              <![CDATA[Send bookinglines ]]>
+            </line>
+            <line>
+              <![CDATA[Send Travel from date end of Season-B]]>
+            </line>
+            <line>
+              <![CDATA[Send Travel To start date of season-C]]>
+            </line>
+            <line>
+              <![CDATA[Send Number of passenger]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on sendbookingButton]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method signature="validateApplyStopSales()[pri:1, instance:Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09@4fb0f2b9]" started-at="2023-05-24T16:58:09 IST" name="validateApplyStopSales" finished-at="2023-05-24T16:58:34 IST" duration-ms="25746" status="PASS">
+        <test-method signature="validateErrorMsgDatesOutOfSeason()[pri:0, instance:BookingMaskTestCases.VerifyTravelDateNotInAnySeason_TC87@a514af7]" started-at="2023-05-25T18:19:17 IST" name="validateErrorMsgDatesOutOfSeason" finished-at="2023-05-25T18:19:17 IST" duration-ms="117" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[TC Failed expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: TC Failed expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at BookingMaskTestCases.VerifyTravelDateNotInAnySeason_TC87.validateErrorMsgDatesOutOfSeason(VerifyTravelDateNotInAnySeason_TC87.java:130)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
-            <line>
-              <![CDATA[Send start date of season_E on allotment page]]>
-            </line>
-            <line>
-              <![CDATA[Send end date of season_E on allotment page]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on load allotment]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on Change allotment button]]>
-            </line>
-            <line>
-              <![CDATA[Enter start date for room1]]>
-            </line>
-            <line>
-              <![CDATA[Enter until date for room1]]>
-            </line>
-            <line>
-              <![CDATA[Send start date of season_E on allotment page]]>
-            </line>
-            <line>
-              <![CDATA[Send end date of season_E on allotment page]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on load Allotment]]>
-            </line>
-            <line>
-              <![CDATA[Validating Actual initial allotment is 5 and Expected allotment for season_E is 5]]>
-            </line>
-            <line>
-              <![CDATA[Validating Actual current allotment is 10 and Expected allotment for season_E is 10]]>
-            </line>
-            <line>
-              <![CDATA[Validating Actual remaining allotment is 7 and Expected allotment for season_E is 7]]>
-            </line>
-            <line>
-              <![CDATA[Validating Actual Stop sale text is STOP and Expected stop sales text for season_E is STOP]]>
-            </line>
-            <line>
-              <![CDATA[Validating Actual sold allotment is 10 and Expected allotment for season_E is 10]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- validateApplyStopSales -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09@4fb0f2b9]" started-at="2023-05-24T16:58:35 IST" name="Logout" finished-at="2023-05-24T16:58:39 IST" duration-ms="4859" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Clicking on Logout Button]]>
-            </line>
-            <line>
-              <![CDATA[Logout from allotment]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09@4fb0f2b9]" started-at="2023-05-24T16:58:39 IST" name="closeBrowser" finished-at="2023-05-24T16:58:39 IST" duration-ms="129" status="PASS">
+        </test-method> <!-- validateErrorMsgDatesOutOfSeason -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:BookingMaskTestCases.VerifyTravelDateNotInAnySeason_TC87@a514af7]" started-at="2023-05-25T18:19:17 IST" name="closeBrowser" finished-at="2023-05-25T18:19:17 IST" duration-ms="115" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09 -->
+      </class> <!-- BookingMaskTestCases.VerifyTravelDateNotInAnySeason_TC87 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

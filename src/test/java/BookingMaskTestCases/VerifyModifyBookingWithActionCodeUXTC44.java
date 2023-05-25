@@ -53,7 +53,7 @@
 		public void launchBrowser(){
 			openApplication();
 			UtilityClass.implicitlyWaitInMillis(3000);
-			Reporter.log("Browser Launch ",true);
+			Reporter.log("Browser Launch",true);
 			login=new loginPage(driver);
 			selectCompany = new selectCompanyPage(driver);
 			dashboard = new DashboardPage(driver);
@@ -238,6 +238,7 @@
 			String expectedPrice = UtilityClass.readDataFromStringExcel(662, 1, "Sheet2");
 			Assert.assertEquals(ActualPrices, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
 			Reporter.log("Validating Actual price "+ActualPrices+" and Expected Price "+UtilityClass.readDataFromStringExcel(662, 1, "Sheet2"),true); 
+	    	
 	    	}
 	    		 
 	    	@AfterMethod
@@ -250,6 +251,7 @@
 	    	BookingMask.logoutClickOFBookingMask();
 	    	Reporter.log("Logout from Booking Mask Page",true);
 	    	}
+	    	
 	    	@AfterClass 
 	    	public void closeBrowser()
 	    	{

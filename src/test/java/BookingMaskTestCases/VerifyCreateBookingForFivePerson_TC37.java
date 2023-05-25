@@ -88,14 +88,12 @@
 	    		Thread.sleep(1000);
 	    		UtilityClass.scrollByAxis(0, 300);
 	    		Thread.sleep(1000);
-	    		
 	    		BookingMask.ClearbookingActionfield();
 	    		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(316, 4, "Sheet2"));
 	    		
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
 	    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
-	    		
 	    		BookingMask.clearNoOfPax();
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		
@@ -131,10 +129,8 @@
 	    		
 	    		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-5");
 	    		Reporter.log("Select Number of passenger",true);
-	
 	            UtilityClass.scrollByAxis(0, 600);
 	            Thread.sleep(1000);
-	            
 	            UtilityClass.listBoxHandlingUsingByText("Boy", BookingMask.ListBoxTitleGender());
 	            UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendLastName(UtilityClass.readDataFromStringExcel(99, 4, "Sheet2"));
@@ -159,7 +155,6 @@
 	
 	   @Test
 	   public void validatePriceWithFivePerson() throws EncryptedDocumentException, IOException 
-	  
 	       {
 		   	  String ActualPrice = bookingUpdate.getPriceFieldValue1("value");
 			  String expectedPrice = UtilityClass.readDataFromStringExcel(327, 4, "Sheet2");

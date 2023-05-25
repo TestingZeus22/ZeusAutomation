@@ -91,15 +91,13 @@ import POM.DashboardPage;
 	    		Thread.sleep(1000);
 	    		UtilityClass.scrollByAxis(0, 300);
 	    		Thread.sleep(1000);
-	    		
 	    		BookingMask.ClearbookingActionfield();
 	    		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(666, 1, "Sheet2"));
-	    		Reporter.log("Send Booking action");
+	    		Reporter.log("Send Booking action",true);
 	    		
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
 	    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
-	    		
 	    		BookingMask.clearNoOfPax();
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		
@@ -140,6 +138,7 @@ import POM.DashboardPage;
 	    		BookingMask.sendKOS2(UtilityClass.readDataFromStringExcel(668, 2, "Sheet2"));
 	    		Reporter.log("Send correct KOS in input field",true);
 	    		UtilityClass.implicitlyWaitInMillis(1000);
+	    		
 	    		BookingMask.sendproductCode2(UtilityClass.readDataFromStringExcel(669, 2, "Sheet2"));
 	    		Reporter.log("Send correct ProductCode in input field",true);
 	    		UtilityClass.implicitlyWaitInMillis(1000);
@@ -168,21 +167,20 @@ import POM.DashboardPage;
 	            Thread.sleep(1000);
 	            
 	            UtilityClass.listBoxHandlingUsingByText("Boy", BookingMask.ListBoxTitleGender());
-	            Thread.sleep(500);
+	            UtilityClass.implicitlyWaitInMillis(30);
 				BookingMask.sendLastName(UtilityClass.readDataFromStringExcel(99, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInMillis(30);
 				BookingMask.sendFirstName(UtilityClass.readDataFromStringExcel(100, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInMillis(30);
 				BookingMask.sendCityName(UtilityClass.readDataFromStringExcel(101, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInMillis(30);
 				BookingMask.sendZipCode(UtilityClass.readDataFromStringExcel(102, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInMillis(30);
 				BookingMask.sendStreetNo(UtilityClass.readDataFromStringExcel(103, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInMillis(30);
 				BookingMask.sendPhoneNum(UtilityClass.readDataFromStringExcel(104, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInMillis(30);
 				BookingMask.sendEmail(UtilityClass.readDataFromStringExcel(105, 4, "Sheet2"));
-
 				UtilityClass.scrollByAxis(0, 900);
 				UtilityClass.implicitlyWaitInMillis(20000);
 				UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
@@ -195,12 +193,10 @@ import POM.DashboardPage;
 				String ActualPrice2 = BookingMask.getPriceFieldValue2("value");
 				roomPrice2=ActualPrice2;
 				UtilityClass.implicitlyWaitInMillis(20000);
-	            
 				String ResNo=bookingupdate.getReservationNoBM("value");
 		        String ResVer=bookingupdate.getReservationVerNoBM("value");
 		        String ActualReservNo= ResNo + ("/"+ResVer);
 		        ReserNo=ActualReservNo;
-	           
 		        Thread.sleep(2000);
 				BookingMask.clickOnViewList();
 				Reporter.log("Clicked on ViewList",true);
@@ -239,21 +235,17 @@ import POM.DashboardPage;
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		UtilityClass.implicitlyWaitInMillis(3000);
 	    		Thread.sleep(1000);
-	    		
 	    		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
 	    		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
 	    		Thread.sleep(1000);
 	    		UtilityClass.scrollByAxis(0, 300);
 	    		Thread.sleep(1000);
-	    		
 	    		BookingMask.ClearbookingActionfield();
 	    		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(666, 1, "Sheet2"));
-	    		Reporter.log("Send Booking Action");
-	    		
+	    		Reporter.log("Send Booking Action",true);
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
 	    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
-	    		
 	    		BookingMask.clearNoOfPax();
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		
@@ -293,21 +285,20 @@ import POM.DashboardPage;
 	            Thread.sleep(1000);
 	            
 	            UtilityClass.listBoxHandlingUsingByText("Boy", BookingMask.ListBoxTitleGender());
-	            Thread.sleep(500);
+	            UtilityClass.implicitlyWaitInMillis(30);
 				BookingMask.sendLastName(UtilityClass.readDataFromStringExcel(99, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInMillis(30);
 				BookingMask.sendFirstName(UtilityClass.readDataFromStringExcel(100, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInMillis(30);
 				BookingMask.sendCityName(UtilityClass.readDataFromStringExcel(101, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInMillis(30);
 				BookingMask.sendZipCode(UtilityClass.readDataFromStringExcel(102, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInMillis(30);
 				BookingMask.sendStreetNo(UtilityClass.readDataFromStringExcel(103, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInMillis(30);
 				BookingMask.sendPhoneNum(UtilityClass.readDataFromStringExcel(104, 4, "Sheet2"));
-				Thread.sleep(500);
+				UtilityClass.implicitlyWaitInMillis(30);
 				BookingMask.sendEmail(UtilityClass.readDataFromStringExcel(105, 4, "Sheet2"));
-
 				UtilityClass.scrollByAxis(0, 900);
 				UtilityClass.implicitlyWaitInMillis(20000);
 				UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
@@ -322,7 +313,6 @@ import POM.DashboardPage;
 		        salesBookingList.clickOnbookingListButton();
 		        Reporter.log("Clicked on Booking listButton",true);
 		        Thread.sleep(22000);
-		        
 		        salesBookingList.sendtbmCodes(UtilityClass.readDataFromStringExcel(669, 1, "Sheet2"));
 		        Reporter.log("Send TBM code",true);
 		        Thread.sleep(8000);
@@ -331,7 +321,6 @@ import POM.DashboardPage;
 		        UtilityClass.implicitlyWaitInMillis(10000);  
 		        salesBookingList.clickOneditBooking1();
 		        Reporter.log("Clicked on edit booking1",true);
-	            
 	            UtilityClass.scrollByAxis(0, 300);
 	            UtilityClass.implicitlyWaitInMillis(40000);
 	            BookingMask.ClearbookingActionfield();
@@ -361,7 +350,6 @@ import POM.DashboardPage;
 	    		
 	    		BookingMask.sendTravelToDate2(UtilityClass.readDataFromStringExcel(675, 2, "Sheet2"));
 	    		Reporter.log("Send Travel To date of Season-G",true);
-	    		
 	    		driver.findElement(By.id("bookinglines_PassengerNo_3")).sendKeys("1-2");
 	    		Reporter.log("Select Number of passenger",true);
 	    		UtilityClass.scrollByAxis(0, 600);
@@ -375,7 +363,6 @@ import POM.DashboardPage;
 				String ActualPrice2 = BookingMask.getPriceFieldValue2("value");
 				roomPrice2=ActualPrice2;
 				UtilityClass.implicitlyWaitInMillis(20000);
-	            
 				String ResNo=bookingupdate.getReservationNoBM("value");
 		        String ResVer=bookingupdate.getReservationVerNoBM("value");
 		        String ActualReservNo= ResNo + ("/"+ResVer);
@@ -417,7 +404,7 @@ import POM.DashboardPage;
 	   {
 	      Thread.sleep(2000);
 	      BookingMask.ClickOnLogoutButtonOFBookingMask();
-		  Reporter.log("Clicking on Logout Button in Booking Mask page",true);
+		  Reporter.log("Clicking on Logout Button on Booking Mask page",true);
 		  Thread.sleep(500);
 		  BookingMask.logoutClickOFBookingMask();
 		  Reporter.log("Logout from Booking Mask Page",true);

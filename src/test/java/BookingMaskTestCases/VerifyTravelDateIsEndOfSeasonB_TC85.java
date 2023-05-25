@@ -28,7 +28,6 @@ public class VerifyTravelDateIsEndOfSeasonB_TC85 extends BaseClass {
 	salesBookingListPage salesBookingList;
 	bookingMaskPage BookingMask;
 	
-	
 	@BeforeClass
 	public void launchBrowser(){
 		openApplication();
@@ -72,7 +71,7 @@ public class VerifyTravelDateIsEndOfSeasonB_TC85 extends BaseClass {
     	
     		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
-    		Thread.sleep(1000);
+    		Thread.sleep(2000);
     		
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);

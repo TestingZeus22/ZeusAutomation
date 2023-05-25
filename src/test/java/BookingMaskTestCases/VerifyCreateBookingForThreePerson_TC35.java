@@ -131,10 +131,8 @@
 	    		
 	    		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-3");
 	    		Reporter.log("Send Number of passenger",true);
-	
 	            UtilityClass.scrollByAxis(0, 600);
 	            Thread.sleep(1000);
-	            
 	            UtilityClass.listBoxHandlingUsingByText("Boy", BookingMask.ListBoxTitleGender());
 	            UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendLastName(UtilityClass.readDataFromStringExcel(99, 4, "Sheet2"));

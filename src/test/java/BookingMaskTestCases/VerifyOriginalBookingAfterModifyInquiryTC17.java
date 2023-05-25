@@ -36,7 +36,7 @@
 	import POM.tbmCodeNewCreatePage;
 	import utility.UtilityClass;
 	
-	public class VerifyOriginalBookingAfterModifyTC17 extends BaseClass
+	public class VerifyOriginalBookingAfterModifyInquiryTC17 extends BaseClass
 	{
 		loginPage login;
 		File myFile;

@@ -139,7 +139,6 @@
 	    		
 	    		BookingMask.sendTravelToDate(UtilityClass.readDataFromStringExcel(658, 1, "Sheet2"));
 	    		Reporter.log("Send Travel To date for Season-G",true);
-	    		
 	    		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
 	    		Reporter.log("Send Number of passenger",true);
 	            UtilityClass.scrollByAxis(0, 600);
@@ -203,35 +202,36 @@
 	            Thread.sleep(7000);
 	            String ActualPrice = BookingMask.getPriceFieldValue1("value");
 	            ActualPrices=ActualPrice;
-		           String ResNo=BookingMask.getReservationNoBM("value");
-		           String ResVer=BookingMask.getReservationVerNoBM("value");
-		           String ActualReservNo= ResNo + ("/"+ResVer);
-		           ActualReser=ActualReservNo;
-		            UtilityClass.implicitlyWaitInMillis(12000);
-					BookingMask.clickOnViewList();
-					Reporter.log("Clicked on ViewList",true);
-			        UtilityClass.implicitlyWaitInMillis(8000);
-			        salesBookingList.sendtbmCodes(UtilityClass.readDataFromStringExcel(652, 1, "Sheet2"));
-			        Reporter.log("Clicked on sendTBMcode to verify booking is done or not",true);
-			        Thread.sleep(2000);
-			        salesBookingList.clickOnbookingListButton();
-			        Reporter.log("Clicked on Booking listButton",true);
-			        Thread.sleep(22000);
-			        salesBookingList.sendtbmCodes(UtilityClass.readDataFromStringExcel(652, 1, "Sheet2"));
-			        Reporter.log("Send TBM code",true);
-			        Thread.sleep(8000);
-			        salesBookingList.clickOnbookingListButton();
-			        Reporter.log("Clicked on Booking listButton",true);
-			        UtilityClass.implicitlyWaitInMillis(10000);  
+		        String ResNo=BookingMask.getReservationNoBM("value");
+		        String ResVer=BookingMask.getReservationVerNoBM("value");
+		        String ActualReservNo= ResNo + ("/"+ResVer);
+		        ActualReser=ActualReservNo;
+		        UtilityClass.implicitlyWaitInMillis(12000);
+		        BookingMask.clickOnViewList();
+				Reporter.log("Clicked on ViewList",true);
+			    UtilityClass.implicitlyWaitInMillis(8000);
+			    salesBookingList.sendtbmCodes(UtilityClass.readDataFromStringExcel(652, 1, "Sheet2"));
+			    Reporter.log("Clicked on sendTBMcode to verify booking is done or not",true);
+			    Thread.sleep(2000);
+			    salesBookingList.clickOnbookingListButton();
+			    Reporter.log("Clicked on Booking listButton",true);
+			    Thread.sleep(22000);
+			    salesBookingList.sendtbmCodes(UtilityClass.readDataFromStringExcel(652, 1, "Sheet2"));
+			    Reporter.log("Send TBM code",true);
+			    Thread.sleep(8000);
+			    salesBookingList.clickOnbookingListButton();
+			    Reporter.log("Clicked on Booking listButton",true);
+			    UtilityClass.implicitlyWaitInMillis(10000);  
 			        
-			        String ExpectedReservationNo = salesBookingList.getSalesBookingColumn1();
-			        Assert.assertEquals(ActualReser, ExpectedReservationNo,"Test Case Failed as actual & expected ReservationNo are not matching");
-			        Reporter.log("Validating Expected ReservationNo "+ActualReser+" and Actual ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);
+			    String ExpectedReservationNo = salesBookingList.getSalesBookingColumn1();
+			    Assert.assertEquals(ActualReser, ExpectedReservationNo,"Test Case Failed as actual & expected ReservationNo are not matching");
+			    Reporter.log("Validating Expected ReservationNo "+ActualReser+" and Actual ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);
 					
-			        String expectedPrice = UtilityClass.readDataFromStringExcel(662, 1, "Sheet2");
-			        Assert.assertEquals(ActualPrices, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
-			        Reporter.log("Validating Actual price "+ActualPrices+" and Expected Price "+UtilityClass.readDataFromStringExcel(662, 1, "Sheet2"),true); 
+			    String expectedPrice = UtilityClass.readDataFromStringExcel(662, 1, "Sheet2");
+			    Assert.assertEquals(ActualPrices, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
+			    Reporter.log("Validating Actual price "+ActualPrices+" and Expected Price "+UtilityClass.readDataFromStringExcel(662, 1, "Sheet2"),true); 
 		      }
+	    		 
 	    		 @Test (priority = 2)
 	    		public void validateConfirmModifyBookingWithU() throws EncryptedDocumentException, IOException, InterruptedException {
 	    		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
@@ -360,14 +360,14 @@
 			    Reporter.log("Clicked on Booking listButton",true);
 			    UtilityClass.implicitlyWaitInMillis(10000);  
 			        
-			String ExpectedReservationNo = salesBookingList.getSalesBookingColumn1();
-		    Assert.assertEquals(ActualReser, ExpectedReservationNo,"Test Case Failed as actual & expected ReservationNo are not matching");
-			Reporter.log("Validating Expected ReservationNo "+ActualReser+" and Actual ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);
+			    String ExpectedReservationNo = salesBookingList.getSalesBookingColumn1();
+			    Assert.assertEquals(ActualReser, ExpectedReservationNo,"Test Case Failed as actual & expected ReservationNo are not matching");
+			    Reporter.log("Validating Expected ReservationNo "+ActualReser+" and Actual ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);
 					
-		   String expectedPrice = UtilityClass.readDataFromStringExcel(662, 2, "Sheet2");
-		   Assert.assertEquals(ActualPrices, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
-		   Reporter.log("Validating Actual price "+ActualPrices+" and Expected Price "+UtilityClass.readDataFromStringExcel(662, 2, "Sheet2"),true); 
-		}
+			    String expectedPrice = UtilityClass.readDataFromStringExcel(662, 2, "Sheet2");
+			    Assert.assertEquals(ActualPrices, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
+			    Reporter.log("Validating Actual price "+ActualPrices+" and Expected Price "+UtilityClass.readDataFromStringExcel(662, 2, "Sheet2"),true); 
+	    }
 	   
 	   @AfterMethod
 	   public void Logout() throws InterruptedException

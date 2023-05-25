@@ -147,14 +147,14 @@ public class VerifyEnteringTravelFromBeforeContract_TC13 extends BaseClass {
     {
     	String ActualMessage = BookingMask.getTravelToDateOutOfContractDateNotification();
 	    String expectedMessage = UtilityClass.readDataFromStringExcel(228, 1, "Sheet2");
-	    Assert.assertEquals(true, expectedMessage.contains(ActualMessage));
+	    Assert.assertEquals(ActualMessage, expectedMessage,"Test case Failed as expected message and actual message are not matching");
 	    Reporter.log("Validating Actual message "+BookingMask.getTravelToDateOutOfContractDateNotification()+" and Expected message "+UtilityClass.readDataFromStringExcel(228, 1, "Sheet2"),true);
     }
 
     @AfterMethod
     public void Logout() throws InterruptedException
     {
-      Thread.sleep(3500);
+      Thread.sleep(3000);
       BookingMask.ClickOnLogoutButtonOFBookingMask();
 	  Reporter.log("Clicking on Logout Button in Booking Mask page",true);
 	  Thread.sleep(1000);

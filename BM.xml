@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="BM">
     <classes>
-     <class name="BookingMaskTestCases.VerifyBookingforSeasonA_TC14"/>
+      <class name="BookingMaskTestCases.VerifyBookingforSeasonA_TC14"/>
       <class name="BookingMaskTestCases.VerifyBookingInquiryWithBlankTravelFromAndTravelToDate_TC05"/>
       <class name="BookingMaskTestCases.VerifyBookingModificationWithEditOccupancyTC18"/>
       <class name="BookingMaskTestCases.VerifyBookingModificationWithTravelToDateIncrease_TC19"/>
@@ -17,7 +17,6 @@
       <class name="BookingMaskTestCases.VerifyTravelDatesOutOfContract_TC11"/>
       <class name="BookingMaskTestCases.VerifyModifyBookingToDateOutOfContractTC24"/>
       <class name="BookingMaskTestCases.VerifyModifyBookingToInvalidRoomCodeTC26"/>
-      <class name="BookingMaskTestCases.VerifyBookingInquiryWithBlankTravelFromAndTravelToDate_TC05"/>
       <class name="BookingMaskTestCases.VerifyTravelDateEndingOutOfContract_TC12"/>
       <class name="BookingMaskTestCases.VerifyModifyBookingWithActionCodeUXTC44"/>
       <class name="BookingMaskTestCases.ValidateBookingWithoutSelectingAnyTravelTypeTC48"/>
@@ -30,6 +29,38 @@
       <class name="BookingMaskTestCases.VerifyRoomOccupancyLimitTC62ToTC65"/>
       <class name="BookingMaskTestCases.VerifyRoomOccupancyLimitTC54ToTC57"/>
       <class name="BookingMaskTestCases.VerifyRoomOccupancyLimitTC58ToTC61"/>
+      <class name="BookingMaskTestCases.VerifyTravelDateStartOfSeasonA_TC78"/>
+      <class name="BookingMaskTestCases.VerifyTravelDateStartWithSeasonCandEndsOutOfanySeason_TC86"/>
+      <class name="BookingMaskTestCases.VerifyTravelDateInBetweenSeasonA_TC79"/>
+      <class name="BookingMaskTestCases.VerifyTravelDateInBetweenSeasonB_TC81"/>
+      <class name="BookingMaskTestCases.VerifyTravelDateInBetweenSeasonC_TC82"/>
+      <class name="BookingMaskTestCases.VerifyTravelDateIncludeSeasonBandC_TC84"/>
+      <class name="BookingMaskTestCases.VerifyTravelDateIsEndDateOfSeasonA_TC80"/>
+      <class name="BookingMaskTestCases.VerifyTravelDateIsEndOfSeasonB_TC85"/>
+      <class name="BookingMaskTestCases.VerifyTravelDateNotInAnySeason_TC87"/>
+      <class name="BookingMaskTestCases.VerifyTravelDateOutofContract_TC88"/>
+      <class name="BookingMaskTestCases.VerifySeasonAEndDateANDseasonBstartDate_TC83"/>
+      <class name="BookingMaskTestCases.VerifyOriginalBookingAfterModifyInquiryTC17"/>
+      <class name="BookingMaskTestCases.VerifyModifyBookingWithActionCodeUAandUTC38ToTC39"/>
+      <class name="BookingMaskTestCases.VerifyModifyBookingToAddAnotherRoomWithSameDateTC27"/>
+      <class name="BookingMaskTestCases.VerifyModifyBookingToAddAnotherRoomWithDifferentDateTC28"/>
+      <class name="BookingMaskTestCases.VerifyModifyBookingByEditingBothTravelFromAndToDateTC23"/>
+      <class name="BookingMaskTestCases.VerifyModifyBookingByChangingRoomCodeTC25"/>
+      <class name="BookingMaskTestCases.VerifyEnteringTravelFromBeforeContract_TC13"/>
+      <class name="BookingMaskTestCases.VerifyEnteringTravelDaysNoInTravelToField_TC10"/>
+      <class name="BookingMaskTestCases.VerifyCreateNewBookingInquiry_TC01"/>
+      <class name="BookingMaskTestCases.VerifyCreateBookingWithTwoPerson_TC33"/>
+      <class name="BookingMaskTestCases.VerifyCreateBookingForThreePersonThreeRooms_TC36"/>
+      <class name="BookingMaskTestCases.VerifyCreateBookingForThreePerson_TC35"/>
+      <class name="BookingMaskTestCases.VerifyCreateBookingForOnePerson_TC32"/>
+      <class name="BookingMaskTestCases.VerifyCreateBookingForFivePerson_TC37"/>
+      <class name="BookingMaskTestCases.VerifyConfirmBookingWithB_TC02"/>
+      <class name="BookingMaskTestCases.VerifyBookingWithSameRoomAndDifferentDates_TC31"/>
+      <class name="BookingMaskTestCases.VerifyBookingCancellationAndEnquiryTC42TC43"/>
+      <class name="BookingMaskTestCases.VerifyBookingByEditingTravelTypeTC47"/>
+      <class name="BookingMaskTestCases.ValidateBookingWithoutSelectingAnyTravelTypeTC48"/>
+      <class name="BookingMaskTestCases.TCC29TC130FAIL"/>
+      <class name="BookingMaskTestCases.CreateBookingForTwoPersonAndTwoRoom_TC34"/>
     </classes>
   </test> <!-- BM -->
 </suite> <!-- Suite -->

@@ -70,7 +70,7 @@ public class VerifyTravelDateNotInAnySeason_TC87 extends BaseClass {
     		
     		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
-    		Thread.sleep(1000);
+    		Thread.sleep(1500);
     		
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
@@ -127,7 +127,8 @@ public class VerifyTravelDateNotInAnySeason_TC87 extends BaseClass {
 	    {
 	    	String ActualMessage = BookingMask.getseasonPriceNotbelongToTableMsg();
 		    String expectedMessage = UtilityClass.readDataFromStringExcel(372, 2, "Sheet2");
-		    Assert.assertEquals(true, expectedMessage.contains(ActualMessage));
+		    Assert.assertEquals(ActualMessage, expectedMessage,"TC Failed");
+		    //Assert.assertEquals(true, expectedMessage.contains(ActualMessage));
 		    Reporter.log("Validating Actual message "+BookingMask.getseasonPriceNotbelongToTableMsg()+"and Expected message "+UtilityClass.readDataFromStringExcel(372, 2, "Sheet2"),true);
 	    }
 	    

@@ -102,13 +102,12 @@
 	    		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
 	    		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
 	    		Thread.sleep(1000);
-	    		
 	    		UtilityClass.scrollByAxis(0, 300);
 	    		Thread.sleep(1000);
 	    		UtilityClass.implicitlyWaitInMillis(1000);
-	    		
 	    		BookingMask.ClearbookingActionfield();
 	    		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(66, 1, "Sheet2"));
+	    		Reporter.log("Send booking action code",true);
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		
 	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -144,7 +143,6 @@
 	    		
 	    		BookingMask.sendTravelToDate(UtilityClass.readDataFromStringExcel(94, 1, "Sheet2"));
 	    		Reporter.log("Send Travel To date from Season-G",true);
-	    		
 	    		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
 	    		Reporter.log("Send Number of passenger",true);
 	            UtilityClass.scrollByAxis(0, 600);
@@ -195,13 +193,10 @@
 				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendEmail(UtilityClass.readDataFromStringExcel(105, 4, "Sheet2"));
 	    		UtilityClass.scrollByAxis(0, 900);
-				UtilityClass.implicitlyWaitInMillis(20000);
-				try {
-					UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
-				} catch (Exception e) {
-					// TODO: handle exception
-				}
-	    		Reporter.log("Click on sendBookingButton",true);
+	    		UtilityClass.implicitlyWaitInMillis(2000);
+	    	    UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
+	    	    Reporter.log("Clicked on sendbookingButton",true);
+	    	    Thread.sleep(1000);
 		}
 	   @Test
 	   public void validatePriceForDifferentDates() throws EncryptedDocumentException, IOException 
@@ -220,7 +215,7 @@
 	   @AfterMethod
 	   public void Logout() throws InterruptedException
 	   {
-	     Thread.sleep(3000);
+	      Thread.sleep(3000);
 	      BookingMask.ClickOnLogoutButtonOFBookingMask();
 		  Reporter.log("Clicking on Logout Button in Booking Mask page",true);
 		  Thread.sleep(500);

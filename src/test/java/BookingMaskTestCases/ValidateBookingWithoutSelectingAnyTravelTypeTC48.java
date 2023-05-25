@@ -49,7 +49,7 @@ public class ValidateBookingWithoutSelectingAnyTravelTypeTC48 extends BaseClass 
 	@BeforeClass
 	public void launchBrowser(){
 		openApplication();
-		Reporter.log("Browser Launch ",true);
+		Reporter.log("Browser Launch",true);
 		login=new loginPage(driver);
 		selectCompany = new selectCompanyPage(driver);
 		dashboard = new DashboardPage(driver);
@@ -132,14 +132,13 @@ public class ValidateBookingWithoutSelectingAnyTravelTypeTC48 extends BaseClass 
     	Reporter.log("Send Travel To date in Season-E",true);
     		
     	driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
-    	Reporter.log("Select Number of passenger",true);
+    	Reporter.log("Send Number of passenger",true);
             
     	UtilityClass.implicitlyWaitInMillis(2000);
         BookingMask.clickOnSendbookingButton();
         Reporter.log("Clicked on sendbookingButton",true);
         UtilityClass.scrollByAxis(0, 600);
         Thread.sleep(3000); 
-            
         UtilityClass.listBoxHandlingUsingByText("-- Select Any --", BookingMask.TravelTypeDropDownMethod());
         Reporter.log("Select Any TravelType option in dropdownList",true);
         UtilityClass.implicitlyWaitInMillis(2000);
