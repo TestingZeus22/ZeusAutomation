@@ -52,6 +52,13 @@ public class calculationSettingPage {
 		dbPercentagevalueField.sendKeys(value);
 	}
 	
+	public String getDBvalue(String DBValue)
+	{
+		String actualText = dbPercentagevalueField.getAttribute(DBValue);
+		return actualText;
+	}
+	
+	
 	public void clickOnAverageDBpercentageLastYearField()
 	{
 		averageDBpercentageLastYearField.click();

@@ -64,8 +64,10 @@ import org.testng.Reporter;
 	    	Thread.sleep(5000);
 	    	UtilityClass.scrollByAxis(100, 0);
 	    	driver.findElement(By.xpath("(//i[@class='pe-7s-info'])[1]")).click();
-	    	Thread.sleep(500);
+	    	Thread.sleep(1000);
+	    	
 	    	}
+		
 		        @Test
 		  	    public void ValidateInfoIcon() throws EncryptedDocumentException, IOException, InterruptedException 
 		        {

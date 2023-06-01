@@ -12,6 +12,11 @@ public class pricePage {
 
 @FindBy (xpath ="(//a[@class='btn-shadow btn btn-success pull-right'])[3]") private WebElement viewContractListButton;
 
+@FindBy (xpath ="(//h5[text()='Season A'])[1]") private WebElement seasonAtext;
+@FindBy (xpath ="(//h5[text()='Season B'])[1]") private WebElement seasonBtext;
+@FindBy (xpath ="(//h5[text()='Season C'])[1]") private WebElement seasonCtext;
+@FindBy (xpath ="(//h5[text()='Season D'])[1]") private WebElement seasonDtext;
+
 //Season_A
 @FindBy (id ="seasonModel_SeasonAFrom") private WebElement seasonFrom_A;
 @FindBy (id ="seasonModel_SeasonAUntil") private WebElement seasonUntil_A;
@@ -331,6 +336,30 @@ public class pricePage {
 		viewContractListButton.click();
 	}
 	
+	public String getSeasonAtext()
+	{
+		String actualText = seasonAtext.getText();
+		return actualText;
+	}
+	
+	public String getSeasonBtext()
+	{
+		String actualText = seasonBtext.getText();
+		return actualText;
+	}
+	
+	public String getSeasonCtext()
+	{
+		String actualText = seasonCtext.getText();
+		return actualText;
+	}
+	
+	public String getSeasonDtext()
+	{
+		String actualText = seasonDtext.getText();
+		return actualText;
+	}
+	
 	public void sendSeasonFrom_A(String Season_A)
 	{
 		seasonFrom_A.sendKeys(Season_A);
@@ -355,6 +384,12 @@ public class pricePage {
 	public void sendseasonApriceRoom1_A(String PriceRoom1_A)
 	{
 		seasonApriceRoom1_A.sendKeys(PriceRoom1_A);
+	}
+	
+	public String getSeasonApriceRoom1_A(String season_APrice)
+	{
+		String actualText = seasonApriceRoom1_A.getAttribute(season_APrice);
+		return actualText;
 	}
 	
 	public void sendseasonAallotRoom2_A(String AllotRoom2_A)
@@ -413,6 +448,12 @@ public class pricePage {
 		seasonBpriceRoom1_B.sendKeys(PriceRoom1_B);
 	}
 	
+	public String getseasonBpriceRoom1_B(String season_BPrice)
+	{
+		String actualText = seasonBpriceRoom1_B.getAttribute(season_BPrice);
+		return actualText;
+	}
+	
 	public void sendseasonBallotRoom2_B(String AllotRoom2_B)
 	{
 		seasonBallotRoom2_B.sendKeys(AllotRoom2_B);
@@ -461,6 +502,12 @@ public class pricePage {
 	public void sendseasonCpriceRoom1_C(String PriceRoom1_C)
 	{
 		seasonCpriceRoom1_C.sendKeys(PriceRoom1_C);
+	}
+	
+	public String getseasonCpriceRoom1_C(String DB1Value)
+	{
+		String actualText = seasonCpriceRoom1_C.getAttribute(DB1Value);
+		return actualText;
 	}
 	
 	public void sendseasonCallotRoom2_C(String AllotRoom2_C)
@@ -513,6 +560,12 @@ public class pricePage {
 		seasonDpriceRoom1_D.sendKeys(PriceRoom1_D);
 	}
 	
+	public String getseasonDpriceRoom1_D(String Price)
+	{
+		String actualText = seasonDpriceRoom1_D.getAttribute(Price);
+		return actualText;
+	}
+	
 	public void sendseasonDallotRoom2_D(String AllotRoom2_D)
 	{
 		seasonDallotRoom2_D.sendKeys(AllotRoom2_D);
@@ -561,6 +614,12 @@ public class pricePage {
 	public void sendseasonEpriceRoom1_E(String PriceRoom1_E)
 	{
 		seasonEpriceRoom1_E.sendKeys(PriceRoom1_E);
+	}
+
+	public String getseasonEpriceRoom1_E(String Price)
+	{
+		String actualText = seasonEpriceRoom1_E.getAttribute(Price);
+		return actualText;
 	}
 	
 	public void sendseasonEallotRoom2_E(String AllotRoom2_E)
@@ -714,6 +773,12 @@ public class pricePage {
 		seasonHpriceRoom1_H.sendKeys(PriceRoom1_H);
 	}
 	
+	public String getseasonHpriceRoom1_H(String Price)
+	{
+		String actualText = seasonHpriceRoom1_H.getAttribute(Price);
+		return actualText;
+	}
+	
 	public void sendseasonHallotRoom2_H(String AllotRoom2_H)
 	{
 		seasonHallotRoom2_H.sendKeys(AllotRoom2_H);
@@ -749,6 +814,12 @@ public class pricePage {
 	public void clickOnRoom1CheckBox1AllDay()
 	{
 		Room1CheckBox1AllDay.click();
+	}
+	
+	
+	public boolean isRoom1CheckBox1AllDay()
+	{
+		return Room1CheckBox1AllDay.isSelected();
 	}
 	
 	public void clickOnRoom1CheckBox2Monday()

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Browser Launch ]]>
@@ -20,73 +20,307 @@
       <![CDATA[Clicked on proceed button]]>
     </line>
     <line>
-      <![CDATA[Clicked on sales dropdown in Dashboard]]>
+      <![CDATA[Clicked on purchase option]]>
     </line>
     <line>
-      <![CDATA[Clicked on sales Booking in Dashboard]]>
+      <![CDATA[Clicked on accommodation option in list]]>
     </line>
     <line>
-      <![CDATA[Clicked on create Button in sales Booking page]]>
+      <![CDATA[Clicked on create Accommodation]]>
     </line>
     <line>
-      <![CDATA[Select TFT1 in TravelType dropdownList]]>
+      <![CDATA[Select TBM code from dropdown list]]>
     </line>
     <line>
-      <![CDATA[Selected HK001 - (TESTING) from dropdown list]]>
+      <![CDATA[Send hotel stars]]>
     </line>
     <line>
-      <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
+      <![CDATA[Select State from the listBox]]>
     </line>
     <line>
-      <![CDATA[Send number of passenger]]>
+      <![CDATA[Select City from the listBox]]>
     </line>
     <line>
-      <![CDATA[Send correct KOS in input field]]>
+      <![CDATA[Send Zip code]]>
     </line>
     <line>
-      <![CDATA[Send correct ProductCode in input field]]>
+      <![CDATA[Send Street]]>
     </line>
     <line>
-      <![CDATA[Send roomcode in input field]]>
+      <![CDATA[Send Number]]>
     </line>
     <line>
-      <![CDATA[Send correct boardName]]>
+      <![CDATA[Send hotel email]]>
     </line>
     <line>
-      <![CDATA[Send Occupancy]]>
+      <![CDATA[Send phone Number]]>
     </line>
     <line>
-      <![CDATA[Send bookinglines ]]>
+      <![CDATA[Send contract partner name]]>
     </line>
     <line>
-      <![CDATA[Send Travel from date end of Season-B]]>
+      <![CDATA[Send contract partner Email]]>
     </line>
     <line>
-      <![CDATA[Send Travel To start date of season-C]]>
+      <![CDATA[Send Reservation Eamil]]>
     </line>
     <line>
-      <![CDATA[Send Number of passenger]]>
+      <![CDATA[Select bank details in purchase agency dropdown]]>
     </line>
     <line>
-      <![CDATA[Clicked on sendbookingButton]]>
+      <![CDATA[Clicked on create AccommdationButton]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Rooms button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on create roomButton]]>
+    </line>
+    <line>
+      <![CDATA[Select Room Type from dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Send Room name]]>
+    </line>
+    <line>
+      <![CDATA[Select the sea view Street]]>
+    </line>
+    <line>
+      <![CDATA[Send room code]]>
+    </line>
+    <line>
+      <![CDATA[Send minimum adult person]]>
+    </line>
+    <line>
+      <![CDATA[Send maximum adult person]]>
+    </line>
+    <line>
+      <![CDATA[Send minimum children person]]>
+    </line>
+    <line>
+      <![CDATA[Send maximum children person]]>
+    </line>
+    <line>
+      <![CDATA[Send maximum Total person]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on CreateRoom button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on contract ]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on create contract]]>
+    </line>
+    <line>
+      <![CDATA[Send contract name]]>
+    </line>
+    <line>
+      <![CDATA[Select currency in the listBox]]>
+    </line>
+    <line>
+      <![CDATA[Select season in the listBox]]>
+    </line>
+    <line>
+      <![CDATA[Send start date of contract]]>
+    </line>
+    <line>
+      <![CDATA[Send End date of contract]]>
+    </line>
+    <line>
+      <![CDATA[Select price type in the listBox]]>
+    </line>
+    <line>
+      <![CDATA[Select price category in the listBox]]>
+    </line>
+    <line>
+      <![CDATA[Select status of contract in the ListBox]]>
+    </line>
+    <line>
+      <![CDATA[Select board basis in the listBox]]>
+    </line>
+    <line>
+      <![CDATA[Select the Price]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on distributor checkbox]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on all the checkboxes]]>
+    </line>
+    <line>
+      <![CDATA[Select the online or offline mode in listbox]]>
+    </line>
+    <line>
+      <![CDATA[Send cancellation Fees upto days]]>
+    </line>
+    <line>
+      <![CDATA[Send cancellation fees value]]>
+    </line>
+    <line>
+      <![CDATA[select cancellation fees discount type in listbox]]>
+    </line>
+    <line>
+      <![CDATA[Send cancellation fees travel from date]]>
+    </line>
+    <line>
+      <![CDATA[Send cancellation fees travel To date]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on create contract on contract page]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Price option]]>
+    </line>
+    <line>
+      <![CDATA[Send all required details for Season_A]]>
+    </line>
+    <line>
+      <![CDATA[Send all required details for Season_B]]>
+    </line>
+    <line>
+      <![CDATA[Send all required details for Season_C]]>
+    </line>
+    <line>
+      <![CDATA[Send all required details for Season_D]]>
+    </line>
+    <line>
+      <![CDATA[Send all required details for Season_E]]>
+    </line>
+    <line>
+      <![CDATA[Send all required details for Season_F]]>
+    </line>
+    <line>
+      <![CDATA[Send all required details for Season_G]]>
+    </line>
+    <line>
+      <![CDATA[Send all required details for Season_H]]>
+    </line>
+    <line>
+      <![CDATA[Delete the extra created room on price page]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on update price button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on simple popup as OK ]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on generate Allotment]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on dashboardLink to navigate to dashboard page]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on offer defination]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on FalkToursAG]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on TchiboDE]]>
+    </line>
+    <line>
+      <![CDATA[Send TBM code ]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on checkBox]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on saveButton]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Calculation dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on offer calculationList]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on offer calculation]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on FalkToursAG]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on TchiboDE]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Room1]]>
+    </line>
+    <line>
+      <![CDATA[Send DB% Value]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on save setting button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on SaveandCalculate button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Yes button in popup]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on transfer price]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Transfer price online]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Room1]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Save price]]>
+    </line>
+    <line>
+      <![CDATA[Validating actual season name on contracts page is Season A and Expected season name calculation page is Season A]]>
+    </line>
+    <line>
+      <![CDATA[Validating actual season name on contracts page is Season B and Expected season name calculation page is Season B]]>
+    </line>
+    <line>
+      <![CDATA[Validating actual season name on contracts page is Season C and Expected season name calculation page is Season C]]>
+    </line>
+    <line>
+      <![CDATA[Validating actual season name on contracts page isSeason D and Expected season name calculation page is Season D]]>
+    </line>
+    <line>
+      <![CDATA[Validating actual price on contracts page is 200 and Expected price on calculation page is 200]]>
+    </line>
+    <line>
+      <![CDATA[Validating actual price on contracts page is  400 and Expected price on calculation page is 400]]>
+    </line>
+    <line>
+      <![CDATA[Validating actual price on contracts page is  600 and Expected price on calculation page is  600]]>
+    </line>
+    <line>
+      <![CDATA[Validating actual price on contracts page is  800 and Expected price on calculation page is  800]]>
+    </line>
+    <line>
+      <![CDATA[Validating actual price on contracts page is  null and Expected price on calculation page is  null]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on Logout Button in Booking Mask page]]>
+    </line>
+    <line>
+      <![CDATA[Logout from Booking Mask Page]]>
     </line>
     <line>
       <![CDATA[Closing Browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-05-25T18:17:57 IST" name="Default suite" finished-at="2023-05-25T18:19:17 IST" duration-ms="80027">
+  <suite started-at="2023-06-01T09:56:42 IST" name="Default suite" finished-at="2023-06-01T09:59:29 IST" duration-ms="167283">
     <groups>
     </groups>
-    <test started-at="2023-05-25T18:17:57 IST" name="Default test" finished-at="2023-05-25T18:19:17 IST" duration-ms="80027">
-      <class name="BookingMaskTestCases.VerifyTravelDateNotInAnySeason_TC87">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:BookingMaskTestCases.VerifyTravelDateNotInAnySeason_TC87@a514af7]" started-at="2023-05-25T18:17:57 IST" name="launchBrowser" finished-at="2023-05-25T18:18:28 IST" duration-ms="31213" status="PASS">
+    <test started-at="2023-06-01T09:56:42 IST" name="Default test" finished-at="2023-06-01T09:59:29 IST" duration-ms="167283">
+      <class name="CalculationModuleTestCases.TC37">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:CalculationModuleTestCases.TC37@4fb61f4a]" started-at="2023-06-01T09:56:42 IST" name="launchBrowser" finished-at="2023-06-01T09:56:48 IST" duration-ms="6248" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser Launch ]]>
             </line>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:BookingMaskTestCases.VerifyTravelDateNotInAnySeason_TC87@a514af7]" started-at="2023-05-25T18:18:28 IST" name="loginToApp" finished-at="2023-05-25T18:19:17 IST" duration-ms="48551" status="PASS">
+        <test-method is-config="true" signature="loginToAApp()[pri:0, instance:CalculationModuleTestCases.TC37@4fb61f4a]" started-at="2023-06-01T09:56:48 IST" name="loginToAApp" finished-at="2023-06-01T09:59:24 IST" duration-ms="156186" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Valid Username Entered]]>
@@ -104,113 +338,308 @@
               <![CDATA[Clicked on proceed button]]>
             </line>
             <line>
-              <![CDATA[Clicked on sales dropdown in Dashboard]]>
+              <![CDATA[Clicked on purchase option]]>
             </line>
             <line>
-              <![CDATA[Clicked on sales Booking in Dashboard]]>
+              <![CDATA[Clicked on accommodation option in list]]>
             </line>
             <line>
-              <![CDATA[Clicked on create Button in sales Booking page]]>
+              <![CDATA[Clicked on create Accommodation]]>
             </line>
             <line>
-              <![CDATA[Select TFT1 in TravelType dropdownList]]>
+              <![CDATA[Select TBM code from dropdown list]]>
             </line>
             <line>
-              <![CDATA[Selected HK001 - (TESTING) from dropdown list]]>
+              <![CDATA[Send hotel stars]]>
             </line>
             <line>
-              <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
+              <![CDATA[Select State from the listBox]]>
             </line>
             <line>
-              <![CDATA[Send number of passenger]]>
+              <![CDATA[Select City from the listBox]]>
             </line>
             <line>
-              <![CDATA[Send correct KOS in input field]]>
+              <![CDATA[Send Zip code]]>
             </line>
             <line>
-              <![CDATA[Send correct ProductCode in input field]]>
+              <![CDATA[Send Street]]>
             </line>
             <line>
-              <![CDATA[Send roomcode in input field]]>
+              <![CDATA[Send Number]]>
             </line>
             <line>
-              <![CDATA[Send correct boardName]]>
+              <![CDATA[Send hotel email]]>
             </line>
             <line>
-              <![CDATA[Send Occupancy]]>
+              <![CDATA[Send phone Number]]>
             </line>
             <line>
-              <![CDATA[Send bookinglines ]]>
+              <![CDATA[Send contract partner name]]>
             </line>
             <line>
-              <![CDATA[Send Travel from date end of Season-B]]>
+              <![CDATA[Send contract partner Email]]>
             </line>
             <line>
-              <![CDATA[Send Travel To start date of season-C]]>
+              <![CDATA[Send Reservation Eamil]]>
             </line>
             <line>
-              <![CDATA[Send Number of passenger]]>
+              <![CDATA[Select bank details in purchase agency dropdown]]>
             </line>
             <line>
-              <![CDATA[Clicked on sendbookingButton]]>
+              <![CDATA[Clicked on create AccommdationButton]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Rooms button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on create roomButton]]>
+            </line>
+            <line>
+              <![CDATA[Select Room Type from dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Send Room name]]>
+            </line>
+            <line>
+              <![CDATA[Select the sea view Street]]>
+            </line>
+            <line>
+              <![CDATA[Send room code]]>
+            </line>
+            <line>
+              <![CDATA[Send minimum adult person]]>
+            </line>
+            <line>
+              <![CDATA[Send maximum adult person]]>
+            </line>
+            <line>
+              <![CDATA[Send minimum children person]]>
+            </line>
+            <line>
+              <![CDATA[Send maximum children person]]>
+            </line>
+            <line>
+              <![CDATA[Send maximum Total person]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on CreateRoom button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on contract ]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on create contract]]>
+            </line>
+            <line>
+              <![CDATA[Send contract name]]>
+            </line>
+            <line>
+              <![CDATA[Select currency in the listBox]]>
+            </line>
+            <line>
+              <![CDATA[Select season in the listBox]]>
+            </line>
+            <line>
+              <![CDATA[Send start date of contract]]>
+            </line>
+            <line>
+              <![CDATA[Send End date of contract]]>
+            </line>
+            <line>
+              <![CDATA[Select price type in the listBox]]>
+            </line>
+            <line>
+              <![CDATA[Select price category in the listBox]]>
+            </line>
+            <line>
+              <![CDATA[Select status of contract in the ListBox]]>
+            </line>
+            <line>
+              <![CDATA[Select board basis in the listBox]]>
+            </line>
+            <line>
+              <![CDATA[Select the Price]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on distributor checkbox]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on all the checkboxes]]>
+            </line>
+            <line>
+              <![CDATA[Select the online or offline mode in listbox]]>
+            </line>
+            <line>
+              <![CDATA[Send cancellation Fees upto days]]>
+            </line>
+            <line>
+              <![CDATA[Send cancellation fees value]]>
+            </line>
+            <line>
+              <![CDATA[select cancellation fees discount type in listbox]]>
+            </line>
+            <line>
+              <![CDATA[Send cancellation fees travel from date]]>
+            </line>
+            <line>
+              <![CDATA[Send cancellation fees travel To date]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on create contract on contract page]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Price option]]>
+            </line>
+            <line>
+              <![CDATA[Send all required details for Season_A]]>
+            </line>
+            <line>
+              <![CDATA[Send all required details for Season_B]]>
+            </line>
+            <line>
+              <![CDATA[Send all required details for Season_C]]>
+            </line>
+            <line>
+              <![CDATA[Send all required details for Season_D]]>
+            </line>
+            <line>
+              <![CDATA[Send all required details for Season_E]]>
+            </line>
+            <line>
+              <![CDATA[Send all required details for Season_F]]>
+            </line>
+            <line>
+              <![CDATA[Send all required details for Season_G]]>
+            </line>
+            <line>
+              <![CDATA[Send all required details for Season_H]]>
+            </line>
+            <line>
+              <![CDATA[Delete the extra created room on price page]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on update price button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on simple popup as OK ]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on generate Allotment]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on dashboardLink to navigate to dashboard page]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on offer defination]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on FalkToursAG]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on TchiboDE]]>
+            </line>
+            <line>
+              <![CDATA[Send TBM code ]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on checkBox]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on saveButton]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Calculation dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on offer calculationList]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on offer calculation]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on FalkToursAG]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on TchiboDE]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Room1]]>
+            </line>
+            <line>
+              <![CDATA[Send DB% Value]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on save setting button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on SaveandCalculate button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Yes button in popup]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on transfer price]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Transfer price online]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Room1]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Save price]]>
             </line>
           </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method signature="validateErrorMsgDatesOutOfSeason()[pri:0, instance:BookingMaskTestCases.VerifyTravelDateNotInAnySeason_TC87@a514af7]" started-at="2023-05-25T18:19:17 IST" name="validateErrorMsgDatesOutOfSeason" finished-at="2023-05-25T18:19:17 IST" duration-ms="117" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[TC Failed expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: TC Failed expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at BookingMaskTestCases.VerifyTravelDateNotInAnySeason_TC87.validateErrorMsgDatesOutOfSeason(VerifyTravelDateNotInAnySeason_TC87.java:130)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- loginToAApp -->
+        <test-method signature="validateOfferCalculationWithRoomDetails()[pri:0, instance:CalculationModuleTestCases.TC37@4fb61f4a]" started-at="2023-06-01T09:59:24 IST" name="validateOfferCalculationWithRoomDetails" finished-at="2023-06-01T09:59:24 IST" duration-ms="13" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Validating actual season name on contracts page is Season A and Expected season name calculation page is Season A]]>
+            </line>
+            <line>
+              <![CDATA[Validating actual season name on contracts page is Season B and Expected season name calculation page is Season B]]>
+            </line>
+            <line>
+              <![CDATA[Validating actual season name on contracts page is Season C and Expected season name calculation page is Season C]]>
+            </line>
+            <line>
+              <![CDATA[Validating actual season name on contracts page isSeason D and Expected season name calculation page is Season D]]>
+            </line>
+            <line>
+              <![CDATA[Validating actual price on contracts page is 200 and Expected price on calculation page is 200]]>
+            </line>
+            <line>
+              <![CDATA[Validating actual price on contracts page is  400 and Expected price on calculation page is 400]]>
+            </line>
+            <line>
+              <![CDATA[Validating actual price on contracts page is  600 and Expected price on calculation page is  600]]>
+            </line>
+            <line>
+              <![CDATA[Validating actual price on contracts page is  800 and Expected price on calculation page is  800]]>
+            </line>
+            <line>
+              <![CDATA[Validating actual price on contracts page is  null and Expected price on calculation page is  null]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- validateErrorMsgDatesOutOfSeason -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:BookingMaskTestCases.VerifyTravelDateNotInAnySeason_TC87@a514af7]" started-at="2023-05-25T18:19:17 IST" name="closeBrowser" finished-at="2023-05-25T18:19:17 IST" duration-ms="115" status="PASS">
+        </test-method> <!-- validateOfferCalculationWithRoomDetails -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:CalculationModuleTestCases.TC37@4fb61f4a]" started-at="2023-06-01T09:59:24 IST" name="Logout" finished-at="2023-06-01T09:59:29 IST" duration-ms="4667" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicking on Logout Button in Booking Mask page]]>
+            </line>
+            <line>
+              <![CDATA[Logout from Booking Mask Page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:CalculationModuleTestCases.TC37@4fb61f4a]" started-at="2023-06-01T09:59:29 IST" name="closeBrowser" finished-at="2023-06-01T09:59:29 IST" duration-ms="130" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- BookingMaskTestCases.VerifyTravelDateNotInAnySeason_TC87 -->
+      </class> <!-- CalculationModuleTestCases.TC37 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

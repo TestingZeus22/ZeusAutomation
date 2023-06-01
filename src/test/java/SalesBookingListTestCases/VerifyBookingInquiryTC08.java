@@ -111,17 +111,15 @@ public class VerifyBookingInquiryTC08 extends BaseClass {
             Reporter.log("Clicked on sendbookingButton",true);
             UtilityClass.scrollByAxis(0, 600);
             Thread.sleep(3000); 
-            
             String ActualPrice = BookingMask.getPriceFieldValue1("value");
             price = ActualPrice;
-            
             UtilityClass.implicitlyWaitInMillis(12000);
 			BookingMask.clickOnViewList();
 			Reporter.log("Clicked on view list");
 			UtilityClass.implicitlyWaitInMillis(2000);
 			salesBookingList.sendarrival(UtilityClass.readDataFromStringExcel(32, 1, "Sheet4"));
 			Reporter.log("Send Arrival date to verify the booking");
-			UtilityClass.implicitlyWaitInsec(10);
+			UtilityClass.implicitlyWaitInsec(40);
 			Thread.sleep(500);
 			salesBookingList.clickOnsubmitButton();
 	        Reporter.log("Clicked on submitButton",true);

@@ -608,6 +608,7 @@ import org.testng.Reporter;
 				UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
 	    		Reporter.log("Click on SendBookingButton",true);
 	            UtilityClass.implicitlyWaitInMillis(30000);
+	            
 	            String ResNo=BookingMask.getReservationNoBM("value");
 	            String ResVer=BookingMask.getReservationVerNoBM("value");
 	            String ActualReservNo= ResNo + ("/"+ResVer);

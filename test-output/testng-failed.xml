@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="BookingMaskTestCases.VerifyTravelDateNotInAnySeason_TC87">
+      <class name="CalculationModuleTestCases.TC37">
         <methods>
-          <include name="loginToApp"/>
-          <include name="closeBrowser"/>
-          <include name="validateErrorMsgDatesOutOfSeason"/>
+          <include name="validateOfferCalculationWithRoomDetails"/>
           <include name="launchBrowser"/>
+          <include name="Logout"/>
+          <include name="loginToAApp"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- BookingMaskTestCases.VerifyTravelDateNotInAnySeason_TC87 -->
+      </class> <!-- CalculationModuleTestCases.TC37 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

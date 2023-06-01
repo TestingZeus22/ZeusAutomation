@@ -1,108 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="BM(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="BookingMaskTestCases.VerifyTravelDateIsEndOfSeasonB_TC85">
+      <class name="SalesBookingListTestCases.VerifyInfoIconForBookingTC30">
         <methods>
-          <include name="validatePriceForEndDayOfSeasonB"/>
-          <include name="loginToApp"/>
-          <include name="launchBrowser"/>
-          <include name="closeBrowser"/>
-          <include name="Logout"/>
-        </methods>
-      </class> <!-- BookingMaskTestCases.VerifyTravelDateIsEndOfSeasonB_TC85 -->
-      <class name="BookingMaskTestCases.TCC29TC130FAIL">
-        <methods>
-          <include name="validateConfirmBoOkingOFTwoAccommodationWithU"/>
-          <include name="loginToApp"/>
-          <include name="launchBrowser"/>
-          <include name="validateConfirmBookingOFTwoAccommodation"/>
-          <include name="closeBrowser"/>
-          <include name="Logout"/>
-        </methods>
-      </class> <!-- BookingMaskTestCases.TCC29TC130FAIL -->
-      <class name="BookingMaskTestCases.VerifyEnteringTravelFromBeforeContract_TC13">
-        <methods>
-          <include name="validateMessageOnBMpage"/>
+          <include name="ValidateInfoIcon"/>
           <include name="loginToApp"/>
           <include name="launchBrowser"/>
           <include name="Logout"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- BookingMaskTestCases.VerifyEnteringTravelFromBeforeContract_TC13 -->
-      <class name="BookingMaskTestCases.VerifyBookingWithSameRoomAndDifferentDates_TC31">
-        <methods>
-          <include name="validatePriceForDifferentDates"/>
-          <include name="loginToApp"/>
-          <include name="launchBrowser"/>
-          <include name="Logout"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- BookingMaskTestCases.VerifyBookingWithSameRoomAndDifferentDates_TC31 -->
-      <class name="BookingMaskTestCases.VerifyBookingCancellationAndEnquiryTC42TC43">
-        <methods>
-          <include name="validateCancellationPricesWithS"/>
-          <include name="launchBrowser"/>
-          <include name="Logout"/>
-          <include name="loginToApp"/>
-          <include name="validateCancellationPricesWithSA"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- BookingMaskTestCases.VerifyBookingCancellationAndEnquiryTC42TC43 -->
-      <class name="BookingMaskTestCases.VerifyModifyBookingToAddAnotherRoomWithSameDateTC27">
-        <methods>
-          <include name="Logout"/>
-          <include name="loginToApp"/>
-          <include name="validateBookingAndTotalPriceofBothRooms"/>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- BookingMaskTestCases.VerifyModifyBookingToAddAnotherRoomWithSameDateTC27 -->
-      <class name="BookingMaskTestCases.ValidateBookingWithoutSelectingAnyTravelTypeTC48">
-        <methods>
-          <include name="validateBookingWithoutAnyTravelType"/>
-          <include name="loginToApp"/>
-          <include name="closeBrowser"/>
-          <include name="Logout"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- BookingMaskTestCases.ValidateBookingWithoutSelectingAnyTravelTypeTC48 -->
-      <class name="BookingMaskTestCases.VerifyTravelDateNotInAnySeason_TC87">
-        <methods>
-          <include name="loginToApp"/>
-          <include name="closeBrowser"/>
-          <include name="validateErrorMsgDatesOutOfSeason"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- BookingMaskTestCases.VerifyTravelDateNotInAnySeason_TC87 -->
-      <class name="BookingMaskTestCases.VerifyTravelDateStartWithSeasonCandEndsOutOfanySeason_TC86">
-        <methods>
-          <include name="validateErrorMsgOnBM"/>
-          <include name="Logout"/>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
-          <include name="loginToApp"/>
-        </methods>
-      </class> <!-- BookingMaskTestCases.VerifyTravelDateStartWithSeasonCandEndsOutOfanySeason_TC86 -->
-      <class name="BookingMaskTestCases.VerifyModifyBookingWithActionCodeUXTC44">
-        <methods>
-          <include name="validateModifyBookingWithActionCodeUX"/>
-          <include name="loginToApp"/>
-          <include name="Logout"/>
-          <include name="launchBrowser"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- BookingMaskTestCases.VerifyModifyBookingWithActionCodeUXTC44 -->
-      <class name="BookingMaskTestCases.VerifyBookingWithMismatchPaxAndOCCTC50">
-        <methods>
-          <include name="loginToApp"/>
-          <include name="validateBookingWitMismatchPaxAndOCC"/>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
-          <include name="Logout"/>
-        </methods>
-      </class> <!-- BookingMaskTestCases.VerifyBookingWithMismatchPaxAndOCCTC50 -->
+      </class> <!-- SalesBookingListTestCases.VerifyInfoIconForBookingTC30 -->
     </classes>
-  </test> <!-- BM(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
