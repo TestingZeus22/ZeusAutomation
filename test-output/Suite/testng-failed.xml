@@ -3,15 +3,111 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="SalesBookingListTestCases.VerifyInfoIconForBookingTC30">
+      <class name="LoginPageTestCases.RecoverPasswordAndBackToLoginVaidation_TC09">
         <methods>
-          <include name="ValidateInfoIcon"/>
-          <include name="loginToApp"/>
+          <include name="RecoverPasswordAndGoBackToLoginTest"/>
+          <include name="closeBrowser"/>
           <include name="launchBrowser"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- LoginPageTestCases.RecoverPasswordAndBackToLoginVaidation_TC09 -->
+      <class name="LoginPageTestCases.DashboardValidation_TC02">
+        <methods>
+          <include name="loginToApp"/>
+          <include name="closeBrowser"/>
           <include name="Logout"/>
+          <include name="ValidUserNameAndValidPasswordEnterToDashboardPageTest"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- LoginPageTestCases.DashboardValidation_TC02 -->
+      <class name="LoginPageTestCases.RecoverPasswordRefreshValidation_TC14">
+        <methods>
+          <include name="loginToEmail"/>
+          <include name="ValidUserNameEnterAndRefreshPageTest"/>
+          <include name="launchBrowser"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- SalesBookingListTestCases.VerifyInfoIconForBookingTC30 -->
+      </class> <!-- LoginPageTestCases.RecoverPasswordRefreshValidation_TC14 -->
+      <class name="LoginPageTestCases.LoginValidation_TC01">
+        <methods>
+          <include name="loginToApp"/>
+          <include name="ValidUserNameAndValidPasswordTest"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- LoginPageTestCases.LoginValidation_TC01 -->
+      <class name="LoginPageTestCases.LoginPageTextValidation_TC17">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="ValidateCopyrightTextOnLoginPageTest"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- LoginPageTestCases.LoginPageTextValidation_TC17 -->
+      <class name="LoginPageTestCases.LoginPageRefreshValidation_TC10">
+        <methods>
+          <include name="loginToApp"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="ValidUserNamePasswordAndRefreshpageTest"/>
+        </methods>
+      </class> <!-- LoginPageTestCases.LoginPageRefreshValidation_TC10 -->
+      <class name="LoginPageTestCases.ValidateRecoverPwdLinkTC_20">
+        <methods>
+          <include name="loginToApp"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="VerifyRecoverPwdIsLinkTest"/>
+        </methods>
+      </class> <!-- LoginPageTestCases.ValidateRecoverPwdLinkTC_20 -->
+      <class name="LoginPageTestCases.ValidateErrorMsgOnPassword_TC03">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="CheckIncorrectCredentialsOnPasswordFieldTest"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- LoginPageTestCases.ValidateErrorMsgOnPassword_TC03 -->
+      <class name="LoginPageTestCases.RecoveryPasswordPageTextValidation_TC23">
+        <methods>
+          <include name="loginToApp"/>
+          <include name="ValidateWelcomeTextOnRecoveryPageTest"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- LoginPageTestCases.RecoveryPasswordPageTextValidation_TC23 -->
+      <class name="LoginPageTestCases.recoveryPasswordPageValidation_TC24">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="ValidateCopyrightTextOnRecoveryPasswordTest"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- LoginPageTestCases.recoveryPasswordPageValidation_TC24 -->
+      <class name="LoginPageTestCases.LoginPageTextValidationTC_18">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="ValidateWelcomeBackTextOnLoginPageTest"/>
+          <include name="closeBrowser"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- LoginPageTestCases.LoginPageTextValidationTC_18 -->
+      <class name="LoginPageTestCases.ValidateErrorMsgOnUserName_TC04">
+        <methods>
+          <include name="CheckIncorrectCredentialsOnUserNameFieldTest"/>
+          <include name="loginToApp"/>
+          <include name="closeBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- LoginPageTestCases.ValidateErrorMsgOnUserName_TC04 -->
+      <class name="LoginPageTestCases.RecoveryPasswordClickValidation_TC08">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="ClickOnRecoveryPasswordLinkTest"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- LoginPageTestCases.RecoveryPasswordClickValidation_TC08 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

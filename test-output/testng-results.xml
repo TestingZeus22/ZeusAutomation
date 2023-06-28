@@ -20,283 +20,88 @@
       <![CDATA[Clicked on proceed button]]>
     </line>
     <line>
-      <![CDATA[Clicked on purchase option]]>
+      <![CDATA[Clicked on sales dropdown in Dashboard]]>
     </line>
     <line>
-      <![CDATA[Clicked on accommodation option in list]]>
+      <![CDATA[Clicked on sales Booking in Dashboard]]>
     </line>
     <line>
-      <![CDATA[Clicked on create Accommodation]]>
+      <![CDATA[Clicked on create Button in sales Booking page]]>
     </line>
     <line>
-      <![CDATA[Select TBM code from dropdown list]]>
+      <![CDATA[Select TFT1 in TravelType dropdownList]]>
     </line>
     <line>
-      <![CDATA[Send hotel stars]]>
+      <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
     </line>
     <line>
-      <![CDATA[Select State from the listBox]]>
+      <![CDATA[Send Booking action]]>
     </line>
     <line>
-      <![CDATA[Select City from the listBox]]>
+      <![CDATA[Send number of passenger]]>
     </line>
     <line>
-      <![CDATA[Send Zip code]]>
+      <![CDATA[Send correct KOS in input field]]>
     </line>
     <line>
-      <![CDATA[Send Street]]>
+      <![CDATA[Send correct ProductCode in input field]]>
     </line>
     <line>
-      <![CDATA[Send Number]]>
+      <![CDATA[Send roomcode in input field]]>
     </line>
     <line>
-      <![CDATA[Send hotel email]]>
+      <![CDATA[Send correct boardName]]>
     </line>
     <line>
-      <![CDATA[Send phone Number]]>
+      <![CDATA[Send Occupancy]]>
     </line>
     <line>
-      <![CDATA[Send contract partner name]]>
+      <![CDATA[Send bookinglines ]]>
     </line>
     <line>
-      <![CDATA[Send contract partner Email]]>
+      <![CDATA[Send Travel from date]]>
     </line>
     <line>
-      <![CDATA[Send Reservation Eamil]]>
+      <![CDATA[Send Travel To date]]>
     </line>
     <line>
-      <![CDATA[Select bank details in purchase agency dropdown]]>
+      <![CDATA[Send Number of passenger]]>
     </line>
     <line>
-      <![CDATA[Clicked on create AccommdationButton]]>
+      <![CDATA[Click on sendBookingButton]]>
     </line>
     <line>
-      <![CDATA[Clicked on Rooms button]]>
+      <![CDATA[Clicked on ViewList]]>
     </line>
     <line>
-      <![CDATA[Clicked on create roomButton]]>
+      <![CDATA[Clicked on sendTBMcode to verify booking is done or not]]>
     </line>
     <line>
-      <![CDATA[Select Room Type from dropdown]]>
+      <![CDATA[Clicked on Booking listButton]]>
     </line>
     <line>
-      <![CDATA[Send Room name]]>
+      <![CDATA[Send TBM code]]>
     </line>
     <line>
-      <![CDATA[Select the sea view Street]]>
+      <![CDATA[Clicked on Booking listButton]]>
     </line>
     <line>
-      <![CDATA[Send room code]]>
+      <![CDATA[Clicked on edit booking1]]>
     </line>
     <line>
-      <![CDATA[Send minimum adult person]]>
+      <![CDATA[Change booking action to UA]]>
     </line>
     <line>
-      <![CDATA[Send maximum adult person]]>
+      <![CDATA[Change No.of pax]]>
     </line>
     <line>
-      <![CDATA[Send minimum children person]]>
+      <![CDATA[Change the occupancy]]>
     </line>
     <line>
-      <![CDATA[Send maximum children person]]>
+      <![CDATA[Send number of passenger]]>
     </line>
     <line>
-      <![CDATA[Send maximum Total person]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on CreateRoom button]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on contract ]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on create contract]]>
-    </line>
-    <line>
-      <![CDATA[Send contract name]]>
-    </line>
-    <line>
-      <![CDATA[Select currency in the listBox]]>
-    </line>
-    <line>
-      <![CDATA[Select season in the listBox]]>
-    </line>
-    <line>
-      <![CDATA[Send start date of contract]]>
-    </line>
-    <line>
-      <![CDATA[Send End date of contract]]>
-    </line>
-    <line>
-      <![CDATA[Select price type in the listBox]]>
-    </line>
-    <line>
-      <![CDATA[Select price category in the listBox]]>
-    </line>
-    <line>
-      <![CDATA[Select status of contract in the ListBox]]>
-    </line>
-    <line>
-      <![CDATA[Select board basis in the listBox]]>
-    </line>
-    <line>
-      <![CDATA[Select the Price]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on distributor checkbox]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on all the checkboxes]]>
-    </line>
-    <line>
-      <![CDATA[Select the online or offline mode in listbox]]>
-    </line>
-    <line>
-      <![CDATA[Send cancellation Fees upto days]]>
-    </line>
-    <line>
-      <![CDATA[Send cancellation fees value]]>
-    </line>
-    <line>
-      <![CDATA[select cancellation fees discount type in listbox]]>
-    </line>
-    <line>
-      <![CDATA[Send cancellation fees travel from date]]>
-    </line>
-    <line>
-      <![CDATA[Send cancellation fees travel To date]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on create contract on contract page]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on Price option]]>
-    </line>
-    <line>
-      <![CDATA[Send all required details for Season_A]]>
-    </line>
-    <line>
-      <![CDATA[Send all required details for Season_B]]>
-    </line>
-    <line>
-      <![CDATA[Send all required details for Season_C]]>
-    </line>
-    <line>
-      <![CDATA[Send all required details for Season_D]]>
-    </line>
-    <line>
-      <![CDATA[Send all required details for Season_E]]>
-    </line>
-    <line>
-      <![CDATA[Send all required details for Season_F]]>
-    </line>
-    <line>
-      <![CDATA[Send all required details for Season_G]]>
-    </line>
-    <line>
-      <![CDATA[Send all required details for Season_H]]>
-    </line>
-    <line>
-      <![CDATA[Delete the extra created room on price page]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on update price button]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on simple popup as OK ]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on generate Allotment]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on dashboardLink to navigate to dashboard page]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on offer defination]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on FalkToursAG]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on TchiboDE]]>
-    </line>
-    <line>
-      <![CDATA[Send TBM code ]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on checkBox]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on saveButton]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on Calculation dropdown]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on offer calculationList]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on offer calculation]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on FalkToursAG]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on TchiboDE]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on Room1]]>
-    </line>
-    <line>
-      <![CDATA[Send DB% Value]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on save setting button]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on SaveandCalculate button]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on Yes button in popup]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on transfer price]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on Transfer price online]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on Room1]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on Save price]]>
-    </line>
-    <line>
-      <![CDATA[Validating actual season name on contracts page is Season A and Expected season name calculation page is Season A]]>
-    </line>
-    <line>
-      <![CDATA[Validating actual season name on contracts page is Season B and Expected season name calculation page is Season B]]>
-    </line>
-    <line>
-      <![CDATA[Validating actual season name on contracts page is Season C and Expected season name calculation page is Season C]]>
-    </line>
-    <line>
-      <![CDATA[Validating actual season name on contracts page isSeason D and Expected season name calculation page is Season D]]>
-    </line>
-    <line>
-      <![CDATA[Validating actual price on contracts page is 200 and Expected price on calculation page is 200]]>
-    </line>
-    <line>
-      <![CDATA[Validating actual price on contracts page is  400 and Expected price on calculation page is 400]]>
-    </line>
-    <line>
-      <![CDATA[Validating actual price on contracts page is  600 and Expected price on calculation page is  600]]>
-    </line>
-    <line>
-      <![CDATA[Validating actual price on contracts page is  800 and Expected price on calculation page is  800]]>
-    </line>
-    <line>
-      <![CDATA[Validating actual price on contracts page is  null and Expected price on calculation page is  null]]>
+      <![CDATA[Validating Actual price for Season-G  533280.00 and Expected Price for Season-G with UA action code is 533280.00]]>
     </line>
     <line>
       <![CDATA[Clicking on Logout Button in Booking Mask page]]>
@@ -308,19 +113,19 @@
       <![CDATA[Closing Browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-06-01T09:56:42 IST" name="Default suite" finished-at="2023-06-01T09:59:29 IST" duration-ms="167283">
+  <suite started-at="2023-06-28T15:16:20 IST" name="Default suite" finished-at="2023-06-28T15:18:30 IST" duration-ms="129930">
     <groups>
     </groups>
-    <test started-at="2023-06-01T09:56:42 IST" name="Default test" finished-at="2023-06-01T09:59:29 IST" duration-ms="167283">
-      <class name="CalculationModuleTestCases.TC37">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:CalculationModuleTestCases.TC37@4fb61f4a]" started-at="2023-06-01T09:56:42 IST" name="launchBrowser" finished-at="2023-06-01T09:56:48 IST" duration-ms="6248" status="PASS">
+    <test started-at="2023-06-28T15:16:20 IST" name="Default test" finished-at="2023-06-28T15:18:30 IST" duration-ms="129930">
+      <class name="BookingMaskTestCases.VerifyBookingModifyEnquiry_TC16">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:BookingMaskTestCases.VerifyBookingModifyEnquiry_TC16@4fb61f4a]" started-at="2023-06-28T15:16:20 IST" name="launchBrowser" finished-at="2023-06-28T15:16:26 IST" duration-ms="5920" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser Launch ]]>
             </line>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginToAApp()[pri:0, instance:CalculationModuleTestCases.TC37@4fb61f4a]" started-at="2023-06-01T09:56:48 IST" name="loginToAApp" finished-at="2023-06-01T09:59:24 IST" duration-ms="156186" status="PASS">
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:BookingMaskTestCases.VerifyBookingModifyEnquiry_TC16@4fb61f4a]" started-at="2023-06-28T15:16:26 IST" name="loginToApp" finished-at="2023-06-28T15:18:25 IST" duration-ms="119003" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Valid Username Entered]]>
@@ -338,291 +143,96 @@
               <![CDATA[Clicked on proceed button]]>
             </line>
             <line>
-              <![CDATA[Clicked on purchase option]]>
+              <![CDATA[Clicked on sales dropdown in Dashboard]]>
             </line>
             <line>
-              <![CDATA[Clicked on accommodation option in list]]>
+              <![CDATA[Clicked on sales Booking in Dashboard]]>
             </line>
             <line>
-              <![CDATA[Clicked on create Accommodation]]>
+              <![CDATA[Clicked on create Button in sales Booking page]]>
             </line>
             <line>
-              <![CDATA[Select TBM code from dropdown list]]>
+              <![CDATA[Select TFT1 in TravelType dropdownList]]>
             </line>
             <line>
-              <![CDATA[Send hotel stars]]>
+              <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
             </line>
             <line>
-              <![CDATA[Select State from the listBox]]>
+              <![CDATA[Send Booking action]]>
             </line>
             <line>
-              <![CDATA[Select City from the listBox]]>
+              <![CDATA[Send number of passenger]]>
             </line>
             <line>
-              <![CDATA[Send Zip code]]>
+              <![CDATA[Send correct KOS in input field]]>
             </line>
             <line>
-              <![CDATA[Send Street]]>
+              <![CDATA[Send correct ProductCode in input field]]>
             </line>
             <line>
-              <![CDATA[Send Number]]>
+              <![CDATA[Send roomcode in input field]]>
             </line>
             <line>
-              <![CDATA[Send hotel email]]>
+              <![CDATA[Send correct boardName]]>
             </line>
             <line>
-              <![CDATA[Send phone Number]]>
+              <![CDATA[Send Occupancy]]>
             </line>
             <line>
-              <![CDATA[Send contract partner name]]>
+              <![CDATA[Send bookinglines ]]>
             </line>
             <line>
-              <![CDATA[Send contract partner Email]]>
+              <![CDATA[Send Travel from date]]>
             </line>
             <line>
-              <![CDATA[Send Reservation Eamil]]>
+              <![CDATA[Send Travel To date]]>
             </line>
             <line>
-              <![CDATA[Select bank details in purchase agency dropdown]]>
+              <![CDATA[Send Number of passenger]]>
             </line>
             <line>
-              <![CDATA[Clicked on create AccommdationButton]]>
+              <![CDATA[Click on sendBookingButton]]>
             </line>
             <line>
-              <![CDATA[Clicked on Rooms button]]>
+              <![CDATA[Clicked on ViewList]]>
             </line>
             <line>
-              <![CDATA[Clicked on create roomButton]]>
+              <![CDATA[Clicked on sendTBMcode to verify booking is done or not]]>
             </line>
             <line>
-              <![CDATA[Select Room Type from dropdown]]>
+              <![CDATA[Clicked on Booking listButton]]>
             </line>
             <line>
-              <![CDATA[Send Room name]]>
+              <![CDATA[Send TBM code]]>
             </line>
             <line>
-              <![CDATA[Select the sea view Street]]>
+              <![CDATA[Clicked on Booking listButton]]>
             </line>
             <line>
-              <![CDATA[Send room code]]>
+              <![CDATA[Clicked on edit booking1]]>
             </line>
             <line>
-              <![CDATA[Send minimum adult person]]>
+              <![CDATA[Change booking action to UA]]>
             </line>
             <line>
-              <![CDATA[Send maximum adult person]]>
+              <![CDATA[Change No.of pax]]>
             </line>
             <line>
-              <![CDATA[Send minimum children person]]>
+              <![CDATA[Change the occupancy]]>
             </line>
             <line>
-              <![CDATA[Send maximum children person]]>
-            </line>
-            <line>
-              <![CDATA[Send maximum Total person]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on CreateRoom button]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on contract ]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on create contract]]>
-            </line>
-            <line>
-              <![CDATA[Send contract name]]>
-            </line>
-            <line>
-              <![CDATA[Select currency in the listBox]]>
-            </line>
-            <line>
-              <![CDATA[Select season in the listBox]]>
-            </line>
-            <line>
-              <![CDATA[Send start date of contract]]>
-            </line>
-            <line>
-              <![CDATA[Send End date of contract]]>
-            </line>
-            <line>
-              <![CDATA[Select price type in the listBox]]>
-            </line>
-            <line>
-              <![CDATA[Select price category in the listBox]]>
-            </line>
-            <line>
-              <![CDATA[Select status of contract in the ListBox]]>
-            </line>
-            <line>
-              <![CDATA[Select board basis in the listBox]]>
-            </line>
-            <line>
-              <![CDATA[Select the Price]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on distributor checkbox]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on all the checkboxes]]>
-            </line>
-            <line>
-              <![CDATA[Select the online or offline mode in listbox]]>
-            </line>
-            <line>
-              <![CDATA[Send cancellation Fees upto days]]>
-            </line>
-            <line>
-              <![CDATA[Send cancellation fees value]]>
-            </line>
-            <line>
-              <![CDATA[select cancellation fees discount type in listbox]]>
-            </line>
-            <line>
-              <![CDATA[Send cancellation fees travel from date]]>
-            </line>
-            <line>
-              <![CDATA[Send cancellation fees travel To date]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on create contract on contract page]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on Price option]]>
-            </line>
-            <line>
-              <![CDATA[Send all required details for Season_A]]>
-            </line>
-            <line>
-              <![CDATA[Send all required details for Season_B]]>
-            </line>
-            <line>
-              <![CDATA[Send all required details for Season_C]]>
-            </line>
-            <line>
-              <![CDATA[Send all required details for Season_D]]>
-            </line>
-            <line>
-              <![CDATA[Send all required details for Season_E]]>
-            </line>
-            <line>
-              <![CDATA[Send all required details for Season_F]]>
-            </line>
-            <line>
-              <![CDATA[Send all required details for Season_G]]>
-            </line>
-            <line>
-              <![CDATA[Send all required details for Season_H]]>
-            </line>
-            <line>
-              <![CDATA[Delete the extra created room on price page]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on update price button]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on simple popup as OK ]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on generate Allotment]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on dashboardLink to navigate to dashboard page]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on offer defination]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on FalkToursAG]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on TchiboDE]]>
-            </line>
-            <line>
-              <![CDATA[Send TBM code ]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on checkBox]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on saveButton]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on Calculation dropdown]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on offer calculationList]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on offer calculation]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on FalkToursAG]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on TchiboDE]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on Room1]]>
-            </line>
-            <line>
-              <![CDATA[Send DB% Value]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on save setting button]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on SaveandCalculate button]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on Yes button in popup]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on transfer price]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on Transfer price online]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on Room1]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on Save price]]>
+              <![CDATA[Send number of passenger]]>
             </line>
           </reporter-output>
-        </test-method> <!-- loginToAApp -->
-        <test-method signature="validateOfferCalculationWithRoomDetails()[pri:0, instance:CalculationModuleTestCases.TC37@4fb61f4a]" started-at="2023-06-01T09:59:24 IST" name="validateOfferCalculationWithRoomDetails" finished-at="2023-06-01T09:59:24 IST" duration-ms="13" status="PASS">
+        </test-method> <!-- loginToApp -->
+        <test-method signature="validatepriceFieldWithChangeInBookingAction()[pri:0, instance:BookingMaskTestCases.VerifyBookingModifyEnquiry_TC16@4fb61f4a]" started-at="2023-06-28T15:18:25 IST" name="validatepriceFieldWithChangeInBookingAction" finished-at="2023-06-28T15:18:25 IST" duration-ms="490" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Validating actual season name on contracts page is Season A and Expected season name calculation page is Season A]]>
-            </line>
-            <line>
-              <![CDATA[Validating actual season name on contracts page is Season B and Expected season name calculation page is Season B]]>
-            </line>
-            <line>
-              <![CDATA[Validating actual season name on contracts page is Season C and Expected season name calculation page is Season C]]>
-            </line>
-            <line>
-              <![CDATA[Validating actual season name on contracts page isSeason D and Expected season name calculation page is Season D]]>
-            </line>
-            <line>
-              <![CDATA[Validating actual price on contracts page is 200 and Expected price on calculation page is 200]]>
-            </line>
-            <line>
-              <![CDATA[Validating actual price on contracts page is  400 and Expected price on calculation page is 400]]>
-            </line>
-            <line>
-              <![CDATA[Validating actual price on contracts page is  600 and Expected price on calculation page is  600]]>
-            </line>
-            <line>
-              <![CDATA[Validating actual price on contracts page is  800 and Expected price on calculation page is  800]]>
-            </line>
-            <line>
-              <![CDATA[Validating actual price on contracts page is  null and Expected price on calculation page is  null]]>
+              <![CDATA[Validating Actual price for Season-G  533280.00 and Expected Price for Season-G with UA action code is 533280.00]]>
             </line>
           </reporter-output>
-        </test-method> <!-- validateOfferCalculationWithRoomDetails -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:CalculationModuleTestCases.TC37@4fb61f4a]" started-at="2023-06-01T09:59:24 IST" name="Logout" finished-at="2023-06-01T09:59:29 IST" duration-ms="4667" status="PASS">
+        </test-method> <!-- validatepriceFieldWithChangeInBookingAction -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:BookingMaskTestCases.VerifyBookingModifyEnquiry_TC16@4fb61f4a]" started-at="2023-06-28T15:18:25 IST" name="Logout" finished-at="2023-06-28T15:18:29 IST" duration-ms="4262" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Clicking on Logout Button in Booking Mask page]]>
@@ -632,14 +242,14 @@
             </line>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:CalculationModuleTestCases.TC37@4fb61f4a]" started-at="2023-06-01T09:59:29 IST" name="closeBrowser" finished-at="2023-06-01T09:59:29 IST" duration-ms="130" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:BookingMaskTestCases.VerifyBookingModifyEnquiry_TC16@4fb61f4a]" started-at="2023-06-28T15:18:29 IST" name="closeBrowser" finished-at="2023-06-28T15:18:30 IST" duration-ms="209" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- CalculationModuleTestCases.TC37 -->
+      </class> <!-- BookingMaskTestCases.VerifyBookingModifyEnquiry_TC16 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

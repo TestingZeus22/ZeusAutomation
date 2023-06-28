@@ -92,8 +92,8 @@
 	    		UtilityClass.implicitlyWaitInMillis(3000);
 	    		Thread.sleep(1000);
 	    		
-	    		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
-	    		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
+//	    		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
+//	    		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
 	    		Thread.sleep(1000);
 	    		UtilityClass.scrollByAxis(0, 300);
 	    	

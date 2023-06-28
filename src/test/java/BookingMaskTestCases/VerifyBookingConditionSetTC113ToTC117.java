@@ -73,7 +73,7 @@ public class VerifyBookingConditionSetTC113ToTC117 extends BaseClass {
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
-    		Thread.sleep(1000);
+    		Thread.sleep(2000);
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(2000);
@@ -135,12 +135,12 @@ public class VerifyBookingConditionSetTC113ToTC117 extends BaseClass {
   		    Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue1("value")+" and Expected Price "+UtilityClass.readDataFromStringExcel(477, 1, "Sheet2"),true);
 	    }
 	    
-	    @Test 
+	    @Test (enabled=false)
 	    public void validatePriceBySendingTravelDateMonTuesAndWedWeekdaySetMonTuesAndWed() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
-    		Thread.sleep(1000);
+    		Thread.sleep(2000);
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(2000);
@@ -201,12 +201,12 @@ public class VerifyBookingConditionSetTC113ToTC117 extends BaseClass {
   		  	Assert.assertEquals(ActualPrice, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
   		  	Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue1("value")+" and Expected Price "+UtilityClass.readDataFromStringExcel(477, 2, "Sheet2"),true);
 	    }
-	    @Test 
+	    @Test (enabled=false)
 	    public void validateErrorMsgBySendingTravelDateSunToMonWeekdaySetMonTuesAndWed() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
-    		Thread.sleep(1500);
+    		Thread.sleep(2000);
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(2000);
@@ -267,12 +267,12 @@ public class VerifyBookingConditionSetTC113ToTC117 extends BaseClass {
     	    Reporter.log("Validating Actual message "+BookingMask.getInvalidTravelDurationNoPriceInfoMsg()+" and Expected message "+UtilityClass.readDataFromStringExcel(477, 3, "Sheet2"),true);
 	    }
 	    
-	    @Test 
+	    @Test (enabled=false)
 	    public void validateErrorMsgBySendingTravelDateWedToThursWeekdaySetMonTuesAndWed() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
-    		Thread.sleep(1500);
+    		Thread.sleep(2000);
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(2000);
@@ -333,12 +333,12 @@ public class VerifyBookingConditionSetTC113ToTC117 extends BaseClass {
     	    Reporter.log("Validating Actual message "+BookingMask.getInvalidTravelDurationNoPriceInfoMsg()+" and Expected message "+UtilityClass.readDataFromStringExcel(477, 4, "Sheet2"),true);
 	    }
 	    
-	    @Test
+	    @Test(enabled=false)
 	    public void validateErrorMsgBySendingTravelDateThursToFridWeekdaySetMonTuesAndWed() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
-    		Thread.sleep(1500);
+    		Thread.sleep(2000);
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(2000);

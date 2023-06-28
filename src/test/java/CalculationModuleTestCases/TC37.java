@@ -82,15 +82,12 @@ public class TC37 extends BaseClass {
 	String Season_Bprice1;
 	String Season_Cprice1;
 	String Season_Dprice1;
-	
 	String CostPriceSeasonAA;
 	String CostPriceSeasonBB;
 	String CostPriceSeasonCC;
 	String CostPriceSeasonDD;
-	
 	String value11;
 	String value12;
-	
 	Boolean CheckBox1;
 	Boolean CheckBox2;
 	
@@ -760,19 +757,6 @@ public class TC37 extends BaseClass {
 	  
 	  Assert.assertEquals(CheckBox1,CheckBox2,"Test Case Failed as actual & expected Prices are not matching for season_D");
 	  Reporter.log("Validating actual price on contracts page is  "+CheckBox1+" and Expected price on calculation page is  "+CheckBox2,true);
-	  
-	  
-	 
-//	  Assert.assertEquals(value11, value12,"Test Case Failed as actual & expected DB% are not matching");
-//	  Reporter.log("Validating Actual DB percentage on calcualtion setting page is "+value11+" and Expected DB percentage on another page is "+value12,true);
-	  
-	  
-//	  Assert.assertEquals(SeasonC, Allot_ARemaining,"Test Case Failed as actual & expected allotment number are not matching for season_A");
-//	  Reporter.log("Validating Actual allotment number on Price page for season_A in contracts is "+Actualseason_Aallot+" and Expected Remaining allotment number for season_A in Allotment page is "+Allot_ARemaining,true);
-//	  
-//	  Assert.assertEquals(SeasonC, Allot_ARemaining,"Test Case Failed as actual & expected allotment number are not matching for season_A");
-//	  Reporter.log("Validating Actual allotment number on Price page for season_A in contracts is "+Actualseason_Aallot+" and Expected Remaining allotment number for season_A in Allotment page is "+Allot_ARemaining,true);
-	 
    }
   
     @AfterMethod
@@ -794,29 +778,4 @@ public class TC37 extends BaseClass {
     }
  
  }
-
-
-
-
-
-
-// ((//table[@id='tbl_roomdata']//tr)[4]//td)[2] ---> Dynamic xpath for checkbox Selection
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -143,7 +143,6 @@
 	            
 	            UtilityClass.scrollByAxis(0, 600);
 	            Thread.sleep(1000);
-	     
 	    		BookingMask.sendKOS2(UtilityClass.readDataFromStringExcel(4, 2, "Sheet3"));
 	    		Reporter.log("Send correct KOS in input field",true);
 	    		UtilityClass.implicitlyWaitInMillis(1000);

@@ -3,7 +3,6 @@ package LoginPageTestCases;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
-
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,9 +15,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import Base.BaseClass;
-
 import POM.loginPage;
 import POM.selectCompanyPage;
 import utility.UtilityClass;
