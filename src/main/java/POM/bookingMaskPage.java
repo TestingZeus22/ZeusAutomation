@@ -1065,10 +1065,5 @@ public class bookingMaskPage {
 		String actualText = reserVER.getAttribute(RVer);
 		return actualText;
 	}
-	
-	
-	
-	
-	
-		
+
 }

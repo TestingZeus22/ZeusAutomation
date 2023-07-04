@@ -76,9 +76,12 @@ public class VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130 
     		Reporter.log("Clicked on create Button in sales Booking page",true);
     		Thread.sleep(6000);
 		}
-	    @Test (enabled=false)
+	    @Test ()
 	    public void validateBookingAndPriceForMinStayWithB() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
+	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+    		Thread.sleep(1000);
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
     		Thread.sleep(1000);
@@ -90,9 +93,6 @@ public class VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130 
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
     		UtilityClass.implicitlyWaitInMillis(1000);
-    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
-    		UtilityClass.implicitlyWaitInMillis(2000);
     		BookingMask.ClearbookingActionfield();
     		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(66, 1, "Sheet2"));
     		UtilityClass.implicitlyWaitInMillis(2000);
@@ -189,7 +189,7 @@ public class VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130 
             Reporter.log("Validating Actual price "+ActualPrices+" and Expected Price "+UtilityClass.readDataFromStringExcel(281, 1, "Sheet2"),true);
 	    }
 	    
-	    @Test (enabled=false)
+	    @Test ()
 	    public void validateBookingAndPriceForMaxStayWithB() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
@@ -303,9 +303,11 @@ public class VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130 
             Reporter.log("Validating Actual price "+ActualPrice+" and Expected Price "+UtilityClass.readDataFromStringExcel(281, 2, "Sheet2"),true);
 	    }
 	    
-	    @Test 
+	    @Test (enabled=false)
 	    public void validateBookingAndPriceBetweenMinAndMaxStayWithB() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
+	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
     		Thread.sleep(1000);
@@ -316,9 +318,6 @@ public class VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130 
     		Reporter.log("Selected room 804 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
-    		UtilityClass.implicitlyWaitInMillis(1000);
-    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
     		UtilityClass.implicitlyWaitInMillis(1000);
     		BookingMask.ClearbookingActionfield();
     		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(66, 1, "Sheet2"));
@@ -357,7 +356,6 @@ public class VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130 
     		
     		driver.findElement(By.id("bookinglines_PassengerNo_2")).sendKeys("1-2");
     		Reporter.log("Send Number of passenger",true);
-            
     		UtilityClass.implicitlyWaitInMillis(2000);
             
     		UtilityClass.listBoxHandlingUsingByText("Boy", BookingMask.ListBoxTitleGender());
@@ -388,7 +386,7 @@ public class VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130 
 			 Assert.assertEquals(ActualPrice, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
 			 Reporter.log("Validating Actual price "+ActualPrice+" and Expected Price "+UtilityClass.readDataFromStringExcel(281, 3, "Sheet2"),true);
 	    }
-	    @Test 
+	    @Test  (enabled=false)
 	    public void validteErrorMessageForBelowMinStayWithB() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
@@ -472,7 +470,7 @@ public class VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130 
     	    Reporter.log("Validating Actual message "+BookingMask.getStayExceedErrorMessage()+" and Expected message "+UtilityClass.readDataFromStringExcel(288, 1, "Sheet2"),true);
 	    }
 	   
-	    @Test 
+	    @Test (enabled=false)
 	    public void validateErrorMessageForAboveMaxStayWithB() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());

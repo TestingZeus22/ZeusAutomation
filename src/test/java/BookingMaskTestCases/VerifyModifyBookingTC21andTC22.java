@@ -77,7 +77,9 @@ public class VerifyModifyBookingTC21andTC22 extends BaseClass
 	    		@Test   (priority = 1) //TC21
 	    		public void validateBookingByDecreasingDuration() throws InterruptedException, EncryptedDocumentException, IOException 
 	    		{
-	    		UtilityClass.implicitlyWaitInsec(10);
+	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+		    	Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+		    	Thread.sleep(1000);
 	    		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		UtilityClass.implicitlyWaitInMillis(3000);
@@ -89,12 +91,9 @@ public class VerifyModifyBookingTC21andTC22 extends BaseClass
 	    		Thread.sleep(1000);
 	    		BookingMask.ClearbookingActionfield();
 	    		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(261, 4, "Sheet2"));
-	    		Reporter.log("Send Booking Action");
+	    		Reporter.log("Send Booking Action",true);
 	    		
 	    		UtilityClass.implicitlyWaitInMillis(1000);
-	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-	    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
-	    		
 	    		BookingMask.clearNoOfPax();
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		BookingMask.sendNoOfPax(UtilityClass.readDataFromStringExcel(262, 4, "Sheet2"));
@@ -212,6 +211,9 @@ public class VerifyModifyBookingTC21andTC22 extends BaseClass
 	    		@Test  (priority=2)  //TC22
 	    		public void validateBookingByIncreasingDuration() throws InterruptedException, EncryptedDocumentException, IOException 
 	    		{
+	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+		    	Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+		    	Thread.sleep(1000);
 	    		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		UtilityClass.implicitlyWaitInMillis(3000);
@@ -226,8 +228,6 @@ public class VerifyModifyBookingTC21andTC22 extends BaseClass
 	    		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(299, 4, "Sheet2"));
 	    		Reporter.log("Send Booking Action");
 	    		UtilityClass.implicitlyWaitInMillis(1000);
-	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-	    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
 	    		BookingMask.clearNoOfPax();
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		BookingMask.sendNoOfPax(UtilityClass.readDataFromStringExcel(300, 4, "Sheet2"));

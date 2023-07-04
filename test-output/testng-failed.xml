@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="BookingMaskTestCases.VerifyBookingModifyEnquiry_TC16">
+      <class name="BookingMaskTestCases.VerifyBookingforSeasonB_TC15">
         <methods>
+          <include name="validatePriceForSeasonB"/>
           <include name="launchBrowser"/>
           <include name="Logout"/>
-          <include name="validatepriceFieldWithChangeInBookingAction"/>
           <include name="closeBrowser"/>
           <include name="loginToApp"/>
         </methods>
-      </class> <!-- BookingMaskTestCases.VerifyBookingModifyEnquiry_TC16 -->
+      </class> <!-- BookingMaskTestCases.VerifyBookingforSeasonB_TC15 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

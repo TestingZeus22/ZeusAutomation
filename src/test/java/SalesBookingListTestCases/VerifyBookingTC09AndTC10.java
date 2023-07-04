@@ -91,21 +91,21 @@ import org.testng.Reporter;
 	    	@Test (priority = 1)  //TC-09
 	  	    public void ValidateBooking1() throws EncryptedDocumentException, IOException, InterruptedException {
 	    		
+	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+	    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
 	    		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		UtilityClass.implicitlyWaitInMillis(3000);
-	    		Thread.sleep(1000);
+	    		Thread.sleep(2000);
 	    		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
 	    		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
 	    		Thread.sleep(1000);
 	    		UtilityClass.scrollByAxis(0, 300);
-	    		Thread.sleep(1000);
 	    		BookingMask.ClearbookingActionfield();
 	    		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(20, 2, "Sheet4"));
-	    		Reporter.log("Send booking action");
+	    		Reporter.log("Send booking action",true);
 	    		UtilityClass.implicitlyWaitInMillis(1000);
-	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-	    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+	    		
 	    		BookingMask.clearNoOfPax();
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		BookingMask.sendNoOfPax(UtilityClass.readDataFromStringExcel(21, 2, "Sheet4"));
@@ -187,6 +187,8 @@ import org.testng.Reporter;
 	    	@Test (priority = 2)  //TC-10
 	  	    public void ValidateBooking2() throws EncryptedDocumentException, IOException, InterruptedException {
 	    		
+	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+	    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
 	    		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		UtilityClass.implicitlyWaitInMillis(3000);
@@ -198,10 +200,8 @@ import org.testng.Reporter;
 	    		Thread.sleep(1000);
 	    		BookingMask.ClearbookingActionfield();
 	    		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(20, 3, "Sheet4"));
-	    		Reporter.log("Send booking action");
+	    		Reporter.log("Send booking action",true);
 	    		UtilityClass.implicitlyWaitInMillis(1000);
-	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-	    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
 	    		BookingMask.clearNoOfPax();
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		BookingMask.sendNoOfPax(UtilityClass.readDataFromStringExcel(21, 3, "Sheet4"));
@@ -298,7 +298,5 @@ import org.testng.Reporter;
 		 Reporter.log("Closing Browser",true);
 	   }
 	}
-	
-	////table[@id='SalesBookingTable']//tr[1]//td[3]
 	
 	

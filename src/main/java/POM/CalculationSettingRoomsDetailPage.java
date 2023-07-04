@@ -15,8 +15,6 @@ public class CalculationSettingRoomsDetailPage {
 	@FindBy (xpath ="(//span[@class='badge badge-info mr-2'])[3]") private WebElement textC;
 	@FindBy (xpath ="(//span[@class='badge badge-info mr-2'])[4]") private WebElement textD;
 	
-	//CheckBox Selection 
-	
 	@FindBy (xpath ="(//input[@id='IsAll'])[1]") private WebElement seasonA_AllDayCheckBox1;
 //	@FindBy (xpath ="(//input[@id='IsMonday'])[1]") private WebElement seasonA_MondayCheckBox2;
 //	@FindBy (xpath ="(//input[@id='IsTuesday'])[1]") private WebElement seasonA_TuesdayCheckBox3;
@@ -25,18 +23,11 @@ public class CalculationSettingRoomsDetailPage {
 //	@FindBy (xpath ="(//input[@id='IsFriday'])[1]") private WebElement seasonA_FridayCheckBox6;
 //	@FindBy (xpath ="(//input[@id='IsSaturday'])[1]") private WebElement seasonA_SaturdayCheckBox7;
 //	@FindBy (xpath ="(//input[@id='IsSunday'])[1]") private WebElement seasonA_SundayCheckBox8;
-	
 
-	
-	//CostPrice(EUR)
-	
 	@FindBy (xpath ="(//label[@id='NetPrice'])[1]") private WebElement costPriceInEURforSeasonA;
 	@FindBy (xpath ="(//label[@id='NetPrice'])[2]") private WebElement costPriceInEURforSeasonB;
 	@FindBy (xpath ="(//label[@id='NetPrice'])[3]") private WebElement costPriceInEURforSeasonC;
 	@FindBy (xpath ="(//label[@id='NetPrice'])[4]") private WebElement costPriceInEURforSeasonD;
-	
-	
-	//DB% value check
 	
 	@FindBy (xpath ="(//input[@id='DB1'])[1]") private WebElement DB1value;
 
@@ -45,7 +36,6 @@ public class CalculationSettingRoomsDetailPage {
 	{
 		PageFactory.initElements(driver, this);
 	}
-	
 	
 	public String getSeasonName()
 	{
@@ -106,7 +96,6 @@ public class CalculationSettingRoomsDetailPage {
 		String actualText = DB1value.getAttribute(DB1Value);
 		return actualText;
 	}
-	
 	
 	public Boolean isSeasonA_AllDayCheckBox1()
 	{

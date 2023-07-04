@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
-
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
@@ -29,21 +28,21 @@ import Base.BaseClass;
 		//FileInputStream File =new FileInputStream(System.getProperty("user.dir")+"\\TestData\\data.xlsx");
 		//File myfile = new File("C:\\Users\\rohan.patil\\Jar files\\data.xlsx");
 		File myfile = new File("D:\\OneDrive - Dhyey Consulting Services Pvt. Ltd\\Jar files\\data.xlsx");
-		String value=WorkbookFactory.create(myfile).getSheet(SheetName).getRow(rowNum).getCell(cellNum).getStringCellValue();
+		String value = WorkbookFactory.create(myfile).getSheet(SheetName).getRow(rowNum).getCell(cellNum).getStringCellValue();
 		return value;	
 	}
 	
 	public static double readDataFromNumericExcel(int rowNum, int cellNum, String SheetName) throws EncryptedDocumentException, IOException
 	{
 		File myfile = new File("C:\\Users\\rohan.patil\\Jar files\\data.xlsx");
-		double value=WorkbookFactory.create(myfile).getSheet(SheetName).getRow(rowNum).getCell(cellNum).getNumericCellValue();
+		double value = WorkbookFactory.create(myfile).getSheet(SheetName).getRow(rowNum).getCell(cellNum).getNumericCellValue();
 		return value;	
 	}
 	
 	public static boolean readDataFromBooleanExcel(int rowNum, int cellNum, String SheetName) throws EncryptedDocumentException, IOException
 	{
 		File myfile = new File("C:\\Users\\rohan.patil\\Jar files\\data.xlsx");
-		boolean value=WorkbookFactory.create(myfile).getSheet(SheetName).getRow(rowNum).getCell(cellNum).getBooleanCellValue();
+		boolean value = WorkbookFactory.create(myfile).getSheet(SheetName).getRow(rowNum).getCell(cellNum).getBooleanCellValue();
 		return value;	
 	}
 

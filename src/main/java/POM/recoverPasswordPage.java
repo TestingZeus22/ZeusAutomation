@@ -14,7 +14,6 @@ public class recoverPasswordPage {
 	@FindBy (xpath ="//div[text()='Welcome to Falk Tours,']") private WebElement TextWelcomeToFaulkTours;
 	@FindBy (xpath ="//*[contains(text(),'Please enter your User Name')]") private WebElement TextDataEnterMessage;
 
-	
 	public recoverPasswordPage(WebDriver driver) 
 	{
 		PageFactory.initElements(driver, this);

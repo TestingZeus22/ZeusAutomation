@@ -22,11 +22,9 @@ public class offerCalculationPage {
 	@FindBy (xpath = "//span[text()='Alltours']") private WebElement Alltours;
 	@FindBy (xpath = "//span[text()='Reisenaktuell']") private WebElement Reisenaktuell;
 	
-	////Falkensteiner Holiday
 	@FindBy (xpath= "//span[text()='Falkensteiner Holidays']") private WebElement FalkensteinerHolidays;
 	@FindBy (xpath= "//span[text()='Falkensteiner Holidays Pauschal']") private WebElement FalkensteinerHolidaysPauschal;
 
-	//Reserfalke
 	@FindBy (xpath= "//span[text()='Reisefalke']") private WebElement Reisefalke;
 	@FindBy (xpath= "//span[text()='Lidl AT']") private WebElement LidlAT;
 	@FindBy (xpath= "//span[text()='Lidl DE']") private WebElement LidlDE;

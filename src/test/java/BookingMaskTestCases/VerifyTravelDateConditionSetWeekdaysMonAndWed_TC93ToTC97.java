@@ -70,6 +70,9 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
 	    @Test (priority=1)
 	    public void validatePriceForTravelDateIsMondayWeekdaySetMonAndWed() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
+	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+    		Thread.sleep(1000);
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
     		Thread.sleep(1000);
@@ -80,9 +83,6 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
     		Reporter.log("Selected room 804 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
-    		UtilityClass.implicitlyWaitInMillis(1000);
-    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
     		UtilityClass.implicitlyWaitInMillis(1000);
     		BookingMask.ClearbookingActionfield();
     		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(391, 1, "Sheet2"));
@@ -136,6 +136,9 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
 	    @Test (priority = 2)
 	    public void validatePriceForTravelDateIsWedWeekdaySetMonAndWed() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
+	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+    		Thread.sleep(1000);
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
     		Thread.sleep(1000);
@@ -146,9 +149,6 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
     		Reporter.log("Selected room 804 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
-    		UtilityClass.implicitlyWaitInMillis(1000);
-    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
     		UtilityClass.implicitlyWaitInMillis(1000);
     		BookingMask.ClearbookingActionfield();
     		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(391, 2, "Sheet2"));
@@ -202,6 +202,9 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
 	    @Test (priority = 3)
 	    public void validateErrorMsgBySendingTravelDateMonToWedWeekdaySetMonAndWed() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
+	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+    		Thread.sleep(1000);
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
     		Thread.sleep(1000);
@@ -212,9 +215,6 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
     		Reporter.log("Selected room 804 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
-    		UtilityClass.implicitlyWaitInMillis(1000);
-    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
     		UtilityClass.implicitlyWaitInMillis(1000);
     		BookingMask.ClearbookingActionfield();
     		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(391, 3, "Sheet2"));
@@ -269,6 +269,9 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
 	    @Test (priority = 4)
 	    public void validateErrorMsgBySendingTravelDateSunToMonWeekdaySetMonAndWed() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
+	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+    		Thread.sleep(1000);
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
     		Thread.sleep(1000);
@@ -279,9 +282,6 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
     		Reporter.log("Selected room 804 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
-    		UtilityClass.implicitlyWaitInMillis(1000);
-    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
     		UtilityClass.implicitlyWaitInMillis(1000);
     		BookingMask.ClearbookingActionfield();
     		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(391, 4, "Sheet2"));
@@ -335,6 +335,9 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
 	    @Test (priority = 5)
 	    public void validateErrorMsgBySendingTravelDateTuesToWedWeekdaySetMonAndWed() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
+	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+    		Thread.sleep(1000);
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
     		Thread.sleep(1500);
@@ -345,9 +348,6 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
     		Reporter.log("Selected room 804 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
-    		UtilityClass.implicitlyWaitInMillis(1000);
-    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
     		UtilityClass.implicitlyWaitInMillis(1000);
     		BookingMask.ClearbookingActionfield();
     		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(406, 1, "Sheet2"));

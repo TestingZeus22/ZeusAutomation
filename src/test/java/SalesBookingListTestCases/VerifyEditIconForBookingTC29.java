@@ -78,7 +78,9 @@ import org.testng.Assert;
 	    		
 	    	@Test (priority = 1)  //TC-29
 	  	    public void ValidateEditIconAndBookingData() throws EncryptedDocumentException, IOException, InterruptedException {
-	    		
+	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+	    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+	    		Thread.sleep(1000);
 	    		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		UtilityClass.implicitlyWaitInMillis(3000);
@@ -92,8 +94,6 @@ import org.testng.Assert;
 	    		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(37, 2, "Sheet4"));
 	    		Reporter.log("Send booking action");
 	    		UtilityClass.implicitlyWaitInMillis(1000);
-	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-	    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
 	    		BookingMask.clearNoOfPax();
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		BookingMask.sendNoOfPax(UtilityClass.readDataFromStringExcel(38, 2, "Sheet4"));

@@ -92,6 +92,9 @@ import Base.BaseClass;
 	    		@Test  (priority = 1) //TC54
 	    		public void validateOccupancyMinLimitCross() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
+	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+		    	Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+		    	Thread.sleep(1000);
 	    		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		UtilityClass.implicitlyWaitInMillis(3000);
@@ -103,8 +106,6 @@ import Base.BaseClass;
 	    		UtilityClass.listBoxHandlingUsingByText("808 - (room8)", BookingMask.roomCodeDropDownMethod());
 	    		Reporter.log("Selected room 808 from dropdown",true);
 	    		UtilityClass.implicitlyWaitInMillis(3000);
-	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-	    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
 	    		Thread.sleep(2000);
 	    		
 	    		BookingMask.ClearbookingActionfield();
@@ -183,6 +184,9 @@ import Base.BaseClass;
 	    		@Test  (priority = 2)  //TC-55
 	    		public void validateOccupancyMaxLimitCross() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
+	    			UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+		    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+		    		Thread.sleep(1000);
 	    			UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 		    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 		    		UtilityClass.implicitlyWaitInMillis(3000);
@@ -195,8 +199,6 @@ import Base.BaseClass;
 		    		UtilityClass.listBoxHandlingUsingByText("808 - (room8)", BookingMask.roomCodeDropDownMethod());
 		    		Reporter.log("Selected room 808 from dropdown",true);
 		    		UtilityClass.implicitlyWaitInMillis(1000);
-		    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-		    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
 		    		Thread.sleep(2000);
 		    		BookingMask.ClearbookingActionfield();
 		    		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(843, 2, "Sheet2"));
@@ -300,6 +302,9 @@ import Base.BaseClass;
 	    		@Test  (priority = 3)//TC56
 	    		public void validateOccupancyMinLimitNotSatisfied() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
+	    			UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+		    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+		    		Thread.sleep(1000);
 	    			UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 		    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 		    		UtilityClass.implicitlyWaitInMillis(3000);
@@ -311,9 +316,6 @@ import Base.BaseClass;
 		    		UtilityClass.scrollByAxis(0, 300);
 		    		UtilityClass.listBoxHandlingUsingByText("808 - (room8)", BookingMask.roomCodeDropDownMethod());
 		    		Reporter.log("Selected room 808 from dropdown",true);
-		    		UtilityClass.implicitlyWaitInMillis(1000);
-		    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-		    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
 		    		Thread.sleep(1000);
 		    		
 		    		BookingMask.ClearbookingActionfield();
@@ -401,6 +403,9 @@ import Base.BaseClass;
 	    		@Test  (priority = 4) //TC57
 	    		public void validateOccupancyMaxLimitNotSatisfied() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
+	    			UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+		    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+		    		Thread.sleep(1000);
 	    			UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 		    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 		    		UtilityClass.implicitlyWaitInMillis(3000);
@@ -412,9 +417,6 @@ import Base.BaseClass;
 		    		UtilityClass.scrollByAxis(0, 300);
 		    		UtilityClass.listBoxHandlingUsingByText("808 - (room8)", BookingMask.roomCodeDropDownMethod());
 		    		Reporter.log("Selected room 808 from dropdown",true);
-		    		UtilityClass.implicitlyWaitInMillis(1000);
-		    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-		    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
 		    		Thread.sleep(1000);
 		    		BookingMask.ClearbookingActionfield();
 		    		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(843, 4, "Sheet2"));

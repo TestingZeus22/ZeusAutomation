@@ -85,7 +85,9 @@ public class modifyMultisalesLineBookingTC47TC48 extends BaseClass
     		salesBookingList.clickOncreateButton();
     		Reporter.log("Clicked on create Button in sales Booking page",true);
     		Thread.sleep(6000);
-    		
+    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+    		Thread.sleep(1000);
     		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
     		UtilityClass.implicitlyWaitInMillis(3000);
@@ -93,9 +95,6 @@ public class modifyMultisalesLineBookingTC47TC48 extends BaseClass
     		UtilityClass.listBoxHandlingUsingByText("HK004 - (TEST)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK004 - (TEST) from dropdown list",true);
     		Thread.sleep(1000);
-    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
-    		UtilityClass.implicitlyWaitInMillis(1000);
      		BookingMask.ClearbookingActionfield();
      		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(385, 1, "Sheet5"));
      		Reporter.log("Send Booking action",true);
@@ -249,6 +248,9 @@ public class modifyMultisalesLineBookingTC47TC48 extends BaseClass
     		salesBookingList.clickOncreateButton();
     		Reporter.log("Clicked on create Button in sales Booking page",true);
     		Thread.sleep(6000);
+    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+    		Thread.sleep(1000);
     		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
     		UtilityClass.implicitlyWaitInMillis(3000);
@@ -256,8 +258,6 @@ public class modifyMultisalesLineBookingTC47TC48 extends BaseClass
     		UtilityClass.listBoxHandlingUsingByText("HK004 - (TEST)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK004 - (TEST) from dropdown list",true);
     		Thread.sleep(1000);
-    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
     		UtilityClass.implicitlyWaitInMillis(1000);
      		BookingMask.ClearbookingActionfield();
      		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(409, 1, "Sheet5"));

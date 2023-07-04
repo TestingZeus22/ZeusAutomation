@@ -54,8 +54,6 @@ public class ChangeAllotmentPage
 	@FindBy (xpath ="//button[text()='OK']") private WebElement OkPopUP;
 	@FindBy (xpath ="(//div[@class='btn-group'])[2]//span") private WebElement multiselectDropdwn;
 	
-
-
 	public ChangeAllotmentPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -158,11 +156,7 @@ public class ChangeAllotmentPage
 	{
 		releaseDaysField.sendKeys(ReleaseDays);
 	}
-	
-	
-	
-	
-	
+
 	public void clickOnMultiselectdropdown2()
 	{
 		multiselectdropdown2.click();

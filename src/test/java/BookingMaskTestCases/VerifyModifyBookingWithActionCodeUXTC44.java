@@ -95,7 +95,9 @@
 		
 	    	@Test 
 	    	public void validateModifyBookingWithActionCodeUX() throws EncryptedDocumentException, IOException, InterruptedException {
-	    		
+	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+	    	Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+	    	Thread.sleep(1000);	
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    	Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    	UtilityClass.implicitlyWaitInMillis(3000);
@@ -109,8 +111,6 @@
 	    	BookingMask.ClearbookingActionfield();
 	    	BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(649, 3, "Sheet2"));
 	    	UtilityClass.implicitlyWaitInMillis(1000);
-	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-	    	Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
 	    	BookingMask.clearNoOfPax();
 	    	UtilityClass.implicitlyWaitInMillis(1000);
 	    	BookingMask.sendNoOfPax(UtilityClass.readDataFromStringExcel(650, 3, "Sheet2"));

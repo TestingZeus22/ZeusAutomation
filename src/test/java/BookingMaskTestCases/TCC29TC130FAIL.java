@@ -80,7 +80,10 @@ import POM.DashboardPage;
 		
 	    		@Test (priority = 1) //TC29
 	    		public void validateConfirmBookingOFTwoAccommodation() throws EncryptedDocumentException, IOException, InterruptedException 
-	    		   {
+	    		{
+	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+		    	Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+		    	Thread.sleep(1000);
 	    		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		UtilityClass.implicitlyWaitInMillis(3000);
@@ -94,10 +97,8 @@ import POM.DashboardPage;
 	    		BookingMask.ClearbookingActionfield();
 	    		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(666, 1, "Sheet2"));
 	    		Reporter.log("Send Booking action",true);
-	    		
 	    		UtilityClass.implicitlyWaitInMillis(1000);
-	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-	    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+	    	
 	    		BookingMask.clearNoOfPax();
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		
@@ -231,6 +232,9 @@ import POM.DashboardPage;
 	    		@Test (priority=2) //TC30
 	    		public void validateConfirmBoOkingOFTwoAccommodationWithU() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		 {
+	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+		    	Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+		    	Thread.sleep(1000);
 	    		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		UtilityClass.implicitlyWaitInMillis(3000);
@@ -244,8 +248,6 @@ import POM.DashboardPage;
 	    		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(666, 1, "Sheet2"));
 	    		Reporter.log("Send Booking Action",true);
 	    		UtilityClass.implicitlyWaitInMillis(1000);
-	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-	    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
 	    		BookingMask.clearNoOfPax();
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		

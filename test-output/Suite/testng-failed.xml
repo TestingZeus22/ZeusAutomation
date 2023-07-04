@@ -3,111 +3,43 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="LoginPageTestCases.RecoverPasswordAndBackToLoginVaidation_TC09">
+      <class name="SalesBookingListTestCases.VerifyEditIconForBookingTC29">
         <methods>
-          <include name="RecoverPasswordAndGoBackToLoginTest"/>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
-          <include name="loginToApp"/>
-        </methods>
-      </class> <!-- LoginPageTestCases.RecoverPasswordAndBackToLoginVaidation_TC09 -->
-      <class name="LoginPageTestCases.DashboardValidation_TC02">
-        <methods>
-          <include name="loginToApp"/>
-          <include name="closeBrowser"/>
+          <include name="ValidateEditIconAndBookingData"/>
           <include name="Logout"/>
-          <include name="ValidUserNameAndValidPasswordEnterToDashboardPageTest"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- LoginPageTestCases.DashboardValidation_TC02 -->
-      <class name="LoginPageTestCases.RecoverPasswordRefreshValidation_TC14">
-        <methods>
-          <include name="loginToEmail"/>
-          <include name="ValidUserNameEnterAndRefreshPageTest"/>
-          <include name="launchBrowser"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- LoginPageTestCases.RecoverPasswordRefreshValidation_TC14 -->
-      <class name="LoginPageTestCases.LoginValidation_TC01">
-        <methods>
-          <include name="loginToApp"/>
-          <include name="ValidUserNameAndValidPasswordTest"/>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- LoginPageTestCases.LoginValidation_TC01 -->
-      <class name="LoginPageTestCases.LoginPageTextValidation_TC17">
-        <methods>
-          <include name="launchBrowser"/>
-          <include name="closeBrowser"/>
-          <include name="ValidateCopyrightTextOnLoginPageTest"/>
-          <include name="loginToApp"/>
-        </methods>
-      </class> <!-- LoginPageTestCases.LoginPageTextValidation_TC17 -->
-      <class name="LoginPageTestCases.LoginPageRefreshValidation_TC10">
-        <methods>
           <include name="loginToApp"/>
           <include name="launchBrowser"/>
           <include name="closeBrowser"/>
-          <include name="ValidUserNamePasswordAndRefreshpageTest"/>
         </methods>
-      </class> <!-- LoginPageTestCases.LoginPageRefreshValidation_TC10 -->
-      <class name="LoginPageTestCases.ValidateRecoverPwdLinkTC_20">
+      </class> <!-- SalesBookingListTestCases.VerifyEditIconForBookingTC29 -->
+      <class name="SalesBookingListTestCases.VerifyBookingStatusAfterBookingCancellationTC44">
         <methods>
-          <include name="loginToApp"/>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
-          <include name="VerifyRecoverPwdIsLinkTest"/>
-        </methods>
-      </class> <!-- LoginPageTestCases.ValidateRecoverPwdLinkTC_20 -->
-      <class name="LoginPageTestCases.ValidateErrorMsgOnPassword_TC03">
-        <methods>
+          <include name="Logout"/>
           <include name="launchBrowser"/>
           <include name="closeBrowser"/>
-          <include name="CheckIncorrectCredentialsOnPasswordFieldTest"/>
           <include name="loginToApp"/>
+          <include name="ValidateBookingStatus"/>
         </methods>
-      </class> <!-- LoginPageTestCases.ValidateErrorMsgOnPassword_TC03 -->
-      <class name="LoginPageTestCases.RecoveryPasswordPageTextValidation_TC23">
-        <methods>
-          <include name="loginToApp"/>
-          <include name="ValidateWelcomeTextOnRecoveryPageTest"/>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- LoginPageTestCases.RecoveryPasswordPageTextValidation_TC23 -->
-      <class name="LoginPageTestCases.recoveryPasswordPageValidation_TC24">
+      </class> <!-- SalesBookingListTestCases.VerifyBookingStatusAfterBookingCancellationTC44 -->
+      <class name="SalesBookingListTestCases.VerifyBookingInquiryTC08">
         <methods>
           <include name="launchBrowser"/>
-          <include name="closeBrowser"/>
-          <include name="ValidateCopyrightTextOnRecoveryPasswordTest"/>
-          <include name="loginToApp"/>
-        </methods>
-      </class> <!-- LoginPageTestCases.recoveryPasswordPageValidation_TC24 -->
-      <class name="LoginPageTestCases.LoginPageTextValidationTC_18">
-        <methods>
-          <include name="launchBrowser"/>
-          <include name="ValidateWelcomeBackTextOnLoginPageTest"/>
+          <include name="validateBookingAndSalesBookingList"/>
+          <include name="Logout"/>
           <include name="closeBrowser"/>
           <include name="loginToApp"/>
         </methods>
-      </class> <!-- LoginPageTestCases.LoginPageTextValidationTC_18 -->
-      <class name="LoginPageTestCases.ValidateErrorMsgOnUserName_TC04">
+      </class> <!-- SalesBookingListTestCases.VerifyBookingInquiryTC08 -->
+      <class name="SalesBookingListTestCases.VerifyBookingTC09AndTC10">
         <methods>
-          <include name="CheckIncorrectCredentialsOnUserNameFieldTest"/>
+          <include name="Logout"/>
           <include name="loginToApp"/>
           <include name="closeBrowser"/>
+          <include name="ValidateBooking2"/>
+          <include name="ValidateBooking1"/>
           <include name="launchBrowser"/>
         </methods>
-      </class> <!-- LoginPageTestCases.ValidateErrorMsgOnUserName_TC04 -->
-      <class name="LoginPageTestCases.RecoveryPasswordClickValidation_TC08">
-        <methods>
-          <include name="launchBrowser"/>
-          <include name="closeBrowser"/>
-          <include name="ClickOnRecoveryPasswordLinkTest"/>
-          <include name="loginToApp"/>
-        </methods>
-      </class> <!-- LoginPageTestCases.RecoveryPasswordClickValidation_TC08 -->
+      </class> <!-- SalesBookingListTestCases.VerifyBookingTC09AndTC10 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

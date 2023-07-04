@@ -66,7 +66,4 @@ public class accommodationGeneratedPage
 		mediaAndText.click();
 	}
 	
-	// changes 
-	
-
 }

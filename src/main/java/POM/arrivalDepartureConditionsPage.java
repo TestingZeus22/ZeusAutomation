@@ -9,8 +9,6 @@ public class arrivalDepartureConditionsPage {
 
 	@FindBy (id="btn_addarrival") private WebElement addRowButton;
 	
-	//Room1 pending dropdown locators
-	
 	@FindBy (xpath="(//input[@id='adModel_StartDate'])[1]") private WebElement travelFrom1;
 	@FindBy (xpath="(//input[@id='adModel_EndDate'])[1]") private WebElement travelTo1;
 	@FindBy (xpath="(//input[@id='adModel_IsAll'])[1]") private WebElement arrivalDaysRoom1SelectAllCheckBox1;
@@ -33,8 +31,6 @@ public class arrivalDepartureConditionsPage {
 	@FindBy (xpath="(//input[@id='adModel_MaxStay'])[1]") private WebElement maxStayForRoom1;
 	@FindBy (xpath="(//i[@class='pe-7s-trash btn-icon-wrapper'])[19]") private WebElement deleteOptionForRoom1;
 	
-	//Room2 pending dropdown locators
-	
 	@FindBy (xpath="(//input[@id='adModel_StartDate'])[2]") private WebElement travelFrom2;
 	@FindBy (xpath="(//input[@id='adModel_EndDate'])[2]") private WebElement travelTo2;
 	@FindBy (xpath="(//input[@id='adModel_IsAll'])[2]") private WebElement arrivalDaysRoom2SelectAllCheckBox1;
@@ -56,8 +52,6 @@ public class arrivalDepartureConditionsPage {
 	@FindBy (xpath="(//input[@id='adModel_MinStay'])[2]") private WebElement minStayForRoom2;
 	@FindBy (xpath="(//input[@id='adModel_MaxStay'])[2]") private WebElement maxStayForRoom2;
 	@FindBy (xpath="(//i[@class='pe-7s-trash btn-icon-wrapper'])[20]") private WebElement deleteOptionForRoom2;
-	
-	//Room3 pending dropdown locators
 	
 	@FindBy (xpath="(//input[@id='adModel_StartDate'])[3]") private WebElement travelFrom3;
 	@FindBy (xpath="(//input[@id='adModel_EndDate'])[3]") private WebElement travelTo3;

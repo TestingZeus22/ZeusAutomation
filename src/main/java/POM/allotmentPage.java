@@ -1179,5 +1179,4 @@ public class allotmentPage {
 		return actualText;
 	}
 	
-	
 }

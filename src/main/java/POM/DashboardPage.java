@@ -12,19 +12,15 @@ public class DashboardPage {
 	@FindBy (xpath ="//a[text()='Logout ']") private WebElement logoutclick;
 	@FindBy (xpath ="//a[text()='Dashboard']") private WebElement getDashboardText;
 	
-	//Master Dropdown
 	@FindBy (xpath = "//i[@class='metismenu-icon pe-7s-folder']") private WebElement masterOption;
 	
-	//company
 	@FindBy (xpath="(//label[text()='Company'])[1]")private WebElement Company;
 	@FindBy (xpath="(//label[text()='Travel Types'])[1]")private WebElement traveltypes;
 	
-	//Users
 	@FindBy (xpath ="//label[text()='Users']") private WebElement users;
 	@FindBy (xpath ="//label[text()='Roles']") private WebElement roles;
 	@FindBy (xpath ="//label[text()='Department']") private WebElement department;
 	
-	//setting
 	@FindBy (xpath ="//label[text()='Settings']") private WebElement settings;
 	@FindBy (xpath ="//label[text()='Currency']") private WebElement currency;
 	@FindBy (xpath ="//label[text()='Language']") private WebElement language;
@@ -35,56 +31,46 @@ public class DashboardPage {
 	@FindBy (xpath ="//label[text()='Customer Document']") private WebElement customerDocument;
 	@FindBy (xpath ="//label[text()='Amadeus Action Codes']") private WebElement amadeusActionCodes;
 	
-	//Geography
 	@FindBy (xpath ="//label[text()='Geography']") private WebElement geography;
 	@FindBy (xpath ="//label[text()='Country']") private WebElement country;
 	@FindBy (xpath ="//label[text()='State']") private WebElement state;
 	@FindBy (xpath ="//label[text()='Region']") private WebElement region;
 	@FindBy (xpath ="//label[text()='City']") private WebElement city;
 	
-	//Accommodation
 	@FindBy (xpath ="//label[text()='Accommodation']") private WebElement accommodationInMaster;
 	@FindBy (xpath ="//label[text()='Board Type']") private WebElement boardType;
 	@FindBy (xpath ="//label[text()='Room Type']") private WebElement roomType;
 		
-	//tbm
 	@FindBy (xpath = "//label[text()='TBM']") private WebElement Tbm;
 	@FindBy (xpath = "//label[text()='Kind Of Services']") private WebElement kindOfServices;
 	@FindBy (xpath = "//label[text()='TBM Code']") private WebElement TbmCode;
 	@FindBy (xpath = "//label[text()='Ancillary Classification']") private WebElement ancillaryClassification;
 	@FindBy (xpath = "//label[text()='Hotel Chain']") private WebElement hotelChain;
 		
-	//Agency master
 	@FindBy (xpath = "//label[text()='Agency Master']") private WebElement agencyMaster;
 	@FindBy (xpath = "//label[text()='Purchase Agency']") private WebElement purchaseAgency;
 	@FindBy (xpath = "//label[text()='Sales Agency']") private WebElement salesAgency;
 	
-	 // settlement 
 	@FindBy (xpath ="//label[text()='Settlement']") private WebElement settlement;
 	@FindBy (xpath ="//label[text()='Cost Center']") private WebElement costCenter;
 	@FindBy (xpath ="//label[text()='VAT']") private WebElement VAT;
 	@FindBy (xpath ="//label[text()='OffSet Account']") private WebElement offSetAccount;
 		
-	//Data management
 	@FindBy (xpath ="//label[text()='Data Management']") private WebElement dataManagement;
 	@FindBy (xpath ="//label[text()='Settings']") private WebElement Settings;
 		
-	//Airlines
 	@FindBy (xpath ="//label[text()='Airlines']") private WebElement airlines;
 	@FindBy (xpath ="//label[text()='Alliance']") private WebElement alliance;
 	@FindBy (xpath ="//label[text()='Airport Codes']") private WebElement airportCodes;
 		
-	//rate plans
 	@FindBy (xpath ="//label[text()='RatePlan']") private WebElement ratePlan;
 	@FindBy (xpath ="//label[text()='Channel Manager']") private WebElement channelManager;
-		
-	//Purchase
+	
 	@FindBy (xpath = "//i[@class='metismenu-icon lnr-cart']") private WebElement purchasebutton;
 	@FindBy (xpath = "(//label[@style='vertical-align: middle !important;'])[45]") private WebElement accommodation;
 	@FindBy (xpath = "//label[text()='Free Customer Voucher']") private WebElement freeCustomerVoucher;
 	@FindBy (xpath = "//label[text()='Accommodation Channel Manager']") private WebElement accommodationChannelManager;
 	
-	//Calculation
 	@FindBy (xpath ="//i[@class='metismenu-icon pe-7s-calculator']") private WebElement calculationList;
 	@FindBy (xpath ="//label[text()='Offer Definition']") private WebElement offerDefination;
 	@FindBy (xpath ="(//label[text()='Extra Costs'])[2]") private WebElement extraCosts;
@@ -93,13 +79,11 @@ public class DashboardPage {
 	@FindBy (xpath ="//label[text()='Currency Exchange']") private WebElement currencyExchange;
 	@FindBy (xpath ="//label[text()='Hotel Packages']") private WebElement hotelPackages;
 	
-	// Sales
 	@FindBy (xpath ="//i[@class='metismenu-icon pe-7s-shopbag']") private WebElement sales;
 	@FindBy (xpath ="//label[text()='Sales Booking']") private WebElement salesBooking;
 	@FindBy (xpath ="//label[text()='Reports']") private WebElement reports;
 	@FindBy (xpath ="//label[text()='Peakwork Booking']") private WebElement PeakworkBooking;
 	
-	//Connectivity
 	@FindBy (xpath ="//i[@class='metismenu-icon pe-7s-network']") private WebElement connectivity;
 	@FindBy (xpath ="//label[text()='Country Mapping']") private WebElement countryMapping;
 	@FindBy (xpath ="//label[text()='Board Mapping']") private WebElement boardMapping;

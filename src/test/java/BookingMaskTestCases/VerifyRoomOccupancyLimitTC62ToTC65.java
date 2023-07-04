@@ -91,6 +91,9 @@
 	    		@Test (priority=1) //62
 	    		public void validateMismatchInNOofPaxFieldErrorMsg() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
+	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+		    	Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+		    	Thread.sleep(1000);
 	    		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		UtilityClass.implicitlyWaitInMillis(3000);
@@ -101,9 +104,6 @@
 	    		UtilityClass.scrollByAxis(0, 300);
 	    		UtilityClass.listBoxHandlingUsingByText("808 - (room8)", BookingMask.roomCodeDropDownMethod());
 	    		Reporter.log("Selected room 808 from dropdown",true);
-	    		UtilityClass.implicitlyWaitInMillis(1000);
-	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-	    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
 	    		Thread.sleep(1000);
 	    		
 	    		BookingMask.ClearbookingActionfield();
@@ -200,7 +200,9 @@
 	    		@Test (priority=2)  //TC-63
 	    		public void validateMismatchInPassengerFieldErrorMsg() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
-	    			
+	    			UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+		    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+		    		Thread.sleep(1000);
 	    			UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 		    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 		    		UtilityClass.implicitlyWaitInMillis(3000);
@@ -212,9 +214,6 @@
 		    		UtilityClass.scrollByAxis(0, 300);
 		    		UtilityClass.listBoxHandlingUsingByText("808 - (room8)", BookingMask.roomCodeDropDownMethod());
 		    		Reporter.log("Selected room 808 from dropdown",true);
-		    		UtilityClass.implicitlyWaitInMillis(1000);
-		    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-		    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
 		    		Thread.sleep(1000);
 		    		
 		    		BookingMask.ClearbookingActionfield();
@@ -310,6 +309,9 @@
 	    		@Test (priority=3) //TC64
 	    		public void validateMismatchInOCCFieldErrorMsg() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
+	    			UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+		    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+		    		Thread.sleep(1000);
 	    			UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 		    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 		    		UtilityClass.implicitlyWaitInMillis(3000);
@@ -321,9 +323,6 @@
 		    		UtilityClass.scrollByAxis(0, 300);
 		    		UtilityClass.listBoxHandlingUsingByText("808 - (room8)", BookingMask.roomCodeDropDownMethod());
 		    		Reporter.log("Selected room 808 from dropdown",true);
-		    		UtilityClass.implicitlyWaitInMillis(1000);
-		    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-		    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
 		    		Thread.sleep(1000);
 		    		
 		    		BookingMask.ClearbookingActionfield();
@@ -421,6 +420,9 @@
 	    		@Test (priority=1) //TC65
 	    		public void validateMismatchInAllFieldsErrorMsg() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
+	    			UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+		    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+		    		Thread.sleep(1000);
 	    			UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 		    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 		    		UtilityClass.implicitlyWaitInMillis(2000);
@@ -432,9 +434,6 @@
 		    		UtilityClass.scrollByAxis(0, 300);
 		    		UtilityClass.listBoxHandlingUsingByText("808 - (room8)", BookingMask.roomCodeDropDownMethod());
 		    		Reporter.log("Selected room 808 from dropdown",true);
-		    		UtilityClass.implicitlyWaitInMillis(1000);
-		    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-		    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
 		    		Thread.sleep(1000);
 		    		
 		    		BookingMask.ClearbookingActionfield();

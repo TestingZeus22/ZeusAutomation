@@ -77,6 +77,8 @@
 	    		UtilityClass.implicitlyWaitInMillis(3000);
 	    		Thread.sleep(1000);
 	    		
+	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
+	    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
 	    		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
 	    		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
 	    		Thread.sleep(1000);
@@ -92,10 +94,6 @@
 	    		UtilityClass.scrollByAxis(0, 300);
 	    		Thread.sleep(1000);
 	    		UtilityClass.implicitlyWaitInMillis(1000);
-
-	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
-	    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
-	    		
 	    		BookingMask.clearNoOfPax();
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		
@@ -210,8 +208,8 @@
 	   @AfterMethod
 	   public void Logout() throws InterruptedException
 	   {
-	     Thread.sleep(3000);
-	     BookingMask.ClickOnLogoutButtonOFBookingMask();
+	      Thread.sleep(3000);
+	      BookingMask.ClickOnLogoutButtonOFBookingMask();
 		  Reporter.log("Clicking on Logout Button in Booking Mask page",true);
 		  Thread.sleep(500);
 		  BookingMask.logoutClickOFBookingMask();

@@ -34,10 +34,5 @@ public class selectCompanyPage {
 	{
 		proceed.click();
 	}
-	
-	
-	
-	
-	/// Test Regression test cases
-	//  ............////////////llllllllllllllllllllllllllllllllllllllll111
+
 }
