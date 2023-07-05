@@ -16,6 +16,7 @@ import org.testng.annotations.Test;
 import Base.BaseClass;
 import POM.loginPage;
 import utility.UtilityClass;
+import utility.utilityPropertyFile;
 
 public class LoginPageRefreshValidation_TC10 extends BaseClass {
 	
@@ -24,14 +25,14 @@ public class LoginPageRefreshValidation_TC10 extends BaseClass {
 		
 		
 		@BeforeClass
-		public void launchBrowser(){
+		public void launchBrowser() throws IOException{
 			openApplication();
 			Reporter.log("Browser Launch ",true);
 			login=new loginPage(driver);
 			
 		}
 		@BeforeMethod
-		public void loginToApp() throws EncryptedDocumentException, IOException
+		public void loginToApp() throws EncryptedDocumentException, IOException, InterruptedException
 		{
 			login.SendUserName(UtilityClass.readDataFromStringExcel(7, 0, "Sheet1"));
 			Reporter.log("Valid Username Entered",true);

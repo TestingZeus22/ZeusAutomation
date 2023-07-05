@@ -16,7 +16,7 @@ public class loginPage {
 	@FindBy(id ="swal2-title") private WebElement CredentialInvalid;
 	@FindBy(xpath ="//div[text()='Welcome back,']") private WebElement getWelcomeBackText;
 	@FindBy(xpath ="//a[@class='btn-lg btn btn-link']") private WebElement RecoverPasswordLink;
-	
+	@FindBy(xpath ="////button[text()='Ok']")private WebElement Okbutton;
 	public loginPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -71,5 +71,11 @@ public class loginPage {
 		String actualText = RecoverPasswordLink.getText();
 		return actualText;
 	}
+	
+	public void ClickOnOkButton()
+	{
+		Okbutton.click();
+	}
+	
 }
 	

@@ -55,182 +55,64 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 30 17:27:24 IST 2023</td>
+<td>Started on:</td><td>Tue Jul 04 15:14:30 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>94 seconds (94899 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (30 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td></td>
+<td>Included groups:</td><td>sanity </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='LoginPageTestCases.RecoverPasswordAndBackToLoginVaidation_TC09.RecoverPasswordAndGoBackToLoginTest()'><b>RecoverPasswordAndGoBackToLoginTest</b><br>Test class: LoginPageTestCases.RecoverPasswordAndBackToLoginVaidation_TC09<br/>
-<a href="#Output-488928549" onClick='toggleBox("Output-488928549", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-488928549" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-488928549">
-Validating actual Copyright © Zeus 2023 and Expected Text Copyright © Zeus 2023<br/>
-</div>
-</td>
-<td></td>
+<td title='LoginPageTestCases.ValidateErrorMsgOnUserName_TC04.CheckIncorrectCredentialsOnUserNameFieldTest()'><b>CheckIncorrectCredentialsOnUserNameFieldTest</b><br>Test class: LoginPageTestCases.ValidateErrorMsgOnUserName_TC04</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;POM.loginPage.getCredentialsInvalidTextOnUserNameField()&quot; because &quot;this.login&quot; is null
+	at LoginPageTestCases.ValidateErrorMsgOnUserName_TC04.CheckIncorrectCredentialsOnUserNameFieldTest(ValidateErrorMsgOnUserName_TC04.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1010670443", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1010670443'><pre>java.lang.NullPointerException: Cannot invoke &quot;POM.loginPage.getCredentialsInvalidTextOnUserNameField()&quot; because &quot;this.login&quot; is null
+	at LoginPageTestCases.ValidateErrorMsgOnUserName_TC04.CheckIncorrectCredentialsOnUserNameFieldTest(ValidateErrorMsgOnUserName_TC04.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
 <td>0</td>
-<td>LoginPageTestCases.RecoverPasswordAndBackToLoginVaidation_TC09@49ec71f8</td></tr>
-<tr>
-<td title='LoginPageTestCases.DashboardValidation_TC02.ValidUserNameAndValidPasswordEnterToDashboardPageTest()'><b>ValidUserNameAndValidPasswordEnterToDashboardPageTest</b><br>Test class: LoginPageTestCases.DashboardValidation_TC02<br/>
-<a href="#Output-1208794670" onClick='toggleBox("Output-1208794670", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1208794670" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1208794670">
-Validating actual Text Dashboard and Expected Text Dashboard<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>LoginPageTestCases.DashboardValidation_TC02@131774fe</td></tr>
-<tr>
-<td title='LoginPageTestCases.recoveryPasswordPageValidation_TC24.ValidateCopyrightTextOnRecoveryPasswordTest()'><b>ValidateCopyrightTextOnRecoveryPasswordTest</b><br>Test class: LoginPageTestCases.recoveryPasswordPageValidation_TC24<br/>
-<a href="#Output-936000680" onClick='toggleBox("Output-936000680", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-936000680" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-936000680">
-Validating actual TextCopyright © Zeus 2023 and Expected Text Copyright © Zeus 2023<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>LoginPageTestCases.recoveryPasswordPageValidation_TC24@7f3b84b8</td></tr>
-<tr>
-<td title='LoginPageTestCases.ValidateErrorMsgOnUserName_TC04.CheckIncorrectCredentialsOnUserNameFieldTest()'><b>CheckIncorrectCredentialsOnUserNameFieldTest</b><br>Test class: LoginPageTestCases.ValidateErrorMsgOnUserName_TC04<br/>
-<a href="#Output-1935751909" onClick='toggleBox("Output-1935751909", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1935751909" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1935751909">
-Validating actual Credentials are invalid! and Expected Text Credentials are invalid!<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>LoginPageTestCases.ValidateErrorMsgOnUserName_TC04@223d2c72</td></tr>
-<tr>
-<td title='LoginPageTestCases.LoginValidation_TC01.ValidUserNameAndValidPasswordTest()'><b>ValidUserNameAndValidPasswordTest</b><br>Test class: LoginPageTestCases.LoginValidation_TC01<br/>
-<a href="#Output-1432929903" onClick='toggleBox("Output-1432929903", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1432929903" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1432929903">
-Validating actual Please select company to proceed. and Expected Text Please select company to proceed.<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>LoginPageTestCases.LoginValidation_TC01@36902638</td></tr>
-<tr>
-<td title='LoginPageTestCases.ValidateErrorMsgOnPassword_TC03.CheckIncorrectCredentialsOnPasswordFieldTest()'><b>CheckIncorrectCredentialsOnPasswordFieldTest</b><br>Test class: LoginPageTestCases.ValidateErrorMsgOnPassword_TC03<br/>
-<a href="#Output-1328028335" onClick='toggleBox("Output-1328028335", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1328028335" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1328028335">
-Validating actual Credentials are invalid! and Expected Text Credentials are invalid!<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>LoginPageTestCases.ValidateErrorMsgOnPassword_TC03@10e31a9a</td></tr>
-<tr>
-<td title='LoginPageTestCases.RecoveryPasswordPageTextValidation_TC23.ValidateWelcomeTextOnRecoveryPageTest()'><b>ValidateWelcomeTextOnRecoveryPageTest</b><br>Test class: LoginPageTestCases.RecoveryPasswordPageTextValidation_TC23<br/>
-<a href="#Output-1405548909" onClick='toggleBox("Output-1405548909", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1405548909" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1405548909">
-Validating actual Welcome to Falk Tours, and Expected Message Welcome to Falk Tours,<br/>
-Validating actual Please enter your User Name below to get reset password link on registered mail address. and Expected Message Please enter your User Name below to get reset password link on registered mail address.<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>LoginPageTestCases.RecoveryPasswordPageTextValidation_TC23@16d04d3d</td></tr>
-<tr>
-<td title='LoginPageTestCases.RecoveryPasswordClickValidation_TC08.ClickOnRecoveryPasswordLinkTest()'><b>ClickOnRecoveryPasswordLinkTest</b><br>Test class: LoginPageTestCases.RecoveryPasswordClickValidation_TC08<br/>
-<a href="#Output-245386411" onClick='toggleBox("Output-245386411", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-245386411" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-245386411">
-Validating actual Copyright © Zeus 2023 and Expected Text Copyright © Zeus 2023<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>LoginPageTestCases.RecoveryPasswordClickValidation_TC08@8f4ea7c</td></tr>
-<tr>
-<td title='LoginPageTestCases.RecoverPasswordRefreshValidation_TC14.ValidUserNameEnterAndRefreshPageTest()'><b>ValidUserNameEnterAndRefreshPageTest</b><br>Test class: LoginPageTestCases.RecoverPasswordRefreshValidation_TC14<br/>
-<a href="#Output-2090142523" onClick='toggleBox("Output-2090142523", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2090142523" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2090142523">
-Validating actual https://zeuscloud.azurewebsites.net/Users/SendRecoverPassLink and Expected Text https://zeuscloud.azurewebsites.net/Users/SendRecoverPassLink<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>LoginPageTestCases.RecoverPasswordRefreshValidation_TC14@158d2680</td></tr>
-<tr>
-<td title='LoginPageTestCases.ValidateRecoverPwdLinkTC_20.VerifyRecoverPwdIsLinkTest()'><b>VerifyRecoverPwdIsLinkTest</b><br>Test class: LoginPageTestCases.ValidateRecoverPwdLinkTC_20<br/>
-<a href="#Output-1638429542" onClick='toggleBox("Output-1638429542", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1638429542" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1638429542">
-Validating actual Recover Password and Expected Text Recover Password<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>LoginPageTestCases.ValidateRecoverPwdLinkTC_20@57a3af25</td></tr>
-<tr>
-<td title='LoginPageTestCases.LoginPageRefreshValidation_TC10.ValidUserNamePasswordAndRefreshpageTest()'><b>ValidUserNamePasswordAndRefreshpageTest</b><br>Test class: LoginPageTestCases.LoginPageRefreshValidation_TC10<br/>
-<a href="#Output-1589640004" onClick='toggleBox("Output-1589640004", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1589640004" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1589640004">
-Validating actual https://zeuscloud.azurewebsites.net/CompanySelection and Expected Text https://zeuscloud.azurewebsites.net/CompanySelection<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>LoginPageTestCases.LoginPageRefreshValidation_TC10@1d2adfbe</td></tr>
-<tr>
-<td title='LoginPageTestCases.LoginPageTextValidationTC_18.ValidateWelcomeBackTextOnLoginPageTest()'><b>ValidateWelcomeBackTextOnLoginPageTest</b><br>Test class: LoginPageTestCases.LoginPageTextValidationTC_18<br/>
-<a href="#Output-893152673" onClick='toggleBox("Output-893152673", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-893152673" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-893152673">
-Validating actual Welcome back, and Expected Text Welcome back,<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>LoginPageTestCases.LoginPageTextValidationTC_18@77847718</td></tr>
-<tr>
-<td title='LoginPageTestCases.LoginPageTextValidation_TC17.ValidateCopyrightTextOnLoginPageTest()'><b>ValidateCopyrightTextOnLoginPageTest</b><br>Test class: LoginPageTestCases.LoginPageTextValidation_TC17<br/>
-<a href="#Output-168398198" onClick='toggleBox("Output-168398198", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-168398198" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-168398198">
-Validating actual Copyright © Zeus 2023 and Expected Text Copyright © Zeus 2023<br/>
-</div>
-</td>
-<td></td>
-<td>1</td>
-<td>LoginPageTestCases.LoginPageTextValidation_TC17@38c6f217</td></tr>
+<td>LoginPageTestCases.ValidateErrorMsgOnUserName_TC04@3ce1e309</td></tr>
 </table><p>
 </body>
 </html>

@@ -55,7 +55,7 @@ public class DashboardValidation_TC02 extends BaseClass {
 			Reporter.log("Clicked on proceed button",true);	
 		}
 		
-	  @Test
+	  @Test (invocationCount = 6)
 	  public void ValidUserNameAndValidPasswordEnterToDashboardPageTest() throws EncryptedDocumentException, IOException
 	  {
 		  String ActualTtext= dash.getActualTextOnDashboard();

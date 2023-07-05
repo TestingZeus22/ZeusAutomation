@@ -1,45 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="ParallelTest2(failed)">
     <classes>
-      <class name="SalesBookingListTestCases.VerifyEditIconForBookingTC29">
-        <methods>
-          <include name="ValidateEditIconAndBookingData"/>
-          <include name="Logout"/>
-          <include name="loginToApp"/>
-          <include name="launchBrowser"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- SalesBookingListTestCases.VerifyEditIconForBookingTC29 -->
-      <class name="SalesBookingListTestCases.VerifyBookingStatusAfterBookingCancellationTC44">
-        <methods>
-          <include name="Logout"/>
-          <include name="launchBrowser"/>
-          <include name="closeBrowser"/>
-          <include name="loginToApp"/>
-          <include name="ValidateBookingStatus"/>
-        </methods>
-      </class> <!-- SalesBookingListTestCases.VerifyBookingStatusAfterBookingCancellationTC44 -->
-      <class name="SalesBookingListTestCases.VerifyBookingInquiryTC08">
+      <class name="LoginPageTestCases.ValidateErrorMsgOnPassword_TC03">
         <methods>
           <include name="launchBrowser"/>
-          <include name="validateBookingAndSalesBookingList"/>
-          <include name="Logout"/>
           <include name="closeBrowser"/>
+          <include name="CheckIncorrectCredentialsOnPasswordFieldTest"/>
           <include name="loginToApp"/>
         </methods>
-      </class> <!-- SalesBookingListTestCases.VerifyBookingInquiryTC08 -->
-      <class name="SalesBookingListTestCases.VerifyBookingTC09AndTC10">
-        <methods>
-          <include name="Logout"/>
-          <include name="loginToApp"/>
-          <include name="closeBrowser"/>
-          <include name="ValidateBooking2"/>
-          <include name="ValidateBooking1"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- SalesBookingListTestCases.VerifyBookingTC09AndTC10 -->
+      </class> <!-- LoginPageTestCases.ValidateErrorMsgOnPassword_TC03 -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- ParallelTest2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

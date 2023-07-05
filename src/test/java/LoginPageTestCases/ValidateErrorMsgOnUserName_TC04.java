@@ -45,13 +45,15 @@ public class ValidateErrorMsgOnUserName_TC04 extends BaseClass {
 		}
 	  
 	 @Test
-	  public void CheckIncorrectCredentialsOnUserNameFieldTest() throws EncryptedDocumentException, IOException
+	  public void CheckIncorrectCredentialsOnUserNameFieldTest() throws EncryptedDocumentException, IOException, InterruptedException
 	  {
 		 String Actual_Msg = login.getCredentialsInvalidTextOnUserNameField();
 		 String expected_Msg = UtilityClass.readDataFromStringExcel(4, 2, "Sheet1");
 		 Assert.assertEquals(Actual_Msg, expected_Msg,"Test case Failed as actual & expected error Message are not matching");  
 		 Reporter.log("Validating actual "+login.getCredentialsInvalidTextOnUserNameField()+" and Expected Text "+UtilityClass.readDataFromStringExcel(4, 2, "Sheet1"),true);
 		 UtilityClass.screenshot(driver, "CheckIncorrectCredentialsOnUserNameFieldTest");
+		 UtilityClass.implicitlyWaitInsec(80);
+		 driver.findElement(By.xpath("//button[text()='Ok']")).click();
 	  }
 	 
 	  @AfterClass 

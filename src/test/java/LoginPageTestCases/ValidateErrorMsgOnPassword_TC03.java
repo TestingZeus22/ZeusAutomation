@@ -41,15 +41,19 @@ import utility.UtilityClass;
 			UtilityClass.implicitlyWaitInMillis(1000);
 			login.SendUserName(UtilityClass.readDataFromStringExcel(3, 0, "Sheet1"));
 			Reporter.log("Valid Username Entered ",true);
+			UtilityClass.screenshot(driver, "10");
 			login.SendPassword(UtilityClass.readDataFromStringExcel(3, 1, "Sheet1"));
 			Reporter.log("Invalid Password Entered",true);
+			UtilityClass.screenshot(driver, "11");
 			UtilityClass.implicitlyWaitInMillis(1000);	
 			login.ClickOnLoginToDashboard();
 			Reporter.log("Click on Dashboard button ",true);
+			UtilityClass.screenshot(driver, "12");
 			UtilityClass.implicitlyWaitInMillis(1000);
+			UtilityClass.screenshot(driver, "13");
 		}
 	  
-	 @Test
+	 @Test 
 	  public void CheckIncorrectCredentialsOnPasswordFieldTest() throws EncryptedDocumentException, IOException
 	  
 	  {
@@ -57,7 +61,10 @@ import utility.UtilityClass;
 		 String expected_Msg = UtilityClass.readDataFromStringExcel(3, 2, "Sheet1");
 		 Assert.assertEquals(Actual_Msg, expected_Msg,"Test case Failed as actual & expected Credential message are not matching");
 		 Reporter.log("Validating actual "+login.getCredentialsInvalidTextOnPasswordField()+" and Expected Text "+UtilityClass.readDataFromStringExcel(3, 2, "Sheet1"),true);
-		 UtilityClass.screenshot(driver, "CheckIncorrectCredentialsOnPasswordTest");
+		 UtilityClass.screenshot(driver, "14");
+		 UtilityClass.implicitlyWaitInsec(80);
+		 driver.findElement(By.xpath("//button[text()='Ok']")).click();
+		 UtilityClass.screenshot(driver, "15");
 	  }
 
 	  @AfterClass 
