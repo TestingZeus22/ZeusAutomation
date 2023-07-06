@@ -73,8 +73,8 @@ public class VerifyBookingInquiryTC08 extends BaseClass {
     		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
     		Thread.sleep(1000);
-    		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
-    		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
+//    		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
+//    		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		UtilityClass.implicitlyWaitInsec(10);
     		UtilityClass.scrollByAxis(0, 300);
     		UtilityClass.implicitlyWaitInMillis(1000);

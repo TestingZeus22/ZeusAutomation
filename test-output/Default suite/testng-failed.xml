@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="LoginPageTestCases.ValidateErrorMsgOnPassword_TC03">
+      <class name="SalesBookingListTestCases.VerifyBookingInquiryTC08">
         <methods>
           <include name="launchBrowser"/>
+          <include name="validateBookingAndSalesBookingList"/>
+          <include name="Logout"/>
           <include name="closeBrowser"/>
-          <include name="CheckIncorrectCredentialsOnPasswordFieldTest"/>
           <include name="loginToApp"/>
         </methods>
-      </class> <!-- LoginPageTestCases.ValidateErrorMsgOnPassword_TC03 -->
+      </class> <!-- SalesBookingListTestCases.VerifyBookingInquiryTC08 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

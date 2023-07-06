@@ -1,129 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Browser Launch ]]>
     </line>
     <line>
-      <![CDATA[Valid Username Entered ]]>
+      <![CDATA[Clicked on Recovery PasswordButton ]]>
     </line>
     <line>
-      <![CDATA[Invalid Password Entered]]>
-    </line>
-    <line>
-      <![CDATA[Click on Dashboard button ]]>
-    </line>
-    <line>
-      <![CDATA[Validating actual Credentials are invalid! and Expected Text Credentials are invalid!]]>
-    </line>
-    <line>
-      <![CDATA[Valid Username Entered ]]>
-    </line>
-    <line>
-      <![CDATA[Invalid Password Entered]]>
-    </line>
-    <line>
-      <![CDATA[Click on Dashboard button ]]>
-    </line>
-    <line>
-      <![CDATA[Validating actual Credentials are invalid! and Expected Text Credentials are invalid!]]>
-    </line>
-    <line>
-      <![CDATA[Valid Username Entered ]]>
-    </line>
-    <line>
-      <![CDATA[Invalid Password Entered]]>
-    </line>
-    <line>
-      <![CDATA[Click on Dashboard button ]]>
-    </line>
-    <line>
-      <![CDATA[Validating actual Credentials are invalid! and Expected Text Credentials are invalid!]]>
+      <![CDATA[Validating actual Copyright © Zeus 2023 and Expected Text Copyright © Zeus 2023]]>
     </line>
     <line>
       <![CDATA[Closing Browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-07-05T16:44:35 IST" name="Default suite" finished-at="2023-07-05T16:44:55 IST" duration-ms="19946">
+  <suite started-at="2023-07-06T10:28:55 IST" name="Default suite" finished-at="2023-07-06T10:29:03 IST" duration-ms="8154">
     <groups>
     </groups>
-    <test started-at="2023-07-05T16:44:35 IST" name="Default test" finished-at="2023-07-05T16:44:55 IST" duration-ms="19946">
-      <class name="LoginPageTestCases.ValidateErrorMsgOnPassword_TC03">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:LoginPageTestCases.ValidateErrorMsgOnPassword_TC03@4fb61f4a]" started-at="2023-07-05T16:44:35 IST" name="launchBrowser" finished-at="2023-07-05T16:44:43 IST" duration-ms="7340" status="PASS">
+    <test started-at="2023-07-06T10:28:55 IST" name="Default test" finished-at="2023-07-06T10:29:03 IST" duration-ms="8154">
+      <class name="LoginPageTestCases.RecoverPasswordAndBackToLoginVaidation_TC09">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:LoginPageTestCases.RecoverPasswordAndBackToLoginVaidation_TC09@292b08d6]" started-at="2023-07-06T10:28:55 IST" name="launchBrowser" finished-at="2023-07-06T10:29:00 IST" duration-ms="5726" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser Launch ]]>
             </line>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:LoginPageTestCases.ValidateErrorMsgOnPassword_TC03@4fb61f4a]" started-at="2023-07-05T16:44:43 IST" name="loginToApp" finished-at="2023-07-05T16:44:46 IST" duration-ms="3932" status="PASS">
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:LoginPageTestCases.RecoverPasswordAndBackToLoginVaidation_TC09@292b08d6]" started-at="2023-07-06T10:29:00 IST" name="loginToApp" finished-at="2023-07-06T10:29:01 IST" duration-ms="982" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Valid Username Entered ]]>
-            </line>
-            <line>
-              <![CDATA[Invalid Password Entered]]>
-            </line>
-            <line>
-              <![CDATA[Click on Dashboard button ]]>
+              <![CDATA[Clicked on Recovery PasswordButton ]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method signature="CheckIncorrectCredentialsOnPasswordFieldTest()[pri:0, instance:LoginPageTestCases.ValidateErrorMsgOnPassword_TC03@4fb61f4a]" started-at="2023-07-05T16:44:46 IST" name="CheckIncorrectCredentialsOnPasswordFieldTest" finished-at="2023-07-05T16:44:48 IST" duration-ms="1330" status="PASS">
+        <test-method signature="RecoverPasswordAndGoBackToLoginTest()[pri:0, instance:LoginPageTestCases.RecoverPasswordAndBackToLoginVaidation_TC09@292b08d6]" started-at="2023-07-06T10:29:01 IST" name="RecoverPasswordAndGoBackToLoginTest" finished-at="2023-07-06T10:29:03 IST" duration-ms="1188" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Validating actual Credentials are invalid! and Expected Text Credentials are invalid!]]>
+              <![CDATA[Validating actual Copyright © Zeus 2023 and Expected Text Copyright © Zeus 2023]]>
             </line>
           </reporter-output>
-        </test-method> <!-- CheckIncorrectCredentialsOnPasswordFieldTest -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:LoginPageTestCases.ValidateErrorMsgOnPassword_TC03@4fb61f4a]" started-at="2023-07-05T16:44:48 IST" name="loginToApp" finished-at="2023-07-05T16:44:51 IST" duration-ms="2771" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Valid Username Entered ]]>
-            </line>
-            <line>
-              <![CDATA[Invalid Password Entered]]>
-            </line>
-            <line>
-              <![CDATA[Click on Dashboard button ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method signature="CheckIncorrectCredentialsOnPasswordFieldTest()[pri:0, instance:LoginPageTestCases.ValidateErrorMsgOnPassword_TC03@4fb61f4a]" started-at="2023-07-05T16:44:51 IST" name="CheckIncorrectCredentialsOnPasswordFieldTest" finished-at="2023-07-05T16:44:52 IST" duration-ms="1013" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Validating actual Credentials are invalid! and Expected Text Credentials are invalid!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- CheckIncorrectCredentialsOnPasswordFieldTest -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:LoginPageTestCases.ValidateErrorMsgOnPassword_TC03@4fb61f4a]" started-at="2023-07-05T16:44:52 IST" name="loginToApp" finished-at="2023-07-05T16:44:54 IST" duration-ms="2395" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Valid Username Entered ]]>
-            </line>
-            <line>
-              <![CDATA[Invalid Password Entered]]>
-            </line>
-            <line>
-              <![CDATA[Click on Dashboard button ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginToApp -->
-        <test-method signature="CheckIncorrectCredentialsOnPasswordFieldTest()[pri:0, instance:LoginPageTestCases.ValidateErrorMsgOnPassword_TC03@4fb61f4a]" started-at="2023-07-05T16:44:54 IST" name="CheckIncorrectCredentialsOnPasswordFieldTest" finished-at="2023-07-05T16:44:55 IST" duration-ms="868" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Validating actual Credentials are invalid! and Expected Text Credentials are invalid!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- CheckIncorrectCredentialsOnPasswordFieldTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:LoginPageTestCases.ValidateErrorMsgOnPassword_TC03@4fb61f4a]" started-at="2023-07-05T16:44:55 IST" name="closeBrowser" finished-at="2023-07-05T16:44:55 IST" duration-ms="267" status="PASS">
+        </test-method> <!-- RecoverPasswordAndGoBackToLoginTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:LoginPageTestCases.RecoverPasswordAndBackToLoginVaidation_TC09@292b08d6]" started-at="2023-07-06T10:29:03 IST" name="closeBrowser" finished-at="2023-07-06T10:29:03 IST" duration-ms="194" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- LoginPageTestCases.ValidateErrorMsgOnPassword_TC03 -->
+      </class> <!-- LoginPageTestCases.RecoverPasswordAndBackToLoginVaidation_TC09 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
