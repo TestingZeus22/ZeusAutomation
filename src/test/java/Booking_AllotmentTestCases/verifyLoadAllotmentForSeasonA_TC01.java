@@ -159,7 +159,7 @@ public class verifyLoadAllotmentForSeasonA_TC01 extends BaseClass {
         accommodationNew.clickOnrooms();
         Reporter.log("Clicked on Rooms button",true);
         room.clickOnCreateButton();
-        Reporter.log("Clicked on create roomButton");
+        Reporter.log("Clicked on create roomButton",true);
         Thread.sleep(2000);
         UtilityClass.listBoxHandlingUsingByText("1 Raum Appartment", roomDetails.dropdownRoomType());
         Reporter.log("Select Room Type from dropdown",true);
@@ -410,13 +410,23 @@ public class verifyLoadAllotmentForSeasonA_TC01 extends BaseClass {
     		
     		offerCalculation.clickOnTchiboDE();
     	    Reporter.log("Clicked on TchiboAT",true);
-    	    Thread.sleep(6000);
+    	    UtilityClass.implicitlyWaitInsec(90);
+    	    Thread.sleep(5000);
     	    
     	    //calculationSetting.clickOnTestNGoption();
-    	    driver.findElement(By.xpath("//a[@id='j1_42_anchor']")).click();
+    	    
+    	    UtilityClass.scrollByAxis(700, 0);
+    	    Thread.sleep(5000);
+    	    
+    	    WebElement treee = driver.findElement(By.xpath("//a[text()='ZeusTest']"));
+    		JavascriptExecutor j = (JavascriptExecutor) driver;
+    		j.executeScript("arguments[0].click();", treee);
+    	    
+    	    
+    	    //driver.findElement(By.xpath("//span[text()='ZeusTest']")).click();
     	    
     	    Reporter.log("Clicked on new option",true);
-    	    Thread.sleep(4200);
+    	    Thread.sleep(5000);
     	    UtilityClass.clickUsingJSE(calculationSetting.clickOnRoom1ByJSE());
     	    Reporter.log("Clicked on Room1",true);
     	    Thread.sleep(1000);
@@ -439,15 +449,23 @@ public class verifyLoadAllotmentForSeasonA_TC01 extends BaseClass {
     		Thread.sleep(2000);
     		calculationSetting.clickOnTransferPriceOnline();
     		Reporter.log("Clicked on Transfer price online",true);
-    		Thread.sleep(6000);
-       
+    		Thread.sleep(5000);
+    		UtilityClass.scrollByAxis(800, 0);
+    		Thread.sleep(5000);
+    		
+    		WebElement tte = driver.findElement(By.xpath("//a[text()='ZeusTest']"));
+    		//JavascriptExecutor j = (JavascriptExecutor) driver;
+    		j.executeScript("arguments[0].click();", tte);
+    		
     		//calculationSetting.clickOntestNGOptionAfterSave();
-    		driver.findElement(By.xpath("//a[@id='j3_42_anchor']")).click();
+    		
+    		//driver.findElement(By.xpath("//span[text()='ZeusTest']"));
+    		//driver.findElement(By.xpath("//a[@id='j3_42_anchor']")).click();
     		Reporter.log("Clicked on new option to see the rooms",true);
     		Thread.sleep(5000); 
     		UtilityClass.clickUsingJSE(calculationSetting.clickOnRoom1ByJSE());
     		Reporter.log("Clicked on Room1",true);
-    	    Thread.sleep(4000);
+    	    Thread.sleep(5000);
     		UtilityClass.scrollByAxis(0, 400);
     		calculationSetting.clickOnsavePrice();
     		Reporter.log("Clicked on Save price",true);

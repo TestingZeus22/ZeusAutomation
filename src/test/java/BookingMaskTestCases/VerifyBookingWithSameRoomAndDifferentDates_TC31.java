@@ -85,7 +85,7 @@
 	    		Thread.sleep(6000);
 	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
 	    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
-	    		UtilityClass.implicitlyWaitInMillis(2000);
+	    		Thread.sleep(2000);
 	    		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		UtilityClass.implicitlyWaitInMillis(3000);
@@ -100,9 +100,9 @@
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		Thread.sleep(1000);
 	    		
-	    		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
-	    		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
-	    		Thread.sleep(1000);
+//	    		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
+//	    		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
+//	    		Thread.sleep(1000);
 	    		UtilityClass.scrollByAxis(0, 300);
 	    		Thread.sleep(1000);
 	    		UtilityClass.implicitlyWaitInMillis(1000);
@@ -190,11 +190,11 @@
 				BookingMask.sendPhoneNum(UtilityClass.readDataFromStringExcel(104, 4, "Sheet2"));
 				UtilityClass.implicitlyWaitInsec(30);
 				BookingMask.sendEmail(UtilityClass.readDataFromStringExcel(105, 4, "Sheet2"));
-	    		UtilityClass.scrollByAxis(0, 900);
-	    		UtilityClass.implicitlyWaitInMillis(2000);
+	    		UtilityClass.scrollByAxis(0, 800);
+	    		Thread.sleep(1000);
 	    	    UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
 	    	    Reporter.log("Clicked on sendbookingButton",true);
-	    	    Thread.sleep(1000);
+	    	    Thread.sleep(2000);
 		}
 	   @Test
 	   public void validatePriceForDifferentDates() throws EncryptedDocumentException, IOException 

@@ -300,7 +300,7 @@ import Base.BaseClass;
 	    		}
 	    		
 	    		@Test  (priority = 3)//TC56
-	    		public void validateOccupancyMinLimitNotSatisfied() throws EncryptedDocumentException, IOException, InterruptedException 
+	    		public void validateOccupancyMinLimitNotSatisfied2() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
 	    			UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
 		    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
@@ -395,8 +395,8 @@ import Base.BaseClass;
 		             Thread.sleep(3000);
 					 String ActualMessage = BookingMask.getMaximumPersonCrossedErrorMessage();
 			    	 String expectedMessage = UtilityClass.readDataFromStringExcel(870, 3, "Sheet2");
-			    	 Assert.assertTrue(expectedMessage.contains(ActualMessage), "TC failed as Actual message and expected message are not matching ");
-			    	 //Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
+			    	 //Assert.assertTrue(expectedMessage.contains(ActualMessage), "TC failed as Actual message and expected message are not matching ");
+			    	 Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
 			    	 Reporter.log("Validating Actual message "+BookingMask.getMaximumPersonCrossedErrorMessage()+" and Expected message "+UtilityClass.readDataFromStringExcel(870, 3, "Sheet2"),true);
 	    		}
 	    		

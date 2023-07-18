@@ -3,15 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SalesBookingListTestCases.VerifyBookingInquiryTC08">
+      <class name="BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97">
         <methods>
-          <include name="launchBrowser"/>
-          <include name="validateBookingAndSalesBookingList"/>
+          <include name="validateErrorMsgBySendingTravelDateSunToMonWeekdaySetMonAndWed"/>
           <include name="Logout"/>
-          <include name="closeBrowser"/>
+          <include name="validateErrorMsgBySendingTravelDateTuesToWedWeekdaySetMonAndWed"/>
+          <include name="validateErrorMsgBySendingTravelDateMonToWedWeekdaySetMonAndWed"/>
           <include name="loginToApp"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- SalesBookingListTestCases.VerifyBookingInquiryTC08 -->
+      </class> <!-- BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

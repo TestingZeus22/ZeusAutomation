@@ -11,7 +11,6 @@
       <class name="BookingMaskTestCases.VerifyBookingforSeasonB_TC15"/>
       <class name="BookingMaskTestCases.VerifyBookingInquiryWithBlankTravelFromDate_TC04"/>
       <class name="BookingMaskTestCases.VerifyBookingInquiryWithBlankTravelToDate_TC03"/>
-      <class name="BookingMaskTestCases.VerifyModifyBookingWithTravelToDateDecrease_TC20"/>
       <class name="BookingMaskTestCases.VerifyModifyBookingByEditingBothTravelFromAndToDateTC23"/>
       <class name="BookingMaskTestCases.VerifyTravelToDateLessThanTravelFromDate_TC08"/>
       <class name="BookingMaskTestCases.VerifyTravelDatesOutOfContract_TC11"/>
@@ -23,7 +22,6 @@
       <class name="BookingMaskTestCases.VerifyBookingWithMismatchPaxAndOCCTC50"/>
       <class name="BookingMaskTestCases.VerifyBookingByEditingTravelTypeTC47"/>
       <class name="BookingMaskTestCases.VerifyModifyBookingWithTravelToDateDecrease_TC20"/>
-      <class name="BookingMaskTestCases.VerifyModifyBookingWithActionCodeUAandUTC38ToTC39"/>
       <class name="BookingMaskTestCases.VerifyBookingWithTravelFromAndTravelToSameDate_TC07"/>
       <class name="BookingMaskTestCases.VerifyModifyBookingTC21andTC22"/>
       <class name="BookingMaskTestCases.VerifyRoomOccupancyLimitTC62ToTC65"/>

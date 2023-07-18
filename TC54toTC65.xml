@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="BookingMaskTestCases.VerifyRoomOccupancyLimitTC62ToTC65"/>
-      <class name="BookingMaskTestCases.VerifyRoomOccupancyLimitTC54ToTC57"/>
+	  <class name="BookingMaskTestCases.VerifyRoomOccupancyLimitTC54ToTC57"/>
       <class name="BookingMaskTestCases.VerifyRoomOccupancyLimitTC58ToTC61"/>
+      <class name="BookingMaskTestCases.VerifyRoomOccupancyLimitTC62ToTC65"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

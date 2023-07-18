@@ -75,7 +75,7 @@ public class VerifyBookingForMinStayForFirstAndSecondMonthTC131ToTC132 extends B
     		Reporter.log("Clicked on create Button in sales Booking page",true);
     		Thread.sleep(6000);
 		}
-	    @Test 
+	    @Test (priority=1)
 	    public void validateBookingForFirstMonthWithMinStay() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -160,7 +160,8 @@ public class VerifyBookingForMinStayForFirstAndSecondMonthTC131ToTC132 extends B
 	        String ResVer=BookingMask.getReservationVerNoBM("value");
 	        String ActualReservNo= ResNo + ("/"+ResVer);
 	        ActualReser=ActualReservNo;
-	        UtilityClass.implicitlyWaitInMillis(12000);
+	        Thread.sleep(5000);
+	        UtilityClass.implicitlyWaitInMillis(20000);
 			BookingMask.clickOnViewList();
 			Reporter.log("Clicked on ViewList",true);
 		    UtilityClass.implicitlyWaitInMillis(8000);
@@ -187,7 +188,7 @@ public class VerifyBookingForMinStayForFirstAndSecondMonthTC131ToTC132 extends B
             Reporter.log("Validating Actual price "+ActualPrices+" and Expected Price "+UtilityClass.readDataFromStringExcel(537, 3, "Sheet2"),true);
 	    }
     	
-	    @Test
+	    @Test (priority=2)
 	    public void validateBookingForSecondMonthWithMinStay() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());

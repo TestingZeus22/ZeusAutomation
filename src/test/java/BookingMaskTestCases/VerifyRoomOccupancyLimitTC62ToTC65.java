@@ -193,7 +193,8 @@
 	             Thread.sleep(3000);
 				 String ActualMessage = BookingMask.getMaximumPersonCrossedErrorMessage();
 		    	 String expectedMessage = UtilityClass.readDataFromStringExcel(928, 1, "Sheet2");
-		    	 Assert.assertTrue(expectedMessage.contains(ActualMessage), "TC failed as Actual message and expected message are not matching ");
+		    	 Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
+		    	 //Assert.assertTrue(expectedMessage.contains(ActualMessage), "TC failed as Actual message and expected message are not matching ");
 		    	 Reporter.log("Validating Actual message "+BookingMask.getMaximumPersonCrossedErrorMessage()+" and Expected message "+UtilityClass.readDataFromStringExcel(928, 1, "Sheet2"),true);
 	    		}
 	    		
@@ -303,7 +304,8 @@
 		             Thread.sleep(3000);
 					 String ActualMessage = BookingMask.getMaximumPersonCrossedErrorMessage();
 			    	 String expectedMessage = UtilityClass.readDataFromStringExcel(928, 2, "Sheet2");
-			    	 Assert.assertTrue(expectedMessage.contains(ActualMessage), "TC failed as Actual message and expected message are not matching ");
+			    	 Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
+			    	 //Assert.assertTrue(expectedMessage.contains(ActualMessage), "TC failed as Actual message and expected message are not matching ");
 			    	 Reporter.log("Validating Actual message "+BookingMask.getMaximumPersonCrossedErrorMessage()+" and Expected message "+UtilityClass.readDataFromStringExcel(928, 2, "Sheet2"),true);
 	    		}
 	    		@Test (priority=3) //TC64
@@ -412,12 +414,12 @@
 		            Thread.sleep(3000);
 					 String ActualMessage = BookingMask.getMaximumPersonCrossedErrorMessage();
 			    	 String expectedMessage = UtilityClass.readDataFromStringExcel(928, 3, "Sheet2");
-			    	 //Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
-			    	 Assert.assertTrue(expectedMessage.contains(ActualMessage), "TC failed as Actual message and expected message are not matching ");
+			    	 Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
+			    	 //Assert.assertTrue(expectedMessage.contains(ActualMessage), "TC failed as Actual message and expected message are not matching ");
 			    	 Reporter.log("Validating Actual message "+BookingMask.getMaximumPersonCrossedErrorMessage()+" and Expected message "+UtilityClass.readDataFromStringExcel(928, 3, "Sheet2"),true);
 	    		}
 	    		
-	    		@Test (priority=1) //TC65
+	    		@Test (priority=4) //TC65
 	    		public void validateMismatchInAllFieldsErrorMsg() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
 	    			UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());

@@ -153,6 +153,7 @@ public class VerifyBookingWithMismatchPaxAndOCCTC50 extends BaseClass {
     	UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
         Reporter.log("Clicked on sendbookingButton",true);
         Thread.sleep(6000);
+        
 	}
  
     @Test
@@ -160,6 +161,7 @@ public class VerifyBookingWithMismatchPaxAndOCCTC50 extends BaseClass {
     {
       String ActualMessage = BookingMask.getStayExceedErrorMessage();
 	  String expectedMessage = UtilityClass.readDataFromStringExcel(677, 4, "Sheet2");
+	  //Assert.assertTrue(expectedMessage.contains(ActualMessage),"TC Failed");
 	  Assert.assertEquals(ActualMessage, expectedMessage,"Test Case Failed as actual and expected Messages are not matching");
 	  Reporter.log("Validating Actual Message is"+BookingMask.getStayExceedErrorMessage()+" and Expected Message is "+UtilityClass.readDataFromStringExcel(677, 4, "Sheet2"),true);
     }

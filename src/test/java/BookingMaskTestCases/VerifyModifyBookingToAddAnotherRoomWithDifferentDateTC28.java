@@ -98,7 +98,7 @@
 	    		
 	    		BookingMask.ClearbookingActionfield();
 	    		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(280, 4, "Sheet2"));
-	    		Reporter.log("Send Booking action");
+	    		Reporter.log("Send Booking action",true);
 	    		UtilityClass.implicitlyWaitInMillis(1000);
 	    		BookingMask.clearNoOfPax();
 	    		UtilityClass.implicitlyWaitInMillis(1000);
@@ -155,7 +155,7 @@
 				UtilityClass.scrollByAxis(0, 900);
 				UtilityClass.implicitlyWaitInMillis(20000);
 				UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
-	    		Reporter.log("Click on sendBookingButton after U action code",true);
+	    		Reporter.log("Click on sendBookingButton after action code",true);
 	            UtilityClass.implicitlyWaitInMillis(12000);
 				BookingMask.clickOnViewList();
 				Reporter.log("Clicked on ViewList",true);

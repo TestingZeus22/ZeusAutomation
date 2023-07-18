@@ -55,13 +55,13 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>28/23/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jul 04 15:14:30 IST 2023</td>
+<td>Started on:</td><td>Tue Jul 18 10:06:46 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (30 ms)</td>
+<tr><td>Total time:</td><td>2917 seconds (2917646 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>sanity </td>
+<td>Included groups:</td><td></td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
@@ -70,49 +70,2359 @@ function toggleAllBoxes() {
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='LoginPageTestCases.ValidateErrorMsgOnUserName_TC04.CheckIncorrectCredentialsOnUserNameFieldTest()'><b>CheckIncorrectCredentialsOnUserNameFieldTest</b><br>Test class: LoginPageTestCases.ValidateErrorMsgOnUserName_TC04</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;POM.loginPage.getCredentialsInvalidTextOnUserNameField()&quot; because &quot;this.login&quot; is null
-	at LoginPageTestCases.ValidateErrorMsgOnUserName_TC04.CheckIncorrectCredentialsOnUserNameFieldTest(ValidateErrorMsgOnUserName_TC04.java:50)
+<td title='BookingMaskTestCases.VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125.validateErrorMsgBySendingTravelDateMonToNextMonSetMonWedFriAndSunWithB()'><b>validateErrorMsgBySendingTravelDateMonToNextMonSetMonWedFriAndSunWithB</b><br>Test class: BookingMaskTestCases.VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125<br/>
+<a href="#Output-1939492602" onClick='toggleBox("Output-1939492602", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1939492602" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1939492602">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 809 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Click on sendBookingButton after U action code<br/>
+Clicked on sendbookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ] but found [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ]
+	at BookingMaskTestCases.VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125.validateErrorMsgBySendingTravelDateMonToNextMonSetMonWedFriAndSunWithB(VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125.java:354)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1010670443", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1010670443'><pre>java.lang.NullPointerException: Cannot invoke &quot;POM.loginPage.getCredentialsInvalidTextOnUserNameField()&quot; because &quot;this.login&quot; is null
-	at LoginPageTestCases.ValidateErrorMsgOnUserName_TC04.CheckIncorrectCredentialsOnUserNameFieldTest(ValidateErrorMsgOnUserName_TC04.java:50)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1939492602", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1939492602'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ] but found [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at BookingMaskTestCases.VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125.validateErrorMsgBySendingTravelDateMonToNextMonSetMonWedFriAndSunWithB(VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125.java:354)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>LoginPageTestCases.ValidateErrorMsgOnUserName_TC04@3ce1e309</td></tr>
+<td>20</td>
+<td>BookingMaskTestCases.VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125@2a5c8d3f</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121.validateErrorMsgBySendingTravelDateMonToFriWeekdaySetMonTuesWedAndThursWithB()'><b>validateErrorMsgBySendingTravelDateMonToFriWeekdaySetMonTuesWedAndThursWithB</b><br>Test class: BookingMaskTestCases.VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121<br/>
+<a href="#Output-330845433" onClick='toggleBox("Output-330845433", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-330845433" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-330845433">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 810 from dropdown<br/>
+Send booking Action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Click on sendBookingButton after U action code<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ] but found [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ]
+	at BookingMaskTestCases.VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121.validateErrorMsgBySendingTravelDateMonToFriWeekdaySetMonTuesWedAndThursWithB(VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121.java:157)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace330845433", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace330845433'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ] but found [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at BookingMaskTestCases.VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121.validateErrorMsgBySendingTravelDateMonToFriWeekdaySetMonTuesWedAndThursWithB(VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121.java:157)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>15</td>
+<td>BookingMaskTestCases.VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121@3a52dba3</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingWithArriDateSetMonTueWedAndDepaDateThuFriSatTC135ToTC139.validateBookingWithMaxStayForCorrectArriDeptDaysWithB()'><b>validateBookingWithMaxStayForCorrectArriDeptDaysWithB</b><br>Test class: BookingMaskTestCases.VerifyBookingWithArriDateSetMonTueWedAndDepaDateThuFriSatTC135ToTC139<br/>
+<a href="#Output-224661478" onClick='toggleBox("Output-224661478", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-224661478" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-224661478">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: HK001 - (TESTING)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at utility.UtilityClass.listBoxHandlingUsingByText(UtilityClass.java:149)
+	at BookingMaskTestCases.VerifyBookingWithArriDateSetMonTueWedAndDepaDateThuFriSatTC135ToTC139.validateBookingWithMaxStayForCorrectArriDeptDaysWithB(VerifyBookingWithArriDateSetMonTueWedAndDepaDateThuFriSatTC135ToTC139.java:203)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace224661478", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace224661478'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate option with text: HK001 - (TESTING)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at utility.UtilityClass.listBoxHandlingUsingByText(UtilityClass.java:149)
+	at BookingMaskTestCases.VerifyBookingWithArriDateSetMonTueWedAndDepaDateThuFriSatTC135ToTC139.validateBookingWithMaxStayForCorrectArriDeptDaysWithB(VerifyBookingWithArriDateSetMonTueWedAndDepaDateThuFriSatTC135ToTC139.java:203)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>5</td>
+<td>BookingMaskTestCases.VerifyBookingWithArriDateSetMonTueWedAndDepaDateThuFriSatTC135ToTC139@5dda768f</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDateConditionSetMonAndTues_TC105ToTC107.validateErrorMsgBySendingTravelDateMonToThurWeekdaySetMonToTue()'><b>validateErrorMsgBySendingTravelDateMonToThurWeekdaySetMonToTue</b><br>Test class: BookingMaskTestCases.VerifyTravelDateConditionSetMonAndTues_TC105ToTC107<br/>
+<a href="#Output-1128812107" onClick='toggleBox("Output-1128812107", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1128812107" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1128812107">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 812 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at BookingMaskTestCases.VerifyTravelDateConditionSetMonAndTues_TC105ToTC107.validateErrorMsgBySendingTravelDateMonToThurWeekdaySetMonToTue(VerifyTravelDateConditionSetMonAndTues_TC105ToTC107.java:131)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1128812107", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1128812107'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at BookingMaskTestCases.VerifyTravelDateConditionSetMonAndTues_TC105ToTC107.validateErrorMsgBySendingTravelDateMonToThurWeekdaySetMonToTue(VerifyTravelDateConditionSetMonAndTues_TC105ToTC107.java:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>14</td>
+<td>BookingMaskTestCases.VerifyTravelDateConditionSetMonAndTues_TC105ToTC107@2aceadd4</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121.validateErrorMsgBySendingTravelDateSunToMonWeekdaySetMonTuesWedAndThursWithB()'><b>validateErrorMsgBySendingTravelDateSunToMonWeekdaySetMonTuesWedAndThursWithB</b><br>Test class: BookingMaskTestCases.VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121<br/>
+<a href="#Output-1778778885" onClick='toggleBox("Output-1778778885", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1778778885" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1778778885">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 810 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Click on sendBookingButton after U action code<br/>
+Clicked on sendbookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ] but found [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ]
+	at BookingMaskTestCases.VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121.validateErrorMsgBySendingTravelDateSunToMonWeekdaySetMonTuesWedAndThursWithB(VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121.java:353)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1778778885", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1778778885'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ] but found [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at BookingMaskTestCases.VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121.validateErrorMsgBySendingTravelDateSunToMonWeekdaySetMonTuesWedAndThursWithB(VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121.java:353)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>20</td>
+<td>BookingMaskTestCases.VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121@3a52dba3</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDateConditionSetMonAndTues_TC105ToTC107.validateErrorMsgBySendingTravelDateThursToFridWeekdaySetMonToTue()'><b>validateErrorMsgBySendingTravelDateThursToFridWeekdaySetMonToTue</b><br>Test class: BookingMaskTestCases.VerifyTravelDateConditionSetMonAndTues_TC105ToTC107<br/>
+<a href="#Output-2041803383" onClick='toggleBox("Output-2041803383", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2041803383" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2041803383">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 812 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at BookingMaskTestCases.VerifyTravelDateConditionSetMonAndTues_TC105ToTC107.validateErrorMsgBySendingTravelDateThursToFridWeekdaySetMonToTue(VerifyTravelDateConditionSetMonAndTues_TC105ToTC107.java:263)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2041803383", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2041803383'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at BookingMaskTestCases.VerifyTravelDateConditionSetMonAndTues_TC105ToTC107.validateErrorMsgBySendingTravelDateThursToFridWeekdaySetMonToTue(VerifyTravelDateConditionSetMonAndTues_TC105ToTC107.java:263)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>14</td>
+<td>BookingMaskTestCases.VerifyTravelDateConditionSetMonAndTues_TC105ToTC107@2aceadd4</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingConditionSetTC113ToTC117.validateErrorMsgBySendingTravelDateWedToThursWeekdaySetMonTuesAndWed()'><b>validateErrorMsgBySendingTravelDateWedToThursWeekdaySetMonTuesAndWed</b><br>Test class: BookingMaskTestCases.VerifyBookingConditionSetTC113ToTC117<br/>
+<a href="#Output-971614925" onClick='toggleBox("Output-971614925", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-971614925" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-971614925">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 813 from dropdown<br/>
+Send Booking Action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at BookingMaskTestCases.VerifyBookingConditionSetTC113ToTC117.validateErrorMsgBySendingTravelDateWedToThursWeekdaySetMonTuesAndWed(VerifyBookingConditionSetTC113ToTC117.java:339)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace971614925", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace971614925'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at BookingMaskTestCases.VerifyBookingConditionSetTC113ToTC117.validateErrorMsgBySendingTravelDateWedToThursWeekdaySetMonTuesAndWed(VerifyBookingConditionSetTC113ToTC117.java:339)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>15</td>
+<td>BookingMaskTestCases.VerifyBookingConditionSetTC113ToTC117@752325ad</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112.validateErrorMsgBySendingTravelDateMonToSatWeekdaySetMonWedAndFrid()'><b>validateErrorMsgBySendingTravelDateMonToSatWeekdaySetMonWedAndFrid</b><br>Test class: BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112<br/>
+<a href="#Output-513971174" onClick='toggleBox("Output-513971174", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-513971174" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-513971174">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 814 from dropdown<br/>
+Send Booking Action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112.validateErrorMsgBySendingTravelDateMonToSatWeekdaySetMonWedAndFrid(VerifyBookingConditionSetMonWedAndFridTC108ToTC112.java:335)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace513971174", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace513971174'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112.validateErrorMsgBySendingTravelDateMonToSatWeekdaySetMonWedAndFrid(VerifyBookingConditionSetMonWedAndFridTC108ToTC112.java:335)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>13</td>
+<td>BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112@279fedbd</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112.validateErrorMsgBySendingTravelDateSatToSunWeekdaySetMonWedAndFrid()'><b>validateErrorMsgBySendingTravelDateSatToSunWeekdaySetMonWedAndFrid</b><br>Test class: BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112<br/>
+<a href="#Output-1658279762" onClick='toggleBox("Output-1658279762", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1658279762" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1658279762">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 814 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Select Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112.validateErrorMsgBySendingTravelDateSatToSunWeekdaySetMonWedAndFrid(VerifyBookingConditionSetMonWedAndFridTC108ToTC112.java:401)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1658279762", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1658279762'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112.validateErrorMsgBySendingTravelDateSatToSunWeekdaySetMonWedAndFrid(VerifyBookingConditionSetMonWedAndFridTC108ToTC112.java:401)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>12</td>
+<td>BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112@279fedbd</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97.validateErrorMsgBySendingTravelDateTuesToWedWeekdaySetMonAndWed()'><b>validateErrorMsgBySendingTravelDateTuesToWedWeekdaySetMonAndWed</b><br>Test class: BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97<br/>
+<a href="#Output-1499776078" onClick='toggleBox("Output-1499776078", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1499776078" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1499776078">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 811 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97.validateErrorMsgBySendingTravelDateTuesToWedWeekdaySetMonAndWed(VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97.java:398)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1499776078", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1499776078'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97.validateErrorMsgBySendingTravelDateTuesToWedWeekdaySetMonAndWed(VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97.java:398)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>14</td>
+<td>BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97@24aed80c</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125.validateErrorMsgBySendingTravelDateMonToWedWeekdaySetMonWedFriAndSunWithB()'><b>validateErrorMsgBySendingTravelDateMonToWedWeekdaySetMonWedFriAndSunWithB</b><br>Test class: BookingMaskTestCases.VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125<br/>
+<a href="#Output-135913587" onClick='toggleBox("Output-135913587", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-135913587" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-135913587">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 809 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Click on sendBookingButton after U action code<br/>
+Clicked on sendbookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ] but found [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ]
+	at BookingMaskTestCases.VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125.validateErrorMsgBySendingTravelDateMonToWedWeekdaySetMonWedFriAndSunWithB(VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125.java:272)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace135913587", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace135913587'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ] but found [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at BookingMaskTestCases.VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125.validateErrorMsgBySendingTravelDateMonToWedWeekdaySetMonWedFriAndSunWithB(VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125.java:272)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>19</td>
+<td>BookingMaskTestCases.VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125@2a5c8d3f</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDateConditionSetMonday_TC98ToTC101.validateErrorMsgBySendingTravelDateSunToTuesWeekdaySetMon()'><b>validateErrorMsgBySendingTravelDateSunToTuesWeekdaySetMon</b><br>Test class: BookingMaskTestCases.VerifyTravelDateConditionSetMonday_TC98ToTC101<br/>
+<a href="#Output-1512707616" onClick='toggleBox("Output-1512707616", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1512707616" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1512707616">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 815 from dropdown<br/>
+Send Booking Action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at BookingMaskTestCases.VerifyTravelDateConditionSetMonday_TC98ToTC101.validateErrorMsgBySendingTravelDateSunToTuesWeekdaySetMon(VerifyTravelDateConditionSetMonday_TC98ToTC101.java:270)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1512707616", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1512707616'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at BookingMaskTestCases.VerifyTravelDateConditionSetMonday_TC98ToTC101.validateErrorMsgBySendingTravelDateSunToTuesWeekdaySetMon(VerifyTravelDateConditionSetMonday_TC98ToTC101.java:270)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>13</td>
+<td>BookingMaskTestCases.VerifyTravelDateConditionSetMonday_TC98ToTC101@45c7e403</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97.validateErrorMsgBySendingTravelDateMonToWedWeekdaySetMonAndWed()'><b>validateErrorMsgBySendingTravelDateMonToWedWeekdaySetMonAndWed</b><br>Test class: BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97<br/>
+<a href="#Output-1339093052" onClick='toggleBox("Output-1339093052", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1339093052" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1339093052">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 811 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97.validateErrorMsgBySendingTravelDateMonToWedWeekdaySetMonAndWed(VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97.java:265)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1339093052", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1339093052'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97.validateErrorMsgBySendingTravelDateMonToWedWeekdaySetMonAndWed(VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97.java:265)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>13</td>
+<td>BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97@24aed80c</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125.validateErrorMsgBySendingTravelDateSatToMonWeekdaySetMonWedFriAndSunWithB()'><b>validateErrorMsgBySendingTravelDateSatToMonWeekdaySetMonWedFriAndSunWithB</b><br>Test class: BookingMaskTestCases.VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125<br/>
+<a href="#Output-1582858775" onClick='toggleBox("Output-1582858775", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1582858775" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1582858775">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 809 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Click on sendBookingButton after U action code<br/>
+Clicked on sendbookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ] but found [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ]
+	at BookingMaskTestCases.VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125.validateErrorMsgBySendingTravelDateSatToMonWeekdaySetMonWedFriAndSunWithB(VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125.java:437)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1582858775", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1582858775'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ] but found [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at BookingMaskTestCases.VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125.validateErrorMsgBySendingTravelDateSatToMonWeekdaySetMonWedFriAndSunWithB(VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125.java:437)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>19</td>
+<td>BookingMaskTestCases.VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125@2a5c8d3f</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112.validateErrorMsgBySendingTravelDateMonToThursWeekdaySetWedAndFri()'><b>validateErrorMsgBySendingTravelDateMonToThursWeekdaySetWedAndFri</b><br>Test class: BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112<br/>
+<a href="#Output-1959301671" onClick='toggleBox("Output-1959301671", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1959301671" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1959301671">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 814 from dropdown<br/>
+Send Booking action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112.validateErrorMsgBySendingTravelDateMonToThursWeekdaySetWedAndFri(VerifyBookingConditionSetMonWedAndFridTC108ToTC112.java:268)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1959301671", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1959301671'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112.validateErrorMsgBySendingTravelDateMonToThursWeekdaySetWedAndFri(VerifyBookingConditionSetMonWedAndFridTC108ToTC112.java:268)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>12</td>
+<td>BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112@279fedbd</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121.validateErrorMsgBySendingTravelDateSunToTuedWeekdaySetMonTueWedAndThursWithB()'><b>validateErrorMsgBySendingTravelDateSunToTuedWeekdaySetMonTueWedAndThursWithB</b><br>Test class: BookingMaskTestCases.VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121<br/>
+<a href="#Output-2044525325" onClick='toggleBox("Output-2044525325", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2044525325" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2044525325">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 810 from dropdown<br/>
+Send Booking Action in the input field<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Click on sendBookingButton after U action code<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ] but found [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ]
+	at BookingMaskTestCases.VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121.validateErrorMsgBySendingTravelDateSunToTuedWeekdaySetMonTueWedAndThursWithB(VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121.java:437)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2044525325", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2044525325'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ] but found [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at BookingMaskTestCases.VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121.validateErrorMsgBySendingTravelDateSunToTuedWeekdaySetMonTueWedAndThursWithB(VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121.java:437)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>20</td>
+<td>BookingMaskTestCases.VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121@3a52dba3</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingConditionSetTC113ToTC117.validateErrorMsgBySendingTravelDateSunToMonWeekdaySetMonTuesAndWed()'><b>validateErrorMsgBySendingTravelDateSunToMonWeekdaySetMonTuesAndWed</b><br>Test class: BookingMaskTestCases.VerifyBookingConditionSetTC113ToTC117<br/>
+<a href="#Output-263893231" onClick='toggleBox("Output-263893231", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-263893231" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-263893231">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 813 from dropdown<br/>
+Send Booking Action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at BookingMaskTestCases.VerifyBookingConditionSetTC113ToTC117.validateErrorMsgBySendingTravelDateSunToMonWeekdaySetMonTuesAndWed(VerifyBookingConditionSetTC113ToTC117.java:272)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace263893231", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace263893231'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at BookingMaskTestCases.VerifyBookingConditionSetTC113ToTC117.validateErrorMsgBySendingTravelDateSunToMonWeekdaySetMonTuesAndWed(VerifyBookingConditionSetTC113ToTC117.java:272)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>14</td>
+<td>BookingMaskTestCases.VerifyBookingConditionSetTC113ToTC117@752325ad</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97.validateErrorMsgBySendingTravelDateSunToMonWeekdaySetMonAndWed()'><b>validateErrorMsgBySendingTravelDateSunToMonWeekdaySetMonAndWed</b><br>Test class: BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97<br/>
+<a href="#Output-1182234318" onClick='toggleBox("Output-1182234318", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1182234318" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1182234318">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 811 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97.validateErrorMsgBySendingTravelDateSunToMonWeekdaySetMonAndWed(VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97.java:331)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1182234318", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1182234318'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97.validateErrorMsgBySendingTravelDateSunToMonWeekdaySetMonAndWed(VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97.java:331)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>14</td>
+<td>BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97@24aed80c</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingConditionSetTC113ToTC117.validateErrorMsgBySendingTravelDateThursToFridWeekdaySetMonTuesAndWed()'><b>validateErrorMsgBySendingTravelDateThursToFridWeekdaySetMonTuesAndWed</b><br>Test class: BookingMaskTestCases.VerifyBookingConditionSetTC113ToTC117<br/>
+<a href="#Output-1075663172" onClick='toggleBox("Output-1075663172", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1075663172" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1075663172">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 813 from dropdown<br/>
+Send Booking Action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at BookingMaskTestCases.VerifyBookingConditionSetTC113ToTC117.validateErrorMsgBySendingTravelDateThursToFridWeekdaySetMonTuesAndWed(VerifyBookingConditionSetTC113ToTC117.java:407)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1075663172", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1075663172'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at BookingMaskTestCases.VerifyBookingConditionSetTC113ToTC117.validateErrorMsgBySendingTravelDateThursToFridWeekdaySetMonTuesAndWed(VerifyBookingConditionSetTC113ToTC117.java:407)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>14</td>
+<td>BookingMaskTestCases.VerifyBookingConditionSetTC113ToTC117@752325ad</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDateConditionSetMonday_TC98ToTC101.validateErrorMsgBySendingTravelDateNotMondayWeekdaySetMon()'><b>validateErrorMsgBySendingTravelDateNotMondayWeekdaySetMon</b><br>Test class: BookingMaskTestCases.VerifyTravelDateConditionSetMonday_TC98ToTC101<br/>
+<a href="#Output-33718267" onClick='toggleBox("Output-33718267", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-33718267" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-33718267">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 815 from dropdown<br/>
+Send Booking Action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at BookingMaskTestCases.VerifyTravelDateConditionSetMonday_TC98ToTC101.validateErrorMsgBySendingTravelDateNotMondayWeekdaySetMon(VerifyTravelDateConditionSetMonday_TC98ToTC101.java:338)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace33718267", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace33718267'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at BookingMaskTestCases.VerifyTravelDateConditionSetMonday_TC98ToTC101.validateErrorMsgBySendingTravelDateNotMondayWeekdaySetMon(VerifyTravelDateConditionSetMonday_TC98ToTC101.java:338)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>13</td>
+<td>BookingMaskTestCases.VerifyTravelDateConditionSetMonday_TC98ToTC101@45c7e403</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDateConditionSetMonAndTues_TC105ToTC107.validateErrorMsgBySendingTravelDateSunToTueWeekdaySetMonToTue()'><b>validateErrorMsgBySendingTravelDateSunToTueWeekdaySetMonToTue</b><br>Test class: BookingMaskTestCases.VerifyTravelDateConditionSetMonAndTues_TC105ToTC107<br/>
+<a href="#Output-2005240863" onClick='toggleBox("Output-2005240863", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2005240863" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2005240863">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 812 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at BookingMaskTestCases.VerifyTravelDateConditionSetMonAndTues_TC105ToTC107.validateErrorMsgBySendingTravelDateSunToTueWeekdaySetMonToTue(VerifyTravelDateConditionSetMonAndTues_TC105ToTC107.java:197)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2005240863", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2005240863'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at BookingMaskTestCases.VerifyTravelDateConditionSetMonAndTues_TC105ToTC107.validateErrorMsgBySendingTravelDateSunToTueWeekdaySetMonToTue(VerifyTravelDateConditionSetMonAndTues_TC105ToTC107.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>14</td>
+<td>BookingMaskTestCases.VerifyTravelDateConditionSetMonAndTues_TC105ToTC107@2aceadd4</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112.validateErrorMsgBySendingTravelDateMonToWedWeekdaySetMonWedAndFrid()'><b>validateErrorMsgBySendingTravelDateMonToWedWeekdaySetMonWedAndFrid</b><br>Test class: BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112<br/>
+<a href="#Output-1849715642" onClick='toggleBox("Output-1849715642", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1849715642" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1849715642">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 814 from dropdown<br/>
+Send Booking action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112.validateErrorMsgBySendingTravelDateMonToWedWeekdaySetMonWedAndFrid(VerifyBookingConditionSetMonWedAndFridTC108ToTC112.java:201)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1849715642", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1849715642'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112.validateErrorMsgBySendingTravelDateMonToWedWeekdaySetMonWedAndFrid(VerifyBookingConditionSetMonWedAndFridTC108ToTC112.java:201)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>12</td>
+<td>BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112@279fedbd</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDateConditionSetMonday_TC98ToTC101.validateErrorMsgBySendingTravelDateSunToMonWeekdaySetMon()'><b>validateErrorMsgBySendingTravelDateSunToMonWeekdaySetMon</b><br>Test class: BookingMaskTestCases.VerifyTravelDateConditionSetMonday_TC98ToTC101<br/>
+<a href="#Output-1714291955" onClick='toggleBox("Output-1714291955", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1714291955" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1714291955">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 815 from dropdown<br/>
+Send Booking Action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at BookingMaskTestCases.VerifyTravelDateConditionSetMonday_TC98ToTC101.validateErrorMsgBySendingTravelDateSunToMonWeekdaySetMon(VerifyTravelDateConditionSetMonday_TC98ToTC101.java:202)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1714291955", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1714291955'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [Invalid Travel Duration-no price information in the net contract.                                                                                                                                                                                                                                                               ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at BookingMaskTestCases.VerifyTravelDateConditionSetMonday_TC98ToTC101.validateErrorMsgBySendingTravelDateSunToMonWeekdaySetMon(VerifyTravelDateConditionSetMonday_TC98ToTC101.java:202)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>14</td>
+<td>BookingMaskTestCases.VerifyTravelDateConditionSetMonday_TC98ToTC101@45c7e403</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97.validatePriceForTravelDateIsWedWeekdaySetMonAndWed()'><b>validatePriceForTravelDateIsWedWeekdaySetMonAndWed</b><br>Test class: BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97<br/>
+<a href="#Output-868283776" onClick='toggleBox("Output-868283776", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-868283776" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-868283776">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 811 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+Validating Actual price 1334.00 and Expected Price 1334.00<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97@24aed80c</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130.validateBookingAndPriceForMinStayWithB()'><b>validateBookingAndPriceForMinStayWithB</b><br>Test class: BookingMaskTestCases.VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130<br/>
+<a href="#Output-586973310" onClick='toggleBox("Output-586973310", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-586973310" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-586973310">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 807 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode to input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Click on sendBookingButton<br/>
+Clicked on ViewList<br/>
+Clicked on sendTBMcode to verify booking is done or not<br/>
+Clicked on Booking listButton<br/>
+Send TBM code<br/>
+Clicked on Booking listButton<br/>
+Validating Expected ReservationNo 682881944/01 and Actual ReservationNo is 682881944/01<br/>
+Validating Actual price 4002.00 and Expected Price 4002.00<br/>
+</div>
+</td>
+<td></td>
+<td>56</td>
+<td>BookingMaskTestCases.VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130@7a8c8dcf</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDatesConditionSetMonAndTues_TC102ToTC104.validatePriceForMonToWedWeekdaySetMonAndTues()'><b>validatePriceForMonToWedWeekdaySetMonAndTues</b><br>Test class: BookingMaskTestCases.VerifyTravelDatesConditionSetMonAndTues_TC102ToTC104<br/>
+<a href="#Output-42588554" onClick='toggleBox("Output-42588554", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-42588554" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-42588554">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 812 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+Validating Actual price 2668.00 and Expected Price 2668.00<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>BookingMaskTestCases.VerifyTravelDatesConditionSetMonAndTues_TC102ToTC104@24269709</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142.validateBookingWithVaildStay()'><b>validateBookingWithVaildStay</b><br>Test class: BookingMaskTestCases.VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142<br/>
+<a href="#Output-789475336" onClick='toggleBox("Output-789475336", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-789475336" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-789475336">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 806 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Click on sendBookingButton after U action code<br/>
+Clicked on ViewList<br/>
+Clicked on sendTBMcode to verify booking is done or not<br/>
+Clicked on Booking listButton<br/>
+Send TBM code<br/>
+Clicked on Booking listButton<br/>
+Clicked on Edit booking1<br/>
+Change booking action to U<br/>
+Send Modified Travel from date<br/>
+Send Modified Travel To date<br/>
+Click on sendBookingButton after U action code<br/>
+Clicked on ViewList<br/>
+Clicked on sendTBMcode to verify booking is done or not<br/>
+Send TBM code<br/>
+Clicked on Booking listButton<br/>
+Validating Expected ReservationNo 564714678/02 and Actual ReservationNo is 564714678/02<br/>
+Validating Actual price 6670.00 and Expected Price 6670.00<br/>
+</div>
+</td>
+<td></td>
+<td>89</td>
+<td>BookingMaskTestCases.VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142@1ce24091</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDatesConditionSetMonAndTues_TC102ToTC104.validatePriceForTuesNightOnlyWeekdaySetMonAndTues()'><b>validatePriceForTuesNightOnlyWeekdaySetMonAndTues</b><br>Test class: BookingMaskTestCases.VerifyTravelDatesConditionSetMonAndTues_TC102ToTC104<br/>
+<a href="#Output-2113719282" onClick='toggleBox("Output-2113719282", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2113719282" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2113719282">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 812 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+Validating Actual price 1334.00 and Expected Price 1334.00<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>BookingMaskTestCases.VerifyTravelDatesConditionSetMonAndTues_TC102ToTC104@24269709</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDatesConditionSetMonAndTues_TC102ToTC104.validatePriceForMonNightOnlyWeekdaySetMonAndTues()'><b>validatePriceForMonNightOnlyWeekdaySetMonAndTues</b><br>Test class: BookingMaskTestCases.VerifyTravelDatesConditionSetMonAndTues_TC102ToTC104<br/>
+<a href="#Output-12070120" onClick='toggleBox("Output-12070120", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-12070120" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-12070120">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 812 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+Validating Actual price 1334.00 and Expected Price 1334.00<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>BookingMaskTestCases.VerifyTravelDatesConditionSetMonAndTues_TC102ToTC104@24269709</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130.validateBookingAndPriceBetweenMinAndMaxStayWithB()'><b>validateBookingAndPriceBetweenMinAndMaxStayWithB</b><br>Test class: BookingMaskTestCases.VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130<br/>
+<a href="#Output-1063881400" onClick='toggleBox("Output-1063881400", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1063881400" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1063881400">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 804 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Click on SendBookingButton<br/>
+Validating Actual price 5336.00 and Expected Price 5336.00<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>BookingMaskTestCases.VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130@7a8c8dcf</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142.validateBookingToLessthanMinStay()'><b>validateBookingToLessthanMinStay</b><br>Test class: BookingMaskTestCases.VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142<br/>
+<a href="#Output-1487924477" onClick='toggleBox("Output-1487924477", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1487924477" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1487924477">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 806 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date for Season-G<br/>
+Send Travel To date for Season-G<br/>
+Send Number of passenger<br/>
+Click on sendBookingButton after U action code<br/>
+Send Modified Travel from date<br/>
+Send Modified Travel To date<br/>
+Click on sendBookingButton after U action code<br/>
+Validating Actual message Mindestaufenthaltsdauer unterschritten bzw Maximale Aufenthaltsdauer überschritten                                                                                                                                                                                                                                               and Expected message Mindestaufenthaltsdauer unterschritten bzw Maximale Aufenthaltsdauer überschritten                                                                                                                                                                                                                                              <br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>BookingMaskTestCases.VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142@1ce24091</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingWithArriDateSetMonTueWedAndDepaDateThuFriSatTC135ToTC139.validateBookingToCrossMaxStayForCorrectArriDeptDaysWithB()'><b>validateBookingToCrossMaxStayForCorrectArriDeptDaysWithB</b><br>Test class: BookingMaskTestCases.VerifyBookingWithArriDateSetMonTueWedAndDepaDateThuFriSatTC135ToTC139<br/>
+<a href="#Output-495117206" onClick='toggleBox("Output-495117206", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-495117206" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-495117206">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 805 from dropdown<br/>
+Send Booking Action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Click on SendBookingButton<br/>
+Clicked on sendbookingButton<br/>
+Validating Actual message Maximale Aufenthaltsdauer überschritten                                                                                                                                                                                                                                                                                          and Expected message Maximale Aufenthaltsdauer überschritten                                                                                                                                                                                                                                                                                         <br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>BookingMaskTestCases.VerifyBookingWithArriDateSetMonTueWedAndDepaDateThuFriSatTC135ToTC139@5dda768f</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130.validteErrorMessageForBelowMinStayWithB()'><b>validteErrorMessageForBelowMinStayWithB</b><br>Test class: BookingMaskTestCases.VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130<br/>
+<a href="#Output-74010109" onClick='toggleBox("Output-74010109", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-74010109" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-74010109">
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 804 from dropdown<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Select Number of passenger<br/>
+Click on SendBookingButton<br/>
+Validating Actual message Mindestaufenthaltsdauer unterschritten bzw Maximale Aufenthaltsdauer überschritten                                                                                                                                                                                                                                               and Expected message Mindestaufenthaltsdauer unterschritten bzw Maximale Aufenthaltsdauer überschritten                                                                                                                                                                                                                                              <br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>BookingMaskTestCases.VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130@7a8c8dcf</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingForFirstMonthToSecondMonthWithArriDeptConditionTC133ToTC134.validateBookingForMinStayFromFirstMonthToSecondMonth()'><b>validateBookingForMinStayFromFirstMonthToSecondMonth</b><br>Test class: BookingMaskTestCases.VerifyBookingForFirstMonthToSecondMonthWithArriDeptConditionTC133ToTC134<br/>
+<a href="#Output-1997319769" onClick='toggleBox("Output-1997319769", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1997319769" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1997319769">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 804 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode to input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Click on SendBookingButton<br/>
+Clicked on sendbookingButton<br/>
+Clicked on ViewList<br/>
+Clicked on sendTBMcode to verify booking is done or not<br/>
+Clicked on Booking listButton<br/>
+Send TBM code<br/>
+Clicked on Booking listButton<br/>
+Validating Expected ReservationNo 257212742/01 and Actual ReservationNo is 257212742/01<br/>
+Validating Actual price 888.00 and Expected Price 888.00<br/>
+</div>
+</td>
+<td></td>
+<td>57</td>
+<td>BookingMaskTestCases.VerifyBookingForFirstMonthToSecondMonthWithArriDeptConditionTC133ToTC134@fbd1f6</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121.validateBookingBySendingTravelDateMonToWedWeekdaySetMonTuesWedAndThursWithB()'><b>validateBookingBySendingTravelDateMonToWedWeekdaySetMonTuesWedAndThursWithB</b><br>Test class: BookingMaskTestCases.VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121<br/>
+<a href="#Output-399672840" onClick='toggleBox("Output-399672840", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-399672840" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-399672840">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 810 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Click on sendBookingButton after U action code<br/>
+Clicked on ViewList<br/>
+Clicked on sendTBMcode to verify booking is done or not<br/>
+Clicked on Booking listButton<br/>
+Send TBM code<br/>
+Clicked on Booking listButton<br/>
+Validating Expected ReservationNo 437121193/01 and Actual ReservationNo is 437121193/01<br/>
+Validating Actual price 268.00 and Expected Price 268.00<br/>
+</div>
+</td>
+<td></td>
+<td>55</td>
+<td>BookingMaskTestCases.VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121@3a52dba3</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112.validatePriceForTravelDateIsMonToTuesWeekdaySetMonWedAndFrid()'><b>validatePriceForTravelDateIsMonToTuesWeekdaySetMonWedAndFrid</b><br>Test class: BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112<br/>
+<a href="#Output-550540748" onClick='toggleBox("Output-550540748", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-550540748" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-550540748">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 814 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+Validating Actual price 1556.00 and Expected Price 1556.00<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112@279fedbd</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDateConditionSetMonday_TC98ToTC101.validatePriceForTravelDateIsMonWeekdaySetMon()'><b>validatePriceForTravelDateIsMonWeekdaySetMon</b><br>Test class: BookingMaskTestCases.VerifyTravelDateConditionSetMonday_TC98ToTC101<br/>
+<a href="#Output-283026238" onClick='toggleBox("Output-283026238", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-283026238" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-283026238">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 815 from dropdown<br/>
+Send Booking Action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+Validating Actual price 1334.00 and Expected Price 1334.00<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>BookingMaskTestCases.VerifyTravelDateConditionSetMonday_TC98ToTC101@45c7e403</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingWithArriDateSetMonTueWedAndDepaDateThuFriSatTC135ToTC139.validateBookingWithStayLimitCrossedAndIncorrectArriDeptWithB()'><b>validateBookingWithStayLimitCrossedAndIncorrectArriDeptWithB</b><br>Test class: BookingMaskTestCases.VerifyBookingWithArriDateSetMonTueWedAndDepaDateThuFriSatTC135ToTC139<br/>
+<a href="#Output-1967836077" onClick='toggleBox("Output-1967836077", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1967836077" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1967836077">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 805 from dropdown<br/>
+Send Booking Action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Click on SendBookingButton<br/>
+Clicked on sendbookingButton<br/>
+Validating Actual message Maximale Aufenthaltsdauer überschritten                                                                                                                                                                                                                                                                                          and Expected message Maximale Aufenthaltsdauer überschritten                                                                                                                                                                                                                                                                                         <br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>BookingMaskTestCases.VerifyBookingWithArriDateSetMonTueWedAndDepaDateThuFriSatTC135ToTC139@5dda768f</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130.validateBookingAndPriceForMaxStayWithB()'><b>validateBookingAndPriceForMaxStayWithB</b><br>Test class: BookingMaskTestCases.VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130<br/>
+<a href="#Output-1766597604" onClick='toggleBox("Output-1766597604", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1766597604" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1766597604">
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 807 from dropdown<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Click on SendBookingButton<br/>
+Clicked on sendbookingButton<br/>
+Clicked on ViewList<br/>
+Clicked on sendTBMcode to verify booking is done or not<br/>
+Clicked on Booking listButton<br/>
+Send TBM code<br/>
+Clicked on Booking listButton<br/>
+Validating Expected ReservationNo 641759428/01 and Actual ReservationNo is 641759428/01<br/>
+Validating Actual price 6670.00 and Expected Price 6670.00<br/>
+</div>
+</td>
+<td></td>
+<td>52</td>
+<td>BookingMaskTestCases.VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130@7a8c8dcf</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDateConditionSetAllWeekDay_TC89ToTC92.validatePriceForTwoWeekdayAndOneWeekend()'><b>validatePriceForTwoWeekdayAndOneWeekend</b><br>Test class: BookingMaskTestCases.VerifyTravelDateConditionSetAllWeekDay_TC89ToTC92<br/>
+<a href="#Output-290446759" onClick='toggleBox("Output-290446759", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-290446759" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-290446759">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 816 from dropdown<br/>
+Send Booking Action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+Validating Actual price 4002.00 and Expected Price 4002.00<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>BookingMaskTestCases.VerifyTravelDateConditionSetAllWeekDay_TC89ToTC92@b3ca52e</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130.validateErrorMessageForAboveMaxStayWithB()'><b>validateErrorMessageForAboveMaxStayWithB</b><br>Test class: BookingMaskTestCases.VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130<br/>
+<a href="#Output-971682688" onClick='toggleBox("Output-971682688", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-971682688" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-971682688">
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 807 from dropdown<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Select Number of passenger<br/>
+Click on SendBookingButton<br/>
+Validating Actual message Maximale Aufenthaltsdauer überschritten                                                                                                                                                                                                                                                                                          and Expected message Maximale Aufenthaltsdauer überschritten                                                                                                                                                                                                                                                                                         <br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>BookingMaskTestCases.VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130@7a8c8dcf</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingForMinStayForFirstAndSecondMonthTC131ToTC132.validateBookingForSecondMonthWithMinStay()'><b>validateBookingForSecondMonthWithMinStay</b><br>Test class: BookingMaskTestCases.VerifyBookingForMinStayForFirstAndSecondMonthTC131ToTC132<br/>
+<a href="#Output-328140385" onClick='toggleBox("Output-328140385", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-328140385" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-328140385">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 804 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Click on SendBookingButton<br/>
+Validating Actual message Mindestaufenthaltsdauer unterschritten bzw Maximale Aufenthaltsdauer überschritten                                                                                                                                                                                                                                               and Expected message Mindestaufenthaltsdauer unterschritten bzw Maximale Aufenthaltsdauer überschritten                                                                                                                                                                                                                                              <br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>BookingMaskTestCases.VerifyBookingForMinStayForFirstAndSecondMonthTC131ToTC132@302552ec</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingForMinStayForFirstAndSecondMonthTC131ToTC132.validateBookingForFirstMonthWithMinStay()'><b>validateBookingForFirstMonthWithMinStay</b><br>Test class: BookingMaskTestCases.VerifyBookingForMinStayForFirstAndSecondMonthTC131ToTC132<br/>
+<a href="#Output-2034546868" onClick='toggleBox("Output-2034546868", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2034546868" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2034546868">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 804 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode to input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Click on SendBookingButton<br/>
+Clicked on sendbookingButton<br/>
+Clicked on ViewList<br/>
+Clicked on sendTBMcode to verify booking is done or not<br/>
+Clicked on Booking listButton<br/>
+Send TBM code<br/>
+Clicked on Booking listButton<br/>
+Validating Expected ReservationNo 175434332/01 and Actual ReservationNo is 175434332/01<br/>
+Validating Actual price 888.00 and Expected Price 888.00<br/>
+</div>
+</td>
+<td></td>
+<td>60</td>
+<td>BookingMaskTestCases.VerifyBookingForMinStayForFirstAndSecondMonthTC131ToTC132@302552ec</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingConditionSetTC113ToTC117.validatePriceBySendingTravelDateMonTuesAndWedWeekdaySetMonTuesAndWed()'><b>validatePriceBySendingTravelDateMonTuesAndWedWeekdaySetMonTuesAndWed</b><br>Test class: BookingMaskTestCases.VerifyBookingConditionSetTC113ToTC117<br/>
+<a href="#Output-1422991393" onClick='toggleBox("Output-1422991393", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1422991393" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1422991393">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 813 from dropdown<br/>
+Send Booking Action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+Validating Actual price 2224.00 and Expected Price 2224.00<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>BookingMaskTestCases.VerifyBookingConditionSetTC113ToTC117@752325ad</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingWithArriDateSetMonTueWedAndDepaDateThuFriSatTC135ToTC139.validateBookingWithMinStayForCorrectArriDeptDaysWithB()'><b>validateBookingWithMinStayForCorrectArriDeptDaysWithB</b><br>Test class: BookingMaskTestCases.VerifyBookingWithArriDateSetMonTueWedAndDepaDateThuFriSatTC135ToTC139<br/>
+<a href="#Output-1305218621" onClick='toggleBox("Output-1305218621", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1305218621" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1305218621">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 805 from dropdown<br/>
+Send Booking Action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode to input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Click on SendBookingButton<br/>
+Clicked on sendbookingButton<br/>
+Clicked on ViewList<br/>
+Clicked on sendTBMcode to verify booking is done or not<br/>
+Clicked on Booking listButton<br/>
+Send TBM code<br/>
+Clicked on Booking listButton<br/>
+Validating Expected ReservationNo 151625648/01 and Actual ReservationNo is 151625648/01<br/>
+Validating Actual price 134.00 and Expected Price 134.00<br/>
+</div>
+</td>
+<td></td>
+<td>52</td>
+<td>BookingMaskTestCases.VerifyBookingWithArriDateSetMonTueWedAndDepaDateThuFriSatTC135ToTC139@5dda768f</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingConditionSetTC113ToTC117.validatePriceBySendingTravelDateMonToTuesWeekdaySetMonTuesAndWed()'><b>validatePriceBySendingTravelDateMonToTuesWeekdaySetMonTuesAndWed</b><br>Test class: BookingMaskTestCases.VerifyBookingConditionSetTC113ToTC117<br/>
+<a href="#Output-356067659" onClick='toggleBox("Output-356067659", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-356067659" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-356067659">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 813 from dropdown<br/>
+Send Booking Action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+Validating Actual price 1112.00 and Expected Price 1112.00<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>BookingMaskTestCases.VerifyBookingConditionSetTC113ToTC117@752325ad</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingForFirstMonthToSecondMonthWithArriDeptConditionTC133ToTC134.validateBookingForBothFirstMonthAndSecondMonthDuration()'><b>validateBookingForBothFirstMonthAndSecondMonthDuration</b><br>Test class: BookingMaskTestCases.VerifyBookingForFirstMonthToSecondMonthWithArriDeptConditionTC133ToTC134<br/>
+<a href="#Output-340852643" onClick='toggleBox("Output-340852643", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-340852643" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-340852643">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 804 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Select Number of passenger<br/>
+Click on SendBookingButton<br/>
+Validating Actual message Maximale Aufenthaltsdauer überschritten                                                                                                                                                                                                                                                                                          and Expected message Maximale Aufenthaltsdauer überschritten                                                                                                                                                                                                                                                                                         <br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>BookingMaskTestCases.VerifyBookingForFirstMonthToSecondMonthWithArriDeptConditionTC133ToTC134@fbd1f6</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97.validatePriceForTravelDateIsMondayWeekdaySetMonAndWed()'><b>validatePriceForTravelDateIsMondayWeekdaySetMonAndWed</b><br>Test class: BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97<br/>
+<a href="#Output-1998457069" onClick='toggleBox("Output-1998457069", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1998457069" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1998457069">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 811 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+Validating Actual price 1334.00 and Expected Price 1334.00<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97@24aed80c</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142.validateBookingToMorethanMaxStay()'><b>validateBookingToMorethanMaxStay</b><br>Test class: BookingMaskTestCases.VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142<br/>
+<a href="#Output-532957247" onClick='toggleBox("Output-532957247", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-532957247" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-532957247">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 806 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Select Number of passenger<br/>
+Click on sendBookingButton after U action code<br/>
+Send Modified Travel from date<br/>
+Send Modified Travel To date<br/>
+Click on sendBookingButton after U action code<br/>
+Validating Actual message Maximale Aufenthaltsdauer überschritten                                                                                                                                                                                                                                                                                          and Expected message Maximale Aufenthaltsdauer überschritten                                                                                                                                                                                                                                                                                         <br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>BookingMaskTestCases.VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142@1ce24091</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyBookingWithArriDateSetMonTueWedAndDepaDateThuFriSatTC135ToTC139.validateBookingWithOutofArrivalDayWithB()'><b>validateBookingWithOutofArrivalDayWithB</b><br>Test class: BookingMaskTestCases.VerifyBookingWithArriDateSetMonTueWedAndDepaDateThuFriSatTC135ToTC139<br/>
+<a href="#Output-716141396" onClick='toggleBox("Output-716141396", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-716141396" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-716141396">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 805 from dropdown<br/>
+Send Booking Action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Click on SendBookingButton<br/>
+Clicked on sendbookingButton<br/>
+Validating Actual message Anreise Sontag ist nicht zulässig.                                                                                                                                                                                                                                                                                               and Expected message Anreise Sontag ist nicht zulässig.                                                                                                                                                                                                                                                                                              <br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>BookingMaskTestCases.VerifyBookingWithArriDateSetMonTueWedAndDepaDateThuFriSatTC135ToTC139@5dda768f</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125.validateBookingBySendingTravelDateMonToTuesWeekdaySetMonWedFriAndSunWithB()'><b>validateBookingBySendingTravelDateMonToTuesWeekdaySetMonWedFriAndSunWithB</b><br>Test class: BookingMaskTestCases.VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125<br/>
+<a href="#Output-1002740473" onClick='toggleBox("Output-1002740473", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1002740473" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1002740473">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 809 from dropdown<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode to input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Click on sendBookingButton after U action code<br/>
+Clicked on sendbookingButton<br/>
+Clicked on ViewList<br/>
+Clicked on sendTBMcode to verify booking is done or not<br/>
+Clicked on Booking listButton<br/>
+Send TBM code<br/>
+Clicked on Booking listButton<br/>
+Validating Expected ReservationNo 677386114/01 and Actual ReservationNo is 677386114/01<br/>
+Validating Actual price 112.00 and Expected Price 112.00<br/>
+</div>
+</td>
+<td></td>
+<td>55</td>
+<td>BookingMaskTestCases.VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125@2a5c8d3f</td></tr>
 </table><p>
 </body>
 </html>

@@ -90,7 +90,7 @@
 	    		Thread.sleep(7000);
 		     }
 		
-	    		@Test (priority = 1) //58
+	    		@Test (priority=1) //58
 	    		public void validateOccupancyMinLimitNotSatisfield1() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
 	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -288,10 +288,11 @@
 		             Thread.sleep(3000);
 					 String ActualMessage = BookingMask.getMaximumPersonCrossedErrorMessage();
 			    	 String expectedMessage = UtilityClass.readDataFromStringExcel(901, 2, "Sheet2");
-			    	 Assert.assertTrue(expectedMessage.contains(ActualMessage), "TC failed as Actual message and expected message are not matching ");
+			    	 Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
+			    	// Assert.assertTrue(expectedMessage.contains(ActualMessage), "TC failed as Actual message and expected message are not matching ");
 			    	 Reporter.log("Validating Actual message "+BookingMask.getMaximumPersonCrossedErrorMessage()+" and Expected message "+UtilityClass.readDataFromStringExcel(901, 2, "Sheet2"),true);
 	    		}
-	    		@Test (priority = 3) //TC60
+	    		@Test (priority=3) //TC60
 	    		public void validateOccupancyMaxLimitCross() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
 	    			UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -406,7 +407,7 @@
 			    	Reporter.log("Validating Actual message "+BookingMask.getMaximumPersonCrossedErrorMessage()+" and Expected message "+UtilityClass.readDataFromStringExcel(901, 3, "Sheet2"),true);
 	    		}
 	    		
-	    		@Test  (priority = 4)//TC61
+	    		@Test  (priority=4) //TC61
 	    		public void validateOccupancyMinLimitCross() throws EncryptedDocumentException, IOException, InterruptedException 
 	    		{
 	    			UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());

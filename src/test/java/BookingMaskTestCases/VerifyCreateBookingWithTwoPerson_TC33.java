@@ -167,7 +167,6 @@
 	   @AfterMethod
 	   public void Logout() throws InterruptedException
 	   {
-	     Thread.sleep(3000);
 	      BookingMask.ClickOnLogoutButtonOFBookingMask();
 		  Reporter.log("Clicking on Logout Button in Booking Mask page",true);
 		  Thread.sleep(500);

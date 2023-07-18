@@ -73,7 +73,7 @@ public class VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142 extends BaseC
     		Reporter.log("Clicked on create Button in sales Booking page",true);
     		Thread.sleep(6000);
 		}
-	    @Test 
+	    @Test (priority=1)
 	    public void validateBookingToLessthanMinStay() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -86,6 +86,8 @@ public class VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142 extends BaseC
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(1000);
+    		UtilityClass.listBoxHandlingUsingByText("806 - (room6)", BookingMask.roomCodeDropDownMethod());
+    		Reporter.log("Selected room 806 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
     		UtilityClass.implicitlyWaitInMillis(1000);
@@ -169,7 +171,7 @@ public class VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142 extends BaseC
     	    Reporter.log("Validating Actual message "+BookingMask.getStayExceedErrorMessage()+" and Expected message "+UtilityClass.readDataFromStringExcel(586, 1, "Sheet2"),true);
 	    }
 	    
-	    @Test 
+	    @Test (priority=2)
 	    public void validateBookingToMorethanMaxStay() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -181,8 +183,8 @@ public class VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142 extends BaseC
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(2000);
-    		UtilityClass.listBoxHandlingUsingByText("804 - (room4)", BookingMask.roomCodeDropDownMethod());
-    		Reporter.log("Selected room 804 from dropdown",true);
+    		UtilityClass.listBoxHandlingUsingByText("806 - (room6)", BookingMask.roomCodeDropDownMethod());
+    		Reporter.log("Selected room 806 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
     		UtilityClass.implicitlyWaitInMillis(1000);
@@ -265,7 +267,7 @@ public class VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142 extends BaseC
     	    Reporter.log("Validating Actual message "+BookingMask.getStayExceedErrorMessage()+" and Expected message "+UtilityClass.readDataFromStringExcel(586, 2, "Sheet2"),true);
 	    }
 	    
-	    @Test 
+	    @Test (priority=3)
 	    public void validateBookingWithVaildStay() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -277,8 +279,8 @@ public class VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142 extends BaseC
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(2000);
-    		UtilityClass.listBoxHandlingUsingByText("804 - (room4)", BookingMask.roomCodeDropDownMethod());
-    		Reporter.log("Selected room 804 from dropdown",true);
+    		UtilityClass.listBoxHandlingUsingByText("806 - (room6)", BookingMask.roomCodeDropDownMethod());
+    		Reporter.log("Selected room 806 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
     		UtilityClass.implicitlyWaitInMillis(1000);

@@ -176,7 +176,7 @@
 		    Reporter.log("Clicked on viewList",true);
 		    Thread.sleep(1000);
 		    driver.navigate().refresh();
-		    Thread.sleep(1000);
+		    Thread.sleep(2000);
 		}
 		    @Test
 		  	public void ValidateBookingStatus() throws EncryptedDocumentException, IOException, InterruptedException 

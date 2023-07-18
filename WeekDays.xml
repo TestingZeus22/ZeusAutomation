@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="BookingMaskTestCases.VerifyBookingForMinStayForFirstAndSecondMonthTC131ToTC132"/>
+      <class name="BookingMaskTestCases.VerifyBookingForFirstMonthToSecondMonthWithArriDeptConditionTC133ToTC134"/>
+      <class name="BookingMaskTestCases.VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142"/>
+      <class name="BookingMaskTestCases.VerifyBookingWithArriDateSetMonTueWedAndDepaDateThuFriSatTC135ToTC139"/>
+      <class name="BookingMaskTestCases.VerifyBookingsForMaxAndMinStayDurationWithActionCodeB_TC126ToTC130"/>
+      <class name="BookingMaskTestCases.VerifyTravelDatesConditionSetMonAndTues_TC102ToTC104"/>
+      <class name="BookingMaskTestCases.VerifyTravelDateConditionSetMonAndTues_TC105ToTC107"/>
+      <class name="BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97"/>
+      <class name="BookingMaskTestCases.VerifyTravelDatesConditionSetMonTuesWedAndThursWithActionCodeB_TC118ToTC121"/>
+      <class name="BookingMaskTestCases.VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122ToTC125"/>
+      <class name="BookingMaskTestCases.VerifyBookingConditionSetTC113ToTC117"/>
+      <class name="BookingMaskTestCases.VerifyBookingConditionSetMonWedAndFridTC108ToTC112"/>
+      <class name="BookingMaskTestCases.VerifyTravelDateConditionSetAllWeekDay_TC89ToTC92"/>
+      <class name="BookingMaskTestCases.VerifyTravelDateConditionSetMonday_TC98ToTC101"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

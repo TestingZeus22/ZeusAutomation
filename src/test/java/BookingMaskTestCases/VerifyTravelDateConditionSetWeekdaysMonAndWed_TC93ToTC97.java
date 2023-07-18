@@ -79,8 +79,8 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(2000);
-    		UtilityClass.listBoxHandlingUsingByText("804 - (room4)", BookingMask.roomCodeDropDownMethod());
-    		Reporter.log("Selected room 804 from dropdown",true);
+    		UtilityClass.listBoxHandlingUsingByText("811 - (room11)", BookingMask.roomCodeDropDownMethod());
+    		Reporter.log("Selected room 811 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
     		UtilityClass.implicitlyWaitInMillis(1000);
@@ -145,8 +145,8 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(2000);
-    		UtilityClass.listBoxHandlingUsingByText("804 - (room4)", BookingMask.roomCodeDropDownMethod());
-    		Reporter.log("Selected room 804 from dropdown",true);
+    		UtilityClass.listBoxHandlingUsingByText("811 - (room11)", BookingMask.roomCodeDropDownMethod());
+    		Reporter.log("Selected room 811 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
     		UtilityClass.implicitlyWaitInMillis(1000);
@@ -211,8 +211,8 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(2000);
-    		UtilityClass.listBoxHandlingUsingByText("804 - (room4)", BookingMask.roomCodeDropDownMethod());
-    		Reporter.log("Selected room 804 from dropdown",true);
+    		UtilityClass.listBoxHandlingUsingByText("811 - (room11)", BookingMask.roomCodeDropDownMethod());
+    		Reporter.log("Selected room 811 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
     		UtilityClass.implicitlyWaitInMillis(1000);
@@ -262,7 +262,7 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
 	    	
             String ActualMessage = BookingMask.getInvalidTravelDurationNoPriceInfoMsg();
     	    String expectedMessage = UtilityClass.readDataFromStringExcel(402, 3, "Sheet2");
-    	    Assert.assertEquals(expectedMessage,ActualMessage, "TC failed as Actual message and expected message are not matching ");
+    	    Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
     	    Reporter.log("Validating Actual message "+BookingMask.getInvalidTravelDurationNoPriceInfoMsg()+" and Expected message "+UtilityClass.readDataFromStringExcel(402, 3, "Sheet2"),true);
 	    }
 	    
@@ -278,8 +278,8 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(2000);
-    		UtilityClass.listBoxHandlingUsingByText("804 - (room4)", BookingMask.roomCodeDropDownMethod());
-    		Reporter.log("Selected room 804 from dropdown",true);
+    		UtilityClass.listBoxHandlingUsingByText("811 - (room11)", BookingMask.roomCodeDropDownMethod());
+    		Reporter.log("Selected room 811 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
     		UtilityClass.implicitlyWaitInMillis(1000);
@@ -328,7 +328,7 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
          
             String ActualMessage = BookingMask.getInvalidTravelDurationNoPriceInfoMsg();
     	    String expectedMessage = UtilityClass.readDataFromStringExcel(402, 4, "Sheet2");
-    	    Assert.assertEquals(expectedMessage,ActualMessage, "TC failed as Actual message and expected message are not matching ");
+    	    Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
     	    Reporter.log("Validating Actual message "+BookingMask.getInvalidTravelDurationNoPriceInfoMsg()+" and Expected message "+UtilityClass.readDataFromStringExcel(402, 4, "Sheet2"),true);
 	    }
 	    
@@ -344,8 +344,8 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(2000);
-    		UtilityClass.listBoxHandlingUsingByText("804 - (room4)", BookingMask.roomCodeDropDownMethod());
-    		Reporter.log("Selected room 804 from dropdown",true);
+    		UtilityClass.listBoxHandlingUsingByText("811 - (room11)", BookingMask.roomCodeDropDownMethod());
+    		Reporter.log("Selected room 811 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
     		UtilityClass.implicitlyWaitInMillis(1000);
@@ -395,7 +395,7 @@ public class VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 extends Ba
          
             String ActualMessage = BookingMask.getInvalidTravelDurationNoPriceInfoMsg();
     	    String expectedMessage = UtilityClass.readDataFromStringExcel(417, 1, "Sheet2");
-    	    Assert.assertEquals(expectedMessage,ActualMessage, "TC failed as Actual message and expected message are not matching ");
+    	    Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
     	    Reporter.log("Validating Actual message "+BookingMask.getInvalidTravelDurationNoPriceInfoMsg()+" and Expected message "+UtilityClass.readDataFromStringExcel(417, 1, "Sheet2"),true);
 	    }
 	    

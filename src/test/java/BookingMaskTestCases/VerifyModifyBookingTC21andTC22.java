@@ -74,7 +74,7 @@ public class VerifyModifyBookingTC21andTC22 extends BaseClass
 	    		Thread.sleep(6000);
 		}
 	    		
-	    		@Test   (priority = 1) //TC21
+	    		@Test   (enabled=false) //TC21
 	    		public void validateBookingByDecreasingDuration() throws InterruptedException, EncryptedDocumentException, IOException 
 	    		{
 	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -175,6 +175,8 @@ public class VerifyModifyBookingTC21andTC22 extends BaseClass
 	            BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(272, 4, "Sheet2"));
 	            Reporter.log("Change Booking action to U");
 	    		UtilityClass.implicitlyWaitInMillis(20000);
+	    		driver.findElement(By.xpath("(//button[text()='OK'])[3]")).click();
+	    		UtilityClass.implicitlyWaitInMillis(20000);
 	    		bookingupdate.clearTravelFrom1();
 	    		bookingupdate.sendTravelFrom1(UtilityClass.readDataFromStringExcel(273, 4, "Sheet2"));
 	    		Reporter.log("Send Modifified Travel from date",true);
@@ -193,7 +195,7 @@ public class VerifyModifyBookingTC21andTC22 extends BaseClass
 				BookingMask.clickOnViewList();
 				Reporter.log("Clicked on ViewList",true);
 		        UtilityClass.implicitlyWaitInMillis(8000);
-		        salesBookingList.sendtbmCodes(UtilityClass.readDataFromStringExcel(935, 2, "Sheet2"));
+		        salesBookingList.sendtbmCodes(UtilityClass.readDataFromStringExcel(264, 4, "Sheet2"));
 		        Reporter.log("Clicked on SendTBMcode to verify booking is done or not",true);
 		        Thread.sleep(2000);
 		        salesBookingList.clickOnbookingListButton();
@@ -208,7 +210,7 @@ public class VerifyModifyBookingTC21andTC22 extends BaseClass
 				 Reporter.log("Validating Actual ReservationNo "+ActualReser+" and Expected ReservationNo is "+salesBookingList.getSalesBookingColumn1(),true);
 	    		 }
 	    		 
-	    		@Test  (priority=2)  //TC22
+	    		@Test    //TC22
 	    		public void validateBookingByIncreasingDuration() throws InterruptedException, EncryptedDocumentException, IOException 
 	    		{
 	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());

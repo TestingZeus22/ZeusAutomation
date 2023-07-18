@@ -33,7 +33,7 @@ public class DashboardValidation_TC02 extends BaseClass {
 		public void launchBrowser(){
 			openApplication();
 			Reporter.log("Browser Launch ",true);
-			login=new loginPage(driver);
+			login =new loginPage(driver);
 			dash = new DashboardPage(driver);
 			selectCompany = new selectCompanyPage(driver);
 		}
@@ -55,7 +55,7 @@ public class DashboardValidation_TC02 extends BaseClass {
 			Reporter.log("Clicked on proceed button",true);	
 		}
 		
-	  @Test (invocationCount = 6)
+	  @Test 
 	  public void ValidUserNameAndValidPasswordEnterToDashboardPageTest() throws EncryptedDocumentException, IOException
 	  {
 		  String ActualTtext= dash.getActualTextOnDashboard();

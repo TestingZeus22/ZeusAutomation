@@ -83,6 +83,7 @@ public class VerifyBookingCancellationAndEnquiryTC42TC43 extends BaseClass
     	    	 
     	    UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
     		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
+    		Thread.sleep(2000);
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    	Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    	UtilityClass.implicitlyWaitInMillis(3000);
@@ -95,7 +96,6 @@ public class VerifyBookingCancellationAndEnquiryTC42TC43 extends BaseClass
 	    	BookingMask.ClearbookingActionfield();
 	    	BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(932, 3, "Sheet2"));
 	    	Reporter.log("Send Booking action code",true);
-	    		
 	    	UtilityClass.implicitlyWaitInMillis(1000);
 	    	BookingMask.clearNoOfPax();
 	    	UtilityClass.implicitlyWaitInMillis(1000);
@@ -242,7 +242,6 @@ public class VerifyBookingCancellationAndEnquiryTC42TC43 extends BaseClass
 	    		BookingMask.sendNoOfPax(UtilityClass.readDataFromStringExcel(933, 4, "Sheet2"));
 	    		Reporter.log("Send number of passenger",true);
 	    		Thread.sleep(1000);
-	    		
 	    		BookingMask.sendKOS(UtilityClass.readDataFromStringExcel(934, 4, "Sheet2"));
 	    		Reporter.log("Send correct KOS in input field",true);
 	    		UtilityClass.implicitlyWaitInMillis(1000);

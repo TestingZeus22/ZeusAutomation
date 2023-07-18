@@ -67,7 +67,7 @@ package BookingMaskTestCases;
 			Thread.sleep(1000);
 			UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
 			Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 			Reporter.log("Select TFT1 in TravelType dropdownList",true);
 			Thread.sleep(1000);

@@ -65,7 +65,7 @@ public class VerifyTravelDatesConditionSetMonAndTues_TC102ToTC104 extends BaseCl
     		Reporter.log("Clicked on create Button in sales Booking page",true);
     		Thread.sleep(6000);
 		}
-	    @Test
+	    @Test (priority=1)
 	    public void validatePriceForMonNightOnlyWeekdaySetMonAndTues() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -77,8 +77,8 @@ public class VerifyTravelDatesConditionSetMonAndTues_TC102ToTC104 extends BaseCl
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(2000);
-    		UtilityClass.listBoxHandlingUsingByText("805 - (room5)", BookingMask.roomCodeDropDownMethod());
-    		Reporter.log("Selected room 805 from dropdown",true);
+    		UtilityClass.listBoxHandlingUsingByText("812 - (room12)", BookingMask.roomCodeDropDownMethod());
+    		Reporter.log("Selected room 812 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
     		UtilityClass.implicitlyWaitInMillis(1000);
@@ -132,7 +132,7 @@ public class VerifyTravelDatesConditionSetMonAndTues_TC102ToTC104 extends BaseCl
   		  	Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue1("value")+" and Expected Price "+UtilityClass.readDataFromStringExcel(432, 2, "Sheet2"),true);
   	    }
 	    
-	    @Test 
+	    @Test  (priority=2)
 	    public void validatePriceForTuesNightOnlyWeekdaySetMonAndTues() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -144,8 +144,8 @@ public class VerifyTravelDatesConditionSetMonAndTues_TC102ToTC104 extends BaseCl
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(2000);
-    		UtilityClass.listBoxHandlingUsingByText("805 - (room5)", BookingMask.roomCodeDropDownMethod());
-    		Reporter.log("Selected room 805 from dropdown",true);
+    		UtilityClass.listBoxHandlingUsingByText("812 - (room12)", BookingMask.roomCodeDropDownMethod());
+    		Reporter.log("Selected room 812 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
     		UtilityClass.implicitlyWaitInMillis(1000);
@@ -199,7 +199,7 @@ public class VerifyTravelDatesConditionSetMonAndTues_TC102ToTC104 extends BaseCl
   		  	Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue1("value")+" and Expected Price "+UtilityClass.readDataFromStringExcel(432, 3, "Sheet2"),true);
   	    }
 	    
-	    @Test
+	    @Test  (priority=3)
 	    public void validatePriceForMonToWedWeekdaySetMonAndTues() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -211,8 +211,8 @@ public class VerifyTravelDatesConditionSetMonAndTues_TC102ToTC104 extends BaseCl
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(2000);
-    		UtilityClass.listBoxHandlingUsingByText("805 - (room5)", BookingMask.roomCodeDropDownMethod());
-    		Reporter.log("Selected room 805 from dropdown",true);
+    		UtilityClass.listBoxHandlingUsingByText("812 - (room12)", BookingMask.roomCodeDropDownMethod());
+    		Reporter.log("Selected room 812 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
     		UtilityClass.implicitlyWaitInMillis(1000);
@@ -286,9 +286,3 @@ public class VerifyTravelDatesConditionSetMonAndTues_TC102ToTC104 extends BaseCl
 	    }
 	 
 	 }
-
-
-
-
-
-

@@ -68,7 +68,7 @@ public class VerifyBookingConditionSetTC113ToTC117 extends BaseClass {
     		Thread.sleep(6000);
  
 		}
-	    @Test  
+	    @Test  (priority=1)
 	    public void validatePriceBySendingTravelDateMonToTuesWeekdaySetMonTuesAndWed() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -77,11 +77,11 @@ public class VerifyBookingConditionSetTC113ToTC117 extends BaseClass {
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
     		Thread.sleep(2000);
-//    		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
-//    		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
-//    		Thread.sleep(2000);
-//    		UtilityClass.listBoxHandlingUsingByText("805 - (room5)", BookingMask.roomCodeDropDownMethod());
-//    		Reporter.log("Selected room 805 from dropdown",true);
+    		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
+    		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
+    		Thread.sleep(2000);
+    		UtilityClass.listBoxHandlingUsingByText("813 - (room13)", BookingMask.roomCodeDropDownMethod());
+    		Reporter.log("Selected room 813 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
     		UtilityClass.implicitlyWaitInMillis(1000);
@@ -89,6 +89,7 @@ public class VerifyBookingConditionSetTC113ToTC117 extends BaseClass {
     		UtilityClass.implicitlyWaitInMillis(1000);
     		BookingMask.ClearbookingActionfield();
     		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(466, 1, "Sheet2"));
+    		Reporter.log("Send Booking Action",true);
     		BookingMask.clearNoOfPax();
     		UtilityClass.implicitlyWaitInMillis(1000);
     		
@@ -137,7 +138,7 @@ public class VerifyBookingConditionSetTC113ToTC117 extends BaseClass {
   		    Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue1("value")+" and Expected Price "+UtilityClass.readDataFromStringExcel(477, 1, "Sheet2"),true);
 	    }
 	    
-	    @Test (enabled=false)
+	    @Test (priority=2)
 	    public void validatePriceBySendingTravelDateMonTuesAndWedWeekdaySetMonTuesAndWed() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -145,18 +146,19 @@ public class VerifyBookingConditionSetTC113ToTC117 extends BaseClass {
     		Thread.sleep(1000);
 	    	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
-    		Thread.sleep(2000);
+    		Thread.sleep(2500);
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(2000);
-    		UtilityClass.listBoxHandlingUsingByText("805 - (room5)", BookingMask.roomCodeDropDownMethod());
-    		Reporter.log("Selected room 805 from dropdown",true);
+    		UtilityClass.listBoxHandlingUsingByText("813 - (room13)", BookingMask.roomCodeDropDownMethod());
+    		Reporter.log("Selected room 813 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
     	
     		UtilityClass.implicitlyWaitInMillis(1000);
     		BookingMask.ClearbookingActionfield();
     		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(466, 2, "Sheet2"));
+    		Reporter.log("Send Booking Action",true);
     		BookingMask.clearNoOfPax();
     		UtilityClass.implicitlyWaitInMillis(1000);
     		
@@ -204,7 +206,7 @@ public class VerifyBookingConditionSetTC113ToTC117 extends BaseClass {
   		  	Assert.assertEquals(ActualPrice, expectedPrice,"Test Case Failed as actual & expected Price are not matching");
   		  	Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue1("value")+" and Expected Price "+UtilityClass.readDataFromStringExcel(477, 2, "Sheet2"),true);
 	    }
-	    @Test (enabled=false)
+	    @Test (priority=3)
 	    public void validateErrorMsgBySendingTravelDateSunToMonWeekdaySetMonTuesAndWed() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -216,13 +218,14 @@ public class VerifyBookingConditionSetTC113ToTC117 extends BaseClass {
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(2000);
-    		UtilityClass.listBoxHandlingUsingByText("805 - (room5)", BookingMask.roomCodeDropDownMethod());
-    		Reporter.log("Selected room 805 from dropdown",true);
+    		UtilityClass.listBoxHandlingUsingByText("813 - (room13)", BookingMask.roomCodeDropDownMethod());
+    		Reporter.log("Selected room 813 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
     		UtilityClass.implicitlyWaitInMillis(1000);
     		BookingMask.ClearbookingActionfield();
     		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(466, 3, "Sheet2"));
+    		Reporter.log("Send Booking Action",true);
     		BookingMask.clearNoOfPax();
     		UtilityClass.implicitlyWaitInMillis(1000);
     		
@@ -266,11 +269,11 @@ public class VerifyBookingConditionSetTC113ToTC117 extends BaseClass {
          
             String ActualMessage = BookingMask.getInvalidTravelDurationNoPriceInfoMsg();
     	    String expectedMessage = UtilityClass.readDataFromStringExcel(477, 3, "Sheet2");
-    	    Assert.assertEquals(expectedMessage,ActualMessage, "TC failed as Actual message and expected message are not matching ");
+    	    Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
     	    Reporter.log("Validating Actual message "+BookingMask.getInvalidTravelDurationNoPriceInfoMsg()+" and Expected message "+UtilityClass.readDataFromStringExcel(477, 3, "Sheet2"),true);
 	    }
 	    
-	    @Test (enabled=false)
+	    @Test (priority=4)
 	    public void validateErrorMsgBySendingTravelDateWedToThursWeekdaySetMonTuesAndWed() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -282,13 +285,14 @@ public class VerifyBookingConditionSetTC113ToTC117 extends BaseClass {
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(2000);
-    		UtilityClass.listBoxHandlingUsingByText("805 - (room5)", BookingMask.roomCodeDropDownMethod());
-    		Reporter.log("Selected room 805 from dropdown",true);
+    		UtilityClass.listBoxHandlingUsingByText("813 - (room13)", BookingMask.roomCodeDropDownMethod());
+    		Reporter.log("Selected room 813 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
     		UtilityClass.implicitlyWaitInMillis(1000);
     		BookingMask.ClearbookingActionfield();
     		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(466, 4, "Sheet2"));
+    		Reporter.log("Send Booking Action",true);
     		BookingMask.clearNoOfPax();
     		UtilityClass.implicitlyWaitInMillis(1000);
     		
@@ -332,11 +336,11 @@ public class VerifyBookingConditionSetTC113ToTC117 extends BaseClass {
          
             String ActualMessage = BookingMask.getInvalidTravelDurationNoPriceInfoMsg();
     	    String expectedMessage = UtilityClass.readDataFromStringExcel(477, 4, "Sheet2");
-    	    Assert.assertEquals(expectedMessage,ActualMessage, "TC failed as Actual message and expected message are not matching ");
+    	    Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
     	    Reporter.log("Validating Actual message "+BookingMask.getInvalidTravelDurationNoPriceInfoMsg()+" and Expected message "+UtilityClass.readDataFromStringExcel(477, 4, "Sheet2"),true);
 	    }
 	    
-	    @Test(enabled=false)
+	    @Test(priority=5)
 	    public void validateErrorMsgBySendingTravelDateThursToFridWeekdaySetMonTuesAndWed() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -348,13 +352,14 @@ public class VerifyBookingConditionSetTC113ToTC117 extends BaseClass {
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(2000);
-    		UtilityClass.listBoxHandlingUsingByText("805 - (room5)", BookingMask.roomCodeDropDownMethod());
-    		Reporter.log("Selected room 805 from dropdown",true);
+    		UtilityClass.listBoxHandlingUsingByText("813 - (room13)", BookingMask.roomCodeDropDownMethod());
+    		Reporter.log("Selected room 813 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
     		UtilityClass.implicitlyWaitInMillis(1000);
     		BookingMask.ClearbookingActionfield();
     		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(481, 1, "Sheet2"));
+    		Reporter.log("Send Booking Action",true);
     		BookingMask.clearNoOfPax();
     		UtilityClass.implicitlyWaitInMillis(1000);
     		
@@ -399,7 +404,7 @@ public class VerifyBookingConditionSetTC113ToTC117 extends BaseClass {
          
             String ActualMessage = BookingMask.getInvalidTravelDurationNoPriceInfoMsg();
     	    String expectedMessage = UtilityClass.readDataFromStringExcel(492, 1, "Sheet2");
-    	    Assert.assertEquals(expectedMessage,ActualMessage, "TC failed as Actual message and expected message are not matching ");
+    	    Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
     	    Reporter.log("Validating Actual message "+BookingMask.getInvalidTravelDurationNoPriceInfoMsg()+" and Expected message "+UtilityClass.readDataFromStringExcel(492, 1, "Sheet2"),true);
 	    }
 	    @AfterMethod

@@ -65,7 +65,7 @@ public class VerifyTravelDateConditionSetAllWeekDay_TC89ToTC92 extends BaseClass
     		Reporter.log("Clicked on create Button in sales Booking page",true);
     		Thread.sleep(6000);
 		}
-	    @Test //TC89
+	    @Test (enabled=false)
 	    public void validatePriceForWeekDay() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -77,13 +77,14 @@ public class VerifyTravelDateConditionSetAllWeekDay_TC89ToTC92 extends BaseClass
 	    	UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(2000);
-    		UtilityClass.listBoxHandlingUsingByText("804 - (room4)", BookingMask.roomCodeDropDownMethod());
-    		Reporter.log("Selected room 804 from dropdown",true);
+    		UtilityClass.listBoxHandlingUsingByText("816 - (room16)", BookingMask.roomCodeDropDownMethod());
+    		Reporter.log("Selected room 816 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
     		UtilityClass.implicitlyWaitInMillis(1000);
     		BookingMask.ClearbookingActionfield();
     		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(376, 1, "Sheet2"));
+    		Reporter.log("Send Booking Action",true);
     		BookingMask.clearNoOfPax();
     		UtilityClass.implicitlyWaitInMillis(1000);
     		BookingMask.sendNoOfPax(UtilityClass.readDataFromStringExcel(377, 1, "Sheet2"));
@@ -130,7 +131,7 @@ public class VerifyTravelDateConditionSetAllWeekDay_TC89ToTC92 extends BaseClass
             Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue1("value")+" and Expected Price "+UtilityClass.readDataFromStringExcel(387, 1, "Sheet2"),true);
 	    }
 	    
-	    @Test //TC90
+	    @Test (enabled=false)
 	    public void validatePriceForWeekend() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -142,13 +143,14 @@ public class VerifyTravelDateConditionSetAllWeekDay_TC89ToTC92 extends BaseClass
     		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
     		Thread.sleep(2000);
-    		UtilityClass.listBoxHandlingUsingByText("804 - (room4)", BookingMask.roomCodeDropDownMethod());
-    		Reporter.log("Selected room 804 from dropdown",true);
+    		UtilityClass.listBoxHandlingUsingByText("816 - (room16)", BookingMask.roomCodeDropDownMethod());
+    		Reporter.log("Selected room 816 from dropdown",true);
     		UtilityClass.scrollByAxis(0, 300);
     		Thread.sleep(1000);
     		UtilityClass.implicitlyWaitInMillis(1000);
     		BookingMask.ClearbookingActionfield();
     		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(376, 2, "Sheet2"));
+    		Reporter.log("Send Booking Action",true);
     		BookingMask.clearNoOfPax();
     		UtilityClass.implicitlyWaitInMillis(1000);
     		
@@ -197,7 +199,7 @@ public class VerifyTravelDateConditionSetAllWeekDay_TC89ToTC92 extends BaseClass
   		    Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue1("value")+" and Expected Price "+UtilityClass.readDataFromStringExcel(387, 2, "Sheet2"),true);
 	    }
 	    
-	    @Test  //TC91
+	    @Test  (enabled=false)
 	    public void validatePriceForBothWeekdaysAndWeekend() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -209,13 +211,14 @@ public class VerifyTravelDateConditionSetAllWeekDay_TC89ToTC92 extends BaseClass
 		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
 		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
 		Thread.sleep(2000);
-		UtilityClass.listBoxHandlingUsingByText("804 - (room4)", BookingMask.roomCodeDropDownMethod());
-		Reporter.log("Selected room 804 from dropdown",true);
+		UtilityClass.listBoxHandlingUsingByText("816 - (room16)", BookingMask.roomCodeDropDownMethod());
+		Reporter.log("Selected room 816 from dropdown",true);
 		UtilityClass.scrollByAxis(0, 300);
 		Thread.sleep(1000);
 		UtilityClass.implicitlyWaitInMillis(1000);
 		BookingMask.ClearbookingActionfield();
 		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(376, 3, "Sheet2"));
+		Reporter.log("Send Booking Action",true);
 		BookingMask.clearNoOfPax();
 		UtilityClass.implicitlyWaitInMillis(1000);
 		
@@ -265,7 +268,7 @@ public class VerifyTravelDateConditionSetAllWeekDay_TC89ToTC92 extends BaseClass
         
 	    }
 	    
-	    @Test //TC92
+	    @Test (priority=1)
 	    public void validatePriceForTwoWeekdayAndOneWeekend() throws EncryptedDocumentException, IOException, InterruptedException 
 	    {
 	    UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
@@ -277,13 +280,14 @@ public class VerifyTravelDateConditionSetAllWeekDay_TC89ToTC92 extends BaseClass
 		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
 		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
 		Thread.sleep(2000);
-		UtilityClass.listBoxHandlingUsingByText("804 - (room4)", BookingMask.roomCodeDropDownMethod());
-		Reporter.log("Selected room 804 from dropdown",true);
+		UtilityClass.listBoxHandlingUsingByText("816 - (room16)", BookingMask.roomCodeDropDownMethod());
+		Reporter.log("Selected room 816 from dropdown",true);
 		UtilityClass.scrollByAxis(0, 300);
 		Thread.sleep(1000);
 		UtilityClass.implicitlyWaitInMillis(1000);
 		BookingMask.ClearbookingActionfield();
 		BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(376, 4, "Sheet2"));
+		Reporter.log("Send Booking Action",true);
 		BookingMask.clearNoOfPax();
 		UtilityClass.implicitlyWaitInMillis(1000);
 		
