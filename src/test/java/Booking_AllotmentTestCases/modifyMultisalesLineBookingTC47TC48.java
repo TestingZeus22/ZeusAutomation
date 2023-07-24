@@ -233,9 +233,9 @@ public class modifyMultisalesLineBookingTC47TC48 extends BaseClass
      		String ActualErrorMsg = BookingMask.getInvalidTravelDurationMsg();
      		String expectedErroMsg = UtilityClass.readDataFromStringExcel(405, 1, "Sheet5");
      	    Assert.assertEquals(ActualErrorMsg,expectedErroMsg, "TC failed as Actual message and expected message are not matching ");
-     	    Reporter.log("Validating Actual Message for season-E is "+BookingMask.getInvalidTravelDurationMsg()+" and Expected Message for season-E is "+UtilityClass.readDataFromStringExcel(405, 1, "Sheet5"),true);  
+     	    Reporter.log("Validating Actual Message for season-E is "+BookingMask.getInvalidTravelDurationMsg()+" and Expected Message for season-E is "+UtilityClass.readDataFromStringExcel(405, 1, "Sheet5"),true); 
 	 }
-	 @Test  (enabled=false)// TC_48
+	 @Test  (priority=2)// TC_48
 	 public void validateMultisalesLineBookingWhenOneRoomHasAllotment() throws EncryptedDocumentException, IOException, InterruptedException {
 
     		dashboard.SalesClick();
@@ -254,7 +254,7 @@ public class modifyMultisalesLineBookingTC47TC48 extends BaseClass
     		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     		Reporter.log("Select TFT1 in TravelType dropdownList",true);
     		UtilityClass.implicitlyWaitInMillis(3000);
-    		Thread.sleep(1000);
+    		Thread.sleep(1500);
     		UtilityClass.listBoxHandlingUsingByText("HK004 - (TEST)", BookingMask.productCodeDropDownMethod());
     		Reporter.log("Selected HK004 - (TEST) from dropdown list",true);
     		Thread.sleep(1000);

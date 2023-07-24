@@ -85,10 +85,10 @@ public class VerifyBookingWithTravelFromAndTravelToSameDate_TC07 extends BaseCla
     	Thread.sleep(1000);
     	UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
 		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
-		UtilityClass.implicitlyWaitInMillis(2000);
+		Thread.sleep(1000);
     	UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
     	Reporter.log("Select TFT1 in TravelType dropdownList",true);
-    	Thread.sleep(1000);
+    	Thread.sleep(2000);
     		
     	UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
     	Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);

@@ -16,6 +16,10 @@ public class pricePage {
 @FindBy (xpath ="(//h5[text()='Season B'])[1]") private WebElement seasonBtext;
 @FindBy (xpath ="(//h5[text()='Season C'])[1]") private WebElement seasonCtext;
 @FindBy (xpath ="(//h5[text()='Season D'])[1]") private WebElement seasonDtext;
+@FindBy (xpath ="(//h5[text()='Season E'])[1]") private WebElement seasonEtext;
+@FindBy (xpath ="(//h5[text()='Season F'])[1]") private WebElement seasonFtext;
+@FindBy (xpath ="(//h5[text()='Season G'])[1]") private WebElement seasonGtext;
+@FindBy (xpath ="(//h5[text()='Season H'])[1]") private WebElement seasonHtext;
 
 //Season_A
 @FindBy (id ="seasonModel_SeasonAFrom") private WebElement seasonFrom_A;
@@ -252,6 +256,8 @@ public class pricePage {
 
 @FindBy (id ="Generateallotment") private WebElement generateAllotmentButton;
 
+@FindBy (id ="ValidatePriceTab") private WebElement validateButton;
+
 @FindBy (xpath ="//button[@class='swal2-confirm swal2-styled']") private WebElement okPopUp; 
 
 @FindBy (xpath ="(//a[@class='btn-lg'])[11]") private WebElement deleteRoom2;
@@ -316,6 +322,7 @@ public class pricePage {
 @FindBy (id ="childrendiscount_Numberofchild_2") private WebElement numberOfChildDropdown1;
 @FindBy (id = "btn_Createchildren") private WebElement updateChildrenAndAdditionalOccupancyDiscount;
 
+
 	public pricePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -357,6 +364,30 @@ public class pricePage {
 	public String getSeasonDtext()
 	{
 		String actualText = seasonDtext.getText();
+		return actualText;
+	}
+	
+	public String getSeasonEtext()
+	{
+		String actualText = seasonEtext.getText();
+		return actualText;
+	}
+	
+	public String getSeasonFtext()
+	{
+		String actualText = seasonFtext.getText();
+		return actualText;
+	}
+	
+	public String getSeasonGtext()
+	{
+		String actualText = seasonGtext.getText();
+		return actualText;
+	}
+	
+	public String getSeasonHtext()
+	{
+		String actualText = seasonHtext.getText();
 		return actualText;
 	}
 	
@@ -621,7 +652,7 @@ public class pricePage {
 		String actualText = seasonEpriceRoom1_E.getAttribute(Price);
 		return actualText;
 	}
-	
+
 	public void sendseasonEallotRoom2_E(String AllotRoom2_E)
 	{
 		seasonEallotRoom2_E.sendKeys(AllotRoom2_E);
@@ -672,6 +703,12 @@ public class pricePage {
 		seasonFpriceRoom1_F.sendKeys(PriceRoom1_F);
 	}
 	
+	public String getseasonFpriceRoom1_F(String Price)
+	{
+		String actualText = seasonFpriceRoom1_F.getAttribute(Price);
+		return actualText;
+	}
+	
 	public void sendseasonFallotRoom2_F(String AllotRoom2_F)
 	{
 		seasonFallotRoom2_F.sendKeys(AllotRoom2_F);
@@ -716,6 +753,12 @@ public class pricePage {
 	public void sendseasonGpriceRoom1_G(String PriceRoom1_G)
 	{
 		seasonGpriceRoom1_G.sendKeys(PriceRoom1_G);
+	}
+	
+	public String getseasonGpriceRoom1_G(String Price)
+	{
+		String actualText = seasonGpriceRoom1_G.getAttribute(Price);
+		return actualText;
 	}
 	
 	public void sendseasonGallotRoom2_G(String AllotRoom2_G)
@@ -1020,6 +1063,11 @@ public class pricePage {
 	public void clickOnGenerateAllotmentButton()
 	{
 		generateAllotmentButton.click();
+	}
+	
+	public void clickOnValidateButton()
+	{
+		validateButton.click();
 	}
 	
 	public void clickOnOkPopUp()

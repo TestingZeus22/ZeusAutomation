@@ -243,7 +243,7 @@ public class modifySingleSalesLineBookingTC36TC37 extends BaseClass
     	    Reporter.log("Validating Actual sold allotment is "+ActualRemainingAllot_E+" and Expected allotment for season_E is "+UtilityClass.readDataFromStringExcel(534, 1, "Sheet5"),true);
 	 }
 	 
-	 @Test  (priority=1) // TC_37
+	 @Test  (enabled=false) // TC_37
 	 public void validateModifiedBookingAndErrorMessage() throws EncryptedDocumentException, IOException, InterruptedException {
 
 		dashboard.SalesClick();

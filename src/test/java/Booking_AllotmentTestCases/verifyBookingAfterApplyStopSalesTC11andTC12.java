@@ -104,7 +104,7 @@ public class verifyBookingAfterApplyStopSalesTC11andTC12 extends BaseClass {
     	Thread.sleep(2000);
 	}
 
-	@Test  //TC_11
+	@Test (priority=1) //TC_11
 	public void validateBookingAfterStopSalesWithDatesInsideStopSalesDuration() throws EncryptedDocumentException, IOException, InterruptedException {
 	
 		allotment.sendStartDate(UtilityClass.readDataFromStringExcel(46, 1, "Sheet5"));
@@ -231,7 +231,7 @@ public class verifyBookingAfterApplyStopSalesTC11andTC12 extends BaseClass {
 	    
 	}
 	
-	@Test  //TC-12.
+	@Test  (priority=2)//TC-12.
 	public void validateBookingAfterStopSalesWithDatesOutsideStopSalesDuration() throws EncryptedDocumentException, IOException, InterruptedException {
 		
 		allotment.sendStartDate(UtilityClass.readDataFromStringExcel(46, 1, "Sheet5"));

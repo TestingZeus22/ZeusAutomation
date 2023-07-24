@@ -104,7 +104,7 @@ public class verifyBookingAfterApplyStopSalesTC14TC16 extends BaseClass {
     	Thread.sleep(2000);
 	}
 
-	@Test  (priority=2) //TC_14
+	@Test  (priority=1) //TC_14
 	public void validateBookingAfterStopSalesWithSameDates() throws EncryptedDocumentException, IOException, InterruptedException {
 	
 		allotment.sendStartDate(UtilityClass.readDataFromStringExcel(485, 1, "Sheet5"));
@@ -245,7 +245,7 @@ public class verifyBookingAfterApplyStopSalesTC14TC16 extends BaseClass {
 	    Reporter.log("Validating Actual Message for season-F is "+ActualErrorMsg+" and Expected Message for season-F is "+UtilityClass.readDataFromStringExcel(506, 1, "Sheet5"),true);  
 	}
 	
-	@Test (priority=1) //TC-16
+	@Test (priority=2) //TC-16
 	public void validateBookingAfterStopSalesWithDatesOutsideStopSales() throws EncryptedDocumentException, IOException, InterruptedException {
 		
 		allotment.sendStartDate(UtilityClass.readDataFromStringExcel(485, 2, "Sheet5"));

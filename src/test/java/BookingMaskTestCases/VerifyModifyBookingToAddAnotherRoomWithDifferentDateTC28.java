@@ -138,19 +138,19 @@
 	            Thread.sleep(1000);
 	            
 	            UtilityClass.listBoxHandlingUsingByText("Boy", BookingMask.ListBoxTitleGender());
-	            UtilityClass.implicitlyWaitInsec(30);
+	            UtilityClass.implicitlyWaitInsec(40);
 				BookingMask.sendLastName(UtilityClass.readDataFromStringExcel(99, 4, "Sheet2"));
-				UtilityClass.implicitlyWaitInsec(30);
+				UtilityClass.implicitlyWaitInsec(40);
 				BookingMask.sendFirstName(UtilityClass.readDataFromStringExcel(100, 4, "Sheet2"));
-				UtilityClass.implicitlyWaitInsec(30);
+				UtilityClass.implicitlyWaitInsec(40);
 				BookingMask.sendCityName(UtilityClass.readDataFromStringExcel(101, 4, "Sheet2"));
-				UtilityClass.implicitlyWaitInsec(30);
+				UtilityClass.implicitlyWaitInsec(40);
 				BookingMask.sendZipCode(UtilityClass.readDataFromStringExcel(102, 4, "Sheet2"));
-				UtilityClass.implicitlyWaitInsec(30);
+				UtilityClass.implicitlyWaitInsec(40);
 				BookingMask.sendStreetNo(UtilityClass.readDataFromStringExcel(103, 4, "Sheet2"));
-				UtilityClass.implicitlyWaitInsec(30);
+				UtilityClass.implicitlyWaitInsec(40);
 				BookingMask.sendPhoneNum(UtilityClass.readDataFromStringExcel(104, 4, "Sheet2"));
-				UtilityClass.implicitlyWaitInsec(30);
+				UtilityClass.implicitlyWaitInsec(40);
 				BookingMask.sendEmail(UtilityClass.readDataFromStringExcel(105, 4, "Sheet2"));
 				UtilityClass.scrollByAxis(0, 900);
 				UtilityClass.implicitlyWaitInMillis(20000);
@@ -214,7 +214,7 @@
 	    		
 	    		driver.findElement(By.id("bookinglines_PassengerNo_3")).sendKeys("1-2");
 	    		Reporter.log("Send Number of passenger",true);
-	    		Thread.sleep(500);
+	    		Thread.sleep(5000);
 				UtilityClass.scrollByAxis(0, 900);
 				UtilityClass.implicitlyWaitInMillis(20000);
 				UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());

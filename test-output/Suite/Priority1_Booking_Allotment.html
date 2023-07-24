@@ -1,0 +1,493 @@
+<html>
+<head>
+<title>TestNG:  Priority1_Booking_Allotment</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Priority1_Booking_Allotment</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jul 24 18:24:07 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>603 seconds (603987 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48.validateMultisalesLineBookingWhenOneRoomHasAllotment()'><b>validateMultisalesLineBookingWhenOneRoomHasAllotment</b><br>Test class: Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48<br/>
+<a href="#Output-200141801" onClick='toggleBox("Output-200141801", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-200141801" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-200141801">
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Send Booking action<br/>
+Send number of passengers<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date <br/>
+Send Number of passenger<br/>
+Click on sendBookingButton<br/>
+Clicked on ViewList<br/>
+Clicked on sendTBMcode to verify booking is done or not<br/>
+Clicked on Booking listButton<br/>
+Send TBM code<br/>
+Clicked on Booking listButton<br/>
+Clicked on edit booking1<br/>
+Send Modified Travel from date<br/>
+Send Modified Travel To date<br/>
+Send Modified Travel from date<br/>
+Send Modified Travel To date<br/>
+Click on sendBookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [No booking found agaist the reservation number.                                                                                                                                                                                                                                                                                 ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48.validateMultisalesLineBookingWhenOneRoomHasAllotment(modifyMultisalesLineBookingTC47TC48.java:399)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace200141801", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace200141801'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [No booking found agaist the reservation number.                                                                                                                                                                                                                                                                                 ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48.validateMultisalesLineBookingWhenOneRoomHasAllotment(modifyMultisalesLineBookingTC47TC48.java:399)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>53</td>
+<td>Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48@dd05255</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48.validateMultisalesLineBookingWhenNoAllotment()'><b>validateMultisalesLineBookingWhenNoAllotment</b><br>Test class: Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48<br/>
+<a href="#Output-1708850768" onClick='toggleBox("Output-1708850768", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1708850768" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1708850768">
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Send Booking action<br/>
+Send number of passengers<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date <br/>
+Send Number of passenger<br/>
+Click on sendBookingButton<br/>
+Clicked on ViewList<br/>
+Clicked on sendTBMcode to verify booking is done or not<br/>
+Clicked on Booking listButton<br/>
+Send TBM code<br/>
+Clicked on Booking listButton<br/>
+Clicked on edit booking1<br/>
+Send Modified Travel from date<br/>
+Send Modified Travel To date<br/>
+Send Modified Travel from date<br/>
+Send Modified Travel To date<br/>
+Click on sendBookingButton<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [No booking found agaist the reservation number.                                                                                                                                                                                                                                                                                 ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48.validateMultisalesLineBookingWhenNoAllotment(modifyMultisalesLineBookingTC47TC48.java:235)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1708850768", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1708850768'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [No booking found agaist the reservation number.                                                                                                                                                                                                                                                                                 ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48.validateMultisalesLineBookingWhenNoAllotment(modifyMultisalesLineBookingTC47TC48.java:235)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>55</td>
+<td>Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48@dd05255</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09.validateApplyStopSales()'><b>validateApplyStopSales</b><br>Test class: Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09<br/>
+<a href="#Output-543028700" onClick='toggleBox("Output-543028700", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-543028700" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-543028700">
+Send start date of season_E on allotment page<br/>
+Send end date of season_E on allotment page<br/>
+Clicked on load allotment<br/>
+Clicked on Change allotment button<br/>
+Enter start date for room1<br/>
+Enter until date for room1<br/>
+Send start date of season_E on allotment page<br/>
+Send end date of season_E on allotment page<br/>
+Clicked on load Allotment<br/>
+Validating Actual initial allotment is 5 and Expected allotment for season_E is 5<br/>
+Validating Actual current allotment is 10 and Expected allotment for season_E is 10<br/>
+Validating Actual remaining allotment is 7 and Expected allotment for season_E is 7<br/>
+Validating Actual Stop sale text is STOP and Expected stop sales text for season_E is STOP<br/>
+Validating Actual sold allotment is 10 and Expected allotment for season_E is 10<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09@327514f</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12.validateBookingAfterStopSalesWithDatesOutsideStopSalesDuration()'><b>validateBookingAfterStopSalesWithDatesOutsideStopSalesDuration</b><br>Test class: Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12<br/>
+<a href="#Output-269287960" onClick='toggleBox("Output-269287960", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-269287960" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-269287960">
+Send start date of season_E on allotment page<br/>
+Send end date of season_E on allotment page<br/>
+Clicked on load allotment<br/>
+Clicked on Change allotment button<br/>
+Enter start date for room1<br/>
+Enter until date for room1<br/>
+Clicked on dashboardLink<br/>
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Send Booking action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date for season-E<br/>
+Send Travel To date for season-E<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+Validating Actual price for season-E is 3556.00 and Expected price for season-E is 3556.00<br/>
+</div>
+</td>
+<td></td>
+<td>58</td>
+<td>Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12@6150c3ec</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44.validateMultisalesLineBookingWhenNoAllotment()'><b>validateMultisalesLineBookingWhenNoAllotment</b><br>Test class: Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44<br/>
+<a href="#Output-1417140494" onClick='toggleBox("Output-1417140494", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1417140494" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1417140494">
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Send Booking action<br/>
+Send number of passengers<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date <br/>
+Send Number of passenger<br/>
+Click on sendBookingButton<br/>
+Validating Actual Message for season-E is Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                 and Expected Message for season-E is Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                <br/>
+</div>
+</td>
+<td></td>
+<td>35</td>
+<td>Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44@44c03695</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44.validateMultisalesLineBookingWhenOneRoomHasAllotment()'><b>validateMultisalesLineBookingWhenOneRoomHasAllotment</b><br>Test class: Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44<br/>
+<a href="#Output-1568128654" onClick='toggleBox("Output-1568128654", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1568128654" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1568128654">
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Send Booking action<br/>
+Send number of passengers<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Select Number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date <br/>
+Select Number of passenger<br/>
+Click on sendBookingButton<br/>
+Validating Actual Message for season-E is Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                 and Expected Message for season-E is Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                <br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44@44c03695</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46.validateModifiedMultisalesBookingPrice()'><b>validateModifiedMultisalesBookingPrice</b><br>Test class: Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46<br/>
+<a href="#Output-747024618" onClick='toggleBox("Output-747024618", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-747024618" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-747024618">
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Send Booking action<br/>
+Send number of passengers<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date<br/>
+Send Travel To date<br/>
+Send Number of passenger<br/>
+Send correct KOS2 in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date to second line<br/>
+Send Travel To date to second line<br/>
+Send Number of passenger<br/>
+Click on sendBookingButton<br/>
+Clicked on ViewList<br/>
+Clicked on sendTBMcode to verify booking is done or not<br/>
+Clicked on Booking listButton<br/>
+Send TBM code<br/>
+Clicked on Booking listButton<br/>
+Clicked on edit booking1<br/>
+Send Modified Travel from date<br/>
+Send Modified Travel To date<br/>
+Send Modified Travel from date<br/>
+Send Modified Travel To date<br/>
+Click on sendBookingButton<br/>
+Validating Actual price 3556.00 and Expected price is 3556.00<br/>
+Validating Actual price 3556.00 and Expected price is 3556.00<br/>
+</div>
+</td>
+<td></td>
+<td>56</td>
+<td>Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46@7e6f74c</td></tr>
+<tr>
+<td title='Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12.validateBookingAfterStopSalesWithDatesInsideStopSalesDuration()'><b>validateBookingAfterStopSalesWithDatesInsideStopSalesDuration</b><br>Test class: Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12<br/>
+<a href="#Output-1065713160" onClick='toggleBox("Output-1065713160", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1065713160" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1065713160">
+Send start date of season_E on allotment page<br/>
+Send end date of season_E on allotment page<br/>
+Clicked on load allotment<br/>
+Clicked on Change allotment button<br/>
+Enter start date for room1<br/>
+Enter until date for room1<br/>
+Clicked on dashboardLink<br/>
+Clicked on sales dropdown in Dashboard<br/>
+Clicked on sales Booking in Dashboard<br/>
+Clicked on create Button in sales Booking page<br/>
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK004 - (TEST) from dropdown list<br/>
+Send Booking action<br/>
+Send number of passenger<br/>
+Send correct KOS in input field<br/>
+Send correct ProductCode in input field<br/>
+Send roomcode in input field<br/>
+Send correct boardName<br/>
+Send Occupancy<br/>
+Send bookinglines <br/>
+Send Travel from date for season-E<br/>
+Send Travel To date for season-E<br/>
+Send Number of passenger<br/>
+Clicked on sendbookingButton<br/>
+Validating Actual message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                 and Expected message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       <br/>
+</div>
+</td>
+<td></td>
+<td>62</td>
+<td>Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12@6150c3ec</td></tr>
+</table><p>
+</body>
+</html>

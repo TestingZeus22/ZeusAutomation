@@ -3,17 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97">
+      <class name="Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48">
         <methods>
-          <include name="validateErrorMsgBySendingTravelDateSunToMonWeekdaySetMonAndWed"/>
+          <include name="validateMultisalesLineBookingWhenNoAllotment"/>
           <include name="Logout"/>
-          <include name="validateErrorMsgBySendingTravelDateTuesToWedWeekdaySetMonAndWed"/>
-          <include name="validateErrorMsgBySendingTravelDateMonToWedWeekdaySetMonAndWed"/>
           <include name="loginToApp"/>
           <include name="launchBrowser"/>
           <include name="closeBrowser"/>
+          <include name="validateMultisalesLineBookingWhenOneRoomHasAllotment"/>
         </methods>
-      </class> <!-- BookingMaskTestCases.VerifyTravelDateConditionSetWeekdaysMonAndWed_TC93ToTC97 -->
+      </class> <!-- Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

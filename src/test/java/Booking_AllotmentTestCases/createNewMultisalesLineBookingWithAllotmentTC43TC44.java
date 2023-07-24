@@ -70,7 +70,7 @@ public class createNewMultisalesLineBookingWithAllotmentTC43TC44 extends BaseCla
 		Thread.sleep(9500);
 	}
 	
-	 @Test  // TC_43
+	 @Test (priority=1) // TC_43
 	 public void validateMultisalesLineBookingWhenNoAllotment() throws EncryptedDocumentException, IOException, InterruptedException {
 
     		dashboard.SalesClick();
@@ -185,7 +185,7 @@ public class createNewMultisalesLineBookingWithAllotmentTC43TC44 extends BaseCla
      		UtilityClass.implicitlyWaitInMillis(20000);
      		UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
      		Reporter.log("Click on sendBookingButton",true); 
-     		Thread.sleep(3000);
+     		Thread.sleep(4000);
      		UtilityClass.scrollByAxis(0, -400);
      		
      		String ActualErrorMsg = BookingMask.getInvalidTravelDurationMsg();
@@ -194,7 +194,7 @@ public class createNewMultisalesLineBookingWithAllotmentTC43TC44 extends BaseCla
      	    Reporter.log("Validating Actual Message for season-E is "+BookingMask.getInvalidTravelDurationMsg()+" and Expected Message for season-E is "+UtilityClass.readDataFromStringExcel(327, 1, "Sheet5"),true); 
      	    Thread.sleep(500);
 	 }
-	 @Test  // TC_44
+	 @Test  (priority=2)// TC_44
 	 public void validateMultisalesLineBookingWhenOneRoomHasAllotment() throws EncryptedDocumentException, IOException, InterruptedException {
 
     		dashboard.SalesClick();
@@ -310,7 +310,7 @@ public class createNewMultisalesLineBookingWithAllotmentTC43TC44 extends BaseCla
      		UtilityClass.implicitlyWaitInMillis(20000);
      		UtilityClass.clickUsingJSE(BookingMask.clickOnSendbookingButtonByJSE());
      		Reporter.log("Click on sendBookingButton",true); 
-     		Thread.sleep(2000);
+     		Thread.sleep(3000);
      		UtilityClass.scrollByAxis(0, -400);
      		
      		String ActualErrorMsg = BookingMask.getInvalidTravelDurationMsg();

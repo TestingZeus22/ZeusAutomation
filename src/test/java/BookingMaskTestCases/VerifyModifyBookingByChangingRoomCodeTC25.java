@@ -103,6 +103,7 @@ import org.testng.Assert;
 	    	Thread.sleep(1000);
 	    	BookingMask.ClearbookingActionfield();
 	    	BookingMask.sendBookingAction(UtilityClass.readDataFromStringExcel(299, 1, "Sheet2"));
+	    	Reporter.log("Send Booking Action",true);
 	    	UtilityClass.implicitlyWaitInMillis(1000);
 	   
 	    	BookingMask.clearNoOfPax();

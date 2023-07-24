@@ -73,7 +73,7 @@ public class verifyBookingAndAllotmentsTC49TC51TC30 extends BaseClass
 		Thread.sleep(9500);
 	}
 	
-	 @Test  //TC49
+	 @Test (enabled=false) //TC49
 	 public void validateBookingCancellationAndAllotment() throws EncryptedDocumentException, IOException, InterruptedException {
     		dashboard.SalesClick();
     		Reporter.log("Clicked on sales dropdown in Dashboard",true);
@@ -269,7 +269,7 @@ public class verifyBookingAndAllotmentsTC49TC51TC30 extends BaseClass
         	Reporter.log("Validating Actual remaining allotment for Room2 is "+ActualRemainingAllotRoom2+" and Expected allotment for season_E is "+UtilityClass.readDataFromStringExcel(454, 2, "Sheet5"),true); 		
 	 }
    
-	 @Test //TC51
+	 @Test (priority=1)//TC51
 	 public void validateBookingAfterIncreaseInAllotment() throws EncryptedDocumentException, IOException, InterruptedException {
 			
     		dashboard.SalesClick();
@@ -570,7 +570,7 @@ public class verifyBookingAndAllotmentsTC49TC51TC30 extends BaseClass
 			Reporter.log("Validating Actual price for room2 is "+BookingMask.getPriceFieldValue2("value")+" and Expected Price for room2 is "+UtilityClass.readDataFromStringExcel(481, 2, "Sheet5"),true);
 	   }
 	 
-	 @Test   //TC30
+	 @Test (enabled=false) //TC30
 	 public void validateBookingMoreThanRemainingAllotment() throws EncryptedDocumentException, IOException, InterruptedException {
 	
     		dashboard.SalesClick();

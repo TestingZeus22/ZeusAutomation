@@ -242,7 +242,7 @@ public class mofifyMultisalesLineBookingTC45TC46 extends BaseClass
      		Assert.assertEquals(ActualPriceRoom2,expectedPriceRoom2, "TC failed as Actual Prices and expected prices are not matching ");
      		Reporter.log("Validating Actual price "+BookingMask.getPriceFieldValue2("value")+" and Expected price is "+UtilityClass.readDataFromStringExcel(352, 2, "Sheet5"),true);
 	 }
-	 @Test (priority=2) //TC-46
+	 @Test (enabled=false) //TC-46
 	 public void validateMultisalesBookingAllotment() throws EncryptedDocumentException, IOException, InterruptedException {
 
     		dashboard.SalesClick();

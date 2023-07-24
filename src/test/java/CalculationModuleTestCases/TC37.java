@@ -2,6 +2,9 @@ package CalculationModuleTestCases;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Iterator;
 
 import org.apache.poi.EncryptedDocumentException;
@@ -40,6 +43,7 @@ import POM.selectCompanyPage;
 import POM.tbmCodeMasterPage;
 import POM.tbmCodeNewCreatePage;
 import utility.UtilityClass;
+import utility.utilityPropertyFile;
 
 public class TC37 extends BaseClass {
 	loginPage login;
@@ -59,38 +63,17 @@ public class TC37 extends BaseClass {
 	contractDetailsPage contractDetail;
 	contractsPage contracts;
 	CalculationSettingRoomsDetailPage CalculationSettingRoomsDetail;
-	pricePage price;
-	roomsPage room;
-	allotmentPage allotment;
-	String Actualseason_Aallot;
-	String Allot_Ainitial;
-	String Allot_Acurrent;
-	String Allot_ARemaining;
-	String Actualseason_Ballot;
-	String Allot_Binitial;
-	String NameA;
-	String NameB;
-	String NameC;
-	String NameD;
-	
-	String SeasonA;
-	String SeasonB;
-	String SeasonC;
-	String SeasonD;
-	
-	String Season_Aprice1;
-	String Season_Bprice1;
-	String Season_Cprice1;
-	String Season_Dprice1;
-	String CostPriceSeasonAA;
-	String CostPriceSeasonBB;
-	String CostPriceSeasonCC;
-	String CostPriceSeasonDD;
+	pricePage price;roomsPage room;allotmentPage allotment;
+	String Actualseason_Aallot;	String Allot_Ainitial;String Allot_Acurrent;
+	String Allot_ARemaining;String Actualseason_Ballot;String Allot_Binitial;
+	String NameA;String NameB;String NameC;String NameD;String NameE;String NameF;String NameG;String NameH;
+	String SeasonA;String SeasonB;String SeasonC;String SeasonD;String SeasonE;String SeasonF;String SeasonG;String SeasonH;
+	String Season_Aprice1;String Season_Bprice1;String Season_Cprice1;String Season_Dprice1;String Season_Eprice1;
+	String Season_Fprice1;String Season_Gprice1;String Season_Hprice1;
+	String CostPriceSeasonAA;String CostPriceSeasonBB;String CostPriceSeasonCC;String CostPriceSeasonDD;
+	String CostPriceSeasonEE;String CostPriceSeasonFF;String CostPriceSeasonGG;String CostPriceSeasonHH;
 	String value11;
 	String value12;
-	Boolean CheckBox1;
-	Boolean CheckBox2;
-	
 	
 	@BeforeClass
 	public void launchBrowser(){
@@ -234,7 +217,7 @@ public class TC37 extends BaseClass {
         Thread.sleep(6000);
         contracts.clickOncreateContractButton();
         Reporter.log("Clicked on create contract",true);
-        Thread.sleep(3000);
+        Thread.sleep(4000);
         contractDetail.sendContractName(UtilityClass.readDataFromStringExcel(30, 2, "Sheet5"));
         Reporter.log("Send contract name",true);
         UtilityClass.implicitlyWaitInsec(60);
@@ -293,97 +276,97 @@ public class TC37 extends BaseClass {
         UtilityClass.implicitlyWaitInsec(60);
         contractDetail.clickOnCreateContract();
         Reporter.log("Clicked on create contract on contract page",true);
-        UtilityClass.implicitlyWaitInsec(60);
-        UtilityClass.implicitlyWaitInMillis(10000);
+        UtilityClass.implicitlyWaitInsec(90);
         Thread.sleep(2000);
         UtilityClass.scrollByAxis(0, 900);
         UtilityClass.implicitlyWaitInMillis(9000);
     	UtilityClass.clickUsingJSE(accommodationNew.clickOnPriceByJSE());
-    	Reporter.log("Clicked on Price option");
+    	Reporter.log("Clicked on Price option",true);
         
     	Thread.sleep(1000);
         price.sendSeasonFrom_A(UtilityClass.readDataFromStringExcel(42, 1, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
+        driver.findElement(By.id("seasonModel_SeasonAUntil")).click();
+        UtilityClass.implicitlyWaitInsec(60);
         price.seasonUntil_A(UtilityClass.readDataFromStringExcel(42, 2, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.sendseasonAallotRoom1_A(UtilityClass.readDataFromStringExcel(42, 3, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.sendseasonApriceRoom1_A(UtilityClass.readDataFromStringExcel(42, 4, "Sheet5"));
         Reporter.log("Send all required details for Season_A",true);
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         
         price.sendSeasonFrom_B(UtilityClass.readDataFromStringExcel(43, 1, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.seasonUntil_B(UtilityClass.readDataFromStringExcel(43, 2, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.sendseasonBallotRoom1_B(UtilityClass.readDataFromStringExcel(43, 3, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.sendseasonBpriceRoom1_B(UtilityClass.readDataFromStringExcel(43, 4, "Sheet5"));
         Reporter.log("Send all required details for Season_B",true);
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         
         price.sendSeasonFrom_C(UtilityClass.readDataFromStringExcel(44, 1, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.seasonUntil_C(UtilityClass.readDataFromStringExcel(44, 2, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.sendseasonCallotRoom1_C(UtilityClass.readDataFromStringExcel(44, 3, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.sendseasonCpriceRoom1_C(UtilityClass.readDataFromStringExcel(44, 4, "Sheet5"));
         Reporter.log("Send all required details for Season_C",true);
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         
         price.sendSeasonFrom_D(UtilityClass.readDataFromStringExcel(45, 1, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.seasonUntil_D(UtilityClass.readDataFromStringExcel(45, 2, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.sendseasonDallotRoom1_D(UtilityClass.readDataFromStringExcel(45, 3, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.sendseasonDpriceRoom1_D(UtilityClass.readDataFromStringExcel(45, 4, "Sheet5"));
         Reporter.log("Send all required details for Season_D",true);
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         
         price.sendSeasonFrom_E(UtilityClass.readDataFromStringExcel(46, 1, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.seasonUntil_E(UtilityClass.readDataFromStringExcel(46, 2, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.sendseasonEallotRoom1_E(UtilityClass.readDataFromStringExcel(46, 3, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.sendseasonEpriceRoom1_E(UtilityClass.readDataFromStringExcel(46, 4, "Sheet5"));
         Reporter.log("Send all required details for Season_E",true);
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         
         price.sendSeasonFrom_F(UtilityClass.readDataFromStringExcel(47, 1, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.seasonUntil_F(UtilityClass.readDataFromStringExcel(47, 2, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.sendseasonFallotRoom1_F(UtilityClass.readDataFromStringExcel(47, 3, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.sendseasonFpriceRoom1_F(UtilityClass.readDataFromStringExcel(47, 4, "Sheet5"));
         Reporter.log("Send all required details for Season_F",true);
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         
         price.sendSeasonFrom_G(UtilityClass.readDataFromStringExcel(48, 1, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.seasonUntil_G(UtilityClass.readDataFromStringExcel(48, 2, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.sendseasonGallotRoom1_G(UtilityClass.readDataFromStringExcel(48, 3, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.sendseasonGpriceRoom1_G(UtilityClass.readDataFromStringExcel(48, 4, "Sheet5"));
         Reporter.log("Send all required details for Season_G",true);
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         
         price.sendSeasonFrom_H(UtilityClass.readDataFromStringExcel(49, 1, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.seasonUntil_H(UtilityClass.readDataFromStringExcel(49, 2, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.sendseasonHallotRoom1_H(UtilityClass.readDataFromStringExcel(49, 3, "Sheet5"));
-        UtilityClass.implicitlyWaitInsec(30);
+        UtilityClass.implicitlyWaitInsec(40);
         price.sendseasonHpriceRoom1_H(UtilityClass.readDataFromStringExcel(49, 4, "Sheet5"));
         Reporter.log("Send all required details for Season_H",true);
         Thread.sleep(1000);
         price.clickOnDeleteRoom2();
         Reporter.log("Delete the extra created room on price page",true);
-        Thread.sleep(1000);
         price.clickOnUpdatePriceButton();
         Reporter.log("Clicked on update price button",true);
         Thread.sleep(2000);
@@ -398,96 +381,12 @@ public class TC37 extends BaseClass {
         Thread.sleep(9000);
         price.clickOnOkPopUp();
         Thread.sleep(1000);
- 
-        // CheckBox selected / Checked or not..
         
+        String value = driver.findElement(By.id("seasonModel_SeasonAFrom")).getAttribute("value");
+        System.out.println("The Value is "+value);
         
-        Boolean CheckBox1 = price.isRoom1CheckBox1AllDay();
+        //Season Prices get in Contract.
         
-      // List<WebElement>checkboxesPage1 = driver.findElements(By.tagName("input"));
-//        
-//        for (int i=0; i<=checkboxesPage1+1; i++)
-//        {
-//        	
-//        }
-//        for (WebElement checkbox : checkboxesPage1) {
-//            boolean isSelected = checkbox.isSelected();
-//            Assert.assertTrue(isSelected, "Checkbox on Page 1 is not selected.");
-//        }
-        
-//        WebElement CheckBoxAllDay = driver.findElement(By.xpath("(//input[@id='roomModel_IsAll'])[1]"));
-//        if(CheckBoxAllDay.isSelected())
-//         { 
-//            System.out.println("The checkbox for all day is selected " +CheckBoxAllDay.isSelected()); 
-//         } 
-//         else { 
-//            System.out.println("The checkbox for all day is not selected" +CheckBoxAllDay.isSelected()); 
-//         } 
-        
-        WebElement CheckBoxMonday = driver.findElement(By.xpath("(//input[@id='roomModel_IsMonday'])[1]"));
-        if(CheckBoxMonday.isSelected())
-         { 
-            System.out.println("TThe checkbox for Monday is selected " +CheckBoxMonday.isSelected()); 
-         } 
-         else { 
-            System.out.println("The checkbox for Monday is not selected." +CheckBoxMonday.isSelected()); 
-         } 
-        
-        WebElement CheckBoxTuesday = driver.findElement(By.xpath("(//input[@id='roomModel_IsTuesday'])[1]"));
-        if(CheckBoxTuesday.isSelected())
-         { 
-            System.out.println("The checkbox for Tuesday is selected " +CheckBoxTuesday.isSelected()); 
-         } 
-         else { 
-            System.out.println("The checkbox for Tuesday is not selected." +CheckBoxTuesday.isSelected()); 
-         } 
-        
-        WebElement CheckBoxWednesday = driver.findElement(By.xpath("(//input[@id='roomModel_IsWednesday'])[1]"));
-        if(CheckBoxWednesday.isSelected())
-         { 
-            System.out.println("The checkbox for wednesday is selected " +CheckBoxWednesday.isSelected()); 
-         } 
-         else { 
-            System.out.println("The checkbox for wednesday is not selected." +CheckBoxWednesday.isSelected()); 
-         } 
-        
-        WebElement CheckBoxThursday = driver.findElement(By.xpath("(//input[@id='roomModel_IsThursday'])[1]"));
-        if(CheckBoxThursday.isSelected())
-         { 
-            System.out.println("The checkbox for Thursday is selected " +CheckBoxThursday.isSelected()); 
-         } 
-         else { 
-            System.out.println("The checkbox for Thursday is not selected " +CheckBoxThursday.isSelected()); 
-         }  
-        
-        WebElement CheckBoxFriday = driver.findElement(By.xpath("(//input[@id='roomModel_IsFriday'])[1]"));
-        if(CheckBoxFriday.isSelected())
-         { 
-            System.out.println("The checkbox for Friday is selected " +CheckBoxFriday.isSelected()); 
-         } 
-         else { 
-            System.out.println("The checkbox for Friday is not selected " +CheckBoxFriday.isSelected()); 
-         }  
-        
-        WebElement CheckBoxSaturday = driver.findElement(By.xpath("(//input[@id='roomModel_IsSaturday'])[1]"));
-        if(CheckBoxSaturday.isSelected())
-         { 
-            System.out.println("The checkbox for saturday is selected " +CheckBoxSaturday.isSelected()); 
-         } 
-         else { 
-            System.out.println("The checkbox for saturday is not selected " +CheckBoxSaturday.isSelected()); 
-         }  
-        
-        WebElement CheckBoxSunday = driver.findElement(By.xpath("(//input[@id='roomModel_IsSunday'])[1]"));
-        if(CheckBoxSunday.isSelected())
-         { 
-            System.out.println("The checkbox for sunday is selected " +CheckBoxSunday.isSelected()); 
-         } 
-         else { 
-            System.out.println("The checkbox for sunday is not selected " +CheckBoxSunday.isSelected()); 
-         }  
-        
-        //Season Prices get
         String Season_Aprice = price.getSeasonApriceRoom1_A("value");
         Season_Aprice1=Season_Aprice;
         
@@ -500,7 +399,20 @@ public class TC37 extends BaseClass {
         String Season_Dprice = price.getseasonDpriceRoom1_D("value");
         Season_Dprice1=Season_Dprice;
         
-        //Season Names get
+        String Season_Eprice = price.getseasonEpriceRoom1_E("value");
+        Season_Eprice1=Season_Eprice;
+        
+        String Season_Fprice = price.getseasonFpriceRoom1_F("value");
+        Season_Fprice1=Season_Fprice;
+        
+        String Season_Gprice = price.getseasonGpriceRoom1_G("value");
+        Season_Gprice1=Season_Gprice;
+        
+        String Season_Hprice = price.getseasonHpriceRoom1_H("value");
+        Season_Hprice1=Season_Hprice;
+        
+        //Season Names get in Price.
+        
         String Season_AName = price.getSeasonAtext();
         NameA=Season_AName;
         
@@ -512,6 +424,18 @@ public class TC37 extends BaseClass {
         
         String Season_DName = price.getSeasonDtext();
         NameD=Season_DName;
+        
+        String Season_EName = price.getSeasonEtext();
+        NameE=Season_EName;
+        
+        String Season_FName = price.getSeasonFtext();
+        NameF=Season_FName;
+        
+        String Season_GName = price.getSeasonGtext();
+        NameG=Season_GName;
+        
+        String Season_HName = price.getSeasonHtext();
+        NameH=Season_HName;
       
         price.clickOnDashboardLinkByJSE();
         Reporter.log("Clicked on dashboardLink to navigate to dashboard page",true);
@@ -552,9 +476,6 @@ public class TC37 extends BaseClass {
     	offerCalculation.clickOnTchiboDE();
     	Reporter.log("Clicked on TchiboDE",true);
     	Thread.sleep(3500);
-    	    
-//    	WebElement ClickBefore = driver.findElement(By.xpath("(//div[@id='treeViewLoc']//ul//li)[47]"));
-//    	ClickBefore.click();
     	
     	WebElement ClickBefore = driver.findElement(By.xpath("//a[text()='New']"));
     	ClickBefore.click();
@@ -597,101 +518,18 @@ public class TC37 extends BaseClass {
     	Thread.sleep(4000);
     	    
     	String value2 = CalculationSettingRoomsDetail.getDB1value1("value");
-    	value12=value2;
+    	value12 = value2;
     	System.out.println("The value2 in the Rooms page is "+value2);
     	
     	Boolean CheckBox2 = CalculationSettingRoomsDetail.isSeasonA_AllDayCheckBox1();
     	System.out.println("The checkbox2 is selected  "+CheckBox2);
-    	
-         if (CheckBox1 && CheckBox2) 
-          {
-		
-    	  System.out.println("Both checkboxes are selected");
-    	   
-          } else {
-	  	  System.out.println("Both checkboxes are not selected");
-          }
-
-    	
-    	    WebElement CheckBoxAllDay1 = driver.findElement(By.xpath("(//input[@id='IsAll'])[1]"));
-    	     if(CheckBoxAllDay1.isSelected())
-             { 
-                System.out.println("The checkbox for all day1 is selected " +CheckBoxAllDay1.isSelected()); 
-             } 
-             else { 
-                System.out.println("The checkbox for all day1 is not selected." +CheckBoxAllDay1.isSelected()); 
-             } 
-            
-            WebElement CheckBoxMonday1 = driver.findElement(By.xpath("(//input[@id='IsMonday'])[1]"));
-            if(CheckBoxMonday1.isSelected())
-             { 
-                System.out.println("TThe checkbox for Monday1 is selected " +CheckBoxMonday1.isSelected()); 
-             } 
-             else { 
-                System.out.println("The checkbox for Monday1 is not selected." +CheckBoxMonday1.isSelected()); 
-             } 
-            
-            WebElement CheckBoxTuesday1 = driver.findElement(By.xpath("(//input[@id='IsTuesday'])[1]"));
-            if(CheckBoxTuesday1.isSelected())
-             { 
-                System.out.println("The checkbox for Tuesday1 is selected " +CheckBoxTuesday1.isSelected()); 
-             } 
-             else { 
-                System.out.println("The checkbox for Tuesday1 is not selected." +CheckBoxTuesday1.isSelected()); 
-             } 
-            
-            WebElement CheckBoxWednesday1 = driver.findElement(By.xpath("(//input[@id='IsWednesday'])[1]"));
-            if(CheckBoxWednesday1.isSelected())
-             { 
-                System.out.println("The checkbox for wednesday1 is selected " +CheckBoxWednesday1.isSelected()); 
-             } 
-             else { 
-                System.out.println("The checkbox for wednesday1 is not selected." +CheckBoxWednesday1.isSelected()); 
-             } 
-            
-            WebElement CheckBoxThursday1 = driver.findElement(By.xpath("(//input[@id='IsThursday'])[1]"));
-            if(CheckBoxThursday1.isSelected())
-             { 
-                System.out.println("The checkbox for Thursday1 is selected " +CheckBoxThursday1.isSelected()); 
-             } 
-             else { 
-                System.out.println("The checkbox for Thursday1 is not selected " +CheckBoxThursday1.isSelected()); 
-             }  
-            
-            WebElement CheckBoxFriday1 = driver.findElement(By.xpath("(//input[@id='IsFriday'])[1]"));
-            if(CheckBoxFriday1.isSelected())
-             { 
-                System.out.println("The checkbox for Friday1 is selected " +CheckBoxFriday1.isSelected()); 
-             } 
-             else { 
-                System.out.println("The checkbox for Friday1 is not selected " +CheckBoxFriday1.isSelected()); 
-             }  
-            
-            WebElement CheckBoxSaturday1 = driver.findElement(By.xpath("(//input[@id='IsSaturday'])[1]"));
-            if(CheckBoxSaturday1.isSelected())
-             { 
-                System.out.println("The checkbox for saturday1 is selected " +CheckBoxSaturday1.isSelected()); 
-             } 
-             else { 
-                System.out.println("The checkbox for saturday1 is not selected " +CheckBoxSaturday1.isSelected()); 
-             }  
-            
-            WebElement CheckBoxSunday1 = driver.findElement(By.xpath("(//input[@id='IsSunday'])[1]"));
-            if(CheckBoxSunday1.isSelected())
-             { 
-                System.out.println("The checkbox for sunday1 is selected " +CheckBoxSunday1.isSelected()); 
-             } 
-             else { 
-                System.out.println("The checkbox for sunday1 is not selected " +CheckBoxSunday1.isSelected()); 
-             } 
     	    Thread.sleep(1000); 
     		UtilityClass.scrollByAxis(0, 400);
     		calculationSetting.clickOnsavePrice();
     		Reporter.log("Clicked on Save price",true);
     		Thread.sleep(3000);
-    	    UtilityClass.implicitlyWaitInMillis(3000);
-    	    
-    	    // Season prices in offer calculation
+    		
+    	    // Season prices in offer calculation.
     	    
     	    String CostPriceSeasosn_A1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonA();
     	    CostPriceSeasonAA=CostPriceSeasosn_A1;
@@ -704,13 +542,25 @@ public class TC37 extends BaseClass {
     	    
     	    String CostPriceSeasosn_D1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonD();
     	    CostPriceSeasonDD=CostPriceSeasosn_D1;
+    	    
+    	    String CostPriceSeasosn_E1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonE();
+    	    CostPriceSeasonEE=CostPriceSeasosn_E1;
      	
-    	    //Season names with Concatination of two Strings.
+    	    String CostPriceSeasosn_F1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonF();
+    	    CostPriceSeasonFF=CostPriceSeasosn_F1;
+    	    
+    	    String CostPriceSeasosn_G1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonG();
+    	    CostPriceSeasonGG=CostPriceSeasosn_G1;
+    	    
+    	    String CostPriceSeasosn_H1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonH();
+    	    CostPriceSeasonHH=CostPriceSeasosn_H1;
+    	    
+    	    //Season names with Calculation Page.
     	    
     	    String SeasonName = CalculationSettingRoomsDetail.getSeasonName();
     	    String A = CalculationSettingRoomsDetail.getTextA();
     	    String Season_A= SeasonName + (" " +A);
-    	    SeasonA =Season_A;
+    	    SeasonA = Season_A;
           
     	    String B = CalculationSettingRoomsDetail.getTextB();
     	    String Season_B= SeasonName + (" " +B);
@@ -723,13 +573,30 @@ public class TC37 extends BaseClass {
     	    String D = CalculationSettingRoomsDetail.getTextD();
     	    String Season_D = SeasonName + (" "+D);
     	    SeasonD = Season_D;
-	
+    	    
+    	    String E = CalculationSettingRoomsDetail.getTextE();
+    	    String Season_E = SeasonName + (" "+E);
+    	    SeasonE = Season_E;
+    	    
+    	    String F = CalculationSettingRoomsDetail.getTextF();
+    	    String Season_F = SeasonName + (" "+F);
+    	    SeasonF = Season_F;
+    	    
+    	    String G = CalculationSettingRoomsDetail.getTextG();
+    	    String Season_G = SeasonName + (" "+G);
+    	    SeasonG = Season_G;
+    	    
+    	    String H = CalculationSettingRoomsDetail.getTextH();
+    	    String Season_H = SeasonName + (" "+H);
+    	    SeasonH = Season_H;
+    	    
+    
 	}
     @Test 
     public void validateOfferCalculationWithRoomDetails() throws EncryptedDocumentException, IOException 
     {
     	
-    	//Season Name
+     //Season Name Assertions
 	  Assert.assertEquals(SeasonA, NameA,"Test Case Failed as actual & expected Season name are not matching");
 	  Reporter.log("Validating actual season name on contracts page is "+SeasonA+" and Expected season name calculation page is "+NameA,true);
 	  
@@ -742,7 +609,20 @@ public class TC37 extends BaseClass {
 	  Assert.assertEquals(SeasonD, NameD,"Test Case Failed as actual & expected Season name are not matching");
 	  Reporter.log("Validating actual season name on contracts page is"+SeasonD+" and Expected season name calculation page is "+NameD,true);
 	  
-	  // Season Prices
+	  Assert.assertEquals(SeasonE, NameE,"Test Case Failed as actual & expected Season name are not matching");
+	  Reporter.log("Validating actual season name on contracts page is"+SeasonE+" and Expected season name calculation page is "+NameE,true);
+	  
+	  Assert.assertEquals(SeasonF, NameF,"Test Case Failed as actual & expected Season name are not matching");
+	  Reporter.log("Validating actual season name on contracts page is"+SeasonF+" and Expected season name calculation page is "+NameF,true);
+	  
+	  Assert.assertEquals(SeasonG, NameG,"Test Case Failed as actual & expected Season name are not matching");
+	  Reporter.log("Validating actual season name on contracts page is"+SeasonG+" and Expected season name calculation page is "+NameG,true);
+	  
+	  Assert.assertEquals(SeasonH, NameH,"Test Case Failed as actual & expected Season name are not matching");
+	  Reporter.log("Validating actual season name on contracts page is"+SeasonH+" and Expected season name calculation page is "+NameH,true);
+	  
+	  
+	  // Season Prices Assertions
 	  Assert.assertEquals(Season_Aprice1, CostPriceSeasonAA,"Test Case Failed as actual & expected prices number are not matching for season_A");
 	  Reporter.log("Validating actual price on contracts page is "+Season_Aprice1+" and Expected price on calculation page is "+CostPriceSeasonAA,true);
 	  
@@ -755,9 +635,23 @@ public class TC37 extends BaseClass {
 	  Assert.assertEquals(Season_Dprice1, CostPriceSeasonDD,"Test Case Failed as actual & expected Prices are not matching for season_D");
 	  Reporter.log("Validating actual price on contracts page is  "+Season_Dprice1+" and Expected price on calculation page is  "+CostPriceSeasonDD,true);
 	  
-	  Assert.assertEquals(CheckBox1,CheckBox2,"Test Case Failed as actual & expected Prices are not matching for season_D");
-	  Reporter.log("Validating actual price on contracts page is  "+CheckBox1+" and Expected price on calculation page is  "+CheckBox2,true);
-   }
+	  Assert.assertEquals(Season_Eprice1, CostPriceSeasonEE,"Test Case Failed as actual & expected Prices are not matching for season_D");
+	  Reporter.log("Validating actual price on contracts page is  "+Season_Eprice1+" and Expected price on calculation page is  "+CostPriceSeasonEE,true);
+	  
+	  Assert.assertEquals(Season_Fprice1, CostPriceSeasonFF,"Test Case Failed as actual & expected Prices are not matching for season_D");
+	  Reporter.log("Validating actual price on contracts page is  "+Season_Fprice1+" and Expected price on calculation page is  "+CostPriceSeasonFF,true);
+	  
+	  Assert.assertEquals(Season_Gprice1, CostPriceSeasonGG,"Test Case Failed as actual & expected Prices are not matching for season_D");
+	  Reporter.log("Validating actual price on contracts page is  "+Season_Gprice1+" and Expected price on calculation page is  "+CostPriceSeasonGG,true);
+	  
+	  Assert.assertEquals(Season_Hprice1, CostPriceSeasonHH,"Test Case Failed as actual & expected Prices are not matching for season_D");
+	  Reporter.log("Validating actual price on contracts page is  "+Season_Hprice1+" and Expected price on calculation page is  "+CostPriceSeasonHH,true);
+	 
+	
+	  
+	  
+	  
+    }
   
     @AfterMethod
     public void Logout() throws InterruptedException

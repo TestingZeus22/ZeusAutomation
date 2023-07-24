@@ -14,6 +14,12 @@ public class CalculationSettingRoomsDetailPage {
 	@FindBy (xpath ="(//span[@class='badge badge-info mr-2'])[2]") private WebElement textB;
 	@FindBy (xpath ="(//span[@class='badge badge-info mr-2'])[3]") private WebElement textC;
 	@FindBy (xpath ="(//span[@class='badge badge-info mr-2'])[4]") private WebElement textD;
+	@FindBy (xpath ="(//span[@class='badge badge-info mr-2'])[5]") private WebElement textE;
+	@FindBy (xpath ="(//span[@class='badge badge-info mr-2'])[6]") private WebElement textF;
+	@FindBy (xpath ="(//span[@class='badge badge-info mr-2'])[7]") private WebElement textG;
+	@FindBy (xpath ="(//span[@class='badge badge-info mr-2'])[8]") private WebElement textH;
+	
+	
 	
 	@FindBy (xpath ="(//input[@id='IsAll'])[1]") private WebElement seasonA_AllDayCheckBox1;
 //	@FindBy (xpath ="(//input[@id='IsMonday'])[1]") private WebElement seasonA_MondayCheckBox2;
@@ -28,6 +34,11 @@ public class CalculationSettingRoomsDetailPage {
 	@FindBy (xpath ="(//label[@id='NetPrice'])[2]") private WebElement costPriceInEURforSeasonB;
 	@FindBy (xpath ="(//label[@id='NetPrice'])[3]") private WebElement costPriceInEURforSeasonC;
 	@FindBy (xpath ="(//label[@id='NetPrice'])[4]") private WebElement costPriceInEURforSeasonD;
+	@FindBy (xpath ="(//label[@id='NetPrice'])[5]") private WebElement costPriceInEURforSeasonE;
+	@FindBy (xpath ="(//label[@id='NetPrice'])[6]") private WebElement costPriceInEURforSeasonF;
+	@FindBy (xpath ="(//label[@id='NetPrice'])[7]") private WebElement costPriceInEURforSeasonG;
+	@FindBy (xpath ="(//label[@id='NetPrice'])[8]") private WebElement costPriceInEURforSeasonH;
+	
 	
 	@FindBy (xpath ="(//input[@id='DB1'])[1]") private WebElement DB1value;
 
@@ -67,6 +78,30 @@ public class CalculationSettingRoomsDetailPage {
 		return actualText;
 	}
 	
+	public String getTextE()
+	{
+		String actualText = textE.getText();
+		return actualText;
+	}
+	
+	public String getTextF()
+	{
+		String actualText = textF.getText();
+		return actualText;
+	}
+	
+	public String getTextG()
+	{
+		String actualText = textG.getText();
+		return actualText;
+	}
+	
+	public String getTextH()
+	{
+		String actualText = textH.getText();
+		return actualText;
+	}
+	
 	public String getCostPriceInEURforSeasonA()
 	{
 		String actualText = costPriceInEURforSeasonA.getText();
@@ -88,6 +123,30 @@ public class CalculationSettingRoomsDetailPage {
 	public String getCostPriceInEURforSeasonD()
 	{
 		String actualText = costPriceInEURforSeasonD.getText();
+		return actualText;
+	}
+	
+	public String getCostPriceInEURforSeasonE()
+	{
+		String actualText = costPriceInEURforSeasonE.getText();
+		return actualText;
+	}
+	
+	public String getCostPriceInEURforSeasonF()
+	{
+		String actualText = costPriceInEURforSeasonF.getText();
+		return actualText;
+	}
+	
+	public String getCostPriceInEURforSeasonG()
+	{
+		String actualText = costPriceInEURforSeasonG.getText();
+		return actualText;
+	}
+	
+	public String getCostPriceInEURforSeasonH()
+	{
+		String actualText = costPriceInEURforSeasonH.getText();
 		return actualText;
 	}
 	
