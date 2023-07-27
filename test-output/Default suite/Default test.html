@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jul 24 18:35:57 IST 2023</td>
+<td>Started on:</td><td>Wed Jul 26 16:15:15 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>159 seconds (159038 ms)</td>
+<tr><td>Total time:</td><td>237 seconds (237943 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,19 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48.validateMultisalesLineBookingWhenOneRoomHasAllotment()'><b>validateMultisalesLineBookingWhenOneRoomHasAllotment</b><br>Test class: Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48<br/>
-<a href="#Output-594043354" onClick='toggleBox("Output-594043354", this, "Show output", "Hide output");'>Show output</a>
+<td title='BookingMaskTestCases.VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142.validateBookingToMorethanMaxStay()'><b>validateBookingToMorethanMaxStay</b><br>Test class: BookingMaskTestCases.VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142<br/>
+<a href="#Output-430290487" onClick='toggleBox("Output-430290487", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-594043354" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-594043354">
-Clicked on sales dropdown in Dashboard<br/>
-Clicked on sales Booking in Dashboard<br/>
-Clicked on create Button in sales Booking page<br/>
+<a href="#Output-430290487" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-430290487">
 Select Falk Tours AG in CompanyID dropdownList<br/>
 Select TFT1 in TravelType dropdownList<br/>
-Selected HK004 - (TEST) from dropdown list<br/>
-Send Booking action<br/>
-Send number of passengers<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 806 from dropdown<br/>
+Send number of passenger<br/>
 Send correct KOS in input field<br/>
 Send correct ProductCode in input field<br/>
 Send roomcode in input field<br/>
@@ -97,118 +94,28 @@ Send Occupancy<br/>
 Send bookinglines <br/>
 Send Travel from date<br/>
 Send Travel To date<br/>
-Send Number of passenger<br/>
-Send correct KOS in input field<br/>
-Send correct ProductCode in input field<br/>
-Send roomcode in input field<br/>
-Send correct boardName<br/>
-Send Occupancy<br/>
-Send bookinglines <br/>
-Send Travel from date<br/>
-Send Travel To date <br/>
-Send Number of passenger<br/>
-Click on sendBookingButton<br/>
-Clicked on ViewList<br/>
-Clicked on sendTBMcode to verify booking is done or not<br/>
-Clicked on Booking listButton<br/>
-Send TBM code<br/>
-Clicked on Booking listButton<br/>
-Clicked on edit booking1<br/>
+Select Number of passenger<br/>
+Click on sendBookingButton after U action code<br/>
 Send Modified Travel from date<br/>
 Send Modified Travel To date<br/>
-Send Modified Travel from date<br/>
-Send Modified Travel To date<br/>
-Click on sendBookingButton<br/>
+Click on sendBookingButton after U action code<br/>
+Validating Actual message Maximale Aufenthaltsdauer überschritten                                                                                                                                                                                                                                                                                          and Expected message Maximale Aufenthaltsdauer überschritten                                                                                                                                                                                                                                                                                         <br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [No booking found agaist the reservation number.                                                                                                                                                                                                                                                                                 ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48.validateMultisalesLineBookingWhenOneRoomHasAllotment(modifyMultisalesLineBookingTC47TC48.java:399)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace594043354", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace594043354'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [No booking found agaist the reservation number.                                                                                                                                                                                                                                                                                 ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48.validateMultisalesLineBookingWhenOneRoomHasAllotment(modifyMultisalesLineBookingTC47TC48.java:399)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>53</td>
-<td>Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48@34e9fd99</td></tr>
+<td></td>
+<td>24</td>
+<td>BookingMaskTestCases.VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142@3c41ed1d</td></tr>
 <tr>
-<td title='Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48.validateMultisalesLineBookingWhenNoAllotment()'><b>validateMultisalesLineBookingWhenNoAllotment</b><br>Test class: Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48<br/>
-<a href="#Output-162821120" onClick='toggleBox("Output-162821120", this, "Show output", "Hide output");'>Show output</a>
+<td title='BookingMaskTestCases.VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142.validateBookingWithVaildStay()'><b>validateBookingWithVaildStay</b><br>Test class: BookingMaskTestCases.VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142<br/>
+<a href="#Output-1819326403" onClick='toggleBox("Output-1819326403", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-162821120" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-162821120">
-Clicked on sales dropdown in Dashboard<br/>
-Clicked on sales Booking in Dashboard<br/>
-Clicked on create Button in sales Booking page<br/>
+<a href="#Output-1819326403" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1819326403">
 Select Falk Tours AG in CompanyID dropdownList<br/>
 Select TFT1 in TravelType dropdownList<br/>
-Selected HK004 - (TEST) from dropdown list<br/>
-Send Booking action<br/>
-Send number of passengers<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 806 from dropdown<br/>
+Send number of passenger<br/>
 Send correct KOS in input field<br/>
 Send correct ProductCode in input field<br/>
 Send roomcode in input field<br/>
@@ -218,103 +125,58 @@ Send bookinglines <br/>
 Send Travel from date<br/>
 Send Travel To date<br/>
 Send Number of passenger<br/>
+Click on sendBookingButton after U action code<br/>
+Clicked on ViewList<br/>
+Clicked on sendTBMcode to verify booking is done or not<br/>
+Clicked on Booking listButton<br/>
+Send TBM code<br/>
+Clicked on Booking listButton<br/>
+Clicked on Edit booking1<br/>
+Change booking action to U<br/>
+Send Modified Travel from date<br/>
+Send Modified Travel To date<br/>
+Click on sendBookingButton after U action code<br/>
+Clicked on ViewList<br/>
+Clicked on sendTBMcode to verify booking is done or not<br/>
+Send TBM code<br/>
+Clicked on Booking listButton<br/>
+Validating Expected ReservationNo 421878977/02 and Actual ReservationNo is 421878977/02<br/>
+Validating Actual price 6670.00 and Expected Price 6670.00<br/>
+</div>
+</td>
+<td></td>
+<td>89</td>
+<td>BookingMaskTestCases.VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142@3c41ed1d</td></tr>
+<tr>
+<td title='BookingMaskTestCases.VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142.validateBookingToLessthanMinStay()'><b>validateBookingToLessthanMinStay</b><br>Test class: BookingMaskTestCases.VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142<br/>
+<a href="#Output-2010350054" onClick='toggleBox("Output-2010350054", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2010350054" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2010350054">
+Select Falk Tours AG in CompanyID dropdownList<br/>
+Select TFT1 in TravelType dropdownList<br/>
+Selected HK001 - (TESTING) from dropdown list<br/>
+Selected room 806 from dropdown<br/>
+Send number of passenger<br/>
 Send correct KOS in input field<br/>
 Send correct ProductCode in input field<br/>
 Send roomcode in input field<br/>
 Send correct boardName<br/>
 Send Occupancy<br/>
 Send bookinglines <br/>
-Send Travel from date<br/>
-Send Travel To date <br/>
+Send Travel from date for Season-G<br/>
+Send Travel To date for Season-G<br/>
 Send Number of passenger<br/>
-Click on sendBookingButton<br/>
-Clicked on ViewList<br/>
-Clicked on sendTBMcode to verify booking is done or not<br/>
-Clicked on Booking listButton<br/>
-Send TBM code<br/>
-Clicked on Booking listButton<br/>
-Clicked on edit booking1<br/>
+Click on sendBookingButton after U action code<br/>
 Send Modified Travel from date<br/>
 Send Modified Travel To date<br/>
-Send Modified Travel from date<br/>
-Send Modified Travel To date<br/>
-Click on sendBookingButton<br/>
+Click on sendBookingButton after U action code<br/>
+Validating Actual message Mindestaufenthaltsdauer unterschritten bzw Maximale Aufenthaltsdauer überschritten                                                                                                                                                                                                                                               and Expected message Mindestaufenthaltsdauer unterschritten bzw Maximale Aufenthaltsdauer überschritten                                                                                                                                                                                                                                              <br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [No booking found agaist the reservation number.                                                                                                                                                                                                                                                                                 ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48.validateMultisalesLineBookingWhenNoAllotment(modifyMultisalesLineBookingTC47TC48.java:235)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace162821120", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace162821120'><pre>java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [No booking found agaist the reservation number.                                                                                                                                                                                                                                                                                 ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48.validateMultisalesLineBookingWhenNoAllotment(modifyMultisalesLineBookingTC47TC48.java:235)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>61</td>
-<td>Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48@34e9fd99</td></tr>
+<td></td>
+<td>22</td>
+<td>BookingMaskTestCases.VerifyModifyBookingWithMinMaxStayDurationTC140ToTC142@3c41ed1d</td></tr>
 </table><p>
 </body>
 </html>

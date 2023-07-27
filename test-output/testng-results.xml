@@ -1,6 +1,594 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="8" passed="4" failed="4" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Browser Launch ]]>
+    </line>
+    <line>
+      <![CDATA[Valid Username Entered]]>
+    </line>
+    <line>
+      <![CDATA[Valid Password Entered]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Dashboard button]]>
+    </line>
+    <line>
+      <![CDATA[Select the Falk Tours AG from given list]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on proceed button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on purchase option]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on accommodation option in list]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Allotment ]]>
+    </line>
+    <line>
+      <![CDATA[Send start date of season_E on allotment page]]>
+    </line>
+    <line>
+      <![CDATA[Send end date of season_E on allotment page]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on load allotment]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Change allotment button]]>
+    </line>
+    <line>
+      <![CDATA[Enter start date for room1]]>
+    </line>
+    <line>
+      <![CDATA[Enter until date for room1]]>
+    </line>
+    <line>
+      <![CDATA[Send start date of season_E on allotment page]]>
+    </line>
+    <line>
+      <![CDATA[Send end date of season_E on allotment page]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on load Allotment]]>
+    </line>
+    <line>
+      <![CDATA[Validating Actual initial allotment is 5 and Expected allotment for season_E is 5]]>
+    </line>
+    <line>
+      <![CDATA[Validating Actual current allotment is 10 and Expected allotment for season_E is 10]]>
+    </line>
+    <line>
+      <![CDATA[Validating Actual remaining allotment is 7 and Expected allotment for season_E is 7]]>
+    </line>
+    <line>
+      <![CDATA[Validating Actual Stop sale text is STOP and Expected stop sales text for season_E is STOP]]>
+    </line>
+    <line>
+      <![CDATA[Validating Actual sold allotment is 10 and Expected allotment for season_E is 10]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on Logout Button]]>
+    </line>
+    <line>
+      <![CDATA[Logout from allotment]]>
+    </line>
+    <line>
+      <![CDATA[Closing Browser]]>
+    </line>
+    <line>
+      <![CDATA[Browser Launch ]]>
+    </line>
+    <line>
+      <![CDATA[Valid Username Entered]]>
+    </line>
+    <line>
+      <![CDATA[Valid Password Entered]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Dashboard button]]>
+    </line>
+    <line>
+      <![CDATA[Select the Falk Tours AG from given list]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on proceed button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on purchase option]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on accommodation option in list]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Allotment ]]>
+    </line>
+    <line>
+      <![CDATA[Send start date of season_E on allotment page]]>
+    </line>
+    <line>
+      <![CDATA[Send end date of season_E on allotment page]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on load allotment]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Change allotment button]]>
+    </line>
+    <line>
+      <![CDATA[Enter start date for room1]]>
+    </line>
+    <line>
+      <![CDATA[Enter until date for room1]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on dashboardLink]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on sales dropdown in Dashboard]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on sales Booking in Dashboard]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on create Button in sales Booking page]]>
+    </line>
+    <line>
+      <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
+    </line>
+    <line>
+      <![CDATA[Select TFT1 in TravelType dropdownList]]>
+    </line>
+    <line>
+      <![CDATA[Selected HK004 - (TEST) from dropdown list]]>
+    </line>
+    <line>
+      <![CDATA[Send Booking action]]>
+    </line>
+    <line>
+      <![CDATA[Send number of passenger]]>
+    </line>
+    <line>
+      <![CDATA[Send correct KOS in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send correct ProductCode in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send roomcode in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send correct boardName]]>
+    </line>
+    <line>
+      <![CDATA[Send Occupancy]]>
+    </line>
+    <line>
+      <![CDATA[Send bookinglines ]]>
+    </line>
+    <line>
+      <![CDATA[Send Travel from date for season-E]]>
+    </line>
+    <line>
+      <![CDATA[Send Travel To date for season-E]]>
+    </line>
+    <line>
+      <![CDATA[Send Number of passenger]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on sendbookingButton]]>
+    </line>
+    <line>
+      <![CDATA[Validating Actual message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                 and Expected message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on Logout Button]]>
+    </line>
+    <line>
+      <![CDATA[Logout from allotment]]>
+    </line>
+    <line>
+      <![CDATA[Valid Username Entered]]>
+    </line>
+    <line>
+      <![CDATA[Valid Password Entered]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Dashboard button]]>
+    </line>
+    <line>
+      <![CDATA[Select the Falk Tours AG from given list]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on proceed button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on purchase option]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on accommodation option in list]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Allotment ]]>
+    </line>
+    <line>
+      <![CDATA[Send start date of season_E on allotment page]]>
+    </line>
+    <line>
+      <![CDATA[Send end date of season_E on allotment page]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on load allotment]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on Logout Button]]>
+    </line>
+    <line>
+      <![CDATA[Logout from allotment]]>
+    </line>
+    <line>
+      <![CDATA[Closing Browser]]>
+    </line>
+    <line>
+      <![CDATA[Browser Launch ]]>
+    </line>
+    <line>
+      <![CDATA[Valid Username Entered]]>
+    </line>
+    <line>
+      <![CDATA[Valid Password Entered]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Dashboard button]]>
+    </line>
+    <line>
+      <![CDATA[Select the Falk Tours AG from given list]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on proceed button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on sales dropdown in Dashboard]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on sales Booking in Dashboard]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on create Button in sales Booking page]]>
+    </line>
+    <line>
+      <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
+    </line>
+    <line>
+      <![CDATA[Select TFT1 in TravelType dropdownList]]>
+    </line>
+    <line>
+      <![CDATA[Selected HK004 - (TEST) from dropdown list]]>
+    </line>
+    <line>
+      <![CDATA[Send Booking action]]>
+    </line>
+    <line>
+      <![CDATA[Send number of passengers]]>
+    </line>
+    <line>
+      <![CDATA[Send correct KOS in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send correct ProductCode in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send roomcode in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send correct boardName]]>
+    </line>
+    <line>
+      <![CDATA[Send Occupancy]]>
+    </line>
+    <line>
+      <![CDATA[Send bookinglines ]]>
+    </line>
+    <line>
+      <![CDATA[Send Travel from date]]>
+    </line>
+    <line>
+      <![CDATA[Send Travel To date]]>
+    </line>
+    <line>
+      <![CDATA[Send Number of passenger]]>
+    </line>
+    <line>
+      <![CDATA[Send correct KOS in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send correct ProductCode in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send roomcode in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send correct boardName]]>
+    </line>
+    <line>
+      <![CDATA[Send Occupancy]]>
+    </line>
+    <line>
+      <![CDATA[Send bookinglines ]]>
+    </line>
+    <line>
+      <![CDATA[Send Travel from date]]>
+    </line>
+    <line>
+      <![CDATA[Send Travel To date ]]>
+    </line>
+    <line>
+      <![CDATA[Send Number of passenger]]>
+    </line>
+    <line>
+      <![CDATA[Click on sendBookingButton]]>
+    </line>
+    <line>
+      <![CDATA[Validating Actual Message for season-E is Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                 and Expected Message for season-E is Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on Logout Button in Booking Mask page]]>
+    </line>
+    <line>
+      <![CDATA[Logout from Booking Mask Page]]>
+    </line>
+    <line>
+      <![CDATA[Valid Username Entered]]>
+    </line>
+    <line>
+      <![CDATA[Valid Password Entered]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Dashboard button]]>
+    </line>
+    <line>
+      <![CDATA[Select the Falk Tours AG from given list]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on proceed button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on sales dropdown in Dashboard]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on sales Booking in Dashboard]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on create Button in sales Booking page]]>
+    </line>
+    <line>
+      <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
+    </line>
+    <line>
+      <![CDATA[Select TFT1 in TravelType dropdownList]]>
+    </line>
+    <line>
+      <![CDATA[Selected HK004 - (TEST) from dropdown list]]>
+    </line>
+    <line>
+      <![CDATA[Send Booking action]]>
+    </line>
+    <line>
+      <![CDATA[Send number of passengers]]>
+    </line>
+    <line>
+      <![CDATA[Send correct KOS in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send correct ProductCode in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send roomcode in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send correct boardName]]>
+    </line>
+    <line>
+      <![CDATA[Send Occupancy]]>
+    </line>
+    <line>
+      <![CDATA[Send bookinglines ]]>
+    </line>
+    <line>
+      <![CDATA[Send Travel from date]]>
+    </line>
+    <line>
+      <![CDATA[Send Travel To date]]>
+    </line>
+    <line>
+      <![CDATA[Select Number of passenger]]>
+    </line>
+    <line>
+      <![CDATA[Send correct KOS in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send correct ProductCode in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send roomcode in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send correct boardName]]>
+    </line>
+    <line>
+      <![CDATA[Send Occupancy]]>
+    </line>
+    <line>
+      <![CDATA[Send bookinglines ]]>
+    </line>
+    <line>
+      <![CDATA[Send Travel from date]]>
+    </line>
+    <line>
+      <![CDATA[Send Travel To date ]]>
+    </line>
+    <line>
+      <![CDATA[Select Number of passenger]]>
+    </line>
+    <line>
+      <![CDATA[Click on sendBookingButton]]>
+    </line>
+    <line>
+      <![CDATA[Validating Actual Message for season-E is Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                 and Expected Message for season-E is Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on Logout Button in Booking Mask page]]>
+    </line>
+    <line>
+      <![CDATA[Logout from Booking Mask Page]]>
+    </line>
+    <line>
+      <![CDATA[Closing Browser]]>
+    </line>
+    <line>
+      <![CDATA[Browser Launch ]]>
+    </line>
+    <line>
+      <![CDATA[Valid Username Entered]]>
+    </line>
+    <line>
+      <![CDATA[Valid Password Entered]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Dashboard button]]>
+    </line>
+    <line>
+      <![CDATA[Select the Falk Tours AG from given list]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on proceed button]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on sales dropdown in Dashboard]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on sales Booking in Dashboard]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on create Button in sales Booking page]]>
+    </line>
+    <line>
+      <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
+    </line>
+    <line>
+      <![CDATA[Select TFT1 in TravelType dropdownList]]>
+    </line>
+    <line>
+      <![CDATA[Selected HK004 - (TEST) from dropdown list]]>
+    </line>
+    <line>
+      <![CDATA[Send Booking action]]>
+    </line>
+    <line>
+      <![CDATA[Send number of passengers]]>
+    </line>
+    <line>
+      <![CDATA[Send correct KOS in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send correct ProductCode in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send roomcode in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send correct boardName]]>
+    </line>
+    <line>
+      <![CDATA[Send Occupancy]]>
+    </line>
+    <line>
+      <![CDATA[Send bookinglines ]]>
+    </line>
+    <line>
+      <![CDATA[Send Travel from date]]>
+    </line>
+    <line>
+      <![CDATA[Send Travel To date]]>
+    </line>
+    <line>
+      <![CDATA[Send Number of passenger]]>
+    </line>
+    <line>
+      <![CDATA[Send correct KOS2 in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send correct ProductCode in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send roomcode in input field]]>
+    </line>
+    <line>
+      <![CDATA[Send correct boardName]]>
+    </line>
+    <line>
+      <![CDATA[Send Occupancy]]>
+    </line>
+    <line>
+      <![CDATA[Send bookinglines ]]>
+    </line>
+    <line>
+      <![CDATA[Send Travel from date to second line]]>
+    </line>
+    <line>
+      <![CDATA[Send Travel To date to second line]]>
+    </line>
+    <line>
+      <![CDATA[Send Number of passenger]]>
+    </line>
+    <line>
+      <![CDATA[Click on sendBookingButton]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on ViewList]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on sendTBMcode to verify booking is done or not]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Booking listButton]]>
+    </line>
+    <line>
+      <![CDATA[Send TBM code]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Booking listButton]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on edit booking1]]>
+    </line>
+    <line>
+      <![CDATA[Send Modified Travel from date]]>
+    </line>
+    <line>
+      <![CDATA[Send Modified Travel To date]]>
+    </line>
+    <line>
+      <![CDATA[Send Modified Travel from date]]>
+    </line>
+    <line>
+      <![CDATA[Send Modified Travel To date]]>
+    </line>
+    <line>
+      <![CDATA[Click on sendBookingButton]]>
+    </line>
+    <line>
+      <![CDATA[Clicking on Logout Button in Booking Mask page]]>
+    </line>
+    <line>
+      <![CDATA[Logout from Booking Mask Page]]>
+    </line>
+    <line>
+      <![CDATA[Closing Browser]]>
+    </line>
     <line>
       <![CDATA[Browser Launch ]]>
     </line>
@@ -278,19 +866,19 @@
       <![CDATA[Closing Browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-07-24T18:35:57 IST" name="Default suite" finished-at="2023-07-24T18:38:37 IST" duration-ms="159038">
+  <suite started-at="2023-07-27T16:31:07 IST" name="Suite" finished-at="2023-07-27T16:40:39 IST" duration-ms="572709">
     <groups>
     </groups>
-    <test started-at="2023-07-24T18:35:57 IST" name="Default test" finished-at="2023-07-24T18:38:37 IST" duration-ms="159038">
-      <class name="Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48@34e9fd99]" started-at="2023-07-24T18:35:57 IST" name="launchBrowser" finished-at="2023-07-24T18:36:05 IST" duration-ms="7566" status="PASS">
+    <test started-at="2023-07-27T16:31:07 IST" name="Priority1_Booking_Allotment" finished-at="2023-07-27T16:40:39 IST" duration-ms="572709">
+      <class name="Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46@7e6f74c]" started-at="2023-07-27T16:36:21 IST" name="launchBrowser" finished-at="2023-07-27T16:36:27 IST" duration-ms="5146" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser Launch ]]>
             </line>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48@34e9fd99]" started-at="2023-07-24T18:36:05 IST" name="loginToApp" finished-at="2023-07-24T18:36:21 IST" duration-ms="15933" status="PASS">
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46@7e6f74c]" started-at="2023-07-27T16:36:27 IST" name="loginToApp" finished-at="2023-07-27T16:36:41 IST" duration-ms="14034" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Valid Username Entered]]>
@@ -309,7 +897,855 @@
             </line>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method signature="validateMultisalesLineBookingWhenNoAllotment()[pri:1, instance:Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48@34e9fd99]" started-at="2023-07-24T18:36:21 IST" name="validateMultisalesLineBookingWhenNoAllotment" finished-at="2023-07-24T18:37:23 IST" duration-ms="61564" status="FAIL">
+        <test-method signature="validateModifiedMultisalesBookingPrice()[pri:1, instance:Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46@7e6f74c]" started-at="2023-07-27T16:36:41 IST" name="validateModifiedMultisalesBookingPrice" finished-at="2023-07-27T16:37:53 IST" duration-ms="72711" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#bookinglines_Price_1"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2929f570805c5eef0968447857f9b212, findElement {using=id, value=bookinglines_Price_1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52385}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52385/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2929f570805c5eef0968447857f9b212]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#bookinglines_Price_1"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2929f570805c5eef0968447857f9b212, findElement {using=id, value=bookinglines_Price_1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52385}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52385/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2929f570805c5eef0968447857f9b212
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.getAttribute(Unknown Source)
+at POM.bookingMaskPage.getPriceFieldValue1(bookingMaskPage.java:475)
+at Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46.validateModifiedMultisalesBookingPrice(mofifyMultisalesLineBookingTC45TC46.java:235)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on sales dropdown in Dashboard]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on sales Booking in Dashboard]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on create Button in sales Booking page]]>
+            </line>
+            <line>
+              <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
+            </line>
+            <line>
+              <![CDATA[Select TFT1 in TravelType dropdownList]]>
+            </line>
+            <line>
+              <![CDATA[Selected HK004 - (TEST) from dropdown list]]>
+            </line>
+            <line>
+              <![CDATA[Send Booking action]]>
+            </line>
+            <line>
+              <![CDATA[Send number of passengers]]>
+            </line>
+            <line>
+              <![CDATA[Send correct KOS in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send correct ProductCode in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send roomcode in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send correct boardName]]>
+            </line>
+            <line>
+              <![CDATA[Send Occupancy]]>
+            </line>
+            <line>
+              <![CDATA[Send bookinglines ]]>
+            </line>
+            <line>
+              <![CDATA[Send Travel from date]]>
+            </line>
+            <line>
+              <![CDATA[Send Travel To date]]>
+            </line>
+            <line>
+              <![CDATA[Send Number of passenger]]>
+            </line>
+            <line>
+              <![CDATA[Send correct KOS2 in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send correct ProductCode in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send roomcode in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send correct boardName]]>
+            </line>
+            <line>
+              <![CDATA[Send Occupancy]]>
+            </line>
+            <line>
+              <![CDATA[Send bookinglines ]]>
+            </line>
+            <line>
+              <![CDATA[Send Travel from date to second line]]>
+            </line>
+            <line>
+              <![CDATA[Send Travel To date to second line]]>
+            </line>
+            <line>
+              <![CDATA[Send Number of passenger]]>
+            </line>
+            <line>
+              <![CDATA[Click on sendBookingButton]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on ViewList]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on sendTBMcode to verify booking is done or not]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Booking listButton]]>
+            </line>
+            <line>
+              <![CDATA[Send TBM code]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Booking listButton]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on edit booking1]]>
+            </line>
+            <line>
+              <![CDATA[Send Modified Travel from date]]>
+            </line>
+            <line>
+              <![CDATA[Send Modified Travel To date]]>
+            </line>
+            <line>
+              <![CDATA[Send Modified Travel from date]]>
+            </line>
+            <line>
+              <![CDATA[Send Modified Travel To date]]>
+            </line>
+            <line>
+              <![CDATA[Click on sendBookingButton]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateModifiedMultisalesBookingPrice -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46@7e6f74c]" started-at="2023-07-27T16:37:53 IST" name="Logout" finished-at="2023-07-27T16:37:57 IST" duration-ms="3282" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicking on Logout Button in Booking Mask page]]>
+            </line>
+            <line>
+              <![CDATA[Logout from Booking Mask Page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46@7e6f74c]" started-at="2023-07-27T16:37:57 IST" name="closeBrowser" finished-at="2023-07-27T16:37:57 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46 -->
+      <class name="Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09@327514f]" started-at="2023-07-27T16:31:07 IST" name="launchBrowser" finished-at="2023-07-27T16:31:13 IST" duration-ms="6471" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Launch ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09@327514f]" started-at="2023-07-27T16:31:13 IST" name="loginToApp" finished-at="2023-07-27T16:31:44 IST" duration-ms="30594" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Valid Username Entered]]>
+            </line>
+            <line>
+              <![CDATA[Valid Password Entered]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Dashboard button]]>
+            </line>
+            <line>
+              <![CDATA[Select the Falk Tours AG from given list]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on proceed button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on purchase option]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on accommodation option in list]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Allotment ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="validateApplyStopSales()[pri:1, instance:Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09@327514f]" started-at="2023-07-27T16:31:44 IST" name="validateApplyStopSales" finished-at="2023-07-27T16:32:09 IST" duration-ms="25625" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Send start date of season_E on allotment page]]>
+            </line>
+            <line>
+              <![CDATA[Send end date of season_E on allotment page]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on load allotment]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Change allotment button]]>
+            </line>
+            <line>
+              <![CDATA[Enter start date for room1]]>
+            </line>
+            <line>
+              <![CDATA[Enter until date for room1]]>
+            </line>
+            <line>
+              <![CDATA[Send start date of season_E on allotment page]]>
+            </line>
+            <line>
+              <![CDATA[Send end date of season_E on allotment page]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on load Allotment]]>
+            </line>
+            <line>
+              <![CDATA[Validating Actual initial allotment is 5 and Expected allotment for season_E is 5]]>
+            </line>
+            <line>
+              <![CDATA[Validating Actual current allotment is 10 and Expected allotment for season_E is 10]]>
+            </line>
+            <line>
+              <![CDATA[Validating Actual remaining allotment is 7 and Expected allotment for season_E is 7]]>
+            </line>
+            <line>
+              <![CDATA[Validating Actual Stop sale text is STOP and Expected stop sales text for season_E is STOP]]>
+            </line>
+            <line>
+              <![CDATA[Validating Actual sold allotment is 10 and Expected allotment for season_E is 10]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateApplyStopSales -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09@327514f]" started-at="2023-07-27T16:32:09 IST" name="Logout" finished-at="2023-07-27T16:32:15 IST" duration-ms="5345" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicking on Logout Button]]>
+            </line>
+            <line>
+              <![CDATA[Logout from allotment]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09@327514f]" started-at="2023-07-27T16:32:15 IST" name="closeBrowser" finished-at="2023-07-27T16:32:15 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Booking_AllotmentTestCases.verifyAllotmentwithRoomBooking_TC07andTC09 -->
+      <class name="Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44@44c03695]" started-at="2023-07-27T16:34:38 IST" name="launchBrowser" finished-at="2023-07-27T16:34:43 IST" duration-ms="5098" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Launch ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44@44c03695]" started-at="2023-07-27T16:34:43 IST" name="loginToApp" finished-at="2023-07-27T16:34:57 IST" duration-ms="13883" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Valid Username Entered]]>
+            </line>
+            <line>
+              <![CDATA[Valid Password Entered]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Dashboard button]]>
+            </line>
+            <line>
+              <![CDATA[Select the Falk Tours AG from given list]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on proceed button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="validateMultisalesLineBookingWhenNoAllotment()[pri:1, instance:Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44@44c03695]" started-at="2023-07-27T16:34:57 IST" name="validateMultisalesLineBookingWhenNoAllotment" finished-at="2023-07-27T16:35:30 IST" duration-ms="33005" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on sales dropdown in Dashboard]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on sales Booking in Dashboard]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on create Button in sales Booking page]]>
+            </line>
+            <line>
+              <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
+            </line>
+            <line>
+              <![CDATA[Select TFT1 in TravelType dropdownList]]>
+            </line>
+            <line>
+              <![CDATA[Selected HK004 - (TEST) from dropdown list]]>
+            </line>
+            <line>
+              <![CDATA[Send Booking action]]>
+            </line>
+            <line>
+              <![CDATA[Send number of passengers]]>
+            </line>
+            <line>
+              <![CDATA[Send correct KOS in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send correct ProductCode in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send roomcode in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send correct boardName]]>
+            </line>
+            <line>
+              <![CDATA[Send Occupancy]]>
+            </line>
+            <line>
+              <![CDATA[Send bookinglines ]]>
+            </line>
+            <line>
+              <![CDATA[Send Travel from date]]>
+            </line>
+            <line>
+              <![CDATA[Send Travel To date]]>
+            </line>
+            <line>
+              <![CDATA[Send Number of passenger]]>
+            </line>
+            <line>
+              <![CDATA[Send correct KOS in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send correct ProductCode in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send roomcode in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send correct boardName]]>
+            </line>
+            <line>
+              <![CDATA[Send Occupancy]]>
+            </line>
+            <line>
+              <![CDATA[Send bookinglines ]]>
+            </line>
+            <line>
+              <![CDATA[Send Travel from date]]>
+            </line>
+            <line>
+              <![CDATA[Send Travel To date ]]>
+            </line>
+            <line>
+              <![CDATA[Send Number of passenger]]>
+            </line>
+            <line>
+              <![CDATA[Click on sendBookingButton]]>
+            </line>
+            <line>
+              <![CDATA[Validating Actual Message for season-E is Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                 and Expected Message for season-E is Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateMultisalesLineBookingWhenNoAllotment -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44@44c03695]" started-at="2023-07-27T16:35:30 IST" name="Logout" finished-at="2023-07-27T16:35:34 IST" duration-ms="4603" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicking on Logout Button in Booking Mask page]]>
+            </line>
+            <line>
+              <![CDATA[Logout from Booking Mask Page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44@44c03695]" started-at="2023-07-27T16:35:34 IST" name="loginToApp" finished-at="2023-07-27T16:35:46 IST" duration-ms="11781" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Valid Username Entered]]>
+            </line>
+            <line>
+              <![CDATA[Valid Password Entered]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Dashboard button]]>
+            </line>
+            <line>
+              <![CDATA[Select the Falk Tours AG from given list]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on proceed button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="validateMultisalesLineBookingWhenOneRoomHasAllotment()[pri:2, instance:Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44@44c03695]" started-at="2023-07-27T16:35:46 IST" name="validateMultisalesLineBookingWhenOneRoomHasAllotment" finished-at="2023-07-27T16:36:17 IST" duration-ms="31006" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on sales dropdown in Dashboard]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on sales Booking in Dashboard]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on create Button in sales Booking page]]>
+            </line>
+            <line>
+              <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
+            </line>
+            <line>
+              <![CDATA[Select TFT1 in TravelType dropdownList]]>
+            </line>
+            <line>
+              <![CDATA[Selected HK004 - (TEST) from dropdown list]]>
+            </line>
+            <line>
+              <![CDATA[Send Booking action]]>
+            </line>
+            <line>
+              <![CDATA[Send number of passengers]]>
+            </line>
+            <line>
+              <![CDATA[Send correct KOS in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send correct ProductCode in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send roomcode in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send correct boardName]]>
+            </line>
+            <line>
+              <![CDATA[Send Occupancy]]>
+            </line>
+            <line>
+              <![CDATA[Send bookinglines ]]>
+            </line>
+            <line>
+              <![CDATA[Send Travel from date]]>
+            </line>
+            <line>
+              <![CDATA[Send Travel To date]]>
+            </line>
+            <line>
+              <![CDATA[Select Number of passenger]]>
+            </line>
+            <line>
+              <![CDATA[Send correct KOS in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send correct ProductCode in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send roomcode in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send correct boardName]]>
+            </line>
+            <line>
+              <![CDATA[Send Occupancy]]>
+            </line>
+            <line>
+              <![CDATA[Send bookinglines ]]>
+            </line>
+            <line>
+              <![CDATA[Send Travel from date]]>
+            </line>
+            <line>
+              <![CDATA[Send Travel To date ]]>
+            </line>
+            <line>
+              <![CDATA[Select Number of passenger]]>
+            </line>
+            <line>
+              <![CDATA[Click on sendBookingButton]]>
+            </line>
+            <line>
+              <![CDATA[Validating Actual Message for season-E is Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                 and Expected Message for season-E is Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateMultisalesLineBookingWhenOneRoomHasAllotment -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44@44c03695]" started-at="2023-07-27T16:36:17 IST" name="Logout" finished-at="2023-07-27T16:36:21 IST" duration-ms="4274" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicking on Logout Button in Booking Mask page]]>
+            </line>
+            <line>
+              <![CDATA[Logout from Booking Mask Page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44@44c03695]" started-at="2023-07-27T16:36:21 IST" name="closeBrowser" finished-at="2023-07-27T16:36:21 IST" duration-ms="124" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Booking_AllotmentTestCases.createNewMultisalesLineBookingWithAllotmentTC43TC44 -->
+      <class name="Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12@6150c3ec]" started-at="2023-07-27T16:32:15 IST" name="launchBrowser" finished-at="2023-07-27T16:32:21 IST" duration-ms="6736" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Launch ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12@6150c3ec]" started-at="2023-07-27T16:32:21 IST" name="loginToApp" finished-at="2023-07-27T16:32:57 IST" duration-ms="35411" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Valid Username Entered]]>
+            </line>
+            <line>
+              <![CDATA[Valid Password Entered]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Dashboard button]]>
+            </line>
+            <line>
+              <![CDATA[Select the Falk Tours AG from given list]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on proceed button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on purchase option]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on accommodation option in list]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Allotment ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="validateBookingAfterStopSalesWithDatesInsideStopSalesDuration()[pri:1, instance:Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12@6150c3ec]" started-at="2023-07-27T16:32:57 IST" name="validateBookingAfterStopSalesWithDatesInsideStopSalesDuration" finished-at="2023-07-27T16:33:59 IST" duration-ms="61910" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Send start date of season_E on allotment page]]>
+            </line>
+            <line>
+              <![CDATA[Send end date of season_E on allotment page]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on load allotment]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Change allotment button]]>
+            </line>
+            <line>
+              <![CDATA[Enter start date for room1]]>
+            </line>
+            <line>
+              <![CDATA[Enter until date for room1]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on dashboardLink]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on sales dropdown in Dashboard]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on sales Booking in Dashboard]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on create Button in sales Booking page]]>
+            </line>
+            <line>
+              <![CDATA[Select Falk Tours AG in CompanyID dropdownList]]>
+            </line>
+            <line>
+              <![CDATA[Select TFT1 in TravelType dropdownList]]>
+            </line>
+            <line>
+              <![CDATA[Selected HK004 - (TEST) from dropdown list]]>
+            </line>
+            <line>
+              <![CDATA[Send Booking action]]>
+            </line>
+            <line>
+              <![CDATA[Send number of passenger]]>
+            </line>
+            <line>
+              <![CDATA[Send correct KOS in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send correct ProductCode in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send roomcode in input field]]>
+            </line>
+            <line>
+              <![CDATA[Send correct boardName]]>
+            </line>
+            <line>
+              <![CDATA[Send Occupancy]]>
+            </line>
+            <line>
+              <![CDATA[Send bookinglines ]]>
+            </line>
+            <line>
+              <![CDATA[Send Travel from date for season-E]]>
+            </line>
+            <line>
+              <![CDATA[Send Travel To date for season-E]]>
+            </line>
+            <line>
+              <![CDATA[Send Number of passenger]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on sendbookingButton]]>
+            </line>
+            <line>
+              <![CDATA[Validating Actual message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                 and Expected message Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateBookingAfterStopSalesWithDatesInsideStopSalesDuration -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12@6150c3ec]" started-at="2023-07-27T16:33:59 IST" name="Logout" finished-at="2023-07-27T16:34:04 IST" duration-ms="5057" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicking on Logout Button]]>
+            </line>
+            <line>
+              <![CDATA[Logout from allotment]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12@6150c3ec]" started-at="2023-07-27T16:34:04 IST" name="loginToApp" finished-at="2023-07-27T16:34:29 IST" duration-ms="25400" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Valid Username Entered]]>
+            </line>
+            <line>
+              <![CDATA[Valid Password Entered]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Dashboard button]]>
+            </line>
+            <line>
+              <![CDATA[Select the Falk Tours AG from given list]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on proceed button]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on purchase option]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on accommodation option in list]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Allotment ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="validateBookingAfterStopSalesWithDatesOutsideStopSalesDuration()[pri:2, instance:Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12@6150c3ec]" started-at="2023-07-27T16:34:29 IST" name="validateBookingAfterStopSalesWithDatesOutsideStopSalesDuration" finished-at="2023-07-27T16:34:33 IST" duration-ms="3311" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//table[@id='newAllotment']/tbody/tr[8]//td[3]"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f5fdbd76e4041b4d9f00968af276fc1c, findElement {using=xpath, value=//table[@id='newAllotment']/tbody/tr[8]//td[3]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52206}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52206/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f5fdbd76e4041b4d9f00968af276fc1c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//table[@id='newAllotment']/tbody/tr[8]//td[3]"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f5fdbd76e4041b4d9f00968af276fc1c, findElement {using=xpath, value=//table[@id='newAllotment']/tbody/tr[8]//td[3]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52206}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52206/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f5fdbd76e4041b4d9f00968af276fc1c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.getText(Unknown Source)
+at POM.allotmentPage.getInitialAllotRoom1R1C1(allotmentPage.java:262)
+at Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12.validateBookingAfterStopSalesWithDatesOutsideStopSalesDuration(verifyBookingAfterApplyStopSalesTC11andTC12.java:245)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Send start date of season_E on allotment page]]>
+            </line>
+            <line>
+              <![CDATA[Send end date of season_E on allotment page]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on load allotment]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateBookingAfterStopSalesWithDatesOutsideStopSalesDuration -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12@6150c3ec]" started-at="2023-07-27T16:34:33 IST" name="Logout" finished-at="2023-07-27T16:34:37 IST" duration-ms="4944" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicking on Logout Button]]>
+            </line>
+            <line>
+              <![CDATA[Logout from allotment]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12@6150c3ec]" started-at="2023-07-27T16:34:37 IST" name="closeBrowser" finished-at="2023-07-27T16:34:38 IST" duration-ms="145" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12 -->
+      <class name="Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48@dd05255]" started-at="2023-07-27T16:37:57 IST" name="launchBrowser" finished-at="2023-07-27T16:38:01 IST" duration-ms="4759" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser Launch ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48@dd05255]" started-at="2023-07-27T16:38:01 IST" name="loginToApp" finished-at="2023-07-27T16:38:15 IST" duration-ms="13728" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Valid Username Entered]]>
+            </line>
+            <line>
+              <![CDATA[Valid Password Entered]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Dashboard button]]>
+            </line>
+            <line>
+              <![CDATA[Select the Falk Tours AG from given list]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on proceed button]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+        <test-method signature="validateMultisalesLineBookingWhenNoAllotment()[pri:1, instance:Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48@dd05255]" started-at="2023-07-27T16:38:15 IST" name="validateMultisalesLineBookingWhenNoAllotment" finished-at="2023-07-27T16:39:07 IST" duration-ms="51381" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[TC failed as Actual message and expected message are not matching  expected [No booking found agaist the reservation number.                                                                                                                                                                                                                                                                                 ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]]]>
@@ -470,7 +1906,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- validateMultisalesLineBookingWhenNoAllotment -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48@34e9fd99]" started-at="2023-07-24T18:37:23 IST" name="Logout" finished-at="2023-07-24T18:37:27 IST" duration-ms="4449" status="PASS">
+        <test-method is-config="true" signature="Logout()[pri:0, instance:Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48@dd05255]" started-at="2023-07-27T16:39:07 IST" name="Logout" finished-at="2023-07-27T16:39:11 IST" duration-ms="4266" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Clicking on Logout Button in Booking Mask page]]>
@@ -480,7 +1916,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48@34e9fd99]" started-at="2023-07-24T18:37:27 IST" name="loginToApp" finished-at="2023-07-24T18:37:39 IST" duration-ms="12017" status="PASS">
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48@dd05255]" started-at="2023-07-27T16:39:11 IST" name="loginToApp" finished-at="2023-07-27T16:39:23 IST" duration-ms="12071" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Valid Username Entered]]>
@@ -499,19 +1935,50 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method signature="validateMultisalesLineBookingWhenOneRoomHasAllotment()[pri:2, instance:Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48@34e9fd99]" started-at="2023-07-24T18:37:39 IST" name="validateMultisalesLineBookingWhenOneRoomHasAllotment" finished-at="2023-07-24T18:38:32 IST" duration-ms="53090" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="validateMultisalesLineBookingWhenOneRoomHasAllotment()[pri:2, instance:Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48@dd05255]" started-at="2023-07-27T16:39:23 IST" name="validateMultisalesLineBookingWhenOneRoomHasAllotment" finished-at="2023-07-27T16:40:35 IST" duration-ms="71755" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[TC failed as Actual message and expected message are not matching  expected [No booking found agaist the reservation number.                                                                                                                                                                                                                                                                                 ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@id='div_SalesBookingLinePartial']//textarea)"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2969108aafa4932881a2ff2014930d61, findElement {using=xpath, value=(//div[@id='div_SalesBookingLinePartial']//textarea)}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2969108aafa4932881a2ff2014930d61]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: TC failed as Actual message and expected message are not matching  expected [No booking found agaist the reservation number.                                                                                                                                                                                                                                                                                 ] but found [Kontingent nicht mehr verfügbar.                                                                                                                                                                                                                                                                                                ]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48.validateMultisalesLineBookingWhenOneRoomHasAllotment(modifyMultisalesLineBookingTC47TC48.java:399)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[@id='div_SalesBookingLinePartial']//textarea)"}
+  (Session info: chrome=115.0.5790.110)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2969108aafa4932881a2ff2014930d61, findElement {using=xpath, value=(//div[@id='div_SalesBookingLinePartial']//textarea)}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52461/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2969108aafa4932881a2ff2014930d61
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.getText(Unknown Source)
+at POM.bookingMaskPage.getInvalidTravelDurationMsg(bookingMaskPage.java:1011)
+at Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48.validateMultisalesLineBookingWhenOneRoomHasAllotment(modifyMultisalesLineBookingTC47TC48.java:397)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -542,7 +2009,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[Clicked on sales dropdown in Dashboard]]>
@@ -660,7 +2127,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- validateMultisalesLineBookingWhenOneRoomHasAllotment -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48@34e9fd99]" started-at="2023-07-24T18:38:32 IST" name="Logout" finished-at="2023-07-24T18:38:36 IST" duration-ms="4274" status="PASS">
+        <test-method is-config="true" signature="Logout()[pri:0, instance:Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48@dd05255]" started-at="2023-07-27T16:40:35 IST" name="Logout" finished-at="2023-07-27T16:40:39 IST" duration-ms="4440" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Clicking on Logout Button in Booking Mask page]]>
@@ -670,7 +2137,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48@34e9fd99]" started-at="2023-07-24T18:38:36 IST" name="closeBrowser" finished-at="2023-07-24T18:38:37 IST" duration-ms="91" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48@dd05255]" started-at="2023-07-27T16:40:39 IST" name="closeBrowser" finished-at="2023-07-27T16:40:39 IST" duration-ms="109" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closing Browser]]>
@@ -678,6 +2145,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Priority1_Booking_Allotment -->
+  </suite> <!-- Suite -->
 </testng-results>

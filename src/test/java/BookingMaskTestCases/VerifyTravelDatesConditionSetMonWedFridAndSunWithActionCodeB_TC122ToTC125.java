@@ -269,7 +269,7 @@ public class VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122T
         
             String ActualMessage = BookingMask.getStayExceedErrorMessage();
     	    String expectedMessage = UtilityClass.readDataFromStringExcel(507, 3, "Sheet2");
-    	    Assert.assertEquals(expectedMessage,ActualMessage, "TC failed as Actual message and expected message are not matching ");
+    	    Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
     	    Reporter.log("Validating Actual message "+BookingMask.getStayExceedErrorMessage()+" and Expected message "+UtilityClass.readDataFromStringExcel(507, 3, "Sheet2"),true);
 	    }
 	    @Test (priority=3)
@@ -351,7 +351,7 @@ public class VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122T
         
             String ActualMessage = BookingMask.getStayExceedErrorMessage();
     	    String expectedMessage = UtilityClass.readDataFromStringExcel(507, 4, "Sheet2");
-    	    Assert.assertEquals(expectedMessage,ActualMessage, "TC failed as Actual message and expected message are not matching ");
+    	    Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
     	    Reporter.log("Validating Actual message "+BookingMask.getStayExceedErrorMessage()+" and Expected message "+UtilityClass.readDataFromStringExcel(507, 4, "Sheet2"),true);
 	    }
 	    
@@ -434,7 +434,7 @@ public class VerifyTravelDatesConditionSetMonWedFridAndSunWithActionCodeB_TC122T
         
             String ActualMessage = BookingMask.getStayExceedErrorMessage();
     	    String expectedMessage = UtilityClass.readDataFromStringExcel(522, 1, "Sheet2");
-    	    Assert.assertEquals(expectedMessage,ActualMessage, "TC failed as Actual message and expected message are not matching ");
+    	    Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
     	    Reporter.log("Validating Actual message "+BookingMask.getStayExceedErrorMessage()+" and Expected message "+UtilityClass.readDataFromStringExcel(522, 1, "Sheet2"),true);
 	    }
     	    

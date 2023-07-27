@@ -3,16 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48">
+      <class name="BookingMaskTestCases.MultisaleslineBookingWithDiffDateAndLessthanMinStay_TC149">
         <methods>
-          <include name="validateMultisalesLineBookingWhenNoAllotment"/>
           <include name="Logout"/>
-          <include name="loginToApp"/>
           <include name="launchBrowser"/>
           <include name="closeBrowser"/>
-          <include name="validateMultisalesLineBookingWhenOneRoomHasAllotment"/>
+          <include name="validategetmultisalesLinesBookingErrorMsgwithInValidStay"/>
+          <include name="loginToApp"/>
         </methods>
-      </class> <!-- Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48 -->
+      </class> <!-- BookingMaskTestCases.MultisaleslineBookingWithDiffDateAndLessthanMinStay_TC149 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

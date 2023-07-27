@@ -81,10 +81,10 @@ import POM.DashboardPage;
 	    		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		UtilityClass.implicitlyWaitInMillis(3000);
-	    		Thread.sleep(1000);
+	    		Thread.sleep(3000);
 	    		
-	    		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
-	    		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
+	    		UtilityClass.listBoxHandlingUsingByText("HK001  - (TESTING)", BookingMask.productCodeDropDownMethod());
+	    		Reporter.log("Selected HK039  - (TESTING) from dropdown list",true);
 	    		Thread.sleep(1000);
 	    		UtilityClass.scrollByAxis(0, 300);
 	    		Thread.sleep(1000);
@@ -93,8 +93,8 @@ import POM.DashboardPage;
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
 	    		Thread.sleep(1500);
 	    		
-	    		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
-	    		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
+	    		UtilityClass.listBoxHandlingUsingByText("HK001  - (TESTING)", BookingMask.productCodeDropDownMethod());
+	    		Reporter.log("Selected HK001  - (TESTING) from dropdown list",true);
 	    		Thread.sleep(1000);
 	    		
 	    		UtilityClass.scrollByAxis(0, 300);

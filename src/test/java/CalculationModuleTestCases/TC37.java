@@ -6,6 +6,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Iterator;
+import java.util.Locale;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.xmlbeans.impl.xb.xsdschema.ListDocument.List;
@@ -74,6 +75,12 @@ public class TC37 extends BaseClass {
 	String CostPriceSeasonEE;String CostPriceSeasonFF;String CostPriceSeasonGG;String CostPriceSeasonHH;
 	String value11;
 	String value12;
+	String A_Season;
+	String SeasonA_FromDate; String SeasonB_FromDate; String SeasonC_FromDate;String SeasonD_FromDate;
+	String SeasonE_FromDate;String SeasonF_FromDate;String SeasonG_FromDate;String SeasonH_FromDate;
+	String SeasonA_untilDate;String SeasonB_untilDate;String SeasonC_untilDate;String SeasonD_untilDate;
+	String SeasonE_untilDate;String SeasonF_untilDate;String SeasonG_untilDate;String SeasonH_untilDate;
+	
 	
 	@BeforeClass
 	public void launchBrowser(){
@@ -102,7 +109,7 @@ public class TC37 extends BaseClass {
 	}
 	
 	@BeforeMethod
-	public void loginToAApp() throws EncryptedDocumentException, IOException, InterruptedException
+	public void loginToAApp() throws EncryptedDocumentException, IOException, InterruptedException, ParseException
 	{
 		login.SendUserName(UtilityClass.readDataFromStringExcel(5, 1, "Sheet2"));
 		Reporter.log("Valid Username Entered",true);
@@ -381,10 +388,7 @@ public class TC37 extends BaseClass {
         Thread.sleep(9000);
         price.clickOnOkPopUp();
         Thread.sleep(1000);
-        
-        String value = driver.findElement(By.id("seasonModel_SeasonAFrom")).getAttribute("value");
-        System.out.println("The Value is "+value);
-        
+     
         //Season Prices get in Contract.
         
         String Season_Aprice = price.getSeasonApriceRoom1_A("value");
@@ -411,6 +415,7 @@ public class TC37 extends BaseClass {
         String Season_Hprice = price.getseasonHpriceRoom1_H("value");
         Season_Hprice1=Season_Hprice;
         
+        
         //Season Names get in Price.
         
         String Season_AName = price.getSeasonAtext();
@@ -436,7 +441,104 @@ public class TC37 extends BaseClass {
         
         String Season_HName = price.getSeasonHtext();
         NameH=Season_HName;
-      
+        
+        // From and To dates get
+        
+        String Season_AFrom = price.getSeason_AfromDate("value"); 
+        SeasonA_FromDate = Season_AFrom;
+        String Season_Auntil = price.getSeason_AuntilDate("value");
+        SeasonA_untilDate = Season_Auntil;
+        
+        String Season_BFrom = price.getSeason_BfromDate("value");
+        SeasonB_FromDate = Season_BFrom;
+        String Season_Buntil = price.getSeason_BuntilDate("value");
+        SeasonB_untilDate = Season_BFrom;
+       
+        String Season_CFrom = price.getSeason_CfromDate("value");
+        SeasonC_FromDate = Season_CFrom;
+        String Season_Cuntil = price.getSeason_CuntilDate("value");
+        SeasonC_untilDate = Season_Cuntil;
+        
+        String Season_Dfrom = price.getSeason_DfromDate("value");
+        SeasonD_FromDate = Season_Dfrom;
+        String Season_Duntil = price.getSeason_DuntilDate("value");
+        SeasonD_untilDate = Season_Duntil;
+        
+        String Season_EFrom = price.getSeason_EfromDate("value");
+        SeasonE_FromDate = Season_EFrom;
+        String Season_Euntil = price.getSeason_EuntilDate("value");
+        SeasonE_untilDate = Season_Euntil;
+        
+        String Season_FFrom = price.getSeason_FfromDate("value");
+        SeasonF_FromDate = Season_FFrom;
+        String Season_Funtil = price.getSeason_FuntilDate("value");
+        SeasonF_untilDate = Season_Funtil;
+        
+        String Season_GFrom = price.getSeason_GfromDate("value");
+        SeasonG_FromDate = Season_GFrom;
+        String Season_Guntil = price.getSeason_GuntilDate("value");
+        SeasonG_untilDate = Season_Guntil;
+        
+        String Season_HFrom = price.getSeason_HfromDate("value");
+        SeasonH_FromDate = Season_HFrom;
+        String Season_Huntil = price.getSeason_HuntilDate("value");
+        SeasonH_untilDate = Season_Huntil;
+        
+        //Season_A date conversion
+        SimpleDateFormat Season_AfromoriginalDateFormat = new SimpleDateFormat("dd.MM.yy", Locale.ENGLISH);
+        Date SeasonFromA_originalDate = Season_AfromoriginalDateFormat.parse(Season_AFrom);
+        SimpleDateFormat Season_AfrommonthNameFormat = new SimpleDateFormat("MMMM", Locale.ENGLISH);
+        String monthNameSeasonFrom_A = Season_AfrommonthNameFormat.format(SeasonFromA_originalDate);
+        SimpleDateFormat formattedDateFormatSeasonFromA = new SimpleDateFormat("dd MMMM yy", Locale.ENGLISH);
+        
+        String SeasonFromA_ConvertedDate = formattedDateFormatSeasonFromA.format(SeasonFromA_originalDate);
+        System.out.println("Converted date: " + SeasonFromA_ConvertedDate);
+        
+        SimpleDateFormat Season_AuntiloriginalDateFormat = new SimpleDateFormat("dd.MM.yy", Locale.ENGLISH);
+        Date SeasonUntilA_originalDate = Season_AfromoriginalDateFormat.parse(Season_Auntil);
+        SimpleDateFormat Season_AuntilmonthNameFormat = new SimpleDateFormat("MMMM", Locale.ENGLISH);
+        String monthNameSeasonUntil_A = Season_AfrommonthNameFormat.format(SeasonFromA_originalDate);
+        SimpleDateFormat formattedDateFormatSeasonUntilA = new SimpleDateFormat("dd MMMM yy", Locale.ENGLISH);
+        
+        String SeasonUntilA_ConvertedDate = formattedDateFormatSeasonUntilA.format(SeasonUntilA_originalDate);
+        System.out.println("Converted date: " + SeasonUntilA_ConvertedDate);
+        
+        //Season_B date conversion
+        SimpleDateFormat Season_BfromoriginalDateFormat = new SimpleDateFormat("dd.MM.yy", Locale.ENGLISH);
+        Date SeasonFromB_originalDate = Season_BfromoriginalDateFormat.parse(Season_AFrom);
+        SimpleDateFormat Season_BfrommonthNameFormat = new SimpleDateFormat("MMMM", Locale.ENGLISH);
+        String monthNameSeasonFrom_B = Season_BfrommonthNameFormat.format(SeasonFromA_originalDate);
+        SimpleDateFormat formattedDateFormatSeasonFromB = new SimpleDateFormat("dd MMMM yy", Locale.ENGLISH);
+        
+        String SeasonFromB_ConvertedDate = formattedDateFormatSeasonFromB.format(SeasonFromA_originalDate);
+        System.out.println("Converted date: " + SeasonFromB_ConvertedDate);
+        
+        SimpleDateFormat Season_BuntiloriginalDateFormat = new SimpleDateFormat("dd.MM.yy", Locale.ENGLISH);
+        Date SeasonUntilB_originalDate = Season_AfromoriginalDateFormat.parse(Season_Auntil);
+        SimpleDateFormat Season_BuntilmonthNameFormat = new SimpleDateFormat("MMMM", Locale.ENGLISH);
+        String monthNameSeasonUntil_B = Season_AfrommonthNameFormat.format(SeasonFromB_originalDate);
+        SimpleDateFormat formattedDateFormatSeasonUntilB = new SimpleDateFormat("dd MMMM yy", Locale.ENGLISH);
+        
+        String SeasonUntilB_ConvertedDate = formattedDateFormatSeasonUntilA.format(SeasonUntilB_originalDate);
+        System.out.println("Converted date: " + SeasonUntilB_ConvertedDate);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         price.clickOnDashboardLinkByJSE();
         Reporter.log("Clicked on dashboardLink to navigate to dashboard page",true);
         UtilityClass.implicitlyWaitInMillis(12000);
@@ -523,72 +625,72 @@ public class TC37 extends BaseClass {
     	
     	Boolean CheckBox2 = CalculationSettingRoomsDetail.isSeasonA_AllDayCheckBox1();
     	System.out.println("The checkbox2 is selected  "+CheckBox2);
-    	    Thread.sleep(1000); 
-    		UtilityClass.scrollByAxis(0, 400);
-    		calculationSetting.clickOnsavePrice();
-    		Reporter.log("Clicked on Save price",true);
-    		Thread.sleep(3000);
+    	Thread.sleep(1000); 
+    	UtilityClass.scrollByAxis(0, 400);
+    	calculationSetting.clickOnsavePrice();
+    	Reporter.log("Clicked on Save price",true);
+    	Thread.sleep(3000);
     		
-    	    // Season prices in offer calculation.
+    	// Season prices in offer calculation.
     	    
-    	    String CostPriceSeasosn_A1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonA();
-    	    CostPriceSeasonAA=CostPriceSeasosn_A1;
+    	String CostPriceSeasosn_A1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonA();
+        CostPriceSeasonAA=CostPriceSeasosn_A1;
     	    
-    	    String CostPriceSeasosn_B1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonB();
-    	    CostPriceSeasonBB=CostPriceSeasosn_B1;
+    	String CostPriceSeasosn_B1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonB();
+    	CostPriceSeasonBB=CostPriceSeasosn_B1;
     	    
-    	    String CostPriceSeasosn_C1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonC();
-    	    CostPriceSeasonCC=CostPriceSeasosn_C1;
+    	String CostPriceSeasosn_C1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonC();
+    	CostPriceSeasonCC=CostPriceSeasosn_C1;
     	    
-    	    String CostPriceSeasosn_D1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonD();
-    	    CostPriceSeasonDD=CostPriceSeasosn_D1;
+    	String CostPriceSeasosn_D1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonD();
+    	CostPriceSeasonDD=CostPriceSeasosn_D1;
     	    
-    	    String CostPriceSeasosn_E1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonE();
-    	    CostPriceSeasonEE=CostPriceSeasosn_E1;
+    	String CostPriceSeasosn_E1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonE();
+    	CostPriceSeasonEE=CostPriceSeasosn_E1;
      	
-    	    String CostPriceSeasosn_F1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonF();
-    	    CostPriceSeasonFF=CostPriceSeasosn_F1;
+    	String CostPriceSeasosn_F1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonF();
+    	CostPriceSeasonFF=CostPriceSeasosn_F1;
     	    
-    	    String CostPriceSeasosn_G1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonG();
-    	    CostPriceSeasonGG=CostPriceSeasosn_G1;
+    	String CostPriceSeasosn_G1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonG();
+    	CostPriceSeasonGG=CostPriceSeasosn_G1;
     	    
-    	    String CostPriceSeasosn_H1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonH();
-    	    CostPriceSeasonHH=CostPriceSeasosn_H1;
+    	String CostPriceSeasosn_H1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonH();
+    	CostPriceSeasonHH=CostPriceSeasosn_H1;
     	    
-    	    //Season names with Calculation Page.
+    	 //Season names with Calculation Page.
     	    
-    	    String SeasonName = CalculationSettingRoomsDetail.getSeasonName();
-    	    String A = CalculationSettingRoomsDetail.getTextA();
-    	    String Season_A= SeasonName + (" " +A);
-    	    SeasonA = Season_A;
+    	String SeasonName = CalculationSettingRoomsDetail.getSeasonName();
+    	String A = CalculationSettingRoomsDetail.getTextA();
+    	String Season_A= SeasonName + (" " +A);
+    	SeasonA = Season_A;
           
-    	    String B = CalculationSettingRoomsDetail.getTextB();
-    	    String Season_B= SeasonName + (" " +B);
-    	    SeasonB = Season_B;
+    	String B = CalculationSettingRoomsDetail.getTextB();
+    	String Season_B= SeasonName + (" " +B);
+    	SeasonB = Season_B;
     	    
-    	    String C = CalculationSettingRoomsDetail.getTextC();
-    	    String Season_C= SeasonName + (" " +C);
-    	    SeasonC = Season_C;
+    	String C = CalculationSettingRoomsDetail.getTextC();
+    	String Season_C= SeasonName + (" " +C);
+    	SeasonC = Season_C;
     	    
-    	    String D = CalculationSettingRoomsDetail.getTextD();
-    	    String Season_D = SeasonName + (" "+D);
-    	    SeasonD = Season_D;
+    	String D = CalculationSettingRoomsDetail.getTextD();
+    	String Season_D = SeasonName + (" "+D);
+    	SeasonD = Season_D;
     	    
-    	    String E = CalculationSettingRoomsDetail.getTextE();
-    	    String Season_E = SeasonName + (" "+E);
-    	    SeasonE = Season_E;
+    	String E = CalculationSettingRoomsDetail.getTextE();
+    	String Season_E = SeasonName + (" "+E);
+    	SeasonE = Season_E;
     	    
-    	    String F = CalculationSettingRoomsDetail.getTextF();
-    	    String Season_F = SeasonName + (" "+F);
-    	    SeasonF = Season_F;
+    	String F = CalculationSettingRoomsDetail.getTextF();
+    	String Season_F = SeasonName + (" "+F);
+    	SeasonF = Season_F;
     	    
-    	    String G = CalculationSettingRoomsDetail.getTextG();
-    	    String Season_G = SeasonName + (" "+G);
-    	    SeasonG = Season_G;
+    	String G = CalculationSettingRoomsDetail.getTextG();
+    	String Season_G = SeasonName + (" "+G);
+    	SeasonG = Season_G;
     	    
-    	    String H = CalculationSettingRoomsDetail.getTextH();
-    	    String Season_H = SeasonName + (" "+H);
-    	    SeasonH = Season_H;
+    	String H = CalculationSettingRoomsDetail.getTextH();
+    	String Season_H = SeasonName + (" "+H);
+    	SeasonH = Season_H;
     	    
     
 	}

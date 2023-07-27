@@ -1323,6 +1323,100 @@ public class pricePage {
 		updateChildrenAndAdditionalOccupancyDiscount.click();
 	}
 	
+	public String getSeason_AfromDate(String value1)
+	{
+		String actualText = seasonFrom_A.getAttribute(value1);
+		return actualText;
+	}
 	
 	
+	public String getSeason_AuntilDate(String value1)
+	{
+		String actualText = seasonUntil_A.getAttribute(value1);
+		return actualText;
+	}
+	
+	public String getSeason_BfromDate(String value1)
+	{
+		String actualText = seasonFrom_B.getAttribute(value1);
+		return actualText;
+	}
+	
+	public String getSeason_BuntilDate(String value1)
+	{
+		String actualText = seasonUntil_B.getAttribute(value1);
+		return actualText;
+	}
+	
+	public String getSeason_CfromDate(String value1)
+	{
+		String actualText = seasonFrom_C.getAttribute(value1);
+		return actualText;
+	}
+	
+	public String getSeason_CuntilDate(String value1)
+	{
+		String actualText = seasonUntil_C.getAttribute(value1);
+		return actualText;
+	}
+	
+	public String getSeason_DfromDate(String value1)
+	{
+		String actualText = seasonFrom_D.getAttribute(value1);
+		return actualText;
+	}
+	
+	public String getSeason_DuntilDate(String value1)
+	{
+		String actualText = seasonUntil_D.getAttribute(value1);
+		return actualText;
+	}
+	
+	public String getSeason_EfromDate(String value1)
+	{
+		String actualText = seasonFrom_E.getAttribute(value1);
+		return actualText;
+	}
+	
+	public String getSeason_EuntilDate(String value1)
+	{
+		String actualText = seasonUntil_E.getAttribute(value1);
+		return actualText;
+	}
+	
+	public String getSeason_FfromDate(String value1)
+	{
+		String actualText = seasonFrom_F.getAttribute(value1);
+		return actualText;
+	}
+	
+	public String getSeason_FuntilDate(String value1)
+	{
+		String actualText = seasonUntil_F.getAttribute(value1);
+		return actualText;
+	}
+	
+	public String getSeason_GfromDate(String value1)
+	{
+		String actualText = seasonFrom_G.getAttribute(value1);
+		return actualText;
+	}
+	
+	public String getSeason_GuntilDate(String value1)
+	{
+		String actualText = seasonUntil_G.getAttribute(value1);
+		return actualText;
+	}
+	
+	public String getSeason_HfromDate(String value1)
+	{
+		String actualText = seasonFrom_H.getAttribute(value1);
+		return actualText;
+	}
+	
+	public String getSeason_HuntilDate(String value1)
+	{
+		String actualText = seasonUntil_H.getAttribute(value1);
+		return actualText;
+	}
 }

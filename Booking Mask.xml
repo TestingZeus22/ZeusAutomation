@@ -59,6 +59,13 @@
       <class name="BookingMaskTestCases.ValidateBookingWithoutSelectingAnyTravelTypeTC48"/>
       <class name="BookingMaskTestCases.TCC29TC130FAIL"/>
       <class name="BookingMaskTestCases.CreateBookingForTwoPersonAndTwoRoom_TC34"/>
+      <class name="BookingMaskTestCases.CreateMultisalesLinesBookingWithDifferentDates_TC148"/>
+      <class name="BookingMaskTestCases.CreateMultisalesLinesBookingWithSameDates_TC147"/>
+      <class name="BookingMaskTestCases.ModifyMultisaleslineBookingWithArriDeparConditonTC153"/>
+      <class name="BookingMaskTestCases.MultisaleslineBookingWithDiffDateAndLessthanMinStay_TC149"/> 
+      <class name="BookingMaskTestCases.MultisalesLineBookingWithDifferentDatesAndMoreThanMaxStay_TC151"/>
+      <class name="BookingMaskTestCases.MultisalesLineBookingWithLessthanMinStayFAIL_TC150"/>
+      <class name="BookingMaskTestCases.MultisalesLineBookingWithMorethanMaxStayFAIL_TC152"/>
     </classes>
   </test> <!-- BM -->
 </suite> <!-- Suite -->

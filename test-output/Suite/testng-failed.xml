@@ -3,6 +3,24 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Priority1_Booking_Allotment(failed)">
     <classes>
+      <class name="Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="validateBookingAfterStopSalesWithDatesOutsideStopSalesDuration"/>
+          <include name="Logout"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- Booking_AllotmentTestCases.verifyBookingAfterApplyStopSalesTC11andTC12 -->
+      <class name="Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="Logout"/>
+          <include name="loginToApp"/>
+          <include name="validateModifiedMultisalesBookingPrice"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Booking_AllotmentTestCases.mofifyMultisalesLineBookingTC45TC46 -->
       <class name="Booking_AllotmentTestCases.modifyMultisalesLineBookingTC47TC48">
         <methods>
           <include name="validateMultisalesLineBookingWhenNoAllotment"/>

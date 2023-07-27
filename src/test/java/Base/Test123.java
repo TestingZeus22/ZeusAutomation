@@ -15,17 +15,17 @@ public class Test123 extends BaseClass {
 	public static void main(String[] args) throws InterruptedException {
 	      
 		
-	WebDriver driver = new ChromeDriver();
-	driver.get("https://zeuscloud.azurewebsites.net/Index?Status=SE");
-	Thread.sleep(1000);
-	
-	driver.findElement(By.id("loginmodel_UserName")).sendKeys("Tester");
-	driver.findElement(By.id("loginmodel_Password")).sendKeys("Pp@12345678");
-	
-	
-	String Pwd = driver.findElement(By.id("loginmodel_Password")).getText();
-	System.out.println(Pwd);
-	
+//	WebDriver driver = new ChromeDriver();
+//	driver.get("https://zeuscloud.azurewebsites.net/Index?Status=SE");
+//	Thread.sleep(1000);
+//	
+//	driver.findElement(By.id("loginmodel_UserName")).sendKeys("Tester");
+//	driver.findElement(By.id("loginmodel_Password")).sendKeys("Pp@12345678");
+//	
+//	
+//	String Pwd = driver.findElement(By.id("loginmodel_Password")).getText();
+//	System.out.println(Pwd);
+//	
 //	Thread.sleep(1000);
 //	driver.findElement(By.xpath("//button[text()='Login to Dashboard']")).click();
 //	Thread.sleep(1000);
@@ -45,10 +45,10 @@ public class Test123 extends BaseClass {
 //	System.out.println("The Value is "+value);
 //	Thread.sleep(1000);
 		
-		//String inputDate = "20.07.23"; // Change this to your desired input date in the format "DD.MM.YY"
+		String inputDate = "27.10.23"; // Change this to your desired input date in the format "DD.MM.YY"
 
 	        try {
-	            Date date = parseDate(Pwd);
+	            Date date = parseDate(inputDate);
 	            String outputDate = formatDate(date);
 	            System.out.println("Converted date: " + outputDate);
 	        } catch (ParseException e) {

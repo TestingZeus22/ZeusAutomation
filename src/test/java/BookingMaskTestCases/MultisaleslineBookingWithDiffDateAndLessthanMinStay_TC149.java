@@ -72,25 +72,16 @@
 	    		salesBookingList.clickOncreateButton();
 	    		Reporter.log("Clicked on create Button in sales Booking page",true);
 	    		Thread.sleep(6000);
-	    		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
-	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
-	    		UtilityClass.implicitlyWaitInMillis(3000);
-	    		Thread.sleep(1000);
 	    		
 	    		UtilityClass.listBoxHandlingUsingByText("Falk Tours AG", BookingMask.companyIDDropDownMethod());
 	    		Reporter.log("Select Falk Tours AG in CompanyID dropdownList",true);
-	    		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
-	    		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
-	    		Thread.sleep(1000);
-	    		UtilityClass.scrollByAxis(0, 300);
-	    		Thread.sleep(1000);
+	    		Thread.sleep(2000);
 	    		UtilityClass.listBoxHandlingUsingByText("TFT1", BookingMask.TravelTypeDropDownMethod());
 	    		Reporter.log("Select TFT1 in TravelType dropdownList",true);
-	    		Thread.sleep(1000);
+	    		Thread.sleep(3000);
 	    		UtilityClass.listBoxHandlingUsingByText("HK001 - (TESTING)", BookingMask.productCodeDropDownMethod());
 	    		Reporter.log("Selected HK001 - (TESTING) from dropdown list",true);
 	    		Thread.sleep(1000);
-	    		
 	    		UtilityClass.scrollByAxis(0, 300);
 	    		Thread.sleep(1000);
 	    		UtilityClass.implicitlyWaitInMillis(1000);
@@ -201,7 +192,7 @@
 	   {
 		    String ActualMessage = BookingMask.getmultisalesLinesBookingErrorMsgwithValidStay();
 		    String expectedMessage = UtilityClass.readDataFromStringExcel(33, 1, "Sheet3");
-		    Assert.assertEquals(expectedMessage,ActualMessage, "TC failed as Actual message and expected message are not matching ");
+		    Assert.assertEquals(ActualMessage,expectedMessage, "TC failed as Actual message and expected message are not matching ");
 		    Reporter.log("Validating Actual message "+BookingMask.getmultisalesLinesBookingErrorMsgwithValidStay()+" and Expected message "+UtilityClass.readDataFromStringExcel(33, 1, "Sheet3"),true);
 	   }
 	   
