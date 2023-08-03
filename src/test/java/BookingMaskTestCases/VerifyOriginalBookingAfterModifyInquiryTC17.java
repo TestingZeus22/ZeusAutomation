@@ -205,7 +205,7 @@
 				Reporter.log("Clicked on ViewList",true);
 		        UtilityClass.implicitlyWaitInMillis(8000);
 		        salesBookingList.sendtbmCodes(UtilityClass.readDataFromStringExcel(264, 5, "Sheet2"));
-		        Reporter.log("Clicked on SendTBMcode to verify booking is done or not",true);
+		        Reporter.log("Clicked on SendTBMcode",true);
 		        Thread.sleep(2000);
 		        salesBookingList.clickOnbookingListButton();
 		        Thread.sleep(8000);

@@ -12,6 +12,8 @@ public class DashboardPage {
 	@FindBy (xpath ="//a[text()='Logout ']") private WebElement logoutclick;
 	@FindBy (xpath ="//a[text()='Dashboard']") private WebElement getDashboardText;
 	
+	@FindBy (xpath = "(//div[@class='widget-content-left'])[1]") private WebElement testAppVersion;
+	
 	@FindBy (xpath = "//i[@class='metismenu-icon pe-7s-folder']") private WebElement masterOption;
 	
 	@FindBy (xpath="(//label[text()='Company'])[1]")private WebElement Company;
@@ -93,12 +95,18 @@ public class DashboardPage {
 	@FindBy (xpath ="//label[text()='Portfolio Manager']") private WebElement portfolioManager;
 	
 	
+	
 	public DashboardPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void getText(String DashboardText)
+	public void getTestAppVersion()
+	{
+		testAppVersion.getText();
+	}
+	
+	public void getText()
 	{
 		dashboard.getText();
 	}

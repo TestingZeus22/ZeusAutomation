@@ -4,11 +4,13 @@ import java.io.File;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.Locale;
-
 import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.ss.util.DateFormatConverter;
 import org.apache.xmlbeans.impl.xb.xsdschema.ListDocument.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -47,22 +49,12 @@ import utility.UtilityClass;
 import utility.utilityPropertyFile;
 
 public class TC37 extends BaseClass {
-	loginPage login;
-	File myFile;
-	selectCompanyPage selectCompany;
-	DashboardPage dashboard;
-	offerCalculationPage offerCalculation;    
-	calculationSettingPage calculationSetting; 
-	offerDefinationPage offerdefination;
-	salesBookingListPage salesBookingList;
-	bookingMaskPage BookingMask;
-	tbmCodeNewCreatePage newTbm;
-	tbmCodeMasterPage tbmMaster;
-	accommodationListPage accommdationList;
-	accommodationNewPage accommodationNew;
-	roomDetailsPage roomDetails;
-	contractDetailsPage contractDetail;
-	contractsPage contracts;
+	loginPage login;File myFile;DashboardPage dashboard;
+	selectCompanyPage selectCompany;offerCalculationPage offerCalculation;    
+	calculationSettingPage calculationSetting;offerDefinationPage offerdefination;
+	salesBookingListPage salesBookingList;bookingMaskPage BookingMask;
+	accommodationListPage accommdationList;accommodationNewPage accommodationNew;
+	roomDetailsPage roomDetails;contractDetailsPage contractDetail;contractsPage contracts;
 	CalculationSettingRoomsDetailPage CalculationSettingRoomsDetail;
 	pricePage price;roomsPage room;allotmentPage allotment;
 	String Actualseason_Aallot;	String Allot_Ainitial;String Allot_Acurrent;
@@ -73,14 +65,17 @@ public class TC37 extends BaseClass {
 	String Season_Fprice1;String Season_Gprice1;String Season_Hprice1;
 	String CostPriceSeasonAA;String CostPriceSeasonBB;String CostPriceSeasonCC;String CostPriceSeasonDD;
 	String CostPriceSeasonEE;String CostPriceSeasonFF;String CostPriceSeasonGG;String CostPriceSeasonHH;
-	String value11;
-	String value12;
-	String A_Season;
+	String DBvalue;String DBvalueRoom1;String A_Season;
 	String SeasonA_FromDate; String SeasonB_FromDate; String SeasonC_FromDate;String SeasonD_FromDate;
 	String SeasonE_FromDate;String SeasonF_FromDate;String SeasonG_FromDate;String SeasonH_FromDate;
 	String SeasonA_untilDate;String SeasonB_untilDate;String SeasonC_untilDate;String SeasonD_untilDate;
 	String SeasonE_untilDate;String SeasonF_untilDate;String SeasonG_untilDate;String SeasonH_untilDate;
-	
+	String SeasonfromA__Date; String SeasonUntilA__Date; String SeasonfromB_Date; String SeasonUntilB__Date; String SeasonfromC_Date; String SeasonUntilC__Date;String DateFromSeason_A;String DateUntilSeason_A;
+	String SeasonfromD_Date; String SeasonUntilD__Date;String SeasonfromE_Date; String SeasonUntilE__Date;String SeasonfromF_Date; String SeasonUntilF__Date;
+	String SeasonfromG_Date; String SeasonUntilG__Date;String SeasonfromH_Date; String SeasonUntilH__Date;
+	String DateFromSeason_B;String DateFromSeason_C; String DateFromSeason_D; String DateFromSeason_E;String DateFromSeason_F;
+	String DateFromSeason_G;String DateFromSeason_H;String DateUntilSeason_B;String DateUntilSeason_C;String DateUntilSeason_D;
+	String DateUntilSeason_E;String DateUntilSeason_F;String DateUntilSeason_G;String DateUntilSeason_H;
 	
 	@BeforeClass
 	public void launchBrowser(){
@@ -95,8 +90,6 @@ public class TC37 extends BaseClass {
 		offerdefination = new offerDefinationPage(driver); 
 		salesBookingList =new salesBookingListPage(driver);
 		BookingMask =new bookingMaskPage(driver);
-		newTbm =new tbmCodeNewCreatePage(driver);
-		tbmMaster=new tbmCodeMasterPage(driver);
 		accommdationList =new accommodationListPage(driver);
 		accommodationNew =new accommodationNewPage(driver);
 		roomDetails =new roomDetailsPage(driver);
@@ -141,7 +134,7 @@ public class TC37 extends BaseClass {
         Thread.sleep(500);
         accommodationNew.sendstars(UtilityClass.readDataFromStringExcel(5, 1, "Sheet5"));
         Reporter.log("Send hotel stars",true);	
-        UtilityClass.implicitlyWaitInsec(60);
+        Thread.sleep(2000);
         UtilityClass.listBoxHandlingUsingByText("Lagos", accommodationNew.selectStateListBox());
         Reporter.log("Select State from the listBox",true);
         Thread.sleep(1000);
@@ -256,10 +249,10 @@ public class TC37 extends BaseClass {
         Reporter.log("Select the Price",true);
         UtilityClass.implicitlyWaitInsec(60);
         contractDetail.clickOnDistributorCheckBox();
-        Reporter.log("Clicked on distributor checkbox");
+        Reporter.log("Clicked on distributor checkbox",true);
         UtilityClass.implicitlyWaitInsec(60);
         contractDetail.clickOnMultiselectDistributorCheckBox();
-        Reporter.log("Clicked on all the checkboxes");
+        Reporter.log("Clicked on all the checkboxes",true);
         UtilityClass.implicitlyWaitInsec(60);
         UtilityClass.listBoxHandlingUsingByText("Offline (Agencies) Only", contractDetail.onlineOfflinedropdown());
         Reporter.log("Select the online or offline mode in listbox",true);
@@ -382,179 +375,202 @@ public class TC37 extends BaseClass {
         Thread.sleep(2000);
         price.clickOnGenerateAllotmentButton();
         Reporter.log("Clicked on generate Allotment",true);
-        Thread.sleep(4000);
-        UtilityClass.implicitlyWaitInMillis(6000);
+        Thread.sleep(8000);
+        UtilityClass.implicitlyWaitInMillis(10000);
         price.clickOnOkPopUp();
         Thread.sleep(9000);
         price.clickOnOkPopUp();
         Thread.sleep(1000);
      
         //Season Prices get in Contract.
-        
         String Season_Aprice = price.getSeasonApriceRoom1_A("value");
         Season_Aprice1=Season_Aprice;
-        
         String Season_Bprice = price.getseasonBpriceRoom1_B("value");
         Season_Bprice1=Season_Bprice;
-        
         String Season_Cprice = price.getseasonCpriceRoom1_C("value");
         Season_Cprice1=Season_Cprice;
-        
         String Season_Dprice = price.getseasonDpriceRoom1_D("value");
         Season_Dprice1=Season_Dprice;
-        
         String Season_Eprice = price.getseasonEpriceRoom1_E("value");
         Season_Eprice1=Season_Eprice;
-        
         String Season_Fprice = price.getseasonFpriceRoom1_F("value");
         Season_Fprice1=Season_Fprice;
-        
         String Season_Gprice = price.getseasonGpriceRoom1_G("value");
         Season_Gprice1=Season_Gprice;
-        
         String Season_Hprice = price.getseasonHpriceRoom1_H("value");
         Season_Hprice1=Season_Hprice;
         
-        
         //Season Names get in Price.
-        
         String Season_AName = price.getSeasonAtext();
-        NameA=Season_AName;
-        
+        NameA = Season_AName;
         String Season_BName = price.getSeasonBtext();
-        NameB=Season_BName;
-        
+        NameB = Season_BName;
         String Season_CName = price.getSeasonCtext();
-        NameC=Season_CName;
-        
+        NameC = Season_CName;
         String Season_DName = price.getSeasonDtext();
-        NameD=Season_DName;
-        
+        NameD = Season_DName;
         String Season_EName = price.getSeasonEtext();
-        NameE=Season_EName;
-        
+        NameE = Season_EName;
         String Season_FName = price.getSeasonFtext();
-        NameF=Season_FName;
-        
+        NameF = Season_FName;
         String Season_GName = price.getSeasonGtext();
-        NameG=Season_GName;
-        
+        NameG = Season_GName;
         String Season_HName = price.getSeasonHtext();
-        NameH=Season_HName;
+        NameH = Season_HName;
         
         // From and To dates get
-        
         String Season_AFrom = price.getSeason_AfromDate("value"); 
         SeasonA_FromDate = Season_AFrom;
         String Season_Auntil = price.getSeason_AuntilDate("value");
         SeasonA_untilDate = Season_Auntil;
-        
         String Season_BFrom = price.getSeason_BfromDate("value");
         SeasonB_FromDate = Season_BFrom;
         String Season_Buntil = price.getSeason_BuntilDate("value");
         SeasonB_untilDate = Season_BFrom;
-       
         String Season_CFrom = price.getSeason_CfromDate("value");
         SeasonC_FromDate = Season_CFrom;
         String Season_Cuntil = price.getSeason_CuntilDate("value");
         SeasonC_untilDate = Season_Cuntil;
-        
         String Season_Dfrom = price.getSeason_DfromDate("value");
         SeasonD_FromDate = Season_Dfrom;
         String Season_Duntil = price.getSeason_DuntilDate("value");
         SeasonD_untilDate = Season_Duntil;
-        
         String Season_EFrom = price.getSeason_EfromDate("value");
         SeasonE_FromDate = Season_EFrom;
         String Season_Euntil = price.getSeason_EuntilDate("value");
         SeasonE_untilDate = Season_Euntil;
-        
         String Season_FFrom = price.getSeason_FfromDate("value");
         SeasonF_FromDate = Season_FFrom;
         String Season_Funtil = price.getSeason_FuntilDate("value");
         SeasonF_untilDate = Season_Funtil;
-        
         String Season_GFrom = price.getSeason_GfromDate("value");
         SeasonG_FromDate = Season_GFrom;
         String Season_Guntil = price.getSeason_GuntilDate("value");
         SeasonG_untilDate = Season_Guntil;
-        
         String Season_HFrom = price.getSeason_HfromDate("value");
         SeasonH_FromDate = Season_HFrom;
         String Season_Huntil = price.getSeason_HuntilDate("value");
         SeasonH_untilDate = Season_Huntil;
         
-        //Season_A date conversion
-        SimpleDateFormat Season_AfromoriginalDateFormat = new SimpleDateFormat("dd.MM.yy", Locale.ENGLISH);
-        Date SeasonFromA_originalDate = Season_AfromoriginalDateFormat.parse(Season_AFrom);
-        SimpleDateFormat Season_AfrommonthNameFormat = new SimpleDateFormat("MMMM", Locale.ENGLISH);
-        String monthNameSeasonFrom_A = Season_AfrommonthNameFormat.format(SeasonFromA_originalDate);
-        SimpleDateFormat formattedDateFormatSeasonFromA = new SimpleDateFormat("dd MMMM yy", Locale.ENGLISH);
+       //Season_A 
+        SimpleDateFormat Season_AfromDate = new SimpleDateFormat("dd.MM.yy");
+        Date SeasonAfromDate = Season_AfromDate.parse(Season_AFrom);
+        SimpleDateFormat outputDateFormatSeason_Afrom = new SimpleDateFormat("dd MMMM yyyy");
+        String outputDateStringSeasonFrom_Ais = outputDateFormatSeason_Afrom.format(SeasonAfromDate);
+        DateFromSeason_A= outputDateStringSeasonFrom_Ais;
         
-        String SeasonFromA_ConvertedDate = formattedDateFormatSeasonFromA.format(SeasonFromA_originalDate);
-        System.out.println("Converted date: " + SeasonFromA_ConvertedDate);
+        SimpleDateFormat Season_AuntilDate = new SimpleDateFormat("dd.MM.yy");
+        Date SeasonAuntilDate = Season_AuntilDate.parse(Season_Auntil);
+        SimpleDateFormat outputDateFormatSeason_Auntil = new SimpleDateFormat("dd MMMM yyyy");
+        String outputDateStringSeasonUntil_Ais = outputDateFormatSeason_Auntil.format(SeasonAuntilDate);
+        DateUntilSeason_A = outputDateStringSeasonUntil_Ais;
         
-        SimpleDateFormat Season_AuntiloriginalDateFormat = new SimpleDateFormat("dd.MM.yy", Locale.ENGLISH);
-        Date SeasonUntilA_originalDate = Season_AfromoriginalDateFormat.parse(Season_Auntil);
-        SimpleDateFormat Season_AuntilmonthNameFormat = new SimpleDateFormat("MMMM", Locale.ENGLISH);
-        String monthNameSeasonUntil_A = Season_AfrommonthNameFormat.format(SeasonFromA_originalDate);
-        SimpleDateFormat formattedDateFormatSeasonUntilA = new SimpleDateFormat("dd MMMM yy", Locale.ENGLISH);
+       //Season_B
+        SimpleDateFormat Season_BfromDate = new SimpleDateFormat("dd.MM.yy");
+        Date SeasonBfromDate = Season_AfromDate.parse(Season_BFrom);
+        SimpleDateFormat outputDateFormatSeason_Bfrom = new SimpleDateFormat("dd MMMM yyyy");
+        String outputDateStringSeasonFrom_Bis = outputDateFormatSeason_Afrom.format(SeasonBfromDate);
+        DateFromSeason_B= outputDateStringSeasonFrom_Bis;
         
-        String SeasonUntilA_ConvertedDate = formattedDateFormatSeasonUntilA.format(SeasonUntilA_originalDate);
-        System.out.println("Converted date: " + SeasonUntilA_ConvertedDate);
+        SimpleDateFormat Season_BuntilDate = new SimpleDateFormat("dd.MM.yy");
+        Date SeasonBuntilDate = Season_BuntilDate.parse(Season_Buntil);
+        SimpleDateFormat outputDateFormatSeason_Buntil = new SimpleDateFormat("dd MMMM yyyy");
+        String outputDateStringSeasonUntil_Bis = outputDateFormatSeason_Buntil.format(SeasonBuntilDate);
+        DateUntilSeason_B = outputDateStringSeasonUntil_Bis;
         
-        //Season_B date conversion
-        SimpleDateFormat Season_BfromoriginalDateFormat = new SimpleDateFormat("dd.MM.yy", Locale.ENGLISH);
-        Date SeasonFromB_originalDate = Season_BfromoriginalDateFormat.parse(Season_AFrom);
-        SimpleDateFormat Season_BfrommonthNameFormat = new SimpleDateFormat("MMMM", Locale.ENGLISH);
-        String monthNameSeasonFrom_B = Season_BfrommonthNameFormat.format(SeasonFromA_originalDate);
-        SimpleDateFormat formattedDateFormatSeasonFromB = new SimpleDateFormat("dd MMMM yy", Locale.ENGLISH);
+       //Season_C
+        SimpleDateFormat Season_CfromDate = new SimpleDateFormat("dd.MM.yy");
+        Date SeasonCfromDate = Season_CfromDate.parse(Season_CFrom);
+        SimpleDateFormat outputDateFormatSeason_Cfrom = new SimpleDateFormat("dd MMMM yyyy");
+        String outputDateStringSeasonFrom_Cis = outputDateFormatSeason_Cfrom.format(SeasonCfromDate);
+        DateFromSeason_C= outputDateStringSeasonFrom_Cis;
+    
+        SimpleDateFormat Season_CuntilDate = new SimpleDateFormat("dd.MM.yy");
+        Date SeasonCuntilDate = Season_CuntilDate.parse(Season_Cuntil);
+        SimpleDateFormat outputDateFormatSeason_Cuntil = new SimpleDateFormat("dd MMMM yyyy");
+        String outputDateStringSeasonUntil_Cis = outputDateFormatSeason_Cuntil.format(SeasonCuntilDate);
+        DateUntilSeason_C = outputDateStringSeasonUntil_Cis;
         
-        String SeasonFromB_ConvertedDate = formattedDateFormatSeasonFromB.format(SeasonFromA_originalDate);
-        System.out.println("Converted date: " + SeasonFromB_ConvertedDate);
+        //Season_D
+        SimpleDateFormat Season_DfromDate = new SimpleDateFormat("dd.MM.yy");
+        Date SeasonDfromDate = Season_DfromDate.parse(Season_Dfrom);
+        SimpleDateFormat outputDateFormatSeason_Dfrom = new SimpleDateFormat("dd MMMM yyyy");
+        String outputDateStringSeasonFrom_Dis = outputDateFormatSeason_Dfrom.format(SeasonDfromDate);
+        DateFromSeason_D= outputDateStringSeasonFrom_Dis;
+    
+        SimpleDateFormat Season_DuntilDate = new SimpleDateFormat("dd.MM.yy");
+        Date SeasonDuntilDate = Season_DuntilDate.parse(Season_Duntil);
+        SimpleDateFormat outputDateFormatSeason_Duntil = new SimpleDateFormat("dd MMMM yyyy");
+        String outputDateStringSeasonUntil_Dis = outputDateFormatSeason_Duntil.format(SeasonDuntilDate);
+        DateUntilSeason_D = outputDateStringSeasonUntil_Dis;
         
-        SimpleDateFormat Season_BuntiloriginalDateFormat = new SimpleDateFormat("dd.MM.yy", Locale.ENGLISH);
-        Date SeasonUntilB_originalDate = Season_AfromoriginalDateFormat.parse(Season_Auntil);
-        SimpleDateFormat Season_BuntilmonthNameFormat = new SimpleDateFormat("MMMM", Locale.ENGLISH);
-        String monthNameSeasonUntil_B = Season_AfrommonthNameFormat.format(SeasonFromB_originalDate);
-        SimpleDateFormat formattedDateFormatSeasonUntilB = new SimpleDateFormat("dd MMMM yy", Locale.ENGLISH);
+        //Season_E
+        SimpleDateFormat Season_EfromDate = new SimpleDateFormat("dd.MM.yy");
+        Date SeasonEfromDate = Season_EfromDate.parse(Season_EFrom);
+        SimpleDateFormat outputDateFormatSeason_Efrom = new SimpleDateFormat("dd MMMM yyyy");
+        String outputDateStringSeasonFrom_Eis = outputDateFormatSeason_Efrom.format(SeasonEfromDate);
+        DateFromSeason_E= outputDateStringSeasonFrom_Eis;
+    
+        SimpleDateFormat Season_EuntilDate = new SimpleDateFormat("dd.MM.yy");
+        Date SeasonEuntilDate = Season_EuntilDate.parse(Season_Euntil);
+        SimpleDateFormat outputDateFormatSeason_Euntil = new SimpleDateFormat("dd MMMM yyyy");
+        String outputDateStringSeasonUntil_Eis = outputDateFormatSeason_Euntil.format(SeasonEuntilDate);
+        DateUntilSeason_E = outputDateStringSeasonUntil_Eis;
         
-        String SeasonUntilB_ConvertedDate = formattedDateFormatSeasonUntilA.format(SeasonUntilB_originalDate);
-        System.out.println("Converted date: " + SeasonUntilB_ConvertedDate);
+       //Season_F
+        SimpleDateFormat Season_FfromDate = new SimpleDateFormat("dd.MM.yy");
+        Date SeasonFfromDate = Season_FfromDate.parse(Season_FFrom);
+        SimpleDateFormat outputDateFormatSeason_Ffrom = new SimpleDateFormat("dd MMMM yyyy");
+        String outputDateStringSeasonFrom_Fis = outputDateFormatSeason_Ffrom.format(SeasonFfromDate);
+        DateFromSeason_F= outputDateStringSeasonFrom_Fis;
+    
+        SimpleDateFormat Season_FuntilDate = new SimpleDateFormat("dd.MM.yy");
+        Date SeasonFuntilDate = Season_FuntilDate.parse(Season_Funtil);
+        SimpleDateFormat outputDateFormatSeason_Funtil = new SimpleDateFormat("dd MMMM yyyy");
+        String outputDateStringSeasonUntil_Fis = outputDateFormatSeason_Funtil.format(SeasonFuntilDate);
+        DateUntilSeason_F = outputDateStringSeasonUntil_Fis;
         
+       //Season_G
+        SimpleDateFormat Season_GfromDate = new SimpleDateFormat("dd.MM.yy");
+        Date SeasonGfromDate = Season_EfromDate.parse(Season_GFrom);
+        SimpleDateFormat outputDateFormatSeason_Gfrom = new SimpleDateFormat("dd MMMM yyyy");
+        String outputDateStringSeasonFrom_Gis = outputDateFormatSeason_Efrom.format(SeasonGfromDate);
+        DateFromSeason_G= outputDateStringSeasonFrom_Gis;
+    
+        SimpleDateFormat Season_GuntilDate = new SimpleDateFormat("dd.MM.yy");
+        Date SeasonGuntilDate = Season_GuntilDate.parse(Season_Guntil);
+        SimpleDateFormat outputDateFormatSeason_Guntil = new SimpleDateFormat("dd MMMM yyyy");
+        String outputDateStringSeasonUntil_Gis = outputDateFormatSeason_Cuntil.format(SeasonGuntilDate);
+        DateUntilSeason_G = outputDateStringSeasonUntil_Gis;
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+       //Season_H
+        SimpleDateFormat Season_HfromDate = new SimpleDateFormat("dd.MM.yy");
+        Date SeasonHfromDate = Season_HfromDate.parse(Season_HFrom);
+        SimpleDateFormat outputDateFormatSeason_Hfrom = new SimpleDateFormat("dd MMMM yyyy");
+        String outputDateStringSeasonFrom_His = outputDateFormatSeason_Hfrom.format(SeasonHfromDate);
+        DateFromSeason_H = outputDateStringSeasonFrom_His;
+    
+        SimpleDateFormat Season_HuntilDate = new SimpleDateFormat("dd.MM.yy");
+        Date SeasonHuntilDate = Season_HuntilDate.parse(Season_Huntil);
+        SimpleDateFormat outputDateFormatSeason_Huntil = new SimpleDateFormat("dd MMMM yyyy");
+        String outputDateStringSeasonUntil_His = outputDateFormatSeason_Huntil.format(SeasonHuntilDate);
+        DateUntilSeason_H = outputDateStringSeasonUntil_His;
         
         price.clickOnDashboardLinkByJSE();
-        Reporter.log("Clicked on dashboardLink to navigate to dashboard page",true);
+        Reporter.log("Clicked on dashboardLink",true);
         UtilityClass.implicitlyWaitInMillis(12000);
-        
         dashboard.clickOncalculationList();
         Thread.sleep(1000);
         dashboard.clickOnOfferdefination();
         Thread.sleep(1000);
       	Reporter.log("Clicked on offer defination",true);
       	offerdefination.clickOnFalkToursAG();
-      	Reporter.log("Clicked on FalkToursAG",true);
+      	Reporter.log("Clicked on FalkToursAG option",true);
       	offerdefination.clickOnTchiboDE();
       	Thread.sleep(500);
-      	Reporter.log("Clicked on TchiboDE",true);
+      	Reporter.log("Clicked on TchiboDE option",true);
       	offerdefination.SendTBMcode(UtilityClass.readDataFromStringExcel(55, 3, "Sheet5"));
-      	Thread.sleep(4200);
+      	Thread.sleep(4500);
       	Reporter.log("Send TBM code ",true);
       	offerdefination.clickOnCheckBox();
       	Reporter.log("Clicked on checkBox",true);
@@ -565,23 +581,20 @@ public class TC37 extends BaseClass {
       	dashboard.clickOncalculationList();
       	Reporter.log("Clicked on Calculation dropdown",true);
       	Thread.sleep(1500);
-      		
       	dashboard.clickOncalculationList();
-    	Reporter.log("Clicked on offer calculationList",true);
+    	Reporter.log("Clicked on offer calculationList option",true);
     	Thread.sleep(1000);
     	dashboard.clickOnOffercalculationList();
-    	Reporter.log("Clicked on offer calculation",true);
+    	Reporter.log("Clicked on offer calculation option",true);
     	Thread.sleep(2000);
     	offerCalculation.clickOnFalkToursAG();
-    	Reporter.log("Clicked on FalkToursAG",true);
+    	Reporter.log("Clicked on FalkToursAG option",true);
     	Thread.sleep(1000);
     	offerCalculation.clickOnTchiboDE();
-    	Reporter.log("Clicked on TchiboDE",true);
+    	Reporter.log("Clicked on TchiboDE option",true);
     	Thread.sleep(3500);
-    	
-    	WebElement ClickBefore = driver.findElement(By.xpath("//a[text()='New']"));
-    	ClickBefore.click();
-
+    	WebElement NewOption = driver.findElement(By.xpath("//a[text()='New']"));
+    	NewOption.click();
     	Thread.sleep(4200);
     	UtilityClass.clickUsingJSE(calculationSetting.clickOnRoom1ByJSE());
     	Reporter.log("Clicked on Room1",true);
@@ -589,7 +602,7 @@ public class TC37 extends BaseClass {
     	calculationSetting.clearDbPercentage();
     	Thread.sleep(1000);
     	calculationSetting.senddbPercentagevalue(UtilityClass.readDataFromStringExcel(60, 1, "Sheet5"));
-    	Reporter.log("Send DB% Value",true);
+    	Reporter.log("Enter DB% Value",true);
     	Thread.sleep(1000);
         calculationSetting.clickOnSaveSetting();  
     	Reporter.log("Clicked on save setting button",true);
@@ -606,98 +619,150 @@ public class TC37 extends BaseClass {
     	calculationSetting.clickOnTransferPriceOnline();
     	Reporter.log("Clicked on Transfer price online",true);
     	Thread.sleep(3000);
-      
-    	String value1 = calculationSetting.getDBvalue("value");
-    	value11=value1;
-    	System.out.println("The DB value in offer calculation page "+value1);
-   
-    	WebElement clickAfterSave = driver.findElement(By.xpath("//a[text()='New']"));
-    	clickAfterSave.click();
-    	
+    	String DB = calculationSetting.getDBvalue("value");
+    	DBvalue = DB;
+    	WebElement NewOtions = driver.findElement(By.xpath("//a[text()='New']"));
+    	NewOtions.click();
     	Thread.sleep(5000); 
     	UtilityClass.clickUsingJSE(calculationSetting.clickOnRoom1ByJSE());
     	Reporter.log("Clicked on Room1",true);
     	Thread.sleep(4000);
-    	    
-    	String value2 = CalculationSettingRoomsDetail.getDB1value1("value");
-    	value12 = value2;
-    	System.out.println("The value2 in the Rooms page is "+value2);
-    	
-    	Boolean CheckBox2 = CalculationSettingRoomsDetail.isSeasonA_AllDayCheckBox1();
-    	System.out.println("The checkbox2 is selected  "+CheckBox2);
+    	String DBvalueRoom = CalculationSettingRoomsDetail.getDB1value1("value");
+    	DBvalueRoom1 = DBvalueRoom;
+    	System.out.println("The value2 in the Rooms page is "+DBvalueRoom);
+        double doubleValue = Double.parseDouble(DBvalueRoom);
+        int intValue = (int) doubleValue;
     	Thread.sleep(1000); 
     	UtilityClass.scrollByAxis(0, 400);
     	calculationSetting.clickOnsavePrice();
     	Reporter.log("Clicked on Save price",true);
     	Thread.sleep(3000);
-    		
-    	// Season prices in offer calculation.
-    	    
+         
+    	// Season prices in offer calculation.  
     	String CostPriceSeasosn_A1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonA();
-        CostPriceSeasonAA=CostPriceSeasosn_A1;
-    	    
+        CostPriceSeasonAA = CostPriceSeasosn_A1; 
     	String CostPriceSeasosn_B1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonB();
-    	CostPriceSeasonBB=CostPriceSeasosn_B1;
-    	    
+    	CostPriceSeasonBB = CostPriceSeasosn_B1;
     	String CostPriceSeasosn_C1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonC();
-    	CostPriceSeasonCC=CostPriceSeasosn_C1;
-    	    
+    	CostPriceSeasonCC = CostPriceSeasosn_C1;
     	String CostPriceSeasosn_D1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonD();
-    	CostPriceSeasonDD=CostPriceSeasosn_D1;
-    	    
+    	CostPriceSeasonDD = CostPriceSeasosn_D1; 
     	String CostPriceSeasosn_E1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonE();
-    	CostPriceSeasonEE=CostPriceSeasosn_E1;
-     	
+    	CostPriceSeasonEE = CostPriceSeasosn_E1;
     	String CostPriceSeasosn_F1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonF();
-    	CostPriceSeasonFF=CostPriceSeasosn_F1;
-    	    
+    	CostPriceSeasonFF = CostPriceSeasosn_F1; 
     	String CostPriceSeasosn_G1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonG();
-    	CostPriceSeasonGG=CostPriceSeasosn_G1;
-    	    
+    	CostPriceSeasonGG = CostPriceSeasosn_G1;
     	String CostPriceSeasosn_H1 =CalculationSettingRoomsDetail.getCostPriceInEURforSeasonH();
-    	CostPriceSeasonHH=CostPriceSeasosn_H1;
+    	CostPriceSeasonHH = CostPriceSeasosn_H1;
     	    
-    	 //Season names with Calculation Page.
-    	    
+    	 //Season names with Calculation Page.   
     	String SeasonName = CalculationSettingRoomsDetail.getSeasonName();
     	String A = CalculationSettingRoomsDetail.getTextA();
-    	String Season_A= SeasonName + (" " +A);
+    	String Season_A = SeasonName + (" " +A);
     	SeasonA = Season_A;
-          
     	String B = CalculationSettingRoomsDetail.getTextB();
-    	String Season_B= SeasonName + (" " +B);
-    	SeasonB = Season_B;
-    	    
+    	String Season_B = SeasonName + (" " +B);
+    	SeasonB = Season_B;  
     	String C = CalculationSettingRoomsDetail.getTextC();
-    	String Season_C= SeasonName + (" " +C);
+    	String Season_C = SeasonName + (" " +C);
     	SeasonC = Season_C;
-    	    
     	String D = CalculationSettingRoomsDetail.getTextD();
     	String Season_D = SeasonName + (" "+D);
     	SeasonD = Season_D;
-    	    
     	String E = CalculationSettingRoomsDetail.getTextE();
     	String Season_E = SeasonName + (" "+E);
-    	SeasonE = Season_E;
-    	    
+    	SeasonE = Season_E; 
     	String F = CalculationSettingRoomsDetail.getTextF();
     	String Season_F = SeasonName + (" "+F);
     	SeasonF = Season_F;
-    	    
     	String G = CalculationSettingRoomsDetail.getTextG();
     	String Season_G = SeasonName + (" "+G);
     	SeasonG = Season_G;
-    	    
     	String H = CalculationSettingRoomsDetail.getTextH();
     	String Season_H = SeasonName + (" "+H);
     	SeasonH = Season_H;
-    	    
-    
-	}
+          
+    	//Season From and Until dates
+    	String SeasonfromA = CalculationSettingRoomsDetail.getSeasonFrom_Adate();
+    	SeasonfromA__Date	= SeasonfromA;
+    	String SeasonuntilA = CalculationSettingRoomsDetail.getSeasonUntil_Adate();
+    	SeasonUntilA__Date	= SeasonuntilA;
+    	String SeasonfromB = CalculationSettingRoomsDetail.getSeasonFrom_Bdate();
+    	SeasonfromB_Date = SeasonfromB;
+    	String SeasonuntilB = CalculationSettingRoomsDetail.getSeasonUntil_Bdate();
+    	SeasonUntilB__Date	= SeasonuntilB; 
+    	String SeasonfromC = CalculationSettingRoomsDetail.getSeasonFrom_Cdate();
+    	SeasonfromC_Date = SeasonfromC;
+    	String SeasoNuntilC = CalculationSettingRoomsDetail.getSeasonUntil_Cdate();
+    	SeasonUntilC__Date	= SeasoNuntilC;
+    	String SeasonfromD = CalculationSettingRoomsDetail.getSeasonFrom_Ddate();
+    	SeasonfromD_Date = SeasonfromD;
+    	String SeasonuntilD = CalculationSettingRoomsDetail.getSeasonUntil_Ddate();
+    	SeasonUntilD__Date	= SeasonuntilD;
+    	String SeasonfromE = CalculationSettingRoomsDetail.getSeasonFrom_Edate();
+    	SeasonfromE_Date = SeasonfromE;
+    	String SeasonuntilE = CalculationSettingRoomsDetail.getSeasonUntil_Edate();
+    	SeasonUntilE__Date	= SeasonuntilE;
+    	String SeasonfromF = CalculationSettingRoomsDetail.getSeasonFrom_Fdate();
+    	SeasonfromF_Date = SeasonfromF;
+    	String SeasonuntilF = CalculationSettingRoomsDetail.getSeasonUntil_Fdate();
+    	SeasonUntilF__Date	= SeasonuntilF;
+    	String SeasonfromG = CalculationSettingRoomsDetail.getSeasonFrom_Gdate();
+    	SeasonfromG_Date = SeasonfromG;
+    	String SeasonuntilG = CalculationSettingRoomsDetail.getSeasonUntil_Gdate();
+    	SeasonUntilG__Date	= SeasonuntilG;
+    	String SeasonfromH = CalculationSettingRoomsDetail.getSeasonFrom_Hdate();
+    	SeasonfromH_Date = SeasonfromH;
+    	String SeasonuntilH = CalculationSettingRoomsDetail.getSeasonUntil_Hdate();
+    	SeasonUntilH__Date	= SeasonuntilH;
+
+        }
+	
     @Test 
     public void validateOfferCalculationWithRoomDetails() throws EncryptedDocumentException, IOException 
     {
     	
+      Assert.assertEquals(SeasonfromA__Date, DateFromSeason_A,"Test Case Failed as actual & expected Season from dates are not matching");
+  	  Reporter.log("Validating actual season from date on contracts page is "+SeasonfromA__Date+" and Expected date on the calculation page is "+DateFromSeason_A,true);
+      Assert.assertEquals(SeasonUntilA__Date, DateUntilSeason_A,"Test Case Failed as actual & expected Season until dates are not matching");
+	  Reporter.log("Validating actual season from date on contracts page is "+SeasonUntilA__Date+" and Expected date on the calculation page is "+DateUntilSeason_A,true);
+  	  
+	  Assert.assertEquals(SeasonfromB_Date, DateFromSeason_B,"Test Case Failed as actual & expected Season from dates are not matching");
+  	  Reporter.log("Validating actual season from date on contracts page is "+SeasonfromB_Date+" and Expected date on the calculation page is "+DateFromSeason_B,true);
+      Assert.assertEquals(SeasonUntilB__Date, DateUntilSeason_B,"Test Case Failed as actual & expected Season until dates are not matching");
+	  Reporter.log("Validating actual season from date on contracts page is "+SeasonUntilB__Date+" and Expected date on the calculation page is "+DateUntilSeason_B,true);
+  	  
+	  Assert.assertEquals(SeasonfromC_Date, DateFromSeason_C,"Test Case Failed as actual & expected Season from dates are not matching");
+  	  Reporter.log("Validating actual season from date on contracts page is "+SeasonfromC_Date+" and Expected date on the calculation page is "+DateFromSeason_C,true);
+      Assert.assertEquals(SeasonUntilC__Date, DateUntilSeason_C,"Test Case Failed as actual & expected Season until dates are not matching");
+	  Reporter.log("Validating actual season from date on contracts page is "+SeasonUntilC__Date+" and Expected date on the calculation page is "+DateUntilSeason_C,true);
+  	  
+	  Assert.assertEquals(SeasonfromD_Date, DateFromSeason_D,"Test Case Failed as actual & expected Season from dates are not matching");
+  	  Reporter.log("Validating actual season from date on contracts page is "+SeasonfromD_Date+" and Expected date on the calculation page is "+DateFromSeason_D,true);
+      Assert.assertEquals(SeasonUntilD__Date, DateUntilSeason_D,"Test Case Failed as actual & expected Season until dates are not matching");
+	  Reporter.log("Validating actual season from date on contracts page is "+SeasonUntilD__Date+" and Expected date on the calculation page is "+DateUntilSeason_D,true);
+  	  
+	  Assert.assertEquals(SeasonfromE_Date, DateFromSeason_E,"Test Case Failed as actual & expected Season from dates are not matching");
+  	  Reporter.log("Validating actual season from date on contracts page is "+SeasonfromE_Date+" and Expected date on the calculation page is "+DateFromSeason_E,true);
+      Assert.assertEquals(SeasonUntilE__Date, DateUntilSeason_E,"Test Case Failed as actual & expected Season until dates are not matching");
+	  Reporter.log("Validating actual season from date on contracts page is "+SeasonUntilE__Date+" and Expected date on the calculation page is "+DateUntilSeason_E,true);
+  	  
+	  Assert.assertEquals(SeasonfromF_Date, DateFromSeason_F,"Test Case Failed as actual & expected Season from dates are not matching");
+  	  Reporter.log("Validating actual season from date on contracts page is "+SeasonfromF_Date+" and Expected date on the calculation page is "+DateFromSeason_F,true);
+      Assert.assertEquals(SeasonUntilF__Date, DateUntilSeason_F,"Test Case Failed as actual & expected Season until dates are not matching");
+	  Reporter.log("Validating actual season from date on contracts page is "+SeasonUntilF__Date+" and Expected date on the calculation page is "+DateUntilSeason_F,true);
+  	  
+	  Assert.assertEquals(SeasonfromG_Date, DateFromSeason_G,"Test Case Failed as actual & expected Season from dates are not matching");
+  	  Reporter.log("Validating actual season from date on contracts page is "+SeasonfromG_Date+" and Expected date on the calculation page is "+DateFromSeason_G,true);
+      Assert.assertEquals(SeasonUntilG__Date, DateUntilSeason_G,"Test Case Failed as actual & expected Season until dates are not matching");
+	  Reporter.log("Validating actual season from date on contracts page is "+SeasonUntilG__Date+" and Expected date on the calculation page is "+DateUntilSeason_G,true);
+  	  
+	  Assert.assertEquals(SeasonfromH_Date, DateFromSeason_H,"Test Case Failed as actual & expected Season from dates are not matching");
+  	  Reporter.log("Validating actual season from date on contracts page is "+SeasonfromH_Date+" and Expected date on the calculation page is "+DateFromSeason_H,true);
+      Assert.assertEquals(SeasonUntilH__Date, DateUntilSeason_H,"Test Case Failed as actual & expected Season until dates are not matching");
+	  Reporter.log("Validating actual season from date on contracts page is "+SeasonUntilH__Date+" and Expected date on the calculation page is "+DateUntilSeason_H,true);
+
      //Season Name Assertions
 	  Assert.assertEquals(SeasonA, NameA,"Test Case Failed as actual & expected Season name are not matching");
 	  Reporter.log("Validating actual season name on contracts page is "+SeasonA+" and Expected season name calculation page is "+NameA,true);
@@ -748,10 +813,7 @@ public class TC37 extends BaseClass {
 	  
 	  Assert.assertEquals(Season_Hprice1, CostPriceSeasonHH,"Test Case Failed as actual & expected Prices are not matching for season_D");
 	  Reporter.log("Validating actual price on contracts page is  "+Season_Hprice1+" and Expected price on calculation page is  "+CostPriceSeasonHH,true);
-	 
-	
-	  
-	  
+
 	  
     }
   

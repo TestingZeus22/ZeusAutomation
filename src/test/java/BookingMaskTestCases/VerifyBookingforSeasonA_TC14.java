@@ -55,6 +55,7 @@ public class VerifyBookingforSeasonA_TC14 extends BaseClass {
 			UtilityClass.implicitlyWaitInMillis(1000);
 			selectCompany.ClickOnProceedButton();
 			Reporter.log("Clicked on proceed button",true);	
+			dashboard.getTestAppVersion();
 			Thread.sleep(9500); 
 			
     		dashboard.SalesClick();

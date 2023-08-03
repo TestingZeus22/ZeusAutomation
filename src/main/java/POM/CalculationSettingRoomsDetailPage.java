@@ -7,8 +7,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class CalculationSettingRoomsDetailPage {
 	
- // Season and A,B,C,D.
-	
 	@FindBy (xpath ="//th[text()='Season']") private WebElement seasonName;
 	@FindBy (xpath ="(//span[@class='badge badge-info mr-2'])[1]") private WebElement textA;
 	@FindBy (xpath ="(//span[@class='badge badge-info mr-2'])[2]") private WebElement textB;
@@ -19,16 +17,7 @@ public class CalculationSettingRoomsDetailPage {
 	@FindBy (xpath ="(//span[@class='badge badge-info mr-2'])[7]") private WebElement textG;
 	@FindBy (xpath ="(//span[@class='badge badge-info mr-2'])[8]") private WebElement textH;
 	
-	
-	
 	@FindBy (xpath ="(//input[@id='IsAll'])[1]") private WebElement seasonA_AllDayCheckBox1;
-//	@FindBy (xpath ="(//input[@id='IsMonday'])[1]") private WebElement seasonA_MondayCheckBox2;
-//	@FindBy (xpath ="(//input[@id='IsTuesday'])[1]") private WebElement seasonA_TuesdayCheckBox3;
-//	@FindBy (xpath ="(//input[@id='IsWednesday'])[1]") private WebElement seasonA_WednesdayCheckBox4;
-//	@FindBy (xpath ="(//input[@id='IsThursday'])[1]") private WebElement seasonA_ThursdayCheckBox5;
-//	@FindBy (xpath ="(//input[@id='IsFriday'])[1]") private WebElement seasonA_FridayCheckBox6;
-//	@FindBy (xpath ="(//input[@id='IsSaturday'])[1]") private WebElement seasonA_SaturdayCheckBox7;
-//	@FindBy (xpath ="(//input[@id='IsSunday'])[1]") private WebElement seasonA_SundayCheckBox8;
 
 	@FindBy (xpath ="(//label[@id='NetPrice'])[1]") private WebElement costPriceInEURforSeasonA;
 	@FindBy (xpath ="(//label[@id='NetPrice'])[2]") private WebElement costPriceInEURforSeasonB;
@@ -39,7 +28,30 @@ public class CalculationSettingRoomsDetailPage {
 	@FindBy (xpath ="(//label[@id='NetPrice'])[7]") private WebElement costPriceInEURforSeasonG;
 	@FindBy (xpath ="(//label[@id='NetPrice'])[8]") private WebElement costPriceInEURforSeasonH;
 	
+	@FindBy (xpath ="//table[@id='SeasonPriceList']//tr[1]//td[2]//label[1]") private WebElement SeasonFrom_A;
+	@FindBy (xpath ="//table[@id='SeasonPriceList']//tr[1]//td[2]//label[2]") private WebElement SeasonUntil_A;
 	
+	@FindBy (xpath ="//table[@id='SeasonPriceList']//tr[2]//td[2]//label[1]") private WebElement SeasonFrom_B;
+	@FindBy (xpath ="//table[@id='SeasonPriceList']//tr[2]//td[2]//label[2]") private WebElement SeasonUntil_B;
+	
+	@FindBy (xpath ="//table[@id='SeasonPriceList']//tr[3]//td[2]//label[1]") private WebElement SeasonFrom_C;
+	@FindBy (xpath ="//table[@id='SeasonPriceList']//tr[3]//td[2]//label[2]") private WebElement SeasonUntil_C;
+	
+	@FindBy (xpath ="//table[@id='SeasonPriceList']//tr[4]//td[2]//label[1]") private WebElement SeasonFrom_D;
+	@FindBy (xpath ="//table[@id='SeasonPriceList']//tr[4]//td[2]//label[2]") private WebElement SeasonUntil_D;
+	
+	@FindBy (xpath ="//table[@id='SeasonPriceList']//tr[5]//td[2]//label[1]") private WebElement SeasonFrom_E;
+	@FindBy (xpath ="//table[@id='SeasonPriceList']//tr[5]//td[2]//label[2]") private WebElement SeasonUntil_E;
+	
+	@FindBy (xpath ="//table[@id='SeasonPriceList']//tr[6]//td[2]//label[1]") private WebElement SeasonFrom_F;
+	@FindBy (xpath ="//table[@id='SeasonPriceList']//tr[6]//td[2]//label[2]") private WebElement SeasonUntil_F;
+	
+	@FindBy (xpath ="//table[@id='SeasonPriceList']//tr[7]//td[2]//label[1]") private WebElement SeasonFrom_G;
+	@FindBy (xpath ="//table[@id='SeasonPriceList']//tr[7]//td[2]//label[2]") private WebElement SeasonUntil_G;
+	
+	@FindBy (xpath ="//table[@id='SeasonPriceList']//tr[8]//td[2]//label[1]") private WebElement SeasonFrom_H;
+	@FindBy (xpath ="//table[@id='SeasonPriceList']//tr[8]//td[2]//label[2]") private WebElement SeasonUntil_H;
+
 	@FindBy (xpath ="(//input[@id='DB1'])[1]") private WebElement DB1value;
 
 	
@@ -150,6 +162,102 @@ public class CalculationSettingRoomsDetailPage {
 		return actualText;
 	}
 	
+	public String getSeasonFrom_Adate()
+	{
+		String actualText = SeasonFrom_A.getText();
+		return actualText;
+	}
+	
+	public String getSeasonUntil_Adate()
+	{
+		String actualText = SeasonUntil_A.getText();
+		return actualText;
+	}
+	
+	public String getSeasonFrom_Bdate()
+	{
+		String actualText = SeasonFrom_B.getText();
+		return actualText;
+	}
+	
+	public String getSeasonUntil_Bdate()
+	{
+		String actualText = SeasonUntil_B.getText();
+		return actualText;
+	}
+	
+	public String getSeasonFrom_Cdate()
+	{
+		String actualText = SeasonFrom_C.getText();
+		return actualText;
+	}
+	
+	public String getSeasonUntil_Cdate()
+	{
+		String actualText = SeasonUntil_C.getText();
+		return actualText;
+	}
+	
+	public String getSeasonFrom_Ddate()
+	{
+		String actualText = SeasonFrom_D.getText();
+		return actualText;
+	}
+	
+	public String getSeasonUntil_Ddate()
+	{
+		String actualText = SeasonUntil_D.getText();
+		return actualText;
+	}
+	
+	public String getSeasonFrom_Edate()
+	{
+		String actualText = SeasonFrom_E.getText();
+		return actualText;
+	}
+	
+	public String getSeasonUntil_Edate()
+	{
+		String actualText = SeasonUntil_E.getText();
+		return actualText;
+	}
+	
+	public String getSeasonFrom_Fdate()
+	{
+		String actualText = SeasonFrom_F.getText();
+		return actualText;
+	}
+	
+	public String getSeasonUntil_Fdate()
+	{
+		String actualText = SeasonUntil_F.getText();
+		return actualText;
+	}
+	
+	public String getSeasonFrom_Gdate()
+	{
+		String actualText = SeasonFrom_G.getText();
+		return actualText;
+	}
+	
+	public String getSeasonUntil_Gdate()
+	{
+		String actualText = SeasonUntil_G.getText();
+		return actualText;
+	}
+	
+	public String getSeasonFrom_Hdate()
+	{
+		String actualText = SeasonFrom_H.getText();
+		return actualText;
+	}
+	
+	public String getSeasonUntil_Hdate()
+	{
+		String actualText = SeasonUntil_H.getText();
+		return actualText;
+	}
+	
 	public String getDB1value1(String DB1Value)
 	{
 		String actualText = DB1value.getAttribute(DB1Value);
@@ -159,26 +267,5 @@ public class CalculationSettingRoomsDetailPage {
 	public Boolean isSeasonA_AllDayCheckBox1()
 	{
 		return seasonA_AllDayCheckBox1.isSelected();
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	}	
 }

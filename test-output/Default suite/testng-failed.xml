@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="BookingMaskTestCases.MultisaleslineBookingWithDiffDateAndLessthanMinStay_TC149">
+      <class name="CalculationModuleTestCases.TC37">
         <methods>
-          <include name="Logout"/>
+          <include name="validateOfferCalculationWithRoomDetails"/>
           <include name="launchBrowser"/>
+          <include name="Logout"/>
+          <include name="loginToAApp"/>
           <include name="closeBrowser"/>
-          <include name="validategetmultisalesLinesBookingErrorMsgwithInValidStay"/>
-          <include name="loginToApp"/>
         </methods>
-      </class> <!-- BookingMaskTestCases.MultisaleslineBookingWithDiffDateAndLessthanMinStay_TC149 -->
+      </class> <!-- CalculationModuleTestCases.TC37 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -58,7 +58,6 @@ public class calculationSettingPage {
 		return actualText;
 	}
 	
-	
 	public void clickOnAverageDBpercentageLastYearField()
 	{
 		averageDBpercentageLastYearField.click();
