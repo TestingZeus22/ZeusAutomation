@@ -16,7 +16,7 @@ public class contractsPage {
 	@FindBy (xpath ="(//input[@class='form-control text-box single-line valid datepicker'])[1]") private WebElement startDateField;
 	@FindBy (xpath ="(//input[@class='form-control text-box single-line valid datepicker'])[2]") private WebElement endDateField;
 	@FindBy (id ="ContractStatusDD") private WebElement statusDropdown;
-	@FindBy (xpath ="(//i[@class='lnr-pencil'])[3]") private WebElement editContract;
+	@FindBy (xpath ="(//i[@class='lnr-pencil'])[2]") private WebElement editContract;
 	@FindBy (xpath ="(//i[@class='pe-7s-trash btn-icon-wrapper'])[1]") private WebElement deleteContract;
 	
 	

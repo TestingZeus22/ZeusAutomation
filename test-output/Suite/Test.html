@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 03 15:01:33 IST 2023</td>
+<td>Started on:</td><td>Wed Aug 16 15:53:22 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>886 seconds (886977 ms)</td>
+<tr><td>Total time:</td><td>88 seconds (88401 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,204 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='BookingMaskTestCases.VerifyRoomOccupancyLimitTC70ToTC73.validateLimitOccupancyForMaxAdults()'><b>validateLimitOccupancyForMaxAdults</b><br>Test class: BookingMaskTestCases.VerifyRoomOccupancyLimitTC70ToTC73<br/>
-<a href="#Output-186966559" onClick='toggleBox("Output-186966559", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-186966559" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-186966559">
-Select Falk Tours AG in CompanyID dropdownList<br/>
-Select TFT1 in TravelType dropdownList<br/>
-Selected HK001 - (TESTING) from dropdown list<br/>
-Selected room 807 from dropdown<br/>
-Send number of passenger<br/>
-Send correct KOS in input field<br/>
-Send correct ProductCode in input field<br/>
-Send roomcode in input field<br/>
-Send correct boardName<br/>
-Send Occupancy<br/>
-Send bookinglines <br/>
-Send Travel from date<br/>
-Send Travel To date<br/>
-Send Number of passenger<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=115.0.5790.110)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f950f3804d8848859bc52a54a31eed76, executeScript {script=arguments[0].click();, args=[{element-6066-11e4-a52e-4f735466cecf=AB55586ADE2F7BE62284873C11CB3C8A_element_1678}]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:59520}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59520/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f950f3804d8848859bc52a54a31eed76
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
-	at utility.UtilityClass.clickUsingJSE(UtilityClass.java:164)
-	at BookingMaskTestCases.VerifyRoomOccupancyLimitTC70ToTC73.validateLimitOccupancyForMaxAdults(VerifyRoomOccupancyLimitTC70ToTC73.java:597)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace186966559", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace186966559'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=115.0.5790.110)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f950f3804d8848859bc52a54a31eed76, executeScript {script=arguments[0].click();, args=[{element-6066-11e4-a52e-4f735466cecf=AB55586ADE2F7BE62284873C11CB3C8A_element_1678}]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:59520}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59520/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f950f3804d8848859bc52a54a31eed76
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
-	at utility.UtilityClass.clickUsingJSE(UtilityClass.java:164)
-	at BookingMaskTestCases.VerifyRoomOccupancyLimitTC70ToTC73.validateLimitOccupancyForMaxAdults(VerifyRoomOccupancyLimitTC70ToTC73.java:597)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>45</td>
-<td>BookingMaskTestCases.VerifyRoomOccupancyLimitTC70ToTC73@7e6f74c</td></tr>
-<tr>
-<td title='BookingMaskTestCases.VerifyRoomOccupancyLimitTC70ToTC73.validateOccupancyForMinChildrenBooking()'><b>validateOccupancyForMinChildrenBooking</b><br>Test class: BookingMaskTestCases.VerifyRoomOccupancyLimitTC70ToTC73<br/>
-<a href="#Output-913818888" onClick='toggleBox("Output-913818888", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-913818888" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-913818888">
-Select Falk Tours AG in CompanyID dropdownList<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: Element is not currently visible and may not be manipulated
-  (Session info: chrome=115.0.5790.110)
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f950f3804d8848859bc52a54a31eed76, clickElement {id=5C6AD6B9905B045C039B664A764C9C52_element_132}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:59520}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59520/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (f950f3804d8848859bc52a54a31eed76)] -&gt; id: SalesBookingHeaderNewModel_TravelTypeID]] -&gt; xpath: .//option[normalize-space(.) = &quot;TFT1&quot;]]
-Session ID: f950f3804d8848859bc52a54a31eed76
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:315)
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:119)
-	at utility.UtilityClass.listBoxHandlingUsingByText(UtilityClass.java:149)
-	at BookingMaskTestCases.VerifyRoomOccupancyLimitTC70ToTC73.validateOccupancyForMinChildrenBooking(VerifyRoomOccupancyLimitTC70ToTC73.java:104)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace913818888", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace913818888'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: Element is not currently visible and may not be manipulated
-  (Session info: chrome=115.0.5790.110)
-Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f950f3804d8848859bc52a54a31eed76, clickElement {id=5C6AD6B9905B045C039B664A764C9C52_element_132}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ROHAN~1.PAT\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:59520}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59520/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[[[ChromeDriver: chrome on windows (f950f3804d8848859bc52a54a31eed76)] -&gt; id: SalesBookingHeaderNewModel_TravelTypeID]] -&gt; xpath: .//option[normalize-space(.) = &quot;TFT1&quot;]]
-Session ID: f950f3804d8848859bc52a54a31eed76
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:315)
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:119)
-	at utility.UtilityClass.listBoxHandlingUsingByText(UtilityClass.java:149)
-	at BookingMaskTestCases.VerifyRoomOccupancyLimitTC70ToTC73.validateOccupancyForMinChildrenBooking(VerifyRoomOccupancyLimitTC70ToTC73.java:104)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>1</td>
-<td>BookingMaskTestCases.VerifyRoomOccupancyLimitTC70ToTC73@7e6f74c</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -274,229 +76,162 @@ Session ID: f950f3804d8848859bc52a54a31eed76
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='BookingMaskTestCases.VerifyRoomOccupancyLimitTC66ToTC69.validateBookingWithMaxPersonLimit()'><b>validateBookingWithMaxPersonLimit</b><br>Test class: BookingMaskTestCases.VerifyRoomOccupancyLimitTC66ToTC69<br/>
-<a href="#Output-926544841" onClick='toggleBox("Output-926544841", this, "Show output", "Hide output");'>Show output</a>
+<td title='LoginPageTestCases.ValidateRecoverPwdLinkTC_20.VerifyRecoverPwdIsLinkTest()'><b>VerifyRecoverPwdIsLinkTest</b><br>Test class: LoginPageTestCases.ValidateRecoverPwdLinkTC_20<br/>
+<a href="#Output-1136890657" onClick='toggleBox("Output-1136890657", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-926544841" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-926544841">
-Select Falk Tours AG in CompanyID dropdownList<br/>
-Select TFT1 in TravelType dropdownList<br/>
-Selected HK001 - (TESTING) from dropdown list<br/>
-Selected room 807 from dropdown<br/>
-Send number of passenger<br/>
-Send correct KOS in input field<br/>
-Send correct ProductCode in input field<br/>
-Send roomcode in input field<br/>
-Send correct boardName<br/>
-Send Occupancy<br/>
-Send bookinglines <br/>
-Send Travel from date<br/>
-Send Travel To date<br/>
-Send Number of passenger<br/>
-Click on sendBookingButton <br/>
-Clicked on ViewList<br/>
-Clicked on sendTBMcode to verify booking is done or not<br/>
-Send TBM code<br/>
-Clicked on Booking listButton<br/>
-Validating Expected ReservationNo 765747368/01 and Actual ReservationNo is 765747368/01<br/>
-Validating Actual price 10005.00 and Expected Price 10005.00<br/>
+<a href="#Output-1136890657" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1136890657">
+Validating actual Recover Password and Expected Text Recover Password<br/>
 </div>
 </td>
 <td></td>
-<td>66</td>
-<td>BookingMaskTestCases.VerifyRoomOccupancyLimitTC66ToTC69@44c03695</td></tr>
+<td>0</td>
+<td>LoginPageTestCases.ValidateRecoverPwdLinkTC_20@1fa121e2</td></tr>
 <tr>
-<td title='BookingMaskTestCases.VerifyRoomOccupancyLimitTC74ToTC77.validateOccupancyLimitCombinationBooking()'><b>validateOccupancyLimitCombinationBooking</b><br>Test class: BookingMaskTestCases.VerifyRoomOccupancyLimitTC74ToTC77<br/>
-<a href="#Output-1841967595" onClick='toggleBox("Output-1841967595", this, "Show output", "Hide output");'>Show output</a>
+<td title='LoginPageTestCases.LoginPageRefreshValidation_TC10.ValidUserNamePasswordAndRefreshpageTest()'><b>ValidUserNamePasswordAndRefreshpageTest</b><br>Test class: LoginPageTestCases.LoginPageRefreshValidation_TC10<br/>
+<a href="#Output-247334525" onClick='toggleBox("Output-247334525", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1841967595" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1841967595">
-Select Falk Tours AG in CompanyID dropdownList<br/>
-Select TFT1 in TravelType dropdownList<br/>
-Selected HK001 - (TESTING) from dropdown list<br/>
-Selected room 807 from dropdown<br/>
-Send number of passenger<br/>
-Send correct KOS in input field<br/>
-Send correct ProductCode in input field<br/>
-Send roomcode in input field<br/>
-Send correct boardName<br/>
-Send Occupancy<br/>
-Send bookinglines <br/>
-Send Travel from date<br/>
-Send Travel To date<br/>
-Send Number of passenger<br/>
-Click on sendBookingButton after U action code<br/>
-Clicked on ViewList<br/>
-Clicked on SendTBMcode to verify booking is done or not<br/>
-Send TBM code<br/>
-Clicked on Booking listButton<br/>
-Validating Expected ReservationNo 541583928/01 and Actual ReservationNo is 541583928/01<br/>
-Validating Actual price 8004.00 and Expected Price 8004.00<br/>
+<a href="#Output-247334525" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-247334525">
+Validating actual https://zeuscloud.azurewebsites.net/CompanySelection and Expected Text https://zeuscloud.azurewebsites.net/CompanySelection<br/>
 </div>
 </td>
 <td></td>
-<td>66</td>
-<td>BookingMaskTestCases.VerifyRoomOccupancyLimitTC74ToTC77@5b12b668</td></tr>
+<td>0</td>
+<td>LoginPageTestCases.LoginPageRefreshValidation_TC10@233795b6</td></tr>
 <tr>
-<td title='BookingMaskTestCases.VerifyRoomOccupancyLimitTC70ToTC73.validateLimitOccupancyCombinationBooking()'><b>validateLimitOccupancyCombinationBooking</b><br>Test class: BookingMaskTestCases.VerifyRoomOccupancyLimitTC70ToTC73<br/>
-<a href="#Output-2026537560" onClick='toggleBox("Output-2026537560", this, "Show output", "Hide output");'>Show output</a>
+<td title='LoginPageTestCases.LoginValidation_TC01.ValidUserNameAndValidPasswordTest()'><b>ValidUserNameAndValidPasswordTest</b><br>Test class: LoginPageTestCases.LoginValidation_TC01<br/>
+<a href="#Output-1842571958" onClick='toggleBox("Output-1842571958", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2026537560" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2026537560">
-Select Falk Tours AG in CompanyID dropdownList<br/>
-Select TFT1 in TravelType dropdownList<br/>
-Selected HK001 - (TESTING) from dropdown list<br/>
-Selected room 807 from dropdown<br/>
-Send number of passenger<br/>
-Send correct KOS in input field<br/>
-Send correct ProductCode in input field<br/>
-Send roomcode in input field<br/>
-Send correct boardName<br/>
-Send Occupancy<br/>
-Send bookinglines <br/>
-Send Travel from date<br/>
-Send Travel To date<br/>
-Send Number of passenger<br/>
-Click on sendBookingButton after U action code<br/>
-Clicked on ViewList<br/>
-Clicked on sendTBMcode to verify booking is done or not<br/>
-Send TBM code<br/>
-Clicked on Booking listButton<br/>
-Validating Expected ReservationNo 499361739/01 and Actual ReservationNo is 499361739/01<br/>
-Validating Actual price 6003.00 and Expected Price 6003.00<br/>
+<a href="#Output-1842571958" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1842571958">
+Validating actual Please select company to proceed. and Expected Text Please select company to proceed.<br/>
 </div>
 </td>
 <td></td>
-<td>62</td>
-<td>BookingMaskTestCases.VerifyRoomOccupancyLimitTC70ToTC73@7e6f74c</td></tr>
+<td>0</td>
+<td>LoginPageTestCases.LoginValidation_TC01@3eb738bb</td></tr>
 <tr>
-<td title='BookingMaskTestCases.VerifyRoomOccupancyLimitTC66ToTC69.validateOccupancyLimitForMaxChildrenBooking()'><b>validateOccupancyLimitForMaxChildrenBooking</b><br>Test class: BookingMaskTestCases.VerifyRoomOccupancyLimitTC66ToTC69<br/>
-<a href="#Output-607042875" onClick='toggleBox("Output-607042875", this, "Show output", "Hide output");'>Show output</a>
+<td title='LoginPageTestCases.ValidateErrorMsgOnUserName_TC04.CheckIncorrectCredentialsOnUserNameFieldTest()'><b>CheckIncorrectCredentialsOnUserNameFieldTest</b><br>Test class: LoginPageTestCases.ValidateErrorMsgOnUserName_TC04<br/>
+<a href="#Output-1232631679" onClick='toggleBox("Output-1232631679", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-607042875" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-607042875">
-Select Falk Tours AG in CompanyID dropdownList<br/>
-Select TFT1 in TravelType dropdownList<br/>
-Selected HK001 - (TESTING) from dropdown list<br/>
-Selected room 807 from dropdown<br/>
-Send number of passenger<br/>
-Send correct KOS in input field<br/>
-Send correct ProductCode in input field<br/>
-Send roomcode in input field<br/>
-Send correct boardName<br/>
-Send Occupancy<br/>
-Send bookinglines <br/>
-Send Travel from date<br/>
-Send Travel To date<br/>
-Send Number of passenger<br/>
-Click on sendBookingButton <br/>
-Clicked on ViewList<br/>
-Clicked on sendTBMcode to verify booking is done or not<br/>
-Send TBM code<br/>
-Clicked on Booking listButton<br/>
-Validating Expected ReservationNo 497789753/01 and Actual ReservationNo is 497789753/01<br/>
-Validating Actual price 6003.00 and Expected Price 6003.00<br/>
+<a href="#Output-1232631679" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1232631679">
+Validating actual Credentials are invalid! and Expected Text Credentials are invalid!<br/>
 </div>
 </td>
 <td></td>
-<td>63</td>
-<td>BookingMaskTestCases.VerifyRoomOccupancyLimitTC66ToTC69@44c03695</td></tr>
+<td>0</td>
+<td>LoginPageTestCases.ValidateErrorMsgOnUserName_TC04@5bda8e08</td></tr>
 <tr>
-<td title='BookingMaskTestCases.VerifyRoomOccupancyLimitTC66ToTC69.validateOccupancyLimitCombinationBooking()'><b>validateOccupancyLimitCombinationBooking</b><br>Test class: BookingMaskTestCases.VerifyRoomOccupancyLimitTC66ToTC69<br/>
-<a href="#Output-1728427875" onClick='toggleBox("Output-1728427875", this, "Show output", "Hide output");'>Show output</a>
+<td title='LoginPageTestCases.RecoveryPasswordPageTextValidation_TC23.ValidateWelcomeTextOnRecoveryPageTest()'><b>ValidateWelcomeTextOnRecoveryPageTest</b><br>Test class: LoginPageTestCases.RecoveryPasswordPageTextValidation_TC23<br/>
+<a href="#Output-1364058917" onClick='toggleBox("Output-1364058917", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1728427875" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1728427875">
-Select Falk Tours AG in CompanyID dropdownList<br/>
-Select TFT1 in TravelType dropdownList<br/>
-Selected HK001 - (TESTING) from dropdown list<br/>
-Selected room 807 from dropdown<br/>
-Send number of passenger<br/>
-Send correct KOS in input field<br/>
-Send correct ProductCode in input field<br/>
-Send roomcode in input field<br/>
-Send correct boardName<br/>
-Send Occupancy<br/>
-Send bookinglines <br/>
-Send Travel from date<br/>
-Send Travel To date<br/>
-Select Number of passenger<br/>
-Click on sendBookingButton <br/>
-Clicked on ViewList<br/>
-Clicked on sendTBMcode to verify booking is done or not<br/>
-Send TBM code<br/>
-Clicked on Booking listButton<br/>
-Validating Expected ReservationNo 286746271/01 and Actual ReservationNo is 286746271/01<br/>
-Validating Actual price 4002.00 and Expected Price 4002.00<br/>
+<a href="#Output-1364058917" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1364058917">
+Validating actual Welcome to Falk Tours, and Expected Message Welcome to Falk Tours,<br/>
+Validating actual Please enter your User Name below to get reset password link on registered mail address. and Expected Message Please enter your User Name below to get reset password link on registered mail address.<br/>
 </div>
 </td>
 <td></td>
-<td>75</td>
-<td>BookingMaskTestCases.VerifyRoomOccupancyLimitTC66ToTC69@44c03695</td></tr>
+<td>0</td>
+<td>LoginPageTestCases.RecoveryPasswordPageTextValidation_TC23@77c2494c</td></tr>
 <tr>
-<td title='BookingMaskTestCases.VerifyRoomOccupancyLimitTC66ToTC69.validateBookingWithMinPersonLimit()'><b>validateBookingWithMinPersonLimit</b><br>Test class: BookingMaskTestCases.VerifyRoomOccupancyLimitTC66ToTC69<br/>
-<a href="#Output-1898469011" onClick='toggleBox("Output-1898469011", this, "Show output", "Hide output");'>Show output</a>
+<td title='LoginPageTestCases.recoveryPasswordPageValidation_TC24.ValidateCopyrightTextOnRecoveryPasswordTest()'><b>ValidateCopyrightTextOnRecoveryPasswordTest</b><br>Test class: LoginPageTestCases.recoveryPasswordPageValidation_TC24<br/>
+<a href="#Output-1171538461" onClick='toggleBox("Output-1171538461", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1898469011" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1898469011">
-Select Falk Tours AG in CompanyID dropdownList<br/>
-Select TFT1 in TravelType dropdownList<br/>
-Selected HK001 - (TESTING) from dropdown list<br/>
-Selected room 807 from dropdown<br/>
-Send number of passenger<br/>
-Send correct KOS in input field<br/>
-Send correct ProductCode in input field<br/>
-Send roomcode in input field<br/>
-Send correct boardName<br/>
-Send Occupancy<br/>
-Send bookinglines <br/>
-Send Travel from date<br/>
-Send Travel To date<br/>
-Select Number of passenger<br/>
-Click on sendBookingButton <br/>
-Clicked on ViewList<br/>
-Clicked on sendTBMcode to verify booking is done or not<br/>
-Send TBM code<br/>
-Clicked on Booking listButton<br/>
-Validating Expected ReservationNo 668272532/01 and Actual ReservationNo is 668272532/01<br/>
-Validating Actual price 2001.00 and Expected Price 2001.00<br/>
+<a href="#Output-1171538461" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1171538461">
+Validating actual TextCopyright © Zeus 2023 and Expected Text Copyright © Zeus 2023<br/>
 </div>
 </td>
 <td></td>
-<td>64</td>
-<td>BookingMaskTestCases.VerifyRoomOccupancyLimitTC66ToTC69@44c03695</td></tr>
+<td>0</td>
+<td>LoginPageTestCases.recoveryPasswordPageValidation_TC24@3cd3e762</td></tr>
 <tr>
-<td title='BookingMaskTestCases.VerifyRoomOccupancyLimitTC70ToTC73.validateLimitOccupancyCombinationBookings()'><b>validateLimitOccupancyCombinationBookings</b><br>Test class: BookingMaskTestCases.VerifyRoomOccupancyLimitTC70ToTC73<br/>
-<a href="#Output-1170370809" onClick='toggleBox("Output-1170370809", this, "Show output", "Hide output");'>Show output</a>
+<td title='LoginPageTestCases.RecoverPasswordAndBackToLoginVaidation_TC09.RecoverPasswordAndGoBackToLoginTest()'><b>RecoverPasswordAndGoBackToLoginTest</b><br>Test class: LoginPageTestCases.RecoverPasswordAndBackToLoginVaidation_TC09<br/>
+<a href="#Output-1822651119" onClick='toggleBox("Output-1822651119", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1170370809" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1170370809">
-Select Falk Tours AG in CompanyID dropdownList<br/>
-Select TFT1 in TravelType dropdownList<br/>
-Selected HK001 - (TESTING) from dropdown list<br/>
-Selected room 807 from dropdown<br/>
-Send number of passenger<br/>
-Send correct KOS in input field<br/>
-Send correct ProductCode in input field<br/>
-Send roomcode in input field<br/>
-Send correct boardName<br/>
-Send Occupancy<br/>
-Send bookinglines <br/>
-Send Travel from date<br/>
-Send Travel To date<br/>
-Select Number of passenger<br/>
-Click on sendBookingButton<br/>
-Clicked on ViewList<br/>
-Clicked on sendTBMcode to verify booking is done or not<br/>
-Send TBM code<br/>
-Clicked on Booking listButton<br/>
-Validating Expected ReservationNo 646895273/01 and Actual ReservationNo is 646895273/01<br/>
-Validating Actual price 8004.00 and Expected Price 8004.00<br/>
+<a href="#Output-1822651119" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1822651119">
+Validating actual Copyright © Zeus 2023 and Expected Text Copyright © Zeus 2023<br/>
 </div>
 </td>
 <td></td>
-<td>63</td>
-<td>BookingMaskTestCases.VerifyRoomOccupancyLimitTC70ToTC73@7e6f74c</td></tr>
+<td>0</td>
+<td>LoginPageTestCases.RecoverPasswordAndBackToLoginVaidation_TC09@f5958c9</td></tr>
+<tr>
+<td title='LoginPageTestCases.LoginPageTextValidation_TC17.ValidateCopyrightTextOnLoginPageTest()'><b>ValidateCopyrightTextOnLoginPageTest</b><br>Test class: LoginPageTestCases.LoginPageTextValidation_TC17<br/>
+<a href="#Output-595556720" onClick='toggleBox("Output-595556720", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-595556720" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-595556720">
+Validating actual Copyright © Zeus 2023 and Expected Text Copyright © Zeus 2023<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>LoginPageTestCases.LoginPageTextValidation_TC17@682b2fa</td></tr>
+<tr>
+<td title='LoginPageTestCases.RecoverPasswordRefreshValidation_TC14.ValidUserNameEnterAndRefreshPageTest()'><b>ValidUserNameEnterAndRefreshPageTest</b><br>Test class: LoginPageTestCases.RecoverPasswordRefreshValidation_TC14<br/>
+<a href="#Output-1752402342" onClick='toggleBox("Output-1752402342", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1752402342" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1752402342">
+Validating actual https://zeuscloud.azurewebsites.net/Users/SendRecoverPassLink and Expected Text https://zeuscloud.azurewebsites.net/Users/SendRecoverPassLink<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTestCases.RecoverPasswordRefreshValidation_TC14@179ece50</td></tr>
+<tr>
+<td title='LoginPageTestCases.LoginPageTextValidationTC_18.ValidateWelcomeBackTextOnLoginPageTest()'><b>ValidateWelcomeBackTextOnLoginPageTest</b><br>Test class: LoginPageTestCases.LoginPageTextValidationTC_18<br/>
+<a href="#Output-1466148437" onClick='toggleBox("Output-1466148437", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1466148437" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1466148437">
+Validating actual Welcome back, and Expected Text Welcome back,<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTestCases.LoginPageTextValidationTC_18@3b0090a4</td></tr>
+<tr>
+<td title='LoginPageTestCases.DashboardValidation_TC02.ValidUserNameAndValidPasswordEnterToDashboardPageTest()'><b>ValidUserNameAndValidPasswordEnterToDashboardPageTest</b><br>Test class: LoginPageTestCases.DashboardValidation_TC02<br/>
+<a href="#Output-1597594849" onClick='toggleBox("Output-1597594849", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1597594849" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1597594849">
+Validating actual Text Dashboard and Expected Text Dashboard<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTestCases.DashboardValidation_TC02@9d5509a</td></tr>
+<tr>
+<td title='LoginPageTestCases.ValidateErrorMsgOnPassword_TC03.CheckIncorrectCredentialsOnPasswordFieldTest()'><b>CheckIncorrectCredentialsOnPasswordFieldTest</b><br>Test class: LoginPageTestCases.ValidateErrorMsgOnPassword_TC03<br/>
+<a href="#Output-1746668262" onClick='toggleBox("Output-1746668262", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1746668262" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1746668262">
+Validating actual Credentials are invalid! and Expected Text Credentials are invalid!<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTestCases.ValidateErrorMsgOnPassword_TC03@6f03482</td></tr>
+<tr>
+<td title='LoginPageTestCases.RecoveryPasswordClickValidation_TC08.ClickOnRecoveryPasswordLinkTest()'><b>ClickOnRecoveryPasswordLinkTest</b><br>Test class: LoginPageTestCases.RecoveryPasswordClickValidation_TC08<br/>
+<a href="#Output-1229143192" onClick='toggleBox("Output-1229143192", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1229143192" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1229143192">
+Validating actual Copyright © Zeus 2023 and Expected Text Copyright © Zeus 2023<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginPageTestCases.RecoveryPasswordClickValidation_TC08@1e800aaa</td></tr>
 </table><p>
 </body>
 </html>

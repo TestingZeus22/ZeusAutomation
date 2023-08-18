@@ -33,15 +33,21 @@ public class offerDefinationPage {
 	@FindBy (xpath = "//span[text()='Reisenaktuell']") private WebElement Reisenaktuell;
 	
 	@FindBy (xpath ="(//input[@type='text'])[1]") private WebElement TBMcodeField;
+	@FindBy (xpath ="//td[@class='sorting_1']") private WebElement TBMcodeR1C1;
 	@FindBy (xpath ="(//input[@type='text'])[2]") private WebElement accommodationNameField;
+	@FindBy (id="accommodationName") private WebElement accommodationR1C1;
 	@FindBy (xpath ="(//input[@type='text'])[3]") private WebElement locationField;
 	@FindBy (xpath ="(//input[@type='text'])[4]") private WebElement countryField;
 	@FindBy (xpath ="(//input[@type='text'])[5]") private WebElement contractNameField;
+	@FindBy (id ="contractName") private WebElement contractNameR1C1;
 	@FindBy (xpath ="(//input[@type='text'])[6]") private WebElement validFromAndToField;
 	@FindBy (id ="Status") private WebElement statusDropdown; 
+	@FindBy (xpath ="//div[@class='badge badge-pill badge-success']") private WebElement statusText;
 	@FindBy (id ="chkProdID") private WebElement checkBox1;
 	@FindBy (xpath = "//a[@class='btn-shadow btn btn-primary']") private WebElement saveButton;
     
+	@FindBy (xpath="//td[text()='No data available in table']") private WebElement errorMessage;
+	
 	public offerDefinationPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -142,9 +148,22 @@ public class offerDefinationPage {
 		TBMcodeField.sendKeys(tbm);
 	}
 	
+	public String getTBMcodeR1C1()
+	{
+		String actualText = TBMcodeR1C1.getText();
+		return actualText;
+	}
+	
+
 	public void SendAccommodationNameField(String accommodationName)
 	{
 		accommodationNameField.sendKeys(accommodationName);
+	}
+	
+	public String getAccommodationR1C1()
+	{
+		String actualText = accommodationR1C1.getText();
+		return actualText;
 	}
 	
 	public void SendLocationField(String location)
@@ -162,6 +181,12 @@ public class offerDefinationPage {
 		contractNameField.sendKeys(contractName);
 	}
 	
+	public String getContractNameR1C1()
+	{
+		String actualText = contractNameR1C1.getText();
+		return actualText;
+	}
+	
 	public void SendValidFromAndToField(String validFromAndTo)
 	{
 		validFromAndToField.sendKeys(validFromAndTo);
@@ -171,6 +196,12 @@ public class offerDefinationPage {
 	{
 		WebElement Element = statusDropdown;
 		return Element;
+	}
+	
+	public String getStatusText()
+	{
+		String actualText = statusText.getText();
+		return actualText;
 	}
 	
 	public void clickOnCheckBox()
@@ -183,5 +214,9 @@ public class offerDefinationPage {
 		saveButton.click();
 	}
 	
-
+	public String geterrorMessage()
+	{
+		String actualText = errorMessage.getText();
+		return actualText;
+	}
 }

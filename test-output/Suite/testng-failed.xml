@@ -3,16 +3,35 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="BookingMaskTestCases.VerifyRoomOccupancyLimitTC70ToTC73">
+      <class name="BookingMaskTestCases.VerifyRoomOccupancyLimitTC58ToTC61">
         <methods>
-          <include name="validateLimitOccupancyForMaxAdults"/>
-          <include name="loginToApp"/>
           <include name="Logout"/>
           <include name="launchBrowser"/>
-          <include name="validateOccupancyForMinChildrenBooking"/>
           <include name="closeBrowser"/>
+          <include name="validateOccupancyMinLimitNotSatisfield2"/>
+          <include name="loginToApp"/>
         </methods>
-      </class> <!-- BookingMaskTestCases.VerifyRoomOccupancyLimitTC70ToTC73 -->
+      </class> <!-- BookingMaskTestCases.VerifyRoomOccupancyLimitTC58ToTC61 -->
+      <class name="BookingMaskTestCases.VerifyRoomOccupancyLimitTC62ToTC65">
+        <methods>
+          <include name="Logout"/>
+          <include name="launchBrowser"/>
+          <include name="validateMismatchInNOofPaxFieldErrorMsg"/>
+          <include name="loginToApp"/>
+          <include name="validateMismatchInPassengerFieldErrorMsg"/>
+          <include name="closeBrowser"/>
+          <include name="validateMismatchInOCCFieldErrorMsg"/>
+        </methods>
+      </class> <!-- BookingMaskTestCases.VerifyRoomOccupancyLimitTC62ToTC65 -->
+      <class name="BookingMaskTestCases.VerifyRoomOccupancyLimitTC54ToTC57">
+        <methods>
+          <include name="validateOccupancyMinLimitNotSatisfied2"/>
+          <include name="loginToApp"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- BookingMaskTestCases.VerifyRoomOccupancyLimitTC54ToTC57 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

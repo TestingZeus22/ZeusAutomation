@@ -21,12 +21,18 @@ public class BaseClass {
 	public void openApplication()
 	
 	{
-		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\rohan.patil\\Jar files\\chromedriver.exe");
+	
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\rohan.patil\\Jar files\\chromedriver.exe");
 		//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+ "\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.get("https://zeuscloud.azurewebsites.net/Index?Status=SE");
 		UtilityClass.implicitlyWaitInMillis(1000);
+
 	}
+
 }
+		
+		
+

@@ -66,6 +66,7 @@ public class contractDetailsPage {
 	@FindBy (id ="contractterms") private WebElement contractTermsField;
 	
 	@FindBy (xpath ="//button[text()='Create Contract']") private WebElement createContractButton;
+	@FindBy (id ="btn_UpdateContract") private WebElement updateContractButton;
 	
 	public contractDetailsPage(WebDriver driver)
 	{
@@ -140,6 +141,13 @@ public class contractDetailsPage {
 		WebElement Element = contractstatusDropdown;
 		return Element;
 	}
+	
+	public String getContractStatus()
+	{
+		String actualText = contractstatusDropdown.getText();
+		return actualText;
+	}
+	
 	
 	public WebElement boardbasisdropdown()
 	{
@@ -350,5 +358,8 @@ public class contractDetailsPage {
 		createContractButton.click();
 	}
 	
-
+	public void clickOnUpdateContractButton()
+	{
+		updateContractButton.click();
+	}
 }
